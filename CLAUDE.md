@@ -47,6 +47,17 @@ follow this workflow. Optimize for cards the user will actually retain, not cove
 If the user needs a custom note type, create it via the model tools, but prefer the
 built-ins unless there's a clear reason.
 
+## Deck styles
+
+Some decks have a house style — match it when adding cards.
+
+- **`HackerRank`** — *scenario / story fronts.* The front is a plain-language, non-technical
+  situation (a monkey and bananas, trains, a party, a chef) that **hides** the underlying
+  algorithm; the solver's job is to recognize the pattern themselves. The back reveals, in
+  order: **Maps to** (the technique/data structure), **Model it** (how the story becomes the
+  technical problem), **Approach & variations**, then **Time** and **Space** each *with the
+  reason*. Never name the technique on the front.
+
 ## Conventions
 
 - **Tags:** always `ankicardmaker`; add a lowercase topic tag (e.g. `spanish`, `krebs-cycle`).
