@@ -87,7 +87,12 @@ def main():
     hkey = os.environ.get("ANKIWEB_HKEY")
     if not hkey:
         raise SystemExit("ANKIWEB_HKEY env var not set (add it as a GitHub secret).")
-    endpoint = os.environ.get("ANKIWEB_ENDPOINT") or None
+    # For AnkiWeb the endpoint must be left unset so the backend uses its
+    # built-in server (and then redirects us to the right shard). Only a genuine
+    # self-hosted sync server should be passed through.
+    endpoint = (os.environ.get("ANKIWEB_ENDPOINT") or "").strip()
+    if not endpoint or "ankiweb.net" in endpoint:
+        endpoint = None
     auth = SyncAuth(hkey=hkey, endpoint=endpoint)
 
     path = os.path.join(tempfile.mkdtemp(), "collection.anki2")
