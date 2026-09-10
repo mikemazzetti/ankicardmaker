@@ -1,0 +1,254 @@
+{
+ "deck": "Resume Prep::Angular",
+ "note_count": 19,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601898,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Angular, what is a component?",
+    "Back": "A TypeScript class decorated with <code>@Component</code> that controls a view via an HTML template and CSS, plus the logic behind it — Angular's basic UI building block."
+   }
+  },
+  {
+   "noteId": 1789000601899,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the role of an Angular <code>@NgModule</code>?",
+    "Back": "It groups related components, directives, pipes, and services into a cohesive block, declaring what belongs to it and what it imports, exports, and provides."
+   }
+  },
+  {
+   "noteId": 1789000601900,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is dependency injection (DI) in Angular?",
+    "Back": "A pattern where Angular's injector supplies a class's dependencies (like services) through its constructor rather than the class creating them itself, enabling loose coupling and easy mocking in tests."
+   }
+  },
+  {
+   "noteId": 1789000601901,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an Angular service that's injectable app-wide and inject it into a component?",
+    "Back": "<pre><code>@Injectable({ providedIn: 'root' })\nexport class LoanService {\n  calculateMonthlyPayment(principal: number, rate: number, months: number) {\n    // amortization formula\n  }\n}\n\n@Component({ selector: 'app-calc' })\nexport class CalcComponent {\n  constructor(private loanService: LoanService) {}\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601902,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a structural directive in Angular? Give an example.",
+    "Back": "A directive that changes the DOM layout by adding or removing elements, e.g. <code>*ngIf</code> (conditionally render) and <code>*ngFor</code> (repeat a template for each item in a list)."
+   }
+  },
+  {
+   "noteId": 1789000601903,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an Angular template that lists loan offers with <code>*ngFor</code> and shows a fallback when there are none?",
+    "Back": "<pre><code>&lt;ul *ngIf=\"offers.length; else empty\"&gt;\n  &lt;li *ngFor=\"let o of offers\"&gt;{{o.rate}}%&lt;/li&gt;\n&lt;/ul&gt;\n&lt;ng-template #empty&gt;No offers found&lt;/ng-template&gt;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601904,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What Angular decorator lets a parent component pass data into a child component?",
+    "Back": "<code>@Input()</code> — it declares a property on the child that the parent binds to via property binding, e.g. <code>[loanAmount]=\"amount\"</code>."
+   }
+  },
+  {
+   "noteId": 1789000601905,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What Angular decorator lets a child component emit an event to its parent?",
+    "Back": "<code>@Output()</code>, paired with an <code>EventEmitter</code>; the child calls <code>.emit(value)</code> and the parent listens via event binding, e.g. <code>(calculated)=\"onCalculated($event)\"</code>."
+   }
+  },
+  {
+   "noteId": 1789000601906,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a child component that emits a computed loan payment up to its parent?",
+    "Back": "<pre><code>@Component({ selector: 'app-payment' })\nexport class PaymentComponent {\n  @Input() principal: number;\n  @Output() calculated = new EventEmitter&lt;number&gt;();\n\n  compute() {\n    const payment = this.principal * 0.05;\n    this.calculated.emit(payment);\n  }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601907,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does Angular favor RxJS Observables for things like <code>HttpClient</code> responses?",
+    "Back": "Observables represent streams of async values over time and support composable operators (map, filter, switchMap, debounceTime) for transforming, combining, and cancelling async work."
+   }
+  },
+  {
+   "noteId": 1789000601908,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an Angular <code>HttpClient</code> call that fetches mortgage rates and subscribes to the result?",
+    "Back": "<pre><code>constructor(private http: HttpClient) {}\n\ngetRates(): void {\n  this.http.get&lt;Rate[]&gt;('/api/rates')\n    .subscribe(rates =&gt; this.rates = rates);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601909,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Which Angular lifecycle hook runs once, right after a component's inputs are first set and before the view renders?",
+    "Back": "<code>ngOnInit()</code> — commonly used to fetch initial data or set up subscriptions."
+   }
+  },
+  {
+   "noteId": 1789000601910,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Which Angular lifecycle hook should you use to clean up subscriptions and avoid memory leaks?",
+    "Back": "<code>ngOnDestroy()</code> — called just before the component is destroyed; typically used to call <code>.unsubscribe()</code> on RxJS subscriptions."
+   }
+  },
+  {
+   "noteId": 1789000601911,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is Zone.js's role in Angular's change detection?",
+    "Back": "Zone.js monkey-patches async browser APIs (setTimeout, DOM events, promises, XHR) so Angular is notified whenever async work finishes, letting it automatically trigger change detection to update the view."
+   }
+  },
+  {
+   "noteId": 1789000601912,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Angular's default change detection strategy, what triggers a check of a component's view?",
+    "Back": "Any async event Zone.js is aware of anywhere in the app (a DOM event, timer, HTTP response, promise resolution) causes Angular to run change detection through the whole component tree by default."
+   }
+  },
+  {
+   "noteId": 1789000601913,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does setting <code>changeDetection: ChangeDetectionStrategy.OnPush</code> do?",
+    "Back": "It tells Angular to only re-check that component when its <code>@Input()</code> references change, an event originates inside it, or it's marked dirty manually — reducing unnecessary checks for performance."
+   }
+  },
+  {
+   "noteId": 1789000601914,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a basic Angular route configuration for a loan calculator page?",
+    "Back": "<pre><code>const routes: Routes = [\n  { path: 'loan-calculator', component: LoanCalculatorComponent },\n  { path: '', redirectTo: 'loan-calculator', pathMatch: 'full' }\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule {}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601915,
+   "modelName": "Basic",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a BMO-style Mortgage & Loan Calculator built with Angular + Node.js on AWS, why use <code>debounceTime</code> on an RxJS stream of user rate-slider input before calling the calculation API?",
+    "Back": "It waits for the user to pause dragging or typing before emitting a value, avoiding an API request on every intermediate value and cutting unnecessary calculation calls."
+   }
+  },
+  {
+   "noteId": 1789000639856,
+   "modelName": "Cloze",
+   "tags": [
+    "angular",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Angular supports four data binding types: {{c1::interpolation}} (text via double curly braces), {{c2::property binding}} (square brackets, e.g. <code>[value]</code>), {{c3::event binding}} (parentheses, e.g. <code>(click)</code>), and {{c4::two-way binding}} ('banana in a box', e.g. <code>[(ngModel)]</code>).",
+    "Extra": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,267 @@
+{
+ "deck": "Resume Prep::C++",
+ "note_count": 20,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601586,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the core difference between a pointer and a reference in C++?",
+    "Back": "A reference must be bound at declaration, can never be null, and can never be rebound to alias a different object. A pointer can be reassigned, can be null, and requires explicit dereferencing (<code>*p</code>) to access the pointee."
+   }
+  },
+  {
+   "noteId": 1789000601587,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does RAII stand for, and what problem does it solve in C++?",
+    "Back": "Resource Acquisition Is Initialization — a resource (memory, file handle, lock) is acquired in a constructor and released in the destructor, so it's automatically freed when the owning object goes out of scope, even if an exception unwinds the stack."
+   }
+  },
+  {
+   "noteId": 1789000601588,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you write a minimal RAII wrapper around a raw <code>FILE*</code> handle in C++?",
+    "Back": "<pre><code>class FileGuard {\n    FILE* fp;\npublic:\n    explicit FileGuard(const char* path) : fp(fopen(path, \"r\")) {}\n    ~FileGuard() { if (fp) fclose(fp); }\n    FILE* get() const { return fp; }\n};</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601589,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the key ownership difference between <code>std::unique_ptr</code> and <code>std::shared_ptr</code>?",
+    "Back": "<code>unique_ptr</code> has sole, non-copyable ownership (move-only), with near-zero overhead over a raw pointer. <code>shared_ptr</code> uses atomic reference counting so multiple owners can share the object, which is freed only when the last <code>shared_ptr</code> is destroyed."
+   }
+  },
+  {
+   "noteId": 1789000601590,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you create a <code>std::unique_ptr&lt;Widget&gt;</code> and move ownership into a function taking it by value?",
+    "Back": "<pre><code>auto w = std::make_unique&lt;Widget&gt;(args);\ntakeOwnership(std::move(w));\n// w is now null; caller must not use it</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601591,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What memory-leak risk does <code>std::weak_ptr</code> solve when two objects hold <code>std::shared_ptr</code>s to each other?",
+    "Back": "A reference cycle between two <code>shared_ptr</code>s means their counts never reach zero, leaking both objects. <code>weak_ptr</code> holds a non-owning reference that doesn't affect the count; call <code>.lock()</code> to get a temporary <code>shared_ptr</code> only if the object is still alive."
+   }
+  },
+  {
+   "noteId": 1789000601592,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is an rvalue reference (<code>T&amp;&amp;</code>) used for in C++?",
+    "Back": "It binds to temporaries/movable values so a function overload can detect 'this object is about to be destroyed anyway' and steal (move) its internal resources instead of deep-copying them."
+   }
+  },
+  {
+   "noteId": 1789000601593,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you implement a move constructor for a class that owns a raw heap buffer <code>data</code> and size <code>len</code>?",
+    "Back": "<pre><code>MyBuf(MyBuf&amp;&amp; other) noexcept\n    : data(other.data), len(other.len) {\n    other.data = nullptr;\n    other.len = 0;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601594,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the Rule of Zero in C++?",
+    "Back": "Prefer composing a class entirely from members that already manage their own resources (smart pointers, containers, strings) so you never write any of the five special member functions — the compiler-generated versions are already correct."
+   }
+  },
+  {
+   "noteId": 1789000601595,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does declaring a custom destructor implicitly disable the compiler-generated move constructor in C++?",
+    "Back": "A user-declared destructor signals custom resource-management logic, so the compiler won't risk synthesizing a possibly-unsafe move constructor. Moves then silently fall back to copies unless you define the move constructor yourself (or explicitly <code>= default</code> it)."
+   }
+  },
+  {
+   "noteId": 1789000601596,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>const</code> on a C++ member function guarantee?",
+    "Back": "It promises not to modify any non-<code>mutable</code> member of the object — the implicit <code>this</code> becomes a pointer-to-const — which is what allows the function to be called on const instances and const references."
+   }
+  },
+  {
+   "noteId": 1789000601597,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Between <code>const int* p</code> and <code>int* const p</code>, which one is a pointer that cannot itself be reassigned (but may modify the pointed-to int)?",
+    "Back": "<code>int* const p</code> — the <code>const</code> binds to <code>p</code> itself. <code>const int* p</code> is the opposite: a reassignable pointer to a constant int."
+   }
+  },
+  {
+   "noteId": 1789000601598,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you declare a C++ function template that returns the larger of two values of any comparable type?",
+    "Back": "<pre><code>template &lt;typename T&gt;\nT max_of(const T&amp; a, const T&amp; b) {\n    return (a &gt; b) ? a : b;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601599,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a vtable in C++, and when does a class get one?",
+    "Back": "A per-class array of function pointers used to resolve virtual calls at runtime. A class gets a vtable (and each instance a hidden vptr) as soon as it declares or inherits at least one <code>virtual</code> function."
+   }
+  },
+  {
+   "noteId": 1789000601600,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why should a base class's destructor be <code>virtual</code> if you plan to <code>delete</code> a derived object through a base class pointer?",
+    "Back": "Without a virtual destructor, <code>delete basePtr</code> only invokes the base class's destructor and skips the derived class's cleanup — undefined behavior, typically a resource leak."
+   }
+  },
+  {
+   "noteId": 1789000601601,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the core tradeoff between stack and heap allocation in C++?",
+    "Back": "Stack: fixed size, automatic lifetime tied to scope, very fast (just a pointer bump), but limited (~MB). Heap: manually managed via <code>new</code>/<code>delete</code> or smart pointers, flexible size, slower due to allocator bookkeeping, lifetime independent of scope."
+   }
+  },
+  {
+   "noteId": 1789000601602,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Give an example of undefined behavior in C++ that the compiler is not required to diagnose.",
+    "Back": "Dereferencing a null or dangling pointer, signed integer overflow, or reading an uninitialized variable — the standard places no requirement on the outcome, so the compiler may optimize as if it never happens, sometimes with surprising results."
+   }
+  },
+  {
+   "noteId": 1789000601603,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you iterate a <code>std::vector&lt;int&gt;</code> and erase all even elements using the erase-remove idiom?",
+    "Back": "<pre><code>v.erase(\n    std::remove_if(v.begin(), v.end(),\n        [](int x) { return x % 2 == 0; }),\n    v.end());</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601604,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What STL container gives O(log n) sorted insertion/lookup, and which alternative gives O(1)-average lookup with no ordering guarantee?",
+    "Back": "<code>std::map</code>/<code>std::set</code> (red-black tree, O(log n), kept sorted). <code>std::unordered_map</code>/<code>std::unordered_set</code> give O(1) average via hashing but no ordering guarantee."
+   }
+  },
+  {
+   "noteId": 1789000639770,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "cpp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The Rule of Five says a class that manages a resource manually should typically define all of: {{c1::destructor}}, {{c2::copy constructor}}, {{c3::copy assignment operator}}, {{c4::move constructor}}, and {{c5::move assignment operator}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

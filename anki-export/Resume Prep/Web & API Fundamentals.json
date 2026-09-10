@@ -1,0 +1,254 @@
+{
+ "deck": "Resume Prep::Web & API Fundamentals",
+ "note_count": 19,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602719,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What does \"statelessness\" mean in REST?",
+    "Back": "Each request from client to server must contain all the information needed to understand and process it. The server keeps no client session state between requests."
+   }
+  },
+  {
+   "noteId": 1789000602720,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "At BMO, 20+ legacy APIs were modernized into serverless AWS Lambda functions behind API Gateway. Why does REST's statelessness constraint matter for that architecture?",
+    "Back": "Because no session state lives on any one server, any Lambda invocation (cold or warm, on any instance) can handle any request. That's what allows API Gateway + Lambda to scale horizontally on demand without sticky sessions or shared in-memory state."
+   }
+  },
+  {
+   "noteId": 1789000602721,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What's the key difference between PUT and PATCH?",
+    "Back": "PUT replaces the entire resource with the representation sent in the request body. PATCH applies a partial modification to the existing resource."
+   }
+  },
+  {
+   "noteId": 1789000602722,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What's the difference between HTTP 401 Unauthorized and 403 Forbidden?",
+    "Back": "401 means the request has no (or invalid) authentication credentials. 403 means the credentials are valid, but that identity isn't allowed to access the resource."
+   }
+  },
+  {
+   "noteId": 1789000602723,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "Why is JSON the dominant payload format for REST APIs, more than XML?",
+    "Back": "It's lightweight and maps directly onto native objects/arrays in JS and most languages, so it's cheap to parse and produces smaller payloads than the more verbose, tag-heavy XML format."
+   }
+  },
+  {
+   "noteId": 1789000602724,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What problem does CORS (Cross-Origin Resource Sharing) solve, and who enforces it?",
+    "Back": "<p>It lets a server explicitly allow a web page loaded from one origin (scheme+host+port) to make requests to a different origin, which browsers block by default (the same-origin policy).</p><p>CORS is enforced by the <b>browser</b>, not the server — the server just sends headers like <code>Access-Control-Allow-Origin</code>. For \"non-simple\" requests, the browser first sends an automatic <code>OPTIONS</code> preflight request to check permission before the real request.</p>"
+   }
+  },
+  {
+   "noteId": 1789000602725,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What three parts make up a JWT (JSON Web Token)?",
+    "Back": "<p>A base64url-encoded <b>Header</b>.<b>Payload</b>.<b>Signature</b>, dot-separated:</p><pre><code>eyJhbGciOiJIUzI1NiJ9.  &lt;- header (alg, type)\neyJzdWIiOiIxMjM0In0.    &lt;- payload (claims)\nSflKxwRJSMeKKF2QT4fw    &lt;- signature</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602726,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "How does a server trust a JWT's claims without a database lookup?",
+    "Back": "It recomputes the signature over the header+payload using its secret (HMAC) or public key (RSA/ECDSA) and checks it matches the token's signature. If it matches, the header and payload haven't been tampered with since they were signed."
+   }
+  },
+  {
+   "noteId": 1789000602727,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "Architecturally, what's the core difference between session-based auth and token-based (JWT) auth?",
+    "Back": "Sessions store state server-side (a session ID maps to data in memory or a shared store), requiring a lookup on every request and often sticky routing. JWTs are self-contained and stateless — any server instance can validate one on its own, which fits horizontally-scaled/serverless APIs better."
+   }
+  },
+  {
+   "noteId": 1789000602728,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What's a security trade-off of storing a JWT in localStorage vs. an httpOnly cookie?",
+    "Back": "localStorage is readable by any JavaScript on the page, so an XSS bug can steal the token. An httpOnly cookie can't be read by JS (mitigating XSS theft) but is sent automatically by the browser, making it vulnerable to CSRF unless mitigated (e.g. SameSite, CSRF tokens)."
+   }
+  },
+  {
+   "noteId": 1789000602729,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What does HTTPS add on top of plain HTTP, and how is the connection secured?",
+    "Back": "TLS encryption of the traffic. The TLS handshake uses asymmetric crypto (the server's certificate/public key) to safely negotiate a symmetric session key, which then encrypts the actual data — giving confidentiality, integrity, and server authentication."
+   }
+  },
+  {
+   "noteId": 1789000602730,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "What is the purpose of API rate limiting?",
+    "Back": "To cap how many requests a client can make in a given time window, protecting the backend from overload/abuse and keeping usage fair across clients (often returning 429 Too Many Requests once exceeded)."
+   }
+  },
+  {
+   "noteId": 1789000602731,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "Name two common ways to version a REST API.",
+    "Back": "URI versioning (e.g. <code>/v1/orders</code>, <code>/v2/orders</code>) or header-based versioning (e.g. a custom <code>Api-Version</code> header or an <code>Accept</code> media-type parameter), so breaking changes don't disrupt existing clients."
+   }
+  },
+  {
+   "noteId": 1789000602732,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "Authentication",
+    "Back": "Verifying <i>who</i> a user or system is — confirming identity (e.g. via password, token, certificate)."
+   }
+  },
+  {
+   "noteId": 1789000602733,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Front": "Authorization",
+    "Back": "Verifying <i>what</i> an already-authenticated identity is allowed to do — checking permissions/access rights."
+   }
+  },
+  {
+   "noteId": 1789000640064,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Text": "REST's architectural constraints include: {{c1::client-server}} separation, {{c2::statelessness}}, {{c3::cacheability}}, a {{c4::uniform interface}}, and a {{c5::layered system}}.",
+    "Extra": "An optional sixth constraint is 'code on demand' (rarely used in practice)."
+   }
+  },
+  {
+   "noteId": 1789000640065,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Text": "Idempotent HTTP methods (repeating the request leaves the server in the same state as doing it once): {{c1::GET}}, {{c2::PUT}}, {{c3::DELETE}}, {{c4::HEAD}}. {{c5::POST}} is generally NOT idempotent.",
+    "Extra": "PATCH is also generally not idempotent, since it can apply an incremental change (e.g. \"increment counter by 1\") that produces a different result each time it's repeated."
+   }
+  },
+  {
+   "noteId": 1789000640066,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Text": "HTTP status code ranges: {{c1::2xx}} = success, {{c2::3xx}} = redirection, {{c3::4xx}} = client error, {{c4::5xx}} = server error.",
+    "Extra": "A REST API creating a resource via POST should return 201 Created, with a Location header pointing at the new resource's URI."
+   }
+  },
+  {
+   "noteId": 1789000640067,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "web-fundamentals"
+   ],
+   "fields": {
+    "Text": "Common HTTP headers: {{c1::Authorization}} carries credentials such as a Bearer token; {{c2::Content-Type}} describes the media type of the request/response body (e.g. application/json); {{c3::Accept}} tells the server what response format(s) the client can handle.",
+    "Extra": ""
+   }
+  }
+ ]
+}

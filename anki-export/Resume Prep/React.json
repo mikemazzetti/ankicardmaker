@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::React",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601871,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is JSX in React?",
+    "Back": "A syntax extension that lets you write HTML-like markup inside JavaScript; it compiles to <code>React.createElement()</code> calls."
+   }
+  },
+  {
+   "noteId": 1789000601872,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a functional React component that displays a greeting for a <code>name</code> prop?",
+    "Back": "<pre><code>function Greeting({ name }) {\n  return &lt;h1&gt;Hello, {name}!&lt;/h1&gt;;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601873,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In React, what's the core difference between props and state?",
+    "Back": "Props are read-only data passed from a parent to configure a component; state is data owned and managed inside a component that can change over time and triggers a re-render when updated."
+   }
+  },
+  {
+   "noteId": 1789000601874,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a component that increments a counter on button click using <code>useState</code>?",
+    "Back": "<pre><code>function Counter() {\n  const [count, setCount] = useState(0);\n  return (\n    &lt;button onClick={() =&gt; setCount(c =&gt; c + 1)}&gt;\n      {count}\n    &lt;/button&gt;\n  );\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601875,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the dependency array argument to <code>useEffect</code> control?",
+    "Back": "When the effect re-runs: an empty array <code>[]</code> runs it once on mount; omitting the array runs it after every render; listing values re-runs it whenever any of those values change."
+   }
+  },
+  {
+   "noteId": 1789000601876,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a <code>useEffect</code> that subscribes to a window resize event and cleans up on unmount?",
+    "Back": "<pre><code>useEffect(() => {\n  const onResize = () => setWidth(window.innerWidth);\n  window.addEventListener('resize', onResize);\n  return () => window.removeEventListener('resize', onResize);\n}, []);</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601877,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What common bug happens when a <code>useEffect</code> reads a state variable but omits it from the dependency array?",
+    "Back": "A 'stale closure': the effect keeps using the value from the render it was created in, so it never sees later updates to that variable until something else forces a re-run."
+   }
+  },
+  {
+   "noteId": 1789000601878,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What problem does <code>useMemo</code> solve?",
+    "Back": "It memoizes the result of an expensive computation, recomputing it only when its dependencies change, avoiding unnecessary recalculation on every render."
+   }
+  },
+  {
+   "noteId": 1789000601879,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What problem does <code>useCallback</code> solve?",
+    "Back": "It memoizes a function reference itself so it isn't recreated on every render, preventing unnecessary re-renders of child components that receive it as a prop (e.g. with <code>React.memo</code>)."
+   }
+  },
+  {
+   "noteId": 1789000601880,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the virtual DOM in React?",
+    "Back": "An in-memory, lightweight representation of the real DOM tree that React updates first; React then diffs it against the previous version (reconciliation) to compute the minimal set of real DOM mutations needed."
+   }
+  },
+  {
+   "noteId": 1789000601881,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does React require a stable, unique <code>key</code> prop when rendering a list of elements?",
+    "Back": "Keys let React's reconciler match array items between renders so it can detect insertions, removals, and reorders correctly instead of mismatching or needlessly re-creating DOM nodes."
+   }
+  },
+  {
+   "noteId": 1789000601882,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's a common pitfall of using the array index as a React list <code>key</code>?",
+    "Back": "If the list is reordered, filtered, or items are inserted/removed, indices shift and no longer identify the same item, causing React to reuse DOM nodes/state for the wrong items."
+   }
+  },
+  {
+   "noteId": 1789000601883,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a controlled text input in React?",
+    "Back": "<pre><code>function NameInput() {\n  const [value, setValue] = useState('');\n  return (\n    &lt;input\n      value={value}\n      onChange={e =&gt; setValue(e.target.value)}\n    /&gt;\n  );\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601884,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What makes an input 'controlled' vs 'uncontrolled' in React?",
+    "Back": "A controlled input's value is driven by React state via the <code>value</code> prop and updated through <code>onChange</code>; an uncontrolled input manages its own value in the DOM and is read via a <code>ref</code>."
+   }
+  },
+  {
+   "noteId": 1789000601885,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is 'lifting state up' in React?",
+    "Back": "Moving shared state from child components to their closest common ancestor so multiple sibling components can read and update the same data via props."
+   }
+  },
+  {
+   "noteId": 1789000601886,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code sharing a value with deeply nested components without prop drilling, using Context?",
+    "Back": "<pre><code>const ThemeContext = createContext('light');\n\nfunction App() {\n  return (\n    &lt;ThemeContext.Provider value=\"dark\"&gt;\n      &lt;Toolbar /&gt;\n    &lt;/ThemeContext.Provider&gt;\n  );\n}\n\nfunction Toolbar() {\n  const theme = useContext(ThemeContext);\n  return &lt;div&gt;{theme}&lt;/div&gt;;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000639847,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In React, calling {{c1::useState}} returns a pair: the current state value and a function to update it, e.g. <code>const [count, setCount] = useState(0);</code>",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639848,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "react",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The Rules of Hooks state you must only call hooks at the {{c1::top level}} of a component (never inside loops, conditions, or nested functions), and only from {{c2::React function components or custom hooks}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

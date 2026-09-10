@@ -1,0 +1,4386 @@
+{
+ "deck": "Mandarin: Vocabulary::a. HSK::HSK 2",
+ "note_count": 151,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1393817665800,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "151",
+    "Simplified": "就",
+    "Traditional": "就",
+    "Pinyin.1": "jiù",
+    "Pinyin.2": "jiu4",
+    "Meaning": "then; at once; just; only; with regard to",
+    "Part of speech": "adverb",
+    "Audio": "[sound:jiu4.mp3]",
+    "Homophone": "旧，救",
+    "Homograph": "",
+    "SentenceSimplified": "要是你不来，我<b>就</b>跟你分手。",
+    "SentenceTraditional": "要是你不來，我<b>就</b>跟你分手。",
+    "SentenceSimplifiedCloze": "要是你不来，我[ ]跟你分手。",
+    "SentenceTraditionalCloze": "要是你不來，我[ ]跟你分手。",
+    "SentencePinyin.1": "Yàoshi nǐ bù lái, wǒ jiù gēn nǐ fēnshǒu.",
+    "SentencePinyin.2": "Yao4shi ni3 bu4 lai2, wo3 jiu4 gen1 ni3 fen1shou3.",
+    "SentenceMeaning": "If you don't come, I am going to break up with you.",
+    "SentenceAudio": "[sound:tmpriwxfg.mp3]",
+    "SentenceImage": "<img src=\"5923759.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665801,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "152",
+    "Simplified": "要",
+    "Traditional": "要",
+    "Pinyin.1": "yào",
+    "Pinyin.2": "yao4",
+    "Meaning": "to want; to need; will/shall; important",
+    "Part of speech": "verb",
+    "Audio": "[sound:yao4.mp3]",
+    "Homophone": "药",
+    "Homograph": "",
+    "SentenceSimplified": "<div>吃饭前<b>要</b>洗手。</div>",
+    "SentenceTraditional": "<div>吃飯前<b>要</b>洗手。</div>",
+    "SentenceSimplifiedCloze": "吃饭前[ ]洗手。",
+    "SentenceTraditionalCloze": "吃飯前[ ]洗手。",
+    "SentencePinyin.1": "<div>Chīfàn qián yào xǐshǒu.</div>",
+    "SentencePinyin.2": "<div>Chi1fan4 qian2 yao4 xi3shou3.</div>",
+    "SentenceMeaning": "<div>We have to wash our hands before eating.</div>",
+    "SentenceAudio": "<div>[sound:tmp8vkdtb.mp3]</div>",
+    "SentenceImage": "<img src=\"3318652.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665802,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "153",
+    "Simplified": "知道",
+    "Traditional": "知道",
+    "Pinyin.1": "zhīdao",
+    "Pinyin.2": "zhi1dao5",
+    "Meaning": "know; be aware of",
+    "Part of speech": "verb",
+    "Audio": "[sound:zhi1dao.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我不<b>知道</b>这件事。",
+    "SentenceTraditional": "我不<b>知道</b>這件事。",
+    "SentenceSimplifiedCloze": "我不[ ]这件事。",
+    "SentenceTraditionalCloze": "我不[ ]這件事。",
+    "SentencePinyin.1": "Wǒ bù zhīdào zhè jiàn shì.",
+    "SentencePinyin.2": "Wo3 bu4 zhi1dao4 zhe4 jian4 shi4.",
+    "SentenceMeaning": "I didn't know about that.",
+    "SentenceAudio": "[sound:tmpjw7qin.mp3]",
+    "SentenceImage": "<img src=\"4434465.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665803,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "154",
+    "Simplified": "吧",
+    "Traditional": "吧",
+    "Pinyin.1": "ba",
+    "Pinyin.2": "ba5",
+    "Meaning": "particle indicating polite suggestion",
+    "Part of speech": "modal particle",
+    "Audio": "[sound:ba.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "时间很晚了，我们回家<b>吧</b>！",
+    "SentenceTraditional": "時間很晚了，我們回家<b>吧</b>！",
+    "SentenceSimplifiedCloze": "时间很晚了，我们回家[ ]！",
+    "SentenceTraditionalCloze": "時間很晚了，我們回家[ ]！",
+    "SentencePinyin.1": "Shíjiān hěn wǎn le, wǒmen huíjiā ba!",
+    "SentencePinyin.2": "Shi2jian1 hen3 wan3 le, wo3men hui2jia1 ba!",
+    "SentenceMeaning": "It's very late, so let's go home!",
+    "SentenceAudio": "[sound:part1s950.mp3]",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665804,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "155",
+    "Simplified": "到",
+    "Traditional": "到",
+    "Pinyin.1": "dào",
+    "Pinyin.2": "dao4",
+    "Meaning": "arrive (at a place); until (a time)",
+    "Part of speech": "verb",
+    "Audio": "[sound:dao4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>火车<b>到</b>站了。</div>",
+    "SentenceTraditional": "<div>火車<b>到</b>站了。</div>",
+    "SentenceSimplifiedCloze": "火车[ ]站了。",
+    "SentenceTraditionalCloze": "火車[ ]站了。",
+    "SentencePinyin.1": "<div>Huǒchē dàozhàn le.</div>",
+    "SentencePinyin.2": "<div>Huo3che1 dao4zhan4 le.</div>",
+    "SentenceMeaning": "<div>The train arrived in the station.</div>",
+    "SentenceAudio": "<div>[sound:part1s860.mp3]</div>",
+    "SentenceImage": "<img src=\"bl3c8jdu6p8ns.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665805,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "156",
+    "Simplified": "对",
+    "Traditional": "對",
+    "Pinyin.1": "duì",
+    "Pinyin.2": "dui4",
+    "Meaning": "correct; a pair; to face; be opposite; to; towards",
+    "Part of speech": "preposition",
+    "Audio": "[sound:dui4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "你做<b>对</b>了。",
+    "SentenceTraditional": "你做<b>對</b>了。",
+    "SentenceSimplifiedCloze": "你做[ ]了。",
+    "SentenceTraditionalCloze": "你做[ ]了。",
+    "SentencePinyin.1": "Nǐ zuòduì le.",
+    "SentencePinyin.2": "Ni3 zuo4dui4 le.",
+    "SentenceMeaning": "You've done the right thing.",
+    "SentenceAudio": "[sound:tmp2spnti.mp3]",
+    "SentenceImage": "<img src=\"3904902.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665806,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "157",
+    "Simplified": "也",
+    "Traditional": "也",
+    "Pinyin.1": "yě",
+    "Pinyin.2": "ye3",
+    "Meaning": "also; too",
+    "Part of speech": "adverb",
+    "Audio": "[sound:ye3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我<b>也</b>喜欢看书。",
+    "SentenceTraditional": "我<b>也</b>喜歡看書。",
+    "SentenceSimplifiedCloze": "我[ ]喜欢看书。",
+    "SentenceTraditionalCloze": "我[ ]喜歡看書。",
+    "SentencePinyin.1": "Wǒ yě xǐhuan kànshū.",
+    "SentencePinyin.2": "Wo3 ye3 xi3huan kan4shu1.",
+    "SentenceMeaning": "I also like to read.",
+    "SentenceAudio": "[sound:part1s36.mp3]",
+    "SentenceImage": "<img src=\"8lbccjfu1403s.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665807,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "158",
+    "Simplified": "还",
+    "Traditional": "還",
+    "Pinyin.1": "hái",
+    "Pinyin.2": "hai2",
+    "Meaning": "still; yet; in addition; even",
+    "Part of speech": "adverb",
+    "Audio": "[sound:hai2.mp3]",
+    "Homophone": "",
+    "Homograph": "homograph",
+    "SentenceSimplified": "<div>我<b>还</b>没吃饭。</div>",
+    "SentenceTraditional": "<div>我<b>還</b>沒吃飯。</div>",
+    "SentenceSimplifiedCloze": "我[ ]没吃饭。",
+    "SentenceTraditionalCloze": "我[ ]沒吃飯。",
+    "SentencePinyin.1": "<div>Wǒ hái méi chīfàn.</div>",
+    "SentencePinyin.2": "<div>Wo3 hai2 mei2 chi1fan4.</div>",
+    "SentenceMeaning": "<div>I haven't eaten yet.</div>",
+    "SentenceAudio": "<div>[sound:part1s872.mp3]</div>",
+    "SentenceImage": "<img src=\"5lec2jeu7kaf0.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665808,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "159",
+    "Simplified": "让",
+    "Traditional": "讓",
+    "Pinyin.1": "ràng",
+    "Pinyin.2": "rang4",
+    "Meaning": "let, allow",
+    "Part of speech": "verb",
+    "Audio": "[sound:rang4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><b>让</b>我来回答这个问题。</div>",
+    "SentenceTraditional": "<div><b>讓</b>我來回答這個問題。</div>",
+    "SentenceSimplifiedCloze": "[ ]我来回答这个问题。",
+    "SentenceTraditionalCloze": "[ ]我來回答這個問題。",
+    "SentencePinyin.1": "<div>Ràng wǒ lái huídá zhège wèntí.</div>",
+    "SentencePinyin.2": "<div>Rang4 wo3 lai2 hui2da2 zhe4ge wen4ti2.</div>",
+    "SentenceMeaning": "<div>Let me answer this question.</div>",
+    "SentenceAudio": "<div>[sound:tmp1bivca.mp3]</div>",
+    "SentenceImage": "<img src=\"5976585.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665809,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "160",
+    "Simplified": "给",
+    "Traditional": "給",
+    "Pinyin.1": "gěi",
+    "Pinyin.2": "gei3",
+    "Meaning": "to give; to grant; (passive particle)",
+    "Part of speech": "preposition",
+    "Audio": "[sound:gei3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "请<b>给</b>我一杯酒。",
+    "SentenceTraditional": "請<b>給</b>我一杯酒。",
+    "SentenceSimplifiedCloze": "请[ ]我一杯酒。",
+    "SentenceTraditionalCloze": "請[ ]我一杯酒。",
+    "SentencePinyin.1": "Qǐng gěi wǒ yī bēi jiǔ.",
+    "SentencePinyin.2": "Qing3 gei3 wo3 yi1 bei1 jiu3.",
+    "SentenceMeaning": "Please give me a glass of wine.",
+    "SentenceAudio": "[sound:tmpqcwvj8.mp3]",
+    "SentenceImage": "<img src=\"672607.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665810,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "161",
+    "Simplified": "过",
+    "Traditional": "過",
+    "Pinyin.1": "guo",
+    "Pinyin.2": "guo",
+    "Meaning": "indicates a past experience",
+    "Part of speech": "auxiliary",
+    "Audio": "[sound:guo.mp3]",
+    "Homophone": "",
+    "Homograph": "homograph",
+    "SentenceSimplified": "<div><div><div><div><div>我去<b>过</b>北京。</div></div></div></div></div>",
+    "SentenceTraditional": "<div><div><div><div>我去<b>過</b>北京。</div></div></div></div>",
+    "SentenceSimplifiedCloze": "<div>我去[ ]北京。</div>",
+    "SentenceTraditionalCloze": "我去[ ]北京。",
+    "SentencePinyin.1": "<div><div><div><div>Wǒ qùguò Běijīng.</div></div></div></div>",
+    "SentencePinyin.2": "<div><div><div>Wo3 qu4guo4 Bei3jing1.</div></div></div>",
+    "SentenceMeaning": "<div><div><div><div>I've been to Beijing.</div></div></div></div>",
+    "SentenceAudio": "<div><div><div>[sound:tmpw3i8cv.mp3]</div></div></div>",
+    "SentenceImage": "<img src=\"5488390.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665811,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "162",
+    "Simplified": "得",
+    "Traditional": "得",
+    "Pinyin.1": "de",
+    "Pinyin.2": "de5",
+    "Meaning": "used to link a verb and the manner clause that follows it",
+    "Part of speech": "auxiliary",
+    "Audio": "[sound:de.mp3]",
+    "Homophone": "的",
+    "Homograph": "homograph",
+    "SentenceSimplified": "你做<b>得</b>很好。",
+    "SentenceTraditional": "你做<b>得</b>很好。",
+    "SentenceSimplifiedCloze": "你做[ ]很好。",
+    "SentenceTraditionalCloze": "你做[ ]很好。",
+    "SentencePinyin.1": "Nǐ zuò de hěn hǎo.",
+    "SentencePinyin.2": "Ni3 zuo4 de hen3 hao3.",
+    "SentenceMeaning": "You've done great.",
+    "SentenceAudio": "[sound:tmpzbp6hb.mp3]",
+    "SentenceImage": "<img src=\"4839396.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665812,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "163",
+    "Simplified": "真",
+    "Traditional": "真",
+    "Pinyin.1": "zhēn",
+    "Pinyin.2": "zhen1",
+    "Meaning": "real; true; genuine",
+    "Part of speech": "adverb",
+    "Audio": "[sound:zhen1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div><div>海边的风景<b>真</b>美。</div></div></div>",
+    "SentenceTraditional": "<div><div>海邊的風景<b>真</b>美。</div></div>",
+    "SentenceSimplifiedCloze": "海边的风景[ ]美。",
+    "SentenceTraditionalCloze": "海邊的風景[ ]美。",
+    "SentencePinyin.1": "<div><div>Hǎibiān de fēngjǐng zhēn měi.</div></div>",
+    "SentencePinyin.2": "<div>Hai3bian1 de feng1jing3 zhen1 mei3.</div>",
+    "SentenceMeaning": "<div>The scenery by the seaside is really beautiful.</div>",
+    "SentenceAudio": "<div>[sound:tmpo1xsja.mp3]</div>",
+    "SentenceImage": "<img src=\"5524711.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665813,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "164",
+    "Simplified": "着",
+    "Traditional": "著",
+    "Pinyin.1": "zhe",
+    "Pinyin.2": "zhe5",
+    "Meaning": "ing (indicating action in progress)",
+    "Part of speech": "auxiliary",
+    "Audio": "[sound:zhe.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "屋外下<b>着</b>雪。",
+    "SentenceTraditional": "屋外下<b>著</b>雪。",
+    "SentenceSimplifiedCloze": "屋外下[ ]雪。",
+    "SentenceTraditionalCloze": "屋外下[ ]雪。",
+    "SentencePinyin.1": "Wūwài xiàzhe xuě.",
+    "SentencePinyin.2": "Wu1wai4 xia4zhe xue3.",
+    "SentenceMeaning": "It's snowing outside.",
+    "SentenceAudio": "[sound:tmprc69sw.mp3]",
+    "SentenceImage": "<img src=\"5161919.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665814,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "165",
+    "Simplified": "可以",
+    "Traditional": "可以",
+    "Pinyin.1": "kěyǐ",
+    "Pinyin.2": "ke3yi3",
+    "Meaning": "can; may; possible; okay",
+    "Part of speech": "verb",
+    "Audio": "[sound:ke3yi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这部手机<b>可以</b>拨打国际电话。",
+    "SentenceTraditional": "這部手機<b>可以</b>撥打國際電話。",
+    "SentenceSimplifiedCloze": "这部手机[ ]拨打国际电话。",
+    "SentenceTraditionalCloze": "這部手機[ ]撥打國際電話。",
+    "SentencePinyin.1": "Zhè bù shǒujī kěyǐ bōdǎ guójì diànhuà.",
+    "SentencePinyin.2": "Zhe4 bu4 shou3ji1 ke3yi3 bo1da3 guo2ji4 dian4hua4.",
+    "SentenceMeaning": "This cell phone can make international calls.",
+    "SentenceAudio": "[sound:tmpbtfbgh.mp3]",
+    "SentenceImage": "<img src=\"3201992.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665815,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "166",
+    "Simplified": "别",
+    "Traditional": "別",
+    "Pinyin.1": "bié",
+    "Pinyin.2": "bie2",
+    "Meaning": "don't do something; don't",
+    "Part of speech": "adverb",
+    "Audio": "[sound:bie2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div><b>别</b>担心。</div></div>",
+    "SentenceTraditional": "<div><div><b>別</b>擔心。</div></div>",
+    "SentenceSimplifiedCloze": "[ ]担心。",
+    "SentenceTraditionalCloze": "[ ]擔心。",
+    "SentencePinyin.1": "<div><div>Bié dānxīn.</div></div>",
+    "SentencePinyin.2": "<div><div>Bie2 dan1xin1.</div></div>",
+    "SentenceMeaning": "<div><div>Don't worry!</div></div>",
+    "SentenceAudio": "<div><div><div><div><div>[sound:tmphun9kp.mp3]</div></div></div></div></div>",
+    "SentenceImage": "<img src=\"2750910.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665816,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "167",
+    "Simplified": "走",
+    "Traditional": "走",
+    "Pinyin.1": "zǒu",
+    "Pinyin.2": "zou3",
+    "Meaning": "to walk; to go; to move (Kangxi radical 156)",
+    "Part of speech": "verb",
+    "Audio": "[sound:zou3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>他<b>走</b>路上班。</div>",
+    "SentenceTraditional": "<div>他<b>走</b>路上班。</div>",
+    "SentenceSimplifiedCloze": "他[ ]路上班。",
+    "SentenceTraditionalCloze": "他[ ]路上班。",
+    "SentencePinyin.1": "<div>Tā zǒulù shàngbān.</div>",
+    "SentencePinyin.2": "<div><div>Ta1 zou3lu4 shang4ban1.</div></div>",
+    "SentenceMeaning": "<div>He commutes to work on foot.</div>",
+    "SentenceAudio": "<div>[sound:part1s279.mp3]</div>",
+    "SentenceImage": "<img src=\"5l2c6j0u8ejos.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665817,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "168",
+    "Simplified": "告诉",
+    "Traditional": "告訴",
+    "Pinyin.1": "gàosu",
+    "Pinyin.2": "gao4su5",
+    "Meaning": "to tell; inform",
+    "Part of speech": "verb",
+    "Audio": "[sound:gao4su.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "请<b>告诉</b>我答案。",
+    "SentenceTraditional": "請<b>告訴</b>我答案。",
+    "SentenceSimplifiedCloze": "请[ ]我答案。",
+    "SentenceTraditionalCloze": "請[ ]我答案。",
+    "SentencePinyin.1": "Qǐng gàosu wǒ dá'àn.",
+    "SentencePinyin.2": "Qing3 gao4su wo3 da2'an4.",
+    "SentenceMeaning": "Please tell me the answer.",
+    "SentenceAudio": "[sound:part1s348.mp3]",
+    "SentenceImage": "<img src=\"6laf0h9v9he3c.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665818,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "169",
+    "Simplified": "因为",
+    "Traditional": "因為",
+    "Pinyin.1": "yīnwèi",
+    "Pinyin.2": "yin1wei4",
+    "Meaning": "because",
+    "Part of speech": "preposition",
+    "Audio": "[sound:yin1wei4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>因为</b>我病了，所以没去上学。",
+    "SentenceTraditional": "<b>因為</b>我病了，所以沒去上學。",
+    "SentenceSimplifiedCloze": "[ ]我病了，所以没去上学。",
+    "SentenceTraditionalCloze": "[ ]我病了，所以沒去上學。",
+    "SentencePinyin.1": "Yīnwèi wǒ bìng le, suǒyǐ méi qù shàngxué.",
+    "SentencePinyin.2": "Yin1wei4 wo3 bing4 le, suo3yi3 mei2 qu4 shang4xue2.",
+    "SentenceMeaning": "I didn't go to school because I got sick.",
+    "SentenceAudio": "[sound:part1s915.mp3]",
+    "SentenceImage": "<img src=\"0l7c4j4tver24.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665819,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "170",
+    "Simplified": "再",
+    "Traditional": "再",
+    "Pinyin.1": "zài",
+    "Pinyin.2": "zai4",
+    "Meaning": "again; once more",
+    "Part of speech": "adverb",
+    "Audio": "[sound:zai4.mp3]",
+    "Homophone": "在",
+    "Homograph": "",
+    "SentenceSimplified": "请你<b>再</b>说一遍。",
+    "SentenceTraditional": "請你<b>再</b>說一遍。",
+    "SentenceSimplifiedCloze": "请你[ ]说一遍。",
+    "SentenceTraditionalCloze": "請你[ ]說一遍。",
+    "SentencePinyin.1": "Qǐng nǐ zài shuō yí biàn.",
+    "SentencePinyin.2": "Qing3 ni3 zai4 shuo1 yi2 bian4.",
+    "SentenceMeaning": "Can you please say it again.",
+    "SentenceAudio": "[sound:part1s151.mp3]",
+    "SentenceImage": "<img src=\"1lffbh2vf80jc.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665820,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "171",
+    "Simplified": "快",
+    "Traditional": "快",
+    "Pinyin.1": "kuài",
+    "Pinyin.2": "kuai4",
+    "Meaning": "fast; quick; swift",
+    "Part of speech": "adjective",
+    "Audio": "[sound:kuai4.mp3]",
+    "Homophone": "块",
+    "Homograph": "",
+    "SentenceSimplified": "<div>他写字很<b>快</b>。</div>",
+    "SentenceTraditional": "<div>他寫字很<b>快</b>。</div>",
+    "SentenceSimplifiedCloze": "<div>他写字很[ ]。</div>",
+    "SentenceTraditionalCloze": "他寫字很[ ]。",
+    "SentencePinyin.1": "<div><div>Tā xiě zì hěn kuài.</div></div>",
+    "SentencePinyin.2": "<div><div>Ta1 xie3 zi4 hen3 kuai4.</div></div>",
+    "SentenceMeaning": "<div>He writes very quickly.</div>",
+    "SentenceAudio": "<div>[sound:part1s89.mp3]</div>",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665821,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "172",
+    "Simplified": "但是",
+    "Traditional": "但是",
+    "Pinyin.1": "dànshì",
+    "Pinyin.2": "dan4shi4",
+    "Meaning": "but; however",
+    "Part of speech": "conjunction",
+    "Audio": "[sound:dan4shi4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "雨很大，<b>但是</b>他还是出门了。",
+    "SentenceTraditional": "雨很大，<b>但是</b>他還是出門了。",
+    "SentenceSimplifiedCloze": "雨很大，[ ]他还是出门了。",
+    "SentenceTraditionalCloze": "雨很大，[ ]他還是出門了。",
+    "SentencePinyin.1": "Yǔ hěn dà, dànshì tā háishi chūmén le.",
+    "SentencePinyin.2": "Yu3 hen3 da4, dan4shi4 ta1 hai2shi chu1men2 le.",
+    "SentenceMeaning": "He went out though it was raining heavily.",
+    "SentenceAudio": "[sound:part1s913.mp3]",
+    "SentenceImage": "<img src=\"fl4cbj9u9vk34.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665822,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "173",
+    "Simplified": "已经",
+    "Traditional": "已經",
+    "Pinyin.1": "yǐjing",
+    "Pinyin.2": "yi3jing5",
+    "Meaning": "already",
+    "Part of speech": "adverb",
+    "Audio": "[sound:yi3jing.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>已经</b>五点了。",
+    "SentenceTraditional": "<b>已經</b>五點了。",
+    "SentenceSimplifiedCloze": "[ ]五点了。",
+    "SentenceTraditionalCloze": "[ ]五點了。",
+    "SentencePinyin.1": "Yǐjing wǔ diǎn le.",
+    "SentencePinyin.2": "Yi3jing wu3 dian3 le.",
+    "SentenceMeaning": "It's already five o'clock.",
+    "SentenceAudio": "[sound:tmpdag6hd.mp3]",
+    "SentenceImage": "<img src=\"4917415.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665823,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "174",
+    "Simplified": "为什么",
+    "Traditional": "為什麼",
+    "Pinyin.1": "wèishénme",
+    "Pinyin.2": "wei4shen2me5",
+    "Meaning": "why?; for what reason?",
+    "Part of speech": "pronoun",
+    "Audio": "[sound:wei4shen2me.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>为什么</b>？",
+    "SentenceTraditional": "<b>為什麼</b>？",
+    "SentenceSimplifiedCloze": "[ ]？",
+    "SentenceTraditionalCloze": "[ ]？",
+    "SentencePinyin.1": "Wèishénme?",
+    "SentencePinyin.2": "Wei4shen2me?",
+    "SentenceMeaning": "Why?",
+    "SentenceAudio": "[sound:tmpmwmxhf.mp3]",
+    "SentenceImage": "<img src=\"2098320.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665824,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "175",
+    "Simplified": "觉得",
+    "Traditional": "覺得",
+    "Pinyin.1": "juéde",
+    "Pinyin.2": "jue2de5",
+    "Meaning": "feel; think",
+    "Part of speech": "verb",
+    "Audio": "[sound:jue2de.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她<b>觉得</b>很累。",
+    "SentenceTraditional": "她<b>覺得</b>很累。",
+    "SentenceSimplifiedCloze": "她[ ]很累。",
+    "SentenceTraditionalCloze": "她[ ]很累。",
+    "SentencePinyin.1": "Tā juéde hěn lèi.",
+    "SentencePinyin.2": "Ta1 jue2de hen3 lei4.",
+    "SentenceMeaning": "She feels very tired.",
+    "SentenceAudio": "[sound:tmp6ztpbn.mp3]",
+    "SentenceImage": "<img src=\"5226400.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665825,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "176",
+    "Simplified": "它",
+    "Traditional": "它",
+    "Pinyin.1": "tā",
+    "Pinyin.2": "ta1",
+    "Meaning": "it",
+    "Part of speech": "pronoun",
+    "Audio": "[sound:ta1.mp3]",
+    "Homophone": "他，她，塌",
+    "Homograph": "",
+    "SentenceSimplified": "<b>它</b>是我的猫。",
+    "SentenceTraditional": "牠是我的貓。",
+    "SentenceSimplifiedCloze": "[ ]是我的猫。",
+    "SentenceTraditionalCloze": "牠是我的貓。",
+    "SentencePinyin.1": "Tā shì wǒ de māo.",
+    "SentencePinyin.2": "Ta1 shi4 wo3 de mao1.",
+    "SentenceMeaning": "It's my cat.",
+    "SentenceAudio": "[sound:tmpjdgif8.mp3]",
+    "SentenceImage": "<img src=\"4873917.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665826,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "177",
+    "Simplified": "从",
+    "Traditional": "從",
+    "Pinyin.1": "cóng",
+    "Pinyin.2": "cong2",
+    "Meaning": "from; obey; observe",
+    "Part of speech": "preposition",
+    "Audio": "[sound:cong2.mp3]",
+    "Homophone": "丛",
+    "Homograph": "",
+    "SentenceSimplified": "我<b>从</b>美国来。",
+    "SentenceTraditional": "我<b>從</b>美國來。",
+    "SentenceSimplifiedCloze": "我[ ]美国来。",
+    "SentenceTraditionalCloze": "我[ ]美國來。",
+    "SentencePinyin.1": "Wǒ cóng Měiguó lái.",
+    "SentencePinyin.2": "Wo3 cong2 Mei3guo2 lai2.",
+    "SentenceMeaning": "I'm from America.",
+    "SentenceAudio": "[sound:tmpl9feqn.mp3]",
+    "SentenceImage": "<img src=\"3700475.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665827,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "178",
+    "Simplified": "找",
+    "Traditional": "找",
+    "Pinyin.1": "zhǎo",
+    "Pinyin.2": "zhao3",
+    "Meaning": "try to find; look for; seek; to give change",
+    "Part of speech": "verb",
+    "Audio": "[sound:zhao3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>我去图书馆<b>找</b>资料。</div></div>",
+    "SentenceTraditional": "<div><div>我去圖書館<b>找</b>資料。</div></div>",
+    "SentenceSimplifiedCloze": "我去图书馆[ ]资料。",
+    "SentenceTraditionalCloze": "我去圖書館[ ]資料。",
+    "SentencePinyin.1": "<div><div>Wǒ qù túshūguǎn zhǎo zīliào.</div></div>",
+    "SentencePinyin.2": "<div><div>Wo3 qu4 tu2shu1guan3 zhao3 zi1liao4.</div></div>",
+    "SentenceMeaning": "<div><div>I'm going to the library to try to find some information/materials.</div></div>",
+    "SentenceAudio": "<div><div>[sound:tmpkv_ryo.mp3]</div></div>",
+    "SentenceImage": "<img src=\"3737186.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665828,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "179",
+    "Simplified": "最",
+    "Traditional": "最",
+    "Pinyin.1": "zuì",
+    "Pinyin.2": "zui4",
+    "Meaning": "the most; -est; (indicator for superlative)",
+    "Part of speech": "adverb",
+    "Audio": "[sound:zui4.mp3]",
+    "Homophone": "醉",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我<b>最</b>喜欢看书。</div>",
+    "SentenceTraditional": "<div>我<b>最</b>喜歡看書。</div>",
+    "SentenceSimplifiedCloze": "我[ ]喜欢看书。",
+    "SentenceTraditionalCloze": "我[ ]喜歡看書。",
+    "SentencePinyin.1": "<div>Wǒ zuì xǐhuan kànshū.</div>",
+    "SentencePinyin.2": "<div>Wo3 zui4 xi3huan kan4shu1.</div>",
+    "SentenceMeaning": "<div>I love reading books most.</div>",
+    "SentenceAudio": "<div>[sound:part1s876.mp3]</div>",
+    "SentenceImage": "<img src=\"0lfcajcu5ul90.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665829,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "180",
+    "Simplified": "可能",
+    "Traditional": "可能",
+    "Pinyin.1": "kěnéng",
+    "Pinyin.2": "ke3neng2",
+    "Meaning": "possible; probable; maybe",
+    "Part of speech": "verb",
+    "Audio": "[sound:ke3neng2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她<b>可能</b>在教室里。",
+    "SentenceTraditional": "她<b>可能</b>在教室裡。",
+    "SentenceSimplifiedCloze": "她[ ]在教室里。",
+    "SentenceTraditionalCloze": "她[ ]在教室裡。",
+    "SentencePinyin.1": "Tā kěnéng zài jiàoshì li.",
+    "SentencePinyin.2": "Ta1 ke3neng2 zai4 jiao4shi4 li.",
+    "SentenceMeaning": "She might be in the classroom.",
+    "SentenceAudio": "[sound:part1s992.mp3]",
+    "SentenceImage": "<img src=\"7l8feh6v7g184.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665830,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "181",
+    "Simplified": "次",
+    "Traditional": "次",
+    "Pinyin.1": "cì",
+    "Pinyin.2": "ci4",
+    "Meaning": "(mw for number of times of occurrence); nth; order",
+    "Part of speech": "classifier",
+    "Audio": "[sound:ci4.mp3]",
+    "Homophone": "刺",
+    "Homograph": "",
+    "SentenceSimplified": "<div>这是一<b>次</b>事故。</div>",
+    "SentenceTraditional": "<div>這是一<b>次</b>事故。</div>",
+    "SentenceSimplifiedCloze": "这是一[ ]事故。",
+    "SentenceTraditionalCloze": "這是一[ ]事故。",
+    "SentencePinyin.1": "<div>Zhè shì yí cì shìgù.</div>",
+    "SentencePinyin.2": "<div>Zhe4 shi4 yi2 ci4 shi4gu4.</div>",
+    "SentenceMeaning": "<div>There was an accident.</div>",
+    "SentenceAudio": "<div>[sound:part1s859.mp3]</div>",
+    "SentenceImage": "<img src=\"al6c2jbubc00k.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665831,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "182",
+    "Simplified": "出",
+    "Traditional": "出",
+    "Pinyin.1": "chū",
+    "Pinyin.2": "chu1",
+    "Meaning": "go out; occur",
+    "Part of speech": "verb",
+    "Audio": "[sound:chu1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他要<b>出</b>发了。",
+    "SentenceTraditional": "他要<b>出</b>發了。",
+    "SentenceSimplifiedCloze": "他要[ ]发了。",
+    "SentenceTraditionalCloze": "他要[ ]發了。",
+    "SentencePinyin.1": "Tā yào chūfā le.",
+    "SentencePinyin.2": "Ta1 yao4 chu1fa1 le.",
+    "SentenceMeaning": "He has to leave.",
+    "SentenceAudio": "[sound:part1s864.mp3]",
+    "SentenceImage": "<img src=\"el0c8jcu5074g.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665832,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "183",
+    "Simplified": "孩子",
+    "Traditional": "孩子",
+    "Pinyin.1": "háizi",
+    "Pinyin.2": "hai2zi5",
+    "Meaning": "child; children; son or daughter",
+    "Part of speech": "noun",
+    "Audio": "[sound:hai2zi.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他还是小<b>孩子</b>。",
+    "SentenceTraditional": "他還是小<b>孩子</b>。",
+    "SentenceSimplifiedCloze": "他还是小[ ]。",
+    "SentenceTraditionalCloze": "他還是小[ ]。",
+    "SentencePinyin.1": "Tā háishi xiǎoháizi.",
+    "SentencePinyin.2": "Ta1 hai2shi xiao3hai2zi.",
+    "SentenceMeaning": "He's still a child.",
+    "SentenceAudio": "[sound:part1s61.mp3]",
+    "SentenceImage": "<img src=\"4l8c2j2u3a0m0.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665833,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "184",
+    "Simplified": "所以",
+    "Traditional": "所以",
+    "Pinyin.1": "suǒyǐ",
+    "Pinyin.2": "suo3yi3",
+    "Meaning": "so; therefore; as a result",
+    "Part of speech": "conjunction",
+    "Audio": "[sound:suo3yi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "因为我病了，<b>所以</b>没去上学。",
+    "SentenceTraditional": "因為我病了，<b>所以</b>沒去上學。",
+    "SentenceSimplifiedCloze": "因为我病了，[ ]没去上学。",
+    "SentenceTraditionalCloze": "因為我病了，[ ]沒去上學。",
+    "SentencePinyin.1": "Yīnwèi wǒ bìng le, suǒyǐ méi qù shàngxué.",
+    "SentencePinyin.2": "Yin1wei4 wo3 bing4 le, suo3yi3 mei2 qu4 shang4xue2.",
+    "SentenceMeaning": "I didn't go to school because I got sick.",
+    "SentenceAudio": "[sound:part1s915.mp3]",
+    "SentenceImage": "<img src=\"0l7c4j4tver24.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665834,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "185",
+    "Simplified": "两",
+    "Traditional": "兩",
+    "Pinyin.1": "liǎng",
+    "Pinyin.2": "liang3",
+    "Meaning": "two; 2; both; (unit of weight equal to 50 grams)",
+    "Part of speech": "numeral",
+    "Audio": "[sound:liang3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我有<b>两</b>张门票。</div>",
+    "SentenceTraditional": "<div><div>我有<b>兩</b>張門票。</div></div>",
+    "SentenceSimplifiedCloze": "我有[ ]张门票。",
+    "SentenceTraditionalCloze": "我有[ ]張門票。",
+    "SentencePinyin.1": "<div>Wǒ yǒu liǎng zhāng ménpiào.</div>",
+    "SentencePinyin.2": "<div>Wo3 you3 liang3 zhang1 men2piao4.</div>",
+    "SentenceMeaning": "<div>I've got two tickets.</div>",
+    "SentenceAudio": "<div>[sound:tmprh8qgp.mp3]</div>",
+    "SentenceImage": "<img src=\"4879849.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665835,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "186",
+    "Simplified": "错",
+    "Traditional": "錯",
+    "Pinyin.1": "cuò",
+    "Pinyin.2": "cuo4",
+    "Meaning": "mistake; error; blunder; miss an opportunity",
+    "Part of speech": "verb",
+    "Audio": "[sound:cuo4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我认为你<b>错</b>了。</div>",
+    "SentenceTraditional": "<div>我認為你<b>錯</b>了。</div>",
+    "SentenceSimplifiedCloze": "我认为你[ ]了。",
+    "SentenceTraditionalCloze": "我認為你[ ]了。",
+    "SentencePinyin.1": "<div>Wǒ rènwéi nǐ cuò le.</div>",
+    "SentencePinyin.2": "<div>Wo3 ren4wei2 ni3 cuo4 le.</div>",
+    "SentenceMeaning": "<div>I think you're wrong.</div>",
+    "SentenceAudio": "<div>[sound:part1s1055.mp3]</div>",
+    "SentenceImage": "<img src=\"4lap8p6eufkl4.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665836,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "187",
+    "Simplified": "等",
+    "Traditional": "等",
+    "Pinyin.1": "děng",
+    "Pinyin.2": "deng3",
+    "Meaning": "to wait; rank; equal; etc.",
+    "Part of speech": "verb",
+    "Audio": "[sound:deng3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>大家在<b>等</b>公车。</div>",
+    "SentenceTraditional": "<div>大家在<b>等</b>公車。</div>",
+    "SentenceSimplifiedCloze": "大家在[ ]公车。",
+    "SentenceTraditionalCloze": "大家在[ ]公車。",
+    "SentencePinyin.1": "<div>Dàjiā zài děng gōngchē.</div>",
+    "SentencePinyin.2": "<div>Da4jia1 zai4 deng3 gong1che1.</div>",
+    "SentenceMeaning": "<div>People are waiting for the bus.</div>",
+    "SentenceAudio": "<div>[sound:tmpifrz_h.mp3]</div>",
+    "SentenceImage": "<img src=\"225680.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665837,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "188",
+    "Simplified": "题",
+    "Traditional": "題",
+    "Pinyin.1": "tí",
+    "Pinyin.2": "ti2",
+    "Meaning": "topic; subject; question on a test or assignment",
+    "Part of speech": "noun",
+    "Audio": "[sound:ti2.mp3]",
+    "Homophone": "提",
+    "Homograph": "",
+    "SentenceSimplified": "<div>这道数学<b>题</b>很难。</div>",
+    "SentenceTraditional": "<div>這道數學<b>題</b>很難。</div>",
+    "SentenceSimplifiedCloze": "这道数学[ ]很难。",
+    "SentenceTraditionalCloze": "這道數學[ ]很難。",
+    "SentencePinyin.1": "<div><div>Zhè dào shùxué tí hěn nán.</div></div>",
+    "SentencePinyin.2": "<div>Zhe4 dao4 shu4xue2 ti2 hen3 nan2.</div>",
+    "SentenceMeaning": "<div>This math problem is very difficult.</div>",
+    "SentenceAudio": "<div>[sound:tmpqhv20w.mp3]</div>",
+    "SentenceImage": "<img src=\"5732692.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665838,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "189",
+    "Simplified": "问",
+    "Traditional": "問",
+    "Pinyin.1": "wèn",
+    "Pinyin.2": "wen4",
+    "Meaning": "ask; inquire",
+    "Part of speech": "verb",
+    "Audio": "[sound:wen4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我可以<b>问</b>你一件事吗？</div>",
+    "SentenceTraditional": "<div>我可以<b>問</b>你一件事嗎？</div>",
+    "SentenceSimplifiedCloze": "我可以[ ]你一件事吗？",
+    "SentenceTraditionalCloze": "我可以[ ]你一件事嗎？",
+    "SentencePinyin.1": "<div>Wǒ kěyǐ wèn nǐ yí jiàn shì ma?</div>",
+    "SentencePinyin.2": "<div>Wo3 ke3yi3 wen4 ni3 yi2 jian4 shi4 ma?</div>",
+    "SentenceMeaning": "<div>May I ask you a question?</div>",
+    "SentenceAudio": "<div>[sound:part1s328.mp3]</div>",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665839,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "190",
+    "Simplified": "问题",
+    "Traditional": "問題",
+    "Pinyin.1": "wèntí",
+    "Pinyin.2": "wen4ti2",
+    "Meaning": "question; problem",
+    "Part of speech": "noun",
+    "Audio": "[sound:wen4ti2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "汽车出<b>问题</b>了。",
+    "SentenceTraditional": "汽車出<b>問題</b>了。",
+    "SentenceSimplifiedCloze": "汽车出[ ]了。",
+    "SentenceTraditionalCloze": "汽車出[ ]了。",
+    "SentencePinyin.1": "Qìchē chū wèntí le.",
+    "SentencePinyin.2": "Qi4che1 chu1 wen4ti2 le.",
+    "SentenceMeaning": "There's something wrong with the car.",
+    "SentenceAudio": "[sound:part1s877.mp3]",
+    "SentenceImage": "<img src=\"0lbf0h4veoaf8.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665840,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "191",
+    "Simplified": "一起",
+    "Traditional": "一起",
+    "Pinyin.1": "yī̠qǐ",
+    "Pinyin.2": "yi1qi3",
+    "Meaning": "together; in the same place",
+    "Part of speech": "space word",
+    "Audio": "[sound:yi4qi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "男朋友同我<b>一起</b>去旅行。",
+    "SentenceTraditional": "男朋友同我<b>一起</b>去旅行。",
+    "SentenceSimplifiedCloze": "男朋友同我[ ]去旅行。",
+    "SentenceTraditionalCloze": "男朋友同我[ ]去旅行。",
+    "SentencePinyin.1": "Nánpéngyou tóng wǒ yīqǐ qù lǚxíng.",
+    "SentencePinyin.2": "Nan2peng2you tong2 wo3 yi1qi3 qu4 lv3xing2.",
+    "SentenceMeaning": "My boyfriend and I travel together.",
+    "SentenceAudio": "[sound:tmphn9m5s.mp3]",
+    "SentenceImage": "<img src=\"6936364.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665841,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "192",
+    "Simplified": "开始",
+    "Traditional": "開始",
+    "Pinyin.1": "kāishǐ",
+    "Pinyin.2": "kai1shi3",
+    "Meaning": "begin; to start; beginning",
+    "Part of speech": "verb",
+    "Audio": "[sound:kai1shi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我从昨天<b>开始</b>戒烟。",
+    "SentenceTraditional": "我從昨天<b>開始</b>戒煙。",
+    "SentenceSimplifiedCloze": "我从昨天[ ]戒烟。",
+    "SentenceTraditionalCloze": "我從昨天[ ]戒煙。",
+    "SentencePinyin.1": "Wǒ cóng zuótiān kāishǐ jièyān.",
+    "SentencePinyin.2": "Wo3 cong2 zuo2tian1 kai1shi3 jie4yan1.",
+    "SentenceMeaning": "I've stopped smoking as of yesterday.",
+    "SentenceAudio": "[sound:tmpgewani.mp3]",
+    "SentenceImage": "<img src=\"5023407.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665842,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "193",
+    "Simplified": "时间",
+    "Traditional": "時間",
+    "Pinyin.1": "shíjiān",
+    "Pinyin.2": "shi2jian1",
+    "Meaning": "time; period",
+    "Part of speech": "noun",
+    "Audio": "[sound:shi2jian1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "起床的<b>时间</b>到了。",
+    "SentenceTraditional": "起床的<b>時間</b>到了。",
+    "SentenceSimplifiedCloze": "起床的[ ]到了。",
+    "SentenceTraditionalCloze": "起床的[ ]到了。",
+    "SentencePinyin.1": "Qǐchuáng de shíjiān dào le.",
+    "SentencePinyin.2": "Qi3chuang2 de shi2jian1 dao4 le.",
+    "SentenceMeaning": "It's time to get up.",
+    "SentenceAudio": "[sound:tmpzs2wj1.mp3]",
+    "SentenceImage": "<img src=\"4346114.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665843,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "194",
+    "Simplified": "事情",
+    "Traditional": "事情",
+    "Pinyin.1": "shìqing",
+    "Pinyin.2": "shi4qing5",
+    "Meaning": "matter; affair; thing; business",
+    "Part of speech": "noun",
+    "Audio": "[sound:shi4qing.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "还有其他<b>事情</b>吗？",
+    "SentenceTraditional": "還有其他<b>事情</b>嗎？",
+    "SentenceSimplifiedCloze": "还有其他[ ]吗？",
+    "SentenceTraditionalCloze": "還有其他[ ]嗎？",
+    "SentencePinyin.1": "Háiyǒu qítā shìqing ma?",
+    "SentencePinyin.2": "Hai2you3 qi2ta1 shi4qing ma?",
+    "SentenceMeaning": "Is there anything else?",
+    "SentenceAudio": "[sound:part2s26.mp3]",
+    "SentenceImage": "<img src=\"4l6fehevfh1f4.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665844,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "195",
+    "Simplified": "一下",
+    "Traditional": "一下",
+    "Pinyin.1": "yīxià",
+    "Pinyin.2": "yi1xia4",
+    "Meaning": "a little bit/while; one time; once",
+    "Part of speech": "numeral",
+    "Audio": "[sound:yi1xia4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我出去<b>一下</b>。</div>",
+    "SentenceTraditional": "<div>我出去<b>一下</b>。</div>",
+    "SentenceSimplifiedCloze": "我出去[ ]。",
+    "SentenceTraditionalCloze": "我出去[ ]。",
+    "SentencePinyin.1": "<div>Wǒ chūqù yíxià.</div>",
+    "SentencePinyin.2": "<div>Wo3 chu1qu4&nbsp;</div>",
+    "SentenceMeaning": "<div>I'm going out for a bit.</div>",
+    "SentenceAudio": "<div>[sound:part1s178.mp3]</div>",
+    "SentenceImage": "<img src=\"4l3f8h9v7lqq8.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665845,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "196",
+    "Simplified": "非常",
+    "Traditional": "非常",
+    "Pinyin.1": "fēicháng",
+    "Pinyin.2": "fei1chang2",
+    "Meaning": "extremely; extraordinary; very",
+    "Part of speech": "adverb",
+    "Audio": "[sound:fei1chang2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "孩子们玩得<b>非常</b>高兴。",
+    "SentenceTraditional": "孩子們玩得<b>非常</b>高興。",
+    "SentenceSimplifiedCloze": "孩子们玩得[ ]高兴。",
+    "SentenceTraditionalCloze": "孩子們玩得[ ]高興。",
+    "SentencePinyin.1": "Háizimen wán de fēicháng gāoxìng.",
+    "SentencePinyin.2": "Hai2zimen wan2 de fei1chang2 gao1xing4.",
+    "SentenceMeaning": "The children were extremely happy playing.",
+    "SentenceAudio": "[sound:63e5ea7m14.mp3]",
+    "SentenceImage": "<img src=\"7l6ffhev89118.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665846,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "197",
+    "Simplified": "希望",
+    "Traditional": "希望",
+    "Pinyin.1": "xīwàng",
+    "Pinyin.2": "xi1wang4",
+    "Meaning": "to hope; wish for; to desire",
+    "Part of speech": "verb",
+    "Audio": "[sound:xi1wang4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我<b>希望</b>明天不下雨。",
+    "SentenceTraditional": "我<b>希望</b>明天不下雨。",
+    "SentenceSimplifiedCloze": "我[ ]明天不下雨。",
+    "SentenceTraditionalCloze": "我[ ]明天不下雨。",
+    "SentencePinyin.1": "Wǒ xīwàng míngtiān bú xiàyǔ.",
+    "SentencePinyin.2": "Wo3 xi1wang4 ming2tian1 bu2 xia4yu3.",
+    "SentenceMeaning": "I hope it won't rain tomorrow.",
+    "SentenceAudio": "[sound:part1s990.mp3]",
+    "SentenceImage": "<img src=\"8l6fahdv835t4.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665847,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "198",
+    "Simplified": "准备",
+    "Traditional": "准備",
+    "Pinyin.1": "zhǔnbèi",
+    "Pinyin.2": "zhun3bei4",
+    "Meaning": "prepare; get ready",
+    "Part of speech": "verb",
+    "Audio": "[sound:zhun3bei4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他已经<b>准备</b>好了。",
+    "SentenceTraditional": "他已經準備好了。",
+    "SentenceSimplifiedCloze": "他已经[ ]好了。",
+    "SentenceTraditionalCloze": "他已經準備好了。",
+    "SentencePinyin.1": "Tā yǐjīng zhǔnbèi hǎo le.",
+    "SentencePinyin.2": "Ta1 yi3jing1 zhun3bei4 hao3 le.",
+    "SentenceMeaning": "He already completed preparations.",
+    "SentenceAudio": "[sound:part1s991.mp3]",
+    "SentenceImage": "<img src=\"2lbffh9vag9ec.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665848,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "199",
+    "Simplified": "比",
+    "Traditional": "比",
+    "Pinyin.1": "bǐ",
+    "Pinyin.2": "bi3",
+    "Meaning": "compare; (indicates comparison) (Kangxi radical 81); to gesticulate as one talks",
+    "Part of speech": "preposition",
+    "Audio": "[sound:bi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我<b>比</b>他高。",
+    "SentenceTraditional": "我<b>比</b>他高。",
+    "SentenceSimplifiedCloze": "我[ ]他高。",
+    "SentenceTraditionalCloze": "我[ ]他高。",
+    "SentencePinyin.1": "Wǒ bǐ tā gāo.",
+    "SentencePinyin.2": "Wo3 bi3 ta1 gao1.",
+    "SentenceMeaning": "I am taller than him.",
+    "SentenceAudio": "[sound:part1s60.mp3]",
+    "SentenceImage": "<img src=\"3l6c6j5ua6150.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665849,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "200",
+    "Simplified": "件",
+    "Traditional": "件",
+    "Pinyin.1": "jiàn",
+    "Pinyin.2": "jian4",
+    "Meaning": "(mw for things, clothes, and items)",
+    "Part of speech": "classifier",
+    "Audio": "[sound:jian4.mp3]",
+    "Homophone": "剑，溅",
+    "Homograph": "",
+    "SentenceSimplified": "这<b>件</b>衣服多少钱？",
+    "SentenceTraditional": "這<b>件</b>衣服多少錢？",
+    "SentenceSimplifiedCloze": "这[ ]衣服多少钱？",
+    "SentenceTraditionalCloze": "這[ ]衣服多少錢？",
+    "SentencePinyin.1": "Zhè jiàn yīfu duōshǎo qián?",
+    "SentencePinyin.2": "Zhe4 jian4 yi1fu duo1shao3 qian2?",
+    "SentenceMeaning": "How much does the suit cost?",
+    "SentenceAudio": "[sound:tmpak46ds.mp3]",
+    "SentenceImage": "<img src=\"4127334.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665850,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "201",
+    "Simplified": "意思",
+    "Traditional": "意思",
+    "Pinyin.1": "yìsi",
+    "Pinyin.2": "yi4si5",
+    "Meaning": "meaning; idea; opinion",
+    "Part of speech": "noun",
+    "Audio": "[sound:yi4si.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "你们明白我的<b>意思</b>了吗？",
+    "SentenceTraditional": "你們明白我的<b>意思</b>了嗎？",
+    "SentenceSimplifiedCloze": "你们明白我的[ ]了吗？",
+    "SentenceTraditionalCloze": "你們明白我的[ ]了嗎？",
+    "SentencePinyin.1": "Nǐmen míngbai wǒ de yìsi le ma?",
+    "SentencePinyin.2": "Ni3men ming2bai wo3 de yi4si le ma?",
+    "SentenceMeaning": "Do you understand what I mean?",
+    "SentenceAudio": "[sound:tmpmf3kgg.mp3]",
+    "SentenceImage": "<img src=\"6115443.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665851,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "202",
+    "Simplified": "第一",
+    "Traditional": "第一",
+    "Pinyin.1": "dìyī",
+    "Pinyin.2": "di4yi1",
+    "Meaning": "num. first; primary; foremost",
+    "Part of speech": "numeral",
+    "Audio": "[sound:di4yi1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我是<b>第一</b>名。",
+    "SentenceTraditional": "我是<b>第一</b>名。",
+    "SentenceSimplifiedCloze": "我是[ ]名。",
+    "SentenceTraditionalCloze": "我是[ ]名。",
+    "SentencePinyin.1": "Wǒ shì dì-yī míng.",
+    "SentencePinyin.2": "Wo3 shi4 di4-yi1 ming2.",
+    "SentenceMeaning": "I've achieved first place.",
+    "SentenceAudio": "[sound:tmpxlwhpr.mp3]",
+    "SentenceImage": "<img src=\"3423746.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665852,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "203",
+    "Simplified": "进",
+    "Traditional": "進",
+    "Pinyin.1": "jìn",
+    "Pinyin.2": "jin4",
+    "Meaning": "enter; come in",
+    "Part of speech": "verb",
+    "Audio": "[sound:jin4.mp3]",
+    "Homophone": "近",
+    "Homograph": "",
+    "SentenceSimplified": "有人<b>进</b>去了。",
+    "SentenceTraditional": "有人<b>進</b>去了。",
+    "SentenceSimplifiedCloze": "有人[ ]去了。",
+    "SentenceTraditionalCloze": "有人[ ]去了。",
+    "SentencePinyin.1": "Yǒu rén jìnqù le.",
+    "SentencePinyin.2": "You3 ren2 jin4qu4 le.",
+    "SentenceMeaning": "Someone went in.",
+    "SentenceAudio": "[sound:tmpyupmjp.mp3]",
+    "SentenceImage": "<img src=\"3856816.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665853,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "204",
+    "Simplified": "大家",
+    "Traditional": "大家",
+    "Pinyin.1": "dàjiā",
+    "Pinyin.2": "da4jia1",
+    "Meaning": "everyone",
+    "Part of speech": "pronoun",
+    "Audio": "[sound:da4jia1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>大家</b>在吃午饭。",
+    "SentenceTraditional": "<b>大家</b>在吃午飯。",
+    "SentenceSimplifiedCloze": "[ ]在吃午饭。",
+    "SentenceTraditionalCloze": "[ ]在吃午飯。",
+    "SentencePinyin.1": "Dàjiā zài chī wǔfàn.",
+    "SentencePinyin.2": "Da4jia1 zai4 chi1 wu3fan4.",
+    "SentenceMeaning": "Everyone is eating lunch.",
+    "SentenceAudio": "[sound:tmpf9vo9l.mp3]",
+    "SentenceImage": "<img src=\"2368942.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665854,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "205",
+    "Simplified": "新",
+    "Traditional": "新",
+    "Pinyin.1": "xīn",
+    "Pinyin.2": "xin1",
+    "Meaning": "new; Xinjiang autonomous region (abbreviation)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:xin1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>这是他们的<b>新</b>房子。</div>",
+    "SentenceTraditional": "<div>這是他們的<b>新</b>房子。</div>",
+    "SentenceSimplifiedCloze": "这是他们的[ ]房子。",
+    "SentenceTraditionalCloze": "這是他們的[ ]房子。",
+    "SentencePinyin.1": "<div>Zhè shì tāmen de xīn fángzi.</div>",
+    "SentencePinyin.2": "<div>Zhe4 shi4 ta1men de xin1 fang2zi.</div>",
+    "SentenceMeaning": "<div>This is their new house.</div>",
+    "SentenceAudio": "<div>[sound:tmpvznyd8.mp3]</div>",
+    "SentenceImage": "<img src=\"6140277.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665855,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "206",
+    "Simplified": "您",
+    "Traditional": "您",
+    "Pinyin.1": "nín",
+    "Pinyin.2": "nin2",
+    "Meaning": "you (polite)",
+    "Part of speech": "pronoun",
+    "Audio": "[sound:nin2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>请出示<b>您</b>的护照。</div>",
+    "SentenceTraditional": "<div>請出示<b>您</b>的護照。</div>",
+    "SentenceSimplifiedCloze": "请出示[ ]的护照。",
+    "SentenceTraditionalCloze": "請出示[ ]的護照。",
+    "SentencePinyin.1": "<div>Qǐng chūshì nín de hùzhào.</div>",
+    "SentencePinyin.2": "<div>Qing3 chu1shi4 nin2 de hu4zhao4.</div>",
+    "SentenceMeaning": "<div>Please show your passport.</div>",
+    "SentenceAudio": "<div>[sound:tmpgbhzfs.mp3]</div>",
+    "SentenceImage": "<img src=\"179704.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665856,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "207",
+    "Simplified": "穿",
+    "Traditional": "穿",
+    "Pinyin.1": "chuān",
+    "Pinyin.2": "chuan1",
+    "Meaning": "to wear; put on; penetrate",
+    "Part of speech": "verb",
+    "Audio": "[sound:chuan1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她们<b>穿</b>着相同的衣服。",
+    "SentenceTraditional": "她們<b>穿</b>著相同的衣服。",
+    "SentenceSimplifiedCloze": "她们[ ]着相同的衣服。",
+    "SentenceTraditionalCloze": "她們[ ]著相同的衣服。",
+    "SentencePinyin.1": "Tāmen chuānzhe xiāngtóng de yīfu.",
+    "SentencePinyin.2": "Ta1men chuan1zhe xiang1tong2 de yi1fu.",
+    "SentenceMeaning": "They're wearing identical clothes.",
+    "SentenceAudio": "[sound:tmpnvc7pv.mp3]",
+    "SentenceImage": "<img src=\"5568176.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665857,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "208",
+    "Simplified": "送",
+    "Traditional": "送",
+    "Pinyin.1": "sòng",
+    "Pinyin.2": "song4",
+    "Meaning": "deliver; to carry; to give; send",
+    "Part of speech": "verb",
+    "Audio": "[sound:song4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这份礼物<b>送</b>给你。",
+    "SentenceTraditional": "這份禮物<b>送</b>給你。",
+    "SentenceSimplifiedCloze": "这份礼物[ ]给你。",
+    "SentenceTraditionalCloze": "這份禮物[ ]給你。",
+    "SentencePinyin.1": "Zhè fèn lǐwù sòng gěi nǐ.",
+    "SentencePinyin.2": "Zhe4 fen4 li3wu4 song4 gei3 ni3.",
+    "SentenceMeaning": "This gift is for you.",
+    "SentenceAudio": "[sound:tmpx0sjnn.mp3]",
+    "SentenceImage": "<img src=\"5810162.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665858,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "209",
+    "Simplified": "玩",
+    "Traditional": "玩",
+    "Pinyin.1": "wán",
+    "Pinyin.2": "wan2",
+    "Meaning": "to play; have a good time; visit; enjoy",
+    "Part of speech": "verb",
+    "Audio": "[sound:wan2.mp3]",
+    "Homophone": "完，丸",
+    "Homograph": "",
+    "SentenceSimplified": "孩子们<b>玩</b>得非常高兴。",
+    "SentenceTraditional": "孩子們<b>玩</b>得非常高興。",
+    "SentenceSimplifiedCloze": "孩子们[ ]得非常高兴。",
+    "SentenceTraditionalCloze": "孩子們[ ]得非常高興。",
+    "SentencePinyin.1": "Háizimen wán de fēicháng gāoxìng.",
+    "SentencePinyin.2": "Hai2zimen wan2 de fei1chang2 gao1xing4.",
+    "SentenceMeaning": "The children were extremely happy playing.",
+    "SentenceAudio": "[sound:63e5ea7m14.mp3]",
+    "SentenceImage": "<img src=\"7l6ffhev89118.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665859,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "210",
+    "Simplified": "长",
+    "Traditional": "長",
+    "Pinyin.1": "cháng",
+    "Pinyin.2": "chang2",
+    "Meaning": "long; length (Kangxi radical 168)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:chang2.mp3]",
+    "Homophone": "尝",
+    "Homograph": "homograph",
+    "SentenceSimplified": "<div>手指甲太<b>长</b>了。</div>",
+    "SentenceTraditional": "<div>手指甲太<b>長</b>了。</div>",
+    "SentenceSimplifiedCloze": "手指甲太[ ]了。",
+    "SentenceTraditionalCloze": "手指甲太[ ]了。",
+    "SentencePinyin.1": "<div>Shǒuzhǐjia tài cháng le.</div>",
+    "SentencePinyin.2": "<div>Shou3zhi3jia tai4 chang2 le.</div>",
+    "SentenceMeaning": "<div>His fingernails are too long.</div>",
+    "SentenceAudio": "<div>[sound:tmptm6hfp.mp3]</div>",
+    "SentenceImage": "<img src=\"969642.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665860,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "211",
+    "Simplified": "小时",
+    "Traditional": "小時",
+    "Pinyin.1": "xiǎoshí",
+    "Pinyin.2": "xiao3shi2",
+    "Meaning": "hour",
+    "Part of speech": "noun",
+    "Audio": "[sound:xiao3shi2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "一<b>小时</b>后见。",
+    "SentenceTraditional": "一<b>小時</b>後見。",
+    "SentenceSimplifiedCloze": "一[ ]后见。",
+    "SentenceTraditionalCloze": "一[ ]後見。",
+    "SentencePinyin.1": "Yì xiǎoshí hòu jiàn.",
+    "SentencePinyin.2": "Yi4 xiao3shi2 hou4 jian4.",
+    "SentenceMeaning": "We'll meet in an hour.",
+    "SentenceAudio": "[sound:part1s1084.mp3]",
+    "SentenceImage": "<img src=\"0ldfah6vbtav4.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665861,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "212",
+    "Simplified": "完",
+    "Traditional": "完",
+    "Pinyin.1": "wán",
+    "Pinyin.2": "wan2",
+    "Meaning": "to finish; be over; complete",
+    "Part of speech": "verb",
+    "Audio": "[sound:wan2.mp3]",
+    "Homophone": "玩，丸",
+    "Homograph": "",
+    "SentenceSimplified": "<div>水喝<b>完</b>了。</div>",
+    "SentenceTraditional": "<div>水喝<b>完</b>了。</div>",
+    "SentenceSimplifiedCloze": "水喝[ ]了。",
+    "SentenceTraditionalCloze": "水喝[ ]了。",
+    "SentencePinyin.1": "<div>Shuǐ hēwán le.</div>",
+    "SentencePinyin.2": "<div>Shui3 he1wan2 le.</div>",
+    "SentenceMeaning": "<div>I finished drinking the water.</div>",
+    "SentenceAudio": "<div>[sound:part1s908.mp3]</div>",
+    "SentenceImage": "<img src=\"2l3c9j1tvugh0.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665862,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "213",
+    "Simplified": "每",
+    "Traditional": "每",
+    "Pinyin.1": "měi",
+    "Pinyin.2": "mei3",
+    "Meaning": "each; every",
+    "Part of speech": "pronoun",
+    "Audio": "[sound:mei3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我<b>每</b>天都刷牙。",
+    "SentenceTraditional": "我<b>每</b>天都刷牙。",
+    "SentenceSimplifiedCloze": "我[ ]天都刷牙。",
+    "SentenceTraditionalCloze": "我[ ]天都刷牙。",
+    "SentencePinyin.1": "Wǒ měi tiān dōu shuāyá.",
+    "SentencePinyin.2": "Wo3 mei3 tian1 dou1 shua1ya2.",
+    "SentenceMeaning": "I brush my teeth every day.",
+    "SentenceAudio": "[sound:part2s9.mp3]",
+    "SentenceImage": "<img src=\"alccfjaualb9c.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665863,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "214",
+    "Simplified": "公司",
+    "Traditional": "公司",
+    "Pinyin.1": "gōngsī",
+    "Pinyin.2": "gong1si1",
+    "Meaning": "company; corporation",
+    "Part of speech": "noun",
+    "Audio": "[sound:gong1si1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他一个人在<b>公司</b>。",
+    "SentenceTraditional": "他一個人在<b>公司</b>。",
+    "SentenceSimplifiedCloze": "他一个人在[ ]。",
+    "SentenceTraditionalCloze": "他一個人在[ ]。",
+    "SentencePinyin.1": "Tā yí gè rén zài gōngsī.",
+    "SentencePinyin.2": "Ta1 yi2 ge4 ren2 zai4 gong1si1.",
+    "SentenceMeaning": "He's at the company by himself.",
+    "SentenceAudio": "[sound:part1s862.mp3]",
+    "SentenceImage": "<img src=\"1l6cfj6u152co.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665864,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "215",
+    "Simplified": "帮助",
+    "Traditional": "幫助",
+    "Pinyin.1": "bāngzhù",
+    "Pinyin.2": "bang1zhu4",
+    "Meaning": "help; assist; aid",
+    "Part of speech": "v./n.",
+    "Audio": "[sound:bang1zhu4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他喜欢<b>帮助</b>别人。",
+    "SentenceTraditional": "他喜歡<b>幫助</b>別人。",
+    "SentenceSimplifiedCloze": "他喜欢[ ]别人。",
+    "SentenceTraditionalCloze": "他喜歡[ ]別人。",
+    "SentencePinyin.1": "Tā xǐhuan bāngzhù biérén.",
+    "SentencePinyin.2": "Ta1 xi3huan bang1zhu4 bie2ren2.",
+    "SentenceMeaning": "He likes helping others.",
+    "SentenceAudio": "[sound:part1s156.mp3]",
+    "SentenceImage": "<img src=\"7ldf2h2vdrr2s.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665865,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "216",
+    "Simplified": "晚上",
+    "Traditional": "晚上",
+    "Pinyin.1": "wǎnshang",
+    "Pinyin.2": "wan3shang5",
+    "Meaning": "evening; night",
+    "Part of speech": "time word",
+    "Audio": "[sound:wan3shang.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>晚上</b>我有事。",
+    "SentenceTraditional": "<b>晚上</b>我有事。",
+    "SentenceSimplifiedCloze": "[ ]我有事。",
+    "SentenceTraditionalCloze": "[ ]我有事。",
+    "SentencePinyin.1": "Wǎnshang wǒ yǒu shì.",
+    "SentencePinyin.2": "Wan3shang wo3 you3 shi4.",
+    "SentenceMeaning": "I'm busy tonight.",
+    "SentenceAudio": "[sound:part1s443.mp3]",
+    "SentenceImage": "<img src=\"2l0fch4v8a9q8.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665866,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "217",
+    "Simplified": "说话",
+    "Traditional": "說話",
+    "Pinyin.1": "shuōhuà",
+    "Pinyin.2": "shuo1hua4",
+    "Meaning": "to talk; speak",
+    "Part of speech": "verb",
+    "Audio": "[sound:shuo1hua4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他<b>说话</b>说得很大声。",
+    "SentenceTraditional": "他<b>說話</b>說得很大聲。",
+    "SentenceSimplifiedCloze": "他[ ]说得很大声。",
+    "SentenceTraditionalCloze": "他[ ]說得很大聲。",
+    "SentencePinyin.1": "Tā shuōhuà shuō de hěn dàshēng.",
+    "SentencePinyin.2": "Ta1 shuo1hua4 shuo1 de hen3 da4sheng1.",
+    "SentenceMeaning": "He talks very loudly.",
+    "SentenceAudio": "[sound:part1s65.mp3]",
+    "SentenceImage": "<img src=\"elacbj9u7eabg.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665867,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "218",
+    "Simplified": "门",
+    "Traditional": "門",
+    "Pinyin.1": "mén",
+    "Pinyin.2": "men2",
+    "Meaning": "door; opening; gate (Kangxi radical 169)",
+    "Part of speech": "noun",
+    "Audio": "[sound:men2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他站在<b>门</b>口。",
+    "SentenceTraditional": "他站在<b>門</b>口。",
+    "SentenceSimplifiedCloze": "他站在[ ]口。",
+    "SentenceTraditionalCloze": "他站在[ ]口。",
+    "SentencePinyin.1": "Tā zhàn zài ménkǒu.",
+    "SentencePinyin.2": "Ta1 zhan4 zai4 men2kou3.",
+    "SentenceMeaning": "He's standing at the entrance.",
+    "SentenceAudio": "[sound:part1s850.mp3]",
+    "SentenceImage": "<img src=\"cl1ccjcu3or7k.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665868,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "219",
+    "Simplified": "女",
+    "Traditional": "女",
+    "Pinyin.1": "nǚ",
+    "Pinyin.2": "nv3",
+    "Meaning": "woman; female (Kangxi radical 38)",
+    "Part of speech": "non-predicate adjective",
+    "Audio": "[sound:nv3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>那个<b>女</b>人我认识。</div></div>",
+    "SentenceTraditional": "<div><div>那個<b>女</b>人我認識。</div></div>",
+    "SentenceSimplifiedCloze": "那个[ ]人我认识。",
+    "SentenceTraditionalCloze": "那個[ ]人我認識。",
+    "SentencePinyin.1": "<div><div>Nàge nǚrén wǒ rènshi.</div></div>",
+    "SentencePinyin.2": "<div><div>Na4ge nv3ren2 wo3 ren4shi.</div></div>",
+    "SentenceMeaning": "<div><div>I know that woman.</div></div>",
+    "SentenceAudio": "<div><div>[sound:f1fvf26s0o.mp3]</div></div>",
+    "SentenceImage": "<img src=\"dl7fahdvf6vlk.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665869,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "220",
+    "Simplified": "忙",
+    "Traditional": "忙",
+    "Pinyin.1": "máng",
+    "Pinyin.2": "mang2",
+    "Meaning": "busy",
+    "Part of speech": "verb",
+    "Audio": "[sound:mang2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "妈妈很<b>忙</b>。",
+    "SentenceTraditional": "媽媽很<b>忙</b>。",
+    "SentenceSimplifiedCloze": "妈妈很[ ]。",
+    "SentenceTraditionalCloze": "媽媽很[ ]。",
+    "SentencePinyin.1": "Māma hěn máng.",
+    "SentencePinyin.2": "Ma1ma hen3 mang2.",
+    "SentenceMeaning": "My mother is very busy.",
+    "SentenceAudio": "[sound:tmpuuyhix.mp3]",
+    "SentenceImage": "<img src=\"4040061.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665870,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "221",
+    "Simplified": "卖",
+    "Traditional": "賣",
+    "Pinyin.1": "mài",
+    "Pinyin.2": "mai4",
+    "Meaning": "to sell",
+    "Part of speech": "verb",
+    "Audio": "[sound:mai4.mp3]",
+    "Homophone": "迈",
+    "Homograph": "",
+    "SentenceSimplified": "我把房子<b>卖</b>了。",
+    "SentenceTraditional": "我把房子<b>賣</b>了。",
+    "SentenceSimplifiedCloze": "我把房子[ ]了。",
+    "SentenceTraditionalCloze": "我把房子[ ]了。",
+    "SentencePinyin.1": "Wǒ bǎ fángzi mài le.",
+    "SentencePinyin.2": "Wo3 ba3 fang2zi mai4 le.",
+    "SentenceMeaning": "I sold the house.",
+    "SentenceAudio": "[sound:part1s407.mp3]",
+    "SentenceImage": "<img src=\"flap0p5d234vo.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665871,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "222",
+    "Simplified": "高",
+    "Traditional": "高",
+    "Pinyin.1": "gāo",
+    "Pinyin.2": "gao1",
+    "Meaning": "high; tall (Kangxi radical 189)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:gao1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我比他<b>高</b>。",
+    "SentenceTraditional": "我比他<b>高</b>。",
+    "SentenceSimplifiedCloze": "我比他[ ]。",
+    "SentenceTraditionalCloze": "我比他[ ]。",
+    "SentencePinyin.1": "Wǒ bǐ tā gāo.",
+    "SentencePinyin.2": "Wo3 bi3 ta1 gao1.",
+    "SentenceMeaning": "I am taller than him.",
+    "SentenceAudio": "[sound:part1s60.mp3]",
+    "SentenceImage": "<img src=\"3l6c6j5ua6150.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665872,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "223",
+    "Simplified": "房间",
+    "Traditional": "房間",
+    "Pinyin.1": "fángjiān",
+    "Pinyin.2": "fang2jian1",
+    "Meaning": "room",
+    "Part of speech": "noun",
+    "Audio": "[sound:fang2jian1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这个<b>房间</b>是我的。",
+    "SentenceTraditional": "這個<b>房間</b>是我的。",
+    "SentenceSimplifiedCloze": "这个[ ]是我的。",
+    "SentenceTraditionalCloze": "這個[ ]是我的。",
+    "SentencePinyin.1": "Zhège fángjiān shì wǒ de.",
+    "SentencePinyin.2": "Zhe4ge fang2jian1 shi4 wo3 de.",
+    "SentenceMeaning": "This room is mine.",
+    "SentenceAudio": "[sound:part1s125.mp3]",
+    "SentenceImage": "<img src=\"5l1fch7v48ll0.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665873,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "224",
+    "Simplified": "路",
+    "Traditional": "路",
+    "Pinyin.1": "lù",
+    "Pinyin.2": "lu4",
+    "Meaning": "road; path; journey; route",
+    "Part of speech": "noun",
+    "Audio": "[sound:lu4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>这条路很<b>长</b>。</div>",
+    "SentenceTraditional": "<div>這條路很<b>長</b>。</div>",
+    "SentenceSimplifiedCloze": "这条路很[ ]。",
+    "SentenceTraditionalCloze": "這條路很[ ]。",
+    "SentencePinyin.1": "<div>Zhè tiáo lù hěn cháng.</div>",
+    "SentencePinyin.2": "<div>Zhe4 tiao2 lu4 hen3 chang2.</div>",
+    "SentenceMeaning": "<div>This road is very long.</div>",
+    "SentenceAudio": "<div>[sound:part1s1031.mp3]</div>",
+    "SentenceImage": "<img src=\"8l4f1h6vekk6s.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665874,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "225",
+    "Simplified": "懂",
+    "Traditional": "懂",
+    "Pinyin.1": "dǒng",
+    "Pinyin.2": "dong3",
+    "Meaning": "understand; know",
+    "Part of speech": "verb",
+    "Audio": "[sound:dong3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>你<b>懂</b>英语吗？</div>",
+    "SentenceTraditional": "<div>你<b>懂</b>英語嗎？</div>",
+    "SentenceSimplifiedCloze": "你[ ]英语吗？",
+    "SentenceTraditionalCloze": "你[ ]英語嗎？",
+    "SentencePinyin.1": "<div>Nǐ dǒng Yīngyǔ ma?</div>",
+    "SentencePinyin.2": "<div>Ni3 dong3 Ying1yu3 ma?</div>",
+    "SentenceMeaning": "<div><div>Do you understand English?</div></div>",
+    "SentenceAudio": "<div>[sound:part1s1046.mp3]</div>",
+    "SentenceImage": "<img src=\"2lep8p3f3qnik.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665875,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "226",
+    "Simplified": "正在",
+    "Traditional": "正在",
+    "Pinyin.1": "zhèngzài",
+    "Pinyin.2": "zheng4zai4",
+    "Meaning": "in the process of (doing something); currently",
+    "Part of speech": "auxiliary",
+    "Audio": "[sound:zheng4zai4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我们<b>正在</b>开会。",
+    "SentenceTraditional": "我們<b>正在</b>開會。",
+    "SentenceSimplifiedCloze": "我们[ ]开会。",
+    "SentenceTraditionalCloze": "我們[ ]開會。",
+    "SentencePinyin.1": "Wǒmen zhèng zài kāihuì.",
+    "SentencePinyin.2": "Wo3men zheng4 zai4 kai1hui4.",
+    "SentenceMeaning": "We're in a meeting right now.",
+    "SentenceAudio": "[sound:tmphd4yrq.mp3]",
+    "SentenceImage": "<img src=\"2744496.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665876,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "227",
+    "Simplified": "笑",
+    "Traditional": "笑",
+    "Pinyin.1": "xiào",
+    "Pinyin.2": "xiao4",
+    "Meaning": "to laugh; to smile",
+    "Part of speech": "verb",
+    "Audio": "[sound:xiao4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>伊人在花丛中<b>笑</b>。</div>",
+    "SentenceTraditional": "<div>伊人在花叢中<b>笑</b>。</div>",
+    "SentenceSimplifiedCloze": "伊人在花丛中[ ]。",
+    "SentenceTraditionalCloze": "伊人在花叢中[ ]。",
+    "SentencePinyin.1": "<div>Yīrén zài huācóng zhōng xiào.</div>",
+    "SentencePinyin.2": "<div>Yi1ren2 zai4 hua1cong2 zhong1 xiao4.</div>",
+    "SentenceMeaning": "<div>She is smiling in the flowers.</div>",
+    "SentenceAudio": "<div>[sound:tmpmdhevd.mp3]</div>",
+    "SentenceImage": "<img src=\"6623454.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665877,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "228",
+    "Simplified": "远",
+    "Traditional": "遠",
+    "Pinyin.1": "yuǎn",
+    "Pinyin.2": "yuan3",
+    "Meaning": "far; distant; remote",
+    "Part of speech": "adjective",
+    "Audio": "[sound:yuan3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "学校离我家很<b>远</b>。",
+    "SentenceTraditional": "學校離我家很<b>遠</b>。",
+    "SentenceSimplifiedCloze": "学校离我家很[ ]。",
+    "SentenceTraditionalCloze": "學校離我家很[ ]。",
+    "SentencePinyin.1": "Xuéxiào lí wǒ jiā hěn yuǎn.",
+    "SentencePinyin.2": "Xue2xiao4 li2 wo3 jia1 hen3 yuan3.",
+    "SentenceMeaning": "The school is far away from my home.",
+    "SentenceAudio": "[sound:tmpbpxy6m.mp3]",
+    "SentenceImage": "<img src=\"3497487.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665878,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "229",
+    "Simplified": "妻子",
+    "Traditional": "妻子",
+    "Pinyin.1": "qīzi",
+    "Pinyin.2": "qi1zi5",
+    "Meaning": "wife",
+    "Part of speech": "noun",
+    "Audio": "[sound:qi1zi.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我和<b>妻子</b>一起吃晚饭。",
+    "SentenceTraditional": "我和<b>妻子</b>一起吃晚飯。",
+    "SentenceSimplifiedCloze": "我和[ ]一起吃晚饭。",
+    "SentenceTraditionalCloze": "我和[ ]一起吃晚飯。",
+    "SentencePinyin.1": "Wǒ hé qīzi yìqǐ chī wǎnfàn.",
+    "SentencePinyin.2": "Wo3 he2 qi1zi yi4qi3 chi1 wan3fan4.",
+    "SentenceMeaning": "I had supper with my wife.",
+    "SentenceAudio": "[sound:part1s541.mp3]",
+    "SentenceImage": "<img src=\"1l9pep0c9gj94.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665879,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "230",
+    "Simplified": "丈夫",
+    "Traditional": "丈夫",
+    "Pinyin.1": "zhàngfu",
+    "Pinyin.2": "zhang4fu5",
+    "Meaning": "husband; man",
+    "Part of speech": "noun",
+    "Audio": "[sound:zhang4fu.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他是我的<b>丈夫</b>。",
+    "SentenceTraditional": "他是我的<b>丈夫</b>。",
+    "SentenceSimplifiedCloze": "他是我的[ ]。",
+    "SentenceTraditionalCloze": "他是我的[ ]。",
+    "SentencePinyin.1": "Tā shì wǒ de zhàngfu.",
+    "SentencePinyin.2": "Ta1 shi4 wo3 de zhang4fu.",
+    "SentenceMeaning": "He's my husband.",
+    "SentenceAudio": "[sound:tmph09oyz.mp3]",
+    "SentenceImage": "<img src=\"5944102.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665880,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "231",
+    "Simplified": "离",
+    "Traditional": "離",
+    "Pinyin.1": "lí",
+    "Pinyin.2": "li2",
+    "Meaning": "leave; depart; go away; apart from",
+    "Part of speech": "verb",
+    "Audio": "[sound:li2.mp3]",
+    "Homophone": "梨",
+    "Homograph": "",
+    "SentenceSimplified": "学校<b>离</b>我家很远。",
+    "SentenceTraditional": "學校<b>離</b>我家很遠。",
+    "SentenceSimplifiedCloze": "学校[ ]我家很远。",
+    "SentenceTraditionalCloze": "學校[ ]我家很遠。",
+    "SentencePinyin.1": "Xuéxiào lí wǒ jiā hěn yuǎn.",
+    "SentencePinyin.2": "Xue2xiao4 li2 wo3 jia1 hen3 yuan3.",
+    "SentenceMeaning": "The school is far away from my home.",
+    "SentenceAudio": "[sound:tmpbpxy6m.mp3]",
+    "SentenceImage": "<img src=\"3497487.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665881,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "232",
+    "Simplified": "往",
+    "Traditional": "往",
+    "Pinyin.1": "wǎng",
+    "Pinyin.2": "wang3",
+    "Meaning": "to go (in a direction); towards; in the past",
+    "Part of speech": "preposition",
+    "Audio": "[sound:wang3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "请<b>往</b>左拐。",
+    "SentenceTraditional": "請<b>往</b>左拐。",
+    "SentenceSimplifiedCloze": "请[ ]左拐。",
+    "SentenceTraditionalCloze": "請[ ]左拐。",
+    "SentencePinyin.1": "Qǐng wǎng zuǒ guǎi.",
+    "SentencePinyin.2": "Qing3 wang3 zuo3 guai3.",
+    "SentenceMeaning": "Please turn left.",
+    "SentenceAudio": "[sound:part1s959.mp3]",
+    "SentenceImage": "<img src=\"7laf4h9v78e4o.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665882,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "233",
+    "Simplified": "男",
+    "Traditional": "男",
+    "Pinyin.1": "nán",
+    "Pinyin.2": "nan2",
+    "Meaning": "male",
+    "Part of speech": "non-predicate adjective",
+    "Audio": "[sound:nan2.mp3]",
+    "Homophone": "难，南",
+    "Homograph": "",
+    "SentenceSimplified": "这是<b>男</b>厕所。",
+    "SentenceTraditional": "這是<b>男</b>廁所。",
+    "SentenceSimplifiedCloze": "这是[ ]厕所。",
+    "SentenceTraditionalCloze": "這是[ ]廁所。",
+    "SentencePinyin.1": "Zhè shì nán cèsuǒ.",
+    "SentencePinyin.2": "Zhe4 shi4 nan2 ce4suo3.",
+    "SentenceMeaning": "This is the men's toilet.",
+    "SentenceAudio": "[sound:tmptb3qec.mp3]",
+    "SentenceImage": "<img src=\"3700016.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665883,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "234",
+    "Simplified": "眼睛",
+    "Traditional": "眼睛",
+    "Pinyin.1": "yǎnjing",
+    "Pinyin.2": "yan3jing5",
+    "Meaning": "eye",
+    "Part of speech": "noun",
+    "Audio": "[sound:yan3jing.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她的<b>眼睛</b>很漂亮。",
+    "SentenceTraditional": "她的<b>眼睛</b>很漂亮。",
+    "SentenceSimplifiedCloze": "她的[ ]很漂亮。",
+    "SentenceTraditionalCloze": "她的[ ]很漂亮。",
+    "SentencePinyin.1": "Tā de yǎnjing hěn piàoliang.",
+    "SentencePinyin.2": "Ta1 de yan3jing hen3 piao4liang.",
+    "SentenceMeaning": "Her eyes are beautiful.",
+    "SentenceAudio": "[sound:tmpytkp1u.mp3]",
+    "SentenceImage": "<img src=\"4888806.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665884,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "235",
+    "Simplified": "快乐",
+    "Traditional": "快樂",
+    "Pinyin.1": "kuàilè",
+    "Pinyin.2": "kuai4le4",
+    "Meaning": "happy",
+    "Part of speech": "adjective",
+    "Audio": "[sound:kuai4le4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "新年<b>快乐</b>！",
+    "SentenceTraditional": "新年<b>快樂</b>！",
+    "SentenceSimplifiedCloze": "新年[ ]！",
+    "SentenceTraditionalCloze": "新年[ ]！",
+    "SentencePinyin.1": "Xīnnián kuàilè!",
+    "SentencePinyin.2": "Xin1nian2 kuai4le4!",
+    "SentenceMeaning": "Happy New Year!",
+    "SentenceAudio": "[sound:tmpogesne.mp3]",
+    "SentenceImage": "<img src=\"4854589.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665885,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "236",
+    "Simplified": "虽然",
+    "Traditional": "雖然",
+    "Pinyin.1": "suīrán",
+    "Pinyin.2": "sui1ran2",
+    "Meaning": "although; even though",
+    "Part of speech": "conjunction",
+    "Audio": "[sound:sui1ran2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>虽然</b>跑得很累，但是很多人都没有放弃。",
+    "SentenceTraditional": "<b>雖然</b>跑得很累，但是很多人都沒有放棄。",
+    "SentenceSimplifiedCloze": "[ ]跑得很累，但是很多人都没有放弃。",
+    "SentenceTraditionalCloze": "[ ]跑得很累，但是很多人都沒有放棄。",
+    "SentencePinyin.1": "Suīrán pǎo de hěn lèi, dànshì hěn duō rén dōu méiyǒu fàngqì.",
+    "SentencePinyin.2": "Sui1ran2 pao3 de hen3 lei4, dan4shi4 hen3 duo1 ren2 dou1 mei2you3 fang4qi4.",
+    "SentenceMeaning": "Though exhausted from running, many refused to give up.",
+    "SentenceAudio": "[sound:tmpu5v_op.mp3]",
+    "SentenceImage": "<img src=\"848774.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665886,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "237",
+    "Simplified": "早上",
+    "Traditional": "早上",
+    "Pinyin.1": "zǎoshang",
+    "Pinyin.2": "zao3shang5",
+    "Meaning": "(early) morning",
+    "Part of speech": "time word",
+    "Audio": "[sound:zao3shang.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "今天<b>早上</b>天气不错。",
+    "SentenceTraditional": "今天<b>早上</b>天氣不錯。",
+    "SentenceSimplifiedCloze": "今天[ ]天气不错。",
+    "SentenceTraditionalCloze": "今天[ ]天氣不錯。",
+    "SentencePinyin.1": "Jīntiān zǎoshang tiānqì búcuò.",
+    "SentencePinyin.2": "Jin1tian1 zao3shang tian1qi4 bu2cuo4.",
+    "SentenceMeaning": "It's sunny this morning.",
+    "SentenceAudio": "[sound:part2s1969.mp3]",
+    "SentenceImage": "<img src=\"3lcp6p3etk430.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665887,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "238",
+    "Simplified": "药",
+    "Traditional": "藥",
+    "Pinyin.1": "yào",
+    "Pinyin.2": "yao4",
+    "Meaning": "medicine; drug; cure; chemical",
+    "Part of speech": "noun",
+    "Audio": "[sound:yao4.mp3]",
+    "Homophone": "要",
+    "Homograph": "",
+    "SentenceSimplified": "<div><b>药</b>开始起作用了。</div>",
+    "SentenceTraditional": "<div><b>藥</b>開始起作用了。</div>",
+    "SentenceSimplifiedCloze": "[ ]开始起作用了。",
+    "SentenceTraditionalCloze": "[ ]開始起作用了。",
+    "SentencePinyin.1": "<div>Yào kāishǐ qǐ zuòyòng le.</div>",
+    "SentencePinyin.2": "<div>Yao4 kai1shi3 qi3 zuo4yong4 le.</div>",
+    "SentenceMeaning": "<div>The medicine began to take effect.</div>",
+    "SentenceAudio": "<div>[sound:part2s1238.mp3]</div>",
+    "SentenceImage": "<img src=\"6l1jf9cnhniig.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665888,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "239",
+    "Simplified": "身体",
+    "Traditional": "身體",
+    "Pinyin.1": "shēntǐ",
+    "Pinyin.2": "shen1ti3",
+    "Meaning": "health; (human) body",
+    "Part of speech": "noun",
+    "Audio": "[sound:shen1ti3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她为了健康锻炼<b>身体</b>。",
+    "SentenceTraditional": "她為了健康鍛煉<b>身體</b>。",
+    "SentenceSimplifiedCloze": "她为了健康锻炼[ ]。",
+    "SentenceTraditionalCloze": "她為了健康鍛煉[ ]。",
+    "SentencePinyin.1": "Tā wèile jiànkāng duànliàn shēntǐ.",
+    "SentencePinyin.2": "Ta1 wei4le jian4kang1 duan4lian4 shen1ti3.",
+    "SentenceMeaning": "She exercises for her health.",
+    "SentenceAudio": "[sound:tmpouakso.mp3]",
+    "SentenceImage": "<img src=\"5481593.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665889,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "240",
+    "Simplified": "黑",
+    "Traditional": "黑",
+    "Pinyin.1": "hēi",
+    "Pinyin.2": "hei1",
+    "Meaning": "black; dark (Kangxi radical 203); Heilongjiang province (abbreviation)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:hei1.mp3]",
+    "Homophone": "嘿",
+    "Homograph": "",
+    "SentenceSimplified": "这时候天<b>黑</b>了。",
+    "SentenceTraditional": "這時候天<b>黑</b>了。",
+    "SentenceSimplifiedCloze": "这时候天[ ]了。",
+    "SentenceTraditionalCloze": "這時候天[ ]了。",
+    "SentencePinyin.1": "Zhè shíhou tiān hēi le.",
+    "SentencePinyin.2": "Zhe4 shi2hou tian1 hei1 le.",
+    "SentenceMeaning": "The sun went down at this time.",
+    "SentenceAudio": "[sound:part1s869.mp3]",
+    "SentenceImage": "<img src=\"1l6c2jcu0a4n0.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665890,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "241",
+    "Simplified": "咖啡",
+    "Traditional": "咖啡",
+    "Pinyin.1": "kāfēi",
+    "Pinyin.2": "ka1fei1",
+    "Meaning": "coffee",
+    "Part of speech": "noun",
+    "Audio": "[sound:ka1fei1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "桌子上有一杯<b>咖啡</b>。",
+    "SentenceTraditional": "桌子上有一杯<b>咖啡</b>。",
+    "SentenceSimplifiedCloze": "桌子上有一杯[ ]。",
+    "SentenceTraditionalCloze": "桌子上有一杯[ ]。",
+    "SentencePinyin.1": "Zhuōzi shàng yǒu yī bēi kāfēi.",
+    "SentencePinyin.2": "Zhuo1zi shang4 you3 yi1 bei1 ka1fei1.",
+    "SentenceMeaning": "There is a cup of coffee on the table.",
+    "SentenceAudio": "[sound:tmpdsyqy_.mp3]",
+    "SentenceImage": "<img src=\"6294904.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665891,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "242",
+    "Simplified": "日",
+    "Traditional": "日",
+    "Pinyin.1": "rì",
+    "Pinyin.2": "ri4",
+    "Meaning": "sun; day; date; time (Kangxi radical 72)",
+    "Part of speech": "abbreviation",
+    "Audio": "[sound:ri4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>今天几月几<b>日</b>？</div></div>",
+    "SentenceTraditional": "<div><div>今天幾月幾<b>日</b>？</div></div>",
+    "SentenceSimplifiedCloze": "今天几月几[ ]？",
+    "SentenceTraditionalCloze": "今天幾月幾[ ]？",
+    "SentencePinyin.1": "<div><div>Jīntiān jǐ yuè jǐ rì?</div></div>",
+    "SentencePinyin.2": "<div><div>Jin1tian1 ji3 yue4 ji3 ri4?</div></div>",
+    "SentenceMeaning": "<div><div>What's the date today?</div></div>",
+    "SentenceAudio": "<div><div>[sound:tmpwglaaz.mp3]</div></div>",
+    "SentenceImage": "<img src=\"4674624.jpg\" />\n"
+   }
+  },
+  {
+   "noteId": 1393817665892,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "243",
+    "Simplified": "休息",
+    "Traditional": "休息",
+    "Pinyin.1": "xiūxi",
+    "Pinyin.2": "xiu1xi5",
+    "Meaning": "to rest; take a break",
+    "Part of speech": "verb",
+    "Audio": "[sound:xiu1xi.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "病人需要<b>休息</b>。",
+    "SentenceTraditional": "病人需要<b>休息</b>。",
+    "SentenceSimplifiedCloze": "病人需要[ ]。",
+    "SentenceTraditionalCloze": "病人需要[ ]。",
+    "SentencePinyin.1": "Bìngrén xūyào xiūxi.",
+    "SentencePinyin.2": "Bing4ren2 xu1yao4 xiu1xi.",
+    "SentenceMeaning": "Sick people need rest.",
+    "SentenceAudio": "[sound:part1s168.mp3]",
+    "SentenceImage": "<img src=\"1l4f1h1v8aubo.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665893,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "244",
+    "Simplified": "外",
+    "Traditional": "外",
+    "Pinyin.1": "wài",
+    "Pinyin.2": "wai4",
+    "Meaning": "outer; outside; in addition; foreign",
+    "Part of speech": "directional locality",
+    "Audio": "[sound:wai4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><b>外</b>面在下雨。</div>",
+    "SentenceTraditional": "<div><b>外</b>面在下雨。</div>",
+    "SentenceSimplifiedCloze": "<div>[ ]面在下雨。</div>",
+    "SentenceTraditionalCloze": "[ ]面在下雨。",
+    "SentencePinyin.1": "<div>Wàimian zài xiàyǔ.</div>",
+    "SentencePinyin.2": "<div>Wai4mian zai4 xia4yu3.</div>",
+    "SentenceMeaning": "<div><div>It's raining outside.</div></div>",
+    "SentenceAudio": "<div>[sound:tmprxdbdx.mp3]</div>",
+    "SentenceImage": "<img src=\"2068554.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665894,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "245",
+    "Simplified": "生日",
+    "Traditional": "生日",
+    "Pinyin.1": "shēngrì",
+    "Pinyin.2": "sheng1ri4",
+    "Meaning": "birthday",
+    "Part of speech": "noun",
+    "Audio": "[sound:sheng1ri4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "今天是我的<b>生日</b>。",
+    "SentenceTraditional": "今天是我的<b>生日</b>。",
+    "SentenceSimplifiedCloze": "今天是我的[ ]。",
+    "SentenceTraditionalCloze": "今天是我的[ ]。",
+    "SentencePinyin.1": "Jīntiān shì wǒ de shēngri.",
+    "SentencePinyin.2": "Jin1tian1 shi4 wo3 de sheng1ri.",
+    "SentenceMeaning": "Today is my birthday.",
+    "SentenceAudio": "[sound:tmpahfgpd.mp3]",
+    "SentenceImage": "<img src=\"5245091.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665895,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "246",
+    "Simplified": "哥哥",
+    "Traditional": "哥哥",
+    "Pinyin.1": "gēge",
+    "Pinyin.2": "ge1ge5",
+    "Meaning": "older brother",
+    "Part of speech": "noun",
+    "Audio": "[sound:ge1ge.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "其中的高个子就是我<b>哥哥</b>。",
+    "SentenceTraditional": "其中的高個子就是我<b>哥哥</b>。",
+    "SentenceSimplifiedCloze": "其中的高个子就是我[ ]。",
+    "SentenceTraditionalCloze": "其中的高個子就是我[ ]。",
+    "SentencePinyin.1": "Qízhōng de gāogèzi jiù shì wǒ gēge.",
+    "SentencePinyin.2": "Qi2zhong1 de gao1ge4zi jiu4 shi4 wo3 ge1ge.",
+    "SentenceMeaning": "The tall one of the group is my older brother.",
+    "SentenceAudio": "[sound:tmp8hb7ui.mp3]",
+    "SentenceImage": "<img src=\"4467891.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665896,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "247",
+    "Simplified": "票",
+    "Traditional": "票",
+    "Pinyin.1": "piào",
+    "Pinyin.2": "piao4",
+    "Meaning": "ticket; bank note; a vote",
+    "Part of speech": "noun",
+    "Audio": "[sound:piao4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我有两张门<b>票</b>。</div>",
+    "SentenceTraditional": "<div>我有兩張門<b>票</b>。</div>",
+    "SentenceSimplifiedCloze": "我有两张门[ ]。",
+    "SentenceTraditionalCloze": "我有兩張門[ ]。",
+    "SentencePinyin.1": "<div>Wǒ yǒu liǎng zhāng ménpiào.</div>",
+    "SentencePinyin.2": "<div>Wo3 you3 liang3 zhang1 men2piao4.</div>",
+    "SentenceMeaning": "<div>I've got two tickets.</div>",
+    "SentenceAudio": "<div>[sound:tmprh8qgp.mp3]</div>",
+    "SentenceImage": "<img src=\"4879849.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665897,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "248",
+    "Simplified": "手机",
+    "Traditional": "手機",
+    "Pinyin.1": "shǒujī",
+    "Pinyin.2": "shou3ji1",
+    "Meaning": "mobile (cell) phone",
+    "Part of speech": "noun",
+    "Audio": "[sound:shou3ji1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这部<b>手机</b>可以拨打国际电话。",
+    "SentenceTraditional": "這部<b>手機</b>可以撥打國際電話。",
+    "SentenceSimplifiedCloze": "这部[ ]可以拨打国际电话。",
+    "SentenceTraditionalCloze": "這部[ ]可以撥打國際電話。",
+    "SentencePinyin.1": "Zhè bù shǒujī kěyǐ bōdǎ guójì diànhuà.",
+    "SentencePinyin.2": "Zhe4 bu4 shou3ji1 ke3yi3 bo1da3 guo2ji4 dian4hua4.",
+    "SentenceMeaning": "This cell phone can make international calls.",
+    "SentenceAudio": "[sound:tmpbtfbgh.mp3]",
+    "SentenceImage": "<img src=\"3201992.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665898,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "249",
+    "Simplified": "洗",
+    "Traditional": "洗",
+    "Pinyin.1": "xǐ",
+    "Pinyin.2": "xi3",
+    "Meaning": "to wash; bathe",
+    "Part of speech": "verb",
+    "Audio": "[sound:xi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>吃饭前要<b>洗</b>手。</div>",
+    "SentenceTraditional": "<div>吃飯前要<b>洗</b>手。</div>",
+    "SentenceSimplifiedCloze": "吃饭前要[ ]手。",
+    "SentenceTraditionalCloze": "吃飯前要[ ]手。",
+    "SentencePinyin.1": "<div>Chīfàn qián yào xǐshǒu.</div>",
+    "SentencePinyin.2": "<div>Chi1fan4 qian2 yao4 xi3shou3.</div>",
+    "SentenceMeaning": "<div>We have to wash our hands before eating.</div>",
+    "SentenceAudio": "<div>[sound:tmp8vkdtb.mp3]</div>",
+    "SentenceImage": "<img src=\"3318652.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665899,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "250",
+    "Simplified": "跳舞",
+    "Traditional": "跳舞",
+    "Pinyin.1": "tiào wǔ",
+    "Pinyin.2": "tiao4 wu3",
+    "Meaning": "to dance",
+    "Part of speech": "verb",
+    "Audio": "[sound:tiao4wu3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她<b>跳舞</b>时的姿态很美。",
+    "SentenceTraditional": "她<b>跳舞</b>時的姿態很美。",
+    "SentenceSimplifiedCloze": "她[ ]时的姿态很美。",
+    "SentenceTraditionalCloze": "她[ ]時的姿態很美。",
+    "SentencePinyin.1": "Tā tiàowǔ shí de zītài hěn měi.",
+    "SentencePinyin.2": "Ta1 tiao4wu3 shi2 de zi1tai4 hen3 mei3.",
+    "SentenceMeaning": "Her motions when dancing are lovely.",
+    "SentenceAudio": "[sound:tmpbamvhc.mp3]",
+    "SentenceImage": "<img src=\"5325186.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665900,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "251",
+    "Simplified": "弟弟",
+    "Traditional": "弟弟",
+    "Pinyin.1": "dìdi",
+    "Pinyin.2": "di4di5",
+    "Meaning": "younger brother",
+    "Part of speech": "noun",
+    "Audio": "[sound:di4di.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他是我的<b>弟弟</b>。",
+    "SentenceTraditional": "他是我的<b>弟弟</b>。",
+    "SentenceSimplifiedCloze": "他是我的[ ]。",
+    "SentenceTraditionalCloze": "他是我的[ ]。",
+    "SentencePinyin.1": "Tā shì wǒ de dìdi.",
+    "SentencePinyin.2": "Ta1 shi4 wo3 de di4di.",
+    "SentenceMeaning": "He's my younger brother.",
+    "SentenceAudio": "[sound:tmpf7kv8v.mp3]",
+    "SentenceImage": "<img src=\"258794.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665901,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "252",
+    "Simplified": "妹妹",
+    "Traditional": "妹妹",
+    "Pinyin.1": "mèimei",
+    "Pinyin.2": "mei4mei5",
+    "Meaning": "younger sister",
+    "Part of speech": "noun",
+    "Audio": "[sound:mei4mei.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>妹妹</b>八岁了。",
+    "SentenceTraditional": "<b>妹妹</b>八歲了。",
+    "SentenceSimplifiedCloze": "[ ]八岁了。",
+    "SentenceTraditionalCloze": "[ ]八歲了。",
+    "SentencePinyin.1": "Mèimei bā suì le.",
+    "SentencePinyin.2": "Mei4mei ba1 sui4 le.",
+    "SentenceMeaning": "My younger sister is eight years old.",
+    "SentenceAudio": "[sound:tmpuzprw_.mp3]",
+    "SentenceImage": "<img src=\"3928010.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665902,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "253",
+    "Simplified": "红",
+    "Traditional": "紅",
+    "Pinyin.1": "hóng",
+    "Pinyin.2": "hong2",
+    "Meaning": "red; symbol of success; bonus; popular",
+    "Part of speech": "adjective",
+    "Audio": "[sound:hong2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>她穿着<b>红</b>大衣。</div>",
+    "SentenceTraditional": "<div>她穿著<b>紅</b>大衣。</div>",
+    "SentenceSimplifiedCloze": "她穿着[ ]大衣。",
+    "SentenceTraditionalCloze": "她穿著[ ]大衣。",
+    "SentencePinyin.1": "<div>Tā chuānzhe hóng dàyī.</div>",
+    "SentencePinyin.2": "<div>Ta1 chuan1zhe hong2 da4yi1.</div>",
+    "SentenceMeaning": "<div>She's wearing a red overcoat.</div>",
+    "SentenceAudio": "<div><div>[sound:part1s477.mp3]</div></div>",
+    "SentenceImage": "<img src=\"bl0c9j0u0t6j8.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665903,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "254",
+    "Simplified": "慢",
+    "Traditional": "慢",
+    "Pinyin.1": "màn",
+    "Pinyin.2": "man4",
+    "Meaning": "slow",
+    "Part of speech": "adjective",
+    "Audio": "[sound:man4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>他们走得很<b>慢</b>。</div>",
+    "SentenceTraditional": "<div>他們走得很<b>慢</b>。</div>",
+    "SentenceSimplifiedCloze": "他们走得很[ ]。",
+    "SentenceTraditionalCloze": "他們走得很[ ]。",
+    "SentencePinyin.1": "<div>Tāmen zǒu de hěn màn.</div>",
+    "SentencePinyin.2": "<div>Ta1men zou3 de hen3 man4.</div>",
+    "SentenceMeaning": "<div>They walk very slowly.</div>",
+    "SentenceAudio": "<div>[sound:tmpktnvid.mp3]</div>",
+    "SentenceImage": "<img src=\"3862090.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665904,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "255",
+    "Simplified": "近",
+    "Traditional": "近",
+    "Pinyin.1": "jìn",
+    "Pinyin.2": "jin4",
+    "Meaning": "near; close (to)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:jin4.mp3]",
+    "Homophone": "进",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我家离学校很<b>近</b>。</div>",
+    "SentenceTraditional": "<div>我家離學校很<b>近</b>。</div>",
+    "SentenceSimplifiedCloze": "<div>我家离学校很[ ]。</div>",
+    "SentenceTraditionalCloze": "我家離學校很[ ]。",
+    "SentencePinyin.1": "<div>Wǒ jiā lí xuéxiào hěn jìn.</div>",
+    "SentencePinyin.2": "<div>Wo3 jia1 li2 xue2xiao4 hen3 jin4.</div>",
+    "SentenceMeaning": "<div>My house is very close to school.</div>",
+    "SentenceAudio": "<div>[sound:part1s192.mp3]</div>",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665905,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "256",
+    "Simplified": "白",
+    "Traditional": "白",
+    "Pinyin.1": "bái",
+    "Pinyin.2": "bai2",
+    "Meaning": "white; snowy; pure; bright; empty (Kangxi radical 106)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:bai2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>雪很<b>白</b>。</div>",
+    "SentenceTraditional": "<div>雪很<b>白</b>。</div>",
+    "SentenceSimplifiedCloze": "<div>雪很[ ]。</div>",
+    "SentenceTraditionalCloze": "雪很[ ]。",
+    "SentencePinyin.1": "<div>Xuě hěn bái.</div>",
+    "SentencePinyin.2": "<div>Xue3 hen3 bai2.</div>",
+    "SentenceMeaning": "<div>Snow is very white.</div>",
+    "SentenceAudio": "<div>[sound:tmpfb9q_g.mp3]</div>",
+    "SentenceImage": "<img src=\"4941016.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665906,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "257",
+    "Simplified": "姐姐",
+    "Traditional": "姐姐",
+    "Pinyin.1": "jiějie",
+    "Pinyin.2": "jie3jie5",
+    "Meaning": "older sister",
+    "Part of speech": "noun",
+    "Audio": "[sound:jie3jie.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她是我的<b>姐姐</b>。",
+    "SentenceTraditional": "她是我的<b>姐姐</b>。",
+    "SentenceSimplifiedCloze": "她是我的[ ]。",
+    "SentenceTraditionalCloze": "她是我的[ ]。",
+    "SentencePinyin.1": "Tā shì wǒ de jiějie.",
+    "SentencePinyin.2": "Ta1 shi4 wo3 de jie3jie.",
+    "SentenceMeaning": "She's my elder sister.",
+    "SentenceAudio": "[sound:part1s727.mp3]",
+    "SentenceImage": "<img src=\"blbja91na3m7o.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665907,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "258",
+    "Simplified": "介绍",
+    "Traditional": "介紹",
+    "Pinyin.1": "jièshào",
+    "Pinyin.2": "jie4shao4",
+    "Meaning": "to introduce; recommend; introduction",
+    "Part of speech": "verb",
+    "Audio": "[sound:jie4shao4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他做了自我<b>介绍</b>。",
+    "SentenceTraditional": "他做了自我<b>介紹</b>。",
+    "SentenceSimplifiedCloze": "他做了自我[ ]。",
+    "SentenceTraditionalCloze": "他做了自我[ ]。",
+    "SentencePinyin.1": "Tā zuòle zìwǒ jièshào.",
+    "SentencePinyin.2": "Ta1 zuo4le zi4wo3 jie4shao4.",
+    "SentenceMeaning": "He introduced himself.",
+    "SentenceAudio": "[sound:part1s157.mp3]",
+    "SentenceImage": "<img src=\"4l5f8h0v7cfe8.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665908,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "259",
+    "Simplified": "鱼",
+    "Traditional": "魚",
+    "Pinyin.1": "yú",
+    "Pinyin.2": "yu2",
+    "Meaning": "fish (Kangxi radical 195)",
+    "Part of speech": "noun",
+    "Audio": "[sound:yu2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>我钓到一条<b>鱼</b>。</div>",
+    "SentenceTraditional": "<div>我釣到一條<b>魚</b>。</div>",
+    "SentenceSimplifiedCloze": "我钓到一条[ ]。",
+    "SentenceTraditionalCloze": "我釣到一條[ ]。",
+    "SentencePinyin.1": "<div>Wǒ diàodào yī tiáo yú.</div>",
+    "SentencePinyin.2": "<div>Wo3 diao4dao4 yi1 tiao2 yu2.</div>",
+    "SentenceMeaning": "<div>I've caught a fish.</div>",
+    "SentenceAudio": "<div>[sound:tmp0kw861.mp3]</div>",
+    "SentenceImage": "<img src=\"4184834.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665909,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "260",
+    "Simplified": "累",
+    "Traditional": "累",
+    "Pinyin.1": "lèi",
+    "Pinyin.2": "lei4",
+    "Meaning": "tired",
+    "Part of speech": "adjective",
+    "Audio": "[sound:lei4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div>她觉得很<b>累</b>。</div>",
+    "SentenceTraditional": "<div>她覺得很<b>累</b>。</div>",
+    "SentenceSimplifiedCloze": "她觉得很[ ]。",
+    "SentenceTraditionalCloze": "她覺得很[ ]。&nbsp;",
+    "SentencePinyin.1": "<div>Tā juéde hěn lèi.</div>",
+    "SentencePinyin.2": "<div><div>Ta1 jue2de hen3 lei4.</div></div>",
+    "SentenceMeaning": "<div>She feels very tired.</div>",
+    "SentenceAudio": "<div>[sound:tmp6ztpbn.mp3]</div>",
+    "SentenceImage": "<img src=\"5226400.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665910,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "261",
+    "Simplified": "课",
+    "Traditional": "課",
+    "Pinyin.1": "kè",
+    "Pinyin.2": "ke4",
+    "Meaning": "class; subject; lesson; course",
+    "Part of speech": "noun",
+    "Audio": "[sound:ke4.mp3]",
+    "Homophone": "刻，克",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>老师给孩子们上了一堂<b>课</b>。</div></div>",
+    "SentenceTraditional": "<div><div>老師給孩子們上了一堂<b>課</b>。</div></div>",
+    "SentenceSimplifiedCloze": "老师给孩子们上了一堂[ ]。",
+    "SentenceTraditionalCloze": "老師給孩子們上了一堂[ ]。",
+    "SentencePinyin.1": "<div><div>Lǎoshī gěi háizimen shàngle yī táng kè.</div></div>",
+    "SentencePinyin.2": "<div><div>Lao3shi1 gei3 hai2zimen shang4le yi1 tang2 ke4.</div></div>",
+    "SentenceMeaning": "<div><div>The teacher taught one class to the children.</div></div>",
+    "SentenceAudio": "<div><div>[sound:tmpltl2eq.mp3]</div></div>",
+    "SentenceImage": "<img src=\"6465867.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665911,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "262",
+    "Simplified": "上班",
+    "Traditional": "上班",
+    "Pinyin.1": "shàng bān",
+    "Pinyin.2": "shang4 ban1",
+    "Meaning": "go to work; be on duty",
+    "Part of speech": "verb",
+    "Audio": "[sound:shang4ban1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他走路<b>上班</b>。",
+    "SentenceTraditional": "他走路<b>上班</b>。",
+    "SentenceSimplifiedCloze": "他走路[ ]。",
+    "SentenceTraditionalCloze": "他走路[ ]。",
+    "SentencePinyin.1": "Tā zǒulù shàngbān.",
+    "SentencePinyin.2": "Ta1 zou3lu4 shang4ban1.",
+    "SentenceMeaning": "He commutes to work on foot.",
+    "SentenceAudio": "[sound:part1s279.mp3]",
+    "SentenceImage": "<img src=\"5l2c6j0u8ejos.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665912,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "263",
+    "Simplified": "旁边",
+    "Traditional": "旁邊",
+    "Pinyin.1": "pángbiān",
+    "Pinyin.2": "pang2bian1",
+    "Meaning": "side, beside",
+    "Part of speech": "directional locality",
+    "Audio": "[sound:pang2bian1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "大家坐在桌子<b>旁边</b>。",
+    "SentenceTraditional": "大家坐在桌子<b>旁邊</b>。",
+    "SentenceSimplifiedCloze": "大家坐在桌子[ ]。",
+    "SentenceTraditionalCloze": "大家坐在桌子[ ]。",
+    "SentencePinyin.1": "Dàjiā zuò zài zhuōzi pángbiān.",
+    "SentencePinyin.2": "Da4jia1 zuo4 zai4 zhuo1zi pang2bian1.",
+    "SentenceMeaning": "Everyone's sitting at the table.",
+    "SentenceAudio": "[sound:tmpbmz6aq.mp3]",
+    "SentenceImage": "<img src=\"6378955.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665913,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "264",
+    "Simplified": "运动",
+    "Traditional": "運動",
+    "Pinyin.1": "yùndòng",
+    "Pinyin.2": "yun4dong4",
+    "Meaning": "(physical) exercise; movement; sports; campaign",
+    "Part of speech": "verb with nominal function",
+    "Audio": "[sound:yun4dong4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他爱做<b>运动</b>。",
+    "SentenceTraditional": "他愛做<b>運動</b>。",
+    "SentenceSimplifiedCloze": "他爱做[ ]。",
+    "SentenceTraditionalCloze": "他愛做[ ]。",
+    "SentencePinyin.1": "Tā ài zuò yùndòng.",
+    "SentencePinyin.2": "Ta1 ai4 zuo4 yun4dong4.",
+    "SentenceMeaning": "He loves exercising.",
+    "SentenceAudio": "[sound:part1s1169.mp3]",
+    "SentenceImage": "<img src=\"al3f6hevbjo8o.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665914,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "265",
+    "Simplified": "去年",
+    "Traditional": "去年",
+    "Pinyin.1": "qùnián",
+    "Pinyin.2": "qu4nian2",
+    "Meaning": "last year",
+    "Part of speech": "time word",
+    "Audio": "[sound:qu4nian2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "今年玉米种的价格比<b>去年</b>偏高。",
+    "SentenceTraditional": "今年玉米種的價格比<b>去年</b>偏高。",
+    "SentenceSimplifiedCloze": "今年玉米种的价格比[ ]偏高。",
+    "SentenceTraditionalCloze": "今年玉米種的價格比[ ]偏高。",
+    "SentencePinyin.1": "Jīnnián yùmǐ zhǒng de jiàgé bǐ qùnián piān gāo.",
+    "SentencePinyin.2": "Jin1nian2 yu4mi3 zhong3 de jia4ge2 bi3 qu4nian2 pian1 gao1.",
+    "SentenceMeaning": "The price of corn seed this year is a bit high compared to last year.",
+    "SentenceAudio": "[sound:part2s1160.mp3]",
+    "SentenceImage": "<img src=\"al8fehavgc1qg.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665915,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "266",
+    "Simplified": "报纸",
+    "Traditional": "報紙",
+    "Pinyin.1": "bàozhǐ",
+    "Pinyin.2": "bao4zhi3",
+    "Meaning": "newspaper",
+    "Part of speech": "noun",
+    "Audio": "[sound:bao4zhi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他在看<b>报纸</b>的最新消息。",
+    "SentenceTraditional": "他在看<b>報紙</b>的最新消息。",
+    "SentenceSimplifiedCloze": "他在看[ ]的最新消息。",
+    "SentenceTraditionalCloze": "他在看[ ]的最新消息。",
+    "SentencePinyin.1": "Tā zài kàn bàozhǐ de zuìxīn xiāoxi.",
+    "SentencePinyin.2": "Ta1 zai4 kan4 bao4zhi3 de zui4xin1 xiao1xi.",
+    "SentenceMeaning": "He's reading the latest news in the paper.",
+    "SentenceAudio": "[sound:tmpttq4ec.mp3]",
+    "SentenceImage": "<img src=\"5828536.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665916,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "267",
+    "Simplified": "颜色",
+    "Traditional": "顏色",
+    "Pinyin.1": "yánsè",
+    "Pinyin.2": "yan2se4",
+    "Meaning": "color",
+    "Part of speech": "noun",
+    "Audio": "[sound:yan2se4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "你喜欢什么<b>颜色</b>的气球？",
+    "SentenceTraditional": "你喜歡什麼<b>顏色</b>的氣球？",
+    "SentenceSimplifiedCloze": "你喜欢什么[ ]的气球？",
+    "SentenceTraditionalCloze": "你喜歡什麼[ ]的氣球？",
+    "SentencePinyin.1": "Nǐ xǐhuan shénme yánsè de qìqiú?",
+    "SentencePinyin.2": "Ni3 xi3huan shen2me yan2se4 de qi4qiu2?",
+    "SentenceMeaning": "What color balloons do you like?",
+    "SentenceAudio": "[sound:tmpx3dnq1.mp3]",
+    "SentenceImage": "<img src=\"5840677.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665917,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "268",
+    "Simplified": "机场",
+    "Traditional": "機場",
+    "Pinyin.1": "jīchǎng",
+    "Pinyin.2": "ji1chang3",
+    "Meaning": "airport; airfield",
+    "Part of speech": "noun",
+    "Audio": "[sound:ji1chang3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "飞机抵达了<b>机场</b>。",
+    "SentenceTraditional": "飛機抵達了<b>機場</b>。",
+    "SentenceSimplifiedCloze": "飞机抵达了[ ]。",
+    "SentenceTraditionalCloze": "飛機抵達了[ ]。",
+    "SentencePinyin.1": "Fēijī dǐdále jīchǎng.",
+    "SentencePinyin.2": "Fei1ji1 di3da2le ji1chang3.",
+    "SentenceMeaning": "The plane has arrived at the airport.",
+    "SentenceAudio": "[sound:tmpioxozi.mp3]",
+    "SentenceImage": "<img src=\"4483142.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665918,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "269",
+    "Simplified": "唱歌",
+    "Traditional": "唱歌",
+    "Pinyin.1": "chànggē",
+    "Pinyin.2": "chang4ge1",
+    "Meaning": "sing (a song)",
+    "Part of speech": "verb",
+    "Audio": "[sound:chang4ge1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我很喜欢<b>唱歌</b>。",
+    "SentenceTraditional": "我很喜歡<b>唱歌</b>。",
+    "SentenceSimplifiedCloze": "我很喜欢[ ]。",
+    "SentenceTraditionalCloze": "我很喜歡[ ]。",
+    "SentencePinyin.1": "Wǒ hěn xǐhuan chànggē.",
+    "SentencePinyin.2": "Wo3 hen3 xi3huan chang4ge1.",
+    "SentenceMeaning": "I like singing very much.",
+    "SentenceAudio": "[sound:part1s519.mp3]",
+    "SentenceImage": "<img src=\"fl2a7lfbvb2d0.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665919,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "270",
+    "Simplified": "千",
+    "Traditional": "千",
+    "Pinyin.1": "qiān",
+    "Pinyin.2": "qian1",
+    "Meaning": "one thousand",
+    "Part of speech": "numeral",
+    "Audio": "[sound:qian1.mp3]",
+    "Homophone": "签，牵",
+    "Homograph": "",
+    "SentenceSimplified": "我有一<b>千</b>美金。",
+    "SentenceTraditional": "我有一<b>千</b>美金。",
+    "SentenceSimplifiedCloze": "我有一[ ]美金。",
+    "SentenceTraditionalCloze": "我有一[ ]美金。",
+    "SentencePinyin.1": "Wǒ yǒu yīqiān Měijīn.",
+    "SentencePinyin.2": "Wo3 you3 yi1qian1 Mei3jin1.",
+    "SentenceMeaning": "I've got one thousand U.S. dollars.",
+    "SentenceAudio": "[sound:tmphvn8sf.mp3]",
+    "SentenceImage": "<img src=\"6214869.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665920,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "271",
+    "Simplified": "好吃",
+    "Traditional": "好吃",
+    "Pinyin.1": "hǎochī",
+    "Pinyin.2": "hao3chi1",
+    "Meaning": "tasty",
+    "Part of speech": "adjective",
+    "Audio": "[sound:hao3chi1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这道菜很<b>好吃</b>。",
+    "SentenceTraditional": "這道菜很<b>好吃</b>。",
+    "SentenceSimplifiedCloze": "这道菜很[ ]。",
+    "SentenceTraditionalCloze": "這道菜很[ ]。",
+    "SentencePinyin.1": "Zhè dào cài hěn hǎochī.",
+    "SentencePinyin.2": "Zhe4 dao4 cai4 hen3 hao3chi1.",
+    "SentenceMeaning": "This dish is delicious.",
+    "SentenceAudio": "[sound:part1s532.mp3]",
+    "SentenceImage": "<img src=\"2l2pcp0f19hfs.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665921,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "272",
+    "Simplified": "考试",
+    "Traditional": "考試",
+    "Pinyin.1": "kǎoshì",
+    "Pinyin.2": "kao3shi4",
+    "Meaning": "test; exam; to give or take a test",
+    "Part of speech": "verb with nominal function",
+    "Audio": "[sound:kao3shi4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "今天上午<b>考试</b>。",
+    "SentenceTraditional": "今天上午<b>考試</b>。",
+    "SentenceSimplifiedCloze": "今天上午[ ]。",
+    "SentenceTraditionalCloze": "今天上午[ ]。",
+    "SentencePinyin.1": "Jīntiān shàngwǔ kǎoshì.",
+    "SentencePinyin.2": "Jin1tian1 shang4wu3 kao3shi4.",
+    "SentenceMeaning": "I'm taking a test this morning.",
+    "SentenceAudio": "[sound:part1s111.mp3]",
+    "SentenceImage": "<img src=\"9l9f7h6v63bio.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665922,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "273",
+    "Simplified": "左边",
+    "Traditional": "左邊",
+    "Pinyin.1": "zuǒbian",
+    "Pinyin.2": "zuo3bian5",
+    "Meaning": "the left side; the left",
+    "Part of speech": "directional locality",
+    "Audio": "[sound:zuo3bian.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "出口在<b>左边</b>。",
+    "SentenceTraditional": "出口在<b>左邊</b>。",
+    "SentenceSimplifiedCloze": "出口在[ ]。",
+    "SentenceTraditionalCloze": "出口在[ ]。",
+    "SentencePinyin.1": "Chūkǒu zài zuǒbian.",
+    "SentencePinyin.2": "Chu1kou3 zai4 zuo3bian.",
+    "SentenceMeaning": "The entrance is on the left.",
+    "SentenceAudio": "[sound:tmpylsf6k.mp3]",
+    "SentenceImage": "<img src=\"3723745.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665923,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "274",
+    "Simplified": "姓",
+    "Traditional": "姓",
+    "Pinyin.1": "xìng",
+    "Pinyin.2": "xing4",
+    "Meaning": "surname; family name",
+    "Part of speech": "noun",
+    "Audio": "[sound:xing4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "您贵<b>姓</b>？",
+    "SentenceTraditional": "您貴<b>姓</b>？",
+    "SentenceSimplifiedCloze": "您贵[ ]？",
+    "SentenceTraditionalCloze": "您貴[ ]？",
+    "SentencePinyin.1": "Nín guìxìng?",
+    "SentencePinyin.2": "Nin2 gui4xing4?",
+    "SentenceMeaning": "What's your surname please?",
+    "SentenceAudio": "[sound:tmpqbsfnw.mp3]",
+    "SentenceImage": "<img src=\"2029135.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665924,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "275",
+    "Simplified": "百",
+    "Traditional": "百",
+    "Pinyin.1": "bǎi",
+    "Pinyin.2": "bai3",
+    "Meaning": "hundred",
+    "Part of speech": "numeral",
+    "Audio": "[sound:bai3.mp3]",
+    "Homophone": "摆",
+    "Homograph": "",
+    "SentenceSimplified": "我有一<b>百</b>块钱。",
+    "SentenceTraditional": "我有一<b>百</b>塊錢。",
+    "SentenceSimplifiedCloze": "我有一[ ]块钱。",
+    "SentenceTraditionalCloze": "我有一[ ]塊錢。",
+    "SentencePinyin.1": "Wǒ yǒu yībǎi kuài qián.",
+    "SentencePinyin.2": "Wo3 you3 yi1bai3 kuai4 qian2.",
+    "SentenceMeaning": "I've got one hundred RMB.",
+    "SentenceAudio": "[sound:tmpsma4zd.mp3]",
+    "SentenceImage": "<img src=\"717489.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665925,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "276",
+    "Simplified": "雪",
+    "Traditional": "雪",
+    "Pinyin.1": "xuě",
+    "Pinyin.2": "xue3",
+    "Meaning": "snow",
+    "Part of speech": "noun",
+    "Audio": "[sound:xue3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "屋外下着<b>雪</b>。",
+    "SentenceTraditional": "屋外下著<b>雪</b>。",
+    "SentenceSimplifiedCloze": "屋外下着[ ]。",
+    "SentenceTraditionalCloze": "屋外下著[ ]。",
+    "SentencePinyin.1": "Wūwài xiàzhe xuě.",
+    "SentencePinyin.2": "Wu1wai4 xia4zhe xue3.",
+    "SentenceMeaning": "It's snowing outside.",
+    "SentenceAudio": "[sound:tmprc69sw.mp3]",
+    "SentenceImage": "<img src=\"5161919.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665926,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "277",
+    "Simplified": "贵",
+    "Traditional": "貴",
+    "Pinyin.1": "guì",
+    "Pinyin.2": "gui4",
+    "Meaning": "expensive; noble; honorable; Guizhou province (abbreviation)",
+    "Part of speech": "adjective",
+    "Audio": "[sound:gui4.mp3]",
+    "Homophone": "跪",
+    "Homograph": "",
+    "SentenceSimplified": "<div>这些草莓真<b>贵</b>。</div>",
+    "SentenceTraditional": "<div>這些草莓真<b>貴</b>。</div>",
+    "SentenceSimplifiedCloze": "这些草莓真[ ]。",
+    "SentenceTraditionalCloze": "這些草莓真[ ]。",
+    "SentencePinyin.1": "<div><div>Zhèxiē cǎoméi zhēn guì.</div></div>",
+    "SentencePinyin.2": "<div>Zhe4xie1 cao3mei2 zhen1 gui4.</div>",
+    "SentenceMeaning": "<div>These strawberries are really expensive.</div>",
+    "SentenceAudio": "<div>[sound:tmpycatql.mp3]</div>",
+    "SentenceImage": "<img src=\"5159331.jpg\" /><br>"
+   }
+  },
+  {
+   "noteId": 1393817665927,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "278",
+    "Simplified": "生病",
+    "Traditional": "生病",
+    "Pinyin.1": "shēng bìng",
+    "Pinyin.2": "sheng1 bing4",
+    "Meaning": "get sick; fall ill",
+    "Part of speech": "verb",
+    "Audio": "[sound:sheng1bing4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她<b>生病</b>了。",
+    "SentenceTraditional": "她<b>生病</b>了。",
+    "SentenceSimplifiedCloze": "她[ ]了。",
+    "SentenceTraditionalCloze": "她[ ]了。",
+    "SentencePinyin.1": "Tā shēngbìng le.",
+    "SentencePinyin.2": "Ta1 sheng1bing4 le.",
+    "SentenceMeaning": "She is sick.",
+    "SentenceAudio": "[sound:tmpsa4ppj.mp3]",
+    "SentenceImage": "<img src=\"5245111.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665928,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "279",
+    "Simplified": "游泳",
+    "Traditional": "游泳",
+    "Pinyin.1": "yóuyǒng",
+    "Pinyin.2": "you2yong3",
+    "Meaning": "to swim",
+    "Part of speech": "verb with nominal function",
+    "Audio": "[sound:you2yong3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "花园中有一个<b>游泳</b>池。",
+    "SentenceTraditional": "花園中有一個<b>游泳</b>池。",
+    "SentenceSimplifiedCloze": "花园中有一个[ ]池。",
+    "SentenceTraditionalCloze": "花園中有一個[ ]池。",
+    "SentencePinyin.1": "Huāyuán zhōng yǒu yī gè yóuyǒngchí.",
+    "SentencePinyin.2": "Hua1yuan2 zhong1 you3 yi1 ge4 you2yong3chi2.",
+    "SentenceMeaning": "There's a swimming pool in the garden.",
+    "SentenceAudio": "[sound:tmp7rl0if.mp3]",
+    "SentenceImage": "<img src=\"3271713.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665929,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "280",
+    "Simplified": "牛奶",
+    "Traditional": "牛奶",
+    "Pinyin.1": "niúnǎi",
+    "Pinyin.2": "niu2nai3",
+    "Meaning": "cow's milk",
+    "Part of speech": "noun",
+    "Audio": "[sound:niu2nai3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>牛奶</b>含钙量很高。",
+    "SentenceTraditional": "<b>牛奶</b>含鈣量很高。",
+    "SentenceSimplifiedCloze": "[ ]含钙量很高。",
+    "SentenceTraditionalCloze": "[ ]含鈣量很高。",
+    "SentencePinyin.1": "Niúnǎi hángàiliàng hěn gāo.",
+    "SentencePinyin.2": "Niu2nai3 han2gai4liang4 hen3 gao1.",
+    "SentenceMeaning": "Milk has a high calcium content.",
+    "SentenceAudio": "[sound:tmpgyisb6.mp3]",
+    "SentenceImage": "<img src=\"6732216.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665930,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "281",
+    "Simplified": "右边",
+    "Traditional": "右邊",
+    "Pinyin.1": "yòubian",
+    "Pinyin.2": "you4bian5",
+    "Meaning": "the right (as opposed to left) side",
+    "Part of speech": "directional locality",
+    "Audio": "[sound:you4bian.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>右边</b>这位是邓先生。",
+    "SentenceTraditional": "<b>右邊</b>這位是鄧先生。",
+    "SentenceSimplifiedCloze": "[ ]这位是邓先生。",
+    "SentenceTraditionalCloze": "[ ]這位是鄧先生。",
+    "SentencePinyin.1": "Yòubian zhè wèi shì dèng xiānsheng.",
+    "SentencePinyin.2": "You4bian zhe4 wei4 shi4 deng4 xian1sheng.",
+    "SentenceMeaning": "This is Mr. Deng on the right.",
+    "SentenceAudio": "[sound:tmptrzn2b.mp3]",
+    "SentenceImage": "<img src=\"3864135.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665931,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "282",
+    "Simplified": "便宜",
+    "Traditional": "便宜",
+    "Pinyin.1": "piányi",
+    "Pinyin.2": "pian2yi5",
+    "Meaning": "cheap",
+    "Part of speech": "adjective",
+    "Audio": "[sound:pian2yi.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这件衣服很<b>便宜</b>。",
+    "SentenceTraditional": "這件衣服很<b>便宜</b>。",
+    "SentenceSimplifiedCloze": "这件衣服很[ ]。",
+    "SentenceTraditionalCloze": "這件衣服很[ ]。",
+    "SentencePinyin.1": "Zhè jiàn yīfu hěn piányi.",
+    "SentencePinyin.2": "Zhe4 jian4 yi1fu hen3 pian2yi.",
+    "SentenceMeaning": "These clothes are very cheap.",
+    "SentenceAudio": "[sound:tmpgmnfo3.mp3]",
+    "SentenceImage": "<img src=\"5775568.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665932,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "283",
+    "Simplified": "公共汽车",
+    "Traditional": "公共汽車",
+    "Pinyin.1": "gōnggòng qìchē",
+    "Pinyin.2": "gong1gong4 qi4che1",
+    "Meaning": "(public) bus",
+    "Part of speech": "noun",
+    "Audio": "[sound:gong1gong4qi4che1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "附近有<b>公共汽车</b>站。",
+    "SentenceTraditional": "附近有<b>公共汽車</b>站。",
+    "SentenceSimplifiedCloze": "附近有[ ]站。",
+    "SentenceTraditionalCloze": "附近有[ ]站。",
+    "SentencePinyin.1": "Fùjìn yǒu gōnggòng qìchēzhàn.",
+    "SentencePinyin.2": "Fu4jin4 you3 gong1gong4 qi4che1zhan4.",
+    "SentenceMeaning": "There's a bus stop nearby.",
+    "SentenceAudio": "[sound:tmp3xx9pe.mp3]",
+    "SentenceImage": "<img src=\"3818159.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665933,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "284",
+    "Simplified": "起床",
+    "Traditional": "起床",
+    "Pinyin.1": "qǐ chuáng",
+    "Pinyin.2": "qi3 chuang2",
+    "Meaning": "get out of bed",
+    "Part of speech": "verb",
+    "Audio": "[sound:qi3chuang2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>起床</b>的时间到了。",
+    "SentenceTraditional": "<b>起床</b>的時間到了。",
+    "SentenceSimplifiedCloze": "[ ]的时间到了。",
+    "SentenceTraditionalCloze": "[ ]的時間到了。",
+    "SentencePinyin.1": "Qǐchuáng de shíjiān dào le.",
+    "SentencePinyin.2": "Qi3chuang2 de shi2jian1 dao4 le.",
+    "SentenceMeaning": "It's time to get up.",
+    "SentenceAudio": "[sound:tmpzs2wj1.mp3]",
+    "SentenceImage": "<img src=\"4346114.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665934,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "285",
+    "Simplified": "打篮球",
+    "Traditional": "打籃球",
+    "Pinyin.1": "dǎ lánqiú",
+    "Pinyin.2": "da3 lan2qiu2",
+    "Meaning": "play basketball",
+    "Part of speech": "verb",
+    "Audio": "[sound:16120dyc.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我想<b>打篮球</b>。",
+    "SentenceTraditional": "我想<b>打籃球</b>。",
+    "SentenceSimplifiedCloze": "我想[ ]。",
+    "SentenceTraditionalCloze": "我想[ ]。",
+    "SentencePinyin.1": "Wǒ xiǎng dǎ lánqiú.",
+    "SentencePinyin.2": "Wo3 xiang3 da3 lan2qiu2.",
+    "SentenceMeaning": "I want to play basketball.",
+    "SentenceAudio": "[sound:tmpzr5mpp.mp3]",
+    "SentenceImage": "<img src=\"6643385.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665935,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "286",
+    "Simplified": "鸡蛋",
+    "Traditional": "雞蛋",
+    "Pinyin.1": "jīdàn",
+    "Pinyin.2": "ji1dan4",
+    "Meaning": "(chicken) egg",
+    "Part of speech": "noun",
+    "Audio": "[sound:ji1dan4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<b>鸡蛋</b>破了。",
+    "SentenceTraditional": "<b>雞蛋</b>破了。",
+    "SentenceSimplifiedCloze": "[ ]破了。",
+    "SentenceTraditionalCloze": "[ ]破了。",
+    "SentencePinyin.1": "Jīdàn pò le.",
+    "SentencePinyin.2": "Ji1dan4 po4 le.",
+    "SentenceMeaning": "The egg is broken.",
+    "SentenceAudio": "[sound:tmp2iciuh.mp3]",
+    "SentenceImage": "<img src=\"5174480.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665936,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "287",
+    "Simplified": "踢足球",
+    "Traditional": "踢足球",
+    "Pinyin.1": "tīzúqiú",
+    "Pinyin.2": "ti1zu2qiu2",
+    "Meaning": "to play football/soccer",
+    "Part of speech": "verb",
+    "Audio": "[sound:16119hsy.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他们在<b>踢足球</b>。",
+    "SentenceTraditional": "他們在<b>踢足球</b>。",
+    "SentenceSimplifiedCloze": "他们在[ ]。",
+    "SentenceTraditionalCloze": "他們在[ ]。",
+    "SentencePinyin.1": "Tāmen zài tī zúqiú.",
+    "SentencePinyin.2": "Ta1men zai4 ti1 zu2qiu2.",
+    "SentenceMeaning": "They're playing soccer.",
+    "SentenceAudio": "[sound:tmphypvb9.mp3]",
+    "SentenceImage": "<img src=\"2953069.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665937,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "288",
+    "Simplified": "零",
+    "Traditional": "零",
+    "Pinyin.1": "líng",
+    "Pinyin.2": "ling2",
+    "Meaning": "zero; remnant",
+    "Part of speech": "numeral",
+    "Audio": "[sound:ling2.mp3]",
+    "Homophone": "铃",
+    "Homograph": "",
+    "SentenceSimplified": "现在的气温是<b>零</b>度。",
+    "SentenceTraditional": "現在的氣溫是<b>零</b>度。",
+    "SentenceSimplifiedCloze": "现在的气温是[ ]度。",
+    "SentenceTraditionalCloze": "現在的氣溫是[ ]度。",
+    "SentencePinyin.1": "Xiànzài de qìwēn shì líng dù.",
+    "SentencePinyin.2": "Xian4zai4 de qi4wen1 shi4 ling2 du4.",
+    "SentenceMeaning": "The current temperature is zero degrees.",
+    "SentenceAudio": "[sound:part1s17.mp3]",
+    "SentenceImage": "<img src=\"al3a9lcc1urjo.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665938,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "289",
+    "Simplified": "手表",
+    "Traditional": "手表",
+    "Pinyin.1": "shǒubiǎo",
+    "Pinyin.2": "shou3biao3",
+    "Meaning": "wristwatch",
+    "Part of speech": "noun",
+    "Audio": "[sound:shou3biao3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>他在拆卸<b>手表</b>。</div></div>",
+    "SentenceTraditional": "<div><div>他在拆卸<b>手錶</b>。</div></div>",
+    "SentenceSimplifiedCloze": "他在拆卸[ ]。",
+    "SentenceTraditionalCloze": "他在拆卸[ ]。",
+    "SentencePinyin.1": "<div>Tā zài chāixiè shǒubiǎo.</div>",
+    "SentencePinyin.2": "<div>Ta1 zai4 chai1xie4 shou3biao3.</div>",
+    "SentenceMeaning": "<div>He's disassembling the watch.</div>",
+    "SentenceAudio": "<div>[sound:tmphnjfbf.mp3]</div>",
+    "SentenceImage": "<img src=\"2438514.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665939,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "290",
+    "Simplified": "旅游",
+    "Traditional": "旅游",
+    "Pinyin.1": "lǚyóu",
+    "Pinyin.2": "lv3you2",
+    "Meaning": "tour; tourism",
+    "Part of speech": "v./n.",
+    "Audio": "[sound:lv3you2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "我打算出国<b>旅游</b>。",
+    "SentenceTraditional": "我打算出國旅遊。",
+    "SentenceSimplifiedCloze": "我打算出国[ ]。",
+    "SentenceTraditionalCloze": "我打算出國旅遊。",
+    "SentencePinyin.1": "Wǒ dǎsuàn chūguó lǚyóu.",
+    "SentencePinyin.2": "Wo3 da3suan4 chu1guo2 lv3you2.",
+    "SentenceMeaning": "I intend to travel abroad.",
+    "SentenceAudio": "[sound:part2s1245.mp3]",
+    "SentenceImage": "<img src=\"bl6pep1csbhvo.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665940,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "291",
+    "Simplified": "服务员",
+    "Traditional": "服務員",
+    "Pinyin.1": "fúwùyuán",
+    "Pinyin.2": "fu2wu4yuan2",
+    "Meaning": "waiter/waitress; server; attendant",
+    "Part of speech": "noun",
+    "Audio": "[sound:fu2wu4yuan2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他是这里的<b>服务员</b>。",
+    "SentenceTraditional": "他是這裡的<b>服務員</b>。",
+    "SentenceSimplifiedCloze": "他是这里的[ ]。",
+    "SentenceTraditionalCloze": "他是這裡的[ ]。",
+    "SentencePinyin.1": "Tā shì zhèlǐ de fúwùyuán.",
+    "SentencePinyin.2": "Ta1 shi4 zhe4li3 de fu2wu4yuan2.",
+    "SentenceMeaning": "He is a waiter here.",
+    "SentenceAudio": "[sound:part1s765.mp3]",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665941,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "292",
+    "Simplified": "宾馆",
+    "Traditional": "賓館",
+    "Pinyin.1": "bīnguǎn",
+    "Pinyin.2": "bin1guan3",
+    "Meaning": "guesthouse; hotel",
+    "Part of speech": "noun",
+    "Audio": "[sound:bin1guan3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这间<b>宾馆</b>非常豪华。",
+    "SentenceTraditional": "這間<b>賓館</b>非常豪華。",
+    "SentenceSimplifiedCloze": "这间[ ]非常豪华。",
+    "SentenceTraditionalCloze": "這間[ ]非常豪華。",
+    "SentencePinyin.1": "Zhè jiān bīnguǎn fēicháng háohuá.",
+    "SentencePinyin.2": "Zhe4 jian1 bin1guan3 fei1chang2 hao2hua2.",
+    "SentenceMeaning": "This hotel is very luxurious.",
+    "SentenceAudio": "[sound:tmpdcyfcn.mp3]",
+    "SentenceImage": "<img src=\"4554405.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665942,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "293",
+    "Simplified": "教室",
+    "Traditional": "教室",
+    "Pinyin.1": "jiàoshì",
+    "Pinyin.2": "jiao4shi4",
+    "Meaning": "classroom",
+    "Part of speech": "noun",
+    "Audio": "[sound:jiao4shi4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "她可能在<b>教室</b>里。",
+    "SentenceTraditional": "她可能在<b>教室</b>裡。",
+    "SentenceSimplifiedCloze": "她可能在[ ]里。",
+    "SentenceTraditionalCloze": "她可能在[ ]裡。",
+    "SentencePinyin.1": "Tā kěnéng zài jiàoshì li.",
+    "SentencePinyin.2": "Ta1 ke3neng2 zai4 jiao4shi4 li.",
+    "SentenceMeaning": "She might be in the classroom.",
+    "SentenceAudio": "[sound:part1s992.mp3]",
+    "SentenceImage": "<img src=\"7l8feh6v7g184.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665943,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "294",
+    "Simplified": "跑步",
+    "Traditional": "跑步",
+    "Pinyin.1": "pǎo bù",
+    "Pinyin.2": "pao3 bu4",
+    "Meaning": "to run; to jog",
+    "Part of speech": "verb as adverbial",
+    "Audio": "[sound:pao3bu4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "他们<b>跑步</b>的速度很平均。",
+    "SentenceTraditional": "他們<b>跑步</b>的速度很平均。",
+    "SentenceSimplifiedCloze": "他们[ ]的速度很平均。",
+    "SentenceTraditionalCloze": "他們[ ]的速度很平均。",
+    "SentencePinyin.1": "Tāmen pǎobù de sùdù hěn píngjūn.",
+    "SentencePinyin.2": "Ta1men pao3bu4 de su4du4 hen3 ping2jun1.",
+    "SentenceMeaning": "They run at an even pace.",
+    "SentenceAudio": "[sound:tmpknpe29.mp3]",
+    "SentenceImage": "<img src=\"3802505.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665944,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "295",
+    "Simplified": "阴",
+    "Traditional": "陰",
+    "Pinyin.1": "yīn",
+    "Pinyin.2": "yin1",
+    "Meaning": "cloudy (weather); yin (the negative principle of Yin and Yang); secret; the moon; negative; shade",
+    "Part of speech": "adjective",
+    "Audio": "[sound:yin1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>天气<b>阴</b>沉。</div></div>",
+    "SentenceTraditional": "<div><div><div>天氣<b>陰</b>沉。</div></div></div>",
+    "SentenceSimplifiedCloze": "天气[ ]沉。",
+    "SentenceTraditionalCloze": "天氣[ ]沉。",
+    "SentencePinyin.1": "<div><div>Tiānqì yīnchén.</div></div>",
+    "SentencePinyin.2": "<div><div>Tian1qi4 yin1chen2.</div></div>",
+    "SentenceMeaning": "<div><div>The weather is cloudy.</div></div>",
+    "SentenceAudio": "<div><div>[sound:tmprjnw76.mp3]</div></div>",
+    "SentenceImage": "<img src=\"4684931.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665945,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "296",
+    "Simplified": "面条",
+    "Traditional": "面條",
+    "Pinyin.1": "miàntiáo",
+    "Pinyin.2": "mian4tiao2",
+    "Meaning": "noodles",
+    "Part of speech": "noun",
+    "Audio": "[sound:12016zht.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "服务员，我要一碗<b>面条</b>。",
+    "SentenceTraditional": "",
+    "SentenceSimplifiedCloze": "服务员，我要一碗[ ]。",
+    "SentenceTraditionalCloze": "",
+    "SentencePinyin.1": "",
+    "SentencePinyin.2": "",
+    "SentenceMeaning": "",
+    "SentenceAudio": "[sound:sapi5-7332448e-76f67aa9-aa6c8c3a-7a5e5c44-49843e01.mp3]",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665946,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "297",
+    "Simplified": "铅笔",
+    "Traditional": "鉛筆",
+    "Pinyin.1": "qiānbǐ",
+    "Pinyin.2": "qian1bi3",
+    "Meaning": "pencil",
+    "Part of speech": "noun",
+    "Audio": "[sound:qian1bi3.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "这里有很多彩色<b>铅笔</b>。",
+    "SentenceTraditional": "這裏有很多彩色<b>鉛筆</b>。",
+    "SentenceSimplifiedCloze": "这里有很多彩色[ ]。",
+    "SentenceTraditionalCloze": "這裏有很多彩色[ ]。",
+    "SentencePinyin.1": "Zhèli yǒu hěn duō cǎisè qiānbǐ.",
+    "SentencePinyin.2": "Zhe4li you3 hen3 duo1 cai3se4 qian1bi3.",
+    "SentenceMeaning": "There are many colored pencils.",
+    "SentenceAudio": "[sound:tmpiegtgj.mp3]",
+    "SentenceImage": "<img src=\"5380165.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665947,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "298",
+    "Simplified": "火车站",
+    "Traditional": "火車站",
+    "Pinyin.1": "huǒchēzhàn",
+    "Pinyin.2": "huo3che1zhan4",
+    "Meaning": "train station",
+    "Part of speech": "noun",
+    "Audio": "[sound:huo3che1zhan4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "在<b>火车站</b>转车。",
+    "SentenceTraditional": "在<b>火車站</b>轉車。",
+    "SentenceSimplifiedCloze": "在[ ]转车。",
+    "SentenceTraditionalCloze": "在[ ]轉車。",
+    "SentencePinyin.1": "Zài huǒchē zhàn zhuǎnchē.",
+    "SentencePinyin.2": "Zai4 huo3che1 zhan4 zhuan3che1.",
+    "SentenceMeaning": "Change trains at the railway station.",
+    "SentenceAudio": "[sound:tmpsr2ill.mp3]",
+    "SentenceImage": "<img src=\"4296638.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665948,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "299",
+    "Simplified": "西瓜",
+    "Traditional": "西瓜",
+    "Pinyin.1": "xīguā",
+    "Pinyin.2": "xi1gua1",
+    "Meaning": "watermelon",
+    "Part of speech": "noun",
+    "Audio": "[sound:xi1gua1.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "孩子们爱吃<b>西瓜</b>。",
+    "SentenceTraditional": "孩子們愛吃<b>西瓜</b>。",
+    "SentenceSimplifiedCloze": "孩子们爱吃[ ]。",
+    "SentenceTraditionalCloze": "孩子們愛吃[ ]。",
+    "SentencePinyin.1": "Háizimen ài chī xīguā.",
+    "SentencePinyin.2": "Hai2zimen ai4 chi1 xi1gua1.",
+    "SentenceMeaning": "Children love watermelon.",
+    "SentenceAudio": "[sound:tmp1eldcw.mp3]",
+    "SentenceImage": "<img src=\"6773926.jpg\" />"
+   }
+  },
+  {
+   "noteId": 1393817665949,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "300",
+    "Simplified": "羊肉",
+    "Traditional": "羊肉",
+    "Pinyin.1": "yángròu",
+    "Pinyin.2": "yang2rou4",
+    "Meaning": "mutton; lamb",
+    "Part of speech": "noun",
+    "Audio": "[sound:yang2rou4.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "你喜欢吃<b>羊肉</b>吗？",
+    "SentenceTraditional": "你喜歡吃<b>羊肉</b>嗎？",
+    "SentenceSimplifiedCloze": "你喜欢吃[ ]吗？",
+    "SentenceTraditionalCloze": "你喜歡吃[ ]嗎？",
+    "SentencePinyin.1": "Nǐ xǐhuan chī yángròu ma?",
+    "SentencePinyin.2": "Ni3 xi3huan chi1 yang2rou4 ma?",
+    "SentenceMeaning": "Do you like eating mutton?",
+    "SentenceAudio": "[sound:part2s319.mp3]",
+    "SentenceImage": ""
+   }
+  },
+  {
+   "noteId": 1393817665950,
+   "modelName": "HSK",
+   "tags": [
+    "HSK",
+    "HSK2"
+   ],
+   "fields": {
+    "Key": "301",
+    "Simplified": "晴",
+    "Traditional": "晴",
+    "Pinyin.1": "qíng",
+    "Pinyin.2": "qing2",
+    "Meaning": "clear; fine (as of weather)",
+    "Part of speech": "verb",
+    "Audio": "[sound:qing2.mp3]",
+    "Homophone": "",
+    "Homograph": "",
+    "SentenceSimplified": "<div><div>假如天<b>晴</b>了，我就和你去爬山。</div></div>",
+    "SentenceTraditional": "<div><div>假如天<b>晴</b>了，我就和你去爬山。</div></div>",
+    "SentenceSimplifiedCloze": "假如天[ ]了，我就和你去爬山。",
+    "SentenceTraditionalCloze": "假如天[ ]了，我就和你去爬山。",
+    "SentencePinyin.1": "<div><div><div>Jiǎrú tiān qíng le, wǒ jiù hé nǐ qù páshān.</div></div></div>",
+    "SentencePinyin.2": "<div><div><div>Jia3ru2 tian1 qing2 le, wo3 jiu4 he2 ni3 qu4 pa2shan1.</div></div></div>",
+    "SentenceMeaning": "<div><div><div>If the weather clears, I will go climbing with you.</div></div></div>",
+    "SentenceAudio": "<div><div>[sound:tmpnzgf9r.mp3]</div></div>",
+    "SentenceImage": "<img src=\"4306251.jpg\" />"
+   }
+  }
+ ]
+}

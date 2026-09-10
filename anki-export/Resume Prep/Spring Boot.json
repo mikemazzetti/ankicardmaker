@@ -1,0 +1,267 @@
+{
+ "deck": "Resume Prep::Spring Boot",
+ "note_count": 20,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601787,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What problem does Inversion of Control (IoC) solve in application design?",
+    "Back": "It removes the responsibility of creating and wiring dependencies from application classes, delegating object creation and lifecycle management to a container (the Spring IoC container), reducing tight coupling between classes."
+   }
+  },
+  {
+   "noteId": 1789000601788,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "In Spring, what is a \"bean\"?",
+    "Back": "An object that is instantiated, assembled, and managed by the Spring IoC container (as opposed to being created directly with <code>new</code> by application code)."
+   }
+  },
+  {
+   "noteId": 1789000601789,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What is the difference between \"singleton\" and \"prototype\" bean scope in Spring?",
+    "Back": "Singleton: one shared instance per Spring container, reused for every injection point. Prototype: a brand-new instance is created every time the bean is requested/injected."
+   }
+  },
+  {
+   "noteId": 1789000601790,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "How do you code a class as a Spring REST controller that exposes a GET endpoint?",
+    "Back": "<pre><code>@RestController\n@RequestMapping(\"/api/eforms\")\npublic class EFormController {\n    private final EFormService service;\n    public EFormController(EFormService service) {\n        this.service = service;\n    }\n    @GetMapping(\"/{id}\")\n    public EForm getForm(@PathVariable Long id) {\n        return service.findById(id);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601791,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What does @RestController combine, compared to plain @Controller?",
+    "Back": "@RestController = @Controller + @ResponseBody — every handler method's return value is serialized directly into the HTTP response body (e.g. as JSON) instead of being resolved to a view template."
+   }
+  },
+  {
+   "noteId": 1789000601792,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "Why annotate a class with @Service or @Repository instead of just @Component?",
+    "Back": "Both are specializations of @Component so they're still auto-detected as beans, but they add meaning: @Service marks business-logic classes; @Repository marks data-access classes and also enables Spring's exception translation, converting persistence exceptions into Spring's DataAccessException hierarchy."
+   }
+  },
+  {
+   "noteId": 1789000601793,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "Why is constructor injection generally preferred over field injection with @Autowired?",
+    "Back": "It makes dependencies explicit and lets fields be final/immutable, allows the class to be instantiated outside Spring (easier unit testing without a container), fails fast at startup if a dependency is missing, and avoids hidden circular-dependency issues."
+   }
+  },
+  {
+   "noteId": 1789000601794,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "In the ServiceOntario full-stack app (Spring Boot + React), which annotation exposes the JSON endpoints the React front-end calls?",
+    "Back": "@RestController (combined with @RequestMapping/@GetMapping/@PostMapping etc.) — handler methods return Java objects that Spring serializes to JSON for the React client to consume over HTTP."
+   }
+  },
+  {
+   "noteId": 1789000601795,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "How do you code idiomatic constructor injection for a Spring service (no Lombok)?",
+    "Back": "<pre><code>@Service\npublic class EFormService {\n    private final EFormRepository repository;\n\n    public EFormService(EFormRepository repository) {\n        this.repository = repository;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601796,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What is Spring Boot \"auto-configuration\"?",
+    "Back": "A mechanism (@EnableAutoConfiguration, pulled in by @SpringBootApplication) that automatically configures beans based on the classpath contents, existing beans, and property settings — e.g. adding a DataSource bean automatically once a JDBC driver is on the classpath."
+   }
+  },
+  {
+   "noteId": 1789000601797,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What is a Spring Boot \"starter\" (e.g. spring-boot-starter-web)?",
+    "Back": "A curated dependency descriptor that bundles a set of version-compatible libraries for a use case (web, JPA, security, etc.), so you don't have to manage each transitive dependency and version yourself."
+   }
+  },
+  {
+   "noteId": 1789000601798,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "How do Spring profiles let you vary configuration between environments?",
+    "Back": "You define environment-specific property files (application-dev.yml, application-prod.yml) and/or annotate beans with @Profile(\"dev\"); activating a profile via spring.profiles.active=prod makes Spring load only the matching config and beans."
+   }
+  },
+  {
+   "noteId": 1789000601799,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "How do you hook into bean initialization and cleanup using annotations?",
+    "Back": "<pre><code>@Component\npublic class ConnectionPool {\n    @PostConstruct\n    public void init() {\n        // open connections\n    }\n    @PreDestroy\n    public void cleanup() {\n        // close connections\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601800,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What does @Transactional do when placed on a Spring service method?",
+    "Back": "Wraps the call in a proxy that starts a database transaction before the method executes and commits it on success, rolling it back automatically if an unchecked (RuntimeException) exception propagates out."
+   }
+  },
+  {
+   "noteId": 1789000601801,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "By default, does Spring's @Transactional roll back on checked exceptions?",
+    "Back": "No — by default it only rolls back on unchecked exceptions (RuntimeException) and Error, not checked exceptions, unless rollbackFor is explicitly specified."
+   }
+  },
+  {
+   "noteId": 1789000601802,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "How do you centrally handle exceptions thrown by any @RestController in a Spring Boot app?",
+    "Back": "<pre><code>@ControllerAdvice\npublic class GlobalExceptionHandler {\n    @ExceptionHandler(EFormNotFoundException.class)\n    public ResponseEntity&lt;String&gt; handleNotFound(EFormNotFoundException ex) {\n        return ResponseEntity.status(HttpStatus.NOT_FOUND)\n                .body(ex.getMessage());\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601803,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Front": "What is Spring Boot Actuator used for?",
+    "Back": "A set of production-ready endpoints (e.g. /actuator/health, /actuator/metrics, /actuator/info) for monitoring and managing a running application — health checks, metrics, environment info — without building that infrastructure yourself."
+   }
+  },
+  {
+   "noteId": 1789000639822,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Text": "The default scope of a Spring bean is {{c1::singleton}} — only one shared instance is created per Spring container/application context and reused for every injection.",
+    "Extra": "Other scopes: prototype, request, session, application."
+   }
+  },
+  {
+   "noteId": 1789000639823,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Text": "Spring Boot externalizes configuration in {{c1::application.yml}} (or application.properties), letting values like {{c2::server.port}} and datasource URLs live outside compiled code.",
+    "Extra": "YAML is a hierarchical alternative to the flat .properties format."
+   }
+  },
+  {
+   "noteId": 1789000639824,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "spring-boot"
+   ],
+   "fields": {
+    "Text": "Spring bean lifecycle order: instantiate → inject dependencies → {{c1::@PostConstruct}} callback runs → bean is ready for use → {{c2::@PreDestroy}} callback runs on container shutdown.",
+    "Extra": ""
+   }
+  }
+ ]
+}

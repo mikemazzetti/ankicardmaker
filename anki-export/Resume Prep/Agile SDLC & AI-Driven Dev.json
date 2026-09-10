@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::Agile SDLC & AI-Driven Dev",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602776,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the core difference between Waterfall and Agile as SDLC models?",
+    "Back": "Waterfall runs the SDLC phases sequentially, with each phase fully completed and signed off before the next starts, and requirements fixed up front. Agile works in short iterative cycles (sprints), delivering working increments repeatedly and adapting requirements based on ongoing feedback."
+   }
+  },
+  {
+   "noteId": 1789000602777,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the Product Owner own and do in Scrum?",
+    "Back": "Owns the product backlog — deciding and prioritizing what gets built next to maximize the value delivered, and representing stakeholder/customer needs to the team."
+   }
+  },
+  {
+   "noteId": 1789000602778,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the Scrum Master do (and NOT do)?",
+    "Back": "Facilitates the Scrum process, removes blockers/impediments for the team, and shields it from outside disruption. They are a facilitator/coach, not the team's manager or task-assigner."
+   }
+  },
+  {
+   "noteId": 1789000602779,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference in purpose between a Sprint Review and a Sprint Retrospective?",
+    "Back": "Sprint Review demos the completed increment to stakeholders to gather feedback on the product. Sprint Retrospective is an internal team-only discussion on how the process and collaboration itself can improve next sprint."
+   }
+  },
+  {
+   "noteId": 1789000602780,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a \"sprint\" in Scrum?",
+    "Back": "A fixed-length iteration (commonly 1-4 weeks) during which a defined set of backlog items is designed, built, and turned into a working, potentially shippable increment."
+   }
+  },
+  {
+   "noteId": 1789000602781,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What format do user stories typically follow?",
+    "Back": "<pre><code>As a &lt;role&gt;,\nI want &lt;goal&gt;,\nso that &lt;benefit&gt;.</code></pre>e.g. \"As a customer, I want to see my loan payment estimate, so that I can budget before applying.\""
+   }
+  },
+  {
+   "noteId": 1789000602782,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What do story points measure in Agile estimation?",
+    "Back": "The relative effort, complexity, and uncertainty of a task — not literal hours. Stories are sized against each other (often on a Fibonacci-like scale: 1, 2, 3, 5, 8...) so the team estimates consistently without pinning down exact time."
+   }
+  },
+  {
+   "noteId": 1789000602783,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is CI/CD a natural fit for Agile teams?",
+    "Back": "Agile's goal is to ship working software frequently in small increments. CI/CD automates the build/test/merge step (Continuous Integration) and the release step (Continuous Deployment/Delivery), so each small increment can be integrated and shipped fast and reliably instead of hitting a manual release bottleneck."
+   }
+  },
+  {
+   "noteId": 1789000602784,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Beyond catching bugs, what's a primary goal of code review?",
+    "Back": "Knowledge sharing across the team and maintaining consistent design/code-quality standards — catching architectural or design issues early, before they're baked into the codebase."
+   }
+  },
+  {
+   "noteId": 1789000602785,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In an AI-assisted SDLC (like the BMO VSCode-agent PoC), what does \"specialized agents per project phase\" mean?",
+    "Back": "Instead of one generic AI assistant for everything, different agents are configured/prompted for a specific SDLC stage — e.g. a requirements-analysis agent, a code-generation agent, a test-generation agent, a code-review agent — each with instructions tailored to that phase's task."
+   }
+  },
+  {
+   "noteId": 1789000602786,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does prompt/instruction design matter when building an SDLC-phase AI agent (e.g. a VSCode coding agent)?",
+    "Back": "The agent's output quality depends directly on how precisely its instructions define scope, constraints, available context, and expected output format. Vague instructions produce inconsistent or off-target results — well-designed instructions function like a spec the agent executes against."
+   }
+  },
+  {
+   "noteId": 1789000602787,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Give a concrete example of an SDLC phase (other than writing implementation code) that an AI agent can accelerate.",
+    "Back": "e.g. generating test cases from requirements/user stories, or drafting a PR summary and flagging likely issues during code review — applying AI earlier or later in the pipeline than just code generation."
+   }
+  },
+  {
+   "noteId": 1789000602788,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's a key risk of merging AI-generated code into a CI/CD pipeline without human review?",
+    "Back": "The AI can produce subtly incorrect logic, security vulnerabilities, or hallucinated APIs that still pass superficial tests. Human code review remains a necessary quality gate before those changes reach production."
+   }
+  },
+  {
+   "noteId": 1789000602789,
+   "modelName": "Basic",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does Agile's iterative feedback loop map onto how AI coding agents are typically used day to day?",
+    "Back": "Like a sprint cycle at small scale: the developer gives the agent a scoped task, reviews and tests its output, then iterates with refined prompts/instructions — rather than expecting one perfect one-shot result."
+   }
+  },
+  {
+   "noteId": 1789000640081,
+   "modelName": "Cloze",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The classic SDLC phases are: {{c1::Requirements/Planning}}, {{c2::Design}}, {{c3::Implementation}}, {{c4::Testing}}, {{c5::Deployment}}, {{c6::Maintenance}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640082,
+   "modelName": "Cloze",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The three core Scrum roles are the {{c1::Product Owner}}, the {{c2::Scrum Master}}, and the {{c3::Development Team}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640083,
+   "modelName": "Cloze",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The four core Scrum ceremonies are {{c1::Sprint Planning}}, the {{c2::Daily Standup}}, the {{c3::Sprint Review}}, and the {{c4::Sprint Retrospective}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640084,
+   "modelName": "Cloze",
+   "tags": [
+    "agile-sdlc",
+    "ankicardmaker",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The three main Scrum artifacts are the {{c1::Product Backlog}}, the {{c2::Sprint Backlog}}, and the {{c3::Increment}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

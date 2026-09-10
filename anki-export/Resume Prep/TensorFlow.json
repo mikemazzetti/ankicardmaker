@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::TensorFlow",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602377,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What is a tensor in TensorFlow?",
+    "Back": "A multi-dimensional array (a generalization of scalars, vectors, and matrices) with a defined dtype and shape — the core data structure TensorFlow computes on."
+   }
+  },
+  {
+   "noteId": 1789000602378,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What's the key difference between the Keras Sequential API and the Functional API?",
+    "Back": "Sequential stacks layers in a single linear chain (one input, one output); the Functional API builds a graph of layers, allowing multiple inputs/outputs, shared layers, and non-linear topologies (e.g. branches, skip connections)."
+   }
+  },
+  {
+   "noteId": 1789000602379,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "How do you build a Sequential model with one hidden Dense layer (64 units, relu) and an output Dense layer (10 units, softmax)?",
+    "Back": "<pre><code>model = tf.keras.Sequential([\n    tf.keras.layers.Dense(64, activation='relu'),\n    tf.keras.layers.Dense(10, activation='softmax')\n])</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602380,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What three things does <code>model.compile()</code> configure?",
+    "Back": "The optimizer, the loss function, and the metrics to track during training/evaluation."
+   }
+  },
+  {
+   "noteId": 1789000602381,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "How do you compile a model for multi-class classification with the Adam optimizer?",
+    "Back": "<code>model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])</code>"
+   }
+  },
+  {
+   "noteId": 1789000602382,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "How do you train a compiled model for 10 epochs on <code>X_train</code>/<code>y_train</code>?",
+    "Back": "<code>model.fit(X_train, y_train, epochs=10, batch_size=32)</code>"
+   }
+  },
+  {
+   "noteId": 1789000602383,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "How does a layer like Dropout or BatchNorm behave differently in training mode versus inference mode?",
+    "Back": "In training mode Dropout randomly zeroes units and BatchNorm uses the current batch's statistics; in inference mode Dropout is disabled (a no-op) and BatchNorm uses its learned running statistics — controlled by a <code>training</code> flag."
+   }
+  },
+  {
+   "noteId": 1789000602384,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What is overfitting?",
+    "Back": "When a model learns the training data too specifically (including its noise), so it performs well on training data but poorly on unseen/validation data."
+   }
+  },
+  {
+   "noteId": 1789000602385,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "Name two regularization techniques used in Keras/TensorFlow to reduce overfitting.",
+    "Back": "Dropout layers and L1/L2 weight regularization (also early stopping and data augmentation)."
+   }
+  },
+  {
+   "noteId": 1789000602386,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What does a Dropout layer do during training?",
+    "Back": "It randomly sets a fraction of its input units to zero on each update, preventing the network from relying too heavily on any single neuron — reducing overfitting."
+   }
+  },
+  {
+   "noteId": 1789000602387,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What is \"autodiff\" (automatic differentiation) in TensorFlow?",
+    "Back": "A technique that computes exact gradients of a computation by tracking the operations performed and applying the chain rule automatically, without hand-deriving derivatives."
+   }
+  },
+  {
+   "noteId": 1789000602388,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "How do you compute gradients of a loss with respect to model weights manually using <code>tf.GradientTape</code>?",
+    "Back": "<pre><code>with tf.GradientTape() as tape:\n    predictions = model(x)\n    loss = loss_fn(y, predictions)\ngrads = tape.gradient(loss, model.trainable_variables)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602389,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What does an optimizer (e.g. Adam, SGD) do during training?",
+    "Back": "It updates the model's weights using the computed gradients, in the direction that minimizes the loss function."
+   }
+  },
+  {
+   "noteId": 1789000602390,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What does the loss function measure?",
+    "Back": "The error, or distance, between the model's predictions and the true target values — training adjusts weights to minimize it."
+   }
+  },
+  {
+   "noteId": 1789000602391,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "Why use a validation set during training (e.g. via <code>validation_split</code> or <code>validation_data</code> in <code>fit()</code>)?",
+    "Back": "To monitor performance on data the model isn't training on, each epoch — this reveals overfitting that the training loss alone wouldn't show."
+   }
+  },
+  {
+   "noteId": 1789000602392,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>model.predict(X)</code> and <code>model.evaluate(X, y)</code>?",
+    "Back": "<code>predict()</code> just returns raw model outputs (inference only, no labels needed); <code>evaluate()</code> runs inference and computes the loss/metrics against the supplied true labels <code>y</code>."
+   }
+  },
+  {
+   "noteId": 1789000602393,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Front": "What is a \"layer\" in <code>tf.keras</code>, conceptually?",
+    "Back": "A reusable, composable unit encapsulating a computation (e.g. weights plus an operation like a dense matrix multiply + activation) that can be stacked with other layers to build a model."
+   }
+  },
+  {
+   "noteId": 1789000639981,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "tensorflow"
+   ],
+   "fields": {
+    "Text": "In {{c1::model.fit()}}, one full pass over the entire training dataset is called an {{c2::epoch}}, while each single gradient update on a subset of data is a {{c3::batch}}/step.",
+    "Extra": ""
+   }
+  }
+ ]
+}

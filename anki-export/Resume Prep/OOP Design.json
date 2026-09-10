@@ -1,0 +1,254 @@
+{
+ "deck": "Resume Prep::OOP Design",
+ "note_count": 19,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602585,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is \"favor composition over inheritance\" common design advice?",
+    "Back": "Composition (has-a, holding a reference to another object) is more flexible than inheritance (is-a): it avoids deep fragile hierarchies, lets you swap behavior at runtime, and doesn't leak the parent's implementation details into the child."
+   }
+  },
+  {
+   "noteId": 1789000602586,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the key difference between an interface and an abstract class?",
+    "Back": "An interface declares a contract (method signatures, no state) that a class can implement multiple of; an abstract class can hold shared state and partial implementation, but a class can extend only one."
+   }
+  },
+  {
+   "noteId": 1789000602587,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What problem does the Singleton pattern solve?",
+    "Back": "It ensures a class has exactly one instance and provides a single global access point to it (e.g. a shared config or connection pool)."
+   }
+  },
+  {
+   "noteId": 1789000602588,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a thread-safe lazy Singleton in Java?",
+    "Back": "<pre><code>public class Singleton {\n    private static volatile Singleton instance;\n    private Singleton() {}\n\n    public static Singleton getInstance() {\n        if (instance == null) {\n            synchronized (Singleton.class) {\n                if (instance == null) {\n                    instance = new Singleton();\n                }\n            }\n        }\n        return instance;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602589,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What problem does the Factory pattern solve?",
+    "Back": "It centralizes object creation logic behind a method/class, so calling code depends on an abstraction instead of concrete constructors &mdash; useful when the exact subtype to create depends on runtime input."
+   }
+  },
+  {
+   "noteId": 1789000602590,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a simple Factory in Java?",
+    "Back": "<pre><code>interface Shape { void draw(); }\nclass Circle implements Shape {\n    public void draw() { System.out.println(\"circle\"); }\n}\n\nclass ShapeFactory {\n    static Shape create(String type) {\n        return switch (type) {\n            case \"circle\" -> new Circle();\n            default -> throw new IllegalArgumentException();\n        };\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602591,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What problem does the Strategy pattern solve?",
+    "Back": "It lets you define a family of interchangeable algorithms behind a common interface and swap which one an object uses at runtime, instead of branching with if/else or subclassing per algorithm."
+   }
+  },
+  {
+   "noteId": 1789000602592,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code the Strategy pattern in Java?",
+    "Back": "<pre><code>interface DiscountStrategy {\n    double apply(double price);\n}\nclass NoDiscount implements DiscountStrategy {\n    public double apply(double p) { return p; }\n}\nclass TenPercentOff implements DiscountStrategy {\n    public double apply(double p) { return p * 0.9; }\n}\n\nclass Cart {\n    private DiscountStrategy strategy;\n    Cart(DiscountStrategy s) { this.strategy = s; }\n    double total(double price) { return strategy.apply(price); }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602593,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What problem does the Observer pattern solve, and give a real-world example.",
+    "Back": "It lets one or more \"observer\" objects be notified automatically when a \"subject\" object's state changes, without the subject knowing observer details. Example: event listeners in a UI, or pub/sub messaging."
+   }
+  },
+  {
+   "noteId": 1789000602594,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the difference between coupling and cohesion, and which is desirable?",
+    "Back": "<b>Coupling</b> = how much one module depends on/knows about another's internals. <b>Cohesion</b> = how closely related a single module's responsibilities are. Good design aims for <b>low coupling, high cohesion</b>."
+   }
+  },
+  {
+   "noteId": 1789000602595,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Single Responsibility Principle (SRP)",
+    "Back": "A class should have only one reason to change &mdash; it should do exactly one job."
+   }
+  },
+  {
+   "noteId": 1789000602596,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Open/Closed Principle (OCP)",
+    "Back": "Software entities should be open for extension but closed for modification &mdash; add new behavior via new code (e.g. subclassing/composition), not by editing existing tested code."
+   }
+  },
+  {
+   "noteId": 1789000602597,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Liskov Substitution Principle (LSP)",
+    "Back": "Objects of a subclass must be substitutable for objects of the superclass without breaking the correctness of the program."
+   }
+  },
+  {
+   "noteId": 1789000602598,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Interface Segregation Principle (ISP)",
+    "Back": "No client should be forced to depend on methods it does not use &mdash; prefer several small, specific interfaces over one large general-purpose one."
+   }
+  },
+  {
+   "noteId": 1789000602599,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Dependency Inversion Principle (DIP)",
+    "Back": "High-level modules should depend on abstractions, not on low-level concrete implementations; both should depend on interfaces."
+   }
+  },
+  {
+   "noteId": 1789000640030,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::Encapsulation}} is the pillar of OOP that bundles data with the methods that operate on it and restricts direct external access to that data (e.g. private fields with public getters/setters).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640031,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::Abstraction}} is the pillar of OOP that exposes only the essential behavior of an object through a simplified interface, hiding internal implementation details.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640032,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::Inheritance}} is the pillar of OOP that lets a class acquire fields and methods from a parent class, enabling code reuse and an is-a relationship.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640033,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "oop",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::Polymorphism}} is the pillar of OOP that lets objects of different classes be treated through a common interface, with the actual method invoked determined at runtime (or compile time for overloading).",
+    "Extra": ""
+   }
+  }
+ ]
+}

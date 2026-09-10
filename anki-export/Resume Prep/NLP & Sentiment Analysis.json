@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::NLP & Sentiment Analysis",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602402,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is tokenization in NLP?",
+    "Back": "Splitting raw text into smaller units — typically words or subwords — called tokens, for further processing."
+   }
+  },
+  {
+   "noteId": 1789000602403,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What are \"stop words\", and why are they often removed?",
+    "Back": "Very common words (e.g. \"the\", \"is\", \"and\") that carry little distinctive meaning; removing them reduces noise and dimensionality for many NLP tasks."
+   }
+  },
+  {
+   "noteId": 1789000602404,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the main tradeoff between stemming and lemmatization?",
+    "Back": "Stemming is faster but cruder (can produce non-words); lemmatization is more linguistically accurate but slower and needs more resources (vocabulary/POS info)."
+   }
+  },
+  {
+   "noteId": 1789000602405,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the \"bag-of-words\" text representation?",
+    "Back": "Representing text as an unordered vector of word counts (or presence), completely ignoring grammar and word order."
+   }
+  },
+  {
+   "noteId": 1789000602406,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does TF-IDF stand for, and what does it down-weight?",
+    "Back": "Term Frequency-Inverse Document Frequency; it down-weights terms that appear frequently across many documents (less distinctive) and up-weights terms frequent in one document but rare across the corpus."
+   }
+  },
+  {
+   "noteId": 1789000602407,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is VADER in sentiment analysis?",
+    "Back": "Valence Aware Dictionary and sEntiment Reasoner — a lexicon-and-rule-based sentiment analysis tool tuned for social-media-style text that requires no training data."
+   }
+  },
+  {
+   "noteId": 1789000602408,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is VADER's \"compound score\"?",
+    "Back": "A single normalized score from -1 (most negative) to +1 (most positive) summarizing overall sentiment, computed by summing each word's rule-adjusted valence and normalizing the total."
+   }
+  },
+  {
+   "noteId": 1789000602409,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Name three linguistic features VADER's rules explicitly account for beyond a plain word-valence lexicon.",
+    "Back": "Negation (e.g. \"not good\" flips polarity), intensifiers/degree modifiers (e.g. \"very good\" boosts the score), and punctuation/capitalization/emoji (e.g. \"!!!\" or ALL CAPS amplify intensity)."
+   }
+  },
+  {
+   "noteId": 1789000602410,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you get a VADER compound sentiment score for a string in Python?",
+    "Back": "<pre><code>from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer\nanalyzer = SentimentIntensityAnalyzer()\nscore = analyzer.polarity_scores(text)['compound']</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602411,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you inject a custom term into VADER's lexicon (e.g. a domain-specific finance word)?",
+    "Back": "<code>analyzer.lexicon.update({'bullish': 2.5, 'bearish': -2.5})</code>"
+   }
+  },
+  {
+   "noteId": 1789000602412,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why add a custom financial lexicon to VADER instead of relying on its default lexicon?",
+    "Back": "VADER's default lexicon is tuned for general social media, not finance jargon (e.g. \"bullish\", \"short squeeze\"); a custom lexicon lets it correctly score domain-specific terms, improving accuracy on financial text."
+   }
+  },
+  {
+   "noteId": 1789000602413,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In the BUFFET project, what result came from enhancing VADER with a custom financial lexicon?",
+    "Back": "An 18% improvement in sentiment classification accuracy on financial/trading text, across 63k+ ingested comments."
+   }
+  },
+  {
+   "noteId": 1789000602414,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does \"precision\" measure in a classification task?",
+    "Back": "Of all instances predicted positive, the fraction that were actually positive — TP / (TP + FP)."
+   }
+  },
+  {
+   "noteId": 1789000602415,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does \"recall\" measure in a classification task?",
+    "Back": "Of all actual positive instances, the fraction the model correctly identified — TP / (TP + FN)."
+   }
+  },
+  {
+   "noteId": 1789000602416,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the F1 score?",
+    "Back": "The harmonic mean of precision and recall — a single metric balancing both, useful when you need to trade off false positives against false negatives."
+   }
+  },
+  {
+   "noteId": 1789000602417,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why choose a lexicon-based approach like VADER over a trained ML classifier for sentiment analysis?",
+    "Back": "It needs no labeled training data, is fast and interpretable (scores trace back to specific words/rules), and performs reasonably well out-of-the-box — useful when labeled data is scarce or transparency/speed matters."
+   }
+  },
+  {
+   "noteId": 1789000602418,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Stemming (NLP)",
+    "Back": "Crudely chopping word endings using fixed rules/heuristics to reduce a word to a root form (e.g. \"running\" → \"run\"), without guaranteeing the result is a real word."
+   }
+  },
+  {
+   "noteId": 1789000602419,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "nlp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Lemmatization (NLP)",
+    "Back": "Reducing a word to its dictionary base form (lemma) using vocabulary and morphological/POS analysis (e.g. \"better\" → \"good\"), producing a valid word."
+   }
+  }
+ ]
+}

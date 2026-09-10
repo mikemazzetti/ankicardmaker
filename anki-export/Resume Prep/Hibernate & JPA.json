@@ -1,0 +1,267 @@
+{
+ "deck": "Resume Prep::Hibernate & JPA",
+ "note_count": 20,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601814,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does @Entity mark a Java class as?",
+    "Back": "A JPA-managed persistent class whose instances map to rows in a database table."
+   }
+  },
+  {
+   "noteId": 1789000601815,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a minimal JPA entity with a database-generated primary key?",
+    "Back": "<pre><code>@Entity\n@Table(name = \"eforms\")\npublic class EForm {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    private String title;\n    // getters/setters\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601816,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the difference between GenerationType.IDENTITY and GenerationType.SEQUENCE?",
+    "Back": "IDENTITY relies on the DB's auto-increment column and assigns the ID at insert time, which prevents Hibernate from batching inserts. SEQUENCE pre-fetches ID values from a database sequence before insert, which allows batching."
+   }
+  },
+  {
+   "noteId": 1789000601817,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a one-to-many / many-to-one relationship between EForm and Field entities?",
+    "Back": "<pre><code>@Entity\npublic class EForm {\n    @OneToMany(mappedBy = \"form\", fetch = FetchType.LAZY)\n    private List&lt;Field&gt; fields;\n}\n\n@Entity\npublic class Field {\n    @ManyToOne(fetch = FetchType.LAZY)\n    @JoinColumn(name = \"form_id\")\n    private EForm form;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601818,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the default fetch type for @ManyToOne/@OneToOne versus @OneToMany/@ManyToMany?",
+    "Back": "@ManyToOne and @OneToOne default to EAGER; @OneToMany and @ManyToMany default to LAZY."
+   }
+  },
+  {
+   "noteId": 1789000601819,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does LAZY fetching mean for an association, and what happens if you access it after the session is closed?",
+    "Back": "The related entity/collection is not loaded from the database until it's actually accessed; accessing it after the persistence context/session has closed throws LazyInitializationException."
+   }
+  },
+  {
+   "noteId": 1789000601820,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the N+1 query problem?",
+    "Back": "Fetching a list of N parent entities triggers 1 query for the parents plus N additional queries — one per parent — to lazily load each parent's related collection/entity, instead of one efficient query."
+   }
+  },
+  {
+   "noteId": 1789000601821,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does the N+1 problem typically show up when iterating over parent entities and accessing a lazy association in a loop?",
+    "Back": "Because Hibernate only loads a LAZY association on first access, so touching that association inside a loop over N parents fires a separate SELECT for each parent individually."
+   }
+  },
+  {
+   "noteId": 1789000601822,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you fix N+1 for a specific repository query using JPQL JOIN FETCH?",
+    "Back": "<pre><code>@Query(\"SELECT f FROM EForm f JOIN FETCH f.fields WHERE f.status = :status\")\nList&lt;EForm&gt; findWithFieldsByStatus(@Param(\"status\") String status);</code></pre> This loads EForms and their fields in one SQL join instead of N extra queries."
+   }
+  },
+  {
+   "noteId": 1789000601823,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the key difference between a plain JPQL JOIN and a JOIN FETCH?",
+    "Back": "A plain JOIN only affects the filter/WHERE condition and still lazily loads the association separately afterward; JOIN FETCH eagerly initializes the association within the same query, eliminating the extra round-trips."
+   }
+  },
+  {
+   "noteId": 1789000601824,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does Hibernate's @BatchSize (or hibernate.default_batch_fetch_size) do?",
+    "Back": "Instead of firing one SELECT per lazy association, Hibernate groups multiple pending lazy loads into a single \"SELECT ... WHERE id IN (?, ?, ?...)\" up to the configured batch size — cutting N+1 down to roughly N/batchSize queries when a JOIN FETCH isn't applicable."
+   }
+  },
+  {
+   "noteId": 1789000601825,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you apply Hibernate batch fetching to an entity's lazy collection?",
+    "Back": "<pre><code>@Entity\npublic class EForm {\n    @OneToMany(mappedBy = \"form\", fetch = FetchType.LAZY)\n    @BatchSize(size = 25)\n    private List&lt;Field&gt; fields;\n}</code></pre> Or globally via <code>spring.jpa.properties.hibernate.default_batch_fetch_size=25</code>."
+   }
+  },
+  {
+   "noteId": 1789000601826,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "At ServiceOntario, how were N+1 query bottlenecks fixed, and what was the measured impact?",
+    "Back": "By adding JPQL JOIN FETCH for associations known to be needed on every row, and tuning Hibernate batch sizes for the remaining lazy loads — this cut read latency by 40%."
+   }
+  },
+  {
+   "noteId": 1789000601827,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you prefer JOIN FETCH over increasing @BatchSize, and vice versa?",
+    "Back": "Use JOIN FETCH when you know upfront you need one (or maybe two) specific associations for every row in a query — one round trip. Use @BatchSize when several different lazy associations/collections are accessed unpredictably across many entities, since fetch-joining multiple collections at once risks a cartesian-product blowup or MultipleBagFetchException."
+   }
+  },
+  {
+   "noteId": 1789000601828,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the first-level cache (persistence context) in Hibernate?",
+    "Back": "A per-Session/EntityManager cache that stores every entity loaded or saved during that session; a repeated lookup by ID within the same session returns the cached instance instead of re-querying the database."
+   }
+  },
+  {
+   "noteId": 1789000601829,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is \"dirty checking\" in Hibernate?",
+    "Back": "At flush time, Hibernate compares each managed entity's current state against the snapshot taken when it was loaded, and automatically generates UPDATE statements for any changed fields — no explicit save() call needed for a managed entity mutation."
+   }
+  },
+  {
+   "noteId": 1789000601830,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When does Hibernate flush pending SQL to the database relative to a @Transactional method's execution?",
+    "Back": "By default (FlushMode.AUTO) it flushes automatically before the transaction commits, and also before running a JPQL/SQL query that could be affected by pending in-memory changes — not necessarily the instant an entity field is mutated."
+   }
+  },
+  {
+   "noteId": 1789000601831,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "If a @Transactional method's transaction is rolled back, are SQL statements Hibernate already flushed to the database during that transaction undone?",
+    "Back": "Yes — a rollback undoes the entire database transaction, including any statements Hibernate had already flushed (sent to the DB but not yet committed) earlier in that same transaction."
+   }
+  },
+  {
+   "noteId": 1789000601832,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "@GeneratedValue(strategy = GenerationType.IDENTITY)",
+    "Back": "Delegates primary-key generation to the database's auto-increment column; the ID is only known after the INSERT executes."
+   }
+  },
+  {
+   "noteId": 1789000639830,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "hibernate-jpa",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "JPQL is {{c1::object/entity-oriented}} — it queries against entity names and fields rather than table/column names — while the Criteria API builds queries {{c2::programmatically with a type-safe, object-based API}} instead of query strings, which is useful for dynamically constructed queries.",
+    "Extra": ""
+   }
+  }
+ ]
+}

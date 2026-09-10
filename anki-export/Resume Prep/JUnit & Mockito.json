@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::JUnit & Mockito",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602461,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What annotation marks a method as a JUnit 5 test?",
+    "Back": "<code>@Test</code>"
+   }
+  },
+  {
+   "noteId": 1789000602462,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>@BeforeEach</code> do in a JUnit 5 test class?",
+    "Back": "Runs the annotated method before <em>every</em> test method in the class &mdash; used for per-test setup (e.g. re-creating fixtures)."
+   }
+  },
+  {
+   "noteId": 1789000602463,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>@AfterEach</code> do in a JUnit 5 test class?",
+    "Back": "Runs the annotated method after <em>every</em> test method &mdash; used for per-test cleanup (e.g. closing resources)."
+   }
+  },
+  {
+   "noteId": 1789000602464,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a JUnit 5 test asserting that 2 + 2 equals 4.",
+    "Back": "<pre><code>@Test\nvoid addsTwoNumbers() {\n    assertEquals(4, 2 + 2);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602465,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a JUnit 5 test asserting that <code>calc.divide(1, 0)</code> throws <code>ArithmeticException</code>.",
+    "Back": "<pre><code>@Test\nvoid divideByZeroThrows() {\n    Calculator calc = new Calculator();\n    assertThrows(ArithmeticException.class,\n        () -&gt; calc.divide(1, 0));\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602466,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does JUnit's <code>assertThrows(...)</code> return, and why is that useful?",
+    "Back": "It returns the caught exception instance, so you can chain further assertions on it (e.g. <code>assertEquals(\"bad input\", ex.getMessage())</code>) instead of only checking the type."
+   }
+  },
+  {
+   "noteId": 1789000602467,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a JUnit 5 parameterized test that checks every int in {1, 2, 3, 4} is positive.",
+    "Back": "<pre><code>@ParameterizedTest\n@ValueSource(ints = {1, 2, 3, 4})\nvoid isPositive(int number) {\n    assertTrue(number &gt; 0);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602468,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Mockito, what does the <code>@Mock</code> annotation create?",
+    "Back": "A fake implementation of the annotated type whose methods return default/empty values (null, 0, empty collection, etc.) until you stub them &mdash; it does not call any real logic."
+   }
+  },
+  {
+   "noteId": 1789000602469,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Mockito, what does <code>@InjectMocks</code> do?",
+    "Back": "Creates a real instance of the class under test and injects the fields annotated <code>@Mock</code> (or <code>@Spy</code>) into it via constructor, setter, or field injection."
+   }
+  },
+  {
+   "noteId": 1789000602470,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write Mockito code to stub <code>userRepository.findById(1L)</code> so it returns <code>Optional.of(user)</code>.",
+    "Back": "<pre><code>when(userRepository.findById(1L))\n    .thenReturn(Optional.of(user));</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602471,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why must you use <code>doReturn(x).when(mock).method()</code> instead of <code>when(mock.method()).thenReturn(x)</code> when stubbing a Mockito <strong>spy</strong>?",
+    "Back": "<code>when(...)</code> first actually calls <code>mock.method()</code> to resolve the argument; on a spy that wraps a real object, that invokes the real method (possibly with side effects) before the stub is applied. <code>doReturn()</code> never calls the real method."
+   }
+  },
+  {
+   "noteId": 1789000602472,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you verify with Mockito that <code>emailService.send(...)</code> was called exactly once?",
+    "Back": "<pre><code>verify(emailService, times(1)).send(any());</code></pre> (<code>times(1)</code> is the default, so <code>verify(emailService).send(any());</code> is equivalent.)"
+   }
+  },
+  {
+   "noteId": 1789000602473,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the rule for mixing Mockito argument matchers (like <code>anyString()</code>) with raw literal values in the same stub or verify call?",
+    "Back": "If <em>any</em> argument in the call uses a matcher, <em>all</em> arguments in that call must be matchers &mdash; you cannot mix raw values and matchers in one invocation (use <code>eq(value)</code> for the raw ones instead)."
+   }
+  },
+  {
+   "noteId": 1789000602474,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What do the three parts of the AAA pattern stand for when structuring a unit test?",
+    "Back": "Arrange (set up objects/data), Act (call the method under test), Assert (check the result) &mdash; keeping these visually separated makes tests easier to read."
+   }
+  },
+  {
+   "noteId": 1789000602475,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a JUnit 5 + Mockito test for a Spring <code>OrderService</code> that mocks its <code>OrderRepository</code> dependency, without starting the Spring context.",
+    "Back": "<pre><code>@ExtendWith(MockitoExtension.class)\nclass OrderServiceTest {\n    @Mock OrderRepository repo;\n    @InjectMocks OrderService service;\n\n    @Test\n    void savesOrder() {\n        when(repo.save(any())).thenReturn(new Order());\n        assertNotNull(service.createOrder());\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602476,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Mockito <strong>spy</strong>",
+    "Back": "A test double that wraps a real object; unless explicitly stubbed, calling a method on it runs the real implementation &mdash; unlike a mock, which returns defaults for every unstubbed call."
+   }
+  },
+  {
+   "noteId": 1789000639997,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In JUnit 5, {{c1::@BeforeAll}} runs once before all tests in the class, and {{c2::@AfterAll}} runs once after all tests; both must be <code>static</code> methods unless the class uses <code>@TestInstance(Lifecycle.PER_CLASS)</code>.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639998,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "junit-mockito",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "A JUnit 5 parameterized test uses {{c1::@ParameterizedTest}} instead of <code>@Test</code>, plus a source annotation such as {{c2::@ValueSource}}, {{c3::@CsvSource}}, or {{c4::@MethodSource}} to supply the argument values.",
+    "Extra": ""
+   }
+  }
+ ]
+}

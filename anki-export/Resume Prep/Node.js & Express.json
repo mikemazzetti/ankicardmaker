@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::Node.js & Express",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601921,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is Node.js described as non-blocking / asynchronous I/O?",
+    "Back": "Node uses a single-threaded event loop plus libuv's thread pool: I/O operations (file, network, DB) are dispatched and their callbacks run later when complete, so the main thread never blocks waiting on them."
+   }
+  },
+  {
+   "noteId": 1789000601922,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the Node.js event loop?",
+    "Back": "A loop that continuously checks for and executes queued callbacks (timers, I/O completions, immediates) in phases, letting a single JS thread handle many concurrent operations without blocking."
+   }
+  },
+  {
+   "noteId": 1789000601923,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the key difference between CommonJS <code>require()</code> and ES Modules <code>import</code> in Node.js?",
+    "Back": "<code>require()</code> loads modules synchronously and resolves at call time (can be conditional/dynamic); ESM <code>import</code> is statically analyzed at parse time and needs <code>\"type\": \"module\"</code> or a <code>.mjs</code> extension to use natively."
+   }
+  },
+  {
+   "noteId": 1789000601924,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a minimal Express server with a GET route?",
+    "Back": "<pre><code>const express = require('express');\nconst app = express();\n\napp.get('/health', (req, res) =&gt; {\n  res.status(200).json({ status: 'ok' });\n});\n\napp.listen(3000);</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601925,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is Express middleware?",
+    "Back": "A function with the signature <code>(req, res, next)</code> that runs during the request/response cycle — it can inspect or modify req/res, end the cycle, or call <code>next()</code> to pass control to the next middleware."
+   }
+  },
+  {
+   "noteId": 1789000601926,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code Express middleware that logs each request's method and URL?",
+    "Back": "<pre><code>app.use((req, res, next) =&gt; {\n  console.log(`${req.method} ${req.url}`);\n  next();\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601927,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code Express error-handling middleware, and what makes it different from regular middleware?",
+    "Back": "It takes four arguments (err first); Express recognizes this arity and routes errors passed to <code>next(err)</code> here.<pre><code>app.use((err, req, res, next) =&gt; {\n  console.error(err);\n  res.status(500).json({ error: 'Internal error' });\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601928,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In an Express route handler, what do <code>req.params</code>, <code>req.query</code>, and <code>req.body</code> each represent?",
+    "Back": "<code>req.params</code>: named URL path segments (e.g. <code>/users/:id</code>); <code>req.query</code>: the URL's query string key/values; <code>req.body</code>: the parsed request payload (needs a body-parsing middleware like <code>express.json()</code>)."
+   }
+  },
+  {
+   "noteId": 1789000601929,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an Express route that reads a route param and a query param?",
+    "Back": "<pre><code>app.get('/users/:id', (req, res) =&gt; {\n  const { id } = req.params;\n  const { active } = req.query;\n  res.json({ id, active });\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601930,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Node.js stream, and why use one for large files instead of reading the whole file into memory?",
+    "Back": "A stream processes data in chunks over time (Readable, Writable, Duplex, Transform); it keeps memory usage low and lets processing start before the whole source has been read, unlike <code>fs.readFile</code>."
+   }
+  },
+  {
+   "noteId": 1789000601931,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code piping a file read stream to an HTTP response in Node.js?",
+    "Back": "<pre><code>const fs = require('fs');\n\napp.get('/download', (req, res) =&gt; {\n  fs.createReadStream('report.csv').pipe(res);\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601932,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the <code>package.json</code> <code>\"dependencies\"</code> vs <code>\"devDependencies\"</code> distinction control?",
+    "Back": "<code>dependencies</code> are required at runtime in production; <code>devDependencies</code> are only needed for development, build, or test tooling and aren't installed with <code>npm install --production</code>."
+   }
+  },
+  {
+   "noteId": 1789000601933,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>package-lock.json</code> guarantee that a version range in <code>package.json</code> (e.g. <code>^4.2.0</code>) doesn't?",
+    "Back": "It pins the exact resolved version (and full dependency tree) that was installed, so every install reproduces identical dependency versions across machines and CI."
+   }
+  },
+  {
+   "noteId": 1789000601934,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the idiomatic way to load environment-specific config (like DB URLs or API keys) into a Node.js app?",
+    "Back": "Read from <code>process.env</code>, typically populated via a <code>.env</code> file loaded with a package like <code>dotenv</code> in development, and via real environment variables injected by the platform/CI in production — keeping secrets out of source control."
+   }
+  },
+  {
+   "noteId": 1789000601935,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why can a single slow synchronous CPU-bound function block an entire Node.js server, even though I/O is non-blocking?",
+    "Back": "Node runs JS on a single main thread; a long synchronous computation occupies that thread, so the event loop can't process other pending callbacks (other requests) until it finishes."
+   }
+  },
+  {
+   "noteId": 1789000601936,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a Discord bot doing CRUD against a SQL backend (Node.js), why use parameterized queries instead of string-concatenating user input into SQL?",
+    "Back": "Parameterized queries send user input separately from the SQL statement so the driver escapes it, preventing SQL injection from untrusted Discord command input."
+   }
+  },
+  {
+   "noteId": 1789000601937,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "For a BMO-style Node.js backend modernized into serverless AWS Lambda functions, why does minimizing an Express app's dependencies matter for cold starts?",
+    "Back": "Each Lambda cold start must load and initialize the Node.js runtime and all required modules before handling the first request, so fewer/lighter dependencies directly reduce cold-start latency."
+   }
+  },
+  {
+   "noteId": 1789000639864,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "node-express",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The Node.js event loop processes phases in this order each tick: {{c1::timers}} → pending callbacks → idle/prepare → {{c2::poll}} (I/O) → {{c3::check}} (setImmediate) → close callbacks.",
+    "Extra": ""
+   }
+  }
+ ]
+}

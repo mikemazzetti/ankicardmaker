@@ -1,0 +1,254 @@
+{
+ "deck": "Resume Prep::C#",
+ "note_count": 19,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601621,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the fundamental difference between a value type and a reference type in C#?",
+    "Back": "A value type (<code>struct</code>, <code>int</code>, <code>bool</code>, <code>enum</code>) stores its data directly and is copied by value on assignment or when passed. A reference type (<code>class</code>, <code>string</code>, array) stores a reference pointing to heap data, so assignment copies the reference, not the data."
+   }
+  },
+  {
+   "noteId": 1789000601622,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Is a C# value type always allocated on the stack?",
+    "Back": "No — it's on the stack only as a local variable or parameter. As a field of a class instance, or when boxed, a value type's data lives on the heap. 'Value type' describes copy semantics, not a storage-location guarantee."
+   }
+  },
+  {
+   "noteId": 1789000601623,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you declare an auto-implemented C# property <code>Name</code> of type <code>string</code> with a public getter and a private setter?",
+    "Back": "<pre><code>public string Name { get; private set; }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601624,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a C# auto-implemented property compile down to?",
+    "Back": "A hidden private backing field plus compiler-generated <code>get_Name()</code>/<code>set_Name()</code> accessor methods — properties are syntactic sugar over accessor methods, not a distinct storage mechanism."
+   }
+  },
+  {
+   "noteId": 1789000601625,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When an <code>async</code> method hits <code>await</code> on an incomplete <code>Task</code>, what happens to the calling thread?",
+    "Back": "Control returns to the caller immediately — the thread is not blocked. When the awaited Task completes, the rest of the method resumes (typically via the captured <code>SynchronizationContext</code> or a thread-pool thread) through a compiler-generated state machine."
+   }
+  },
+  {
+   "noteId": 1789000601626,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you write an async C# method that fetches a string body from a URL using <code>HttpClient</code>?",
+    "Back": "<pre><code>public async Task&lt;string&gt; GetAsync(string url) {\n    using var client = new HttpClient();\n    return await client.GetStringAsync(url);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601627,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>Task</code> and <code>Task&lt;T&gt;</code> in C#?",
+    "Back": "<code>Task</code> represents an asynchronous operation with no return value (an awaitable void). <code>Task&lt;T&gt;</code> represents one that produces a result of type <code>T</code>, retrieved via <code>await</code> or <code>.Result</code>."
+   }
+  },
+  {
+   "noteId": 1789000601628,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is <code>async void</code> discouraged in C# except for UI event handlers?",
+    "Back": "Exceptions thrown inside an <code>async void</code> method can't be caught by the caller — there's no Task to await or observe — and the caller has no way to know when it finishes. Use <code>async Task</code> everywhere else."
+   }
+  },
+  {
+   "noteId": 1789000601629,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you write a LINQ query that filters a <code>List&lt;int&gt;</code> for even numbers, ordered descending?",
+    "Back": "<pre><code>var result = numbers\n    .Where(n =&gt; n % 2 == 0)\n    .OrderByDescending(n =&gt; n)\n    .ToList();</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601630,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does 'deferred execution' mean for a LINQ query like <code>var q = list.Where(x =&gt; x &gt; 5);</code>?",
+    "Back": "The query isn't run when <code>q</code> is defined — it's an iterator/expression that only executes when enumerated (<code>foreach</code>, <code>ToList()</code>, etc.), so it re-evaluates against the source's current state each time it's iterated."
+   }
+  },
+  {
+   "noteId": 1789000601631,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you declare and raise a simple <code>EventHandler</code> event in a C# class?",
+    "Back": "<pre><code>public event EventHandler Updated;\n\nprotected void OnUpdated() {\n    Updated?.Invoke(this, EventArgs.Empty);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601632,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What do <code>IDisposable</code> and a <code>using</code> statement guarantee together in C#?",
+    "Back": "<code>IDisposable.Dispose()</code> releases unmanaged resources (file handles, connections, etc.). A <code>using</code> statement/declaration guarantees <code>Dispose()</code> runs deterministically when the block exits, even on an exception — equivalent to a try/finally."
+   }
+  },
+  {
+   "noteId": 1789000601633,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you open and read a file safely in C# using a <code>using</code> declaration?",
+    "Back": "<pre><code>using var reader = new StreamReader(path);\nstring text = reader.ReadToEnd();\n// reader.Dispose() runs automatically at scope end</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601634,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is boxing in C#, and why is it costly?",
+    "Back": "Boxing wraps a value type in an object on the managed heap so it can be used where a reference type is expected. It costs a heap allocation plus a copy and adds GC pressure — avoid it in hot paths (e.g. prefer generic collections over legacy <code>ArrayList</code>)."
+   }
+  },
+  {
+   "noteId": 1789000601635,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do C# generics avoid the boxing overhead that non-generic collections like <code>ArrayList</code> had for value types?",
+    "Back": "A generic type like <code>List&lt;int&gt;</code> is compiled/specialized for the value type <code>T</code>, storing the raw ints directly instead of wrapping each one as an <code>object</code>, so no boxing/unboxing happens on add or retrieve."
+   }
+  },
+  {
+   "noteId": 1789000601636,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What compile-time problem do nullable reference types (<code>string?</code> vs <code>string</code>) in C# 8+ help catch?",
+    "Back": "With the feature enabled, <code>string</code> is treated as non-nullable by default, and the compiler warns on any code path that could assign or dereference null on it; <code>string?</code> explicitly opts a variable into allowing null — catching potential <code>NullReferenceException</code>s earlier."
+   }
+  },
+  {
+   "noteId": 1789000601637,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you define a generic C# class <code>Box&lt;T&gt;</code> constrained so <code>T</code> must implement <code>IComparable&lt;T&gt;</code>?",
+    "Back": "<pre><code>public class Box&lt;T&gt; where T : IComparable&lt;T&gt; {\n    public T Value;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601638,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between a C# <code>class</code> and a <code>struct</code> in terms of inheritance and equality?",
+    "Back": "A <code>struct</code> is a value type that cannot be inherited from or inherit (implicitly sealed) and has no reference equality by default. A <code>class</code> is a reference type that supports inheritance and virtual dispatch, with default <code>==</code> comparing reference identity unless overridden."
+   }
+  },
+  {
+   "noteId": 1789000639780,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "csharp",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In C#, a {{c1::delegate}} is a type-safe function pointer that can reference one or more methods with a matching signature; an {{c2::event}} is a delegate field with restricted access — outside the declaring class, code can only {{c3::subscribe and unsubscribe (+= / -=)}}, not invoke or reassign it.",
+    "Extra": ""
+   }
+  }
+ ]
+}

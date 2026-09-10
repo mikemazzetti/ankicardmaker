@@ -1,0 +1,202 @@
+{
+ "deck": "Resume Prep::Serverless & Event-Driven Architecture",
+ "note_count": 15,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602020,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What is \"serverless\" computing?",
+    "Back": "A cloud execution model where the provider automatically provisions, scales, and manages the compute infrastructure; you deploy code (e.g., functions) and pay only for actual execution, not for idle capacity."
+   }
+  },
+  {
+   "noteId": 1789000602021,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "Name two downsides of a serverless architecture.",
+    "Back": "Cold-start latency on infrequently-invoked functions, and vendor lock-in to the provider's runtime/services plus harder local testing and debugging."
+   }
+  },
+  {
+   "noteId": 1789000602022,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What is event-driven architecture?",
+    "Back": "A design where components communicate by producing and reacting to events (state changes) asynchronously through an intermediary, rather than calling each other directly and synchronously."
+   }
+  },
+  {
+   "noteId": 1789000602023,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What is Amazon SQS, and how does it typically deliver a message?",
+    "Back": "A message queue service; each message is normally consumed and removed by exactly one consumer (point-to-point), which decouples producers from consumers and buffers load."
+   }
+  },
+  {
+   "noteId": 1789000602024,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What is Amazon SNS, and how does its delivery model differ from SQS?",
+    "Back": "A pub/sub notification service that pushes (\"fans out\") each published message to every current subscriber (e.g., multiple SQS queues, Lambdas, emails) — unlike SQS, where one message goes to one consumer."
+   }
+  },
+  {
+   "noteId": 1789000602025,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What does \"idempotency\" mean for a message- or event-processing handler?",
+    "Back": "Processing the same message more than once produces the same end result as processing it exactly once, with no duplicate side effects."
+   }
+  },
+  {
+   "noteId": 1789000602026,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "Why must consumers of an SQS queue be designed to be idempotent?",
+    "Back": "SQS guarantees at-least-once delivery, so a message can be redelivered and processed more than once (e.g., if it isn't deleted before its visibility timeout expires); idempotent handling prevents duplicate effects from that redelivery."
+   }
+  },
+  {
+   "noteId": 1789000602027,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What does \"at-least-once delivery\" guarantee, and what does it not guarantee?",
+    "Back": "It guarantees a message will be delivered one or more times; it does not guarantee exactly-once delivery or strict ordering (for standard SQS queues/SNS topics)."
+   }
+  },
+  {
+   "noteId": 1789000602028,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "What is a Dead-Letter Queue (DLQ) used for?",
+    "Back": "Capturing messages that repeatedly fail processing (once they exceed a max receive/retry count) so they're isolated for inspection or reprocessing instead of blocking the queue or being silently lost."
+   }
+  },
+  {
+   "noteId": 1789000602029,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "In orchestration (as opposed to choreography), how is a multi-step workflow coordinated?",
+    "Back": "A central orchestrator (e.g., AWS Step Functions) explicitly invokes each service in sequence and tracks and manages the workflow's state."
+   }
+  },
+  {
+   "noteId": 1789000602030,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "Why must serverless functions like AWS Lambda be written to be stateless?",
+    "Back": "Because the platform can create, reuse, or destroy execution environments at any time and route different invocations to different instances, so anything that must persist between calls has to be stored externally (e.g., DynamoDB, S3), not in memory on the instance."
+   }
+  },
+  {
+   "noteId": 1789000602031,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "Publish/subscribe (pub/sub) pattern",
+    "Back": "Producers publish events to a channel (topic) without knowing who is listening; any number of subscribers independently receive their own copy of each event."
+   }
+  },
+  {
+   "noteId": 1789000602032,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Front": "Choreography (event-driven microservices)",
+    "Back": "A coordination style where each service reacts to events independently with no central controller — the overall workflow emerges from services publishing and subscribing to events."
+   }
+  },
+  {
+   "noteId": 1789000639889,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Text": "Pros of a serverless architecture: {{c1::no server management}}, {{c2::automatic scaling}}, and {{c3::pay-per-execution billing}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639890,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "serverless"
+   ],
+   "fields": {
+    "Text": "At BMO, redesigning legacy synchronous REST APIs into an {{c1::event-driven}} architecture (API Gateway/Lambda decoupled via async events rather than direct calls) delivered an {{c2::80%}} faster runtime.",
+    "Extra": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::ETL & Data Pipelines",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602427,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does ELT differ from ETL?",
+    "Back": "In ELT, raw data is loaded into the target system (e.g. a warehouse/lake) first, and transformed afterward using the target's own compute — instead of transforming before loading."
+   }
+  },
+  {
+   "noteId": 1789000602428,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What happens in the \"Extract\" stage of ETL?",
+    "Back": "Raw data is pulled from one or more source systems (databases, APIs, files, etc.) into a staging area, generally with minimal transformation."
+   }
+  },
+  {
+   "noteId": 1789000602429,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What happens in the \"Transform\" stage of ETL?",
+    "Back": "Extracted data is cleaned, validated, reshaped, joined, and enriched into the schema/format the destination requires."
+   }
+  },
+  {
+   "noteId": 1789000602430,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What happens in the \"Load\" stage of ETL?",
+    "Back": "The transformed data is written into the target system (e.g. data warehouse or database) for downstream use."
+   }
+  },
+  {
+   "noteId": 1789000602431,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does it mean for an ETL pipeline step to be \"idempotent\"?",
+    "Back": "Running it multiple times with the same input produces the same end result as running it once — no duplicate or corrupted data from retries or re-runs."
+   }
+  },
+  {
+   "noteId": 1789000602432,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is idempotency important for ETL pipelines?",
+    "Back": "Failures and retries are common in pipelines; idempotent steps can be safely re-run after a failure without creating duplicates or inconsistent state."
+   }
+  },
+  {
+   "noteId": 1789000602433,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between batch and streaming data processing?",
+    "Back": "Batch processes data in discrete, scheduled chunks (e.g. hourly/daily); streaming processes data continuously, record-by-record or in micro-batches, as it arrives."
+   }
+  },
+  {
+   "noteId": 1789000602434,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is an \"incremental load\" in ETL?",
+    "Back": "Loading only new or changed data since the last run (e.g. via a timestamp or change-tracking column), instead of reprocessing the full dataset every time."
+   }
+  },
+  {
+   "noteId": 1789000602435,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why prefer incremental loads over full reloads for large datasets?",
+    "Back": "They're much faster and cheaper — less data to extract, transform, and load, and lower load placed on source systems — than reprocessing everything on every run."
+   }
+  },
+  {
+   "noteId": 1789000602436,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Name two common data quality checks run within an ETL pipeline.",
+    "Back": "e.g. null/missing-value checks, schema/type validation, duplicate detection, and range or referential-integrity checks."
+   }
+  },
+  {
+   "noteId": 1789000602437,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is Microsoft Fabric, at a high level?",
+    "Back": "A unified, end-to-end SaaS analytics platform (built on OneLake) combining data engineering, data integration/ETL pipelines, data warehousing, and Power BI reporting in one workspace."
+   }
+  },
+  {
+   "noteId": 1789000602438,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Microsoft Fabric, what is OneLake?",
+    "Back": "A single, unified, tenant-wide data lake (built on ADLS Gen2) underlying all Fabric workloads, so data doesn't need to be copied between engines."
+   }
+  },
+  {
+   "noteId": 1789000602439,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What role does orchestration play in a data pipeline?",
+    "Back": "It schedules and sequences pipeline jobs, manages dependencies between them, and handles retries/failure recovery (e.g. via Airflow or Fabric/Data Factory pipelines)."
+   }
+  },
+  {
+   "noteId": 1789000602440,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In the COMPLIANCE360 project, what did the Python ETL pipeline on MS Fabric do?",
+    "Back": "Extracted and transformed compliance-related data, applied custom scoring algorithms to it, and loaded the results for a React front-end to display."
+   }
+  },
+  {
+   "noteId": 1789000602441,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a \"scoring algorithm\", in the context of the COMPLIANCE360 ETL pipeline?",
+    "Back": "Custom logic run in the Transform stage that computes a numeric compliance/risk score for each record based on defined rules or weighted criteria."
+   }
+  },
+  {
+   "noteId": 1789000602442,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you express an idempotent load step as an \"upsert\" (insert-or-update) instead of a plain insert?",
+    "Back": "<pre><code>INSERT INTO target (id, val)\nVALUES (1, 'x')\nON CONFLICT (id) DO UPDATE SET val = EXCLUDED.val;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602443,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "ETL",
+    "Back": "Extract, Transform, Load — data is pulled from sources, transformed to the target format, and then loaded into the destination system."
+   }
+  },
+  {
+   "noteId": 1789000639989,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "etl",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "A well-known reliability property for pipeline transactions is {{c1::ACID}}: {{c2::Atomicity}}, {{c3::Consistency}}, {{c4::Isolation}}, and {{c5::Durability}}.",
+    "Extra": "Many big-data/streaming pipelines instead trade strict ACID guarantees for eventual consistency at scale."
+   }
+  }
+ ]
+}

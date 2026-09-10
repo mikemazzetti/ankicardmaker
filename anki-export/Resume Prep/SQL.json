@@ -1,0 +1,267 @@
+{
+ "deck": "Resume Prep::SQL",
+ "note_count": 20,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602144,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "In query execution order, does <code>WHERE</code> filter rows before or after <code>GROUP BY</code> forms groups?",
+    "Back": "Before — <code>WHERE</code> filters individual rows first, then the survivors are grouped by <code>GROUP BY</code>."
+   }
+  },
+  {
+   "noteId": 1789000602145,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Which SQL clause filters groups after aggregation, and why can't <code>WHERE</code> do this?",
+    "Back": "<code>HAVING</code>. <code>WHERE</code> runs before grouping/aggregation, so it can't reference aggregate results like <code>COUNT(*)</code> or <code>SUM(x)</code>."
+   }
+  },
+  {
+   "noteId": 1789000602146,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Write a SQL query returning each customer_id and total order amount from <code>orders</code>, including only customers with more than 5 orders.",
+    "Back": "<pre><code>SELECT customer_id, SUM(amount) AS total\nFROM orders\nGROUP BY customer_id\nHAVING COUNT(*) &gt; 5;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602147,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "What distinguishes a correlated subquery from a regular (uncorrelated) subquery?",
+    "Back": "A correlated subquery references columns from the outer query and is logically re-evaluated per outer row; a regular subquery runs once, independently of the outer query."
+   }
+  },
+  {
+   "noteId": 1789000602148,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Write a SQL query using a subquery to find employees earning more than their own department's average salary.",
+    "Back": "<pre><code>SELECT e.name\nFROM employees e\nWHERE e.salary &gt; (\n  SELECT AVG(salary) FROM employees e2\n  WHERE e2.department_id = e.department_id\n);</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602149,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "What can a window function do that plain <code>GROUP BY</code> cannot?",
+    "Back": "Compute an aggregate or ranking value per row while keeping every row in the result — <code>GROUP BY</code> collapses rows into one row per group."
+   }
+  },
+  {
+   "noteId": 1789000602150,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Write a SQL query using a window function to rank employees by salary within each department.",
+    "Back": "<pre><code>SELECT name, department_id, salary,\n  RANK() OVER (PARTITION BY department_id\n               ORDER BY salary DESC) AS rnk\nFROM employees;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602151,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "What's the key difference between DDL and DML?",
+    "Back": "DDL defines or modifies the schema's structure (tables, columns, constraints); DML manipulates the data stored within that structure."
+   }
+  },
+  {
+   "noteId": 1789000602152,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Write SQL to insert a new row into <code>users</code> with columns id, username, created_at.",
+    "Back": "<pre><code>INSERT INTO users (id, username, created_at)\nVALUES (1, 'alice', NOW());</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602153,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Write SQL to update a user's email where id = 5.",
+    "Back": "<pre><code>UPDATE users SET email = 'new@x.com'\nWHERE id = 5;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602154,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Write SQL to delete all orders older than 1 year.",
+    "Back": "<pre><code>DELETE FROM orders\nWHERE order_date &lt; NOW() - INTERVAL '1 year';</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602155,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "Name three common SQL aggregate functions besides <code>COUNT</code>.",
+    "Back": "<code>SUM</code>, <code>AVG</code>, and <code>MIN</code>/<code>MAX</code>."
+   }
+  },
+  {
+   "noteId": 1789000602156,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "A Discord bot does CRUD against a SQL back-end. What SQL statement type handles a \"delete this reminder\" command?",
+    "Back": "<code>DELETE</code> — a DML statement that removes the matching row(s)."
+   }
+  },
+  {
+   "noteId": 1789000602157,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "INNER JOIN",
+    "Back": "Returns only rows that have matching values in both joined tables."
+   }
+  },
+  {
+   "noteId": 1789000602158,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "LEFT JOIN",
+    "Back": "Returns all rows from the left table, plus matched rows from the right table (NULLs where there's no match)."
+   }
+  },
+  {
+   "noteId": 1789000602159,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "RIGHT JOIN",
+    "Back": "Returns all rows from the right table, plus matched rows from the left table (NULLs where there's no match)."
+   }
+  },
+  {
+   "noteId": 1789000602160,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Front": "FULL OUTER JOIN",
+    "Back": "Returns all rows from both tables, with NULLs on whichever side has no match."
+   }
+  },
+  {
+   "noteId": 1789000639922,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Text": "In SQL, the {{c1::GROUP BY}} clause groups rows that share a column value so aggregate functions can be applied per group.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639923,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Text": "The core DDL statements are {{c1::CREATE}}, {{c2::ALTER}}, {{c3::DROP}}, and {{c4::TRUNCATE}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639924,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "sql"
+   ],
+   "fields": {
+    "Text": "The core DML statements are {{c1::SELECT}}, {{c2::INSERT}}, {{c3::UPDATE}}, and {{c4::DELETE}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::Computer Architecture",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602618,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the ALU (Arithmetic Logic Unit) do?",
+    "Back": "It performs arithmetic operations (add, subtract, multiply) and logic operations (AND, OR, NOT, comparisons) on data supplied by the registers."
+   }
+  },
+  {
+   "noteId": 1789000602619,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What are CPU registers, and why are they faster than any level of cache?",
+    "Back": "Small, fixed-size storage locations built directly into the CPU that hold operands/results currently in use. They're fastest because they're on-chip with zero bus latency &mdash; no memory access at all."
+   }
+  },
+  {
+   "noteId": 1789000602620,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do L1, L2, and L3 cache compare in size and speed?",
+    "Back": "L1 is smallest and fastest (per-core, a few KB, ~1-4 cycles). L2 is larger and slower (per-core, few hundred KB - few MB). L3 is largest and slowest of the three (shared across cores, several MB, tens of cycles) &mdash; still far faster than RAM."
+   }
+  },
+  {
+   "noteId": 1789000602621,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is temporal locality?",
+    "Back": "The tendency for a recently accessed memory location to be accessed again soon (e.g. a loop counter or variable reused each iteration) &mdash; caches exploit this by keeping recently used data close."
+   }
+  },
+  {
+   "noteId": 1789000602622,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is spatial locality?",
+    "Back": "The tendency for memory locations near a recently accessed address to be accessed soon after (e.g. adjacent array elements) &mdash; caches exploit this by fetching whole cache lines, not single bytes."
+   }
+  },
+  {
+   "noteId": 1789000602623,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does traversing a 2D array in row-major order run faster than in column-major order (in a row-major language like C/Java)?",
+    "Back": "Row-major traversal accesses contiguous memory addresses in sequence, so each fetched cache line is fully used (good spatial locality). Column-major traversal jumps by a full row's stride each step, causing a cache miss almost every access."
+   }
+  },
+  {
+   "noteId": 1789000602624,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is pipelining in CPU design?",
+    "Back": "Overlapping the execution of multiple instructions by splitting the instruction cycle into stages (e.g. fetch, decode, execute, writeback) so a new instruction can enter the pipeline each cycle instead of waiting for the previous one to fully finish."
+   }
+  },
+  {
+   "noteId": 1789000602625,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does heap memory differ from stack memory?",
+    "Back": "Heap memory is for dynamically allocated objects whose lifetime isn't tied to a function call; it's manually or GC-managed, larger/more flexible, but slower to allocate/free and can lead to fragmentation or leaks."
+   }
+  },
+  {
+   "noteId": 1789000602626,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is virtual memory / paging?",
+    "Back": "An abstraction where each process gets its own virtual address space, mapped by the OS/MMU to physical RAM (or disk) in fixed-size chunks called pages, via a page table &mdash; giving processes isolation and the illusion of more memory than physically exists."
+   }
+  },
+  {
+   "noteId": 1789000602627,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a page fault?",
+    "Back": "A trap that occurs when a process accesses a virtual page that isn't currently mapped into physical RAM, forcing the OS to load it from disk (or handle an invalid access)."
+   }
+  },
+  {
+   "noteId": 1789000602628,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the core philosophical difference between RISC and CISC instruction set architectures?",
+    "Back": "RISC (e.g. ARM) uses a small set of simple, fixed-length instructions that each execute in ~1 cycle, relying on the compiler to combine them &mdash; favors pipelining. CISC (e.g. x86) uses a larger set of complex, variable-length instructions that can do more per instruction, at the cost of more complex decoding."
+   }
+  },
+  {
+   "noteId": 1789000602629,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does an in-memory cache (e.g. Caffeine, as used to reduce DB load) dramatically improve latency compared to hitting the database every time?",
+    "Back": "A cache hit returns data from RAM (nanoseconds) instead of round-tripping to a database over the network/disk (milliseconds) &mdash; the same principle as a CPU cache hit vs. a main-memory access, just at a different layer of the hierarchy."
+   }
+  },
+  {
+   "noteId": 1789000602630,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "CPU (Central Processing Unit)",
+    "Back": "The hardware component that fetches, decodes, and executes instructions &mdash; the \"brain\" of the computer, containing the ALU, control unit, and registers."
+   }
+  },
+  {
+   "noteId": 1789000602631,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Stack memory (in the stack-vs-heap sense)",
+    "Back": "Fast, automatically managed memory for local variables and function call frames; fixed size per frame, freed automatically when the function returns; limited total size (stack overflow on deep recursion)."
+   }
+  },
+  {
+   "noteId": 1789000640039,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The memory hierarchy, from fastest/smallest to slowest/largest, is: {{c1::registers}} &rarr; {{c2::L1 cache}} &rarr; {{c3::L2 cache}} &rarr; {{c4::L3 cache}} &rarr; {{c5::main memory (RAM)}} &rarr; {{c6::disk/SSD}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640040,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The three classic types of pipeline hazards are {{c1::structural}} (two instructions need the same hardware resource), {{c2::data}} (an instruction needs a result a prior instruction hasn't produced yet), and {{c3::control}} (a branch changes which instruction should be fetched next).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640041,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The three classic cache miss types are {{c1::compulsory}} (first-ever access to a block, unavoidable), {{c2::capacity}} (the cache is too small to hold everything needed, so useful data gets evicted), and {{c3::conflict}} (multiple addresses map to the same cache set/line and evict each other despite free space elsewhere).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000640042,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "computer-architecture",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The classic instruction cycle is: {{c1::fetch}} (get the instruction from memory), {{c2::decode}} (determine what it means / which control signals to set), {{c3::execute}} (perform the operation, e.g. in the ALU), and {{c4::writeback}} (store the result back to a register or memory).",
+    "Extra": ""
+   }
+  }
+ ]
+}

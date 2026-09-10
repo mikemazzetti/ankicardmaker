@@ -1,0 +1,293 @@
+{
+ "deck": "Resume Prep::AWS",
+ "note_count": 22,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601979,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Which four AWS services did you use at BMO to modernize 20+ legacy APIs into a serverless, event-driven architecture?",
+    "Back": "AWS Lambda, API Gateway, DynamoDB, and CloudWatch."
+   }
+  },
+  {
+   "noteId": 1789000601980,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is an Amazon S3 bucket?",
+    "Back": "A container for objects (data + metadata) in S3. Bucket names must be globally unique across all of AWS, and each bucket lives in one specific region."
+   }
+  },
+  {
+   "noteId": 1789000601981,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What read consistency model does Amazon S3 provide for all requests (since Dec 2020)?",
+    "Back": "Strong read-after-write consistency for all GET, PUT, and LIST operations, including overwrite PUTs and DELETEs."
+   }
+  },
+  {
+   "noteId": 1789000601982,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Lambda \"cold start\"?",
+    "Back": "The extra latency when Lambda must provision a brand-new execution environment (download code, boot the runtime, run init code) before handling an invocation, instead of reusing an already-warm environment."
+   }
+  },
+  {
+   "noteId": 1789000601983,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does setting \"reserved concurrency\" on a Lambda function do?",
+    "Back": "It caps the maximum number of concurrent executions that function may use, guaranteeing that capacity for it while throttling any invocations above that ceiling."
+   }
+  },
+  {
+   "noteId": 1789000601984,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the maximum execution timeout you can configure for an AWS Lambda function?",
+    "Back": "15 minutes."
+   }
+  },
+  {
+   "noteId": 1789000601985,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Name common event sources that can trigger an AWS Lambda function.",
+    "Back": "API Gateway requests, S3 object events, DynamoDB Streams, SQS queues, SNS topics, EventBridge rules, and scheduled (cron) rules."
+   }
+  },
+  {
+   "noteId": 1789000601986,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In DynamoDB, what does the partition key determine?",
+    "Back": "It is hashed to decide which physical partition the item is stored on; it's the required part of the primary key used to route every read/write."
+   }
+  },
+  {
+   "noteId": 1789000601987,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a DynamoDB table with a composite primary key, what does the sort key let you do?",
+    "Back": "Store and query multiple items that share the same partition key, uniquely ordered/identified by the sort key (e.g., all orders for one customer, sorted by date)."
+   }
+  },
+  {
+   "noteId": 1789000601988,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is \"single-table design\" in DynamoDB?",
+    "Back": "Modeling multiple different entity types in one DynamoDB table using generic/overloaded partition and sort key attributes, so most access patterns are satisfied with a single request, unlike a relational schema's one-table-per-entity approach."
+   }
+  },
+  {
+   "noteId": 1789000601989,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why might you choose an eventually consistent read instead of a strongly consistent read in DynamoDB?",
+    "Back": "It costs half the RCUs and gives lower latency/higher throughput; use it when the app can tolerate reading data that might be a moment stale right after a write."
+   }
+  },
+  {
+   "noteId": 1789000601990,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the main practical difference between an API Gateway REST API and an HTTP API?",
+    "Back": "HTTP APIs are lower-latency and cheaper but support a smaller feature set (fewer integration types, no built-in usage plans/API keys, no WAF); REST APIs support the full feature set, including request validation, response caching, WAF, and usage plans."
+   }
+  },
+  {
+   "noteId": 1789000601991,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In API Gateway's Lambda proxy integration, what is the Lambda function itself responsible for that a non-proxy integration would otherwise handle?",
+    "Back": "Parsing the raw incoming HTTP request and returning a specifically-shaped response object (statusCode, headers, body) — API Gateway performs no request/response mapping for you."
+   }
+  },
+  {
+   "noteId": 1789000601992,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does API Gateway enforce request throttling by default?",
+    "Back": "A token-bucket algorithm applied at the account/stage level with a steady-state rate limit and a burst limit; requests beyond that receive an HTTP 429 Too Many Requests response."
+   }
+  },
+  {
+   "noteId": 1789000601993,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between what CloudWatch Logs and CloudWatch Metrics store?",
+    "Back": "Logs store raw, timestamped text log events (e.g., a Lambda function's console output); Metrics store numeric time-series data (e.g., invocation count, duration, error count) used for dashboards and alarms."
+   }
+  },
+  {
+   "noteId": 1789000601994,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a CloudWatch Alarm do when its watched metric crosses the configured threshold for the set number of evaluation periods?",
+    "Back": "It changes state (e.g., OK -&gt; ALARM) and can trigger an action, such as publishing to an SNS topic or invoking an Auto Scaling policy."
+   }
+  },
+  {
+   "noteId": 1789000601995,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Lambda Provisioned Concurrency",
+    "Back": "A setting that keeps a specified number of Lambda execution environments initialized and ready in advance, so those invocations skip cold starts entirely — the main mitigation for cold-start latency, alongside shrinking the deployment package and avoiding heavy init-time work."
+   }
+  },
+  {
+   "noteId": 1789000601996,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "IAM Role",
+    "Back": "An AWS identity with attached permission policies that can be temporarily assumed by a trusted user, service, or account, instead of using long-lived credentials — e.g., a Lambda function's execution role."
+   }
+  },
+  {
+   "noteId": 1789000639881,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "At BMO, modernizing 20+ legacy APIs into a serverless, event-driven architecture (Lambda + API Gateway + DynamoDB) achieved a {{c1::80%}} faster runtime.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639882,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Ordering common S3 storage classes from hottest/most expensive to coldest/cheapest: {{c1::S3 Standard}} -&gt; {{c2::S3 Standard-IA}} -&gt; {{c3::S3 Glacier Instant Retrieval}} -&gt; {{c4::S3 Glacier Deep Archive}}.",
+    "Extra": "IA = Infrequent Access. Deep Archive restores can take hours."
+   }
+  },
+  {
+   "noteId": 1789000639883,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In DynamoDB provisioned mode, one {{c1::Read Capacity Unit (RCU)}} provides one strongly consistent read per second for an item up to 4 KB, and one {{c2::Write Capacity Unit (WCU)}} provides one write per second for an item up to 1 KB.",
+    "Extra": "An eventually consistent read costs half an RCU."
+   }
+  },
+  {
+   "noteId": 1789000639884,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "aws",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In DynamoDB, a {{c1::Global Secondary Index (GSI)}} can use a different partition/sort key than the base table and supports only eventually consistent reads, while a {{c2::Local Secondary Index (LSI)}} shares the base table's partition key, must be created at table-creation time, and supports strongly consistent reads.",
+    "Extra": ""
+   }
+  }
+ ]
+}

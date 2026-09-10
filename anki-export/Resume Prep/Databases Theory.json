@@ -1,0 +1,254 @@
+{
+ "deck": "Resume Prep::Databases Theory",
+ "note_count": 19,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602277,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the \"Atomicity\" property of ACID guarantee?",
+    "Back": "A transaction's operations either all happen or none do — no partially-applied transaction is ever left committed."
+   }
+  },
+  {
+   "noteId": 1789000602278,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the \"Isolation\" property of ACID guarantee?",
+    "Back": "Concurrent transactions produce a result equivalent to running them one at a time in some order, up to the chosen isolation level."
+   }
+  },
+  {
+   "noteId": 1789000602279,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the CAP theorem state about a distributed data store?",
+    "Back": "It can guarantee at most two of Consistency, Availability, and Partition tolerance at once — and since partitions will happen, real systems effectively trade off Consistency vs Availability."
+   }
+  },
+  {
+   "noteId": 1789000602280,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In CAP theorem terms, why must a distributed system always effectively choose partition tolerance?",
+    "Back": "Network partitions will occur in any real distributed system, so a system that doesn't tolerate them simply fails during a partition — it isn't really an optional choice."
+   }
+  },
+  {
+   "noteId": 1789000602281,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the N+1 query problem?",
+    "Back": "Fetching N parent records with one query, then issuing one additional query per parent to load related child data — N+1 total queries where a single join query would do."
+   }
+  },
+  {
+   "noteId": 1789000602282,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a Hibernate app like the ServiceOntario project, how does JPQL's <code>JOIN FETCH</code> fix an N+1 problem?",
+    "Back": "It eagerly loads the related entities in the same query via a join, instead of Hibernate lazily issuing a separate SELECT each time an association is accessed on a parent."
+   }
+  },
+  {
+   "noteId": 1789000602283,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Besides <code>JOIN FETCH</code>, what Hibernate setting reduces N+1-style overhead when lazy loading is kept?",
+    "Back": "Tuning the Hibernate batch size (e.g. <code>@BatchSize</code> or <code>hibernate.default_batch_fetch_size</code>), which batches multiple lazy-load queries into fewer <code>IN</code>-clause queries."
+   }
+  },
+  {
+   "noteId": 1789000602284,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the main tradeoff of adding an index to a table?",
+    "Back": "Faster reads/lookups on the indexed column(s), at the cost of slower writes (inserts/updates/deletes must also update the index) and extra storage."
+   }
+  },
+  {
+   "noteId": 1789000602285,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between a primary key and a foreign key?",
+    "Back": "A primary key uniquely identifies each row in its own table; a foreign key is a column referencing a primary key in another table to enforce a relationship."
+   }
+  },
+  {
+   "noteId": 1789000602286,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a database lock used for during a transaction?",
+    "Back": "To prevent other transactions from concurrently reading or writing the same data in a conflicting way, protecting consistency while the transaction runs."
+   }
+  },
+  {
+   "noteId": 1789000602287,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is denormalization, and why is it sometimes used despite violating normal forms?",
+    "Back": "Deliberately introducing redundant data (e.g. duplicating a column across tables) to reduce joins and speed up reads, trading write complexity and storage for query performance."
+   }
+  },
+  {
+   "noteId": 1789000602288,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Give a concrete example of denormalization used to avoid N+1-style per-row lookups.",
+    "Back": "Storing a duplicated field — e.g. an order's customer name — directly on the order row instead of always joining to the customer table to fetch it."
+   }
+  },
+  {
+   "noteId": 1789000602289,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between ordinary lock contention and a deadlock?",
+    "Back": "Contention is transactions waiting for each other's locks and eventually proceeding; a deadlock is a cycle of transactions each waiting on a lock the other holds, which never resolves without the DB detecting it and aborting one."
+   }
+  },
+  {
+   "noteId": 1789000602290,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "OLTP",
+    "Back": "Online Transaction Processing — optimized for many short read/write transactions, e.g. an order-entry system."
+   }
+  },
+  {
+   "noteId": 1789000602291,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "OLAP",
+    "Back": "Online Analytical Processing — optimized for complex, read-heavy aggregate queries over large historical data, e.g. a reporting warehouse."
+   }
+  },
+  {
+   "noteId": 1789000639956,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::1NF}} (First Normal Form) requires every column to hold atomic, indivisible values with no repeating groups.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639957,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::2NF}} requires 1NF plus no partial dependency — every non-key column must depend on the entire primary key, not just part of it.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639958,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "{{c1::3NF}} requires 2NF plus no transitive dependency — non-key columns must depend only on the primary key, not on other non-key columns.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639959,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "databases-theory",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "ACID stands for {{c1::Atomicity}}, {{c2::Consistency}}, {{c3::Isolation}}, and {{c4::Durability}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

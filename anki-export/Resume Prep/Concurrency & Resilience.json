@@ -1,0 +1,267 @@
+{
+ "deck": "Resume Prep::Concurrency & Resilience",
+ "note_count": 20,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000601847,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does Spring's @Async annotation do to a method call?",
+    "Back": "Causes the method to execute on a separate thread from a configured TaskExecutor instead of the caller's thread, so the caller doesn't block waiting for it. Requires @EnableAsync on a configuration class."
+   }
+  },
+  {
+   "noteId": 1789000601848,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an asynchronous Spring service method that returns a result?",
+    "Back": "<pre><code>@Service\npublic class ValidationService {\n    @Async\n    public CompletableFuture&lt;Boolean&gt; validateAsync(EForm form) {\n        boolean valid = runValidation(form);\n        return CompletableFuture.completedFuture(valid);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601849,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does an @Async method typically return CompletableFuture<T> (or void) rather than T directly?",
+    "Back": "Because the method runs on another thread and the caller returns immediately; CompletableFuture gives the caller a handle to later retrieve the result or compose further async work, while void is used for fire-and-forget calls."
+   }
+  },
+  {
+   "noteId": 1789000601850,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What happens if you call an @Async method from another method in the same class (self-invocation)?",
+    "Back": "The @Async annotation is ignored — Spring's proxy-based AOP only intercepts calls made through the external bean reference, so an internal call bypasses the proxy and executes synchronously on the caller's thread."
+   }
+  },
+  {
+   "noteId": 1789000601851,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a thread pool (Executor), and why use one instead of spawning a new thread per task?",
+    "Back": "A managed pool of reusable worker threads that pull tasks from a queue; reusing threads avoids the overhead of constantly creating/destroying OS threads and lets you bound concurrency to avoid exhausting system resources."
+   }
+  },
+  {
+   "noteId": 1789000601852,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you configure a custom thread pool for @Async tasks in Spring?",
+    "Back": "<pre><code>@Configuration\n@EnableAsync\npublic class AsyncConfig {\n    @Bean(name = \"taskExecutor\")\n    public Executor taskExecutor() {\n        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();\n        executor.setCorePoolSize(8);\n        executor.setMaxPoolSize(16);\n        executor.setQueueCapacity(100);\n        return executor;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601853,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does \"non-blocking I/O\" mean, and why did the Gov of Ontario eForm validation microservice use it with @Async?",
+    "Back": "The thread that issues an I/O operation (network/DB call) isn't left idle waiting for it — it's freed to do other work while the I/O completes in the background. Combined with Spring @Async, this kept worker threads from blocking on slow validation calls in a ~10GB/day pipeline, cutting latency by 40%."
+   }
+  },
+  {
+   "noteId": 1789000601854,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is CompletableFuture used for in Java concurrency?",
+    "Back": "A Future implementation that lets you compose, chain, and combine asynchronous computations (thenApply, thenCompose, allOf, thenCombine, etc.) without manually blocking a thread to wait for a result."
+   }
+  },
+  {
+   "noteId": 1789000601855,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you run two independent tasks concurrently and combine their results with CompletableFuture?",
+    "Back": "<pre><code>CompletableFuture&lt;Integer&gt; f1 = CompletableFuture.supplyAsync(() -&gt; slowLookup());\nCompletableFuture&lt;Integer&gt; f2 = CompletableFuture.supplyAsync(() -&gt; anotherLookup());\nCompletableFuture&lt;Integer&gt; combined = f1.thenCombine(f2, Integer::sum);\ncombined.thenAccept(System.out::println);</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601856,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a race condition?",
+    "Back": "A bug where a program's correctness depends on the relative timing/interleaving of multiple threads accessing shared mutable state, producing incorrect results under certain thread orderings."
+   }
+  },
+  {
+   "noteId": 1789000601857,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Name two standard ways to prevent a race condition on shared mutable state in Java.",
+    "Back": "Synchronize access (the synchronized keyword or explicit locks) so only one thread mutates the state at a time, or use atomic/concurrent-safe types (e.g. AtomicInteger, ConcurrentHashMap) that are designed for lock-free thread-safe updates."
+   }
+  },
+  {
+   "noteId": 1789000601858,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the circuit breaker pattern used for in a microservice architecture?",
+    "Back": "It stops a service from repeatedly calling a downstream dependency that is failing or slow, by \"tripping\" after a failure threshold and short-circuiting further calls (failing fast) instead of piling up latency and exhausting resources."
+   }
+  },
+  {
+   "noteId": 1789000601859,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you apply a Resilience4j circuit breaker with a fallback to a method in Spring Boot?",
+    "Back": "<pre><code>@CircuitBreaker(name = \"eformValidation\", fallbackMethod = \"fallback\")\npublic ValidationResult callValidationService(EForm form) {\n    return restTemplate.postForObject(url, form, ValidationResult.class);\n}\n\npublic ValidationResult fallback(EForm form, Throwable t) {\n    return ValidationResult.unavailable();\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601860,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the difference between Resilience4j's retry and bulkhead patterns?",
+    "Back": "Retry automatically re-attempts a failed call a configured number of times (often with backoff), aiming to survive transient failures. Bulkhead limits the number of concurrent calls to a dependency (via a semaphore or fixed thread pool), isolating it so its slowness/failures can't exhaust resources the rest of the app needs."
+   }
+  },
+  {
+   "noteId": 1789000601861,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a rate limiter do in Resilience4j, and why pair one with a downstream call?",
+    "Back": "It caps how many calls are allowed to a resource within a time window, rejecting or delaying calls beyond that limit — protecting both the caller and the downstream service from being overwhelmed by traffic spikes."
+   }
+  },
+  {
+   "noteId": 1789000601862,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is Caffeine, and what problem does it solve?",
+    "Back": "A high-performance, in-memory Java caching library; it avoids recomputing or refetching expensive/repeated results (e.g. DB lookups) by storing them in memory with configurable size limits and eviction policies."
+   }
+  },
+  {
+   "noteId": 1789000601863,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you cache a Spring service method's result with @Cacheable (Caffeine-backed)?",
+    "Back": "<pre><code>@Service\npublic class LookupService {\n    @Cacheable(value = \"eformTypes\", key = \"#formId\")\n    public EFormType getFormType(Long formId) {\n        return expensiveLookup(formId);\n    }\n}</code></pre> Backed by a CaffeineCacheManager bean configured with cache names, TTL, and max size."
+   }
+  },
+  {
+   "noteId": 1789000601864,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Name two eviction policies Caffeine supports for bounding cache size or lifetime.",
+    "Back": "Size-based eviction (maximumSize, evicting least-recently-used entries once a cap is reached) and time-based eviction (expireAfterWrite / expireAfterAccess, evicting entries after a fixed duration)."
+   }
+  },
+  {
+   "noteId": 1789000601865,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's a common gotcha with @Cacheable and self-invocation, similar to @Async?",
+    "Back": "Calling a @Cacheable method from another method in the same class bypasses Spring's proxy (just like with @Async), so the caching logic never runs and the method executes uncached every time."
+   }
+  },
+  {
+   "noteId": 1789000639839,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "concurrency-resilience",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "A Resilience4j circuit breaker has three core states: {{c1::CLOSED}} (calls pass through normally while failures are counted), {{c2::OPEN}} (calls are short-circuited immediately without reaching the downstream service), and {{c3::HALF_OPEN}} (a limited number of trial calls are let through to test if the dependency has recovered).",
+    "Extra": "OPEN transitions to HALF_OPEN after a configured wait duration; HALF_OPEN moves to CLOSED on success or back to OPEN on failure."
+   }
+  }
+ ]
+}

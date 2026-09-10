@@ -1,0 +1,215 @@
+{
+ "deck": "Resume Prep::CI-CD",
+ "note_count": 16,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602053,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between Continuous Delivery and Continuous Deployment (both abbreviated CD)?",
+    "Back": "Continuous Delivery automatically prepares every passing change into a release-ready artifact but still requires a manual approval before it reaches production; Continuous Deployment goes further and releases to production automatically with no manual gate."
+   }
+  },
+  {
+   "noteId": 1789000602054,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a \"build artifact\" in a CI/CD pipeline?",
+    "Back": "The immutable, versioned output of the build stage (e.g., a JAR, Docker image, or zip) that is built once and then promoted unchanged through later environments."
+   }
+  },
+  {
+   "noteId": 1789000602055,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the key difference between \"build\" and \"deploy\" in a pipeline?",
+    "Back": "Build compiles and packages source code into a runnable artifact; deploy takes that already-built artifact and installs/activates it in a target environment (e.g., staging or production)."
+   }
+  },
+  {
+   "noteId": 1789000602056,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a \"rollback\" in a deployment pipeline?",
+    "Back": "Reverting a target environment to a previous known-good artifact/version after a bad deployment, to quickly restore service."
+   }
+  },
+  {
+   "noteId": 1789000602057,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Jenkinsfile?",
+    "Back": "A text file, checked into source control, written in a Groovy-based DSL that defines a Jenkins pipeline's stages and steps as code."
+   }
+  },
+  {
+   "noteId": 1789000602058,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you write a minimal declarative Jenkins pipeline with Build and Test stages that run Maven?",
+    "Back": "<pre><code>pipeline {\n    agent any\n    stages {\n        stage('Build') {\n            steps { sh 'mvn -B compile' }\n        }\n        stage('Test') {\n            steps { sh 'mvn -B test' }\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602059,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a Jenkins declarative pipeline, what does the top-level `agent` directive specify?",
+    "Back": "Where the pipeline (or an individual stage, if overridden there) executes — e.g., <code>agent any</code> runs it on any available Jenkins agent/node."
+   }
+  },
+  {
+   "noteId": 1789000602060,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What file, and in what format, defines a pipeline in Azure DevOps Pipelines?",
+    "Back": "azure-pipelines.yml — a YAML file checked into the repo that declares triggers, stages/jobs, and steps."
+   }
+  },
+  {
+   "noteId": 1789000602061,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you write a minimal Azure DevOps YAML pipeline that builds a Maven project on every push to main?",
+    "Back": "<pre><code>trigger:\n- main\n\npool:\n  vmImage: 'ubuntu-latest'\n\nsteps:\n- task: Maven@4\n  inputs:\n    mavenPomFile: 'pom.xml'\n    goals: 'clean install'</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602062,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the purpose of a project's pom.xml file in Maven?",
+    "Back": "It's the Project Object Model — it declares the project's coordinates (groupId/artifactId/version), its dependencies, plugins, and build configuration that Maven uses to build the project."
+   }
+  },
+  {
+   "noteId": 1789000602063,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does running `mvn clean install` actually do?",
+    "Back": "It first removes previous build output (the `clean` phase), then runs the standard lifecycle up through `install`, compiling, testing, packaging the artifact, and copying it into the local `.m2` repository so other local projects can depend on it."
+   }
+  },
+  {
+   "noteId": 1789000602064,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you declare a test-scoped JUnit Jupiter dependency in pom.xml?",
+    "Back": "<pre><code>&lt;dependency&gt;\n    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;\n    &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;\n    &lt;version&gt;5.10.0&lt;/version&gt;\n    &lt;scope&gt;test&lt;/scope&gt;\n&lt;/dependency&gt;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602065,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a Maven dependency, what's the difference between `<scope>test</scope>` and `<scope>provided</scope>`?",
+    "Back": "`test` scope: the dependency is available only for compiling/running tests and is excluded from the final artifact; `provided` scope: available at compile time but expected to be supplied by the runtime environment (e.g., a servlet container), so it's also excluded from the packaged artifact."
+   }
+  },
+  {
+   "noteId": 1789000602066,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Continuous Integration (CI)",
+    "Back": "The practice of merging code changes into a shared branch frequently, with each merge automatically built and tested so integration errors are caught early."
+   }
+  },
+  {
+   "noteId": 1789000639897,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "A typical CI/CD pipeline runs stages roughly in this order: {{c1::build}} -&gt; {{c2::test}} -&gt; {{c3::package/artifact}} -&gt; {{c4::deploy}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639898,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "cicd",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Maven's default build lifecycle runs phases in order: {{c1::validate}} -&gt; {{c2::compile}} -&gt; {{c3::test}} -&gt; {{c4::package}} -&gt; {{c5::verify}} -&gt; {{c6::install}} -&gt; {{c7::deploy}}.",
+    "Extra": "Invoking a phase runs every earlier phase in the lifecycle too, e.g. `mvn install` also runs compile and test."
+   }
+  }
+ ]
+}

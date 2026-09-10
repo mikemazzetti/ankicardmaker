@@ -1,0 +1,241 @@
+{
+ "deck": "Resume Prep::Redis",
+ "note_count": 18,
+ "exported": "2026-09-10",
+ "notes": [
+  {
+   "noteId": 1789000602243,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What kind of data store is Redis, and what roles is it commonly used for?",
+    "Back": "An in-memory key-value data store, optionally persisted to disk — commonly used as a cache, message broker, or fast primary store for counters/sessions."
+   }
+  },
+  {
+   "noteId": 1789000602244,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Redis command to set a key with a 60-second expiry.",
+    "Back": "<pre><code>SET session:123 \"data\" EX 60</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602245,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does TTL stand for in Redis, and what does the <code>TTL</code> command return?",
+    "Back": "Time To Live — returns the remaining seconds until a key expires (<code>-1</code> if it has no expiry, <code>-2</code> if the key doesn't exist)."
+   }
+  },
+  {
+   "noteId": 1789000602246,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Describe the cache-aside (lazy-loading) caching pattern.",
+    "Back": "On read, check the cache first; on a miss, fetch from the source of truth (e.g. the DB), then write the result into the cache before returning it."
+   }
+  },
+  {
+   "noteId": 1789000602247,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In cache-aside, what must the application do on a write to keep the cache from serving stale data?",
+    "Back": "Invalidate (or update) the corresponding cache entry right after writing to the source of truth."
+   }
+  },
+  {
+   "noteId": 1789000602248,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What Redis command publishes a message to a channel in pub/sub?",
+    "Back": "<code>PUBLISH channel message</code> (subscribers use <code>SUBSCRIBE channel</code>)."
+   }
+  },
+  {
+   "noteId": 1789000602249,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the key limitation of Redis pub/sub compared to a durable message queue?",
+    "Back": "Messages aren't persisted — a subscriber that isn't connected at publish time never receives that message."
+   }
+  },
+  {
+   "noteId": 1789000602250,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is <code>INCR</code> atomic in Redis, and why does that matter for counters?",
+    "Back": "Redis executes each command as one indivisible step, so <code>INCR</code> reads and writes the counter atomically — avoiding lost updates from concurrent clients incrementing the same key."
+   }
+  },
+  {
+   "noteId": 1789000602251,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Redis command to atomically increment a page-view counter.",
+    "Back": "<pre><code>INCR pageviews:home</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602252,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Which Redis data type is best suited for a leaderboard ranked by score, and why?",
+    "Back": "Sorted set (<code>ZSET</code>) — each member has a score, and Redis keeps members ordered for fast range and rank queries."
+   }
+  },
+  {
+   "noteId": 1789000602253,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Redis command to add a player's score to a leaderboard sorted set.",
+    "Back": "<pre><code>ZADD leaderboard 1500 \"player1\"</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602254,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When would you choose Redis as the primary data store rather than only a cache?",
+    "Back": "When the workload needs very low-latency reads/writes on data that fits in memory and can tolerate Redis's persistence/durability tradeoffs — e.g. session stores, rate limiters, real-time counters."
+   }
+  },
+  {
+   "noteId": 1789000602255,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What Redis command retrieves and removes the first element of a list, useful for a queue?",
+    "Back": "<code>LPOP</code> (or <code>BLPOP</code> for a blocking pop)."
+   }
+  },
+  {
+   "noteId": 1789000602256,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>EXPIRE</code> and <code>PERSIST</code> in Redis?",
+    "Back": "<code>EXPIRE</code> sets a TTL so the key auto-deletes after that time; <code>PERSIST</code> removes any existing TTL, making the key permanent again."
+   }
+  },
+  {
+   "noteId": 1789000602257,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Redis command storing a hash of a user's name and age under one key.",
+    "Back": "<pre><code>HSET user:1 name \"Alice\" age \"30\"</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602258,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "RDB persistence (Redis)",
+    "Back": "Point-in-time binary snapshots of the whole dataset saved to disk at configured intervals."
+   }
+  },
+  {
+   "noteId": 1789000602259,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "AOF persistence (Redis)",
+    "Back": "Append-only file logging every write operation, replayed on restart to rebuild the dataset."
+   }
+  },
+  {
+   "noteId": 1789000639947,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "redis",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Redis's core data types include {{c1::string}}, {{c2::hash}}, {{c3::list}}, {{c4::set}}, and {{c5::sorted set}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}
