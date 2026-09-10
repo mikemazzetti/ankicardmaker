@@ -84,9 +84,12 @@ def export(col):
     log("TOTAL:", grand, "notes")
 
 def main():
-    hkey = os.environ.get("ANKIWEB_HKEY")
+    hkey = (os.environ.get("ANKIWEB_HKEY") or "").strip()
     if not hkey:
         raise SystemExit("ANKIWEB_HKEY env var not set (add it as a GitHub secret).")
+    raw = os.environ.get("ANKIWEB_HKEY") or ""
+    log("hkey: length=%d, had_surrounding_whitespace=%s, lines=%d"
+        % (len(hkey), raw != raw.strip(), len(raw.splitlines())))
     # Leave the endpoint unset for AnkiWeb: the client then defaults to
     # https://sync.ankiweb.net/ and the server redirects us to the right shard
     # (handled in sync_down). Only honor a genuine self-hosted http(s) server.
