@@ -1,0 +1,53 @@
+name: Anki cloud backup
+
+# Downloads the collection from AnkiWeb and commits the export — runs on
+# GitHub's servers, so it works even when your Mac is off.
+#
+# Requires two repository secrets (Settings → Secrets and variables → Actions):
+#   ANKIWEB_HKEY      — sync token from scripts/get_ankiweb_hkey.py
+#   ANKIWEB_ENDPOINT  — endpoint printed by the same script
+# Anki must have synced this collection to AnkiWeb at least once.
+
+on:
+  schedule:
+    - cron: "17 8 * * *"   # daily ~08:17 UTC (GitHub cron can lag by a few min)
+  workflow_dispatch: {}      # lets you run it on demand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anki-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Anki backend
+        run: pip install --upgrade anki
+
+      - name: Download from AnkiWeb and export
+        env:
+          ANKIWEB_HKEY: ${{ secrets.ANKIWEB_HKEY }}
+          ANKIWEB_ENDPOINT: ${{ secrets.ANKIWEB_ENDPOINT }}
+        run: python scripts/anki_cloud_export.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "anki-backup-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain anki-export)" ]; then
+            git add anki-export
+            git commit -m "backup: cloud Anki sync $(date -u +%F)"
+            git push
+            echo "Pushed updated backup."
+          else
+            echo "No changes to back up."
+          fi

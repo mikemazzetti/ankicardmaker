@@ -45,29 +45,44 @@ Output lands in [`anki-export/`](anki-export/) with an [`INDEX.md`](anki-export/
 listing every deck and its note count. Re-run any time and commit the diff to track how
 your collection changes. Anki must be open with the AnkiMCP add-on for it to work.
 
-### Automatic daily backup
+### Automatic daily backup (cloud, via GitHub Actions)
 
-A macOS `launchd` agent runs the export every day at **20:00** and commits + pushes only
-when something changed. It skips quietly (logging) if Anki isn't open at that time.
+A scheduled GitHub Actions workflow downloads your collection **from AnkiWeb** and commits
+the export daily — so it runs even when your Mac is off. Your cards must be synced to
+AnkiWeb, and the job needs a one-time sync token (never your password).
 
-- Job script: [`scripts/daily_sync.sh`](scripts/daily_sync.sh)
-- Agent definition: [`scripts/com.mikemazzetti.ankicardmaker-sync.plist`](scripts/com.mikemazzetti.ankicardmaker-sync.plist)
-  (installed copy lives at `~/Library/LaunchAgents/`)
-- Log: `~/Library/Logs/ankicardmaker-sync.log`
+**One-time setup:**
 
-**Change the time:** edit the `Hour`/`Minute` in the installed plist, then reload:
+1. Make sure your desktop Anki syncs to AnkiWeb at least once.
+2. On your Mac, get a sync token:
+   ```bash
+   python3 -m venv /tmp/ankienv && /tmp/ankienv/bin/pip install anki
+   /tmp/ankienv/bin/python scripts/get_ankiweb_hkey.py
+   ```
+   It asks for your AnkiWeb email/password (typed locally, never stored) and prints an
+   `ANKIWEB_HKEY` and `ANKIWEB_ENDPOINT`.
+3. In GitHub: repo → **Settings → Secrets and variables → Actions → New repository secret**,
+   and add both `ANKIWEB_HKEY` and `ANKIWEB_ENDPOINT`.
+4. Done. The workflow ([`.github/workflows/anki-backup.yml`](.github/workflows/anki-backup.yml))
+   runs daily (~08:17 UTC) and on demand (Actions tab → **Run workflow**). It only ever
+   *downloads* from AnkiWeb — it never uploads or changes your collection.
+
+The token stays valid until you change your AnkiWeb password or log out of all devices.
+
+### Optional: local backup instead
+
+If you'd rather back up straight from the desktop app (no AnkiWeb, no token), a macOS
+`launchd` agent is included: [`scripts/daily_sync.sh`](scripts/daily_sync.sh) +
+[`scripts/com.mikemazzetti.ankicardmaker-sync.plist`](scripts/com.mikemazzetti.ankicardmaker-sync.plist).
+It runs the local exporter on a schedule but only works while your Mac is on with Anki
+open. Install it with:
 
 ```bash
-launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.mikemazzetti.ankicardmaker-sync.plist
+cp scripts/com.mikemazzetti.ankicardmaker-sync.plist ~/Library/LaunchAgents/
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mikemazzetti.ankicardmaker-sync.plist
 ```
 
-**Run it now / disable it:**
-
-```bash
-launchctl kickstart -k gui/$(id -u)/com.mikemazzetti.ankicardmaker-sync   # run immediately
-launchctl bootout   gui/$(id -u) ~/Library/LaunchAgents/com.mikemazzetti.ankicardmaker-sync.plist  # disable
-```
+(It is **not** installed by default — the cloud workflow above is the recommended path.)
 
 ## Layout
 
