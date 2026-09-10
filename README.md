@@ -51,21 +51,24 @@ A scheduled GitHub Actions workflow downloads your collection **from AnkiWeb** a
 the export daily — so it runs even when your Mac is off. Your cards must be synced to
 AnkiWeb, and the job needs a one-time sync token (never your password).
 
-**One-time setup:**
+**One-time setup — one command:**
 
 1. Make sure your desktop Anki syncs to AnkiWeb at least once.
-2. On your Mac, get a sync token:
+2. Run this once on your Mac:
    ```bash
-   python3 -m venv /tmp/ankienv && /tmp/ankienv/bin/pip install anki
-   /tmp/ankienv/bin/python scripts/get_ankiweb_hkey.py
+   bash scripts/setup_cloud_secrets.sh
    ```
-   It asks for your AnkiWeb email/password (typed locally, never stored) and prints an
-   `ANKIWEB_HKEY` and `ANKIWEB_ENDPOINT`.
-3. In GitHub: repo → **Settings → Secrets and variables → Actions → New repository secret**,
-   and add both `ANKIWEB_HKEY` and `ANKIWEB_ENDPOINT`.
-4. Done. The workflow ([`.github/workflows/anki-backup.yml`](.github/workflows/anki-backup.yml))
-   runs daily (~08:17 UTC) and on demand (Actions tab → **Run workflow**). It only ever
-   *downloads* from AnkiWeb — it never uploads or changes your collection.
+   It logs in to AnkiWeb (password typed at the prompt, never stored or shown), turns that
+   into a sync token, saves `ANKIWEB_HKEY` + `ANKIWEB_ENDPOINT` as GitHub repo secrets via
+   `gh`, and kicks off a test run. The token never appears on screen.
+
+That's it. The workflow ([`.github/workflows/anki-backup.yml`](.github/workflows/anki-backup.yml))
+then runs daily (~08:17 UTC) and on demand (Actions tab → **Run workflow**). It only ever
+*downloads* from AnkiWeb — it never uploads or changes your collection.
+
+> Prefer to do it by hand? [`scripts/get_ankiweb_hkey.py`](scripts/get_ankiweb_hkey.py) just
+> prints the two values so you can paste them into **Settings → Secrets and variables →
+> Actions** yourself.
 
 The token stays valid until you change your AnkiWeb password or log out of all devices.
 
