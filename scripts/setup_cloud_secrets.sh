@@ -31,35 +31,37 @@ fi
 read -r -p "AnkiWeb email: " ANKI_EMAIL
 read -r -s -p "AnkiWeb password (hidden): " ANKI_PASS; echo
 
-# Mint the token in a subshell; password is passed via env, never argv/stdout.
-CREDS="$(ANKI_EMAIL="$ANKI_EMAIL" ANKI_PASS="$ANKI_PASS" "$VENV/bin/python" - <<'PY'
-import os, sys, tempfile
+# Mint AND verify the token, then emit it base64-encoded on a single line so no
+# whitespace/newline in the token can corrupt it. Password passed via env only.
+OUT="$(ANKI_EMAIL="$ANKI_EMAIL" ANKI_PASS="$ANKI_PASS" "$VENV/bin/python" - <<'PY'
+import os, sys, base64, tempfile
 try:
     from anki.collection import Collection
+    from anki.sync import SyncAuth
 except Exception as e:
     sys.exit("Could not import anki: %s" % e)
 col = Collection(os.path.join(tempfile.mkdtemp(), "c.anki2"))
 try:
     a = col.sync_login(username=os.environ["ANKI_EMAIL"],
                        password=os.environ["ANKI_PASS"], endpoint=None)
+    col.sync_status(SyncAuth(hkey=a.hkey))          # confirms the token authenticates
 except Exception as e:
-    sys.exit("AnkiWeb login failed: %s" % e)
+    sys.exit("AnkiWeb login/verify failed: %s" % e)
 finally:
     col.close()
-print(a.hkey)
-print(a.endpoint or "https://sync.ankiweb.net/")
+print("HKEY_B64:" + base64.b64encode(a.hkey.encode()).decode())
 PY
 )"
 unset ANKI_PASS
 
-HKEY="$(printf '%s\n' "$CREDS" | sed -n 1p)"
-ENDPOINT="$(printf '%s\n' "$CREDS" | sed -n 2p)"
-if [ -z "$HKEY" ]; then echo "Did not receive a token — aborting."; exit 1; fi
+B64="$(printf '%s\n' "$OUT" | sed -n 's/^HKEY_B64://p')"
+[ -n "$B64" ] || { echo "Did not receive a valid token — aborting."; echo "$OUT"; exit 1; }
+HKEY="$(printf '%s' "$B64" | base64 --decode)"
+[ -n "$HKEY" ] || { echo "Token decode failed — aborting."; exit 1; }
 
-printf '%s' "$HKEY"     | gh secret set ANKIWEB_HKEY     --repo "$REPO"
-printf '%s' "$ENDPOINT" | gh secret set ANKIWEB_ENDPOINT --repo "$REPO"
-unset CREDS HKEY ENDPOINT
-echo "✓ Secrets ANKIWEB_HKEY and ANKIWEB_ENDPOINT set on $REPO."
+printf '%s' "$HKEY" | gh secret set ANKIWEB_HKEY --repo "$REPO"
+unset OUT B64 HKEY
+echo "✓ Token verified and secret ANKIWEB_HKEY set on $REPO."
 
 echo "Kicking off a test run…"
 gh workflow run "anki-backup.yml" --repo "$REPO" && \
