@@ -1,0 +1,189 @@
+{
+ "deck": "NeetCode 250::Math & Geometry",
+ "note_count": 13,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788998585797,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-excel-sheet-column-title",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A warehouse labels shelves A, B, ... Z, then AA, AB, ... AZ, BA, and so on, exactly like a car's odometer but with 26 letters and no zero digit. Given a shelf's position number counting from 1, what is its letter label?",
+    "Back": "<b>Maps to:</b> Base-26 conversion with a 1-based (bijective) offset (Excel Sheet Column Title).<br><br><b>Model it:</b> Convert a 1-based integer to its bijective base-26 letter string.<br><br><b>Approach &amp; variations:</b><ul><li>Repeatedly subtract 1 before taking mod 26 (there's no zero digit, so it's 1-indexed).</li><li>That remainder maps to a letter A..Z; prepend it and divide the number by 26.</li><li>Continue until the number reaches zero; the built string (reversed) is the label.</li></ul><b>Time:</b> O(log₂₆ n) — one digit produced per division.<br><b>Space:</b> O(log₂₆ n) — the output characters."
+   }
+  },
+  {
+   "noteId": 1788998585798,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-greatest-common-divisor-of-strings",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two friends each chant a repeated rhythmic phrase built by looping some shorter base phrase a whole number of times. You want the longest possible base phrase that, repeated enough times, produces each of their chants exactly. What is that longest common base phrase (if one exists)?",
+    "Back": "<b>Maps to:</b> String GCD via concatenation test + numeric gcd of lengths (Greatest Common Divisor of Strings).<br><br><b>Model it:</b> Find the longest string that divides both inputs by repetition.<br><br><b>Approach &amp; variations:</b><ul><li>A common base exists only if the two strings concatenated in both orders are equal.</li><li>If so, the answer's length is the numeric gcd of the two lengths.</li><li>Return the prefix of that length; otherwise return empty.</li></ul><b>Time:</b> O(n + m) — the concatenation-equality check dominates.<br><b>Space:</b> O(n + m) — the concatenated strings compared."
+   }
+  },
+  {
+   "noteId": 1788998585799,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-insert-greatest-common-divisors-in-linked-list",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Beads with numbers are strung in a single-file chain. Between each pair of neighboring beads you must slip in one new bead whose number is the largest whole number that divides both of its neighbors evenly. Do this for every adjacent pair. What does the finished chain look like?",
+    "Back": "<b>Maps to:</b> Linked-list traversal inserting gcd nodes between pairs (Insert Greatest Common Divisors in Linked List).<br><br><b>Model it:</b> For each adjacent node pair, insert a node holding their gcd.<br><br><b>Approach &amp; variations:</b><ul><li>Walk the chain with a pointer at the current node while it has a successor.</li><li>Compute gcd(current.value, next.value) via the Euclidean algorithm.</li><li>Splice a new node with that value between current and next, then advance past the inserted node.</li></ul><b>Time:</b> O(n log M) — n nodes, each gcd costing log of the max value.<br><b>Space:</b> O(1) — in-place pointer rewiring (excluding the required new nodes)."
+   }
+  },
+  {
+   "noteId": 1788998585800,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-transpose-matrix",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A stadium's seating chart is a grid of values arranged in rows and columns. You need to flip the whole chart across its top-left-to-bottom-right diagonal, so that what was row-then-column becomes column-then-row. What does the flipped chart look like?",
+    "Back": "<b>Maps to:</b> Matrix transpose by swapping across the main diagonal (Transpose Matrix).<br><br><b>Model it:</b> Produce the matrix where entry (i,j) becomes entry (j,i).<br><br><b>Approach &amp; variations:</b><ul><li>For a square grid, swap element (i,j) with (j,i) for j > i, in place.</li><li>For a non-square grid, allocate a new grid with rows and columns dimensions swapped and copy across.</li><li>Each original position maps to its mirror across the main diagonal.</li></ul><b>Time:</b> O(r·c) — every cell touched once.<br><b>Space:</b> O(1) in place for square, O(r·c) for a rectangular output."
+   }
+  },
+  {
+   "noteId": 1788998585801,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-rotate-matrix",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A square mosaic of tiles must be turned a quarter-turn clockwise, so the top row becomes the right column, and so on. You must do it by shifting tiles within the same frame, without copying the mosaic onto a second board. What is the rotated mosaic?",
+    "Back": "<b>Maps to:</b> In-place 90° rotation via transpose + row reversal (Rotate Image).<br><br><b>Model it:</b> Rotate an n×n matrix 90° clockwise in place.<br><br><b>Approach &amp; variations:</b><ul><li>Transpose the matrix (swap across the main diagonal), then reverse each row.</li><li>Alternatively rotate in four-cell cycles layer by layer from outside in.</li><li>Both avoid an extra full-size grid.</li></ul><b>Time:</b> O(n²) — every cell moved once.<br><b>Space:</b> O(1) — rotation happens within the same grid."
+   }
+  },
+  {
+   "noteId": 1788998585802,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-spiral-matrix",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A guard walks a rectangular garden laid out as a grid of numbered plots, starting at the top-left and moving right, then down the far side, then left along the bottom, then up — always spiraling inward and never revisiting a plot. In what order does the guard step on the plots?",
+    "Back": "<b>Maps to:</b> Boundary-shrinking spiral traversal (Spiral Matrix).<br><br><b>Model it:</b> List the matrix elements in clockwise spiral order.<br><br><b>Approach &amp; variations:</b><ul><li>Keep four boundaries: top, bottom, left, right.</li><li>Traverse the top row left-to-right, the right column top-to-bottom, the bottom row right-to-left, the left column bottom-to-top.</li><li>After each edge, shrink the corresponding boundary; stop when boundaries cross.</li><li>Guard against a leftover single row/column at the center.</li></ul><b>Time:</b> O(r·c) — each cell visited once.<br><b>Space:</b> O(1) — extra of the output list itself."
+   }
+  },
+  {
+   "noteId": 1788998585803,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-set-zeroes-in-matrix",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "On a grid spreadsheet of numbers, wherever a cell holds a zero, that cell's entire row and entire column must be blanked to zero. Crucially, the original zeros should trigger the blanking, not the newly blanked cells, and you should avoid using a whole second grid. What is the final grid?",
+    "Back": "<b>Maps to:</b> Use first row/column as in-place markers (Set Matrix Zeroes).<br><br><b>Model it:</b> Zero out every row and column that originally contained a zero, in place.<br><br><b>Approach &amp; variations:</b><ul><li>First scan records which rows and columns must be zeroed; using the matrix's own first row and column as those marker flags saves space.</li><li>Track separately whether the first row and first column themselves need zeroing.</li><li>Second pass zeros interior cells whose row-marker or column-marker is set, then handle the first row/column last.</li></ul><b>Time:</b> O(r·c) — two passes over the grid.<br><b>Space:</b> O(1) — markers stored in the grid's border cells."
+   }
+  },
+  {
+   "noteId": 1788998585804,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-non-cyclical-number",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A number game: take a whole number, replace it with the sum of the squares of its digits, and repeat. Some numbers eventually reach 1 and stay there; others fall into a repeating loop that never hits 1. Starting from a given number, does it eventually reach 1?",
+    "Back": "<b>Maps to:</b> Cycle detection (set or Floyd's two pointers) on digit-square sums (Happy Number).<br><br><b>Model it:</b> Iterate the digit-square-sum function and decide whether it reaches 1 or enters a cycle.<br><br><b>Approach &amp; variations:</b><ul><li>Repeatedly compute the sum of squares of digits.</li><li>Detect a loop with a seen-set, or with slow/fast pointers to use O(1) space.</li><li>Reaching 1 means happy; revisiting a value means a non-terminating cycle — return false.</li></ul><b>Time:</b> O(log n) per step, bounded steps — values shrink quickly toward small cycles.<br><b>Space:</b> O(1) with two pointers (O(k) with a seen-set)."
+   }
+  },
+  {
+   "noteId": 1788998585805,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-plus-one",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A very large number is written one digit per card, left to right, with the most significant digit first. You need to add exactly one to this number and show the updated row of digit cards, handling any carry that ripples leftward (and possibly needs a brand-new leading card). What is the new row?",
+    "Back": "<b>Maps to:</b> Digit-array increment with carry propagation (Plus One).<br><br><b>Model it:</b> Add one to a number represented as an array of digits.<br><br><b>Approach &amp; variations:</b><ul><li>Walk from the last digit: if it's less than 9, increment and return.</li><li>If it's 9, set it to 0 and carry left to the next digit.</li><li>If every digit was 9, prepend a leading 1 (e.g. 999 -> 1000).</li></ul><b>Time:</b> O(n) — at most one pass across the digits.<br><b>Space:</b> O(1) extra, or O(n) if a new leading digit forces a new array."
+   }
+  },
+  {
+   "noteId": 1788998585806,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-roman-to-integer",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "An old inscription writes quantities with letter-symbols of fixed values, largest to smallest, except that a smaller symbol placed just before a larger one means subtract it (like the notation for four or nine). Read the inscription and give its ordinary numeric value.",
+    "Back": "<b>Maps to:</b> Left-to-right scan with subtractive-pair rule (Roman to Integer).<br><br><b>Model it:</b> Convert a Roman numeral string to its integer value.<br><br><b>Approach &amp; variations:</b><ul><li>Map each symbol to its value.</li><li>Scan left to right; if a symbol's value is less than the next symbol's, subtract it, otherwise add it.</li><li>Equivalently sum all values then subtract twice each smaller-before-larger symbol.</li></ul><b>Time:</b> O(n) — one pass over the symbols.<br><b>Space:</b> O(1) — a fixed symbol-value table."
+   }
+  },
+  {
+   "noteId": 1788998585807,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-pow-x-n",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A biologist has a colony that multiplies by a fixed factor each generation, and wants the growth multiplier after a given whole number of generations — which might be negative, meaning going backwards in time. She wants the answer far faster than multiplying the factor by itself one generation at a time. What is the multiplier?",
+    "Back": "<b>Maps to:</b> Fast exponentiation by squaring (Pow(x, n)).<br><br><b>Model it:</b> Compute x raised to the integer power n efficiently.<br><br><b>Approach &amp; variations:</b><ul><li>Square the base and halve the exponent each step; multiply the result in when the current exponent bit is odd.</li><li>For a negative exponent, invert the base and use the positive magnitude.</li><li>Handles n via its binary representation, so log-many multiplications instead of n.</li></ul><b>Time:</b> O(log n) — exponent halves each step.<br><b>Space:</b> O(1) iterative (O(log n) if written recursively)."
+   }
+  },
+  {
+   "noteId": 1788998585808,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-multiply-strings",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two enormous numbers are each written out digit by digit on paper strips — too big to fit in any calculator. Multiply them together using only grade-school long multiplication on the digits, and write the product as a new strip of digits. What is the product strip?",
+    "Back": "<b>Maps to:</b> Grade-school multiplication into a positional digit buffer (Multiply Strings).<br><br><b>Model it:</b> Multiply two non-negative integers given as digit strings without using big-integer types.<br><br><b>Approach &amp; variations:</b><ul><li>Allocate a result buffer of size len(a)+len(b).</li><li>Multiply each digit pair; digit i of a times digit j of b contributes to positions i+j and i+j+1.</li><li>Accumulate with carries into those positions, then strip leading zeros; handle the '0' product case.</li></ul><b>Time:</b> O(n·m) — every digit pair multiplied once.<br><b>Space:</b> O(n + m) — the product digit buffer."
+   }
+  },
+  {
+   "noteId": 1788998585809,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "math-geometry",
+    "nc-count-squares",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A surveyor keeps dropping pins on a flat map (the same spot can get several pins over time). At any moment you may point at a spot and ask: how many axis-aligned squares can be formed using three already-placed pins together with this queried spot as the four corners, counting multiplicities from repeated pins?",
+    "Back": "<b>Maps to:</b> Point-count map keyed by coordinate, enumerate diagonal partners (Detect Squares).<br><br><b>Model it:</b> Support adding points and, for a query point, counting axis-aligned squares using stored points as the other three corners.<br><br><b>Approach &amp; variations:</b><ul><li>Store a count per exact coordinate (plus optionally points grouped by x).</li><li>For a query, iterate candidate diagonal-opposite points sharing neither coordinate but forming a square (equal side lengths).</li><li>Multiply the counts of the query's two adjacent corners and the diagonal corner, summing over all valid squares.</li><li>Repeated identical points multiply the counts — hence a count map, not a set.</li></ul><b>Time:</b> add O(1); query O(n) — scanning stored points sharing the query's x.<br><b>Space:</b> O(n) — the coordinate count map."
+   }
+  }
+ ]
+}

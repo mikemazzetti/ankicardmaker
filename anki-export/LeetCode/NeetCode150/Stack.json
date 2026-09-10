@@ -1,0 +1,132 @@
+{
+ "deck": "LeetCode::NeetCode150::Stack",
+ "note_count": 7,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038120892,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Parentheses",
+    "id": "20",
+    "slug": "valid-parentheses",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120896,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Generate Parentheses",
+    "id": "22",
+    "slug": "generate-parentheses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121020,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "monotonic-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Largest Rectangle in Histogram",
+    "id": "84",
+    "slug": "largest-rectangle-in-histogram",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121152,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "math",
+    "stack"
+   ],
+   "fields": {
+    "title": "Evaluate Reverse Polish Notation",
+    "id": "150",
+    "slug": "evaluate-reverse-polish-notation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121162,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "stack"
+   ],
+   "fields": {
+    "title": "Min Stack",
+    "id": "155",
+    "slug": "min-stack",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122330,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Daily Temperatures",
+    "id": "739",
+    "slug": "daily-temperatures",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122558,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "Car Fleet",
+    "id": "853",
+    "slug": "car-fleet",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, sorting, monotonic-stack",
+    "paid": "no"
+   }
+  }
+ ]
+}

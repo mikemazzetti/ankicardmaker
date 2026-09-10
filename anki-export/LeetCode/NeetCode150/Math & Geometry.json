@@ -1,0 +1,150 @@
+{
+ "deck": "LeetCode::NeetCode150::Math & Geometry",
+ "note_count": 8,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038120938,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "math",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Multiply Strings",
+    "id": "43",
+    "slug": "multiply-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120948,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "math",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Rotate Image",
+    "id": "48",
+    "slug": "rotate-image",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120952,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "math",
+    "recursion"
+   ],
+   "fields": {
+    "title": "Pow(x, n)",
+    "id": "50",
+    "slug": "powx-n",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120960,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "matrix",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Spiral Matrix",
+    "id": "54",
+    "slug": "spiral-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, matrix, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120984,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "math"
+   ],
+   "fields": {
+    "title": "Plus One",
+    "id": "66",
+    "slug": "plus-one",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, math",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120998,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Set Matrix Zeroes",
+    "id": "73",
+    "slug": "set-matrix-zeroes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121256,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "math",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Happy Number",
+    "id": "202",
+    "slug": "happy-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, math, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124878,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table"
+   ],
+   "fields": {
+    "title": "Detect Squares",
+    "id": "2013",
+    "slug": "detect-squares",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design, counting",
+    "paid": "no"
+   }
+  }
+ ]
+}

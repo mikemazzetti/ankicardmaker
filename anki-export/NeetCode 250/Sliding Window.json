@@ -1,0 +1,133 @@
+{
+ "deck": "NeetCode 250::Sliding Window",
+ "note_count": 9,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788998585294,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-contains-duplicate-ii",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A gallery guard walks past a long row of paintings, one per step. He worries about forgeries: two identical paintings hung close together would be embarrassingly obvious to visitors. He only cares if a matching pair sits within K steps of each other along the row. Is there any such nearby matching pair?",
+    "Back": "<b>Maps to:</b> Fixed-width sliding window with a set of seen values (Contains Duplicate II).<br><br><b>Model it:</b> Given values in order and a distance K, decide if two equal values appear at indices no more than K apart.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a set of the last K values seen; slide it forward one step at a time.</li><li>At each position, if the current value is already in the set, a nearby duplicate exists.</li><li>When the window exceeds K, drop the value that just fell off the left end.</li><li>A plain map of value -> last index also works: check if current index minus stored index <= K.</li></ul><b>Time:</b> O(n) — each value is added and removed from the window once.<br><b>Space:</b> O(min(n, K)) — the set holds at most K recent values."
+   }
+  },
+  {
+   "noteId": 1788998585295,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-buy-and-sell-crypto",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A trader sees the daily prices of a coin listed left to right in calendar order. She may buy on one day and sell on a strictly later day, exactly once. She cannot sell before she buys and cannot travel back in time. What is the largest profit she can lock in, or nothing if prices only fall?",
+    "Back": "<b>Maps to:</b> Track running minimum while scanning (Best Time to Buy and Sell Stock).<br><br><b>Model it:</b> Given a sequence of prices, maximize price[j] - price[i] for some i < j.<br><br><b>Approach &amp; variations:</b><ul><li>Sweep left to right keeping the cheapest price seen so far (the best buy day).</li><li>At each day compute today's price minus that minimum and keep the largest such gap.</li><li>If no positive gap ever appears, the answer is 0 (never trade).</li><li>Think of it as the widest 'valley then peak' where the valley precedes the peak.</li></ul><b>Time:</b> O(n) — a single pass over the prices.<br><b>Space:</b> O(1) — just the running minimum and best profit."
+   }
+  },
+  {
+   "noteId": 1788998585296,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-longest-substring-without-duplicates",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A jeweler strings beads from a spool in the exact order they come off. She wants the longest unbroken run she can cut out such that no bead color repeats within that run. As soon as a stretch would reuse a color, it's ruined. How long is the longest all-distinct stretch?",
+    "Back": "<b>Maps to:</b> Variable-size sliding window with last-seen positions (Longest Substring Without Repeating Characters).<br><br><b>Model it:</b> Find the longest contiguous span of the sequence containing no repeated element.<br><br><b>Approach &amp; variations:</b><ul><li>Grow a window by advancing the right edge one bead at a time.</li><li>Remember each color's most recent position; on a repeat, jump the left edge to just past the earlier copy.</li><li>Track the maximum window length seen along the way.</li><li>Never move the left edge backward, so each pointer only advances.</li></ul><b>Time:</b> O(n) — each edge sweeps forward at most n steps.<br><b>Space:</b> O(min(n, alphabet)) — positions for the distinct colors in the window."
+   }
+  },
+  {
+   "noteId": 1788998585297,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-longest-repeating-substring-with-replacement",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A tiler lays colored tiles in a fixed line and wants the longest solid-colored stretch he can achieve. He is allowed to repaint at most K tiles anywhere within a chosen stretch to make it one uniform color. Which contiguous stretch, after up to K repaints, gives the longest single-color run?",
+    "Back": "<b>Maps to:</b> Sliding window tracking the most frequent element's count (Longest Repeating Character Replacement).<br><br><b>Model it:</b> Find the longest window where (window length) minus (count of its most common element) <= K.<br><br><b>Approach &amp; variations:</b><ul><li>Expand the window and count colors inside it; track the highest single-color count.</li><li>The tiles needing repaint equal window size minus that highest count; that must stay <= K.</li><li>If it exceeds K, shrink from the left until the window is valid again.</li><li>The best window width found is the answer; the max-count need not be recomputed exactly to stay correct.</li></ul><b>Time:</b> O(n) — each edge advances at most n times over a fixed-size color count.<br><b>Space:</b> O(1) — a fixed tally of at most 26 colors."
+   }
+  },
+  {
+   "noteId": 1788998585298,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-permutation-string",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A locksmith has a small bag of lettered tiles and a long ribbon of letters. He wants to know if somewhere along the ribbon there is an unbroken segment using exactly his bag's tiles — same letters, same quantities — just possibly shuffled in order. Does such a matching window exist anywhere on the ribbon?",
+    "Back": "<b>Maps to:</b> Fixed-length sliding window comparing letter counts (Permutation In String).<br><br><b>Model it:</b> Decide if any substring of length |s1| in s2 has the same character multiset as s1.<br><br><b>Approach &amp; variations:</b><ul><li>Tally the letter counts needed by the bag.</li><li>Slide a window the same width as the bag along the ribbon, maintaining its letter tally.</li><li>Compare tallies at each step; a match means a permutation is present.</li><li>Maintain a 'matched letters' counter to compare in O(1) instead of scanning 26 slots each step.</li></ul><b>Time:</b> O(n) — one pass with constant-size tally comparisons.<br><b>Space:</b> O(1) — two fixed 26-letter tallies."
+   }
+  },
+  {
+   "noteId": 1788998585299,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-minimum-size-subarray-sum",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A dockworker loads crates onto a conveyor that presents them in a fixed order, each with a weight. He needs to grab a run of consecutive crates whose combined weight is at least a target quota, and he wants the shortest such run so he handles as few crates as possible. What's the fewest consecutive crates that meet the quota?",
+    "Back": "<b>Maps to:</b> Variable-size sliding window over positive values (Minimum Size Subarray Sum).<br><br><b>Model it:</b> Find the shortest contiguous subarray whose sum is >= the target.<br><br><b>Approach &amp; variations:</b><ul><li>Extend the window to the right, adding weights until the running sum reaches the quota.</li><li>Once satisfied, shrink from the left while it still meets the quota, recording the smallest width.</li><li>Because weights are positive, removing from the left only lowers the sum — the window is monotone.</li><li>If the total never reaches the quota, the answer is 0.</li></ul><b>Time:</b> O(n) — each crate enters and leaves the window once.<br><b>Space:</b> O(1) — a running sum and two edges."
+   }
+  },
+  {
+   "noteId": 1788998585300,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-find-k-closest-elements",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "Houses stand along a straight road at increasing mile markers. A mail carrier parks at a chosen milepost X and wants the K houses nearest to her, returned in road order. Ties go to the house with the smaller milepost. Which K houses does she pick?",
+    "Back": "<b>Maps to:</b> Binary search for the window's left edge, or two-pointer shrink (Find K Closest Elements).<br><br><b>Model it:</b> In a sorted array, return the K elements with smallest distance to X, in sorted order.<br><br><b>Approach &amp; variations:</b><ul><li>The answer is a contiguous window of K sorted values — only its start position is unknown.</li><li>Binary-search the left edge: compare X - arr[mid] against arr[mid+k] - X to decide which side is closer.</li><li>Alternatively shrink from both ends, dropping whichever endpoint is farther (ties drop the right).</li><li>Return the K values in place; they are already in order.</li></ul><b>Time:</b> O(log(n-k) + k) — binary search for the edge, then copy K values.<br><b>Space:</b> O(1) beyond the K-element output."
+   }
+  },
+  {
+   "noteId": 1788998585301,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-minimum-window-with-characters",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A collector walks a fixed line of stalls left to right, each selling one kind of stamp. She has a shopping list demanding certain stamps in certain quantities. She wants the shortest unbroken run of stalls she can visit that together supply every stamp on her list (extras allowed). What's the shortest qualifying run of stalls?",
+    "Back": "<b>Maps to:</b> Variable-size sliding window with a need-count (Minimum Window Substring).<br><br><b>Model it:</b> Find the shortest substring of s that contains all characters of t with required multiplicities.<br><br><b>Approach &amp; variations:</b><ul><li>Tally required counts, then expand the right edge, decrementing needs as stamps are collected.</li><li>Track how many distinct requirements are fully met; when all are met the window is valid.</li><li>While valid, shrink from the left to minimize width, recording the best, then break validity and grow again.</li><li>Return the smallest valid window, or empty if the list is never fully covered.</li></ul><b>Time:</b> O(n + m) — each stall is entered and left once; m to build the need tally.<br><b>Space:</b> O(m) — counts for the distinct required stamps."
+   }
+  },
+  {
+   "noteId": 1788998585302,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-sliding-window-maximum",
+    "neetcode250",
+    "sliding-window"
+   ],
+   "fields": {
+    "Front": "A surveyor drives past a row of hills of known heights. Through a viewfinder that frames exactly K consecutive hills at a time, she slides the frame one hill forward at each stop, from the start of the row to the end. At every stop she notes the tallest hill currently in frame. List those peak heights, one per stop.",
+    "Back": "<b>Maps to:</b> Monotonic decreasing deque of candidate maxima (Sliding Window Maximum).<br><br><b>Model it:</b> For every window of K consecutive elements, report the maximum.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a double-ended queue of indices whose heights are in decreasing order — the front is the current max.</li><li>Before adding a new hill, pop smaller heights off the back; they can never be the max while it stands.</li><li>Pop the front when its index falls out of the window's left edge.</li><li>After the first full window, record the front's height at each step.</li></ul><b>Time:</b> O(n) — each index is pushed and popped at most once.<br><b>Space:</b> O(k) — the deque holds at most one window of candidates."
+   }
+  }
+ ]
+}

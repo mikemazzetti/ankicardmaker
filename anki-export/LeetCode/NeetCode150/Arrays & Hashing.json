@@ -1,0 +1,173 @@
+{
+ "deck": "LeetCode::NeetCode150::Arrays & Hashing",
+ "note_count": 9,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038120854,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table"
+   ],
+   "fields": {
+    "title": "Two Sum",
+    "id": "1",
+    "slug": "two-sum",
+    "difficulty": "<font color=\"green\">Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120924,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Valid Sudoku",
+    "id": "36",
+    "slug": "valid-sudoku",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120950,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Group Anagrams",
+    "id": "49",
+    "slug": "group-anagrams",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121108,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Longest Consecutive Sequence",
+    "id": "128",
+    "slug": "longest-consecutive-sequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121286,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Contains Duplicate",
+    "id": "217",
+    "slug": "contains-duplicate",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121328,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum"
+   ],
+   "fields": {
+    "title": "Product of Array Except Self",
+    "id": "238",
+    "slug": "product-of-array-except-self",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121336,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Anagram",
+    "id": "242",
+    "slug": "valid-anagram",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121394,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "string"
+   ],
+   "fields": {
+    "title": "Encode and Decode Strings",
+    "id": "271",
+    "slug": "encode-and-decode-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121546,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bucket-sort",
+    "counting",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "heap-priority-queue",
+    "quickselect",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Top K Frequent Elements",
+    "id": "347",
+    "slug": "top-k-frequent-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, divide-and-conquer, sorting, heap-priority-queue, bucket-sort, counting, quickselect",
+    "paid": "no"
+   }
+  }
+ ]
+}

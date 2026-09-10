@@ -1,0 +1,128 @@
+{
+ "deck": "LeetCode::NeetCode150::Advanced Graphs",
+ "note_count": 6,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038121390,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "string",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Alien Dictionary",
+    "id": "269",
+    "slug": "alien-dictionary",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121516,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "eulerian-circuit",
+    "graph"
+   ],
+   "fields": {
+    "title": "Reconstruct Itinerary",
+    "id": "332",
+    "slug": "reconstruct-itinerary",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, graph, eulerian-circuit",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122338,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Network Delay Time",
+    "id": "743",
+    "slug": "network-delay-time",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122408,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "matrix",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Swim in Rising Water",
+    "id": "778",
+    "slug": "swim-in-rising-water",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, depth-first-search, breadth-first-search, union-find, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122426,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Cheapest Flights Within K Stops",
+    "id": "787",
+    "slug": "cheapest-flights-within-k-stops",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, depth-first-search, breadth-first-search, graph, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124020,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "minimum-spanning-tree",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Min Cost to Connect All Points",
+    "id": "1584",
+    "slug": "min-cost-to-connect-all-points",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, union-find, graph, minimum-spanning-tree",
+    "paid": "no"
+   }
+  }
+ ]
+}

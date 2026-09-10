@@ -1,0 +1,147 @@
+{
+ "deck": "NeetCode 250::Bit Manipulation",
+ "note_count": 10,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788998585830,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-single-number",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "At a costume ball everyone arrived with a partner wearing the exact same mask, so every mask design shows up on precisely two guests — except one lonely person who came alone with a unique mask. Given the whole crowd streaming past, name that single unpaired mask using no notepad to tally who you've seen.",
+    "Back": "<b>Maps to:</b> XOR fold over all elements (Single Number).<br><br><b>Model it:</b> Every value appears twice except one; combine all numbers with XOR and the survivor is the loner.<br><br><b>Approach &amp; variations:</b><ul><li>XOR is its own inverse, so <code>x ^ x = 0</code> and any pair cancels.</li><li>XOR all values together; the duplicates annihilate and the unique one remains.</li><li>Order doesn't matter since XOR is commutative and associative.</li><li>Starting accumulator is 0 (the XOR identity).</li></ul><b>Time:</b> O(n) — one sweep, a single XOR per guest.<br><b>Space:</b> O(1) — just the running accumulator, no tally book."
+   }
+  },
+  {
+   "noteId": 1788998585831,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-number-of-one-bits",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hotel gives you one long row of light switches encoding a room number; each switch is either up or down. The night manager only cares how many switches are currently flipped up. Count the raised switches as fast as possible.",
+    "Back": "<b>Maps to:</b> Popcount / bit counting (Number of 1 Bits).<br><br><b>Model it:</b> Count the set bits in the binary representation of the given integer.<br><br><b>Approach &amp; variations:</b><ul><li>Simple: check the lowest bit with <code>n &amp; 1</code>, shift right, repeat 32 times.</li><li>Faster (Brian Kernighan): <code>n &amp;= (n - 1)</code> clears the lowest set bit; loop runs once per raised switch.</li><li>Kernighan's trick loops only k times for k set bits, not the full width.</li></ul><b>Time:</b> O(1) — fixed 32-bit width (or O(k) set bits with Kernighan's).<br><b>Space:</b> O(1) — a single counter."
+   }
+  },
+  {
+   "noteId": 1788998585832,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-counting-bits",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A stamp collector numbers albums 0, 1, 2, up through N, and for each album wants to know how many gold stars its number needs when written in the two-symbol shorthand the club uses. Produce the star-count for every album from 0 to N without re-counting each from scratch.",
+    "Back": "<b>Maps to:</b> DP using a lower-bit relation (Counting Bits).<br><br><b>Model it:</b> For each i from 0..n, output the number of set bits, reusing previously computed answers.<br><br><b>Approach &amp; variations:</b><ul><li>Relation: <code>bits[i] = bits[i &gt;&gt; 1] + (i &amp; 1)</code> — drop the last bit, add it back.</li><li>Alternative: <code>bits[i] = bits[i &amp; (i - 1)] + 1</code> using the cleared-lowest-bit form.</li><li>Each answer is built in O(1) from a smaller, already-known one.</li></ul><b>Time:</b> O(n) — one constant-time step per album.<br><b>Space:</b> O(n) — the output table of counts (O(1) extra beyond it)."
+   }
+  },
+  {
+   "noteId": 1788998585833,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-add-binary",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two ancient tally sticks are notched only with two kinds of marks meaning 'off' and 'on', each representing a number in a base-two folk system. Lay them right-aligned and produce a new stick whose marks represent their sum, carrying over exactly as a schoolchild adds columns by hand.",
+    "Back": "<b>Maps to:</b> Digit-by-digit addition with carry (Add Binary).<br><br><b>Model it:</b> Add two binary strings and return their binary sum string.<br><br><b>Approach &amp; variations:</b><ul><li>Walk both strings from the rightmost digit toward the left.</li><li>At each column sum the two digits plus the carry; the result digit is <code>sum % 2</code>, new carry is <code>sum / 2</code>.</li><li>Append digits then reverse, and don't forget a final leftover carry.</li><li>Pad implicitly by treating past-the-end digits as 0.</li></ul><b>Time:</b> O(max(m, n)) — one pass over the longer stick.<br><b>Space:</b> O(max(m, n)) — the result string of that length."
+   }
+  },
+  {
+   "noteId": 1788998585834,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-reverse-bits",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A conveyor belt carries exactly 32 numbered tokens, each showing heads or tails, past a mirror. You must rebuild the same belt but with the token order flipped end to end — the first token's face lands in the last slot and vice versa — keeping each token's own face unchanged.",
+    "Back": "<b>Maps to:</b> Bit reversal within a fixed width (Reverse Bits).<br><br><b>Model it:</b> Reverse the order of the 32 bits of an unsigned integer.<br><br><b>Approach &amp; variations:</b><ul><li>Loop 32 times: peel the low bit of the input, push it into the result, then shift result left and input right.</li><li>Equivalently <code>result = (result &lt;&lt; 1) | (n &amp; 1)</code> each step.</li><li>Divide-and-conquer swap of bit halves/quarters does it in O(log w) if repeated many times.</li></ul><b>Time:</b> O(1) — fixed 32 iterations.<br><b>Space:</b> O(1) — one result accumulator."
+   }
+  },
+  {
+   "noteId": 1788998585835,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-missing-number",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cloakroom hands out tickets numbered 0 through N with no gaps, one per coat. At closing, all coats but one have been collected, and you hold the pile of returned tickets — one ticket fewer than were issued. Which ticket number never came back?",
+    "Back": "<b>Maps to:</b> XOR of indices and values, or sum formula (Missing Number).<br><br><b>Model it:</b> Given n distinct numbers from 0..n, find the single absent one.<br><br><b>Approach &amp; variations:</b><ul><li>XOR every index 0..n together with every value; pairs cancel and the missing number survives.</li><li>Alternative: expected sum <code>n(n+1)/2</code> minus the actual sum equals the gap.</li><li>XOR avoids the overflow risk the sum formula can hit.</li><li>Both are O(1) space, single pass.</li></ul><b>Time:</b> O(n) — one sweep over the returned tickets.<br><b>Space:</b> O(1) — a single accumulator."
+   }
+  },
+  {
+   "noteId": 1788998585836,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-sum-of-two-integers",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cursed abacus has had its 'add' rail confiscated — you may only slide beads to compare positions and shift whole rows sideways. Two quantities sit on it; produce their total using nothing but these position-comparison and row-shifting moves, never the forbidden plus operation.",
+    "Back": "<b>Maps to:</b> Addition via XOR and carry shifting (Sum of Two Integers).<br><br><b>Model it:</b> Compute a + b without using + or -, using only bitwise operations.<br><br><b>Approach &amp; variations:</b><ul><li>XOR gives the sum ignoring carries; AND then left-shift gives the carries.</li><li>Loop: <code>sum = a ^ b</code>, <code>carry = (a &amp; b) &lt;&lt; 1</code>, repeat with these until carry is 0.</li><li>Handle language quirks (e.g. mask to 32 bits) for negatives in fixed-width languages.</li></ul><b>Time:</b> O(1) — at most ~32 carry-propagation rounds.<br><b>Space:</b> O(1) — a couple of temporaries."
+   }
+  },
+  {
+   "noteId": 1788998585837,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-reverse-integer",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A signed odometer reading sits on the dashboard, and you want to display it with its digits written backward (keeping any leading minus). But the display case can only show numbers within a fixed range — if the flipped reading would overflow that case, it must show zero instead.",
+    "Back": "<b>Maps to:</b> Digit reversal with overflow guard (Reverse Integer).<br><br><b>Model it:</b> Reverse the decimal digits of a signed 32-bit integer, returning 0 on overflow.<br><br><b>Approach &amp; variations:</b><ul><li>Pop the last digit with <code>% 10</code>, push onto the result with <code>result * 10 + digit</code>, drop it with <code>/ 10</code>.</li><li>Sign carries along naturally in most languages.</li><li>Before each push, check against the 32-bit limits so you detect overflow before it happens.</li><li>Return 0 the moment the reversed value would exceed the range.</li></ul><b>Time:</b> O(log n) — proportional to the digit count.<br><b>Space:</b> O(1) — one running result."
+   }
+  },
+  {
+   "noteId": 1788998585838,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-bitwise-and-of-numbers-range",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A vault has a bank of on/off levers. You're given a first and last serial number and told: overlay the lever-patterns of every serial from first through last, and a lever stays lit only if it was lit on every single one. Report the final lever pattern without inspecting each serial individually.",
+    "Back": "<b>Maps to:</b> Common binary prefix of the endpoints (Bitwise AND of Numbers Range).<br><br><b>Model it:</b> Compute the bitwise AND of all integers in [left, right].<br><br><b>Approach &amp; variations:</b><ul><li>Any bit that ever flips across the range becomes 0 in the AND, so only the shared high prefix survives.</li><li>Shift both endpoints right until they're equal, counting shifts, then shift the common value back left.</li><li>Alternative: repeatedly clear right's lowest set bit with <code>right &amp; (right - 1)</code> until <code>right &lt;= left</code>.</li></ul><b>Time:</b> O(log n) — one step per bit of width.<br><b>Space:</b> O(1) — a shift counter."
+   }
+  },
+  {
+   "noteId": 1788998585839,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "bit-manipulation",
+    "nc-minimum-array-end",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A jeweler must lay out N gemstones in strictly increasing size, and every stone must contain a fixed engraved seal x: wherever the seal has a raised dot, that stone must have a matching stud. Keep every stone as small as possible; the whole line is forced once the first stone is the seal itself. What is the size of the very last, largest stone?",
+    "Back": "<b>Maps to:</b> Distribute a counter across the free (zero) bits of x (Minimum Array End).<br><br><b>Model it:</b> Build the smallest strictly increasing sequence of n values whose AND with each other all keep x's set bits; return the last element.<br><br><b>Approach &amp; variations:</b><ul><li>Every element must be a superset of x's bits, so the set bits are fixed; only the zero-bit positions are free to vary.</li><li>The i-th smallest such value places the binary digits of (n-1) into x's zero-bit slots.</li><li>Walk the bits: fill each 0-slot of x with the next bit of (n-1), leaving x's 1-bits untouched.</li><li>Result is x with (n-1)'s bits scattered into its gaps.</li></ul><b>Time:</b> O(log n + log x) — one pass over the bit positions.<br><b>Space:</b> O(1) — accumulate the answer in place."
+   }
+  }
+ ]
+}

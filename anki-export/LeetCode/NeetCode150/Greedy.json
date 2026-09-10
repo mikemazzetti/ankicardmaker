@@ -1,0 +1,152 @@
+{
+ "deck": "LeetCode::NeetCode150::Greedy",
+ "note_count": 8,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038120942,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy"
+   ],
+   "fields": {
+    "title": "Jump Game II",
+    "id": "45",
+    "slug": "jump-game-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120958,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Subarray",
+    "id": "53",
+    "slug": "maximum-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120962,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy"
+   ],
+   "fields": {
+    "title": "Jump Game",
+    "id": "55",
+    "slug": "jump-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121120,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy"
+   ],
+   "fields": {
+    "title": "Gas Station",
+    "id": "134",
+    "slug": "gas-station",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122208,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Parenthesis String",
+    "id": "678",
+    "slug": "valid-parenthesis-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122378,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Partition Labels",
+    "id": "763",
+    "slug": "partition-labels",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, two-pointers, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122544,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Hand of Straights",
+    "id": "846",
+    "slug": "hand-of-straights",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "array, hash-table, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124650,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy"
+   ],
+   "fields": {
+    "title": "Merge Triplets to Form Target Triplet",
+    "id": "1899",
+    "slug": "merge-triplets-to-form-target-triplet",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  }
+ ]
+}

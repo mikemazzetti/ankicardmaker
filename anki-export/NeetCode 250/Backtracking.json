@@ -1,0 +1,231 @@
+{
+ "deck": "NeetCode 250::Backtracking",
+ "note_count": 16,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788998585494,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-sum-of-all-subset-xor-totals",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A locksmith has a small ring of numbered keys. For every possible selection of keys — including the empty selection and the full ring — he combines the chosen numbers with a special 'toggle-combine' operation (bits that appear an odd number of times survive). Add up the toggle-combine result over every possible selection. What total does he get?",
+    "Back": "<b>Maps to:</b> Backtracking over all subsets, accumulating XOR (Sum of All Subset XOR Totals).<br><br><b>Model it:</b> Sum the XOR of every subset of the array, including the empty subset.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse choosing include/exclude for each element, carrying the running XOR; add it at each leaf.</li><li>There are 2^n subsets, so brute enumeration is fine for small n.</li><li>Slick fact: each bit set anywhere appears in exactly half the subsets, giving <code>OR(all) * 2^(n-1)</code> in O(n).</li></ul><b>Time:</b> O(2^n * n) enumerating subsets; O(n) with the bit-counting shortcut.<br><b>Space:</b> O(n) recursion depth (O(1) for the shortcut)."
+   }
+  },
+  {
+   "noteId": 1788998585495,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-subsets",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A chef has a shelf of distinct spices and wants to write down every possible spice blend he could make — from using none of them, through every partial mix, up to using all of them. No two spices repeat on the shelf. List every distinct blend.",
+    "Back": "<b>Maps to:</b> Backtracking / power set enumeration (Subsets).<br><br><b>Model it:</b> Generate the power set of a set of distinct elements.<br><br><b>Approach &amp; variations:</b><ul><li>At each index decide include or exclude, recording the running selection at every node.</li><li>Because elements are distinct, no duplicate blends arise.</li><li>Equivalent: iterate a bitmask from 0 to 2^n-1, or grow the answer list element by element.</li></ul><b>Time:</b> O(n * 2^n) — 2^n subsets, each up to length n to build/copy.<br><b>Space:</b> O(n) recursion depth beyond the output."
+   }
+  },
+  {
+   "noteId": 1788998585496,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-combination-target-sum",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cashier has an unlimited roll of coins in a few given denominations and must make exactly a target amount. She wants every distinct set of coins that sums to the target, where a denomination may be reused any number of times, and two ways counting as the same if they use the same coins regardless of order. List them all.",
+    "Back": "<b>Maps to:</b> Backtracking with reuse of candidates (Combination Sum).<br><br><b>Model it:</b> Find all multisets of candidate numbers (repeats allowed) that sum to a target.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse tracking the remaining target and a start index; from each choice you may pick the same index again to allow reuse.</li><li>Only move the start index forward to avoid permuted duplicates.</li><li>Prune when remaining goes negative; record when it hits zero.</li></ul><b>Time:</b> O(n^(target/min)) in the worst case — exponential in the recursion depth bounded by target/smallest candidate.<br><b>Space:</b> O(target/min) recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585497,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-combination-target-sum-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cashier is handed a specific jar of coins — each physical coin usable at most once — and must find every distinct set of these coins that adds to a target amount. The jar may contain several coins of the same value, and the same combination of values must not be listed twice. Give all distinct sets.",
+    "Back": "<b>Maps to:</b> Backtracking with sort and duplicate-skipping, no reuse (Combination Sum II).<br><br><b>Model it:</b> Find all subsets of a multiset (each element used once) summing to a target, without duplicate combinations.<br><br><b>Approach &amp; variations:</b><ul><li>Sort first; recurse with a start index that always advances (each coin used at most once).</li><li>At the same recursion level, skip a value equal to the previous sibling to avoid duplicate sets.</li><li>Prune when the remaining target goes negative.</li></ul><b>Time:</b> O(2^n) worst case — a branch per include/exclude decision over n coins.<br><b>Space:</b> O(n) recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585498,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-combinations",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A teacher must pick a committee of exactly K students from a class numbered 1 through N. Order on the committee doesn't matter, and she wants to see every possible committee she could form. List them all.",
+    "Back": "<b>Maps to:</b> Backtracking choosing K of N (Combinations).<br><br><b>Model it:</b> Generate all size-K subsets of the numbers 1..N.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse with a start value, appending numbers and stopping when the selection reaches size K.</li><li>Advance the start so numbers are chosen in increasing order — no permutations, no repeats.</li><li>Prune branches that can't reach K picks with the numbers remaining.</li></ul><b>Time:</b> O(K * C(N,K)) — C(N,K) committees, each length K to build.<br><b>Space:</b> O(K) recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585499,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-permutations",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A photographer must line up a group of distinct guests for a portrait and wants to see every possible left-to-right ordering of the whole group before choosing. No guest appears twice. List every ordering.",
+    "Back": "<b>Maps to:</b> Backtracking building full arrangements (Permutations).<br><br><b>Model it:</b> Generate all orderings of a list of distinct elements.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse choosing an unused element for each position, marking it used and unmarking on backtrack.</li><li>A leaf at full length is one permutation.</li><li>Swapping elements in place is an alternative to a used-flag array.</li></ul><b>Time:</b> O(n * n!) — n! orderings, each length n to record.<br><b>Space:</b> O(n) recursion depth plus the used marks."
+   }
+  },
+  {
+   "noteId": 1788998585500,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-subsets-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A chef's spice shelf now has some duplicate jars of the same spice. He again wants every possible blend from none to all, but blends that use the same spices in the same amounts must not be listed twice even though duplicate jars exist. List every distinct blend.",
+    "Back": "<b>Maps to:</b> Backtracking over subsets with duplicate-skipping after sorting (Subsets II).<br><br><b>Model it:</b> Generate the power set of a multiset without producing duplicate subsets.<br><br><b>Approach &amp; variations:</b><ul><li>Sort so equal values are adjacent.</li><li>Recurse include/exclude with a start index; at each level skip a value equal to the previous sibling already tried.</li><li>Record the running selection at every node.</li></ul><b>Time:</b> O(n * 2^n) — up to 2^n subsets, each up to length n.<br><b>Space:</b> O(n) recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585501,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-permutations-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A photographer lines up guests for a portrait, but this time some guests are identical twins wearing the same outfit — swapping two such twins produces a line-up that looks exactly the same. She wants every visually distinct ordering, counted once each. List them.",
+    "Back": "<b>Maps to:</b> Backtracking over permutations with duplicate pruning after sorting (Permutations II).<br><br><b>Model it:</b> Generate all distinct orderings of a multiset of elements.<br><br><b>Approach &amp; variations:</b><ul><li>Sort so equal values are adjacent.</li><li>At each position, among equal values only use the first still-unused one (skip a duplicate whose identical predecessor is unused) to avoid repeated line-ups.</li><li>Mark used, recurse, and unmark on backtrack.</li></ul><b>Time:</b> O(n * n!) worst case, fewer when duplicates prune branches.<br><b>Space:</b> O(n) recursion depth plus used marks."
+   }
+  },
+  {
+   "noteId": 1788998585502,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-search-for-word",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A grid of lettered tiles sits on a table. A player must trace a given word by stepping from tile to adjacent tile — up, down, left, or right — never reusing the same tile within one trace. Does the word exist somewhere as such a connected path on the board?",
+    "Back": "<b>Maps to:</b> DFS backtracking over a grid (Word Search).<br><br><b>Model it:</b> Determine if a string can be formed by a path of adjacent, non-reused cells in a character grid.<br><br><b>Approach &amp; variations:</b><ul><li>From each cell matching the first letter, DFS to neighbors that match the next letter.</li><li>Mark the current cell visited (e.g. temporarily overwrite it) and restore it on backtrack.</li><li>Succeed when the whole word is matched; fail a branch on mismatch or out of bounds.</li></ul><b>Time:</b> O(m * n * 4^L) — a search from each cell branching up to 4 ways for word length L.<br><b>Space:</b> O(L) recursion depth (marking done in place)."
+   }
+  },
+  {
+   "noteId": 1788998585503,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-palindrome-partitioning",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A jeweler has a strip of colored beads and wants to cut it into consecutive segments so that every segment reads the same forwards and backwards. She wants to enumerate every possible way to make such cuts across the whole strip. List all the ways.",
+    "Back": "<b>Maps to:</b> Backtracking over cut positions with palindrome checks (Palindrome Partitioning).<br><br><b>Model it:</b> Enumerate all partitions of a string where every part is a palindrome.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse over a start index; for each end, if the prefix substring is a palindrome, take it and recurse on the rest.</li><li>Record a partition when the start reaches the end of the string.</li><li>Optionally precompute an is-palindrome table to speed the checks.</li></ul><b>Time:</b> O(n * 2^n) — up to 2^(n-1) cut patterns, each with O(n) palindrome work.<br><b>Space:</b> O(n) recursion depth (plus O(n^2) if precomputing the palindrome table)."
+   }
+  },
+  {
+   "noteId": 1788998585504,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-combinations-of-a-phone-number",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "An old landline keypad maps each number button to a little group of letters. Given a short sequence of pressed buttons, a puzzler wants to list every possible 'word' you could spell by choosing one letter from each pressed button in order. List them all.",
+    "Back": "<b>Maps to:</b> Backtracking over a Cartesian product of per-digit letter sets (Letter Combinations of a Phone Number).<br><br><b>Model it:</b> Generate every string formed by picking one mapped letter per digit of the input.<br><br><b>Approach &amp; variations:</b><ul><li>Map each digit to its letters; recurse position by position appending each candidate letter.</li><li>A leaf at full length is one combination.</li><li>Handle the empty input as producing no combinations.</li></ul><b>Time:</b> O(4^d * d) — up to 4 letters per digit over d digits, each result length d.<br><b>Space:</b> O(d) recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585505,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-matchsticks-to-square",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A crafter has a handful of sticks of various lengths and wants to lay them all end-to-end to form the four sides of a perfect square, using every stick exactly once and breaking none. Is it possible?",
+    "Back": "<b>Maps to:</b> Backtracking assigning items to 4 equal buckets with pruning (Matchsticks to Square).<br><br><b>Model it:</b> Partition all sticks into exactly four groups of equal sum (the side length).<br><br><b>Approach &amp; variations:</b><ul><li>If total isn't divisible by 4, fail; the target side is total/4.</li><li>Sort sticks descending and try to place each into one of four side-buckets, backtracking when a bucket overflows.</li><li>Prune: skip a stick longer than target, and skip buckets with equal current fill to avoid symmetric retries.</li></ul><b>Time:</b> O(4^n) worst case, sharply cut by sorting and pruning.<br><b>Space:</b> O(n) recursion depth plus four bucket sums."
+   }
+  },
+  {
+   "noteId": 1788998585506,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-partition-to-k-equal-sum-subsets",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A camp counselor must split a pile of numbered tokens among exactly K children so that every child ends up holding tokens of the same total value, using every token. Can the tokens be dealt out this fairly?",
+    "Back": "<b>Maps to:</b> Backtracking filling K equal-sum buckets with pruning (Partition to K Equal Sum Subsets).<br><br><b>Model it:</b> Decide if the array can be split into K subsets each summing to total/K.<br><br><b>Approach &amp; variations:</b><ul><li>If total isn't divisible by K, or any element exceeds total/K, fail.</li><li>Sort descending and greedily fill one bucket to the target at a time, backtracking on failure.</li><li>Prune with a used mask, skip equal-value siblings, and skip a bucket you couldn't start with a given element.</li></ul><b>Time:</b> O(K * 2^n) with memoized-mask backtracking; exponential without it.<br><b>Space:</b> O(2^n) for the visited-mask memo (O(n) recursion otherwise)."
+   }
+  },
+  {
+   "noteId": 1788998585507,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-n-queens",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "On an N-by-N garden laid out in rows and columns, a gardener wants to place N sprinklers so that no two sprinklers share a row, a column, or either diagonal line of sight. She wants every distinct valid arrangement drawn out. Produce them all.",
+    "Back": "<b>Maps to:</b> Backtracking row by row with column/diagonal occupancy sets (N-Queens).<br><br><b>Model it:</b> Place N non-attacking queens on an N×N board and return all configurations.<br><br><b>Approach &amp; variations:</b><ul><li>Place one queen per row, trying each column that isn't already threatened.</li><li>Track occupied columns and both diagonals (row+col and row-col) in sets for O(1) checks.</li><li>Recurse to the next row; a full placement is one solution, backtracking otherwise.</li></ul><b>Time:</b> O(N!) — roughly N choices in the first row, N-2 conflict-free in the next, and so on.<br><b>Space:</b> O(N) for the occupancy sets and recursion depth (plus output)."
+   }
+  },
+  {
+   "noteId": 1788998585508,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-n-queens-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "On an N-by-N garden of rows and columns, a gardener again wants N sprinklers so no two share a row, column, or diagonal line of sight — but this time she only needs to know how many distinct valid arrangements exist, not what they look like. What is the count?",
+    "Back": "<b>Maps to:</b> Backtracking counting valid placements (N-Queens II).<br><br><b>Model it:</b> Count the number of ways to place N non-attacking queens on an N×N board.<br><br><b>Approach &amp; variations:</b><ul><li>Same row-by-row placement as N-Queens, but increment a counter at each full placement instead of storing boards.</li><li>Track columns and both diagonals; bitmasks make the conflict checks especially fast.</li><li>No need to build board strings, so memory stays minimal.</li></ul><b>Time:</b> O(N!) — the same search tree as enumerating the solutions.<br><b>Space:</b> O(N) recursion depth (constant with bitmask state)."
+   }
+  },
+  {
+   "noteId": 1788998585509,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "backtracking",
+    "nc-word-break-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A translator receives a long banner with all the spaces removed and a dictionary of allowed words. She wants every way to reinsert spaces so the whole banner splits cleanly into a sentence of dictionary words. List all such sentences.",
+    "Back": "<b>Maps to:</b> Backtracking with memoization over suffixes (Word Break II).<br><br><b>Model it:</b> Enumerate all segmentations of a string into space-separated dictionary words.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse from a start index; for each dictionary-word prefix, recurse on the remainder and prepend the word to each returned sentence.</li><li>Memoize results per start index so shared suffixes aren't recomputed.</li><li>An optional word-break feasibility check first avoids exploring dead ends.</li></ul><b>Time:</b> Exponential in the number of valid segmentations; memoization bounds repeated suffix work.<br><b>Space:</b> O(n) recursion depth plus the memo of suffix results."
+   }
+  }
+ ]
+}

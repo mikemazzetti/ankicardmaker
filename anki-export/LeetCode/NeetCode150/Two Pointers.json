@@ -1,0 +1,98 @@
+{
+ "deck": "LeetCode::NeetCode150::Two Pointers",
+ "note_count": 5,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038120874,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Container With Most Water",
+    "id": "11",
+    "slug": "container-with-most-water",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120882,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "3Sum",
+    "id": "15",
+    "slug": "3sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120936,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "monotonic-stack",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Trapping Rain Water",
+    "id": "42",
+    "slug": "trapping-rain-water",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, dynamic-programming, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121102,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Valid Palindrome",
+    "id": "125",
+    "slug": "valid-palindrome",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121186,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Two Sum II - Input Array Is Sorted",
+    "id": "167",
+    "slug": "two-sum-ii-input-array-is-sorted",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search",
+    "paid": "no"
+   }
+  }
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "deck": "HackerRank",
+ "note_count": 20,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788997707682,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A monkey has a row of banana bunches laid out from the smallest bunch on the left to the biggest on the right. It wants a feast of exactly <b>N</b> bananas by grabbing <b>exactly two</b> bunches. What's the fastest way to find such a pair without trying every combination?",
+    "Back": "<b>Maps to:</b> Two pointers on a sorted sequence.<br><br><b>Model it:</b> The bunches are a sorted array; you want two values summing to a target N.<br><br><b>Approach &amp; variations:</b><ul><li>Start one finger on the smallest bunch, one on the largest.</li><li>If their sum is too big, move the right finger left; too small, move the left finger right; equal → found.</li><li>Only works because it's sorted — if the bunches were in random order you'd need a hash set (O(n) time, O(n) space) instead.</li></ul><b>Time:</b> O(n) — the two fingers only ever move inward, sweeping the row once.<br><b>Space:</b> O(1) — just two positions."
+   }
+  },
+  {
+   "noteId": 1788997707683,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A conductor walks past a train, noting each wagon's color in order. He wants the <b>longest run of consecutive wagons</b> in which no color repeats.",
+    "Back": "<b>Maps to:</b> Variable-size sliding window + last-seen map.<br><br><b>Model it:</b> Wagons are a sequence; find the longest window with all-distinct elements.<br><br><b>Approach &amp; variations:</b><ul><li>Extend the window one wagon at a time, remembering the last position of each color.</li><li>When a color repeats inside the window, jump the window's left edge past that earlier copy.</li><li>Track the widest window seen.</li><li>Variation: 'at most K distinct colors' just changes the shrink condition.</li></ul><b>Time:</b> O(n) — each wagon is entered and left by the window at most once.<br><b>Space:</b> O(min(n, #colors)) — the map holds one entry per distinct color in the window."
+   }
+  },
+  {
+   "noteId": 1788997707684,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "At a carnival there's a long row of prize stalls, each worth some tickets. Your pass lets you play <b>exactly 4 stalls in a row</b>. Which 4 adjacent stalls win the most tickets?",
+    "Back": "<b>Maps to:</b> Fixed-size sliding window.<br><br><b>Model it:</b> Stalls are an array; find the max sum of every contiguous block of size 4.<br><br><b>Approach &amp; variations:</b><ul><li>Add up the first 4 stalls, then slide: add the next stall, subtract the one you left behind.</li><li>That reuse is the trick — no re-adding the whole block each step.</li><li>Variation: unknown/variable block length turns this into a two-pointer variable window.</li></ul><b>Time:</b> O(n) — one pass, constant work per slide.<br><b>Space:</b> O(1) — a single running total."
+   }
+  },
+  {
+   "noteId": 1788997707685,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A treasure hunter follows clues: each clue points to the next hiding spot. She worries the clues secretly <b>loop back on themselves forever</b>. With no notebook to record where she's been, how can she tell she's trapped in a loop?",
+    "Back": "<b>Maps to:</b> Fast & slow pointers (cycle detection).<br><br><b>Model it:</b> Each clue→next is a linked list; detect whether it cycles.<br><br><b>Approach &amp; variations:</b><ul><li>Send two hunters: one moves one clue per step, the other two clues per step.</li><li>If the fast one ever lands on the slow one, the clues loop; if it reaches a dead end, they don't.</li><li>Variation: to find <b>where</b> the loop starts, reset one hunter to the first clue and step both by one until they meet.</li></ul><b>Time:</b> O(n) — the fast pointer catches up within one loop length.<br><b>Space:</b> O(1) — no visited list, just two walkers."
+   }
+  },
+  {
+   "noteId": 1788997707686,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A monkey faces several piles of bananas and has <b>H hours</b> before the zookeeper returns. It picks an eating speed and eats that many bananas per hour from a single pile (finishing early if a pile runs out). What is the <b>slowest speed</b> that still clears every pile in time?",
+    "Back": "<b>Maps to:</b> Binary search on the answer.<br><br><b>Model it:</b> The unknown is a speed value in a range; feasibility (finishes in H hours?) is monotonic in speed.<br><br><b>Approach &amp; variations:</b><ul><li>Speed lives in [1, biggest pile]. Higher speed is never worse, so 'fits in H hours' flips once.</li><li>For a guessed speed, add up hours needed (ceil of pile/speed) — an O(n) check.</li><li>Binary-search the smallest speed whose hours ≤ H.</li><li>Same shape as 'minimum ship capacity in D days' or 'split array to minimize largest sum'.</li></ul><b>Time:</b> O(n · log(maxPile)) — an O(n) check run log(range) times.<br><b>Space:</b> O(1) — a few counters."
+   }
+  },
+  {
+   "noteId": 1788997707687,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A courier must cross a walled city from the front gate to the palace, moving only along open streets (some are blocked). What's the <b>fewest street-segments</b> in any route that gets there?",
+    "Back": "<b>Maps to:</b> Breadth-first search (BFS) on an unweighted graph.<br><br><b>Model it:</b> The city is a grid/graph; find the shortest hop-count from source to target.<br><br><b>Approach &amp; variations:</b><ul><li>BFS explores outward in rings of equal distance, so the target is first reached by a shortest route.</li><li>Use a queue; mark each cell visited when you enqueue it.</li><li>Variation: if streets had different travel costs you'd need Dijkstra; to recover the route, store where you came from.</li></ul><b>Time:</b> O(V + E) — every reachable spot and connection is examined once.<br><b>Space:</b> O(V) — the visited set and the queue."
+   }
+  },
+  {
+   "noteId": 1788997707688,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A ranger looks down at a valley: patches of dry ground separated by water. Two dry cells belong to the same landmass if they touch edge-to-edge. <b>How many separate landmasses</b> are there?",
+    "Back": "<b>Maps to:</b> Flood fill via DFS/BFS (or Union-Find).<br><br><b>Model it:</b> The map is a grid; count connected components of 'land' cells.<br><br><b>Approach &amp; variations:</b><ul><li>Scan every cell; when you hit unvisited land, flood-fill its entire landmass and add one to the count.</li><li>Mark filled cells so each is counted once.</li><li>Variation: if land appears one cell at a time over the day, Union-Find handles the merges efficiently.</li></ul><b>Time:</b> O(rows·cols) — each cell is touched a constant number of times.<br><b>Space:</b> O(rows·cols) — recursion/queue or a visited grid in the worst case."
+   }
+  },
+  {
+   "noteId": 1788997707689,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A photographer wants to seat 5 friends on a bench and try <b>every possible left-to-right ordering</b> for the shot. How does she generate all of them without missing or repeating any?",
+    "Back": "<b>Maps to:</b> Backtracking (depth-first search with undo).<br><br><b>Model it:</b> You need all permutations of a set — explore a decision tree, choosing one unused person per seat.<br><br><b>Approach &amp; variations:</b><ul><li>Fill seats left to right; at each seat try every friend not yet seated.</li><li>Recurse to the next seat, then <b>undo</b> the choice before trying the next friend.</li><li>Prune for constrained cousins: N-Queens skips attacked squares, 'combinations' forbids going backwards to avoid repeats.</li></ul><b>Time:</b> O(n · n!) — n! orderings, O(n) to record each.<br><b>Space:</b> O(n) — the recursion depth / who's-seated marker."
+   }
+  },
+  {
+   "noteId": 1788997707690,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A frog climbs a staircase of <b>n</b> steps, hopping either 1 or 2 steps at a time. In <b>how many distinct ways</b> can it reach the top?",
+    "Back": "<b>Maps to:</b> 1-D dynamic programming (Fibonacci recurrence).<br><br><b>Model it:</b> Ways to reach step i = ways to reach i−1 plus ways to reach i−2.<br><br><b>Approach &amp; variations:</b><ul><li>Each step's count is the sum of the previous two.</li><li>Build upward from the bottom (or memoize downward).</li><li>Only the last two counts matter → keep two variables for O(1) space.</li><li>Same engine as 'house robber' with a different transition rule.</li></ul><b>Time:</b> O(n) — each step's count computed once.<br><b>Space:</b> O(1) with two rolling values (O(n) if you keep the whole table)."
+   }
+  },
+  {
+   "noteId": 1788997707691,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "An autocorrect wants to turn one typed word into the intended word using the fewest single-letter fixes — each fix <b>adds</b>, <b>removes</b>, or <b>changes</b> one letter. What's the minimum number of fixes?",
+    "Back": "<b>Maps to:</b> 2-D dynamic programming (edit distance).<br><br><b>Model it:</b> Compare prefixes of the two words; dp[i][j] = edits to align the first i and first j letters.<br><br><b>Approach &amp; variations:</b><ul><li>If the current letters match, carry the diagonal value; otherwise 1 + min(add, remove, change).</li><li>Fill a grid of (len A + 1) × (len B + 1).</li><li>Variation: 'longest common subsequence' and sequence alignment use the same grid; you can compress it to two rows for O(min) space.</li></ul><b>Time:</b> O(m·n) — one O(1) computation per grid cell.<br><b>Space:</b> O(m·n), reducible to O(min(m,n)) with rolling rows."
+   }
+  },
+  {
+   "noteId": 1788997707692,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A burglar's bag holds at most <b>W</b> kilograms. Each item in the house has a weight and a resale value, and there's only one of each. Which items maximize the total value carried out?",
+    "Back": "<b>Maps to:</b> 0/1 Knapsack dynamic programming.<br><br><b>Model it:</b> Choose a subset of weighted/valued items under a capacity to maximize value; each item taken 0 or 1 times.<br><br><b>Approach &amp; variations:</b><ul><li>dp[c] = best value achievable with capacity c; loop items on the outside, capacity on the inside.</li><li>Sweep capacity <b>downward</b> so each item is used at most once (sweeping upward allows reuse = unbounded knapsack).</li><li>Variation: 'can we hit exactly this total?' (subset-sum / equal partition) is the boolean version.</li></ul><b>Time:</b> O(n·W) — pseudo-polynomial; scales with the numeric capacity.<br><b>Space:</b> O(W) — the 1-D rolling array."
+   }
+  },
+  {
+   "noteId": 1788997707693,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A single tennis court gets many booking requests, each with a start and end time. The manager wants to accept <b>as many bookings as possible</b> with no overlaps. Which does he keep?",
+    "Back": "<b>Maps to:</b> Greedy — sort by finish time.<br><br><b>Model it:</b> Intervals with start/end; pick the max set of mutually non-overlapping ones.<br><br><b>Approach &amp; variations:</b><ul><li>Sort bookings by earliest end time; always keep the one that frees the court soonest.</li><li>Skip any booking that starts before the last kept one ends.</li><li>An exchange argument proves this greedy choice is optimal.</li><li>Variation: sort by <b>start</b> to merge busy periods, or use a min-heap to count simultaneous meetings/rooms.</li></ul><b>Time:</b> O(n log n) — the sort dominates the linear scan.<br><b>Space:</b> O(1) beyond the sort (O(n) if the sort isn't in place)."
+   }
+  },
+  {
+   "noteId": 1788997707694,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "Contestants stream onto a talent-show stage one after another, each with a score. At any moment the host must be ready to name the <b>top 3 scorers so far</b> — without re-sorting everyone each time.",
+    "Back": "<b>Maps to:</b> Min-heap of size k (streaming top-K).<br><br><b>Model it:</b> Maintain the k largest of a stream; the heap's smallest element is the cutoff.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a min-heap holding the best 3; push each new score, and if the heap grows past 3, pop the smallest.</li><li>The root is the current 3rd place — the bar to beat.</li><li>Variation: 'k closest / k most frequent' just changes the key; needing only the exact k-th → Quickselect, O(n) average.</li></ul><b>Time:</b> O(n log k) — n insertions, each O(log k).<br><b>Space:</b> O(k) — the heap holds only k items."
+   }
+  },
+  {
+   "noteId": 1788997707695,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "At a mixer, people introduce one another. If Ann knows Bo and Bo knows Cy, then all three count as one friend-circle. As introductions keep happening, <b>how many separate friend-circles</b> remain?",
+    "Back": "<b>Maps to:</b> Union-Find (Disjoint Set Union).<br><br><b>Model it:</b> People are nodes, introductions are edges; count connected components as edges are added.<br><br><b>Approach &amp; variations:</b><ul><li>Each introduction unions two people's groups; a find (with path compression) tells you a person's group leader.</li><li>Use union by size/rank to keep the trees shallow.</li><li>Circles remaining = number of distinct leaders; an introduction between people already in one circle changes nothing.</li><li>Union-Find beats re-running DFS because the introductions arrive incrementally.</li></ul><b>Time:</b> O(E · α(n)) — near-constant (inverse-Ackermann) per operation.<br><b>Space:</b> O(n) — leader and rank arrays."
+   }
+  },
+  {
+   "noteId": 1788997707696,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A chef has many dishes, and some must be prepped before others (the sauce before the pasta, the dough before the pie). Find an <b>order to cook everything</b> so every prerequisite is done first — or report that the requirements form an impossible loop.",
+    "Back": "<b>Maps to:</b> Topological sort (Kahn's BFS, or DFS post-order).<br><br><b>Model it:</b> Dishes are nodes, 'must come before' are directed edges; produce a linear order of a DAG.<br><br><b>Approach &amp; variations:</b><ul><li>Kahn: repeatedly cook any dish with no unmet prerequisites, then remove it and relax the dishes waiting on it.</li><li>If you can't place every dish, a cycle exists → impossible.</li><li>DFS variant: emit dishes in finish order and reverse; revisiting an in-progress dish signals a cycle.</li></ul><b>Time:</b> O(V + E) — each dish and dependency handled once.<br><b>Space:</b> O(V + E) — the dependency lists plus the queue/in-degree counts."
+   }
+  },
+  {
+   "noteId": 1788997707697,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "Every day a shopkeeper writes down the temperature. For each day she wants to know: <b>how many days until it gets warmer</b> than that day (0 if it never does)?",
+    "Back": "<b>Maps to:</b> Monotonic (decreasing) stack.<br><br><b>Model it:</b> For each element, find the distance to the next strictly greater element on its right.<br><br><b>Approach &amp; variations:</b><ul><li>Walk left to right keeping a stack of days still waiting for a warmer day (temperatures decreasing down the stack).</li><li>When today beats the day on top of the stack, pop it and record the day-gap — today is its answer.</li><li>Variation: 'next greater element', 'largest rectangle in a histogram', and 'trapping rain water' all lean on a monotonic stack.</li></ul><b>Time:</b> O(n) — each day is pushed and popped at most once.<br><b>Space:</b> O(n) — the stack, when temperatures only fall."
+   }
+  },
+  {
+   "noteId": 1788997707698,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A phone's contact search narrows the list the instant you type each new letter of a name. With thousands of contacts, how do you store them so <b>matching a typed prefix</b> is effectively instant?",
+    "Back": "<b>Maps to:</b> Trie (prefix tree).<br><br><b>Model it:</b> Store strings so lookup cost depends on the query length, not how many strings you have.<br><br><b>Approach &amp; variations:</b><ul><li>Each node holds one link per next letter plus an 'is a full name here' flag.</li><li>Typing walks one node per letter; the subtree under that node is every completion.</li><li>Variation: DFS from the prefix node for autocomplete suggestions; a wildcard '.' forces you to branch across children.</li></ul><b>Time:</b> Build O(total letters); each prefix query O(L) for a length-L prefix.<br><b>Space:</b> O(total letters) — one node chain per shared prefix."
+   }
+  },
+  {
+   "noteId": 1788997707699,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A delivery driver wants the <b>cheapest-toll route</b> from the depot to every neighborhood. Roads connect neighborhoods and each road charges a different (never negative) toll.",
+    "Back": "<b>Maps to:</b> Dijkstra's algorithm (min-heap).<br><br><b>Model it:</b> Weighted graph with non-negative edges; shortest-cost path from one source to all nodes.<br><br><b>Approach &amp; variations:</b><ul><li>Always finalize the nearest not-yet-settled neighborhood, then relax its outgoing roads.</li><li>A min-heap keyed by cheapest-known cost hands you that next node.</li><li>Variation: negative tolls → Bellman-Ford; all tolls equal → plain BFS; want one target fast → A* with a heuristic.</li></ul><b>Time:</b> O(E log V) — each road can trigger a heap update.<br><b>Space:</b> O(V) — best-cost array plus heap entries."
+   }
+  },
+  {
+   "noteId": 1788997707700,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A cashier logs the day's gains and losses in the order they happen. The manager asks: <b>how many continuous stretches of the day</b> netted exactly <b>$k</b> (gains and losses can both occur)?",
+    "Back": "<b>Maps to:</b> Prefix sums + a hash map of counts.<br><br><b>Model it:</b> Count contiguous subarrays summing to k, where values may be negative.<br><br><b>Approach &amp; variations:</b><ul><li>Track a running total; a stretch ending now nets k exactly when some earlier running total equalled (now − k).</li><li>Keep a map of how often each running total has appeared; add map[now − k] to the answer.</li><li>Because losses (negatives) break monotonicity, a sliding window won't work — the map is essential.</li><li>Seed the map with total 0 seen once, for stretches starting at the very beginning.</li></ul><b>Time:</b> O(n) — one pass with O(1) map operations.<br><b>Space:</b> O(n) — up to n distinct running totals stored."
+   }
+  },
+  {
+   "noteId": 1788997707701,
+   "modelName": "Basic",
+   "tags": [
+    "algorithms",
+    "ankicardmaker",
+    "hackerrank",
+    "patterns",
+    "story"
+   ],
+   "fields": {
+    "Front": "A shared calendar is full of overlapping busy blocks (10–11, 10:30–12, 14–15, …). Produce the <b>merged list of busy periods</b> so no two overlap.",
+    "Back": "<b>Maps to:</b> Sort by start, then sweep and merge.<br><br><b>Model it:</b> Intervals that may overlap; collapse them into the minimal set of disjoint intervals.<br><br><b>Approach &amp; variations:</b><ul><li>Sort blocks by start time.</li><li>Hold the current merged block; if the next starts at or before its end, stretch the end, else emit it and open a new one.</li><li>Variation: inserting one block into an already-sorted set skips the sort; 'free time across many calendars' merges with a heap.</li></ul><b>Time:</b> O(n log n) — the sort dominates the single merge pass.<br><b>Space:</b> O(n) — the output list."
+   }
+  }
+ ]
+}

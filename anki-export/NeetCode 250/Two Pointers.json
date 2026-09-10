@@ -1,0 +1,189 @@
+{
+ "deck": "NeetCode 250::Two Pointers",
+ "note_count": 13,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788998585261,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-reverse-string",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A row of lettered blocks sits on a shelf. A child must flip the whole row end-for-end so the last block becomes first, working only on that same shelf with no second shelf to borrow.",
+    "Back": "<b>Maps to:</b> Two-pointer swap from both ends (Reverse String).<br><br><b>Model it:</b> Reverse a character array in place.<br><br><b>Approach &amp; variations:</b><ul><li>One finger at each end; swap the two characters, then step both inward.</li><li>Stop when the fingers meet or cross.</li><li>In place, so no extra buffer is allocated.</li></ul><b>Time:</b> O(n) — each character is touched once.<br><b>Space:</b> O(1) — swaps in place."
+   }
+  },
+  {
+   "noteId": 1788998585262,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-is-palindrome",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A proofreader checks whether a phrase reads the same forward and backward, but she ignores spaces and punctuation entirely and treats capital and lowercase letters as the same. Does the cleaned phrase mirror itself?",
+    "Back": "<b>Maps to:</b> Two pointers with filtering (Valid Palindrome).<br><br><b>Model it:</b> Decide if a string is a palindrome considering only alphanumerics, case-insensitively.<br><br><b>Approach &amp; variations:</b><ul><li>A pointer at each end skips non-alphanumeric characters inward.</li><li>Compare the two characters lowercased; any mismatch means no.</li><li>Meet in the middle to confirm yes.</li><li>Filtering on the fly avoids building a cleaned copy.</li></ul><b>Time:</b> O(n) — each character is examined once.<br><b>Space:</b> O(1) — two indices, no copy."
+   }
+  },
+  {
+   "noteId": 1788998585263,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-valid-palindrome-ii",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A proofreader checks whether a word reads the same both ways, and she's allowed to cross out at most one single letter to make it work. Can the word be a mirror image of itself with one deletion or none?",
+    "Back": "<b>Maps to:</b> Two pointers with one allowed skip (Valid Palindrome II).<br><br><b>Model it:</b> Return true if the string is a palindrome after deleting at most one character.<br><br><b>Approach &amp; variations:</b><ul><li>Close in from both ends while characters match.</li><li>At the first mismatch, test the substring skipping the left character OR skipping the right — either being a palindrome succeeds.</li><li>Only one deletion is permitted, so the branch happens just once.</li></ul><b>Time:</b> O(n) — outer scan plus one linear verification.<br><b>Space:</b> O(1) — index-based checks, no copies."
+   }
+  },
+  {
+   "noteId": 1788998585264,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-merge-strings-alternately",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "Two dancers stand in two lines. A choreographer forms one combined line by taking the front dancer of line one, then line two, then one, then two, and so on. When one line empties, the rest of the other line is appended in order.",
+    "Back": "<b>Maps to:</b> Two-pointer interleave (Merge Strings Alternately).<br><br><b>Model it:</b> Build a string by alternating characters of two strings, appending the leftover tail.<br><br><b>Approach &amp; variations:</b><ul><li>Advance an index into each string, appending one character from each per round.</li><li>When one runs out, append the remainder of the longer one.</li><li>A single loop with both indices suffices.</li></ul><b>Time:</b> O(a + b) — every character copied once.<br><b>Space:</b> O(a + b) — the merged output."
+   }
+  },
+  {
+   "noteId": 1788998585265,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-merge-sorted-array",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A librarian has one long shelf already sorted but with empty slots at the far right, exactly enough to hold a second, smaller sorted stack. She must fold the second stack into the shelf so the whole shelf ends up sorted — filling from the right so she never overwrites a book she still needs.",
+    "Back": "<b>Maps to:</b> Two pointers merging from the back (Merge Sorted Array).<br><br><b>Model it:</b> Merge two sorted arrays into the first, which has trailing space, in place.<br><br><b>Approach &amp; variations:</b><ul><li>Start pointers at the last real element of each array and a write pointer at the very end.</li><li>Place the larger of the two at the write slot and step that pointer back.</li><li>Filling from the back avoids clobbering unmerged values in the first array.</li><li>Any leftover of the second array is copied down at the end.</li></ul><b>Time:</b> O(m + n) — each element placed once.<br><b>Space:</b> O(1) — merged in place."
+   }
+  },
+  {
+   "noteId": 1788998585266,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-remove-duplicates-from-sorted-array",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A row of already-alphabetized name cards has some names repeated on adjacent cards. A clerk must compact the row so each name appears once, in order, reusing the same row, then report how many unique cards fill the front.",
+    "Back": "<b>Maps to:</b> Two-pointer in-place dedup on sorted input (Remove Duplicates From Sorted Array).<br><br><b>Model it:</b> Remove duplicates in place from a sorted array and return the count of uniques.<br><br><b>Approach &amp; variations:</b><ul><li>A slow write pointer marks the last unique kept; a fast pointer scans forward.</li><li>When the fast value differs from the last kept, write it just after and advance the slow pointer.</li><li>Sortedness guarantees duplicates are adjacent, so only neighbor comparison is needed.</li><li>Slow index + 1 is the unique count.</li></ul><b>Time:</b> O(n) — one scan.<br><b>Space:</b> O(1) — in place."
+   }
+  },
+  {
+   "noteId": 1788998585267,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-two-integer-sum-ii",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A grocer has jars of coins arranged left-to-right from lightest to heaviest and wants two jars whose weights add to an exact target, reporting their positions. He wants to exploit the neat ordering rather than test every pair.",
+    "Back": "<b>Maps to:</b> Two pointers on a sorted array (Two Sum II).<br><br><b>Model it:</b> Find two indices in a sorted array whose values sum to the target.<br><br><b>Approach &amp; variations:</b><ul><li>One pointer at the lightest end, one at the heaviest.</li><li>Sum too big -> move the right pointer left; too small -> move the left pointer right; equal -> found.</li><li>Sortedness is what makes the O(n) sweep valid; unsorted would need a hash set.</li></ul><b>Time:</b> O(n) — pointers only move inward, one sweep.<br><b>Space:</b> O(1) — two indices."
+   }
+  },
+  {
+   "noteId": 1788998585268,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-three-integer-sum",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "From a mixed bag of numbered chips (positives, negatives, zeros), a player must find every distinct trio of chips that together balance to zero. No trio should be listed twice even if different chips give the same values.",
+    "Back": "<b>Maps to:</b> Sort + two-pointer sweep per anchor (3Sum).<br><br><b>Model it:</b> Find all unique triplets summing to zero.<br><br><b>Approach &amp; variations:</b><ul><li>Sort first; fix each element as an anchor and two-pointer the rest for the needed complement.</li><li>Skip duplicate anchors and duplicate pointer values to keep triplets unique.</li><li>Break early once the anchor is positive (sum can't reach zero).</li><li>Sorting enables both the pointer sweep and easy dedup.</li></ul><b>Time:</b> O(n²) — an O(n) sweep for each of n anchors (sort is O(n log n)).<br><b>Space:</b> O(1) or O(n) — ignoring output, just the sort's overhead."
+   }
+  },
+  {
+   "noteId": 1788998585269,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-4sum",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "From a bag of numbered chips a player must find every distinct group of four chips whose values add up to an exact target amount (which may be any number, not just zero). Duplicate quadruples must not be listed twice.",
+    "Back": "<b>Maps to:</b> Sort + nested anchors + two-pointer (4Sum).<br><br><b>Model it:</b> Find all unique quadruples summing to a given target.<br><br><b>Approach &amp; variations:</b><ul><li>Sort, then fix two outer anchors and two-pointer the remaining span for the target minus the pair.</li><li>Skip duplicate values at every level to avoid repeated quadruples.</li><li>Prune with running min/max bounds to cut hopeless branches.</li><li>Generalizes the 3Sum pattern by one more loop.</li></ul><b>Time:</b> O(n³) — two nested anchors, each with an O(n) sweep.<br><b>Space:</b> O(1) or O(n) — beyond output, only sort overhead."
+   }
+  },
+  {
+   "noteId": 1788998585270,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-rotate-array",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A conga line of dancers must shift so that the last K dancers wrap around to the front, everyone keeping their relative order. It has to be done on the same floor without an entire spare copy of the line.",
+    "Back": "<b>Maps to:</b> Triple reversal in place (Rotate Array).<br><br><b>Model it:</b> Rotate an array right by k positions in place.<br><br><b>Approach &amp; variations:</b><ul><li>Reduce k modulo n first.</li><li>Reverse the whole array, then reverse the first k, then reverse the remaining n−k.</li><li>This lands each element in its rotated spot using only swaps.</li><li>A juggling/cyclic-replacement method also works in O(1) space.</li></ul><b>Time:</b> O(n) — three linear reversals.<br><b>Space:</b> O(1) — swaps in place."
+   }
+  },
+  {
+   "noteId": 1788998585271,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-max-water-container",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A row of vertical poles of various heights stands along a line. Choosing two poles as the sides of a rectangular tank, the water level is capped by the shorter pole and the width is their distance apart. Which two poles hold the most water?",
+    "Back": "<b>Maps to:</b> Two pointers shrinking inward (Container With Most Water).<br><br><b>Model it:</b> Maximize (min of two heights) × (distance between them) over all index pairs.<br><br><b>Approach &amp; variations:</b><ul><li>Start with the widest pair, one pointer at each end.</li><li>Area is limited by the shorter side, so move the shorter pointer inward — the taller side could only be wasted otherwise.</li><li>Track the best area as the pointers close.</li><li>Moving the taller side can never improve on the current width, hence the greedy choice.</li></ul><b>Time:</b> O(n) — pointers meet after one sweep.<br><b>Space:</b> O(1) — two indices and a max."
+   }
+  },
+  {
+   "noteId": 1788998585272,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-boats-to-save-people",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "After a flood, rescuers have canoes each with the same strict weight limit, and each canoe carries at most two people. Given everyone's weights, what's the fewest canoes needed to ferry everyone across?",
+    "Back": "<b>Maps to:</b> Sort + greedy two pointers (Boats to Save People).<br><br><b>Model it:</b> Minimize boats where each holds at most two people under a weight limit.<br><br><b>Approach &amp; variations:</b><ul><li>Sort weights; pointer at lightest and heaviest.</li><li>The heaviest always boards; if the lightest also fits alongside, pair them and advance both — else the heaviest goes alone.</li><li>Each step consumes one boat and at least the heaviest remaining person.</li><li>Greedy pairing of lightest-with-heaviest is provably optimal.</li></ul><b>Time:</b> O(n log n) — dominated by the sort.<br><b>Space:</b> O(1) beyond the sort."
+   }
+  },
+  {
+   "noteId": 1788998585273,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-trapping-rain-water",
+    "neetcode250",
+    "two-pointers"
+   ],
+   "fields": {
+    "Front": "A cross-section of city rooftops of varying heights sits side by side. After a downpour, water pools in the dips between taller buildings. Given the heights, how many units of water are trapped across the whole skyline once it stops raining?",
+    "Back": "<b>Maps to:</b> Two pointers tracking running max walls (Trapping Rain Water).<br><br><b>Model it:</b> Sum trapped water where each position holds min(max-left, max-right) − its own height.<br><br><b>Approach &amp; variations:</b><ul><li>Water over a position is bounded by the tallest wall on each side.</li><li>Two pointers advance from both ends, moving whichever side has the smaller running max and adding that side's deficit.</li><li>The smaller running max is a firm bound, so its contribution is final.</li><li>Alternatives: precompute left/right max arrays (O(n) space), or a monotonic stack.</li></ul><b>Time:</b> O(n) — one two-pointer pass.<br><b>Space:</b> O(1) — running maxima and a total."
+   }
+  }
+ ]
+}

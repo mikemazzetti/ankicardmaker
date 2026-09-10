@@ -1,0 +1,165 @@
+{
+ "deck": "LeetCode::NeetCode150::Backtracking",
+ "note_count": 9,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1686038120886,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "hash-table",
+    "string"
+   ],
+   "fields": {
+    "title": "Letter Combinations of a Phone Number",
+    "id": "17",
+    "slug": "letter-combinations-of-a-phone-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120930,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Combination Sum",
+    "id": "39",
+    "slug": "combination-sum",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120932,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Combination Sum II",
+    "id": "40",
+    "slug": "combination-sum-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120944,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Permutations",
+    "id": "46",
+    "slug": "permutations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120954,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag"
+   ],
+   "fields": {
+    "title": "N-Queens",
+    "id": "51",
+    "slug": "n-queens",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121008,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Subsets",
+    "id": "78",
+    "slug": "subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121010,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Word Search",
+    "id": "79",
+    "slug": "word-search",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121032,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Subsets II",
+    "id": "90",
+    "slug": "subsets-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121114,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindrome Partitioning",
+    "id": "131",
+    "slug": "palindrome-partitioning",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  }
+ ]
+}

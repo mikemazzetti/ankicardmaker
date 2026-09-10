@@ -1,0 +1,203 @@
+{
+ "deck": "NeetCode 250::Greedy",
+ "note_count": 14,
+ "exported": "2026-09-09",
+ "notes": [
+  {
+   "noteId": 1788998585728,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-lemonade-change",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You run a lemonade stand where every cup costs exactly 5 coins. Customers arrive one at a time, each paying with a single 5-, 10-, or 20-coin piece, and you must hand back correct change immediately from only the money earlier customers gave you (you start with nothing). Serve them in order — can you make change for everyone?",
+    "Back": "<b>Maps to:</b> Greedy cash-drawer simulation (Lemonade Change).<br><br><b>Model it:</b> Track counts of 5s and 10s on hand; for each bill, give change and update, failing if you ever cannot.<br><br><b>Approach &amp; variations:</b><ul><li>A 5 needs no change; a 10 needs one 5; a 20 needs a 10+5 or three 5s.</li><li>For a 20, prefer giving a 10+5 over three 5s so the flexible 5s last longer.</li><li>If the needed change isn't available, return false.</li></ul><b>Time:</b> O(n) — one pass over the customers, constant work each.<br><b>Space:</b> O(1) — just two running counts of bills."
+   }
+  },
+  {
+   "noteId": 1788998585729,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-maximum-subarray",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A stock trader has a ledger of daily gains and losses, one number per day. She wants to pick a single unbroken stretch of consecutive days that adds up to the largest total profit possible. What is that best total?",
+    "Back": "<b>Maps to:</b> Running-sum greedy / Kadane's algorithm (Maximum Subarray).<br><br><b>Model it:</b> Find the contiguous subarray with the largest sum.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a running sum; if it ever drops below zero, reset it to zero (a negative prefix only hurts).</li><li>Track the best sum seen so far separately.</li><li>Equivalent DP: best ending here = value + max(0, best ending previous).</li><li>Handle all-negative input by seeding the answer with the first element, not zero.</li></ul><b>Time:</b> O(n) — a single sweep updating two accumulators.<br><b>Space:</b> O(1) — two numbers."
+   }
+  },
+  {
+   "noteId": 1788998585730,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-maximum-sum-circular-subarray",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Numbers of daily gains and losses are written around the rim of a circular clock face, so the last day wraps back around to touch the first. Pick one unbroken run of consecutive days — possibly one that spans across the wrap point — with the largest total. What is it?",
+    "Back": "<b>Maps to:</b> Kadane's twice, plus wraparound via total minus minimum (Maximum Sum Circular Subarray).<br><br><b>Model it:</b> Find the max-sum contiguous subarray in a circular array where a run may wrap around the ends.<br><br><b>Approach &amp; variations:</b><ul><li>Non-wrapping case: ordinary max-subarray (Kadane).</li><li>Wrapping case: total sum minus the minimum-sum subarray (the leftover ends).</li><li>Answer is the max of the two, but if all numbers are negative the wrap case gives 0 wrongly — fall back to the plain max.</li></ul><b>Time:</b> O(n) — a couple of linear Kadane passes.<br><b>Space:</b> O(1) — running sums only."
+   }
+  },
+  {
+   "noteId": 1788998585731,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-longest-turbulent-subarray",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hiker records elevation at each step. She wants the longest continuous portion of the trail where the terrain strictly zig-zags — up then down then up, alternating with no two consecutive steps going the same direction and never staying flat. How many steps long is it?",
+    "Back": "<b>Maps to:</b> Linear scan tracking alternating comparison sign (Longest Turbulent Subarray).<br><br><b>Model it:</b> Find the longest contiguous subarray whose consecutive comparisons alternate < and >.<br><br><b>Approach &amp; variations:</b><ul><li>Track two run lengths: one ending on a rising step, one on a falling step.</li><li>On a rise, the up-run extends the previous down-run+1; on a fall, vice versa; equal values reset both to 1.</li><li>Keep the best length seen.</li></ul><b>Time:</b> O(n) — one pass comparing adjacent pairs.<br><b>Space:</b> O(1) — two run counters."
+   }
+  },
+  {
+   "noteId": 1788998585732,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-jump-game",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A frog sits on the first of a row of lily pads. Each pad has a number telling the maximum number of pads forward the frog may leap from it (it can leap any distance up to that). Starting at the leftmost pad, can the frog possibly reach the very last pad?",
+    "Back": "<b>Maps to:</b> Greedy farthest-reach tracking (Jump Game).<br><br><b>Model it:</b> Given max jump lengths per index, decide if the last index is reachable from index 0.<br><br><b>Approach &amp; variations:</b><ul><li>Sweep left to right keeping the farthest index reachable so far.</li><li>If the current index ever exceeds that farthest reach, you're stuck — return false.</li><li>Update farthest = max(farthest, i + value); succeed if it reaches the end.</li></ul><b>Time:</b> O(n) — one linear pass.<br><b>Space:</b> O(1) — a single reach value."
+   }
+  },
+  {
+   "noteId": 1788998585733,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-jump-game-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A frog again starts on the first lily pad, each pad showing the maximum forward leap allowed from it, and reaching the last pad is guaranteed possible. This time it wants the fewest number of leaps to get there. How few leaps suffice?",
+    "Back": "<b>Maps to:</b> Greedy BFS-style level expansion (Jump Game II).<br><br><b>Model it:</b> Find the minimum number of jumps to reach the last index given per-index max jump lengths.<br><br><b>Approach &amp; variations:</b><ul><li>Treat reachable ranges as levels: the current jump covers [start, end].</li><li>As you scan the current window, track the farthest reachable next; when you hit the window's end, take a jump and extend the window to that farthest.</li><li>Each window boundary crossed costs one jump.</li></ul><b>Time:</b> O(n) — one pass, each index visited once.<br><b>Space:</b> O(1) — a few boundary/reach counters."
+   }
+  },
+  {
+   "noteId": 1788998585734,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-jump-game-vii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A row of stepping stones is painted, each either solid or cracked; the first stone is solid. A frog on a solid stone may hop forward by any distance between a fixed minimum and a fixed maximum, but may only land on solid stones. Starting on the first stone, can it reach the last stone?",
+    "Back": "<b>Maps to:</b> Reachability via sliding window / prefix count of reachable positions (Jump Game VII).<br><br><b>Model it:</b> Given a binary string and a [minJump, maxJump] range, decide if the last index is reachable landing only on '0's.<br><br><b>Approach &amp; variations:</b><ul><li>A position is reachable if it's solid and some reachable position lies in the window [i-maxJump, i-minJump].</li><li>Use a sliding-window count (or prefix sums) of reachable flags to test that window in O(1).</li><li>Advance the window as i grows; answer is whether the last index is reachable.</li></ul><b>Time:</b> O(n) — each index checks a window in amortized O(1).<br><b>Space:</b> O(n) — a reachable flag/prefix array."
+   }
+  },
+  {
+   "noteId": 1788998585735,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-gas-station",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Fuel depots are arranged in a big loop road. At each depot you can pick up a known amount of fuel, and driving from that depot to the next one burns a known amount. You have an empty tank and must complete the full loop in one direction. From which single starting depot can you make it all the way around (if any)?",
+    "Back": "<b>Maps to:</b> Greedy total-and-running-deficit check (Gas Station).<br><br><b>Model it:</b> Given gas[i] and cost[i] around a circle, find the start index from which a zero-start tank never goes negative.<br><br><b>Approach &amp; variations:</b><ul><li>If total gas < total cost, it's impossible — return -1.</li><li>Otherwise a unique valid start exists; sweep once tracking the running tank.</li><li>Whenever the tank goes negative, the start must be after the current index, so reset start to i+1 and tank to 0.</li></ul><b>Time:</b> O(n) — a single loop around the stations.<br><b>Space:</b> O(1) — two running totals."
+   }
+  },
+  {
+   "noteId": 1788998585736,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-hand-of-straights",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A card player holds a hand of numbered cards and wants to lay them all down in small groups of a fixed size, where each group must be a run of consecutive numbers (like 6-7-8). Every card must be used and no leftovers allowed. Is it possible to arrange the whole hand this way?",
+    "Back": "<b>Maps to:</b> Greedy consumption from smallest with counts (Hand of Straights).<br><br><b>Model it:</b> Partition a multiset of integers into groups of size k, each k consecutive values.<br><br><b>Approach &amp; variations:</b><ul><li>If hand size isn't divisible by the group size, fail immediately.</li><li>Count occurrences; repeatedly take the smallest remaining value as a run's start.</li><li>For that start, decrement it and the next k-1 consecutive values; if any is missing, fail.</li><li>A min-heap or sorted map over the distinct values keeps 'smallest remaining' cheap.</li></ul><b>Time:</b> O(n log n) — sorting/heap over the distinct cards drives the cost.<br><b>Space:</b> O(n) — the count map of cards."
+   }
+  },
+  {
+   "noteId": 1788998585737,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-dota2-senate",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two rival factions sit in a fixed circular seating order and vote in repeated rounds. On each turn a member may permanently silence one member of the opposing faction, and turns proceed around the circle skipping the silenced. Play always favors banning the very next opponent who would otherwise act. Which faction ends up controlling the vote?",
+    "Back": "<b>Maps to:</b> Two queues of indices simulating round-robin bans (Dota2 Senate).<br><br><b>Model it:</b> Given a string of 'R'/'D' in turn order, simulate each active member banning the nearest upcoming opponent; report the surviving party.<br><br><b>Approach &amp; variations:</b><ul><li>Put each faction's positions in its own queue.</li><li>Repeatedly compare the two front indices: the smaller acts first and bans the other; the acting index goes to the back with n added (next round).</li><li>Continue until one queue empties — that party wins.</li></ul><b>Time:</b> O(n) — each ban removes one member; total work is linear.<br><b>Space:</b> O(n) — two queues of indices."
+   }
+  },
+  {
+   "noteId": 1788998585738,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-merge-triplets-to-form-target",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A gemcutter has several sample stones, each rated on three qualities (cut, color, clarity). He can combine any chosen subset of stones into one blended rating by taking, for each quality, the best value among the combined stones. He wants the blend to exactly match a target rating on all three qualities. Is it achievable?",
+    "Back": "<b>Maps to:</b> Greedy filtering then per-position max (Merge Triplets to Form Target Triplet).<br><br><b>Model it:</b> Using element-wise max as the merge, decide if some subset of triplets merges exactly to the target triplet.<br><br><b>Approach &amp; variations:</b><ul><li>Discard any triplet that exceeds the target in any position — it could push a value too high.</li><li>Among the survivors, check that each of the three positions is matched exactly by at least one triplet.</li><li>If all three targets are hit, the merge works.</li></ul><b>Time:</b> O(n) — one pass over the triplets.<br><b>Space:</b> O(1) — three boolean flags."
+   }
+  },
+  {
+   "noteId": 1788998585739,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-partition-labels",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A jeweler threads a single long string of colored beads and wants to snip it into as many separate segments as possible, with one rule: all beads of any given color must end up in the same segment. Cutting cannot reorder beads. What are the lengths of the segments in this maximal chopping?",
+    "Back": "<b>Maps to:</b> Greedy expanding window using last-occurrence (Partition Labels).<br><br><b>Model it:</b> Split a string into the most parts so each letter appears in only one part.<br><br><b>Approach &amp; variations:</b><ul><li>Record the last index at which each character appears.</li><li>Scan left to right, extending the current segment's end to the max last-index of characters seen.</li><li>When the scan position reaches that end, cut — record the length and start a new segment.</li></ul><b>Time:</b> O(n) — one pass to find last indices, one to partition.<br><b>Space:</b> O(1) — a fixed-size last-index table (alphabet)."
+   }
+  },
+  {
+   "noteId": 1788998585740,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-valid-parenthesis-string",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A proofreader has a line containing open and close brackets plus some wildcard blots, each blot being either an open bracket, a close bracket, or nothing at all. She may interpret each blot however she likes. Can the blots be interpreted so the whole line is perfectly balanced — every open matched by a later close?",
+    "Back": "<b>Maps to:</b> Greedy tracking a range of possible open counts (Valid Parenthesis String).<br><br><b>Model it:</b> Decide if a string of '(', ')', '*' can be valid with each '*' as '(', ')', or empty.<br><br><b>Approach &amp; variations:</b><ul><li>Maintain a low and high bound on the number of unmatched opens.</li><li>'(' raises both; ')' lowers both; '*' lowers low and raises high (its three options).</li><li>Clamp low at 0 (can't go negative); if high ever goes negative, fail. Valid iff low can reach 0 at the end.</li></ul><b>Time:</b> O(n) — a single scan maintaining two bounds.<br><b>Space:</b> O(1) — two counters."
+   }
+  },
+  {
+   "noteId": 1788998585741,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "greedy",
+    "nc-candy",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Children stand in a line, each with a rating for how well they behaved. You must give every child at least one candy, and any child rated strictly higher than an immediate neighbor must get more candies than that neighbor. What is the smallest total number of candies that satisfies everyone?",
+    "Back": "<b>Maps to:</b> Two-pass greedy (left-to-right then right-to-left) (Candy).<br><br><b>Model it:</b> Assign minimum positive integers to a line so each strictly higher-rated neighbor gets strictly more.<br><br><b>Approach &amp; variations:</b><ul><li>Start everyone at 1 candy.</li><li>Left-to-right: if a child outranks the left neighbor, give one more than that neighbor.</li><li>Right-to-left: if a child outranks the right neighbor, bump to max(current, rightNeighbor+1).</li><li>Sum the candies; the two passes satisfy both directions simultaneously.</li></ul><b>Time:</b> O(n) — two linear sweeps.<br><b>Space:</b> O(n) — a candy count per child."
+   }
+  }
+ ]
+}
