@@ -32,6 +32,19 @@ See [docs/SETUP.md](docs/SETUP.md). In short:
    ```
 3. **Keep Anki running** whenever you want to generate cards — the server lives inside Anki.
 
+## Back up / sync your whole collection
+
+Snapshot every deck in your Anki account into the repo as version-controlled JSON
+(one file per deck, full note fidelity — media binaries excluded):
+
+```bash
+python3 scripts/export_anki.py
+```
+
+Output lands in [`anki-export/`](anki-export/) with an [`INDEX.md`](anki-export/INDEX.md)
+listing every deck and its note count. Re-run any time and commit the diff to track how
+your collection changes. Anki must be open with the AnkiMCP add-on for it to work.
+
 ## Layout
 
 | Path | What it is |
