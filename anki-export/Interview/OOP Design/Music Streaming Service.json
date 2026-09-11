@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Music Streaming Service",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202095,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements to clarify for a Music Streaming Service OOD interview?",
+    "Back": "1) Browse/search a catalog of songs, albums, artists. 2) Play/pause/skip/seek playback. 3) Create, edit, and share playlists. 4) Follow artists and see a personalized feed. 5) Get song recommendations. 6) Support tiered subscriptions (free vs premium) affecting available features."
+   }
+  },
+  {
+   "noteId": 1789061202096,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What should you explicitly mark out of scope when designing a Music Streaming Service in an interview?",
+    "Back": "The actual audio codec/streaming protocol (e.g. adaptive bitrate), DRM/licensing enforcement details, and the ML internals of a recommendation model &mdash; treat recommendation as a pluggable strategy interface instead of designing the model."
+   }
+  },
+  {
+   "noteId": 1789061202097,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>User</code> class?",
+    "Back": "Holds account/profile data, subscription tier, owned playlists, followed artists, and listening history &mdash; used as input to recommendations and to enforce feature gating (e.g. skip limits on the free tier)."
+   }
+  },
+  {
+   "noteId": 1789061202098,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Playlist</code> class?",
+    "Back": "An ordered collection of songs with a name, an owner, and optional collaborators; supports add/remove/reorder operations and knows nothing about how it is played back."
+   }
+  },
+  {
+   "noteId": 1789061202099,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Player</code> (playback engine) class?",
+    "Back": "Manages the current play queue and playback position: <code>play()</code>, <code>pause()</code>, <code>skip()</code>, <code>seek()</code>; tracks the current <code>PlaybackState</code> and notifies observers when the now-playing song changes."
+   }
+  },
+  {
+   "noteId": 1789061202100,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "How does <code>Playlist</code> relate to <code>Song</code>?",
+    "Back": "Aggregation, not composition: a <code>Playlist</code> references existing <code>Song</code> objects (often via a <code>PlaylistEntry</code> wrapper that also stores position/order and who added it) &mdash; deleting a playlist must not delete the underlying songs."
+   }
+  },
+  {
+   "noteId": 1789061202101,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "How does <code>User</code> relate to <code>Playlist</code>?",
+    "Back": "One-to-many ownership: a <code>User</code> owns zero or more <code>Playlist</code>s. For collaborative playlists, a playlist instead holds a set of contributor <code>User</code>s in addition to a single owner."
+   }
+  },
+  {
+   "noteId": 1789061202102,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits song recommendations, and why?",
+    "Back": "<b>Strategy</b>. <code>RecommendationEngine</code> holds a <code>RecommendationStrategy</code> interface (e.g. genre-based, collaborative-filtering, recently-played-based); the concrete algorithm is swapped at runtime per user/experiment without changing the engine's calling code."
+   }
+  },
+  {
+   "noteId": 1789061202103,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits the now-playing / live activity feature, and why?",
+    "Back": "<b>Observer</b>. The <code>Player</code> (or a dedicated <code>NowPlayingSubject</code>) notifies registered listeners &mdash; a friend-activity feed, a lock-screen widget, analytics &mdash; whenever the current song changes, decoupling playback from every consumer of that event."
+   }
+  },
+  {
+   "noteId": 1789061202104,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits playlist creation, and why?",
+    "Back": "<b>Factory</b>. A <code>PlaylistFactory</code> centralizes construction of different playlist variants (plain user playlist, collaborative playlist, auto-generated smart mix) so client code calls one <code>createPlaylist(type, owner, name)</code> instead of knowing every concrete subclass."
+   }
+  },
+  {
+   "noteId": 1789061202105,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What is the shape of <code>RecommendationEngine</code>'s public API, given it uses the Strategy pattern?",
+    "Back": "<code>getRecommendations(User user, int limit)</code> delegates to <code>strategy.recommend(user, library, limit)</code>; a <code>setStrategy(RecommendationStrategy)</code> method lets the engine swap algorithms at runtime (e.g. A/B testing)."
+   }
+  },
+  {
+   "noteId": 1789061202106,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "What four methods form the core playback API on <code>Player</code>?",
+    "Back": "<code>play()</code>, <code>pause()</code>, <code>skip()</code>, and <code>seek(position)</code> &mdash; each updates <code>PlaybackState</code> and, on a song change, notifies now-playing observers."
+   }
+  },
+  {
+   "noteId": 1789061202107,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "Edge case: a song is removed from the catalog (rights expired) while it still appears in thousands of user playlists. How should the design handle this?",
+    "Back": "Soft-delete/tombstone the <code>Song</code> rather than hard-deleting it: mark it <code>unavailable</code>, keep the object (and its id) so playlists don't break, and have the <code>Player</code> skip unavailable songs during playback with a UI indicator instead of a crash."
+   }
+  },
+  {
+   "noteId": 1789061202108,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "Edge case: the same account starts playback on a phone and then on a web browser. What should happen?",
+    "Back": "Enforce a single active playback session per account (common for personal tiers): starting playback on the new device sends a stop/transfer signal to the previous device's <code>Player</code> instance, so only one device is ever actually streaming at a time."
+   }
+  },
+  {
+   "noteId": 1789061202109,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "(Java) Implement the <code>RecommendationStrategy</code> interface and a <code>GenreBasedStrategy</code> concrete implementation.",
+    "Back": "<pre><code>public interface RecommendationStrategy {\n    List&lt;Song&gt; recommend(User user, MusicLibrary library, int limit);\n}\n\npublic class GenreBasedStrategy implements RecommendationStrategy {\n    @Override\n    public List&lt;Song&gt; recommend(User user, MusicLibrary library, int limit) {\n        Set&lt;String&gt; favoriteGenres = user.getTopGenres();\n        return library.getAllSongs().stream()\n            .filter(song -&gt; favoriteGenres.contains(song.getGenre()))\n            .filter(song -&gt; !user.hasPlayed(song))\n            .limit(limit)\n            .collect(Collectors.toList());\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202110,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "(Python) Implement an Observer-pattern <code>NowPlayingSubject</code> that a <code>FriendActivityFeed</code> listener can subscribe to.",
+    "Back": "<pre><code>class NowPlayingSubject:\n    def __init__(self):\n        self._observers = []\n        self._current_song = None\n\n    def attach(self, observer):\n        self._observers.append(observer)\n\n    def detach(self, observer):\n        self._observers.remove(observer)\n\n    def set_current_song(self, song):\n        self._current_song = song\n        self._notify()\n\n    def _notify(self):\n        for observer in self._observers:\n            observer.on_now_playing_changed(self._current_song)\n\n\nclass FriendActivityFeed:\n    def on_now_playing_changed(self, song):\n        print(f\"Now playing: {song.title} by {song.artist}\")</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202111,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "(Java) Implement a <code>PlaylistFactory</code> that builds different playlist variants from a <code>PlaylistType</code> enum.",
+    "Back": "<pre><code>public class PlaylistFactory {\n    public static Playlist createPlaylist(PlaylistType type, User owner, String name) {\n        switch (type) {\n            case USER_CREATED:\n                return new Playlist(name, owner, false);\n            case COLLABORATIVE:\n                return new CollaborativePlaylist(name, owner);\n            case AUTO_GENERATED_MIX:\n                return new SmartMixPlaylist(name, owner);\n            default:\n                throw new IllegalArgumentException(\"Unknown playlist type: \" + type);\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202112,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Front": "(Python) Implement <code>Player.play()</code>, <code>pause()</code>, and <code>skip()</code> against a play queue.",
+    "Back": "<pre><code>class Player:\n    def __init__(self, queue):\n        self.queue = queue\n        self.state = PlaybackState.STOPPED\n        self.current_index = 0\n\n    def play(self):\n        if not self.queue:\n            return\n        self.state = PlaybackState.PLAYING\n\n    def pause(self):\n        if self.state == PlaybackState.PLAYING:\n            self.state = PlaybackState.PAUSED\n\n    def skip(self):\n        self.current_index = (self.current_index + 1) % len(self.queue)\n        self.play()</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202116,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Text": "The core classes in a Music Streaming Service design are {{c1::User}}, {{c2::Song}} (with Album/Artist metadata), {{c3::Playlist}}, {{c4::Player}} (playback engine), {{c5::MusicLibrary}} (catalog/search), and {{c6::RecommendationEngine}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202117,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-music-streaming"
+   ],
+   "fields": {
+    "Text": "The <code>PlaybackState</code> enum for the player is {{c1::PLAYING}}, {{c2::PAUSED}}, and {{c3::STOPPED}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

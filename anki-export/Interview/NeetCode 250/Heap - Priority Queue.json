@@ -1,0 +1,175 @@
+{
+ "deck": "Interview::NeetCode 250::Heap / Priority Queue",
+ "note_count": 12,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585461,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-kth-largest-integer-in-a-stream",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A fishing dock weighs every catch as it comes in, one fish at a time, forever. After each new fish is weighed, the harbor master must instantly announce the weight of the Kth-heaviest fish caught so far this season. New fish keep arriving; the answer must stay current after every single one.",
+    "Back": "<b>Maps to:</b> Min-heap of fixed size K (Kth Largest Element in a Stream).<br><br><b>Model it:</b> Maintain a running structure that returns the Kth largest value after each insertion into a stream.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a min-heap holding only the K largest seen so far; its smallest element (the root) is the Kth largest.</li><li>On each new value: push it, then if the heap exceeds size K pop the smallest.</li><li>The root is always the answer, in <code>O(log K)</code> per query.</li></ul><b>Time:</b> O(log K) per add — one push and at most one pop on a heap capped at size K.<br><b>Space:</b> O(K) — the heap never holds more than K elements."
+   }
+  },
+  {
+   "noteId": 1788998585462,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-last-stone-weight",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A pile of rocks sits by a smashing machine. Each round the two heaviest rocks are chosen and slammed together: if equal weight they both vaporize, otherwise the lighter is destroyed and the heavier shrinks by the lighter's weight, returning to the pile. Repeat until at most one rock remains. What does the survivor weigh, or zero if none is left?",
+    "Back": "<b>Maps to:</b> Max-heap, repeated extraction of the two largest (Last Stone Weight).<br><br><b>Model it:</b> Repeatedly remove the two maximum values, push back their difference, until one or none remain.<br><br><b>Approach &amp; variations:</b><ul><li>Build a max-heap of all weights.</li><li>Pop the two biggest; if they differ push back the difference.</li><li>Continue until size <= 1; answer is the remaining weight or 0.</li></ul><b>Time:</b> O(n log n) — up to n rounds, each doing a constant number of O(log n) heap operations.<br><b>Space:</b> O(n) — the heap stores all stones."
+   }
+  },
+  {
+   "noteId": 1788998585463,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-k-closest-points-to-origin",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A drone hovers over a flat field where scattered tents each have a map coordinate. Base camp sits at coordinate zero-zero. The pilot must pick out the K tents nearest to base camp (straight-line distance), in any order. Which K tents are closest?",
+    "Back": "<b>Maps to:</b> Max-heap of size K on distance, or quickselect (K Closest Points to Origin).<br><br><b>Model it:</b> Find the K points with smallest squared distance to the origin from a list of coordinates.<br><br><b>Approach &amp; variations:</b><ul><li>Compare by squared distance <code>x*x + y*y</code> — no square roots needed.</li><li>Keep a max-heap of size K: push each point, pop the farthest when size exceeds K; the heap ends holding the K closest.</li><li>Alternatively quickselect partitions the K nearest in expected O(n).</li></ul><b>Time:</b> O(n log K) with the size-K heap; O(n) expected with quickselect.<br><b>Space:</b> O(K) for the heap (O(1) extra for in-place quickselect)."
+   }
+  },
+  {
+   "noteId": 1788998585464,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-kth-largest-element-in-an-array",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A vineyard has harvested a big unsorted crate of grape clusters, each a different weight. The buyer doesn't want them all sorted — she only wants to know the weight of the Kth-heaviest cluster in the crate. What is it, found as fast as possible?",
+    "Back": "<b>Maps to:</b> Quickselect (or size-K heap) for order statistic (Kth Largest Element in an Array).<br><br><b>Model it:</b> Return the Kth largest value in an unsorted array without fully sorting it.<br><br><b>Approach &amp; variations:</b><ul><li>Quickselect: partition around a pivot, recurse only into the side containing the Kth position.</li><li>Kth largest equals the (n-K)th smallest index after partitioning.</li><li>A min-heap of size K also works in O(n log K); full sort is O(n log n).</li></ul><b>Time:</b> O(n) expected with quickselect (O(n^2) worst case); O(n log K) with a heap.<br><b>Space:</b> O(1) for in-place quickselect; O(K) for the heap variant."
+   }
+  },
+  {
+   "noteId": 1788998585465,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-task-scheduling",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A machine stamps parts, and identical stamps need a fixed cooldown of N idle minutes between two uses of the same die before it can be reused. Each minute the machine either stamps one part or sits idle. Given a batch listing how many parts of each die type are needed, what is the fewest total minutes to stamp them all?",
+    "Back": "<b>Maps to:</b> Greedy with max-heap by remaining count (Task Scheduler).<br><br><b>Model it:</b> Schedule tasks so identical tasks are at least N slots apart, minimizing total time slots.<br><br><b>Approach &amp; variations:</b><ul><li>Always run the most-frequent still-available task; a max-heap keyed on remaining count picks it.</li><li>Process in cycles of length N+1, cooling down used tasks before re-adding them.</li><li>Closed form: <code>(maxCount-1)*(n+1) + (#tasks tied at maxCount)</code>, but never less than the total task count.</li></ul><b>Time:</b> O(T) with the formula, or O(T log 26) with the heap where T is total tasks.<br><b>Space:</b> O(1) — at most 26 distinct task counts."
+   }
+  },
+  {
+   "noteId": 1788998585466,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-design-twitter-feed",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A tiny bulletin-board town lets residents pin notes, follow each other, and unfollow. When a resident asks to read their wall, they should see the 10 most recently pinned notes drawn from themselves and everyone they follow, newest first. Design the whole town's system supporting post, follow, unfollow, and read-wall.",
+    "Back": "<b>Maps to:</b> Hash maps plus a k-way merge with a heap on timestamps (Design Twitter).<br><br><b>Model it:</b> Support posting timestamped items and merging the newest 10 across a user's own feed and followees' feeds.<br><br><b>Approach &amp; variations:</b><ul><li>Store per-user tweet lists (with a global increasing timestamp) and a follow set per user.</li><li>For the feed, heap-merge the tail of each followed user's list, popping the 10 newest.</li><li>Follow/unfollow just edit the set; posting appends with the next timestamp.</li></ul><b>Time:</b> getNews O(F log F + 10 log F) merging F followed feeds; post/follow/unfollow O(1).<br><b>Space:</b> O(users + tweets + follow-edges) for the stored maps."
+   }
+  },
+  {
+   "noteId": 1788998585467,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-single-threaded-cpu",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A one-window bakery counter serves customers who each arrive at a stated minute and need a known number of minutes to serve. The clerk, whenever free, serves the waiting customer with the shortest job (ties broken by who has been waiting longest by ticket number); if nobody is waiting yet, the clerk waits for the next arrival. In what order are customers served?",
+    "Back": "<b>Maps to:</b> Sort by arrival, then a min-heap on (duration, index) (Single-Threaded CPU).<br><br><b>Model it:</b> Simulate a processor picking the shortest available task by processing time, breaking ties by original index.<br><br><b>Approach &amp; variations:</b><ul><li>Sort tasks by arrival time, keeping original indices.</li><li>Advance a clock; push all tasks that have arrived into a min-heap keyed on (processingTime, index).</li><li>Pop the smallest to run; if the heap is empty, jump the clock to the next arrival.</li></ul><b>Time:</b> O(n log n) — sorting plus each task pushed and popped once from the heap.<br><b>Space:</b> O(n) — the heap can hold all pending tasks."
+   }
+  },
+  {
+   "noteId": 1788998585468,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-reorganize-string",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A florist arranges a row of flowers using only the blossoms she has in stock, some colors more plentiful than others. She wants a line-up where no two neighboring flowers share the same color. Can she build such a row, and if so give one valid arrangement?",
+    "Back": "<b>Maps to:</b> Greedy placement with a max-heap by remaining frequency (Reorganize String).<br><br><b>Model it:</b> Rearrange characters so no two adjacent are equal, or report it is impossible.<br><br><b>Approach &amp; variations:</b><ul><li>Count each character; if any count exceeds <code>(n+1)/2</code> it is impossible.</li><li>Repeatedly place the most-frequent available character that isn't the one just placed (max-heap on count, holding the previous back one step).</li><li>Decrement and re-add the previous character after each placement.</li></ul><b>Time:</b> O(n log k) — n placements, each an O(log k) heap operation over k distinct chars.<br><b>Space:</b> O(k) — counts and heap over the distinct characters."
+   }
+  },
+  {
+   "noteId": 1788998585469,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-longest-happy-string",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A candy shop threads beads of three colors onto a string but the machine jams if three beads of the same color ever touch in a row. Given limited supplies of each color, build the longest possible string that never has three identical beads in a row. What string results (any valid longest one)?",
+    "Back": "<b>Maps to:</b> Greedy with a max-heap by remaining count and a run-length guard (Longest Happy String).<br><br><b>Model it:</b> Build the longest string from a/b/c with given caps such that no character appears three times consecutively.<br><br><b>Approach &amp; variations:</b><ul><li>Max-heap on remaining counts; always try the most plentiful color.</li><li>If the last two placed are already that color, use the next-most-plentiful instead; if none, stop.</li><li>Decrement and push back colors that still have supply.</li></ul><b>Time:</b> O(n log 3) ≈ O(n) — n total beads placed, each a constant-size heap operation.<br><b>Space:</b> O(1) — heap over only three colors."
+   }
+  },
+  {
+   "noteId": 1788998585470,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-car-pooling",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A shuttle van with a fixed number of seats drives one-way along a straight road, never reversing. It has a list of pickup requests, each stating how many riders board at one mile-marker and get off at a later one. Can the van complete the whole route without ever exceeding its seat count?",
+    "Back": "<b>Maps to:</b> Sweep-line via a min-heap on drop-off (or a difference array over stops) (Car Pooling).<br><br><b>Model it:</b> Check that concurrent passenger load never exceeds capacity across overlapping pickup/drop-off intervals.<br><br><b>Approach &amp; variations:</b><ul><li>Sort trips by start location; use a min-heap keyed on drop-off to release seats as the van passes each marker.</li><li>Add boarders, first popping everyone who has already gotten off; if load exceeds capacity, fail.</li><li>A difference array over the fixed route (bucket +riders at start, -riders at end, prefix-sum) does it in O(n).</li></ul><b>Time:</b> O(n log n) with the heap; O(n + maxLocation) with the difference array.<br><b>Space:</b> O(n) for the heap, or O(maxLocation) for the difference array."
+   }
+  },
+  {
+   "noteId": 1788998585471,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-find-median-in-a-data-stream",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A weigh station logs truck weights one after another without end. At any moment an inspector may ask for the current middle weight of everything logged so far — the middle value if the count is odd, or the average of the two middle values if even. Support adding weights and answering the middle-value query at any time.",
+    "Back": "<b>Maps to:</b> Two heaps: a max-heap of the lower half and a min-heap of the upper half (Find Median from Data Stream).<br><br><b>Model it:</b> Maintain a running median over a stream, supporting O(log n) insert and O(1) median query.<br><br><b>Approach &amp; variations:</b><ul><li>Keep the smaller half in a max-heap and the larger half in a min-heap.</li><li>On insert, push to one side then rebalance so their sizes differ by at most one.</li><li>Median is the larger heap's root, or the average of both roots when sizes are equal.</li></ul><b>Time:</b> addNum O(log n) per insertion; findMedian O(1).<br><b>Space:</b> O(n) — every value is stored across the two heaps."
+   }
+  },
+  {
+   "noteId": 1788998585472,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "heap-priority-queue",
+    "nc-ipo",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A startup begins with a small amount of cash and may launch at most K projects, one after another, never returning a finished project's payout until choosing the next. Each project needs a minimum upfront capital to start and, once done, adds a pure profit to the bank. Pick up to K projects to maximize the final bank balance.",
+    "Back": "<b>Maps to:</b> Two-structure greedy: sort by capital, max-heap on profit of affordable projects (IPO).<br><br><b>Model it:</b> Do at most K projects, each requiring capital <= current funds, to maximize accumulated capital.<br><br><b>Approach &amp; variations:</b><ul><li>Sort projects by required capital ascending.</li><li>Each round, add all now-affordable projects to a max-heap keyed on profit, then take the single most profitable one.</li><li>Repeat up to K times; if the heap empties, stop early.</li></ul><b>Time:</b> O(n log n) — sort plus each project pushed/popped once from the heap.<br><b>Space:</b> O(n) — the profit heap may hold all affordable projects."
+   }
+  }
+ ]
+}

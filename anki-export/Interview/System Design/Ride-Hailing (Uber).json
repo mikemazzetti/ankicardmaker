@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::System Design::Ride-Hailing (Uber)",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203811,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Text": "Core functional requirements for a ride-hailing system: {{c1::riders request rides}}, {{c2::drivers accept or reject rides}}, {{c3::real-time location tracking}}, and {{c4::fare calculation}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203812,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Text": "Key non-functional requirements: {{c1::low latency matching}} (seconds, not minutes), {{c2::high availability}}, and {{c3::strong consistency for billing/payments}} (must be accurate).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203813,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Text": "A driver location record typically includes {{c1::driverId}}, {{c2::latitude/longitude}}, {{c3::timestamp}}, and {{c4::status (available/en route/offline)}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203814,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Text": "Core components of a ride-hailing architecture: {{c1::location ingestion service}}, {{c2::geospatial index}}, {{c3::matching service}}, {{c4::trip/fare service}}, and {{c5::notification service}} to alert driver/rider.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203815,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Text": "A QuadTree recursively divides a 2D map into {{c1::four quadrants}}, subdividing further only in {{c2::densely populated}} areas, so each leaf node holds roughly {{c3::a small, bounded number}} of drivers.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203829,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why does driver-rider matching favor low latency over strict global optimality?",
+    "Back": "Riders expect a match within seconds; computing a globally optimal assignment across all drivers and riders would be too slow, so systems use fast local/greedy matching within a geographic cell instead."
+   }
+  },
+  {
+   "noteId": 1789061203830,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "If a ride-hailing app has 5M daily active riders each requesting about 0.5 rides/day, what is the approximate ride-request QPS?",
+    "Back": "5M x 0.5 / 86,400 ≈ 29 QPS on average (much higher and spikier during rush hour)."
+   }
+  },
+  {
+   "noteId": 1789061203831,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "If 3M active drivers each send a location update every 4 seconds, what is the approximate location-update QPS?",
+    "Back": "3M / 4 ≈ 750,000 updates/sec, the dominant write load in the system."
+   }
+  },
+  {
+   "noteId": 1789061203832,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why is location-update traffic, not ride requests, usually the primary scaling bottleneck in ride-hailing systems?",
+    "Back": "Every active driver streams a GPS ping every few seconds continuously, producing orders of magnitude more writes than the comparatively rare ride-request events."
+   }
+  },
+  {
+   "noteId": 1789061203833,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "What API call would a driver's app make to report its current location?",
+    "Back": "<pre><code>POST /drivers/{driverId}/location\n{ lat, lng, timestamp, heading }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203834,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "What API would a rider's app call to fetch nearby available drivers?",
+    "Back": "<code>GET /riders/nearby-drivers?lat=..&amp;lng=..&amp;radius=..</code> returns a list of candidate drivers for matching."
+   }
+  },
+  {
+   "noteId": 1789061203835,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why is driver location data usually stored in-memory (e.g. Redis) rather than in a traditional disk-based relational database?",
+    "Back": "Location changes constantly and must be read/written with very low latency for real-time matching; an in-memory store gives the required speed, and stale entries are quickly overwritten so durability matters less."
+   }
+  },
+  {
+   "noteId": 1789061203836,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why do ride-hailing systems partition the world into geographic regions run by separate services?",
+    "Back": "Matching only needs nearby drivers, so partitioning by geography lets each regional service handle a bounded, local dataset independently, enabling horizontal scaling."
+   }
+  },
+  {
+   "noteId": 1789061203837,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "What problem does a geospatial index (QuadTree/geohash) solve in ride-hailing matching?",
+    "Back": "It efficiently answers 'which drivers are within X km of this rider?' without scanning every driver's location, reducing a full table scan to a fast spatial range query."
+   }
+  },
+  {
+   "noteId": 1789061203838,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "What is geohashing?",
+    "Back": "An encoding that maps a (lat, lng) pair into a short base32 string where nearby locations share common string prefixes, enabling proximity search via simple string prefix matching."
+   }
+  },
+  {
+   "noteId": 1789061203839,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why does geohash have an edge-case weakness at the boundaries of grid cells?",
+    "Back": "Two points can be physically very close but fall into adjacent geohash cells with completely different prefixes, so a naive prefix search can miss nearby matches near cell edges; mitigated by also checking neighboring cells."
+   }
+  },
+  {
+   "noteId": 1789061203840,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why is a greedy 'nearest available driver' approach often preferred over a globally optimal assignment algorithm for matching?",
+    "Back": "Global optimization (e.g. the Hungarian algorithm) is computationally expensive and slow at scale; a greedy nearest-match runs in real time and is good enough since driver availability changes every few seconds anyway."
+   }
+  },
+  {
+   "noteId": 1789061203841,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "Why do ride-hailing systems route location updates through a message queue (e.g. Kafka) before updating the geospatial index?",
+    "Back": "Buffering through a queue smooths bursty write traffic and decouples ingestion rate from index update rate, letting the index consumer update asynchronously without falling behind under load."
+   }
+  },
+  {
+   "noteId": 1789061203842,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "What happens to a QuadTree-based geospatial index during a surge event (e.g. a concert letting out), and how is it mitigated?",
+    "Back": "A dense cluster of riders/drivers in one small area creates a hotspot where one leaf node or server handles disproportionate load; mitigated by dynamically re-partitioning or further subdividing hot cells, or sharding by finer geohash precision."
+   }
+  },
+  {
+   "noteId": 1789061203843,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-uber"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff between more frequent driver location updates (e.g. every 1s) vs. less frequent (e.g. every 10s)?",
+    "Back": "More frequent updates give more accurate real-time matching and ETAs but multiply write load and battery/bandwidth usage on the driver's device; less frequent updates reduce load but risk stale positions."
+   }
+  }
+ ]
+}

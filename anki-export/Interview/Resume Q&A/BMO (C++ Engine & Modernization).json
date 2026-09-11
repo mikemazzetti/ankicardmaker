@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Q&A::BMO (C++ Engine & Modernization)",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202645,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What language was the high-throughput financial calculation engine written in during the May–Aug 2026 BMO internship?",
+    "Back": "<code>C++20</code>"
+   }
+  },
+  {
+   "noteId": 1789061202646,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What technology exposed the C++20 calculation engine to Python callers?",
+    "Back": "<code>pybind11</code> bindings."
+   }
+  },
+  {
+   "noteId": 1789061202647,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "How many legacy APIs did Michele modernize during the May–Aug 2026 internship?",
+    "Back": "<b>30+</b> legacy APIs."
+   }
+  },
+  {
+   "noteId": 1789061202648,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What AWS service did Michele use for queuing/decoupling in the API modernization work?",
+    "Back": "<code>AWS SQS</code>"
+   }
+  },
+  {
+   "noteId": 1789061202649,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What did Michele build custom Python linting/static-analysis scripts to check?",
+    "Back": "<b>C++ and Node.js</b> code."
+   }
+  },
+  {
+   "noteId": 1789061202650,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "Where did the custom Python linting/static-analysis scripts run in the CI pipeline?",
+    "Back": "On <b>AWS CodeBuild</b>."
+   }
+  },
+  {
+   "noteId": 1789061202651,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What build-speed improvement came from the custom linting/static-analysis tooling?",
+    "Back": "<b>30% faster</b> builds."
+   }
+  },
+  {
+   "noteId": 1789061202652,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What defect-reduction resulted from the custom linting/static-analysis tooling?",
+    "Back": "<b>20% fewer</b> pre-deploy defects."
+   }
+  },
+  {
+   "noteId": 1789061202653,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What tool did Michele build to search/filter CloudWatch logs?",
+    "Back": "A <b>Python CLI tool</b>."
+   }
+  },
+  {
+   "noteId": 1789061202654,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What speed improvement did the Python CloudWatch-log CLI tool achieve?",
+    "Back": "<b>40% faster</b> log retrieval."
+   }
+  },
+  {
+   "noteId": 1789061202655,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What is Michele's current title at BMO (Sep 2026–present)?",
+    "Back": "<b>Junior Software Developer</b>."
+   }
+  },
+  {
+   "noteId": 1789061202656,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What BMO strategic initiative is Michele's Junior Developer work part of?",
+    "Back": "<b>Ambition 2030</b>."
+   }
+  },
+  {
+   "noteId": 1789061202657,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "How many branch locations does the core branch software Michele modernizes as a Junior Developer support?",
+    "Back": "<b>1,800+</b> locations."
+   }
+  },
+  {
+   "noteId": 1789061202658,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What three languages does Michele use day-to-day as a Junior Software Developer at BMO?",
+    "Back": "<code>Node.js</code>, <code>Python</code>, and <code>C++</code> (on AWS)."
+   }
+  },
+  {
+   "noteId": 1789061202659,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "What is the stated technical focus of Michele's Junior Developer role?",
+    "Back": "<b>AI-Driven Development</b>."
+   }
+  },
+  {
+   "noteId": 1789061202660,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about a performance problem you solved.\"",
+    "Back": "<b>S:</b> BMO's transaction batch-processing pipeline handled 2.5M+ account records per day and latency was a bottleneck.<br><b>T:</b> Speed up the core calculation logic without breaking existing Python-based integrations.<br><b>A:</b> Rewrote the hot path as a C++20 financial calculation engine and exposed it to the rest of the system via pybind11 bindings.<br><b>R:</b> Cut batch-processing latency by 42% at that 2.5M+ record/day scale."
+   }
+  },
+  {
+   "noteId": 1789061202661,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Describe a large-scale modernization effort you contributed to.\"",
+    "Back": "<b>S:</b> BMO had 30+ legacy APIs on older, tightly-coupled infrastructure.<br><b>T:</b> Modernize them to a scalable, maintainable architecture.<br><b>A:</b> Migrated the APIs to serverless, event-driven services built on AWS Lambda, API Gateway, DynamoDB, CloudWatch, and SQS.<br><b>R:</b> 30+ APIs now run on serverless infrastructure, improving scalability and observability."
+   }
+  },
+  {
+   "noteId": 1789061202662,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about a tool you built to improve developer productivity.\"",
+    "Back": "<b>S:</b> Engineers needed to manually dig through CloudWatch logs and pre-deploy code review was slow/inconsistent.<br><b>T:</b> Build tooling to speed up both log investigation and code quality checks.<br><b>A:</b> Built a Python CLI to search/filter CloudWatch logs, and custom Python linting/static-analysis scripts for C++ and Node.js running on AWS CodeBuild.<br><b>R:</b> 40% faster log retrieval; 30% faster builds and 20% fewer pre-deploy defects from the linting tooling."
+   }
+  },
+  {
+   "noteId": 1789061202663,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Text": "Michele engineered a high-throughput financial calculation engine in {{c1::C++20}} with {{c2::Python (pybind11)}} bindings, cutting batch-processing latency {{c3::42%}} across {{c4::2.5M+}} daily account records.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202664,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-2"
+   ],
+   "fields": {
+    "Text": "The legacy APIs were modernized into serverless, event-driven architectures using {{c1::AWS Lambda}}, {{c2::API Gateway}}, {{c3::DynamoDB}}, {{c4::CloudWatch}}, and {{c5::AWS SQS}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

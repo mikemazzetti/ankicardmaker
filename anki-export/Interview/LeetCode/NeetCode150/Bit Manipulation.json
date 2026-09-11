@@ -1,0 +1,129 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::Bit Manipulation",
+ "note_count": 7,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038120866,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "math"
+   ],
+   "fields": {
+    "title": "Reverse Integer",
+    "id": "7",
+    "slug": "reverse-integer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121124,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-easy-tag"
+   ],
+   "fields": {
+    "title": "Single Number",
+    "id": "136",
+    "slug": "single-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121232,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "divide-and-conquer"
+   ],
+   "fields": {
+    "title": "Reverse Bits",
+    "id": "190",
+    "slug": "reverse-bits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "divide-and-conquer, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121234,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "divide-and-conquer"
+   ],
+   "fields": {
+    "title": "Number of 1 Bits",
+    "id": "191",
+    "slug": "number-of-1-bits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "divide-and-conquer, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121388,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "hash-table",
+    "math",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Missing Number",
+    "id": "268",
+    "slug": "missing-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, math, binary-search, bit-manipulation, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121528,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Counting Bits",
+    "id": "338",
+    "slug": "counting-bits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "dynamic-programming, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121594,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math"
+   ],
+   "fields": {
+    "title": "Sum of Two Integers",
+    "id": "371",
+    "slug": "sum-of-two-integers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, bit-manipulation",
+    "paid": "no"
+   }
+  }
+ ]
+}

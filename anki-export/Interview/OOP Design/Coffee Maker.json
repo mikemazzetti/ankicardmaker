@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Coffee Maker",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201160,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "What core use cases should an OOD interview design for a smart coffee maker cover?",
+    "Back": "Brewing multiple beverage types (espresso, latte, cappuccino) from configurable recipes, tracking ingredient inventory, customizing a drink's size/strength, and handling maintenance (cleaning/descaling)."
+   }
+  },
+  {
+   "noteId": 1789061201161,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the CoffeeMachine class vs. a Recipe class?",
+    "Back": "CoffeeMachine owns the physical subsystems (grinder, boiler, dispenser) and orchestrates brewing; Recipe is a data object describing the ingredient amounts and steps for one beverage type."
+   }
+  },
+  {
+   "noteId": 1789061201162,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Why model an InventoryManager as a separate class from CoffeeMachine?",
+    "Back": "It isolates ingredient-stock tracking (quantities, refill, low-stock alerts) as its own concern, so CoffeeMachine just asks it 'do we have enough?' instead of managing raw stock counts itself."
+   }
+  },
+  {
+   "noteId": 1789061201163,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "What relationship exists between Recipe and Ingredient in the class model?",
+    "Back": "Composition/aggregation: a Recipe holds a list of (Ingredient, quantity) pairs describing what's needed to brew one Beverage of that type."
+   }
+  },
+  {
+   "noteId": 1789061201164,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits creating the correct Beverage object for a requested type (espresso, latte, ...), and why?",
+    "Back": "Factory Method: a BeverageFactory centralizes a <code>createBeverage(BeverageType)</code> call so new drink types can be added without changing the brewing/ordering code."
+   }
+  },
+  {
+   "noteId": 1789061201165,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits letting a customer customize a drink (size, milk type, extra shot, sugar level) step by step, and why?",
+    "Back": "Builder: a BeverageBuilder lets you chain calls like <code>withSize(...)</code>, <code>withMilk(...)</code>, <code>withExtraShot()</code> and finish with <code>build()</code>, avoiding a telescoping constructor for every combination of options."
+   }
+  },
+  {
+   "noteId": 1789061201166,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits ensuring only one InventoryManager instance coordinates stock across the whole machine, and why?",
+    "Back": "Singleton: all subsystems (grinder, boiler) must read/write the same shared ingredient counts, so a single shared instance prevents inconsistent stock views."
+   }
+  },
+  {
+   "noteId": 1789061201167,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "What must <code>brew(beverageType, customization)</code> check before starting?",
+    "Back": "That the machine isn't already mid-brew (single brewing unit), and that InventoryManager confirms every ingredient in the resolved Recipe has sufficient quantity."
+   }
+  },
+  {
+   "noteId": 1789061201168,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "What should <code>refillIngredient(type, amount)</code> do?",
+    "Back": "Increase the InventoryManager's stock count for that IngredientType and clear any low-stock alert flag for it, without needing the machine to be idle."
+   }
+  },
+  {
+   "noteId": 1789061201169,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Edge case: ingredients run out mid-brew (e.g., milk runs dry while steaming). What should the design do?",
+    "Back": "Abort the brew cleanly, discard the partially-made beverage, refund or flag the order, and mark that IngredientType OUT_OF_STOCK so subsequent brew checks fail fast instead of starting."
+   }
+  },
+  {
+   "noteId": 1789061201170,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Edge case: two brew requests arrive while the machine is already brewing. How should the design handle the second request?",
+    "Back": "Since there's one shared brewing unit, queue the second request (or reject with a 'busy' status) rather than interleaving two brews, which would corrupt shared subsystem state."
+   }
+  },
+  {
+   "noteId": 1789061201171,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Edge case: an ingredient is present in sufficient quantity but expired. What should the inventory check add?",
+    "Back": "Track an expiration/best-by date per ingredient batch and fail the availability check (or warn) for expired stock even if the quantity is nonzero."
+   }
+  },
+  {
+   "noteId": 1789061201172,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Edge case: the machine needs a mandatory descale/clean cycle. How should this interact with brew requests?",
+    "Back": "Track a maintenanceRequired flag (e.g., after N brews or a time interval) and reject new <code>brew()</code> calls with a clear status until cleaning completes, rather than silently degrading drink quality."
+   }
+  },
+  {
+   "noteId": 1789061201173,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Why is Factory Method preferred over a large if/else in <code>brew()</code> for selecting beverage type?",
+    "Back": "It keeps the beverage-creation logic in one place (open/closed principle) — adding a new drink type means adding a new Beverage subclass and factory case, not touching every place that creates beverages."
+   }
+  },
+  {
+   "noteId": 1789061201174,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Implement a Java Factory Method for creating Beverage objects by BeverageType.",
+    "Back": "<pre><code>public abstract class Beverage {\n    public abstract List&lt;Ingredient&gt; getRecipe();\n}\n\npublic class Espresso extends Beverage {\n    public List&lt;Ingredient&gt; getRecipe() {\n        return List.of(new Ingredient(IngredientType.WATER, 30),\n                        new Ingredient(IngredientType.COFFEE_BEANS, 18));\n    }\n}\n\npublic class BeverageFactory {\n    public static Beverage create(BeverageType type) {\n        switch (type) {\n            case ESPRESSO: return new Espresso();\n            case LATTE: return new Latte();\n            default: throw new IllegalArgumentException(\"Unknown type: \" + type);\n        }\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201175,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Implement the Builder pattern in Python for customizing a beverage order (size, milk, extra shot).",
+    "Back": "<pre><code>class BeverageOrder:\n    def __init__(self):\n        self.size = \"medium\"\n        self.milk = None\n        self.extra_shots = 0\n\nclass BeverageBuilder:\n    def __init__(self):\n        self._order = BeverageOrder()\n\n    def with_size(self, size):\n        self._order.size = size\n        return self\n\n    def with_milk(self, milk_type):\n        self._order.milk = milk_type\n        return self\n\n    def with_extra_shot(self):\n        self._order.extra_shots += 1\n        return self\n\n    def build(self):\n        return self._order\n\norder = (BeverageBuilder()\n         .with_size(\"large\")\n         .with_milk(\"oat\")\n         .with_extra_shot()\n         .build())\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201176,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Implement a thread-safe Singleton InventoryManager in Java.",
+    "Back": "<pre><code>public class InventoryManager {\n    private static volatile InventoryManager instance;\n    private final Map&lt;IngredientType, Integer&gt; stock = new HashMap&lt;&gt;();\n\n    private InventoryManager() {}\n\n    public static InventoryManager getInstance() {\n        if (instance == null) {\n            synchronized (InventoryManager.class) {\n                if (instance == null) {\n                    instance = new InventoryManager();\n                }\n            }\n        }\n        return instance;\n    }\n\n    public synchronized boolean hasEnough(IngredientType type, int amount) {\n        return stock.getOrDefault(type, 0) &gt;= amount;\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201177,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Implement a Python <code>brew</code> method that checks inventory for every ingredient in a Recipe before consuming them.",
+    "Back": "<pre><code>class CoffeeMachine:\n    def __init__(self, inventory):\n        self.inventory = inventory\n        self.busy = False\n\n    def brew(self, recipe):\n        if self.busy:\n            raise RuntimeError(\"Machine busy\")\n        for ingredient, amount in recipe.items():\n            if not self.inventory.has_enough(ingredient, amount):\n                raise RuntimeError(f\"Insufficient {ingredient}\")\n        self.busy = True\n        try:\n            for ingredient, amount in recipe.items():\n                self.inventory.consume(ingredient, amount)\n        finally:\n            self.busy = False\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201180,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Text": "A brew request typically checks these IngredientTypes before proceeding: {{c1::WATER}}, {{c2::COFFEE_BEANS}}, {{c3::MILK}}, and {{c4::SUGAR}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201192,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-coffee-maker"
+   ],
+   "fields": {
+    "Front": "Builder pattern",
+    "Back": "A creational pattern that separates step-by-step construction of a complex object (like a customized Beverage) from its final representation, allowing the same construction process to produce different configurations."
+   }
+  }
+ ]
+}

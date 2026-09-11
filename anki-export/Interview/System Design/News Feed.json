@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::News Feed",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203698,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Text": "Core functional requirements of a news feed system include: {{c1::users can create posts}}, {{c2::users can see a feed of posts from friends/followed entities}}, and {{c3::the feed can be ranked, not just chronological}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203699,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Text": "Non-functional requirements for a news feed system include: {{c1::low latency feed load (e.g. &lt;2s)}}, {{c2::high availability}}, and {{c3::eventual consistency is acceptable for feed freshness}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203700,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Text": "The high-level architecture of a news feed system typically includes: {{c1::a post/write service}}, {{c2::a fanout service}}, {{c3::a ranking service}}, {{c4::a feed cache (e.g. Redis) storing precomputed feed items}}, and {{c5::a graph service for friend/follow relationships}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203701,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Text": "Scaling bottlenecks and fixes for a news feed system: {{c1::fanout write amplification for high-degree accounts}} is fixed by {{c2::the hybrid push/pull model}}; {{c3::ranking computation being too slow at read time}} is fixed by {{c4::precomputing/caching scores and only re-ranking with lightweight fresh signals at read time}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203708,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Besides posts, what other actions typically need to be reflected in a news feed's ranking?",
+    "Back": "Engagement signals such as likes, comments, and shares, which feed into the ranking algorithm to prioritize relevant content."
+   }
+  },
+  {
+   "noteId": 1789061203709,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Why must feed-generation latency stay low even though ranking is computationally complex?",
+    "Back": "Feed load time directly affects user engagement and retention &mdash; a slow feed causes users to abandon the app &mdash; so systems precompute/cache ranked feeds rather than ranking fully on every request."
+   }
+  },
+  {
+   "noteId": 1789061203710,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "If there are 500M daily active users and each loads their feed 10 times/day, what is the approximate feed-read QPS?",
+    "Back": "~58,000 QPS (500M &times; 10 / 86,400 &asymp; 57,870)."
+   }
+  },
+  {
+   "noteId": 1789061203711,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "If each user has on average 300 friends/follows, why does fanout-on-write become expensive for a news feed system?",
+    "Back": "Every post triggers up to 300 fanout writes (one per friend's feed), so total fanout write volume = posts/day &times; average friend count, which can be orders of magnitude larger than the raw post-write volume."
+   }
+  },
+  {
+   "noteId": 1789061203712,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Estimate storage for 100M posts/day retained for 2 years at ~1KB metadata per post.",
+    "Back": "100M &times; 730 days &times; 1KB &asymp; 73 TB of post metadata over 2 years."
+   }
+  },
+  {
+   "noteId": 1789061203713,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint to create a new feed post.",
+    "Back": "<pre><code>POST /api/v1/posts\nRequest: { \"userId\": \"string\", \"content\": \"string\", \"mediaUrls\": [\"string\"] }\nResponse: { \"postId\": \"string\", \"createdAt\": \"datetime\" }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203714,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint to fetch a user's ranked news feed.",
+    "Back": "<pre><code>GET /api/v1/feed?userId={id}&amp;cursor={cursor}&amp;limit={n}\nResponse: { \"posts\": [ {...ranked...} ], \"nextCursor\": \"string\" }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203715,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Write a minimal schema for a <code>feed_items</code> table storing a precomputed per-user feed.",
+    "Back": "<pre><code>feed_items(\n  user_id     BIGINT,\n  post_id     BIGINT,\n  rank_score  DOUBLE,\n  inserted_at TIMESTAMP,\n  PRIMARY KEY (user_id, post_id)\n)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203716,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Why store a rank_score alongside each feed item rather than always ranking purely by recency?",
+    "Back": "It lets the feed service sort by relevance (predicted engagement) instead of just chronological order, and allows re-sorting without recomputing the score from scratch on every read."
+   }
+  },
+  {
+   "noteId": 1789061203717,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Where does ranking typically happen &mdash; at fanout/write time, at read time, or both?",
+    "Back": "Both: an initial score can be computed at fanout time for pre-ranking, but feeds are often re-ranked at read time with fresh signals (recent engagement, freshness decay) before being returned to the user."
+   }
+  },
+  {
+   "noteId": 1789061203718,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "How does the celebrity/high-degree-node problem apply to a news feed system beyond just followers?",
+    "Back": "A single post from a page or user with millions of followers triggers a huge fanout burst; symmetrically, a user who follows an unusually large number of entities makes fanout-on-read expensive too, since their feed read must pull and rank from many sources."
+   }
+  },
+  {
+   "noteId": 1789061203719,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "What is the standard hybrid fix for the celebrity problem in a news feed system?",
+    "Back": "Push (fanout-on-write) for normal accounts with modest follower counts, and pull (fanout-on-read) for high-follower accounts &mdash; merging the precomputed feed with a live query against celebrity posts at read time."
+   }
+  },
+  {
+   "noteId": 1789061203720,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Why is ranking (not just fanout mechanism) a distinguishing deep-dive topic for news feed vs. a simple chronological timeline?",
+    "Back": "A news feed's core value is surfacing the most relevant content, not just the newest, so the system needs a ranking/scoring model (using signals like affinity, engagement rate, recency decay) layered on top of whichever fanout strategy is used."
+   }
+  },
+  {
+   "noteId": 1789061203721,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "How does sharding the social graph service help scale a news feed system?",
+    "Back": "Friend/follow lookups (needed for fanout and feed assembly) are extremely frequent; sharding the graph store (e.g. by user_id) spreads this load across many nodes instead of bottlenecking on one graph database."
+   }
+  },
+  {
+   "noteId": 1789061203722,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff of caching precomputed feeds in Redis vs. always computing feeds fresh from the database?",
+    "Back": "Caching gives much faster reads and lower DB load, but risks showing slightly stale content and requires cache invalidation/update logic whenever new posts or engagement signals arrive."
+   }
+  },
+  {
+   "noteId": 1789061203723,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Why might a news feed system accept a ranking model that is 'good enough' rather than a fully real-time ML re-rank on every request?",
+    "Back": "Full real-time ML inference on every feed load for every candidate post would add significant latency and compute cost; a precomputed/cached approximate ranking, refreshed periodically, is a pragmatic tradeoff between relevance quality and system performance."
+   }
+  },
+  {
+   "noteId": 1789061203724,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Fanout-on-write (news feed context)",
+    "Back": "New posts are immediately pushed into the precomputed feed_items list of every friend/follower at post time, so feed reads are fast lookups."
+   }
+  },
+  {
+   "noteId": 1789061203725,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-news-feed"
+   ],
+   "fields": {
+    "Front": "Fanout-on-read (news feed context)",
+    "Back": "A user's feed is assembled at read time by pulling recent posts from all friends/followed entities and ranking them on the fly, so writes stay cheap but reads are more expensive."
+   }
+  }
+ ]
+}

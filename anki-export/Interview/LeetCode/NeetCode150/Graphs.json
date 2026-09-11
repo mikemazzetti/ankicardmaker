@@ -1,0 +1,254 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::Graphs",
+ "note_count": 13,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038121106,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "string"
+   ],
+   "fields": {
+    "title": "Word Ladder",
+    "id": "127",
+    "slug": "word-ladder",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121112,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Surrounded Regions",
+    "id": "130",
+    "slug": "surrounded-regions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121118,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "hash-table"
+   ],
+   "fields": {
+    "title": "Clone Graph",
+    "id": "133",
+    "slug": "clone-graph",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121252,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Islands",
+    "id": "200",
+    "slug": "number-of-islands",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121266,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Course Schedule",
+    "id": "207",
+    "slug": "course-schedule",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121272,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Course Schedule II",
+    "id": "210",
+    "slug": "course-schedule-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121374,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Graph Valid Tree",
+    "id": "261",
+    "slug": "graph-valid-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121424,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Walls and Gates",
+    "id": "286",
+    "slug": "walls-and-gates",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121498,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Connected Components in an Undirected Graph",
+    "id": "323",
+    "slug": "number-of-connected-components-in-an-undirected-graph",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121686,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Pacific Atlantic Water Flow",
+    "id": "417",
+    "slug": "pacific-atlantic-water-flow",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122220,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Redundant Connection",
+    "id": "684",
+    "slug": "redundant-connection",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122242,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Max Area of Island",
+    "id": "695",
+    "slug": "max-area-of-island",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122840,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Rotting Oranges",
+    "id": "994",
+    "slug": "rotting-oranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  }
+ ]
+}

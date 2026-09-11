@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Prep::LLMs, RAG & Transformers",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202343,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What mechanism lets a transformer weigh the relevance of every other token when encoding a given token?",
+    "Back": "Self-attention"
+   }
+  },
+  {
+   "noteId": 1789061202344,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What is a \"token\" in the context of an LLM?",
+    "Back": "A basic unit of text (a word, subword, or character piece) that a language model processes as input/output, produced by a tokenizer."
+   }
+  },
+  {
+   "noteId": 1789061202345,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What is an embedding in NLP?",
+    "Back": "A dense, fixed-length numeric vector representation of a token, word, or piece of text that captures its semantic meaning, so similar meanings map to similar vectors."
+   }
+  },
+  {
+   "noteId": 1789061202346,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "How does RoBERTa differ from the original BERT?",
+    "Back": "RoBERTa uses the same architecture as BERT but improves the training recipe: more training data, longer training, larger batches, dynamic masking, and removal of the Next Sentence Prediction (NSP) objective."
+   }
+  },
+  {
+   "noteId": 1789061202347,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What's the difference between pretraining and fine-tuning for a language model?",
+    "Back": "Pretraining trains a model from scratch on a large, general text corpus (e.g., via masked language modeling) to learn broad language representations; fine-tuning further trains that pretrained model on a smaller, task-specific labeled dataset to specialize it."
+   }
+  },
+  {
+   "noteId": 1789061202348,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What is transfer learning?",
+    "Back": "Reusing knowledge (weights/representations) learned by a model on one task or dataset as the starting point for a model on a different but related task, instead of training from scratch."
+   }
+  },
+  {
+   "noteId": 1789061202349,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What problem does Retrieval-Augmented Generation (RAG) solve for LLMs?",
+    "Back": "It grounds an LLM's responses in external, up-to-date, or domain-specific knowledge retrieved at query time, rather than relying only on facts memorized during pretraining."
+   }
+  },
+  {
+   "noteId": 1789061202350,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What similarity metric is most commonly used to compare vector embeddings in similarity search?",
+    "Back": "Cosine similarity (the cosine of the angle between two vectors)."
+   }
+  },
+  {
+   "noteId": 1789061202351,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What is prompt engineering?",
+    "Back": "The practice of designing and refining the input (instructions, examples, context) given to an LLM to reliably elicit the desired output, without changing the model's weights."
+   }
+  },
+  {
+   "noteId": 1789061202352,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What distinguishes an LLM agent from a plain single-turn LLM completion?",
+    "Back": "An LLM agent plans and executes multi-step tasks, deciding when to call external tools/APIs or use retrieved context and take further actions, rather than just producing one response to one prompt."
+   }
+  },
+  {
+   "noteId": 1789061202353,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What does SHAP stand for, and what does it provide?",
+    "Back": "SHapley Additive exPlanations - a model-explainability technique that assigns each input feature a contribution value toward a specific prediction, based on Shapley values from cooperative game theory."
+   }
+  },
+  {
+   "noteId": 1789061202354,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What is \"hallucination\" in the context of LLMs?",
+    "Back": "When an LLM generates text that is fluent and confident but factually incorrect or unsupported by any real source."
+   }
+  },
+  {
+   "noteId": 1789061202355,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "How does RAG help reduce LLM hallucination?",
+    "Back": "By grounding the model's generation in retrieved, verifiable source documents, giving it real evidence to draw from instead of relying solely on memorized (and possibly incorrect) parameters."
+   }
+  },
+  {
+   "noteId": 1789061202356,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "In WesternAI's TruthLens project, which pretrained transformer model was fine-tuned for misinformation classification?",
+    "Back": "RoBERTa"
+   }
+  },
+  {
+   "noteId": 1789061202357,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What real-time classification accuracy did TruthLens achieve for flagging deceptive/misinformation content?",
+    "Back": "93%"
+   }
+  },
+  {
+   "noteId": 1789061202358,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "What explainability technique did TruthLens integrate with its RAG pipeline to support transparent counter-evidence retrieval?",
+    "Back": "SHAP"
+   }
+  },
+  {
+   "noteId": 1789061202359,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Front": "At BMO, what Python web framework was used to build specialized LLM agents for each phase of an AI-driven SDLC pipeline PoC?",
+    "Back": "FastAPI"
+   }
+  },
+  {
+   "noteId": 1789061202360,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Text": "In self-attention, each token produces a {{c1::query}}, {{c2::key}}, and {{c3::value}} vector; attention weights come from comparing queries against keys, then used to weight the values.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202361,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Text": "{{c1::Encoder-only}} transformers (e.g., BERT) are best suited for understanding tasks like classification and generating embeddings, while {{c2::decoder-only}} transformers (e.g., GPT) are best suited for autoregressive text generation.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202362,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "llm-rag"
+   ],
+   "fields": {
+    "Text": "The RAG pipeline works in three steps: {{c1::retrieve}} relevant documents/passages from an external knowledge source, {{c2::augment}} the LLM prompt with that retrieved context, then {{c3::generate}} a response grounded in it.",
+    "Extra": ""
+   }
+  }
+ ]
+}

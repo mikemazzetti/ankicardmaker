@@ -1,0 +1,235 @@
+{
+ "deck": "Interview::OOP Design::ATM",
+ "note_count": 19,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200732,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "What's the core scope of a \"Design an ATM\" OOD problem?",
+    "Back": "Authenticate a card + PIN, support balance inquiry/withdrawal/deposit/transfer, dispense physical cash correctly, enforce account- and machine-level limits, and talk to a remote Bank service for account data."
+   }
+  },
+  {
+   "noteId": 1789061200733,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Why is the State pattern a strong fit for ATM/session behavior, and what does its State interface typically expose?",
+    "Back": "The ATM's allowed actions and screen prompts change entirely based on its current state (idle vs. authenticated vs. mid-withdrawal); State pattern encapsulates each state's behavior in its own class instead of one large conditional. The interface typically exposes insertCard(), enterPin(pin), selectTransaction(type), and cancel() — each concrete state implements only the transitions valid from it."
+   }
+  },
+  {
+   "noteId": 1789061200734,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Which pattern fits modeling Withdraw/Deposit/Transfer/BalanceInquiry as interchangeable operations?",
+    "Back": "Command pattern — a Transaction interface with execute() lets Session run any transaction type polymorphically, and log/undo it uniformly."
+   }
+  },
+  {
+   "noteId": 1789061200735,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "What's the relationship between ATM, Session, and BankAccount?",
+    "Back": "ATM creates a Session once a card + PIN are authenticated; Session references the authenticated BankAccount (fetched from Bank) and orchestrates Transactions against it. ATM itself holds no account data."
+   }
+  },
+  {
+   "noteId": 1789061200736,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Why should BankAccount balance updates happen through the remote Bank service rather than being mutated locally on the ATM?",
+    "Back": "The account is the shared source of truth across ATMs/branches, so the ATM must call Bank.withdraw()/Bank.deposit() (likely with an idempotency key) rather than mutate a local copy, to stay consistent with other channels."
+   }
+  },
+  {
+   "noteId": 1789061200737,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "What does CashDispenser.dispense(amount) need to compute internally?",
+    "Back": "The combination of available bill denominations (e.g. a greedy or DP breakdown over $20/$50/$100) that sums exactly to the requested amount, given current denomination counts."
+   }
+  },
+  {
+   "noteId": 1789061200738,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: what if the requested withdrawal amount can't be made with the ATM's current denomination inventory (e.g. $30 requested but only $50 bills remain)?",
+    "Back": "CashDispenser.dispense() must fail explicitly (return a \"cannot make exact amount\" result) rather than dispensing an approximate amount, and the Transaction must not debit the account when dispensing fails."
+   }
+  },
+  {
+   "noteId": 1789061200739,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: what should happen after N consecutive incorrect PIN attempts?",
+    "Back": "The Session should transition to a BLOCKED/CARD_RETAINED state, retain or eject-and-lock the card per bank policy, and require the customer to contact the bank rather than allow further attempts."
+   }
+  },
+  {
+   "noteId": 1789061200740,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: how do you avoid double-dispensing or double-debiting if the ATM crashes mid-withdrawal, after debiting the account but before dispensing cash?",
+    "Back": "Treat withdrawal as a two-phase, idempotent operation (reserve/hold funds, dispense, then commit or roll back) backed by a transaction log, so a crash mid-flow can be reconciled instead of silently losing or duplicating money."
+   }
+  },
+  {
+   "noteId": 1789061200741,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Why keep CardReader and CashDispenser as separate classes rather than methods directly on ATM?",
+    "Back": "Single Responsibility — each models one piece of hardware with its own state and failure modes (jammed card, out of cash); ATM just orchestrates them through the Session/State machine."
+   }
+  },
+  {
+   "noteId": 1789061200742,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Java: implement an ATMState interface and an AuthenticatedState that transitions to a transaction-in-progress state.",
+    "Back": "<pre><code>public interface ATMState {\n    void insertCard(ATMContext context, Card card);\n    void enterPin(ATMContext context, String pin);\n    void selectTransaction(ATMContext context, TransactionType type);\n    void cancel(ATMContext context);\n}\n\npublic class AuthenticatedState implements ATMState {\n    @Override\n    public void insertCard(ATMContext context, Card card) {\n        throw new IllegalStateException(\"Card already inserted and authenticated\");\n    }\n\n    @Override\n    public void enterPin(ATMContext context, String pin) {\n        throw new IllegalStateException(\"Already authenticated\");\n    }\n\n    @Override\n    public void selectTransaction(ATMContext context, TransactionType type) {\n        context.setState(new TransactionInProgressState(type));\n    }\n\n    @Override\n    public void cancel(ATMContext context) {\n        context.endSession();\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200743,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Python: implement CashDispenser.dispense(amount) using a greedy denomination breakdown, returning None on failure.",
+    "Back": "<pre><code>class CashDispenser:\n    def __init__(self, inventory: dict):\n        # e.g. {100: 5, 50: 10, 20: 20}\n        self.inventory = dict(inventory)\n\n    def dispense(self, amount: int):\n        if amount % 20 != 0:\n            return None\n        breakdown = {}\n        remaining = amount\n        for denom in sorted(self.inventory, reverse=True):\n            count = min(remaining // denom, self.inventory[denom])\n            if count &gt; 0:\n                breakdown[denom] = count\n                remaining -= denom * count\n        if remaining != 0:\n            return None\n        for denom, count in breakdown.items():\n            self.inventory[denom] -= count\n        return breakdown</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200744,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Java: implement a WithdrawTransaction (Command) that checks balance and daily limit before calling CashDispenser.",
+    "Back": "<pre><code>public class WithdrawTransaction implements Transaction {\n    private final BankAccount account;\n    private final CashDispenser dispenser;\n    private final int amount;\n\n    public WithdrawTransaction(BankAccount account, CashDispenser dispenser, int amount) {\n        this.account = account;\n        this.dispenser = dispenser;\n        this.amount = amount;\n    }\n\n    @Override\n    public void execute() {\n        if (amount &gt; account.getBalance()) {\n            throw new InsufficientFundsException();\n        }\n        if (amount &gt; account.getRemainingDailyLimit()) {\n            throw new DailyLimitExceededException();\n        }\n        Map&lt;Integer, Integer&gt; cash = dispenser.dispense(amount);\n        if (cash == null) {\n            throw new CannotDispenseExactAmountException();\n        }\n        account.debit(amount);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200745,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "Python: implement a Session class orchestrating authenticate() and execute_transaction().",
+    "Back": "<pre><code>class Session:\n    def __init__(self, bank, cash_dispenser):\n        self.bank = bank\n        self.cash_dispenser = cash_dispenser\n        self.account = None\n\n    def authenticate(self, card, pin):\n        self.account = self.bank.verify(card, pin)\n        return self.account is not None\n\n    def execute_transaction(self, transaction):\n        if self.account is None:\n            raise RuntimeError(\"Session not authenticated\")\n        return transaction.execute()</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200746,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Text": "{{c1::ATM}}, {{c2::CardReader}}, {{c3::CashDispenser}}, and {{c4::Session}} are core hardware/session classes; {{c5::BankAccount}} and {{c6::Bank}} model the account data and the remote banking service.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200747,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Text": "The ATM's {{c1::State}} enum typically includes {{c2::IDLE, CARD_INSERTED, PIN_ENTRY, AUTHENTICATED, TRANSACTION_IN_PROGRESS, DISPENSING_CASH}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200748,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Text": "Before dispensing cash, the withdrawal Transaction must check that {{c1::the requested amount does not exceed the account's available balance}}, rejecting with an error if it does — checked before ever touching the CashDispenser.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200749,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Text": "Withdrawal must also be checked against {{c1::a per-transaction limit and a rolling daily withdrawal limit}}, which are enforced separately from the account balance check.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200760,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-atm"
+   ],
+   "fields": {
+    "Front": "CashDispenser",
+    "Back": "The hardware component responsible for tracking available bill denominations and physically dispensing a requested amount, or reporting failure if it can't make exact change."
+   }
+  }
+ ]
+}

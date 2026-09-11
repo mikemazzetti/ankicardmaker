@@ -1,0 +1,267 @@
+{
+ "deck": "Interview::Resume Prep::Java",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000601504,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In the Java Memory Model, what does the <code>volatile</code> keyword actually guarantee?",
+    "Back": "Visibility and ordering, not atomicity: a write to a volatile field is immediately visible to all threads and can't be reordered across the access (happens-before edge). It does NOT make compound operations like <code>i++</code> atomic."
+   }
+  },
+  {
+   "noteId": 1789000601506,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Besides mutual exclusion, what memory-model guarantee does <code>synchronized</code> provide?",
+    "Back": "Visibility: entering and exiting a synchronized block on the same lock establishes a happens-before relationship, so changes made inside are guaranteed visible to the next thread that acquires that lock."
+   }
+  },
+  {
+   "noteId": 1789000601507,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the fundamental compiler-enforced difference between checked and unchecked exceptions in Java?",
+    "Back": "Checked exceptions (subclasses of <code>Exception</code> but not <code>RuntimeException</code>, e.g. <code>IOException</code>) must be caught or declared with <code>throws</code> or the code won't compile. Unchecked exceptions (<code>RuntimeException</code>/<code>Error</code> subclasses, e.g. <code>NullPointerException</code>) are never enforced by the compiler."
+   }
+  },
+  {
+   "noteId": 1789000601508,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you open and read a file in Java so the reader is automatically closed even if an exception is thrown?",
+    "Back": "Use try-with-resources: <pre><code>try (BufferedReader br = new BufferedReader(new FileReader(\"data.txt\"))) {\n    String line = br.readLine();\n    System.out.println(line);\n} catch (IOException e) {\n    e.printStackTrace();\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601509,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the contract between <code>equals()</code> and <code>hashCode()</code> in Java?",
+    "Back": "If two objects are equal per <code>equals()</code>, they MUST return the same <code>hashCode()</code>. The converse isn't required (unequal objects may share a hash). Violating the forward rule silently breaks hash-based collections like <code>HashMap</code>/<code>HashSet</code>."
+   }
+  },
+  {
+   "noteId": 1789000601510,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you correctly override <code>equals()</code> and <code>hashCode()</code> for a class with fields <code>x</code> and <code>y</code>?",
+    "Back": "<pre><code>@Override\npublic boolean equals(Object o) {\n    if (this == o) return true;\n    if (!(o instanceof Point p)) return false;\n    return x == p.x &amp;&amp; y == p.y;\n}\n\n@Override\npublic int hashCode() {\n    return Objects.hash(x, y);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601511,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the Java compiler auto-generate for you when you declare a <code>record</code>?",
+    "Back": "A canonical constructor, private final fields for each component, public accessor methods (named after the components, not getX()), plus <code>equals()</code>, <code>hashCode()</code>, and <code>toString()</code> derived from the component list — the type is implicitly immutable."
+   }
+  },
+  {
+   "noteId": 1789000601512,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you declare an immutable <code>Point</code> record with int components <code>x</code> and <code>y</code>?",
+    "Back": "<pre><code>public record Point(int x, int y) {}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601513,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the bound in <code>&lt;T extends Comparable&lt;T&gt;&gt;</code> mean for a Java generic method?",
+    "Back": "T must be a type that implements <code>Comparable&lt;T&gt;</code>, so the method body is allowed to call <code>compareTo()</code> on values of type T."
+   }
+  },
+  {
+   "noteId": 1789000601514,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you write a generic Java method that returns the larger of two Comparable values?",
+    "Back": "<pre><code>public static &lt;T extends Comparable&lt;T&gt;&gt; T max(T a, T b) {\n    return a.compareTo(b) &gt;= 0 ? a : b;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601515,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why do generational garbage collectors run frequent young-generation (minor) collections instead of scanning the whole heap each time?",
+    "Back": "Most objects die young, so a minor GC only has to copy the small fraction of still-live objects out of a small young-gen region — fast and frequent, avoiding the expense of scanning the entire heap on every collection."
+   }
+  },
+  {
+   "noteId": 1789000601516,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you prefer <code>ArrayList</code> over <code>LinkedList</code> in Java?",
+    "Back": "When you need fast random access — <code>get(i)</code> is O(1) on <code>ArrayList</code> (backed by a resizable array) vs O(n) on <code>LinkedList</code>. Prefer <code>LinkedList</code> only for frequent insert/remove at arbitrary positions via an iterator, since ArrayList shifts elements on insert/remove."
+   }
+  },
+  {
+   "noteId": 1789000601517,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you use the Stream API to keep only strings longer than 3 characters and collect them into a new List?",
+    "Back": "<pre><code>List&lt;String&gt; result = names.stream()\n    .filter(s -&gt; s.length() &gt; 3)\n    .collect(Collectors.toList());</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601518,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does Spring's <code>@Async</code> annotation do, and how was it used in the Government of Ontario eForm validation microservice?",
+    "Back": "It runs the annotated method on a separate thread from Spring's task executor, returning control to the caller immediately (often returning a <code>CompletableFuture</code>) instead of blocking. It enabled non-blocking I/O in the high-throughput validation microservice, cutting latency ~40%."
+   }
+  },
+  {
+   "noteId": 1789000601519,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the N+1 select problem, and what JPQL fix resolves it (as used at ServiceOntario to cut read latency 40%)?",
+    "Back": "Lazily fetching N parent entities triggers 1 query for the parents plus N extra queries — one per parent — to load each one's association. Fix: add <code>JOIN FETCH</code> to the JPQL query (e.g. <code>SELECT e FROM Entity e JOIN FETCH e.children</code>) so the association loads in the same query, plus tuning Hibernate's batch-fetch size for remaining lazy loads."
+   }
+  },
+  {
+   "noteId": 1789000601520,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In a Spring Boot service, what does a Resilience4j <code>CircuitBreaker</code> do once a downstream call's failure rate crosses its configured threshold?",
+    "Back": "It trips to the OPEN state and short-circuits further calls immediately (fast-fail, no wasted latency waiting on a failing dependency) for a wait duration, then moves to HALF_OPEN to test a limited number of calls before deciding whether to close again."
+   }
+  },
+  {
+   "noteId": 1789000601521,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What role does Caffeine caching play in a Spring Boot backend, and what eviction strategies does it support?",
+    "Back": "It's an in-memory cache (plugged in via Spring's cache abstraction) that avoids repeated expensive calls/DB hits. It supports size-based and time-based eviction (<code>expireAfterWrite</code>/<code>expireAfterAccess</code>) using a near-optimal Window TinyLFU eviction policy."
+   }
+  },
+  {
+   "noteId": 1789000601522,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Java's <code>final</code> keyword applied to a variable",
+    "Back": "The variable's reference (or primitive value) can be assigned only once; for object references, the referenced object's own internal state can still be mutated unless it's independently immutable."
+   }
+  },
+  {
+   "noteId": 1789000639757,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The JVM divides its runtime data areas into the {{c1::heap}} (shared object storage, garbage collected), the per-thread {{c2::stack}} (local variables and call frames), and the {{c3::method area/metaspace}} (class metadata and static fields).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639760,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "java",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The core Java Collections Framework interfaces are {{c1::List}} (ordered, duplicates allowed), {{c2::Set}} (no duplicate elements), and {{c3::Map}} (key-value pairs; not itself a subtype of Collection).",
+    "Extra": ""
+   }
+  }
+ ]
+}

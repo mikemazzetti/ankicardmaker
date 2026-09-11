@@ -1,0 +1,235 @@
+{
+ "deck": "Interview::OOP Design::Snake and Ladder",
+ "note_count": 19,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200686,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "What's the core scope of a \"Design Snake and Ladder\" OOD problem?",
+    "Back": "Model an NxN board (typically 100 cells) where players take turns rolling dice and moving; some cells are snake heads (move the player down) or ladder bottoms (move the player up); the first player to land exactly on the final cell wins."
+   }
+  },
+  {
+   "noteId": 1789061200687,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "How are Snake and Ladder modeled relative to Board cells?",
+    "Back": "Both are simple (start, end) pairs: a Snake's start > end (head to tail, moves the player down), a Ladder's start < end (bottom to top, moves the player up). Board typically merges both into one Map<Integer,Integer> of \"cell -> jump destination\" for O(1) lookup."
+   }
+  },
+  {
+   "noteId": 1789061200688,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "What's the relationship between Board, Player, and Dice within Game?",
+    "Back": "Game composes one Board, a list of Players (each tracking its own current position), and a Dice; Board and Dice stay unaware of Player/Game, keeping them reusable and decoupled."
+   }
+  },
+  {
+   "noteId": 1789061200689,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Which pattern fits supporting different dice configurations (a single 6-sided die, two dice, a weighted/loaded die)?",
+    "Back": "Strategy pattern — a Dice interface with roll() lets Game accept any implementation without changing its own logic."
+   }
+  },
+  {
+   "noteId": 1789061200690,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Which pattern fits notifying observers (e.g. a console UI) of each turn's roll, move, and any snake/ladder jump?",
+    "Back": "Observer pattern — Game publishes turn events to registered listeners after each move is applied."
+   }
+  },
+  {
+   "noteId": 1789061200691,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "In order, what is Game.playTurn() responsible for?",
+    "Back": "Roll the dice for the current player, compute the tentative new position, apply the overshoot rule if needed, apply any snake/ladder jump at the landing cell, check for a win, then advance to the next player."
+   }
+  },
+  {
+   "noteId": 1789061200692,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Why store snake and ladder jumps in a single unified Map<Integer,Integer> on Board rather than two separate lists?",
+    "Back": "A move only needs one O(1) lookup — \"does my landing cell have a jump destination?\" — regardless of whether it's a snake or ladder, which simplifies Game's per-turn logic."
+   }
+  },
+  {
+   "noteId": 1789061200693,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: what must Board validation prevent when constructing Snakes/Ladders?",
+    "Back": "A cell can't be both a snake head and a ladder bottom at once (an ambiguous jump), and a Snake's/Ladder's start and end cells can't be the same."
+   }
+  },
+  {
+   "noteId": 1789061200694,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: should landing on a jump destination that is itself another jump's start cell cascade automatically?",
+    "Back": "Most implementations apply only the single jump-map lookup for the landing cell (no automatic chaining), treating a board where one snake's tail sits on another snake's head as an invalid/unexpected configuration to reject at setup."
+   }
+  },
+  {
+   "noteId": 1789061200695,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: how is a win detected, given the overshoot rule?",
+    "Back": "After applying the roll (and any jump), check if the player's position equals exactly the final cell — since overshooting rolls are rejected outright, reaching the win condition always means landing exactly on it."
+   }
+  },
+  {
+   "noteId": 1789061200696,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "What does Dice.roll() return, and why keep Dice as an interface rather than a concrete class Game calls directly?",
+    "Back": "An int between 1 and the die's number of faces; keeping it an interface (Strategy) lets tests inject a deterministic/mock Dice instead of depending on real randomness."
+   }
+  },
+  {
+   "noteId": 1789061200697,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Java: implement Board with a jump-table Map<Integer,Integer> for snakes/ladders and a resolveLanding method.",
+    "Back": "<pre><code>public class Board {\n    private final int size;\n    private final Map&lt;Integer, Integer&gt; jumps = new HashMap&lt;&gt;();\n\n    public Board(int size) {\n        this.size = size;\n    }\n\n    public void addSnake(int head, int tail) {\n        if (head &lt;= tail) {\n            throw new IllegalArgumentException(\"Snake head must be greater than tail\");\n        }\n        jumps.put(head, tail);\n    }\n\n    public void addLadder(int bottom, int top) {\n        if (bottom &gt;= top) {\n            throw new IllegalArgumentException(\"Ladder bottom must be less than top\");\n        }\n        jumps.put(bottom, top);\n    }\n\n    public int resolveLanding(int position) {\n        return jumps.getOrDefault(position, position);\n    }\n\n    public int getSize() { return size; }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200698,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Python: implement a Dice protocol/ABC with a SingleDie and a WeightedDie implementation.",
+    "Back": "<pre><code>from abc import ABC, abstractmethod\nimport random\n\nclass Dice(ABC):\n    @abstractmethod\n    def roll(self) -&gt; int:\n        ...\n\nclass SingleDie(Dice):\n    def __init__(self, faces: int = 6) -&gt; None:\n        self.faces = faces\n\n    def roll(self) -&gt; int:\n        return random.randint(1, self.faces)\n\nclass WeightedDie(Dice):\n    def __init__(self, weights: dict) -&gt; None:\n        self.faces = list(weights.keys())\n        self.weights = list(weights.values())\n\n    def roll(self) -&gt; int:\n        return random.choices(self.faces, weights=self.weights, k=1)[0]</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200699,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Java: implement Game.playTurn() applying the roll, overshoot rule, jump resolution, and win check.",
+    "Back": "<pre><code>public void playTurn() {\n    if (winner != null) {\n        throw new IllegalStateException(\"Game already has a winner\");\n    }\n    Player player = players.get(currentPlayerIndex);\n    int roll = dice.roll();\n    int tentative = player.getPosition() + roll;\n\n    if (tentative &lt;= board.getSize()) {\n        int landing = board.resolveLanding(tentative);\n        player.setPosition(landing);\n        if (landing == board.getSize()) {\n            winner = player;\n        }\n    }\n    currentPlayerIndex = (currentPlayerIndex + 1) % players.size();\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200700,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Python: implement a Player class and a simulate_game loop that returns the winner.",
+    "Back": "<pre><code>class Player:\n    def __init__(self, name: str) -&gt; None:\n        self.name = name\n        self.position = 0\n\ndef simulate_game(game, max_turns: int = 1000):\n    for _ in range(max_turns):\n        game.play_turn()\n        if game.winner is not None:\n            return game.winner\n    return None</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200701,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Text": "{{c1::Board}}, {{c2::Player}}, {{c3::Dice}}, and {{c4::Game}} are core classes, with {{c5::Snake}} and {{c6::Ladder}} modeling the board's jump cells.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200702,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Text": "If a player's roll would move them past the final cell (e.g. position 97 + a roll of 6 on a 100-cell board), the standard rule is {{c1::the move is not applied at all — the player stays in place and must roll the exact number needed}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200707,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Snake (in Snake and Ladder)",
+    "Back": "A board element with a head cell (higher number) and a tail cell (lower number); landing on the head moves the player down to the tail."
+   }
+  },
+  {
+   "noteId": 1789061200708,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-snake-and-ladder"
+   ],
+   "fields": {
+    "Front": "Ladder (in Snake and Ladder)",
+    "Back": "A board element with a bottom cell (lower number) and a top cell (higher number); landing on the bottom moves the player up to the top."
+   }
+  }
+ ]
+}

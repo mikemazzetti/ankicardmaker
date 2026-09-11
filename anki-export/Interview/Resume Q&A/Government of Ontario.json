@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Q&A::Government of Ontario",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202782,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What was Michele's role and employer for the May–Aug 2025 internship?",
+    "Back": "<b>Software Engineering Intern at the Government of Ontario</b>."
+   }
+  },
+  {
+   "noteId": 1789061202783,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What platform did Michele build eForm back-end architecture for?",
+    "Back": "The <b>Business Experience Platform</b>."
+   }
+  },
+  {
+   "noteId": 1789061202784,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What stack was the eForm back-end built with?",
+    "Back": "<code>Java</code> + <code>Spring Boot</code>"
+   }
+  },
+  {
+   "noteId": 1789061202785,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "How much data did the Business Experience Platform's eForm back-end handle daily?",
+    "Back": "<b>10GB+ per day</b>."
+   }
+  },
+  {
+   "noteId": 1789061202786,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "How many businesses did the Business Experience Platform serve?",
+    "Back": "<b>400,000+</b> businesses."
+   }
+  },
+  {
+   "noteId": 1789061202787,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What did Michele build to handle high-throughput input validation on the Business Experience Platform?",
+    "Back": "A <b>validation microservice</b>."
+   }
+  },
+  {
+   "noteId": 1789061202788,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What Spring feature enabled non-blocking I/O in the validation microservice?",
+    "Back": "<code>Spring @Async</code>"
+   }
+  },
+  {
+   "noteId": 1789061202789,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What latency improvement did the @Async validation microservice achieve?",
+    "Back": "<b>40% lower</b> latency."
+   }
+  },
+  {
+   "noteId": 1789061202790,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What resilience library did Michele use to add circuit breakers?",
+    "Back": "<code>Resilience4j</code>"
+   }
+  },
+  {
+   "noteId": 1789061202791,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What caching library did Michele pair with Resilience4j?",
+    "Back": "<code>Caffeine</code>"
+   }
+  },
+  {
+   "noteId": 1789061202792,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What reduction in upstream calls did Resilience4j + Caffeine caching achieve?",
+    "Back": "<b>~25% fewer</b> upstream calls."
+   }
+  },
+  {
+   "noteId": 1789061202793,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "Why use Spring @Async instead of a blocking call in the validation microservice?",
+    "Back": "It frees up request-handling threads while waiting on I/O, so more validation requests can be in flight concurrently — improving throughput and latency under load."
+   }
+  },
+  {
+   "noteId": 1789061202794,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "What does the eForm back-end handle within the Business Experience Platform?",
+    "Back": "The <b>form submission/processing architecture</b> businesses use on the platform (10GB+/day across 400,000+ businesses)."
+   }
+  },
+  {
+   "noteId": 1789061202795,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about a time you made a system more resilient to upstream failures.\"",
+    "Back": "<b>S:</b> The Business Experience Platform's validation microservice depended on upstream services that could be slow or fail.<br><b>T:</b> Reduce load on and exposure to those upstream dependencies.<br><b>A:</b> Added Resilience4j circuit breakers to fail fast on unhealthy upstreams, plus Caffeine in-memory caching to avoid redundant calls.<br><b>R:</b> Cut upstream calls by ~25%."
+   }
+  },
+  {
+   "noteId": 1789061202796,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about optimizing a high-throughput backend service.\"",
+    "Back": "<b>S:</b> The validation microservice on the Business Experience Platform needed to handle input validation for a high volume of business submissions.<br><b>T:</b> Reduce request latency without blocking server threads.<br><b>A:</b> Rebuilt the validation path using Spring @Async for non-blocking I/O.<br><b>R:</b> Achieved 40% lower latency."
+   }
+  },
+  {
+   "noteId": 1789061202797,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Describe a backend system you built that handled real scale.\"",
+    "Back": "<b>S:</b> The Government of Ontario needed eForm back-end architecture for the Business Experience Platform.<br><b>T:</b> Design and build it to handle high daily volume across many businesses.<br><b>A:</b> Built the back-end in Java + Spring Boot, plus an @Async validation microservice and Resilience4j/Caffeine for resilience and efficiency.<br><b>R:</b> The platform handled 10GB+/day for 400,000+ businesses, with 40% lower validation latency and ~25% fewer upstream calls."
+   }
+  },
+  {
+   "noteId": 1789061202805,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Text": "Michele built the eForm back-end for the Business Experience Platform in {{c1::Java + Spring Boot}}, handling {{c2::10GB+/day}} for {{c3::400,000+}} businesses.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202806,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Text": "Michele added {{c1::Resilience4j}} circuit breakers plus {{c2::Caffeine}} caching, cutting upstream calls by {{c3::~25%}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202818,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "Circuit breaker (Resilience4j)",
+    "Back": "A resilience pattern that stops calling a failing or slow upstream service once a failure threshold is hit, failing fast locally instead of letting the failure cascade."
+   }
+  },
+  {
+   "noteId": 1789061202819,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-gov-ontario"
+   ],
+   "fields": {
+    "Front": "Caffeine cache",
+    "Back": "A high-performance in-memory Java caching library, used here to serve repeated lookups locally and reduce redundant upstream calls."
+   }
+  }
+ ]
+}

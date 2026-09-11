@@ -1,0 +1,267 @@
+{
+ "deck": "Interview::Resume Prep::PostgreSQL",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000602177,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does MVCC stand for in Postgres and what problem does it solve?",
+    "Back": "Multi-Version Concurrency Control — lets readers see a consistent snapshot of data without blocking concurrent writers, so reads never need row locks."
+   }
+  },
+  {
+   "noteId": 1789000602178,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Postgres's MVCC, what happens to a row when it's updated instead of being overwritten in place?",
+    "Back": "A new row version is written; the old version remains (still visible to transactions whose snapshot predates it) until it's cleaned up by vacuum."
+   }
+  },
+  {
+   "noteId": 1789000602179,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a partial index in Postgres and when would you use one?",
+    "Back": "An index built with a <code>WHERE</code> clause covering only a subset of rows — useful for cheaply indexing a common filtered query, e.g. only unfinished orders."
+   }
+  },
+  {
+   "noteId": 1789000602180,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write SQL to create a partial index on <code>orders</code> covering only unshipped orders.",
+    "Back": "<pre><code>CREATE INDEX idx_unshipped\nON orders (created_at)\nWHERE shipped = false;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602181,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>EXPLAIN ANALYZE</code> do differently from plain <code>EXPLAIN</code>?",
+    "Back": "It actually executes the query and reports real timings and row counts alongside the plan, instead of only the planner's estimates."
+   }
+  },
+  {
+   "noteId": 1789000602182,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a query that shows the real execution plan and timing for a SELECT on <code>orders</code>.",
+    "Back": "<pre><code>EXPLAIN ANALYZE\nSELECT * FROM orders WHERE customer_id = 42;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602183,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is Postgres's default transaction isolation level?",
+    "Back": "Read Committed."
+   }
+  },
+  {
+   "noteId": 1789000602184,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What phenomenon does Repeatable Read prevent that Read Committed does not?",
+    "Back": "Non-repeatable reads — under Repeatable Read, re-reading the same row twice in one transaction always returns the same value, even if another transaction committed a change in between."
+   }
+  },
+  {
+   "noteId": 1789000602185,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the <code>SERIAL</code> pseudo-type do when declaring a Postgres column?",
+    "Back": "Creates an auto-incrementing integer column backed by a linked sequence — shorthand for an integer column with a <code>DEFAULT nextval()</code> on an auto-created sequence."
+   }
+  },
+  {
+   "noteId": 1789000602186,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write SQL to create a table with an auto-incrementing primary key.",
+    "Back": "<pre><code>CREATE TABLE users (\n  id SERIAL PRIMARY KEY,\n  username TEXT NOT NULL\n);</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602187,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the advantage of <code>JSONB</code> over plain <code>JSON</code> in Postgres, and what's the tradeoff?",
+    "Back": "JSONB stores a decomposed binary format — faster to query and indexable with GIN — but loses exact text formatting/key order; JSON stores raw text, faster to write but not indexable that way."
+   }
+  },
+  {
+   "noteId": 1789000602188,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Postgres query filtering rows by a key inside a JSONB column.",
+    "Back": "<pre><code>SELECT * FROM events\nWHERE payload -&gt;&gt; 'type' = 'click';</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602189,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>VACUUM</code> do in Postgres?",
+    "Back": "Reclaims storage from dead row versions left behind by MVCC updates/deletes, and refreshes planner statistics."
+   }
+  },
+  {
+   "noteId": 1789000602190,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does Postgres's MVCC design make regular <code>VACUUM</code>ing necessary?",
+    "Back": "Updates and deletes don't remove old row versions immediately; without vacuuming, dead tuples accumulate and bloat tables and indexes."
+   }
+  },
+  {
+   "noteId": 1789000602191,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a CTE and what keyword introduces one in Postgres?",
+    "Back": "A Common Table Expression — a named, temporary result set defined with <code>WITH</code>, usable like a subquery inside the main query."
+   }
+  },
+  {
+   "noteId": 1789000602192,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Postgres query using a CTE to find customers whose total order amount exceeds $1000.",
+    "Back": "<pre><code>WITH totals AS (\n  SELECT customer_id, SUM(amount) AS total\n  FROM orders GROUP BY customer_id\n)\nSELECT * FROM totals WHERE total &gt; 1000;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602193,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "B-tree index (Postgres)",
+    "Back": "The default index type — efficient for equality and range queries (<, <=, =, >=, >) on sortable data."
+   }
+  },
+  {
+   "noteId": 1789000602194,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "GIN index (Postgres)",
+    "Back": "Generalized Inverted Index — efficient for indexing composite values like arrays, JSONB, and full-text search vectors."
+   }
+  },
+  {
+   "noteId": 1789000639931,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The four standard SQL transaction isolation levels, weakest to strongest, are {{c1::Read Uncommitted}}, {{c2::Read Committed}}, {{c3::Repeatable Read}}, and {{c4::Serializable}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639932,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "postgresql",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Common Postgres constraints that enforce data integrity include {{c1::PRIMARY KEY}}, {{c2::FOREIGN KEY}}, {{c3::UNIQUE}}, {{c4::CHECK}}, and {{c5::NOT NULL}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

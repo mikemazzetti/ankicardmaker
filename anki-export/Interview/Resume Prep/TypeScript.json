@@ -1,0 +1,267 @@
+{
+ "deck": "Interview::Resume Prep::TypeScript",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000601738,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What is the main practical difference between <code>type</code> and <code>interface</code> in TypeScript for object shapes?",
+    "Back": "<code>interface</code>s can be reopened and merged via declaration merging; <code>type</code> aliases cannot be merged but can express unions, intersections, and other non-object types that <code>interface</code> can't."
+   }
+  },
+  {
+   "noteId": 1789000601739,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you code a generic function <code>first</code> that returns the first element of an array of any type <code>T</code>?",
+    "Back": "<pre><code>function first<T>(arr: T[]): T {\n  return arr[0];\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601740,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you write the intersection type of <code>HasId</code> and <code>HasName</code> as one type?",
+    "Back": "<pre><code>type Entity = HasId & HasName;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601741,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What is the key difference between <code>unknown</code> and <code>any</code> in TypeScript?",
+    "Back": "<code>any</code> disables type checking entirely; <code>unknown</code> is type-safe — you must narrow it (e.g. with a type guard) before you can use it as anything specific."
+   }
+  },
+  {
+   "noteId": 1789000601742,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you narrow a variable <code>value: unknown</code> to a string using <code>typeof</code>?",
+    "Back": "<pre><code>if (typeof value === 'string') {\n  console.log(value.toUpperCase());\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601743,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you code a custom type guard function <code>isAdmin</code> that narrows a <code>User</code> to an <code>Admin</code>?",
+    "Back": "<pre><code>function isAdmin(user: User): user is Admin {\n  return (user as Admin).permissions !== undefined;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601744,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What does the utility type <code>Partial&lt;T&gt;</code> do?",
+    "Back": "It produces a type identical to <code>T</code> but with every property made optional."
+   }
+  },
+  {
+   "noteId": 1789000601745,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you code a type that keeps only the <code>id</code> and <code>email</code> fields from a <code>User</code> type?",
+    "Back": "<pre><code>type UserPreview = Pick<User, 'id' | 'email'>;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601746,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you code a type that is <code>User</code> minus its <code>password</code> field?",
+    "Back": "<pre><code>type SafeUser = Omit<User, 'password'>;</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601747,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What is a key gotcha of numeric TypeScript enums compared to string enums?",
+    "Back": "Numeric enums are reverse-mapped (both name-to-value and value-to-name exist), and any number is structurally assignable to them, so invalid numeric values can slip through type checking. String enums don't have this problem."
+   }
+  },
+  {
+   "noteId": 1789000601748,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What does 'structural typing' mean in TypeScript?",
+    "Back": "Type compatibility is based on the shape (members) a type has, not on its declared name — two differently-named types with the same members are interchangeable."
+   }
+  },
+  {
+   "noteId": 1789000601749,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What does enabling <code>\"strict\": true</code> in <code>tsconfig.json</code> do?",
+    "Back": "It turns on a bundle of stricter checks, including <code>strictNullChecks</code>, <code>noImplicitAny</code>, and strict function types, catching many more potential bugs at compile time."
+   }
+  },
+  {
+   "noteId": 1789000601750,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you code a discriminated union for a <code>Shape</code> that is either a <code>Circle</code> or a <code>Square</code>, keyed on a <code>kind</code> field?",
+    "Back": "<pre><code>type Shape =\n  | { kind: 'circle'; radius: number }\n  | { kind: 'square'; side: number };\n\nfunction area(s: Shape) {\n  return s.kind === 'circle' ? Math.PI * s.radius ** 2 : s.side ** 2;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601751,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you type the props of a reusable, accessible UI component (e.g. for a WCAG-compliant button library) so it requires an <code>aria-label</code> when there's no visible text child?",
+    "Back": "<pre><code>type ButtonProps =\n  | { children: string; 'aria-label'?: string }\n  | { children?: never; 'aria-label': string };</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601752,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you code a generic React component's props type <code>ListProps&lt;T&gt;</code> that takes an array of items and a render function?",
+    "Back": "<pre><code>type ListProps<T> = {\n  items: T[];\n  renderItem: (item: T) => JSX.Element;\n};\n\nfunction List<T>({ items, renderItem }: ListProps<T>) {\n  return <ul>{items.map(renderItem)}</ul>;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601753,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What does the <code>readonly</code> modifier do on a TypeScript interface property?",
+    "Back": "It prevents that property from being reassigned after the object is created, catching accidental mutation at compile time (it does not deep-freeze the object)."
+   }
+  },
+  {
+   "noteId": 1789000601754,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What does appending <code>as const</code> to an array or object literal do to its inferred type?",
+    "Back": "It infers the narrowest possible literal types and makes all properties <code>readonly</code>, instead of widening to general types like <code>string[]</code>."
+   }
+  },
+  {
+   "noteId": 1789000601755,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "What does the <code>never</code> type represent in TypeScript, and where does it commonly show up?",
+    "Back": "A type with no possible values — it shows up as the return type of a function that always throws, and is useful for exhaustiveness checks in a <code>switch</code> over a union."
+   }
+  },
+  {
+   "noteId": 1789000601756,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Front": "How do you write an exhaustiveness check in a <code>switch</code> over a discriminated union so TypeScript errors if a new variant is added later?",
+    "Back": "<pre><code>default: {\n  const _exhaustive: never = s;\n  throw new Error('Unhandled shape');\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000639805,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-prep",
+    "typescript"
+   ],
+   "fields": {
+    "Text": "A {{c1::union}} type (<code>A | B</code>) means a value is A or B; an {{c2::intersection}} type (<code>A & B</code>) means a value must satisfy both A and B at once.",
+    "Extra": ""
+   }
+  }
+ ]
+}

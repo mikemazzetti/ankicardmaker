@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Parking Lot",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200484,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "When clarifying requirements for a Parking Lot System design, what key scope questions should you ask?",
+    "Back": "How many levels/floors? What vehicle types (motorcycle, car, bus)? How is pricing calculated? Is entry/exit ticket-based or automated (e.g. license plate)? Multiple entrances/exits?"
+   }
+  },
+  {
+   "noteId": 1789061200485,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What is the primary functional requirement of a Parking Lot System?",
+    "Back": "Assign and free parking spots to vehicles, track availability per level/spot type, and calculate/collect a fee on exit."
+   }
+  },
+  {
+   "noteId": 1789061200486,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>ParkingLot</code> class?",
+    "Back": "Top-level coordinator managing all floors, entry/exit points, and overall capacity; delegates spot assignment and issues tickets."
+   }
+  },
+  {
+   "noteId": 1789061200487,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>ParkingFloor</code> class?",
+    "Back": "Manages the spots on one level of the lot; tracks which spots on that floor are free or occupied."
+   }
+  },
+  {
+   "noteId": 1789061200488,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>ParkingSpot</code> class?",
+    "Back": "Represents a single spot; knows its <code>SpotType</code> and occupied status, and holds a reference to the parked vehicle (if any)."
+   }
+  },
+  {
+   "noteId": 1789061200489,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Ticket</code> class?",
+    "Back": "Created when a vehicle enters; records the vehicle, assigned spot, and entry timestamp — used to compute the fee and free the spot on exit."
+   }
+  },
+  {
+   "noteId": 1789061200490,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What enum typically represents parking spot types in a Parking Lot design?",
+    "Back": "<code>SpotType { MOTORCYCLE, COMPACT, LARGE, HANDICAPPED }</code>"
+   }
+  },
+  {
+   "noteId": 1789061200491,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What enum typically represents vehicle types in a Parking Lot design?",
+    "Back": "<code>VehicleType { MOTORCYCLE, CAR, BUS }</code>"
+   }
+  },
+  {
+   "noteId": 1789061200492,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Is the relationship between <code>ParkingLot</code> and <code>ParkingFloor</code> composition or aggregation, and why?",
+    "Back": "Composition — floors have no independent existence outside their lot; the lot owns their lifecycle."
+   }
+  },
+  {
+   "noteId": 1789061200493,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "How should <code>Car</code>, <code>Motorcycle</code>, and <code>Bus</code> relate to a base <code>Vehicle</code> class?",
+    "Back": "Inheritance — each subtype extends <code>Vehicle</code> and carries its own <code>VehicleType</code>, which determines which <code>SpotType</code>s it can fit."
+   }
+  },
+  {
+   "noteId": 1789061200494,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits computing a parking fee that varies by vehicle type, duration, or membership tier, and why?",
+    "Back": "Strategy — encapsulate each pricing algorithm behind a common <code>PricingStrategy</code> interface so it can be swapped without changing <code>ParkingLot</code> code."
+   }
+  },
+  {
+   "noteId": 1789061200495,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits centralizing creation of the correct <code>Vehicle</code> subtype without the caller knowing the concrete class, and why?",
+    "Back": "Factory — a <code>VehicleFactory</code> centralizes creation logic based on input (e.g. a type code), decoupling object creation from the client code."
+   }
+  },
+  {
+   "noteId": 1789061200496,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What should <code>ParkingLot.parkVehicle(vehicle)</code> return, and why?",
+    "Back": "A <code>Ticket</code> (or null/exception if the lot is full) — it's the receipt later needed to compute the fee and free the spot on exit."
+   }
+  },
+  {
+   "noteId": 1789061200497,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "What are the two main public methods on the <code>ParkingLot</code> API?",
+    "Back": "<code>parkVehicle(vehicle)</code> — assigns a spot and issues a ticket — and <code>unparkVehicle(ticket)</code> — frees the spot and charges the fee."
+   }
+  },
+  {
+   "noteId": 1789061200498,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: a motorcycle takes a large/car spot because no motorcycle spots remain — how should spot assignment handle this?",
+    "Back": "Prefer the smallest compatible spot for the vehicle's type, but allow fallback to a larger spot when the ideal size is full — trading space efficiency for never turning a vehicle away unnecessarily."
+   }
+  },
+  {
+   "noteId": 1789061200499,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: a driver loses their ticket at exit — how should the system handle it?",
+    "Back": "Charge a fixed maximum/flat fee (or require attendant override) rather than blocking the exit indefinitely."
+   }
+  },
+  {
+   "noteId": 1789061200500,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Code the <code>ParkingSpot</code> class in Java with fields for spot type and occupied state, and methods to park and remove a vehicle.",
+    "Back": "<pre><code>public class ParkingSpot {\n    private final SpotType type;\n    private boolean occupied;\n    private Vehicle vehicle;\n\n    public ParkingSpot(SpotType type) {\n        this.type = type;\n        this.occupied = false;\n    }\n\n    public boolean isAvailable() {\n        return !occupied;\n    }\n\n    public boolean canFitVehicle(Vehicle vehicle) {\n        return !occupied &amp;&amp; type.canFit(vehicle.getType());\n    }\n\n    public void parkVehicle(Vehicle vehicle) {\n        if (occupied) {\n            throw new IllegalStateException(\"Spot already occupied\");\n        }\n        this.vehicle = vehicle;\n        this.occupied = true;\n    }\n\n    public void removeVehicle() {\n        this.vehicle = null;\n        this.occupied = false;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200501,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Code a <code>park_vehicle</code> method in Python on <code>ParkingLot</code> that finds the first free compatible spot across all floors and assigns it.",
+    "Back": "<pre><code>class ParkingLot:\n    def __init__(self, floors):\n        self.floors = floors  # list[ParkingFloor]\n\n    def park_vehicle(self, vehicle):\n        for floor in self.floors:\n            for spot in floor.spots:\n                if spot.can_fit_vehicle(vehicle):\n                    spot.park_vehicle(vehicle)\n                    return Ticket(vehicle, spot)\n        return None  # lot is full</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200502,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Code a <code>PricingStrategy</code> interface and an <code>HourlyPricingStrategy</code> implementation in Java.",
+    "Back": "<pre><code>public interface PricingStrategy {\n    double calculateFee(VehicleType type, long durationMinutes);\n}\n\npublic class HourlyPricingStrategy implements PricingStrategy {\n    private static final double RATE_PER_HOUR = 2.50;\n\n    @Override\n    public double calculateFee(VehicleType type, long durationMinutes) {\n        long hours = (long) Math.ceil(durationMinutes / 60.0);\n        return hours * RATE_PER_HOUR;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200503,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-parking-lot"
+   ],
+   "fields": {
+    "Front": "Code a <code>find_nearest_available_spot</code> helper in Python that, given a floor's list of spots and a vehicle, returns the first fitting spot or <code>None</code>.",
+    "Back": "<pre><code>def find_nearest_available_spot(spots, vehicle):\n    for spot in spots:\n        if spot.can_fit_vehicle(vehicle):\n            return spot\n    return None</code></pre>"
+   }
+  }
+ ]
+}

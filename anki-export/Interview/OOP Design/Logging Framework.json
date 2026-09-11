@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Logging Framework",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201321,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what are the 3 core functional requirements for a Logging Framework?",
+    "Back": "1) Log messages at multiple severity levels. 2) Route messages to multiple destinations (console, file, network) simultaneously. 3) Let format and filtering be configured without changing any calling code."
+   }
+  },
+  {
+   "noteId": 1789061201322,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Why is Chain of Responsibility a natural fit for handling log levels in a logging framework?",
+    "Back": "Each handler in the chain is configured with a threshold level and decides independently whether it should process a given message, then forwards it to the next handler — decoupling the log call site from any specific handler."
+   }
+  },
+  {
+   "noteId": 1789061201323,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "In a Chain-of-Responsibility log-level design, what determines whether a given handler processes a message?",
+    "Back": "The handler compares the message's level to its own configured threshold; it processes (and typically still forwards) the message only if the message's level is >= its threshold."
+   }
+  },
+  {
+   "noteId": 1789061201324,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Why is Singleton commonly used for the LogManager (or LoggerFactory) in a logging framework?",
+    "Back": "There should be exactly one global registry of loggers and one shared configuration (appenders, levels, formatters) so every part of the app logs consistently through a single, globally accessible access point."
+   }
+  },
+  {
+   "noteId": 1789061201325,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "What is the main risk of a naive, non-thread-safe Singleton LogManager in a multi-threaded service?",
+    "Back": "A race during lazy initialization can construct two separate LogManager instances, causing inconsistent configuration and duplicated or lost log output."
+   }
+  },
+  {
+   "noteId": 1789061201326,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Name two ways to make a Singleton LogManager thread-safe in Java.",
+    "Back": "Eager static-field initialization, or double-checked locking with a volatile instance field (an enum-based singleton also works)."
+   }
+  },
+  {
+   "noteId": 1789061201327,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "What core fields should a LogMessage/LogRecord object carry?",
+    "Back": "Timestamp, severity level, logger/source name, the message text, and optionally the thread name and an exception/stack trace."
+   }
+  },
+  {
+   "noteId": 1789061201328,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, how do you cleanly support 'log to console AND file at the same time'?",
+    "Back": "Attach multiple Appender instances to a single Logger (or to the chain of handlers); each appender independently formats and writes the same message to its own destination."
+   }
+  },
+  {
+   "noteId": 1789061201329,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: what can go wrong with asynchronous (queued) logging when the process crashes?",
+    "Back": "Messages sitting in the in-memory queue can be lost because they were never flushed to disk — mitigate with a bounded queue plus a shutdown hook that flushes pending messages before exit."
+   }
+  },
+  {
+   "noteId": 1789061201330,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Why should log-level filtering happen as early as possible in the pipeline (ideally at the Logger, before formatting)?",
+    "Back": "It avoids the cost of building and formatting a message that will be discarded anyway — a real perf edge case when DEBUG logging is disabled in production but call sites still build expensive strings."
+   }
+  },
+  {
+   "noteId": 1789061201331,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "What is log rotation, and why does a FileAppender need it?",
+    "Back": "Rotation closes the current log file and starts a new one (by size or by time) so a single file doesn't grow unbounded; without it, disk usage keeps climbing until the disk fills up."
+   }
+  },
+  {
+   "noteId": 1789061201332,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "How can each Logger instance have its own minimum level while still sharing global Appenders?",
+    "Back": "Store a level threshold on the Logger itself, checked before the message is even constructed; surviving messages are then forwarded to the shared Appenders, which may apply their own (usually looser or equal) threshold."
+   }
+  },
+  {
+   "noteId": 1789061201333,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Implement a Chain-of-Responsibility log handler in Java: an abstract LogHandler with a next handler reference, a level threshold, and a logMessage(level, msg) method that writes locally if the level qualifies, then always forwards to the next handler.",
+    "Back": "<pre><code>abstract class LogHandler {\n    protected LogHandler next;\n    protected final int level;\n\n    LogHandler(int level) { this.level = level; }\n\n    LogHandler setNext(LogHandler next) {\n        this.next = next;\n        return next;\n    }\n\n    void logMessage(int msgLevel, String msg) {\n        if (msgLevel &gt;= this.level) {\n            write(msg);\n        }\n        if (next != null) {\n            next.logMessage(msgLevel, msg);\n        }\n    }\n\n    protected abstract void write(String msg);\n}\n\nclass ConsoleHandler extends LogHandler {\n    ConsoleHandler(int level) { super(level); }\n    protected void write(String msg) { System.out.println(\"[CONSOLE] \" + msg); }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201334,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Implement a thread-safe Singleton LoggerManager in Python using __new__ and a threading.Lock.",
+    "Back": "<pre><code>import threading\n\nclass LoggerManager:\n    _instance = None\n    _lock = threading.Lock()\n\n    def __new__(cls):\n        if cls._instance is None:\n            with cls._lock:\n                if cls._instance is None:\n                    cls._instance = super().__new__(cls)\n                    cls._instance._loggers = {}\n        return cls._instance\n\n    def get_logger(self, name):\n        if name not in self._loggers:\n            self._loggers[name] = Logger(name)\n        return self._loggers[name]</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201335,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Implement a common Appender interface in Java plus a FileAppender that writes each message on its own line.",
+    "Back": "<pre><code>interface Appender {\n    void write(LogMessage message);\n}\n\nclass FileAppender implements Appender {\n    private final BufferedWriter writer;\n\n    FileAppender(String path) throws IOException {\n        this.writer = new BufferedWriter(new FileWriter(path, true));\n    }\n\n    public synchronized void write(LogMessage message) {\n        try {\n            writer.write(message.format());\n            writer.newLine();\n            writer.flush();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201336,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Implement a Python Logger.log() dispatch method that checks the logger's own threshold, then fans the message out to every attached appender.",
+    "Back": "<pre><code>class Logger:\n    def __init__(self, name, level=\"INFO\"):\n        self.name = name\n        self.level = level\n        self.appenders = []\n\n    def add_appender(self, appender):\n        self.appenders.append(appender)\n\n    def log(self, level, message):\n        if LEVELS[level] &lt; LEVELS[self.level]:\n            return\n        record = LogMessage(level, self.name, message)\n        for appender in self.appenders:\n            appender.write(record)\n\n    def info(self, message):\n        self.log(\"INFO\", message)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201339,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Text": "A logging framework's {{c1::Logger}} class exposes methods like debug(), info(), warn(), error(), and delegates the actual writing of each message to one or more {{c2::Appenders}} (also called Handlers).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201340,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Text": "Standard log level severity, from least to most severe: {{c1::DEBUG}} < {{c2::INFO}} < {{c3::WARN}} < {{c4::ERROR}} < {{c5::FATAL}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201341,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Text": "A {{c1::LogFormatter}} converts a raw LogMessage (timestamp, level, source, text) into the final string an Appender writes out — e.g. plain text, JSON, or a custom pattern.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201361,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-logging"
+   ],
+   "fields": {
+    "Front": "Appender / Handler (logging framework)",
+    "Back": "A component responsible for writing a formatted log message to one specific destination — console, file, network socket, or external log service."
+   }
+  }
+ ]
+}

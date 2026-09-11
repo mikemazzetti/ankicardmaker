@@ -1,0 +1,211 @@
+{
+ "deck": "Interview::OOP Design::Restaurant Management",
+ "note_count": 17,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201671,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what are the 3 core functional requirements for a Restaurant Management system?",
+    "Back": "1) Reserve/seat tables and track their status. 2) Take orders, route them to the kitchen, and track preparation status. 3) Generate and settle a bill for a table, supporting splits."
+   }
+  },
+  {
+   "noteId": 1789061201672,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Why is Observer a good fit for notifying the kitchen display when a new order is placed?",
+    "Back": "The Order/Waiter code that places an order shouldn't need to know about every kitchen display or printer subscribed to it; the Kitchen registers as an observer on the OrderService and is automatically notified when a new OrderItem arrives, decoupling order-taking from kitchen display logic."
+   }
+  },
+  {
+   "noteId": 1789061201673,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Why is State a good fit for both Table status and Order/OrderItem status in this design?",
+    "Back": "Both have a small set of statuses with rules about which transitions are legal (e.g. you can't seat a RESERVED table as OCCUPIED without check-in; you can't mark an item SERVED before it's READY) — State encapsulates each status's allowed transitions instead of scattering conditionals."
+   }
+  },
+  {
+   "noteId": 1789061201674,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Why might Factory be used to construct MenuItem/Order objects in a restaurant system with multiple item categories (food, drink, combo)?",
+    "Back": "A combo item might need to bundle/validate sub-items differently than a plain food item; a MenuItemFactory centralizes category-specific construction logic so the ordering flow just asks for 'an item of this type' without knowing the construction details."
+   }
+  },
+  {
+   "noteId": 1789061201675,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "What core fields does an Order typically carry in a restaurant system?",
+    "Back": "Order id, associated Table, list of OrderItems (each referencing a MenuItem + quantity + special instructions), overall OrderStatus, waiter/staff reference, and timestamps (placed, completed)."
+   }
+  },
+  {
+   "noteId": 1789061201676,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Edge case: two waiters try to seat different walk-in parties at the same AVAILABLE table at nearly the same time. How do you prevent double-booking a table?",
+    "Back": "Treat 'reserve/seat table' as an atomic state transition guarded by a lock or a compare-and-swap on TableStatus (only succeed if it's currently AVAILABLE) — the same class of concurrency problem as seat locking in a booking system, just lower-throughput."
+   }
+  },
+  {
+   "noteId": 1789061201677,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Edge case: a reservation is scheduled for 7:00 PM but the table is still OCCUPIED by a lingering earlier party. What should the system do?",
+    "Back": "Flag the conflict to staff rather than silently double-booking; options include holding the reservation as PENDING-SEATING, offering the next available equivalent table, or notifying the host to manage the wait — the design should make this an explicit case, not an assumed happy path."
+   }
+  },
+  {
+   "noteId": 1789061201678,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Edge case: a customer wants to modify an order item after it's already been sent to the kitchen (status PREPARING). What should the system allow?",
+    "Back": "Generally disallow silent edits to an item already PREPARING/READY; instead require an explicit cancel-and-void (with a reason, possibly requiring manager approval) plus a new order item, so the kitchen display and billing both reflect what was actually made and wasted."
+   }
+  },
+  {
+   "noteId": 1789061201679,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Edge case: how should the system support splitting a table's bill across multiple guests (by item, or evenly)?",
+    "Back": "Model Bill as separate from Order: a Bill references a subset of OrderItems (or a share of the total) per guest, so it can support split-by-item (each guest's items summed independently) or split-evenly (total divided by N) without changing the underlying Order/OrderItem data."
+   }
+  },
+  {
+   "noteId": 1789061201680,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Edge case: what happens to table status if a reserved party never shows up (no-show)?",
+    "Back": "The reservation should auto-expire after a grace period, releasing the table back to AVAILABLE so it isn't held indefinitely against walk-in demand; some designs also flag repeated no-shows on the customer's profile."
+   }
+  },
+  {
+   "noteId": 1789061201681,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Implement a State pattern for Table status in Java: a TableState interface and AvailableState/OccupiedState with different seat()/vacate() behavior.",
+    "Back": "<pre><code>interface TableState {\n    void seat(Table table);\n    void vacate(Table table);\n}\n\nclass AvailableState implements TableState {\n    public void seat(Table table) {\n        table.setState(new OccupiedState());\n    }\n    public void vacate(Table table) {\n        throw new IllegalStateException(\"Table already available\");\n    }\n}\n\nclass OccupiedState implements TableState {\n    public void seat(Table table) {\n        throw new IllegalStateException(\"Table already occupied\");\n    }\n    public void vacate(Table table) {\n        table.setState(new AvailableState());\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201682,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Implement an Observer pattern in Python: a KitchenDisplay that subscribes to an OrderService and prints new items as they're placed.",
+    "Back": "<pre><code>class OrderService:\n    def __init__(self):\n        self._observers = []\n\n    def subscribe(self, observer):\n        self._observers.append(observer)\n\n    def place_item(self, order_item):\n        order_item.status = \"PLACED\"\n        for observer in self._observers:\n            observer.on_new_item(order_item)\n\nclass KitchenDisplay:\n    def on_new_item(self, order_item):\n        print(f\"NEW: {order_item.quantity}x {order_item.menu_item.name}\")\n        order_item.status = \"PREPARING\"</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201683,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Implement a Java method that atomically seats a table only if it is currently AVAILABLE, guarding against concurrent double-booking.",
+    "Back": "<pre><code>public boolean trySeatTable(Table table, Order newOrder) {\n    synchronized (table) {\n        if (table.getStatus() != TableStatus.AVAILABLE) {\n            return false;\n        }\n        table.setStatus(TableStatus.OCCUPIED);\n        table.setCurrentOrder(newOrder);\n        return true;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201684,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "Implement a Python generate_split_bill() function that splits a table's order items evenly across N guests.",
+    "Back": "<pre><code>def generate_split_bill(order, num_guests):\n    subtotal = sum(\n        item.menu_item.price * item.quantity\n        for item in order.items\n    )\n    per_guest = round(subtotal / num_guests, 2)\n    bills = [\n        Bill(order=order, guest_index=i, amount=per_guest)\n        for i in range(num_guests)\n    ]\n    # reconcile rounding remainder onto the first bill\n    remainder = round(subtotal - per_guest * num_guests, 2)\n    bills[0].amount += remainder\n    return bills</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201686,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Text": "A {{c1::Table}} has a TableStatus of {{c2::AVAILABLE}}, {{c3::RESERVED}}, or {{c4::OCCUPIED}}, and is linked to at most one active {{c5::Order}} at a time.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201687,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Text": "A typical OrderItem status progression is {{c1::PLACED}} → {{c2::PREPARING}} → {{c3::READY}} → {{c4::SERVED}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201699,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-restaurant"
+   ],
+   "fields": {
+    "Front": "MenuItem (Restaurant Management)",
+    "Back": "A single orderable dish or drink with a name, description, price, category, and availability flag; Menu is a collection of MenuItems, often grouped by category."
+   }
+  }
+ ]
+}

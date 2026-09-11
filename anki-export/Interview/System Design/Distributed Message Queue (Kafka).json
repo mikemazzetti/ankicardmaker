@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Distributed Message Queue (Kafka)",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061204160,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements of a distributed message queue like Kafka?",
+    "Back": "Producers publish messages to topics; consumers subscribe and read messages, with support for multiple independent consumers reading the same stream."
+   }
+  },
+  {
+   "noteId": 1789061204161,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "If a topic ingests 1M messages/sec at 1KB each, what's the raw ingestion bandwidth?",
+    "Back": "~1GB/sec (1M × 1KB), which drives how many partitions/brokers and how much disk throughput are needed."
+   }
+  },
+  {
+   "noteId": 1789061204162,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "With 7-day retention at 1GB/sec average ingestion, roughly how much disk storage is needed before replication?",
+    "Back": "~604TB (1GB/sec × 86,400 sec/day × 7 days), then multiplied by the replication factor."
+   }
+  },
+  {
+   "noteId": 1789061204163,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What are the two primary client-facing operations in a Kafka-like queue's API?",
+    "Back": "produce(topic, key, value) to publish a message, and poll()/consume(topic, partition, offset) to read messages."
+   }
+  },
+  {
+   "noteId": 1789061204164,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "Why does produce() optionally take a message key rather than just a value?",
+    "Back": "The key determines which partition the message is routed to (via hashing), so related messages (e.g. same user_id) land in the same partition and stay ordered."
+   }
+  },
+  {
+   "noteId": 1789061204165,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What is the fundamental unit of storage and parallelism within a Kafka topic?",
+    "Back": "The partition — an ordered, append-only log of messages, each identified by a monotonically increasing offset."
+   }
+  },
+  {
+   "noteId": 1789061204166,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What three things uniquely identify a message's position for a consumer to resume reading?",
+    "Back": "Topic, partition number, and offset within that partition."
+   }
+  },
+  {
+   "noteId": 1789061204167,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "Why does splitting a topic into multiple partitions increase throughput?",
+    "Back": "Each partition can be written to and read from independently, often on different brokers, letting producers and consumers parallelize across partitions."
+   }
+  },
+  {
+   "noteId": 1789061204168,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What does a consumer need to persist to resume reading after a crash without reprocessing or skipping messages?",
+    "Back": "Its committed offset per partition — the position of the last successfully processed message."
+   }
+  },
+  {
+   "noteId": 1789061204169,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What guarantee does a consumer group provide when multiple consumer instances share the group?",
+    "Back": "Each partition is consumed by exactly one consumer instance within the group at a time, so the group collectively processes each message once while scaling reads horizontally."
+   }
+  },
+  {
+   "noteId": 1789061204170,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What happens when a new consumer joins or an existing one leaves a consumer group?",
+    "Back": "A rebalance is triggered, redistributing partition ownership across the group's remaining/new consumers."
+   }
+  },
+  {
+   "noteId": 1789061204171,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What is Kafka's ordering guarantee scope — global across a topic, or something narrower?",
+    "Back": "Ordering is only guaranteed within a single partition, not across the whole topic."
+   }
+  },
+  {
+   "noteId": 1789061204172,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "How do you guarantee all events for a given entity (e.g. one user) are processed in order?",
+    "Back": "Use that entity's ID as the partition key so all its events hash to the same partition, preserving per-entity order."
+   }
+  },
+  {
+   "noteId": 1789061204173,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What does acks=all mean for a producer's write durability, and what does it look like configured?",
+    "Back": "The producer waits for the write to be acknowledged by all in-sync replicas, not just the leader, before considering the write successful, maximizing durability at the cost of latency.<pre><code>acks=all\nmin.insync.replicas=2</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061204174,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What becomes a bottleneck if a topic has too few partitions relative to consumer count?",
+    "Back": "Consumer parallelism is capped at the number of partitions — extra consumer instances beyond that count sit idle."
+   }
+  },
+  {
+   "noteId": 1789061204175,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What's a common bottleneck from having a single very hot partition due to skewed key distribution?",
+    "Back": "That partition's broker becomes a throughput/latency hotspot even though the cluster overall has capacity; mitigate with a better partitioning key or key salting."
+   }
+  },
+  {
+   "noteId": 1789061204176,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What's the tradeoff of acks=1 vs acks=all for producers?",
+    "Back": "acks=1 (leader only) gives lower latency and higher throughput but risks losing the message if the leader fails before followers replicate it; acks=all is safer but slower."
+   }
+  },
+  {
+   "noteId": 1789061204177,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "What's the tradeoff of increasing the partition count for a topic?",
+    "Back": "More partitions increase parallelism and throughput, but add overhead: more open file handles, longer leader-election/rebalance times, more metadata."
+   }
+  },
+  {
+   "noteId": 1789061204178,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Text": "A message queue's key non-functional requirements are {{c1::durability}} (no message loss), {{c2::high throughput}}, {{c3::horizontal scalability}}, and {{c4::configurable ordering guarantees}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204179,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Text": "Core components: {{c1::producers}} (publish messages), {{c2::brokers}} (store partitions, serve reads/writes), {{c3::consumer groups}} (coordinated parallel readers), and a {{c4::metadata/coordination service}} (e.g. a Raft-based controller) tracking partition leadership.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204180,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Text": "Kafka-style durability relies on {{c1::replicating each partition across multiple brokers}}, electing a {{c2::leader replica}} that handles reads/writes, with {{c3::follower replicas}} that replicate the log and can be promoted if the leader fails.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204190,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-message-queue"
+   ],
+   "fields": {
+    "Front": "In-sync replica (ISR)",
+    "Back": "A follower replica fully caught up with the partition leader's log within a configured lag threshold, and thus eligible to be promoted to leader on failover without data loss."
+   }
+  }
+ ]
+}

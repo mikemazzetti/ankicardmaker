@@ -1,0 +1,241 @@
+{
+ "deck": "Interview::Resume Prep::Pandas",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000602310,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a pandas <code>Series</code>?",
+    "Back": "A 1-D labeled array that can hold any data type — essentially a single column with an index."
+   }
+  },
+  {
+   "noteId": 1789000602311,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the key difference between <code>.loc</code> and <code>.iloc</code> in pandas?",
+    "Back": "<code>.loc</code> selects by label (index/column name); <code>.iloc</code> selects by integer position."
+   }
+  },
+  {
+   "noteId": 1789000602312,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you select rows where column <code>age</code> is greater than 30, using boolean indexing?",
+    "Back": "<pre><code>df[df['age'] &gt; 30]</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602313,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you select the value at row label <code>'x'</code> and column <code>'y'</code> using <code>.loc</code>?",
+    "Back": "<code>df.loc['x', 'y']</code>"
+   }
+  },
+  {
+   "noteId": 1789000602314,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>df.groupby('col').agg({'a': 'sum', 'b': 'mean'})</code> do?",
+    "Back": "Groups rows by <code>col</code>, then computes the sum of column <code>a</code> and the mean of column <code>b</code> within each group."
+   }
+  },
+  {
+   "noteId": 1789000602315,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an inner merge of <code>df1</code> and <code>df2</code> on column <code>'id'</code>?",
+    "Back": "<code>pd.merge(df1, df2, on='id', how='inner')</code>"
+   }
+  },
+  {
+   "noteId": 1789000602316,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Which method returns a boolean mask of missing values in a DataFrame?",
+    "Back": "<code>df.isna()</code> (alias <code>df.isnull()</code>)"
+   }
+  },
+  {
+   "noteId": 1789000602317,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you drop all rows in a DataFrame that contain any missing values?",
+    "Back": "<code>df.dropna()</code>"
+   }
+  },
+  {
+   "noteId": 1789000602318,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you fill missing values in column <code>'x'</code> with that column's mean?",
+    "Back": "<code>df['x'] = df['x'].fillna(df['x'].mean())</code>"
+   }
+  },
+  {
+   "noteId": 1789000602319,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is <code>df['col'].apply(func)</code> generally slower than an equivalent vectorized operation like <code>df['col'] * 2</code>?",
+    "Back": "<code>apply</code> calls a Python function once per row/element (an interpreted loop), while vectorized operations run across the whole array at once in optimized C/NumPy code."
+   }
+  },
+  {
+   "noteId": 1789000602320,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you read a CSV file into a pandas DataFrame?",
+    "Back": "<code>df = pd.read_csv('file.csv')</code>"
+   }
+  },
+  {
+   "noteId": 1789000602321,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>df['col'].value_counts()</code> return?",
+    "Back": "A Series mapping each unique value in <code>col</code> to its count, sorted descending by default."
+   }
+  },
+  {
+   "noteId": 1789000602322,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is \"method chaining\" in pandas?",
+    "Back": "Calling multiple DataFrame methods in one expression (e.g. <code>df.dropna().groupby('x').sum()</code>) instead of assigning intermediate variables at each step."
+   }
+  },
+  {
+   "noteId": 1789000602323,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you reset a DataFrame's index after filtering, discarding the old index?",
+    "Back": "<code>df = df.reset_index(drop=True)</code>"
+   }
+  },
+  {
+   "noteId": 1789000602324,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the structural difference between a pandas Series and a single-column DataFrame?",
+    "Back": "A Series is 1-D (values + an index, one optional name); a single-column DataFrame is 2-D (has a column label) — selecting with double brackets <code>df[['col']]</code> keeps the 2-D shape instead of returning a Series."
+   }
+  },
+  {
+   "noteId": 1789000602325,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "pandas <code>DataFrame</code>",
+    "Back": "A 2-D labeled data structure with columns that can each hold different data types — like a table or spreadsheet."
+   }
+  },
+  {
+   "noteId": 1789000639963,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In pandas, {{c1::merge}} combines two DataFrames on common column(s)/keys (like a SQL join), while {{c2::join}} combines DataFrames based on their index by default.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639964,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "pandas",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Chained indexing like {{c1::df[df.a &gt; 0]['b'] = 1}} can raise a <code>SettingWithCopyWarning</code> in pandas, because the first indexing operation may return a copy rather than a view of the original DataFrame.",
+    "Extra": "Use <code>.loc</code> in one step instead: <code>df.loc[df.a &gt; 0, 'b'] = 1</code>"
+   }
+  }
+ ]
+}

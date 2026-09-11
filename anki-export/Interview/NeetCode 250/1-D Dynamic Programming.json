@@ -1,0 +1,245 @@
+{
+ "deck": "Interview::NeetCode 250::1-D Dynamic Programming",
+ "note_count": 17,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585628,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-climbing-stairs",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A frog hops up a flight of steps, and each hop covers either one step or two. In how many distinct ways can it reach the very top of a staircase that is N steps tall?",
+    "Back": "<b>Maps to:</b> Bottom-up counting with two rolling values (Climbing Stairs).<br><br><b>Model it:</b> Ways to reach step n = ways to reach n-1 plus ways to reach n-2, the Fibonacci recurrence.<br><br><b>Approach &amp; variations:</b><ul><li>Each step is reachable from one-below or two-below, so add those two counts.</li><li>Seed with 1 way to stand at the bottom and 1 way to reach step one.</li><li>Keep only the last two totals and roll them forward — no full table needed.</li><li>This is literally the Fibonacci sequence in disguise.</li></ul><b>Time:</b> O(n) — one pass computing each step's count once.<br><b>Space:</b> O(1) — two rolling counters."
+   }
+  },
+  {
+   "noteId": 1788998585629,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-min-cost-climbing-stairs",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hiker climbs a staircase where standing on each step costs a posted toll, and from a step she may stride up one or two steps. She may start from either of the first two steps. What is the cheapest total toll to step past the top?",
+    "Back": "<b>Maps to:</b> 1-D DP over minimum accumulated cost (Min Cost Climbing Stairs).<br><br><b>Model it:</b> Min cost to reach a step = its own toll plus the cheaper of arriving from one or two steps below.<br><br><b>Approach &amp; variations:</b><ul><li>Cost to reach step i = toll[i] + min(reach i-1, reach i-2).</li><li>The goal sits just beyond the last step, so answer = min(reach last, reach second-to-last).</li><li>Start values are the first two tolls since either is a legal launch point.</li><li>Roll two variables forward instead of storing every step.</li></ul><b>Time:</b> O(n) — each step's best arrival cost computed once.<br><b>Space:</b> O(1) — two rolling values."
+   }
+  },
+  {
+   "noteId": 1788998585630,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-n-th-tribonacci-number",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A colony of rabbits grows so that each month's newborn count equals the sum of the newborns from the previous three months. Starting from 0, then 1, then 1, what is the count in month N?",
+    "Back": "<b>Maps to:</b> Rolling 1-D recurrence over three predecessors (N-th Tribonacci Number).<br><br><b>Model it:</b> T(n) = T(n-1) + T(n-2) + T(n-3) with seeds 0, 1, 1.<br><br><b>Approach &amp; variations:</b><ul><li>Like Fibonacci but summing the previous three terms instead of two.</li><li>Handle the tiny base cases (0, 1, 2) directly.</li><li>Slide a window of three values forward, one addition per month.</li><li>No table required — three variables suffice.</li></ul><b>Time:</b> O(n) — one addition per term up to n.<br><b>Space:</b> O(1) — three rolling values."
+   }
+  },
+  {
+   "noteId": 1788998585631,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-house-robber",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cat burglar walks down a single row of houses, each stashing a known amount of loot, but any two houses next door to each other share an alarm that trips if both are hit. Choosing carefully, what is the most loot he can carry off?",
+    "Back": "<b>Maps to:</b> 1-D DP with take/skip choice (House Robber).<br><br><b>Model it:</b> Best loot through house i = max of skipping it, or taking it plus the best through i-2.<br><br><b>Approach &amp; variations:</b><ul><li>At each house choose max(skip = best so far, rob = this house + best two back).</li><li>Track two rolling bests: including the previous house and excluding it.</li><li>No two adjacent picks allowed, which forces the i-2 gap.</li><li>Answer is the better of the two rolling values at the end.</li></ul><b>Time:</b> O(n) — one decision per house.<br><b>Space:</b> O(1) — two rolling bests."
+   }
+  },
+  {
+   "noteId": 1788998585632,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-house-robber-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cat burglar faces houses arranged in a closed ring, each holding loot, where neighbors share an alarm — and because the ring wraps, the first and last houses are also neighbors. What is the most loot he can grab without triggering two adjacent alarms?",
+    "Back": "<b>Maps to:</b> Linear take/skip DP run twice for the circular constraint (House Robber II).<br><br><b>Model it:</b> A circle means first and last conflict, so solve two lines: houses[0..n-2] and houses[1..n-1], take the max.<br><br><b>Approach &amp; variations:</b><ul><li>Because the ends touch, you can never rob both the first and last house.</li><li>Run the ordinary line-robbery on the row minus the last house, then on the row minus the first.</li><li>Answer is the larger of the two runs.</li><li>Guard the single-house case where both ranges would be empty.</li></ul><b>Time:</b> O(n) — two linear passes.<br><b>Space:</b> O(1) — rolling values per pass."
+   }
+  },
+  {
+   "noteId": 1788998585633,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-longest-palindromic-substring",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A jeweler has a long strand of colored beads and wants to cut out the single longest continuous run that reads identically forward and backward. Which stretch of beads is it?",
+    "Back": "<b>Maps to:</b> Expand-around-center over each position (Longest Palindromic Substring).<br><br><b>Model it:</b> Find the longest contiguous slice of the string that is a mirror image of itself.<br><br><b>Approach &amp; variations:</b><ul><li>Treat every bead (and every gap between two beads) as a possible mirror center.</li><li>Grow outward from each center while the two sides match, tracking the widest.</li><li>Handle odd-length (single center) and even-length (two-bead center) cases.</li><li>A DP table over all pairs also works but expand-around-center is simpler at O(1) space.</li></ul><b>Time:</b> O(n^2) — n centers, each expanding up to n.<br><b>Space:</b> O(1) — just track the best start and length."
+   }
+  },
+  {
+   "noteId": 1788998585634,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-palindromic-substrings",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A jeweler examines a strand of colored beads and wants to tally every continuous run — of any length, including single beads — that reads the same in both directions. How many such runs are there in total?",
+    "Back": "<b>Maps to:</b> Expand-around-center counting (Palindromic Substrings).<br><br><b>Model it:</b> Count all contiguous slices of the string that are mirror images of themselves.<br><br><b>Approach &amp; variations:</b><ul><li>For each possible center, expand outward and increment the count on every matching pair.</li><li>Use both single-bead centers and between-bead centers.</li><li>Every successful expansion is one more valid run to add.</li><li>Single beads always count, giving at least n.</li></ul><b>Time:</b> O(n^2) — n centers, each expanding up to n.<br><b>Space:</b> O(1) — a running counter."
+   }
+  },
+  {
+   "noteId": 1788998585635,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-decode-ways",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A courier receives a message written only as digits, where 1 through 26 each stand for a letter of the alphabet. Reading left to right, digits can be grouped one or two at a time into letters. In how many distinct ways can the whole string of digits be turned back into letters?",
+    "Back": "<b>Maps to:</b> 1-D DP over decode counts with validity checks (Decode Ways).<br><br><b>Model it:</b> Ways to decode up to position i = ways using a valid single digit plus ways using a valid two-digit pair.<br><br><b>Approach &amp; variations:</b><ul><li>ways[i] += ways[i-1] if the single digit is 1-9 (not a leading zero).</li><li>ways[i] += ways[i-2] if the two-digit pair is 10-26.</li><li>A lone zero that cannot pair is a dead end (zero ways).</li><li>Roll two counters forward; seed one way for the empty prefix.</li></ul><b>Time:</b> O(n) — constant work per digit.<br><b>Space:</b> O(1) — two rolling counters."
+   }
+  },
+  {
+   "noteId": 1788998585636,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-coin-change",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cashier has unlimited coins in a few fixed denominations and must pay out an exact amount using as few coins as possible. What is the fewest coins that make the amount, or is it impossible?",
+    "Back": "<b>Maps to:</b> Unbounded-knapsack 1-D DP minimizing count (Coin Change).<br><br><b>Model it:</b> Fewest coins for amount a = 1 + min over denominations d of fewest coins for a-d.<br><br><b>Approach &amp; variations:</b><ul><li>Build up best[0..amount]; best[0] = 0 coins.</li><li>For each amount, try every denomination and take 1 + best[amount - d].</li><li>Coins are reusable, so iterate amounts outward allowing repeats.</li><li>If no combination reaches the amount, report impossible (infinity sentinel).</li></ul><b>Time:</b> O(amount * coins) — every amount tries every denomination.<br><b>Space:</b> O(amount) — one entry per sub-amount."
+   }
+  },
+  {
+   "noteId": 1788998585637,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-maximum-product-subarray",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A gambler walks past a row of betting tables, each multiplying his stake by a posted factor (some less than one, some negative, flipping his fortune). He must play a single unbroken run of consecutive tables. Which run multiplies his money the most?",
+    "Back": "<b>Maps to:</b> Rolling max/min product tracking sign flips (Maximum Product Subarray).<br><br><b>Model it:</b> Find the contiguous slice whose product of values is largest, where negatives can flip a min into a max.<br><br><b>Approach &amp; variations:</b><ul><li>Track both the largest and smallest running product ending here.</li><li>A negative factor swaps the roles of current max and min, so keep both.</li><li>At each table take max(value, value*prevMax, value*prevMin).</li><li>Update a global best each step; zeros reset the run.</li></ul><b>Time:</b> O(n) — one pass maintaining two products.<br><b>Space:</b> O(1) — running max, min, and best."
+   }
+  },
+  {
+   "noteId": 1788998585638,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-word-break",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A scribe finds a long banner of letters with every space removed, and a dictionary of allowed words. Can the unbroken banner be sliced into a sequence of dictionary words with nothing left over?",
+    "Back": "<b>Maps to:</b> 1-D DP over reachable break points (Word Break).<br><br><b>Model it:</b> Position i is reachable if some dictionary word ends exactly at i and its start was already reachable.<br><br><b>Approach &amp; variations:</b><ul><li>breakable[i] is true if a valid word fills [j, i) and breakable[j] is true.</li><li>Sweep positions left to right, checking each dictionary word as a suffix.</li><li>Store dictionary words in a set for O(1) membership.</li><li>Answer is whether the end of the banner is reachable.</li></ul><b>Time:</b> O(n^2 * L) — each cut point tests each earlier point and word length.<br><b>Space:</b> O(n) — reachability flags (plus the word set)."
+   }
+  },
+  {
+   "noteId": 1788998585639,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-longest-increasing-subsequence",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A collector lines up figurines in the order she bought them, each with a height. She wants to keep the longest possible run, in that same left-to-right order (not necessarily neighbors), whose heights strictly increase. How long is that run?",
+    "Back": "<b>Maps to:</b> Patience-sorting / binary-search DP (Longest Increasing Subsequence).<br><br><b>Model it:</b> Find the longest strictly increasing subsequence (order preserved, gaps allowed) of the height list.<br><br><b>Approach &amp; variations:</b><ul><li>O(n^2): best[i] = 1 + max best[j] for earlier shorter figurines.</li><li>O(n log n): keep tails of increasing piles, binary-search each height into place.</li><li>Replace the first tail >= current height, or append if it beats all.</li><li>The number of piles equals the longest run's length.</li></ul><b>Time:</b> O(n log n) — a binary search per figurine (or O(n^2) naive).<br><b>Space:</b> O(n) — the piles/tails array."
+   }
+  },
+  {
+   "noteId": 1788998585640,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-partition-equal-subset-sum",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two siblings inherit a pile of gold bars of various weights and want to split them into two heaps of exactly equal total weight, each bar going wholly into one heap. Is a perfectly even split possible?",
+    "Back": "<b>Maps to:</b> Subset-sum 0/1 knapsack on a boolean 1-D DP (Partition Equal Subset Sum).<br><br><b>Model it:</b> A fair split exists iff some subset of bars sums to exactly half the total weight.<br><br><b>Approach &amp; variations:</b><ul><li>If the total is odd, an even split is impossible immediately.</li><li>Target is total/2; ask whether some subset reaches it.</li><li>Boolean DP: reachable[s] true if sum s is achievable; each bar used at most once.</li><li>Iterate sums downward per bar to avoid reusing it.</li></ul><b>Time:</b> O(n * sum) — each bar sweeps the reachable sums.<br><b>Space:</b> O(sum) — a boolean row over half-total sums."
+   }
+  },
+  {
+   "noteId": 1788998585641,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-combination-sum-iv",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A drummer wants to fill exactly N beats using notes of a few fixed durations, drawing each duration as often as he likes. Because order matters — a short-then-long pattern differs from long-then-short — how many distinct ordered sequences fill the N beats exactly?",
+    "Back": "<b>Maps to:</b> Ordered-count unbounded DP (Combination Sum IV).<br><br><b>Model it:</b> Number of ordered sequences summing to target = sum over durations d of sequences summing to target-d.<br><br><b>Approach &amp; variations:</b><ul><li>ways[t] = sum of ways[t - d] over every duration d.</li><li>Loop targets on the outside so different orders are counted separately.</li><li>Seed ways[0] = 1 (the empty sequence).</li><li>This counts permutations, unlike the classic combination-sum which counts sets.</li></ul><b>Time:</b> O(target * durations) — each target tries each duration.<br><b>Space:</b> O(target) — one count per beat total."
+   }
+  },
+  {
+   "noteId": 1788998585642,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-perfect-squares",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A tiler must cover a strip of exactly N units using square tiles whose side lengths are whole numbers (so tiles cover 1, 4, 9, 16, ... units), with unlimited tiles of each size. What is the fewest tiles that sum to exactly N?",
+    "Back": "<b>Maps to:</b> Unbounded-knapsack 1-D DP minimizing count (Perfect Squares).<br><br><b>Model it:</b> Fewest squares summing to n = 1 + min over squares s<=n of fewest squares for n-s.<br><br><b>Approach &amp; variations:</b><ul><li>best[i] = 1 + min best[i - k*k] over all squares k*k <= i.</li><li>Squares are reusable, so this is an unbounded coin-change with square denominations.</li><li>Seed best[0] = 0.</li><li>Lagrange guarantees the answer is at most 4, but DP finds the exact minimum.</li></ul><b>Time:</b> O(n * sqrt(n)) — each total tries every square up to it.<br><b>Space:</b> O(n) — one entry per total."
+   }
+  },
+  {
+   "noteId": 1788998585643,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-integer-break",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A farmer has a rope of whole length N and must cut it into at least two whole-length pieces, then multiply all the piece lengths together. How should he cut it so that product is as large as possible?",
+    "Back": "<b>Maps to:</b> 1-D DP (or math) over max product of a partition (Integer Break).<br><br><b>Model it:</b> Best product for n = max over first cut i of i*(n-i) or i*best(n-i), requiring at least one cut.<br><br><b>Approach &amp; variations:</b><ul><li>DP: best[n] = max over i in 1..n-1 of max(i*(n-i), i*best[n-i]).</li><li>The inner max chooses whether to cut the remainder further.</li><li>Greedy insight: break into as many 3s as possible, using 2s for the remainder.</li><li>Force at least one cut so n itself is not the answer.</li></ul><b>Time:</b> O(n^2) DP — each length tries each first cut (O(n) greedy).<br><b>Space:</b> O(n) — the product table (O(1) greedy)."
+   }
+  },
+  {
+   "noteId": 1788998585644,
+   "modelName": "Basic",
+   "tags": [
+    "1-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-stone-game-iii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two rivals take turns at a row of treasure chests, each holding a known (possibly negative) value, always taking from the left end. On a turn a player scoops the next one, two, or three chests, then it is the other's turn. Both play to maximize their own total. Who ends ahead, or is it a tie?",
+    "Back": "<b>Maps to:</b> Suffix game DP on score difference (Stone Game III).<br><br><b>Model it:</b> From index i, the current player maximizes (sum of next k chests) minus the opponent's best from i+k, for k in 1..3.<br><br><b>Approach &amp; variations:</b><ul><li>Define best[i] = the score lead the mover can secure from chest i onward.</li><li>best[i] = max over k of prefixTake(k) - best[i+k].</li><li>Fill from the right end back to the start.</li><li>Sign of best[0] decides win/lose/tie.</li></ul><b>Time:</b> O(n) — each index tries three take sizes.<br><b>Space:</b> O(n) — the suffix DP array (reducible to O(1))."
+   }
+  }
+ ]
+}

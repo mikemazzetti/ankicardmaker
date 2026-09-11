@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Traffic Signal Controller",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202050,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what are the core functional requirements to clarify for a Traffic Signal Controller system?",
+    "Back": "1) Control signal lights at one or more intersections. 2) Support multiple directions (N/S/E/W) with independent light states. 3) Cycle lights in a safe, timed sequence (green&rarr;yellow&rarr;red). 4) Support emergency-vehicle preemption. 5) Support manual/maintenance override (e.g. flashing red on power failure)."
+   }
+  },
+  {
+   "noteId": 1789061202051,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "What should you explicitly mark out of scope when designing a Traffic Signal Controller in a 45-minute interview?",
+    "Back": "Adaptive/ML-based timing optimization, pedestrian-button hardware integration, vehicle-detection sensor hardware, and city-wide synchronization across many intersections &mdash; mention them as extensions, don't design them in depth."
+   }
+  },
+  {
+   "noteId": 1789061202052,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>SignalController</code> class?",
+    "Back": "Owns the timing loop: advances the active <code>SignalPhase</code>, tells each <code>TrafficSignal</code> to transition its light, enforces the all-red clearance interval between phases, and exposes hooks for emergency preemption and manual override."
+   }
+  },
+  {
+   "noteId": 1789061202053,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>TrafficSignal</code> class, as opposed to <code>SignalController</code>?",
+    "Back": "It represents the physical light for one direction. It only knows its own current <code>LightColor</code>/state and how to transition to the next one &mdash; it has no knowledge of other directions or the overall phase schedule."
+   }
+  },
+  {
+   "noteId": 1789061202054,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "What fields does a <code>SignalPhase</code> typically hold?",
+    "Back": "The set of <code>Direction</code>s that are GREEN during this phase, and a <code>durationSeconds</code> for how long the phase lasts before the controller advances to the next phase (optionally, which directions get a protected left-turn arrow)."
+   }
+  },
+  {
+   "noteId": 1789061202055,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "How does <code>Intersection</code> relate to <code>TrafficSignal</code>?",
+    "Back": "Composition: an <code>Intersection</code> owns exactly one <code>TrafficSignal</code> per approach direction (e.g. a <code>Map&lt;Direction, TrafficSignal&gt;</code>); the signals cannot exist independently of the intersection."
+   }
+  },
+  {
+   "noteId": 1789061202056,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "How does <code>SignalController</code> relate to <code>SignalPhase</code>?",
+    "Back": "A <code>SignalController</code> holds an ordered, cyclic list of <code>SignalPhase</code> objects and steps through them one at a time, applying each phase's green directions to the intersection for its configured duration."
+   }
+  },
+  {
+   "noteId": 1789061202057,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "Which design pattern best fits the light-color transitions of a single <code>TrafficSignal</code>, and why?",
+    "Back": "The <b>State</b> pattern. Each color (Red/Yellow/Green) is a state object that knows only its own duration and which state comes next; <code>TrafficSignal.transition()</code> just delegates to <code>currentState.next()</code>. This avoids a large switch/if-else and makes adding a new state (e.g. FlashingRed) a matter of adding one class, without touching existing ones."
+   }
+  },
+  {
+   "noteId": 1789061202058,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "Besides State, what secondary pattern helps notify external components (a pedestrian signal, a monitoring dashboard) when a light changes, and why?",
+    "Back": "<b>Observer</b>. The signal maintains a list of listeners and calls <code>onLightChanged(direction, newColor)</code> on each transition, decoupling the core signal logic from whatever consumes the change event."
+   }
+  },
+  {
+   "noteId": 1789061202059,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "What two methods form the minimal public API of the <code>LightState</code> interface in a State-pattern <code>TrafficSignal</code>?",
+    "Back": "<code>getColor()</code> &mdash; returns the <code>LightColor</code> this state represents &mdash; and <code>next()</code> &mdash; returns the <code>LightState</code> to transition to once this state's duration elapses."
+   }
+  },
+  {
+   "noteId": 1789061202060,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "What method does <code>SignalController</code> expose to handle an approaching emergency vehicle, and what must it do internally?",
+    "Back": "<code>preempt(Direction direction)</code> &mdash; pauses the normal phase cycle, forces that direction's signal to GREEN and all conflicting directions to RED, then safely resumes the normal cycle (respecting all-red clearance) once preemption ends."
+   }
+  },
+  {
+   "noteId": 1789061202061,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "Why must <code>SignalController</code> insert an all-red clearance interval between phases instead of switching one direction's green directly to another direction's green?",
+    "Back": "Vehicles already in the intersection from the ending phase need time to clear before cross-traffic gets a green light &mdash; without the all-red gap, two conflicting directions could effectively be green/entering at once, causing collisions."
+   }
+  },
+  {
+   "noteId": 1789061202062,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "On detecting a power failure or hardware fault, what should <code>SignalController</code> do, and why not simply turn all lights off?",
+    "Back": "Switch every <code>TrafficSignal</code> into <code>FLASHING_RED</code> mode (each direction treated like a stop sign) rather than going dark &mdash; an unlit intersection gives drivers no cue that caution is required, which is far more dangerous than a flashing-red fail-safe."
+   }
+  },
+  {
+   "noteId": 1789061202063,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "Edge case: a technician wants to force a specific phase manually from a control panel. How should the design support this without breaking the automatic cycle logic?",
+    "Back": "Add a <code>manualOverride(SignalPhase phase)</code> entry point that pauses the controller's automatic timer loop (the same pause mechanism used for emergency preemption) and lets the operator hold a phase; resuming exits override mode and re-enters the normal cycle at a safe phase boundary (never mid-phase)."
+   }
+  },
+  {
+   "noteId": 1789061202064,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "(Java) Implement the <code>LightState</code> interface and its <code>GreenState</code> concrete implementation for the State-pattern <code>TrafficSignal</code>.",
+    "Back": "<pre><code>public interface LightState {\n    LightColor getColor();\n    LightState next();\n    int getDurationSeconds();\n}\n\npublic class GreenState implements LightState {\n    @Override\n    public LightColor getColor() { return LightColor.GREEN; }\n\n    @Override\n    public LightState next() { return new YellowState(); }\n\n    @Override\n    public int getDurationSeconds() { return 30; }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202065,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "(Python) Implement <code>TrafficSignal</code> with <code>tick()</code> and <code>transition()</code> driving the State-pattern light changes.",
+    "Back": "<pre><code>class TrafficSignal:\n    def __init__(self, direction, initial_state):\n        self.direction = direction\n        self.state = initial_state\n        self.elapsed = 0\n\n    def tick(self, seconds=1):\n        self.elapsed += seconds\n        if self.elapsed &gt;= self.state.get_duration_seconds():\n            self.transition()\n\n    def transition(self):\n        self.state = self.state.next()\n        self.elapsed = 0\n\n    def color(self):\n        return self.state.get_color()</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202066,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "(Java) Implement <code>SignalController.tick()</code>, called once per second, driving the phase cycle with an all-red clearance interval between phases.",
+    "Back": "<pre><code>public class SignalController {\n    private static final int ALL_RED_SECONDS = 2;\n    private List&lt;SignalPhase&gt; phases;\n    private int currentPhaseIndex = 0;\n    private int elapsedInPhase = 0;\n    private boolean inAllRedClearance = false;\n\n    public void tick() {\n        elapsedInPhase++;\n        SignalPhase phase = phases.get(currentPhaseIndex);\n\n        if (inAllRedClearance) {\n            if (elapsedInPhase &gt;= ALL_RED_SECONDS) {\n                advanceToNextPhase();\n            }\n            return;\n        }\n\n        if (elapsedInPhase &gt;= phase.getDurationSeconds()) {\n            setAllDirectionsRed();\n            inAllRedClearance = true;\n            elapsedInPhase = 0;\n        }\n    }\n\n    private void advanceToNextPhase() {\n        currentPhaseIndex = (currentPhaseIndex + 1) % phases.size();\n        inAllRedClearance = false;\n        elapsedInPhase = 0;\n        applyPhase(phases.get(currentPhaseIndex));\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202067,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Front": "(Java) Implement <code>SignalController.preempt()</code> for emergency-vehicle handling, saving state so the normal cycle can resume afterward.",
+    "Back": "<pre><code>public class SignalController {\n    private SignalPhase savedPhase;\n    private int savedElapsed;\n    private boolean preempted = false;\n\n    public void preempt(Direction emergencyDirection) {\n        savedPhase = phases.get(currentPhaseIndex);\n        savedElapsed = elapsedInPhase;\n        preempted = true;\n\n        setAllDirectionsRed();\n        getSignal(emergencyDirection).forceColor(LightColor.GREEN);\n    }\n\n    public void resumeFromPreemption() {\n        setAllDirectionsRed();      // all-red clearance first\n        preempted = false;\n        applyPhase(savedPhase);\n        elapsedInPhase = savedElapsed;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202068,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Text": "The core classes in a Traffic Signal Controller design are {{c1::Intersection}} (owns the signals for a junction), {{c2::TrafficSignal}} (one per direction, holds current light state), {{c3::SignalController}} (drives the timing/phase cycle), and {{c4::SignalPhase}} (defines which directions are green together and for how long).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202069,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-traffic-signal"
+   ],
+   "fields": {
+    "Text": "The <code>LightColor</code> enum for a traffic signal is typically {{c1::RED}}, {{c2::YELLOW}}, {{c3::GREEN}}, plus a fail-safe value {{c4::FLASHING_RED}} used during power failure or maintenance.",
+    "Extra": ""
+   }
+  }
+ ]
+}

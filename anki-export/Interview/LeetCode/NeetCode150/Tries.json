@@ -1,0 +1,65 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::Tries",
+ "note_count": 3,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038121268,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Implement Trie (Prefix Tree)",
+    "id": "208",
+    "slug": "implement-trie-prefix-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121274,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Design Add and Search Words Data Structure",
+    "id": "211",
+    "slug": "design-add-and-search-words-data-structure",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, depth-first-search, design, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121276,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "matrix",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Word Search II",
+    "id": "212",
+    "slug": "word-search-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, backtracking, trie, matrix",
+    "paid": "no"
+   }
+  }
+ ]
+}

@@ -1,0 +1,203 @@
+{
+ "deck": "Interview::NeetCode 250::Linked List",
+ "note_count": 14,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585394,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-reverse-a-linked-list",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A line of children hold hands in single file, and each child only knows who is directly ahead. You want the whole line to face the other way, so the last child becomes the leader and the leader becomes the tail. How do you flip who-holds-whom, one clasp at a time, without lining them up somewhere else?",
+    "Back": "<b>Maps to:</b> Iterative pointer reversal (Reverse Linked List).<br><br><b>Model it:</b> Given a singly linked list head, reverse the next-pointers so the old tail becomes the head.<br><br><b>Approach &amp; variations:</b><ul><li>Walk once keeping <code>prev</code>, <code>curr</code>, and a saved <code>next</code>.</li><li>At each node point <code>curr.next</code> back to <code>prev</code>, then advance all three.</li><li>Recursion works too but adds call-stack depth.</li></ul><b>Time:</b> O(n) — a single pass over every node.<br><b>Space:</b> O(1) — three reused pointers (recursive is O(n) stack)."
+   }
+  },
+  {
+   "noteId": 1788998585395,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-merge-two-sorted-linked-lists",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two separate single-file lines of runners are each already ordered shortest to tallest. You must weave them into one single line, still ordered shortest to tallest, without measuring anyone twice or copying the lines aside. How do you interleave them?",
+    "Back": "<b>Maps to:</b> Two-pointer merge (Merge Two Sorted Lists).<br><br><b>Model it:</b> Given two sorted linked lists, splice their nodes into one sorted list.<br><br><b>Approach &amp; variations:</b><ul><li>Use a dummy head; compare the two front nodes, attach the smaller, advance that list.</li><li>When one list empties, attach the remainder of the other whole.</li><li>Reuses existing nodes, so no new allocation is needed.</li></ul><b>Time:</b> O(n+m) — each node visited once.<br><b>Space:</b> O(1) — pointer splicing, ignoring the output list."
+   }
+  },
+  {
+   "noteId": 1788998585396,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-linked-list-cycle-detection",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You follow a trail of signposts, each pointing to the next place to visit. You suspect the trail secretly loops back on itself, so you would wander forever. Carrying no map and remembering only where you currently stand, how do you decide whether the trail eventually loops?",
+    "Back": "<b>Maps to:</b> Floyd's fast/slow pointers (Linked List Cycle).<br><br><b>Model it:</b> Detect whether a linked list contains a cycle using no extra memory.<br><br><b>Approach &amp; variations:</b><ul><li>Move a slow walker one step and a fast walker two steps.</li><li>If they ever stand together a loop exists; if the fast one reaches the end, there is none.</li><li>A visited-set also works but costs O(n) space.</li></ul><b>Time:</b> O(n) — the fast pointer laps the loop in linear steps.<br><b>Space:</b> O(1) — two pointers."
+   }
+  },
+  {
+   "noteId": 1788998585397,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-reorder-linked-list",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Guests are seated in one long row numbered 1,2,3,...,n. You must reseat them as first, last, second, second-last, third, third-last, alternating inward from each end. You may only change who sits next to whom, not copy the whole row elsewhere. How?",
+    "Back": "<b>Maps to:</b> Find middle + reverse second half + merge (Reorder List).<br><br><b>Model it:</b> Rearrange a linked list L0->L1->...->Ln into L0->Ln->L1->Ln-1->...<br><br><b>Approach &amp; variations:</b><ul><li>Find the middle with slow/fast pointers.</li><li>Reverse the second half in place.</li><li>Zip the two halves together, alternating one node from each.</li></ul><b>Time:</b> O(n) — three linear passes.<br><b>Space:</b> O(1) — in-place pointer surgery."
+   }
+  },
+  {
+   "noteId": 1788998585398,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-remove-node-from-end-of-linked-list",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A conga line snakes through a hall and you must pull out exactly the person who is Nth-from-the-back. You may only walk forward from the front, and you do not know the line's length beforehand. How do you find and remove them in a single walk?",
+    "Back": "<b>Maps to:</b> Two pointers with a fixed gap (Remove Nth Node From End of List).<br><br><b>Model it:</b> Delete the Nth-from-end node of a linked list in one pass.<br><br><b>Approach &amp; variations:</b><ul><li>Advance a lead pointer N steps first.</li><li>Move lead and a trailing pointer together until lead hits the end; trailing now sits just before the target.</li><li>Use a dummy head so removing the first person is handled cleanly.</li></ul><b>Time:</b> O(n) — a single traversal.<br><b>Space:</b> O(1) — two pointers."
+   }
+  },
+  {
+   "noteId": 1788998585399,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-copy-linked-list-with-random-pointer",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You must duplicate a scavenger-hunt trail where each clue points to the next clue AND also to one arbitrary other clue somewhere in the hunt. Your copy must mirror both kinds of pointing exactly, even though the arbitrary links may jump anywhere. How?",
+    "Back": "<b>Maps to:</b> Hash map old->new, or interleaved cloning (Copy List With Random Pointer).<br><br><b>Model it:</b> Deep-copy a linked list where each node has a next pointer and a random pointer to any node.<br><br><b>Approach &amp; variations:</b><ul><li>Map each original node to its clone, then wire next/random through the map.</li><li>O(1)-space trick: weave clones right after originals, set randoms via <code>orig.next</code>, then unweave.</li><li>Handle null random pointers.</li></ul><b>Time:</b> O(n) — a constant number of passes over the nodes.<br><b>Space:</b> O(n) with a map, or O(1) with interleaving."
+   }
+  },
+  {
+   "noteId": 1788998585400,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-add-two-numbers",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two people each hand you a number written on a strip of tape, but with the digits laid out backwards, ones-place first. Reading each strip front to back, produce a new backwards strip that is their sum, carrying as you go. How?",
+    "Back": "<b>Maps to:</b> Elementary addition with carry (Add Two Numbers).<br><br><b>Model it:</b> Two linked lists hold a number's digits in reverse order; return their sum as a linked list.<br><br><b>Approach &amp; variations:</b><ul><li>Walk both lists together, adding matching digits plus a running carry.</li><li>Each new node holds sum mod 10; the carry is sum/10.</li><li>Continue while either list remains or the carry is nonzero.</li></ul><b>Time:</b> O(max(n,m)) — one pass over the longer number.<br><b>Space:</b> O(max(n,m)) — the result list."
+   }
+  },
+  {
+   "noteId": 1788998585401,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-find-duplicate-integer",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "In a sealed room are n+1 raffle tickets whose numbers all fall between 1 and n, so at least one number must repeat. You may not alter the tickets and may hold only a couple at a time. Treat each ticket's number as an address pointing to another ticket, and find the repeated number.",
+    "Back": "<b>Maps to:</b> Floyd's cycle detection on value-as-index (Find the Duplicate Number).<br><br><b>Model it:</b> In an array of n+1 values in [1,n], find the duplicate by treating each value as a next-pointer.<br><br><b>Approach &amp; variations:</b><ul><li>Following value->index links forms a chain that must cycle, and the cycle's entrance is the duplicate.</li><li>Use slow/fast to find a meeting point, then walk from the start to find the entrance.</li><li>Avoids modifying the tickets and uses O(1) space.</li></ul><b>Time:</b> O(n) — linear cycle detection.<br><b>Space:</b> O(1) — two indices."
+   }
+  },
+  {
+   "noteId": 1788998585402,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-reverse-linked-list-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A single-file parade stretches down the street. You must flip the order of just the runners from the 3rd through the 7th position, leaving everyone before and after exactly where they stand, only re-linking who follows whom. How?",
+    "Back": "<b>Maps to:</b> In-place sublist reversal (Reverse Linked List II).<br><br><b>Model it:</b> Reverse only the nodes of a linked list between positions left and right.<br><br><b>Approach &amp; variations:</b><ul><li>Walk to the node just before position left, using a dummy head.</li><li>Reverse the segment by repeatedly moving the next node to the front of the segment.</li><li>Reconnect the reversed segment's ends to the untouched parts.</li></ul><b>Time:</b> O(n) — one pass to the region and through it.<br><b>Space:</b> O(1) — reversed in place."
+   }
+  },
+  {
+   "noteId": 1788998585403,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-design-circular-queue",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You run a small valet stand with exactly k parking spots arranged in a ring. Cars enter at the tail and leave from the front; when you reach the last spot you wrap around to reuse freed early spots. Design the controls to add, remove, peek at both ends, and report full or empty.",
+    "Back": "<b>Maps to:</b> Fixed-size ring buffer (Design Circular Queue).<br><br><b>Model it:</b> Implement a circular queue supporting enqueue, dequeue, front, rear, isFull, isEmpty.<br><br><b>Approach &amp; variations:</b><ul><li>Fixed array with a head index and a running count (or head/tail with modular arithmetic).</li><li>Wrap indices using modulo k.</li><li>Full when count == k; empty when count == 0.</li></ul><b>Time:</b> O(1) — every operation is index arithmetic.<br><b>Space:</b> O(k) — the fixed buffer."
+   }
+  },
+  {
+   "noteId": 1788998585404,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-lru-cache",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A tiny museum room can display only k artifacts. Each time a visitor views one it becomes freshest; when a new artifact arrives and the room is full, you retire whichever has gone longest without being viewed. Support instant lookup and instant retirement decisions.",
+    "Back": "<b>Maps to:</b> Hash map + doubly linked list (LRU Cache).<br><br><b>Model it:</b> Build a fixed-capacity cache with O(1) get and put that evicts the least-recently-used key.<br><br><b>Approach &amp; variations:</b><ul><li>A doubly linked list orders items by recency; a map from key to node gives O(1) access.</li><li>On get/put, move the node to the front (most recent).</li><li>When over capacity, drop the tail node and its map entry.</li></ul><b>Time:</b> O(1) — map lookup plus constant list splicing.<br><b>Space:</b> O(k) — capacity nodes plus the map."
+   }
+  },
+  {
+   "noteId": 1788998585405,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-lfu-cache",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A boutique shelf holds only k items. When it overflows you remove the item bought the fewest times ever; if several tie for fewest, you remove whichever of those went longest unbought. Support instant lookup, purchase-count updates, and eviction.",
+    "Back": "<b>Maps to:</b> Hash maps + frequency buckets of doubly linked lists (LFU Cache).<br><br><b>Model it:</b> Fixed-capacity cache with O(1) get/put evicting the least-frequently-used key, breaking ties by least-recent.<br><br><b>Approach &amp; variations:</b><ul><li>Map key->node and freq->an ordered list of nodes at that frequency.</li><li>On access, move the node from its freq list to freq+1 and track a running minFreq.</li><li>Evict from the minFreq list's least-recent end when full.</li></ul><b>Time:</b> O(1) — constant map and list operations.<br><b>Space:</b> O(k) — nodes plus frequency structures."
+   }
+  },
+  {
+   "noteId": 1788998585406,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-merge-k-sorted-linked-lists",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You have many separate single-file lines of runners, and each line is already ordered shortest to tallest. Combine all of them into one line, still perfectly ordered, without repeatedly re-measuring everyone. What is the efficient way to keep picking who goes next?",
+    "Back": "<b>Maps to:</b> Min-heap of list heads, or pairwise merging (Merge K Sorted Lists).<br><br><b>Model it:</b> Merge k sorted linked lists into one sorted list.<br><br><b>Approach &amp; variations:</b><ul><li>Keep the current front of each list in a min-heap; pop the smallest, then push its successor.</li><li>Alternatively merge lists pairwise across log k rounds.</li><li>Both beat merging one list at a time into a growing result.</li></ul><b>Time:</b> O(N log k) — N total nodes, each heap op is log k.<br><b>Space:</b> O(k) — heap holding one node per list."
+   }
+  },
+  {
+   "noteId": 1788998585407,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "linked-list",
+    "nc-reverse-nodes-in-k-group",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A single-file line of soldiers must be re-ordered in blocks of k: reverse the first k, then the next k, and so on. Any final leftover group smaller than k stays as it is. You may only re-link who follows whom. How?",
+    "Back": "<b>Maps to:</b> Segmented in-place reversal (Reverse Nodes in k-Group).<br><br><b>Model it:</b> Reverse every consecutive group of k nodes in a linked list, leaving a short tail untouched.<br><br><b>Approach &amp; variations:</b><ul><li>Check that k nodes remain; if not, stop.</li><li>Reverse the k-block in place and connect it to the previously reversed portion.</li><li>Continue from the block's new tail; a dummy head simplifies the wiring.</li></ul><b>Time:</b> O(n) — each node is reversed once.<br><b>Space:</b> O(1) — iterative and in place."
+   }
+  }
+ ]
+}

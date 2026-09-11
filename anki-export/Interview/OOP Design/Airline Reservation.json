@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Airline Reservation",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201731,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "In an airline reservation system, what three entities does a Booking (reservation) typically link together?",
+    "Back": "A Passenger, a Flight, and a Seat (plus payment/fare info)."
+   }
+  },
+  {
+   "noteId": 1789061201732,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Why does an airline reservation system model Flight and Aircraft as separate classes?",
+    "Back": "Flight defines the route/schedule (origin, destination, flight number, departure/arrival time); Aircraft is the physical plane assigned to that scheduled flight, so seat maps and capacity can vary per assignment (e.g. a substitute plane)."
+   }
+  },
+  {
+   "noteId": 1789061201733,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "What core class represents the physical layout of seats on a specific aircraft, including class zones (Economy/Business/First)?",
+    "Back": "SeatMap (owned by Aircraft or Flight), composed of individual Seat objects."
+   }
+  },
+  {
+   "noteId": 1789061201734,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the Itinerary class?",
+    "Back": "Aggregates one or more Flight legs (for connecting/multi-city trips) into a single trip a Passenger books together."
+   }
+  },
+  {
+   "noteId": 1789061201735,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "What enum would you use to model cabin/fare classes on a flight, and name its typical values?",
+    "Back": "SeatClass (or CabinClass): ECONOMY, PREMIUM_ECONOMY, BUSINESS, FIRST."
+   }
+  },
+  {
+   "noteId": 1789061201736,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits modeling a Booking's lifecycle (Pending -&gt; Confirmed -&gt; CheckedIn -&gt; Cancelled) and why?",
+    "Back": "The State pattern: each status becomes a state object encapsulating which transitions are legal, avoiding scattered if/else on a status enum and preventing illegal transitions like CheckedIn -&gt; Pending."
+   }
+  },
+  {
+   "noteId": 1789061201737,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits notifying passengers about flight delays, gate changes, or cancellations, and why?",
+    "Back": "The Observer pattern: Flight is the subject; Passenger/Booking objects (or a NotificationService) subscribe as observers and get pushed updates when flight status changes, decoupling the flight from notification channels (email/SMS/push)."
+   }
+  },
+  {
+   "noteId": 1789061201738,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits supporting multiple fare-pricing strategies (early-bird, last-minute, dynamic demand pricing)?",
+    "Back": "The Strategy pattern: encapsulate each pricing algorithm behind a common PricingStrategy interface so Flight/Booking can swap pricing logic without changing calling code."
+   }
+  },
+  {
+   "noteId": 1789061201739,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "In the airline domain, what is the classic 'double booking' edge case and how is it usually prevented?",
+    "Back": "Two concurrent requests both read the same seat as available and both try to book it. Prevented with a lock (e.g. synchronized method, database row lock, or optimistic locking with a version/CAS check) around the read-check-reserve sequence."
+   }
+  },
+  {
+   "noteId": 1789061201740,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Why is validating layover time an important edge case when building an Itinerary from separate Flight legs?",
+    "Back": "If the gap between the arrival of one leg and the departure of the next is too short (below a minimum connection time), or the arrival airport differs from the next departure airport, the itinerary is invalid and should be rejected or flagged."
+   }
+  },
+  {
+   "noteId": 1789061201741,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "What API method signature would you expose to find available flights, and what should it return?",
+    "Back": "<code>List&lt;Flight&gt; searchFlights(String origin, String destination, LocalDate date)</code> &mdash; returns matching scheduled flights with seat availability, not raw Aircraft objects."
+   }
+  },
+  {
+   "noteId": 1789061201742,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Why should <code>cancelBooking(bookingId)</code> release the seat back to inventory rather than just marking the Booking cancelled?",
+    "Back": "If the Seat's availability isn't updated, the seat stays falsely 'held', causing lost revenue (or, if availability is derived only from Bookings, requires an expensive scan of all bookings to compute availability)."
+   }
+  },
+  {
+   "noteId": 1789061201743,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Java: implement a thread-safe <code>bookSeat</code> method on a <code>Flight</code> that prevents two threads from double-booking the same seat, using a lock around the check-and-reserve sequence.",
+    "Back": "<pre><code>import java.util.concurrent.ConcurrentHashMap;\nimport java.util.concurrent.locks.ReentrantLock;\n\npublic class Flight {\n    private final ConcurrentHashMap&lt;String, Seat&gt; seats = new ConcurrentHashMap&lt;&gt;();\n    private final ReentrantLock bookingLock = new ReentrantLock();\n\n    public boolean bookSeat(String seatNumber, Passenger passenger) {\n        bookingLock.lock();\n        try {\n            Seat seat = seats.get(seatNumber);\n            if (seat == null || !seat.isAvailable()) {\n                return false;\n            }\n            seat.setAvailable(false);\n            seat.setPassenger(passenger);\n            return true;\n        } finally {\n            bookingLock.unlock();\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201744,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Python: implement a <code>Booking</code> class with a <code>BookingStatus</code> enum and a <code>cancel()</code> method that raises if the booking is already <code>CHECKED_IN</code>.",
+    "Back": "<pre><code>from enum import Enum, auto\n\nclass BookingStatus(Enum):\n    PENDING = auto()\n    CONFIRMED = auto()\n    CHECKED_IN = auto()\n    CANCELLED = auto()\n\nclass Booking:\n    def __init__(self, passenger, flight, seat):\n        self.passenger = passenger\n        self.flight = flight\n        self.seat = seat\n        self.status = BookingStatus.PENDING\n\n    def cancel(self):\n        if self.status == BookingStatus.CHECKED_IN:\n            raise ValueError(\"Cannot cancel a checked-in booking\")\n        self.status = BookingStatus.CANCELLED\n        self.seat.release()</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201745,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Java: implement the Observer pattern so a <code>Flight</code> notifies registered observers when its status changes (e.g. DELAYED).",
+    "Back": "<pre><code>import java.util.ArrayList;\nimport java.util.List;\n\ninterface FlightStatusObserver {\n    void onStatusChanged(Flight flight, FlightStatus newStatus);\n}\n\npublic class Flight {\n    private FlightStatus status = FlightStatus.SCHEDULED;\n    private final List&lt;FlightStatusObserver&gt; observers = new ArrayList&lt;&gt;();\n\n    public void addObserver(FlightStatusObserver observer) {\n        observers.add(observer);\n    }\n\n    public void setStatus(FlightStatus newStatus) {\n        this.status = newStatus;\n        for (FlightStatusObserver observer : observers) {\n            observer.onStatusChanged(this, newStatus);\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201746,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Python: write a function <code>is_valid_connection(arrival, departure, min_minutes=45)</code> that checks a connecting flight's layover meets a minimum connection time.",
+    "Back": "<pre><code>from datetime import datetime, timedelta\n\ndef is_valid_connection(arrival: datetime, departure: datetime, min_minutes: int = 45) -&gt; bool:\n    layover = departure - arrival\n    return layover &gt;= timedelta(minutes=min_minutes)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201747,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Text": "A minimal airline reservation system must support {{c1::searching flights}} by origin/destination/date, {{c2::booking a seat}} on a flight, {{c3::cancelling}} a booking, and {{c4::checking in}} a passenger.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201748,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Text": "The {{c1::BookingStatus}} enum typically includes values like {{c2::PENDING}}, {{c3::CONFIRMED}}, {{c4::CANCELLED}}, and {{c5::CHECKED_IN}}.",
+    "Extra": "Modeling status as an enum plus explicit transition rules avoids invalid state jumps (e.g. CANCELLED -&gt; CHECKED_IN)."
+   }
+  },
+  {
+   "noteId": 1789061201761,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Passenger",
+    "Back": "Class holding traveler identity/contact info, frequent-flyer number, and their list of Bookings."
+   }
+  },
+  {
+   "noteId": 1789061201762,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-airline"
+   ],
+   "fields": {
+    "Front": "Booking (Reservation)",
+    "Back": "Class linking a Passenger to a Flight and Seat, holding fare, status, and payment reference."
+   }
+  }
+ ]
+}

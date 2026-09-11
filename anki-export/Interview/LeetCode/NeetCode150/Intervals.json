@@ -1,0 +1,117 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::Intervals",
+ "note_count": 6,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038120964,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Merge Intervals",
+    "id": "56",
+    "slug": "merge-intervals",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120966,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Insert Interval",
+    "id": "57",
+    "slug": "insert-interval",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121356,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Meeting Rooms",
+    "id": "252",
+    "slug": "meeting-rooms",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121358,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "prefix-sum",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Meeting Rooms II",
+    "id": "253",
+    "slug": "meeting-rooms-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting, heap-priority-queue, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121722,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Non-overlapping Intervals",
+    "id": "435",
+    "slug": "non-overlapping-intervals",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124554,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "line-sweep",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Interval to Include Each Query",
+    "id": "1851",
+    "slug": "minimum-interval-to-include-each-query",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, line-sweep, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  }
+ ]
+}

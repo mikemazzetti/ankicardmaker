@@ -1,0 +1,241 @@
+{
+ "deck": "Interview::Resume Prep::Jest",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000602494,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What Jest function groups related test cases together under a shared label?",
+    "Back": "<code>describe(name, fn)</code>"
+   }
+  },
+  {
+   "noteId": 1789000602495,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between Jest's <code>it()</code> and <code>test()</code> functions?",
+    "Back": "None functionally &mdash; <code>it</code> is just an alias for <code>test</code>; both define a single test case. <code>it</code> reads naturally in sentences (\"it should...\")."
+   }
+  },
+  {
+   "noteId": 1789000602496,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Jest test asserting <code>sum(2, 3)</code> equals 5.",
+    "Back": "<pre><code>test('adds 2 + 3 to equal 5', () =&gt; {\n  expect(sum(2, 3)).toBe(5);\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602497,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between Jest's <code>toBe</code> and <code>toEqual</code> matchers?",
+    "Back": "<code>toBe</code> checks strict equality (<code>Object.is</code>, so reference equality for objects); <code>toEqual</code> recursively checks deep structural equality, so two different objects with the same fields pass <code>toEqual</code> but fail <code>toBe</code>."
+   }
+  },
+  {
+   "noteId": 1789000602498,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Jest test that creates a mock function, calls it with 'hello', and asserts it was called with that argument.",
+    "Back": "<pre><code>const callback = jest.fn();\ncallback('hello');\nexpect(callback).toHaveBeenCalledWith('hello');</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602499,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>jest.fn()</code> create?",
+    "Back": "A mock function you can pass around (e.g. as a callback/prop) and later assert on &mdash; how many times it was called, what arguments it received, and control what it returns."
+   }
+  },
+  {
+   "noteId": 1789000602500,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>jest.mock('./module')</code> do to that module in the current test file?",
+    "Back": "Auto-mocks it: every exported function becomes a <code>jest.fn()</code> stub, replacing the real implementation, so the test isn't affected by the module's actual behavior (e.g. real network/DB calls)."
+   }
+  },
+  {
+   "noteId": 1789000602501,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you make a Jest mock function return a given value only on its <em>next</em> call?",
+    "Back": "<code>mockFn.mockReturnValueOnce(value)</code>"
+   }
+  },
+  {
+   "noteId": 1789000602502,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is Jest snapshot testing used for?",
+    "Back": "Serializing a component's/value's output once, saving it to a snapshot file, and automatically comparing future test runs against it &mdash; a diff means the output changed unexpectedly."
+   }
+  },
+  {
+   "noteId": 1789000602503,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Jest snapshot test for a rendered <code>&lt;Greeting name=\"Ada\" /&gt;</code> component.",
+    "Back": "<pre><code>import renderer from 'react-test-renderer';\n\ntest('renders correctly', () =&gt; {\n  const tree = renderer\n    .create(&lt;Greeting name=\"Ada\" /&gt;)\n    .toJSON();\n  expect(tree).toMatchSnapshot();\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602504,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Jest test asserting that <code>riskyAsync()</code> rejects with an error.",
+    "Back": "<pre><code>test('riskyAsync rejects', async () =&gt; {\n  await expect(riskyAsync()).rejects.toThrow();\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602505,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Jest test for an async function <code>fetchUser(1)</code> that resolves to <code>{ id: 1 }</code>.",
+    "Back": "<pre><code>test('fetchUser resolves with user data', async () =&gt; {\n  const data = await fetchUser(1);\n  expect(data).toEqual({ id: 1 });\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602506,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In React Testing Library, what function renders a component into a virtual DOM for testing?",
+    "Back": "<code>render(&lt;Component /&gt;)</code>, from <code>@testing-library/react</code>."
+   }
+  },
+  {
+   "noteId": 1789000602507,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's React Testing Library's core querying philosophy &mdash; how should you find elements in a test?",
+    "Back": "Query the way a user would perceive the page (by accessible role, label, or visible text via <code>getByRole</code>/<code>getByLabelText</code>/<code>getByText</code>), not by implementation details like class names or component internals."
+   }
+  },
+  {
+   "noteId": 1789000602508,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write an RTL test that renders a <code>&lt;Button onClick={onClick} /&gt;</code>, clicks it, and asserts the handler fired once.",
+    "Back": "<pre><code>test('calls onClick when clicked', () =&gt; {\n  const onClick = jest.fn();\n  render(&lt;Button onClick={onClick} /&gt;);\n  fireEvent.click(screen.getByRole('button'));\n  expect(onClick).toHaveBeenCalledTimes(1);\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602509,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does running Jest with the <code>--coverage</code> flag report?",
+    "Back": "Code coverage percentages for statements, branches, functions, and lines that were actually executed by the test suite."
+   }
+  },
+  {
+   "noteId": 1789000602510,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Which Jest matcher checks that an array or string includes a given item/substring?",
+    "Back": "<code>toContain</code>, e.g. <code>expect(['a','b']).toContain('a')</code>."
+   }
+  },
+  {
+   "noteId": 1789000640005,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "jest",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Jest's {{c1::beforeEach}} runs before every test in its scope, {{c2::afterEach}} runs after every test, and {{c3::beforeAll}} / {{c4::afterAll}} each run only once for the whole describe block.",
+    "Extra": ""
+   }
+  }
+ ]
+}

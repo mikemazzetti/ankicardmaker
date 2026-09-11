@@ -1,0 +1,231 @@
+{
+ "deck": "Interview::NeetCode 250::2-D Dynamic Programming",
+ "note_count": 16,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585663,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-count-paths",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A beetle starts at the top-left corner of a rectangular garden grid and wants to reach the bottom-right corner, only ever crawling one plot to the right or one plot down. How many distinct routes can it take?",
+    "Back": "<b>Maps to:</b> 2-D grid DP counting paths (Unique Paths).<br><br><b>Model it:</b> Routes to a cell = routes to the cell above plus routes to the cell on the left.<br><br><b>Approach &amp; variations:</b><ul><li>Each interior cell's count is the sum of the cell above and the cell to its left.</li><li>Top row and left column each have exactly one route.</li><li>Sweep row by row; one rolling row of counts suffices.</li><li>Closed form is the binomial C(m+n-2, m-1).</li></ul><b>Time:</b> O(m*n) — one addition per cell.<br><b>Space:</b> O(n) — a single rolling row (or O(1) with the formula)."
+   }
+  },
+  {
+   "noteId": 1788998585664,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-unique-paths-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A beetle crosses a rectangular garden from top-left to bottom-right, moving only right or down, but some plots are flooded and impassable. How many distinct dry routes reach the far corner?",
+    "Back": "<b>Maps to:</b> 2-D grid DP with blocked cells (Unique Paths II).<br><br><b>Model it:</b> Path count to a cell = above + left, but any blocked cell holds zero routes.<br><br><b>Approach &amp; variations:</b><ul><li>Same additive recurrence as the open grid, but set blocked cells to 0.</li><li>If the start or end plot is flooded, the answer is 0.</li><li>Propagate the top row and left column, stopping counts at any block.</li><li>One rolling row keeps it space-light.</li></ul><b>Time:</b> O(m*n) — one check and add per cell.<br><b>Space:</b> O(n) — a rolling row of counts."
+   }
+  },
+  {
+   "noteId": 1788998585665,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-minimum-path-sum",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A traveler crosses a rectangular field of tollbooths from top-left to bottom-right, paying the posted toll on every plot she steps on, and may only move right or down. What is the least total toll for the whole crossing?",
+    "Back": "<b>Maps to:</b> 2-D grid DP minimizing accumulated cost (Minimum Path Sum).<br><br><b>Model it:</b> Cheapest cost to a cell = its toll plus the smaller of the cell above or the cell to the left.<br><br><b>Approach &amp; variations:</b><ul><li>best[cell] = toll[cell] + min(best above, best left).</li><li>First row and column accumulate along their single approach direction.</li><li>Sweep row by row; a rolling row holds the previous row's bests.</li><li>Answer is the bottom-right accumulated cost.</li></ul><b>Time:</b> O(m*n) — constant work per cell.<br><b>Space:</b> O(n) — one rolling row of costs."
+   }
+  },
+  {
+   "noteId": 1788998585666,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-longest-common-subsequence",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two friends each wrote down their playlist as an ordered list of songs. Keeping each list in its own order but allowed to skip songs, they want the longest sequence of songs that appears in both lists in the same relative order. How long is it?",
+    "Back": "<b>Maps to:</b> 2-D DP over two-string alignment (Longest Common Subsequence).<br><br><b>Model it:</b> LCS length of prefixes = if last songs match, 1 + LCS of both shorter; else max of dropping one from either.<br><br><b>Approach &amp; variations:</b><ul><li>Grid indexed by prefixes of each list.</li><li>On a match, extend the diagonal by one; on a mismatch, take the better of up or left.</li><li>Order is preserved but gaps are allowed, unlike a contiguous substring.</li><li>Two rolling rows cut the space.</li></ul><b>Time:</b> O(m*n) — every prefix pair filled once.<br><b>Space:</b> O(min(m,n)) — two rolling rows."
+   }
+  },
+  {
+   "noteId": 1788998585667,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-last-stone-weight-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A quarry worker repeatedly smashes two stones together; if unequal, the lighter is destroyed and the heavier keeps the weight difference, and this continues until at most one stone remains. Choosing the smashes cleverly, what is the smallest possible final weight?",
+    "Back": "<b>Maps to:</b> Subset-sum partition minimizing difference (Last Stone Weight II).<br><br><b>Model it:</b> Assigning each stone a plus or minus sign, minimize the absolute total — i.e. split into two heaps with the closest sums.<br><br><b>Approach &amp; variations:</b><ul><li>Every sequence of smashes is equivalent to a +/- sign on each stone.</li><li>Minimize |sum of one heap - sum of the other|, so make one heap as close to total/2 as possible.</li><li>Boolean subset-sum finds the largest reachable sum <= total/2.</li><li>Answer is total - 2 * that best reachable sum.</li></ul><b>Time:</b> O(n * sum) — subset-sum over stones and half-total.<br><b>Space:</b> O(sum) — a reachable-sums row."
+   }
+  },
+  {
+   "noteId": 1788998585668,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-buy-and-sell-crypto-with-cooldown",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A trader watches a token's daily price and may buy and later sell for profit any number of times, but only ever holds one unit at a time, and after any sale must rest a full day before buying again. What is the maximum total profit?",
+    "Back": "<b>Maps to:</b> State-machine DP over hold/sold/rest (Best Time to Buy and Sell Stock with Cooldown).<br><br><b>Model it:</b> Track three daily states — holding, just-sold, and idle — with the cooldown blocking a buy the day after a sale.<br><br><b>Approach &amp; variations:</b><ul><li>hold = max(stay holding, buy today from idle-yesterday).</li><li>sold = holding-yesterday + today's price.</li><li>rest = max(rest-yesterday, sold-yesterday), and only rest may buy next.</li><li>Answer is the best of sold and rest on the final day.</li></ul><b>Time:</b> O(n) — three state updates per day.<br><b>Space:</b> O(1) — three rolling values."
+   }
+  },
+  {
+   "noteId": 1788998585669,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-coin-change-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cashier has unlimited coins in a few fixed denominations and wants to count how many distinct combinations of coins add up to an exact amount — where order does not matter, so two nickels then a dime is the same combination as a dime then two nickels. How many combinations are there?",
+    "Back": "<b>Maps to:</b> Unbounded-knapsack combination counting (Coin Change II).<br><br><b>Model it:</b> Count unordered multisets of reusable coins summing to the amount.<br><br><b>Approach &amp; variations:</b><ul><li>ways[amount] accumulates combinations; ways[0] = 1.</li><li>Loop denominations on the OUTSIDE, then amounts inward, so each coin type is fixed once.</li><li>That outer-coin ordering prevents counting the same set in different orders.</li><li>Coins are reusable, so add ways[amount - coin].</li></ul><b>Time:</b> O(amount * coins) — each coin sweeps all amounts.<br><b>Space:</b> O(amount) — one count per sub-amount."
+   }
+  },
+  {
+   "noteId": 1788998585670,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-target-sum",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A child has a row of numbered cards and must place either a plus or a minus in front of every card, then add them all up. In how many distinct ways can the signs be chosen so the running total equals a given target?",
+    "Back": "<b>Maps to:</b> Subset-sum reduction counting assignments (Target Sum).<br><br><b>Model it:</b> Choosing + or - per number to hit target reduces to: how many subsets sum to (total+target)/2.<br><br><b>Approach &amp; variations:</b><ul><li>Let P be the plus-group sum; then P - (total-P) = target, so P = (total+target)/2.</li><li>If that value is non-integer or out of range, there are zero ways.</li><li>Count subsets summing to P with a 1-D DP over reachable sums.</li><li>Each number either joins P or not — a 0/1 knapsack count.</li></ul><b>Time:</b> O(n * sum) — subset-sum counting over numbers and target sum.<br><b>Space:</b> O(sum) — a count row over reachable sums."
+   }
+  },
+  {
+   "noteId": 1788998585671,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-interleaving-string",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two dealers each hold their own ordered deck. A third deck is laid out, and you must decide whether it could have been produced by shuffling the two decks together — keeping each dealer's cards in their original order, but freely alternating whose card comes next. Could the third deck be such a merge?",
+    "Back": "<b>Maps to:</b> 2-D DP over two-pointer interleave reachability (Interleaving String).<br><br><b>Model it:</b> Can prefixes of length i and j of the two sources be interleaved to form the first i+j of the target?<br><br><b>Approach &amp; variations:</b><ul><li>ok[i][j] true if the target's next char matches source A's i-th (from ok[i-1][j]) or B's j-th (from ok[i][j-1]).</li><li>Total lengths must add up, else immediately false.</li><li>Fill a grid indexed by how many cards taken from each source.</li><li>One rolling row reduces space.</li></ul><b>Time:</b> O(m*n) — every prefix pair evaluated once.<br><b>Space:</b> O(n) — a rolling row of booleans."
+   }
+  },
+  {
+   "noteId": 1788998585672,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-stone-game",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two players face a row of an even number of treasure chests, each with a known value totaling an odd sum. They alternate turns, each turn taking a chest from either the far-left or far-right end. Both play optimally to maximize their own haul. Can the first player always guarantee a win?",
+    "Back": "<b>Maps to:</b> Interval game DP on score difference (Stone Game).<br><br><b>Model it:</b> On range [i,j] the mover maximizes value taken minus the opponent's optimal result on the smaller range.<br><br><b>Approach &amp; variations:</b><ul><li>best[i][j] = max(chest[i] - best[i+1][j], chest[j] - best[i][j-1]).</li><li>The value is the mover's lead; a positive best[0][n-1] means first player wins.</li><li>Fill by increasing interval length.</li><li>With an even count and odd total, the first player can in fact always force a win.</li></ul><b>Time:</b> O(n^2) — every subinterval evaluated once.<br><b>Space:</b> O(n^2) — the interval table (reducible)."
+   }
+  },
+  {
+   "noteId": 1788998585673,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-stone-game-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two players face a row of chest-piles, taking turns from the left end only. A running limit M starts at 1; on a turn a player must take between 1 and 2M piles from the front, and then M grows to the larger of itself and the number just taken. Both maximize their own total. What is the most the first player can secure?",
+    "Back": "<b>Maps to:</b> Suffix-interval DP keyed on the take-limit M (Stone Game II).<br><br><b>Model it:</b> State is (start index, current M); the mover maximizes suffix-sum-taken minus the opponent's best from the new position and M.<br><br><b>Approach &amp; variations:</b><ul><li>best[i][M] = max over x in 1..2M of (sum of piles i..i+x-1) + (suffixSum(i+x) - best[i+x][max(M,x)]).</li><li>Use suffix sums so a chosen chunk's value is O(1).</li><li>Fill from the end backward across all M values.</li><li>Answer is best[0][1].</li></ul><b>Time:</b> O(n^3) — states (i,M) each scanning up to 2M takes.<br><b>Space:</b> O(n^2) — the (index, M) table."
+   }
+  },
+  {
+   "noteId": 1788998585674,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-longest-increasing-path-in-matrix",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hiker crosses a field of plots each marked with an elevation and may step to an adjacent plot (up, down, left, or right) only if it is strictly higher. Starting wherever she likes, what is the greatest number of plots in a single ever-climbing walk?",
+    "Back": "<b>Maps to:</b> Memoized DFS on a DAG of increasing moves (Longest Increasing Path in a Matrix).<br><br><b>Model it:</b> Longest strictly increasing path where each cell's value = 1 + max over higher neighbors.<br><br><b>Approach &amp; variations:</b><ul><li>From each cell, the longest climb = 1 + max longest climb among strictly higher neighbors.</li><li>Strictly increasing edges make the graph acyclic, so memoize each cell's answer.</li><li>DFS with a cache (or topological order by height) avoids recomputation.</li><li>Global answer is the max cached value.</li></ul><b>Time:</b> O(m*n) — each cell computed once, four neighbors each.<br><b>Space:</b> O(m*n) — the memo cache and recursion."
+   }
+  },
+  {
+   "noteId": 1788998585675,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-count-subsequences",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A proofreader has a long passage and a short target word. She wants to know: in how many distinct ways can she cross out some letters of the passage — keeping the rest in order — so that exactly the target word remains?",
+    "Back": "<b>Maps to:</b> 2-D DP counting subsequence embeddings (Distinct Subsequences).<br><br><b>Model it:</b> Count how many subsequences of the source string equal the target string.<br><br><b>Approach &amp; variations:</b><ul><li>ways[i][j] = ways for source prefix i to form target prefix j.</li><li>If letters match: ways = use-it (ways[i-1][j-1]) + skip-it (ways[i-1][j]); else just skip-it.</li><li>Empty target has exactly one way (delete everything).</li><li>A rolling row over the source cuts space.</li></ul><b>Time:</b> O(m*n) — every prefix pair filled once.<br><b>Space:</b> O(n) — a rolling row over the target length."
+   }
+  },
+  {
+   "noteId": 1788998585676,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-edit-distance",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "An editor must transform one word into another using the fewest single-letter operations, where each operation is inserting a letter, deleting a letter, or replacing one letter with another. What is the minimum number of operations?",
+    "Back": "<b>Maps to:</b> 2-D DP over two-string alignment cost (Edit Distance / Levenshtein).<br><br><b>Model it:</b> Min edits between prefixes = 0 extra if last letters match, else 1 + min(insert, delete, replace).<br><br><b>Approach &amp; variations:</b><ul><li>cost[i][j] compares prefix i of word A with prefix j of word B.</li><li>Matching last letters carry the diagonal cost; otherwise 1 + min(left, up, diagonal).</li><li>Left = delete, up = insert, diagonal = replace.</li><li>Base rows/columns count turning a prefix into empty (all deletes/inserts).</li></ul><b>Time:</b> O(m*n) — every prefix pair evaluated once.<br><b>Space:</b> O(n) — two rolling rows."
+   }
+  },
+  {
+   "noteId": 1788998585677,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-burst-balloons",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A child has a row of numbered balloons and pops them one at a time. Popping a balloon earns its number times the numbers of its immediate left and right still-present neighbors (missing ends count as one), then the row closes up. In what order should she pop to earn the most coins overall?",
+    "Back": "<b>Maps to:</b> Interval DP choosing the last balloon to pop (Burst Balloons).<br><br><b>Model it:</b> For a range, pick which balloon is popped LAST; its neighbors are then the fixed range boundaries.<br><br><b>Approach &amp; variations:</b><ul><li>Pad both ends with virtual 1s.</li><li>best[l][r] = max over k in (l,r) of nums[l]*nums[k]*nums[r] + best[l][k] + best[k][r], treating k as the last pop.</li><li>Choosing the last pop fixes its neighbors as the boundaries, decoupling the subranges.</li><li>Fill by increasing interval width.</li></ul><b>Time:</b> O(n^3) — every interval tries every last-pop.<br><b>Space:</b> O(n^2) — the interval table."
+   }
+  },
+  {
+   "noteId": 1788998585678,
+   "modelName": "Basic",
+   "tags": [
+    "2-d-dynamic-programming",
+    "ankicardmaker",
+    "nc-regular-expression-matching",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A gatekeeper checks names against a pattern that may include two wildcards: a single dot that matches any one character, and a star that means the character just before it may repeat zero or more times. Does a given name match the pattern in full?",
+    "Back": "<b>Maps to:</b> 2-D DP over string-vs-pattern matching (Regular Expression Matching).<br><br><b>Model it:</b> match[i][j] = can the first i characters be matched by the first j pattern tokens, handling '.' and 'x*'.<br><br><b>Approach &amp; variations:</b><ul><li>A dot matches any single character; a plain letter matches itself.</li><li>For 'x*', either skip it (zero copies) or, if the char before star matches the current letter, consume one and stay on the star.</li><li>Fill a grid indexed by prefixes of name and pattern.</li><li>Seed the empty-name row for patterns that can vanish via stars.</li></ul><b>Time:</b> O(m*n) — every (name-prefix, pattern-prefix) pair evaluated.<br><b>Space:</b> O(m*n) — the match grid (reducible to a rolling row)."
+   }
+  }
+ ]
+}

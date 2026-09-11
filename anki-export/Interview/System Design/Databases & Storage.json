@@ -1,0 +1,259 @@
+{
+ "deck": "Interview::System Design::Databases & Storage",
+ "note_count": 21,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203428,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "When should you choose a SQL (relational) database over NoSQL?",
+    "Back": "When you need strong consistency, complex multi-table joins/transactions, and a fixed, well-understood schema."
+   }
+  },
+  {
+   "noteId": 1789061203429,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "When should you choose a NoSQL database over SQL?",
+    "Back": "When you need horizontal scalability, a flexible/evolving schema, and can relax strict consistency (e.g. massive write throughput, unstructured data)."
+   }
+  },
+  {
+   "noteId": 1789061203430,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is a key-value store best suited for? Give an example.",
+    "Back": "Simple lookups by a unique key with no query complexity, e.g. <code>Redis</code> for caching or session storage."
+   }
+  },
+  {
+   "noteId": 1789061203431,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is a document store best suited for? Give an example.",
+    "Back": "Semi-structured, nested data accessed as whole records, e.g. <code>MongoDB</code> for product catalogs or user profiles."
+   }
+  },
+  {
+   "noteId": 1789061203432,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is a column-family (wide-column) store best suited for? Give an example.",
+    "Back": "Very high write throughput and queries over huge, sparse datasets, e.g. <code>Cassandra</code> for time-series or logging data."
+   }
+  },
+  {
+   "noteId": 1789061203433,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is a graph database best suited for? Give an example.",
+    "Back": "Data where relationships/traversals matter more than the entities themselves, e.g. <code>Neo4j</code> for social networks or recommendation engines."
+   }
+  },
+  {
+   "noteId": 1789061203434,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What data structure do most relational database indexes use, and why?",
+    "Back": "A B-tree, because it keeps data sorted and supports O(log n) lookups, range scans, and ordered traversal at balanced depth."
+   }
+  },
+  {
+   "noteId": 1789061203435,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "Why does adding an index speed up reads?",
+    "Back": "It lets the DB search a sorted structure instead of scanning every row, turning an O(n) full scan into an O(log n) lookup."
+   }
+  },
+  {
+   "noteId": 1789061203436,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is the write-side cost of adding an index?",
+    "Back": "Every insert/update/delete must also update the index structure, which slows writes and uses extra storage."
+   }
+  },
+  {
+   "noteId": 1789061203437,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is database normalization?",
+    "Back": "Organizing data into related tables to eliminate redundancy, using foreign keys instead of duplicating data."
+   }
+  },
+  {
+   "noteId": 1789061203438,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is database denormalization, and why is it used at scale?",
+    "Back": "Deliberately duplicating data across tables/documents to avoid expensive joins, trading storage and write complexity for faster reads."
+   }
+  },
+  {
+   "noteId": 1789061203439,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What problem do read replicas solve?",
+    "Back": "They offload read traffic from the primary/leader database by serving reads from copies, scaling read throughput."
+   }
+  },
+  {
+   "noteId": 1789061203440,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is a downside of read replicas?",
+    "Back": "Replication lag can cause a replica to serve stale (slightly outdated) data compared to the primary."
+   }
+  },
+  {
+   "noteId": 1789061203441,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What problem does connection pooling solve?",
+    "Back": "It reuses a fixed set of already-open DB connections across requests instead of opening/closing a new connection per request, avoiding costly connection-setup overhead and exhausting the DB's connection limit."
+   }
+  },
+  {
+   "noteId": 1789061203442,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "Why store large binary files (images, videos) in blob/object storage (e.g. S3) instead of a database?",
+    "Back": "Databases are optimized for structured, queryable records, not large binaries; object storage is cheaper, scales better, and offloads that load from the DB."
+   }
+  },
+  {
+   "noteId": 1789061203443,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What kind of data is a time-series database (e.g. InfluxDB) optimized for?",
+    "Back": "Data points indexed by time, like metrics or sensor readings, with efficient time-range queries and aggregation/downsampling."
+   }
+  },
+  {
+   "noteId": 1789061203444,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "What is Elasticsearch typically used for in a system design?",
+    "Back": "Full-text search and complex filtering/ranking over large datasets, using an inverted index — usually alongside, not instead of, a primary data store."
+   }
+  },
+  {
+   "noteId": 1789061203445,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Text": "The four main NoSQL families are {{c1::key-value}}, {{c2::document}}, {{c3::column-family (wide-column)}}, and {{c4::graph}} stores.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203446,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Text": "Indexing speeds up {{c1::reads}} (faster lookups via a sorted structure) but slows down {{c2::writes}} (every index must be updated on each write).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203450,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "ACID",
+    "Back": "Atomicity, Consistency, Isolation, Durability — the transaction guarantees of traditional relational (SQL) databases."
+   }
+  },
+  {
+   "noteId": 1789061203451,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-databases"
+   ],
+   "fields": {
+    "Front": "BASE",
+    "Back": "Basically Available, Soft state, Eventually consistent — the looser guarantees typical of many NoSQL systems."
+   }
+  }
+ ]
+}

@@ -1,0 +1,295 @@
+{
+ "deck": "Interview::OOP Design::Fundamentals",
+ "note_count": 24,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200454,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Text": "The four-step approach to an OOD interview: {{c1::clarify requirements and scope}} → {{c2::identify the core objects (nouns) in the problem}} → {{c3::define the relationships between those objects}} → {{c4::design the class APIs and apply relevant design patterns}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200461,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Why should you clarify requirements before designing any classes in an OOD interview?",
+    "Back": "It sets the correct scope (features, scale, constraints) so you don't over- or under-engineer the design — jumping straight to classes risks solving the wrong problem."
+   }
+  },
+  {
+   "noteId": 1789061200462,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "What simple technique helps you identify candidate classes from an OOD problem statement?",
+    "Back": "Underline the nouns in the prompt — each distinct noun is a candidate class or object (e.g. \"Vehicle\", \"Ticket\", \"ParkingSpot\")."
+   }
+  },
+  {
+   "noteId": 1789061200463,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "In UML/OOD terms, what is an Association relationship?",
+    "Back": "A general \"uses-a\" relationship where one object interacts with or references another, with no ownership or lifecycle dependency implied."
+   }
+  },
+  {
+   "noteId": 1789061200464,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "In UML/OOD terms, what is an Aggregation relationship?",
+    "Back": "A \"has-a\" relationship expressing weak ownership — the whole contains the part, but the part can exist independently and outlive the whole."
+   }
+  },
+  {
+   "noteId": 1789061200465,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "In UML/OOD terms, what is a Composition relationship?",
+    "Back": "A \"has-a\" relationship expressing strong ownership — the part's lifecycle is bound to the whole; when the whole is destroyed, so are its parts."
+   }
+  },
+  {
+   "noteId": 1789061200466,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "On a UML class diagram, how do you visually distinguish composition from aggregation?",
+    "Back": "A filled (solid) diamond at the \"whole\" end means composition; a hollow (open) diamond at the \"whole\" end means aggregation."
+   }
+  },
+  {
+   "noteId": 1789061200467,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "What are the three compartments of a class box in a UML class diagram?",
+    "Back": "Class name (top), attributes/fields (middle), methods/operations (bottom)."
+   }
+  },
+  {
+   "noteId": 1789061200468,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "SOLID — what does the Single Responsibility Principle (S) state?",
+    "Back": "A class should have only one reason to change — i.e., one responsibility."
+   }
+  },
+  {
+   "noteId": 1789061200469,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "SOLID — what does the Open/Closed Principle (O) state?",
+    "Back": "Classes should be open for extension but closed for modification — add new behavior via new code, not by editing existing tested code."
+   }
+  },
+  {
+   "noteId": 1789061200470,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "SOLID — what does the Liskov Substitution Principle (L) state?",
+    "Back": "Objects of a subclass should be substitutable for objects of the base class without altering the correctness of the program."
+   }
+  },
+  {
+   "noteId": 1789061200471,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "SOLID — what does the Interface Segregation Principle (I) state?",
+    "Back": "Prefer several small, client-specific interfaces over one large general-purpose interface, so clients aren't forced to depend on methods they don't use."
+   }
+  },
+  {
+   "noteId": 1789061200472,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "SOLID — what does the Dependency Inversion Principle (D) state?",
+    "Back": "High-level modules should depend on abstractions, not on low-level concrete implementations — both should depend on interfaces."
+   }
+  },
+  {
+   "noteId": 1789061200473,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Strategy pattern — when should you use it in an OOD design?",
+    "Back": "Use it when you need to select between multiple interchangeable algorithms/behaviors at runtime (e.g. pricing, sorting, dispatch policy) without conditional branching."
+   }
+  },
+  {
+   "noteId": 1789061200474,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Factory Method pattern — when should you use it?",
+    "Back": "Use it when a class shouldn't hardcode which concrete subclass to instantiate — let a factory (or subclasses) decide, decoupling creation from use."
+   }
+  },
+  {
+   "noteId": 1789061200475,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Abstract Factory pattern — when should you use it?",
+    "Back": "Use it when you need to create families of related objects (e.g. UI widgets for different platforms) without specifying their concrete classes."
+   }
+  },
+  {
+   "noteId": 1789061200476,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Singleton pattern — when should you use it?",
+    "Back": "Use it when exactly one instance of a class must exist and be globally accessible (e.g. a config manager or the ParkingLot itself) — but use sparingly, it hurts testability."
+   }
+  },
+  {
+   "noteId": 1789061200477,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Observer pattern — when should you use it?",
+    "Back": "Use it when one object's state change must automatically notify and update many dependent objects, without tightly coupling them (e.g. pub/sub, UI updates)."
+   }
+  },
+  {
+   "noteId": 1789061200478,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "State pattern — when should you use it?",
+    "Back": "Use it when an object's behavior must change based on its internal state, to avoid large if/switch blocks scattered across methods (e.g. a vending machine or elevator)."
+   }
+  },
+  {
+   "noteId": 1789061200479,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Decorator pattern — when should you use it?",
+    "Back": "Use it when you need to add responsibilities to an individual object dynamically at runtime, as an alternative to subclassing every combination of features."
+   }
+  },
+  {
+   "noteId": 1789061200480,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Command pattern — when should you use it?",
+    "Back": "Use it when you need to encapsulate a request/action as an object, to support undo/redo, queuing, logging, or parameterizing callers with different actions."
+   }
+  },
+  {
+   "noteId": 1789061200481,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Adapter pattern — when should you use it?",
+    "Back": "Use it when you need an existing class's interface to work with client code that expects a different, incompatible interface."
+   }
+  },
+  {
+   "noteId": 1789061200482,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Code a Strategy pattern in Java for payment processing: a <code>PaymentStrategy</code> interface with <code>CreditCardStrategy</code> and <code>PayPalStrategy</code> implementations, used by a <code>Cart</code> class.",
+    "Back": "<pre><code>public interface PaymentStrategy {\n    void pay(int amount);\n}\n\npublic class CreditCardStrategy implements PaymentStrategy {\n    private String cardNumber;\n\n    public CreditCardStrategy(String cardNumber) {\n        this.cardNumber = cardNumber;\n    }\n\n    @Override\n    public void pay(int amount) {\n        System.out.println(\"Paid \" + amount + \" using Credit Card \" + cardNumber);\n    }\n}\n\npublic class PayPalStrategy implements PaymentStrategy {\n    private String email;\n\n    public PayPalStrategy(String email) {\n        this.email = email;\n    }\n\n    @Override\n    public void pay(int amount) {\n        System.out.println(\"Paid \" + amount + \" using PayPal account \" + email);\n    }\n}\n\npublic class Cart {\n    private PaymentStrategy paymentStrategy;\n\n    public void setPaymentStrategy(PaymentStrategy strategy) {\n        this.paymentStrategy = strategy;\n    }\n\n    public void checkout(int amount) {\n        paymentStrategy.pay(amount);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200483,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-fundamentals"
+   ],
+   "fields": {
+    "Front": "Code an Observer pattern in Python: a <code>WeatherStation</code> subject that notifies subscribed <code>Observer</code> objects when temperature changes.",
+    "Back": "<pre><code>from abc import ABC, abstractmethod\n\nclass Observer(ABC):\n    @abstractmethod\n    def update(self, temperature: float) -&gt; None:\n        ...\n\nclass WeatherStation:\n    def __init__(self):\n        self._observers = []\n        self._temperature = 0.0\n\n    def subscribe(self, observer: Observer) -&gt; None:\n        self._observers.append(observer)\n\n    def unsubscribe(self, observer: Observer) -&gt; None:\n        self._observers.remove(observer)\n\n    def set_temperature(self, temperature: float) -&gt; None:\n        self._temperature = temperature\n        self._notify_all()\n\n    def _notify_all(self) -&gt; None:\n        for observer in self._observers:\n            observer.update(self._temperature)\n\nclass Display(Observer):\n    def update(self, temperature: float) -&gt; None:\n        print(f\"Display shows: {temperature}C\")</code></pre>"
+   }
+  }
+ ]
+}

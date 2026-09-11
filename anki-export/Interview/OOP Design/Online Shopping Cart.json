@@ -1,0 +1,223 @@
+{
+ "deck": "Interview::OOP Design::Online Shopping Cart",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201593,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what are the 3 core functional requirements for an Online Shopping Cart?",
+    "Back": "1) Add/remove/update-quantity of items in a cart. 2) Apply pricing rules and discounts to compute a total. 3) Check out into an Order that moves through a well-defined lifecycle (paid, shipped, delivered, cancelled)."
+   }
+  },
+  {
+   "noteId": 1789061201594,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Why is Strategy a good fit for pricing/discount logic in a shopping cart?",
+    "Back": "Different promotions (percent-off, flat-amount, tiered/bulk pricing, loyalty pricing) all compute a total from the same cart contents but with different algorithms; Strategy lets checkout call one interface method while the concrete pricing rule is chosen/swapped at runtime."
+   }
+  },
+  {
+   "noteId": 1789061201595,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Why is State a good fit for an Order's lifecycle in a shopping cart system?",
+    "Back": "An Order's allowed operations change with its status (e.g. you can cancel a CREATED or PAID order but not a DELIVERED one); the State pattern encapsulates each status's allowed transitions in its own class instead of scattering if/switch statements on order.status everywhere."
+   }
+  },
+  {
+   "noteId": 1789061201596,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "In a State-pattern Order design, what does calling order.cancel() actually do?",
+    "Back": "It delegates to the order's current OrderState object's cancel() method; that state decides whether cancellation is legal from here (e.g. CreatedState/PaidState allow it, ShippedState throws or requires a return flow instead) and, if legal, transitions the order to CancelledState."
+   }
+  },
+  {
+   "noteId": 1789061201597,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "What core fields does a CartItem typically carry, separate from the Product itself?",
+    "Back": "A reference to the Product, the selected quantity, and often a price-at-add-time snapshot (so later product price changes don't silently alter an existing cart)."
+   }
+  },
+  {
+   "noteId": 1789061201598,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: discount stacking — what question must the design answer before applying two active discounts to the same cart?",
+    "Back": "Whether discounts combine at all (some coupons are 'not combinable'), and if they do, in what order — e.g. is a percentage-off applied to the original price or to the price after a flat discount already reduced it? The order changes the final total."
+   }
+  },
+  {
+   "noteId": 1789061201599,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Give a concrete example of how discount order matters: $100 item, 20% off coupon, then $15 flat-off coupon, applied in different orders.",
+    "Back": "Percent first, then flat: (100 * 0.8) - 15 = $65. Flat first, then percent: (100 - 15) * 0.8 = $68. The two orders yield different totals — the design must define and enforce one canonical order (usually percentage first, or defined by discount priority)."
+   }
+  },
+  {
+   "noteId": 1789061201600,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "How can a Decorator (or an ordered list of DiscountStrategy objects) cleanly implement stacked discounts?",
+    "Back": "Wrap/chain each applicable discount around the base price calculation in a defined priority order, each stage taking the previous stage's output as its input — the cart doesn't need special-case logic for 'two discounts at once', it just applies the ordered pipeline."
+   }
+  },
+  {
+   "noteId": 1789061201601,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Edge case: two customers add the last unit of a product to their carts at nearly the same time. What must checkout guard against?",
+    "Back": "An inventory race condition where both checkouts succeed and oversell the item; guard with an atomic decrement-if-available operation (or a DB row lock/optimistic version check) on inventory at checkout time, not just at add-to-cart time."
+   }
+  },
+  {
+   "noteId": 1789061201602,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Edge case: a product's price changes while it's sitting in a user's cart. What should checkout do?",
+    "Back": "Typically re-validate against the current live price at checkout (not the price when added), and show the user a clear price-change notice if it differs — silently charging a stale price is a common correctness bug in interview designs."
+   }
+  },
+  {
+   "noteId": 1789061201603,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Edge case: what should happen if a coupon code is applied and then expires before the user completes checkout?",
+    "Back": "Re-validate coupon validity (expiry, usage limits, minimum-spend rules) at the moment of checkout/payment, not just when it was entered — an expired coupon must be rejected or removed with the total recalculated before payment is charged."
+   }
+  },
+  {
+   "noteId": 1789061201604,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Implement a PricingStrategy interface in Java plus a PercentageDiscountStrategy.",
+    "Back": "<pre><code>interface PricingStrategy {\n    double calculateTotal(Cart cart);\n}\n\nclass PercentageDiscountStrategy implements PricingStrategy {\n    private final double percentOff;\n\n    PercentageDiscountStrategy(double percentOff) {\n        this.percentOff = percentOff;\n    }\n\n    public double calculateTotal(Cart cart) {\n        double subtotal = cart.getItems().stream()\n            .mapToDouble(item -&gt; item.getPrice() * item.getQuantity())\n            .sum();\n        return subtotal * (1 - percentOff / 100.0);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201605,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Implement a Python State pattern for Order status: an OrderState base class and CreatedState/ShippedState with different cancel() behavior.",
+    "Back": "<pre><code>class OrderState:\n    def cancel(self, order):\n        raise NotImplementedError\n\nclass CreatedState(OrderState):\n    def cancel(self, order):\n        order.status = CancelledState()\n\nclass ShippedState(OrderState):\n    def cancel(self, order):\n        raise InvalidTransitionError(\n            \"Cannot cancel a shipped order; start a return instead\"\n        )\n\nclass CancelledState(OrderState):\n    def cancel(self, order):\n        raise InvalidTransitionError(\"Already cancelled\")\n\nclass Order:\n    def __init__(self):\n        self.status = CreatedState()\n\n    def cancel(self):\n        self.status.cancel(self)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201606,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Implement an ordered discount-stacking pipeline in Java that applies a list of DiscountStrategy objects in priority order.",
+    "Back": "<pre><code>interface DiscountStrategy {\n    double apply(double price);\n}\n\nclass DiscountPipeline {\n    private final List&lt;DiscountStrategy&gt; discounts;\n\n    DiscountPipeline(List&lt;DiscountStrategy&gt; discounts) {\n        this.discounts = discounts; // caller supplies priority order\n    }\n\n    double applyAll(double subtotal) {\n        double price = subtotal;\n        for (DiscountStrategy discount : discounts) {\n            price = discount.apply(price);\n        }\n        return Math.max(price, 0.0);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201607,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "Implement a Python checkout() function that atomically reserves inventory (decrement-if-available) before creating the order.",
+    "Back": "<pre><code>def checkout(cart, inventory_repo, order_repo):\n    reserved = []\n    try:\n        for item in cart.items:\n            ok = inventory_repo.decrement_if_available(\n                item.product_id, item.quantity\n            )\n            if not ok:\n                raise OutOfStockError(item.product_id)\n            reserved.append(item)\n        return order_repo.create(cart)\n    except OutOfStockError:\n        for item in reserved:\n            inventory_repo.increment(item.product_id, item.quantity)\n        raise</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201615,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Text": "A {{c1::Cart}} holds a list of {{c2::CartItem}} objects (product + quantity); calculating its total is delegated to a pluggable {{c3::PricingStrategy}} rather than hard-coded in the Cart itself.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201616,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Text": "OrderStatus in a shopping-cart's State pattern typically progresses: {{c1::CREATED}} → {{c2::PAID}} → {{c3::SHIPPED}} → {{c4::DELIVERED}}, with {{c5::CANCELLED}} reachable from the earlier states.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201633,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-shopping-cart"
+   ],
+   "fields": {
+    "Front": "DiscountStrategy (Shopping Cart)",
+    "Back": "An interface encapsulating one discount algorithm (percentage-off, flat amount, buy-one-get-one) with an apply(cart) method that returns an adjusted total — swappable without changing checkout code."
+   }
+  }
+ ]
+}

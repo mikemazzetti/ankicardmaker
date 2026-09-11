@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Scalability & Load Balancing",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203228,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What is vertical scaling?",
+    "Back": "Increasing the capacity of a single server (more CPU, RAM, disk) rather than adding more servers."
+   }
+  },
+  {
+   "noteId": 1789061203229,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What is horizontal scaling?",
+    "Back": "Adding more servers/nodes to distribute load, rather than upgrading a single server."
+   }
+  },
+  {
+   "noteId": 1789061203230,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "Why must a service be stateless to scale horizontally behind a load balancer?",
+    "Back": "Because any request can be routed to any instance; if session state lived only on one server, requests routed elsewhere would lose access to it."
+   }
+  },
+  {
+   "noteId": 1789061203231,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What does an L4 (transport-layer) load balancer route on?",
+    "Back": "IP address and TCP/UDP port — it does not inspect HTTP content."
+   }
+  },
+  {
+   "noteId": 1789061203232,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What does an L7 (application-layer) load balancer route on?",
+    "Back": "HTTP-level content such as URL path, headers, cookies, or hostname."
+   }
+  },
+  {
+   "noteId": 1789061203233,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "Why is an L4 load balancer generally faster than L7?",
+    "Back": "It only inspects packet headers (IP/port), not the application payload, so there is less processing per request."
+   }
+  },
+  {
+   "noteId": 1789061203234,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "When is 'least connections' a better load-balancing choice than round robin?",
+    "Back": "When requests have highly variable processing times, so an equal request count per server doesn't mean equal server load."
+   }
+  },
+  {
+   "noteId": 1789061203235,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What property does IP-hash load balancing give you, and why is it useful?",
+    "Back": "It routes a given client IP to the same server consistently, which gives session affinity without needing a shared session store."
+   }
+  },
+  {
+   "noteId": 1789061203236,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What is a health check in a load-balancing context?",
+    "Back": "A periodic probe (e.g. an HTTP ping to /health) the load balancer sends to each backend to detect and stop routing to unhealthy instances."
+   }
+  },
+  {
+   "noteId": 1789061203237,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What is a 'sticky session'?",
+    "Back": "A load-balancer configuration that routes all requests from a given client to the same backend server, typically via a cookie."
+   }
+  },
+  {
+   "noteId": 1789061203238,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What is the main downside of sticky sessions?",
+    "Back": "They undermine even load distribution and complicate failover — if that server goes down, the client's locally stored session state is lost."
+   }
+  },
+  {
+   "noteId": 1789061203239,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "Why is a single load balancer a single point of failure (SPOF)?",
+    "Back": "If it goes down, no traffic can reach any backend server, even if all backends are healthy."
+   }
+  },
+  {
+   "noteId": 1789061203240,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "How do you eliminate the load balancer itself as a single point of failure?",
+    "Back": "Run redundant load balancers (active-passive or active-active) with a failover mechanism, e.g. DNS failover or a floating/virtual IP."
+   }
+  },
+  {
+   "noteId": 1789061203241,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What is autoscaling?",
+    "Back": "Automatically adding or removing server instances based on real-time load (e.g. CPU, request rate) to match capacity to demand."
+   }
+  },
+  {
+   "noteId": 1789061203242,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "What metrics commonly trigger autoscaling out (adding instances)?",
+    "Back": "CPU utilization, request latency, or queue length exceeding a defined threshold."
+   }
+  },
+  {
+   "noteId": 1789061203254,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Text": "Vertical scaling has a hard ceiling because a single machine's {{c1::hardware capacity}} is finite, while horizontal scaling can add {{c2::more machines}} almost indefinitely.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203255,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Text": "To make a service stateless, session data is typically moved out of server memory into {{c1::a shared store (e.g. Redis) or the client itself (e.g. a JWT token)}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203256,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Text": "A load balancer's core jobs: {{c1::distribute traffic across backend servers}}, {{c2::health-check backends and route around failures}}, and {{c3::provide a single stable entry point (often handling TLS termination)}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203257,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Text": "Common load-balancing algorithms: {{c1::round robin}} (cycles through servers in order), {{c2::least connections}} (sends traffic to the server with the fewest active connections), {{c3::IP hash}} (routes based on client IP for consistency), and {{c4::weighted}} (biases distribution toward more capable servers).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203258,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Text": "A {{c1::load balancer}} distributes traffic across multiple backend servers, while a {{c2::reverse proxy}} sits in front of one or more servers handling things like caching or TLS termination — a load balancer is essentially a reverse proxy specialized for traffic distribution.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203266,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "Stateless service",
+    "Back": "A service instance that stores no client session data between requests, so any instance can handle any request."
+   }
+  },
+  {
+   "noteId": 1789061203267,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-load-balancing"
+   ],
+   "fields": {
+    "Front": "L4 load balancer",
+    "Back": "A load balancer that routes based on IP address and port at the transport layer; fast, but blind to request content."
+   }
+  }
+ ]
+}

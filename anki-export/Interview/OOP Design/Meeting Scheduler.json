@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Meeting Scheduler",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201976,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What five core classes typically make up a meeting scheduler system?",
+    "Back": "Meeting, Room, User/Participant, Calendar, and TimeSlot (Interval) &mdash; Meeting ties a TimeSlot to a Room and a set of Participants; Calendar aggregates a User's Meetings."
+   }
+  },
+  {
+   "noteId": 1789061201977,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the TimeSlot (Interval) class?",
+    "Back": "Holds a start and end timestamp and exposes an <code>overlaps(other)</code> method &mdash; the core reusable building block for all conflict-detection logic (room booking, participant double-booking, free-slot search)."
+   }
+  },
+  {
+   "noteId": 1789061201978,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Why is the interval-overlap check typically written with strict '&lt;' rather than '&lt;=' at the boundaries?",
+    "Back": "So a meeting ending exactly when another starts (e.g. 10:00-11:00 and 11:00-12:00) is NOT treated as a conflict &mdash; using '&lt;=' would incorrectly flag back-to-back, non-overlapping meetings as conflicting."
+   }
+  },
+  {
+   "noteId": 1789061201979,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What enum models how a Meeting repeats, and what values does it hold?",
+    "Back": "RecurrenceType: NONE, DAILY, WEEKLY, MONTHLY (sometimes CUSTOM with an explicit rule)."
+   }
+  },
+  {
+   "noteId": 1789061201980,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What is the core algorithmic technique for detecting a room double-booking against N existing bookings efficiently, rather than a full O(n) linear scan each time?",
+    "Back": "Keep each Room's bookings in a sorted structure ordered by start time (e.g. a TreeMap/balanced BST or interval tree); to check a new [start, end), look up the closest existing bookings around start and only compare against those neighbors &mdash; O(log n) instead of O(n)."
+   }
+  },
+  {
+   "noteId": 1789061201981,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What data structure gives true O(log n) overlap queries for arbitrary insert/delete of many intervals, and why is it better than a simple sorted list for a busy scheduler?",
+    "Back": "An interval tree (each node stores an interval plus the max endpoint in its subtree) &mdash; unlike a sorted-by-start list, it supports efficient overlap queries even when intervals have very different lengths, without scanning past every interval that starts before the query but ends after it starts."
+   }
+  },
+  {
+   "noteId": 1789061201982,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Which design fits expanding a recurring Meeting (WEEKLY, ends after N occurrences) into concrete Meeting instances, and why?",
+    "Back": "Strategy pattern for recurrence expansion: each RecurrenceType (DAILY/WEEKLY/MONTHLY) implements a common <code>RecurrenceStrategy.nextOccurrences(start, rule)</code> interface, so SchedulerService doesn't need type-specific branching to generate instances."
+   }
+  },
+  {
+   "noteId": 1789061201983,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Why can't a recurring Meeting simply be stored as N separate Meeting rows generated once and forgotten?",
+    "Back": "Individual occurrences can be modified independently (one instance moved, cancelled, or renamed without affecting the series) &mdash; the classic 'edit this event / this and following / all events' problem, requiring either exception records per-instance or storing the recurrence rule and materializing occurrences on read with an override list."
+   }
+  },
+  {
+   "noteId": 1789061201984,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What edge case makes finding a common free slot among N participants harder than checking one person's calendar?",
+    "Back": "You must intersect the free time of ALL participants &mdash; a slot is only valid if it doesn't overlap ANY participant's existing meetings, so the algorithm merges each participant's busy intervals, then finds gaps common to every participant's free-time list (an intersection of free intervals, not a union)."
+   }
+  },
+  {
+   "noteId": 1789061201985,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Why must all Meeting start/end times be normalized to a single reference (e.g. stored in UTC) rather than each participant's local time?",
+    "Back": "Participants may be in different timezones; comparing raw local times without a common reference would misclassify overlaps/conflicts. Store timestamps in UTC internally and convert to each participant's local timezone only for display."
+   }
+  },
+  {
+   "noteId": 1789061201986,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Should a User be allowed to be double-booked (two overlapping meetings on their own calendar), and how should the design decide?",
+    "Back": "It's a policy decision, not purely technical: tentative meetings may be allowed to overlap so the user can choose later, but the SchedulerService should expose the conflict via <code>hasConflict(user, timeslot)</code> so the caller (UI) can warn or block, rather than silently allowing or silently rejecting."
+   }
+  },
+  {
+   "noteId": 1789061201987,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What API method would a client call to schedule a new meeting, and what should it check before creating it?",
+    "Back": "<code>scheduleMeeting(User organizer, List&lt;User&gt; participants, Room room, TimeSlot slot)</code> &mdash; must check the Room isn't already booked for an overlapping slot AND that no required participant already has a conflicting Meeting (or degrade gracefully to a warning for optional attendees)."
+   }
+  },
+  {
+   "noteId": 1789061201988,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "What API method finds open slots for a group, and what parameters does it need?",
+    "Back": "<code>findAvailableSlots(List&lt;User&gt; participants, Duration duration, DateRange searchWindow)</code> &mdash; returns a list of TimeSlots of at least <code>duration</code> where every participant is free within <code>searchWindow</code>."
+   }
+  },
+  {
+   "noteId": 1789061201989,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "When cancelling one occurrence of a recurring Meeting, what should the system NOT do?",
+    "Back": "It should not cancel the entire recurring series &mdash; it must create/mark an exception for just that single occurrence, leaving the rest of the recurrence rule and its future/past instances untouched."
+   }
+  },
+  {
+   "noteId": 1789061201990,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Java: implement a <code>TimeSlot.overlaps(other)</code> method using the strict-inequality interval overlap check.",
+    "Back": "<pre><code>import java.time.LocalDateTime;\n\nclass TimeSlot {\n    private final LocalDateTime start;\n    private final LocalDateTime end;\n\n    public TimeSlot(LocalDateTime start, LocalDateTime end) {\n        this.start = start;\n        this.end = end;\n    }\n\n    public LocalDateTime getStart() { return start; }\n    public LocalDateTime getEnd() { return end; }\n\n    public boolean overlaps(TimeSlot other) {\n        return this.start.isBefore(other.end) &amp;&amp; other.start.isBefore(this.end);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201991,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Python: write <code>find_free_slots(busy_intervals, window_start, window_end, min_duration)</code> that returns gaps of at least min_duration between sorted busy intervals.",
+    "Back": "<pre><code>def find_free_slots(busy_intervals, window_start, window_end, min_duration):\n    intervals = sorted(busy_intervals)\n    free_slots = []\n    cursor = window_start\n\n    for start, end in intervals:\n        if start &gt; cursor and (start - cursor) &gt;= min_duration:\n            free_slots.append((cursor, start))\n        cursor = max(cursor, end)\n\n    if window_end &gt; cursor and (window_end - cursor) &gt;= min_duration:\n        free_slots.append((cursor, window_end))\n\n    return free_slots</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201992,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Java: implement a <code>Room</code> class backed by a TreeMap of bookings that checks only its nearest neighbors for an overlap in <code>isAvailable(requested)</code>.",
+    "Back": "<pre><code>import java.time.LocalDateTime;\nimport java.util.Map;\nimport java.util.TreeMap;\n\nclass Room {\n    private final TreeMap&lt;LocalDateTime, TimeSlot&gt; bookingsByStart = new TreeMap&lt;&gt;();\n\n    public boolean isAvailable(TimeSlot requested) {\n        Map.Entry&lt;LocalDateTime, TimeSlot&gt; before = bookingsByStart.floorEntry(requested.getStart());\n        Map.Entry&lt;LocalDateTime, TimeSlot&gt; after = bookingsByStart.ceilingEntry(requested.getStart());\n\n        if (before != null &amp;&amp; before.getValue().overlaps(requested)) return false;\n        if (after != null &amp;&amp; after.getValue().overlaps(requested)) return false;\n        return true;\n    }\n\n    public void book(TimeSlot slot) {\n        bookingsByStart.put(slot.getStart(), slot);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201993,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Python: write <code>expand_weekly(first_start, first_end, occurrences)</code> that generates the (start, end) tuples for a weekly recurring meeting.",
+    "Back": "<pre><code>from datetime import timedelta\n\ndef expand_weekly(first_start, first_end, occurrences):\n    meetings = []\n    for i in range(occurrences):\n        offset = timedelta(weeks=i)\n        meetings.append((first_start + offset, first_end + offset))\n    return meetings</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201999,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Text": "Two time intervals [start1, end1) and [start2, end2) overlap if and only if {{c1::start1 &lt; end2}} AND {{c2::start2 &lt; end1}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202018,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-meeting-scheduler"
+   ],
+   "fields": {
+    "Front": "Calendar",
+    "Back": "Per-User class holding that user's Meetings, used to answer 'is this user free at time T' and to compute free slots for scheduling."
+   }
+  }
+ ]
+}

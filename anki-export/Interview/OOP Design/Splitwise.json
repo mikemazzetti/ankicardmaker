@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Splitwise",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201845,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "In Splitwise's domain model, what three concrete Split subtypes does the Strategy pattern typically provide?",
+    "Back": "EqualSplit, ExactSplit, and PercentSplit &mdash; each implementing a common SplitStrategy/Split interface with a method to compute each participant's owed amount."
+   }
+  },
+  {
+   "noteId": 1789061201846,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the Expense class?",
+    "Back": "Holds the total amount, the payer (who fronted the money), the list of participants, the chosen SplitStrategy/SplitType, and produces a list of per-user Split amounts owed."
+   }
+  },
+  {
+   "noteId": 1789061201847,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Why does the Strategy pattern fit split calculation better than a big if/else on SplitType inside Expense?",
+    "Back": "Each split algorithm (equal/exact/percent) has different validation and math; Strategy isolates each in its own class implementing a common interface, so adding a new split type (e.g. SHARES/weighted) means adding a class, not editing Expense's logic &mdash; Open/Closed Principle."
+   }
+  },
+  {
+   "noteId": 1789061201848,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What structure represents who-owes-whom across a group, and why call it a 'balance graph'?",
+    "Back": "A directed weighted graph where each User is a node and each edge (A -&gt; B, amount) represents A owing B that amount; implemented as e.g. <code>Map&lt;User, Map&lt;User, Double&gt;&gt;</code>. It's a graph because debts form a network, and simplification is a graph-reduction problem."
+   }
+  },
+  {
+   "noteId": 1789061201849,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What is 'debt simplification' in Splitwise, and what algorithmic approach solves it?",
+    "Back": "Reducing the number of individual transactions needed to settle all group balances (e.g. A owes B, B owes C, C owes A nets to fewer/zero transfers). Solved as a min-cash-flow problem: compute each person's net balance, then greedily match the largest creditor with the largest debtor repeatedly."
+   }
+  },
+  {
+   "noteId": 1789061201850,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "In the balance graph, how do you compute a single User's net balance (how much they're owed overall)?",
+    "Back": "Net = total amount owed to them by everyone, minus total amount they owe everyone else (receivable - payable)."
+   }
+  },
+  {
+   "noteId": 1789061201851,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What must be true of the percentages in a PercentSplit for an Expense to be valid?",
+    "Back": "They must sum to exactly 100% across all participants (within a small floating-point epsilon); otherwise reject the expense with a validation error."
+   }
+  },
+  {
+   "noteId": 1789061201852,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What must be true of the amounts in an ExactSplit for an Expense to be valid?",
+    "Back": "The sum of each participant's exact amount must equal the Expense's total amount (within a small epsilon for floating point)."
+   }
+  },
+  {
+   "noteId": 1789061201853,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What rounding edge case occurs with EqualSplit, and how is it typically handled?",
+    "Back": "Dividing a total like $100 among 3 people gives $33.33 repeating &mdash; the split amounts won't sum exactly to $100 in cents. Fix: compute the floor amount per person, then distribute the leftover cents one at a time to the first N participants (or the payer) so the sum matches exactly."
+   }
+  },
+  {
+   "noteId": 1789061201854,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "When a User is both the payer and a participant in their own Expense, how should their own share be handled in the balance graph?",
+    "Back": "Their own share nets against what they paid &mdash; do not record a self-edge (a user owing themselves); only create graph edges between the payer and the OTHER participants for their respective shares."
+   }
+  },
+  {
+   "noteId": 1789061201855,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What API method would settle a debt directly between two users outside of any Expense, and what does it do to the balance graph?",
+    "Back": "<code>settleUp(User payer, User payee, double amount)</code> &mdash; reduces the edge weight from payer to payee (or adds an offsetting payment record), recording a direct payment rather than a shared expense."
+   }
+  },
+  {
+   "noteId": 1789061201856,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Why should Group maintain its own BalanceSheet rather than computing balances by replaying all Expenses on every query?",
+    "Back": "Replaying every expense on every balance check is O(n) per query and doesn't scale; an incrementally-updated BalanceSheet (updated once per addExpense/settleUp call) makes <code>getBalance(userA, userB)</code> O(1)."
+   }
+  },
+  {
+   "noteId": 1789061201857,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "What API call adds a new shared expense, and what are its key parameters?",
+    "Back": "<code>addExpense(User payer, double amount, List&lt;User&gt; participants, SplitType type, Map&lt;User, Double&gt; splitValues)</code> &mdash; splitValues holds exact amounts or percentages depending on type (unused/null for EQUAL)."
+   }
+  },
+  {
+   "noteId": 1789061201858,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Why is currency/precision handling (integer cents instead of floating-point dollars) an important edge case in Splitwise-style systems?",
+    "Back": "Floating-point arithmetic (doubles) accumulates rounding errors across many expenses, causing balances to drift from the true total; storing amounts as integer cents (or a fixed-point Decimal type) avoids this."
+   }
+  },
+  {
+   "noteId": 1789061201859,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Java: implement the Strategy pattern with an EqualSplitStrategy that distributes a total (in cents) evenly, giving any leftover cents to the first participants.",
+    "Back": "<pre><code>import java.util.LinkedHashMap;\nimport java.util.List;\nimport java.util.Map;\n\ninterface SplitStrategy {\n    Map&lt;User, Long&gt; computeSplits(long totalCents, List&lt;User&gt; participants, Map&lt;User, Long&gt; inputs);\n}\n\nclass EqualSplitStrategy implements SplitStrategy {\n    @Override\n    public Map&lt;User, Long&gt; computeSplits(long totalCents, List&lt;User&gt; participants, Map&lt;User, Long&gt; inputs) {\n        int n = participants.size();\n        long base = totalCents / n;\n        long remainder = totalCents % n;\n\n        Map&lt;User, Long&gt; splits = new LinkedHashMap&lt;&gt;();\n        for (int i = 0; i &lt; n; i++) {\n            long share = base + (i &lt; remainder ? 1 : 0);\n            splits.put(participants.get(i), share);\n        }\n        return splits;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201860,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Python: write <code>validate_exact_split(total_amount, splits)</code> that raises ValueError if the split amounts don't sum to the total (allow a small float epsilon).",
+    "Back": "<pre><code>EPSILON = 1e-6\n\ndef validate_exact_split(total_amount: float, splits: dict) -&gt; None:\n    split_sum = sum(splits.values())\n    if abs(split_sum - total_amount) &gt; EPSILON:\n        raise ValueError(\n            f\"Exact splits sum to {split_sum}, expected {total_amount}\"\n        )</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201861,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Java: implement <code>BalanceSheet.recordDebt(debtor, creditor, amountCents)</code> that nets a new debt against any existing opposite-direction debt between the same two users.",
+    "Back": "<pre><code>import java.util.HashMap;\nimport java.util.Map;\n\nclass BalanceSheet {\n    private final Map&lt;User, Map&lt;User, Long&gt;&gt; owes = new HashMap&lt;&gt;();\n\n    public void recordDebt(User debtor, User creditor, long amountCents) {\n        if (debtor.equals(creditor) || amountCents == 0) return;\n\n        long existingReverse = owes\n            .getOrDefault(creditor, Map.of())\n            .getOrDefault(debtor, 0L);\n\n        if (existingReverse &gt; 0) {\n            long net = existingReverse - amountCents;\n            if (net &gt;= 0) {\n                owes.get(creditor).put(debtor, net);\n            } else {\n                owes.get(creditor).remove(debtor);\n                owes.computeIfAbsent(debtor, k -&gt; new HashMap&lt;&gt;())\n                    .merge(creditor, -net, Long::sum);\n            }\n        } else {\n            owes.computeIfAbsent(debtor, k -&gt; new HashMap&lt;&gt;())\n                .merge(creditor, amountCents, Long::sum);\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201862,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Python: implement a greedy <code>simplify_debts(net_balances)</code> that repeatedly matches the largest creditor with the largest debtor to minimize transactions, using heaps.",
+    "Back": "<pre><code>import heapq\n\ndef simplify_debts(net_balances: dict) -&gt; list:\n    creditors = [(-amt, user) for user, amt in net_balances.items() if amt &gt; 0]\n    debtors = [(amt, user) for user, amt in net_balances.items() if amt &lt; 0]\n    heapq.heapify(creditors)\n    heapq.heapify(debtors)\n\n    transactions = []\n    while creditors and debtors:\n        neg_credit, creditor = heapq.heappop(creditors)\n        debt, debtor = heapq.heappop(debtors)\n        credit = -neg_credit\n        settled = min(credit, -debt)\n\n        transactions.append((debtor, creditor, settled))\n\n        if credit - settled &gt; 1e-9:\n            heapq.heappush(creditors, (-(credit - settled), creditor))\n        if -debt - settled &gt; 1e-9:\n            heapq.heappush(debtors, (debt + settled, debtor))\n\n    return transactions</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201863,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Text": "The {{c1::SplitType}} enum has values {{c2::EQUAL}}, {{c3::EXACT}}, and {{c4::PERCENT}}, selecting which split strategy an Expense uses.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201874,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-splitwise"
+   ],
+   "fields": {
+    "Front": "Strategy pattern",
+    "Back": "Behavioral pattern that defines a family of interchangeable algorithms (here, split-calculation methods) behind a common interface, letting the context (Expense) pick one at runtime without conditional branching."
+   }
+  }
+ ]
+}

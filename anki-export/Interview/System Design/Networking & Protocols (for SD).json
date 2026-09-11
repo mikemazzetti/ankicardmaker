@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Networking & Protocols (for SD)",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203364,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Text": "DNS resolution for a request typically flows: browser cache → {{c1::OS resolver cache}} → {{c2::recursive resolver (ISP or public DNS)}} → {{c3::root, TLD, and authoritative nameservers}} → IP address returned to the client.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203365,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Text": "HTTP version progression: {{c1::HTTP/1.1}} (one request effectively in flight per connection), {{c2::HTTP/2}} (multiplexed streams over one TCP connection), {{c3::HTTP/3}} (multiplexed over QUIC/UDP, avoiding TCP-level head-of-line blocking).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203366,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Text": "REST, {{c1::gRPC}}, and {{c2::GraphQL}} are three API styles for service communication: REST is simple and cacheable, gRPC is fast and binary for internal services, and GraphQL lets clients query exactly the fields they need.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203367,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Text": "For real-time updates, options of increasing capability are: {{c1::long polling}} (repeated requests held open by the server), {{c2::SSE}} (persistent one-way server-to-client stream), and {{c3::WebSockets}} (persistent full-duplex connection).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203368,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Text": "Among standard HTTP methods, {{c1::GET, PUT, and DELETE}} are idempotent (repeating them has the same effect as once), while {{c2::POST}} is generally not idempotent (repeating it can create duplicate resources).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203393,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is the main limitation of HTTP/1.1 that motivated HTTP/2?",
+    "Back": "Head-of-line blocking: only one request per TCP connection can be effectively in flight at a time, forcing browsers to open many parallel connections."
+   }
+  },
+  {
+   "noteId": 1789061203394,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What key feature does HTTP/2 introduce to fix HTTP/1.1's per-connection limitation?",
+    "Back": "Multiplexing — multiple requests and responses can be in flight concurrently over a single TCP connection."
+   }
+  },
+  {
+   "noteId": 1789061203395,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What transport protocol does HTTP/3 use instead of TCP, and why?",
+    "Back": "QUIC, built on UDP — it avoids TCP-level head-of-line blocking and supports faster connection setup."
+   }
+  },
+  {
+   "noteId": 1789061203396,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What architectural style does REST rely on for resources and semantics?",
+    "Back": "Resources identified by URLs, manipulated via standard HTTP methods (GET/POST/PUT/DELETE), typically with JSON payloads."
+   }
+  },
+  {
+   "noteId": 1789061203397,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is the main advantage of gRPC over REST for internal service-to-service calls?",
+    "Back": "It uses HTTP/2 with binary Protobuf serialization, giving lower latency and smaller payloads than JSON over HTTP/1.1."
+   }
+  },
+  {
+   "noteId": 1789061203398,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What problem does GraphQL solve that plain REST often doesn't?",
+    "Back": "Over-fetching and under-fetching: clients specify exactly which fields they need in one query, instead of being locked to fixed REST endpoint shapes."
+   }
+  },
+  {
+   "noteId": 1789061203399,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is a key downside of gRPC for public/browser-facing APIs?",
+    "Back": "Limited native browser support and less human-readable payloads (binary Protobuf) compared to JSON/REST."
+   }
+  },
+  {
+   "noteId": 1789061203400,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is long polling?",
+    "Back": "The client repeatedly sends HTTP requests that the server holds open until new data is available (or a timeout), then the client immediately reconnects."
+   }
+  },
+  {
+   "noteId": 1789061203401,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is Server-Sent Events (SSE)?",
+    "Back": "A one-way, persistent HTTP connection where the server pushes a stream of text-based events to the client."
+   }
+  },
+  {
+   "noteId": 1789061203402,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is the key advantage of WebSockets over long polling and SSE?",
+    "Back": "WebSockets provide full-duplex (bidirectional) communication over a single persistent connection, not just server-to-client or repeated request/response."
+   }
+  },
+  {
+   "noteId": 1789061203403,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "Why would you choose UDP over TCP for a service?",
+    "Back": "When low latency matters more than guaranteed delivery and ordering — e.g. video/voice streaming or real-time gaming — since UDP skips TCP's handshake, retransmission, and ordering overhead."
+   }
+  },
+  {
+   "noteId": 1789061203404,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "Why is TCP preferred over UDP for most web services?",
+    "Back": "It guarantees reliable, ordered delivery with congestion control, which most application logic (e.g. API calls, file transfer) depends on."
+   }
+  },
+  {
+   "noteId": 1789061203405,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What is the primary role of an API gateway?",
+    "Back": "A single entry point that routes client requests to backend services, and can centralize concerns like auth, rate limiting, and logging."
+   }
+  },
+  {
+   "noteId": 1789061203406,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "What does 'TLS termination' at a load balancer or proxy mean?",
+    "Back": "The proxy decrypts incoming HTTPS traffic and forwards plain HTTP to backend servers, so backends don't need to manage TLS certificates themselves."
+   }
+  },
+  {
+   "noteId": 1789061203407,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "Is the HTTP GET method idempotent?",
+    "Back": "Yes — repeating the same GET request multiple times has the same effect as making it once (no side effects)."
+   }
+  },
+  {
+   "noteId": 1789061203408,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "Forward proxy",
+    "Back": "A proxy that sits in front of clients, forwarding their requests outward and hiding the client's identity from the destination server."
+   }
+  },
+  {
+   "noteId": 1789061203409,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-networking"
+   ],
+   "fields": {
+    "Front": "Reverse proxy",
+    "Back": "A proxy that sits in front of servers, forwarding client requests to the appropriate backend and hiding the backend's identity from the client."
+   }
+  }
+ ]
+}

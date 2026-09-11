@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Distributed Cache",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061204432,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements of a distributed cache service?",
+    "Back": "Support get/set/delete of key-value pairs with low latency, support TTL/expiration, and scale horizontally across many nodes while distributing keys evenly."
+   }
+  },
+  {
+   "noteId": 1789061204433,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "If a service needs to cache 500M key-value pairs averaging 1KB each, what is the approximate total cache memory needed (before replication)?",
+    "Back": "500,000,000 x 1KB ~ 500 GB of memory"
+   }
+  },
+  {
+   "noteId": 1789061204434,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What is the basic data model of a distributed cache, and how does it differ from a relational DB?",
+    "Back": "Simple key-value pairs (often with a TTL) — no schema, no joins, no complex queries; optimized purely for fast point lookups by key."
+   }
+  },
+  {
+   "noteId": 1789061204435,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What are the main components in a distributed cache's high-level architecture?",
+    "Back": "Cache client (with routing/hashing logic), a cluster of cache nodes holding data in memory, and often a coordination layer (e.g., gossip protocol or config service) tracking cluster membership."
+   }
+  },
+  {
+   "noteId": 1789061204436,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What is consistent hashing?",
+    "Back": "A hashing scheme that maps both nodes and keys onto a fixed hash ring (e.g., 0 to 2^32-1); each key is owned by the first node found clockwise from its hash position, so adding/removing a node only remaps a small fraction of keys."
+   }
+  },
+  {
+   "noteId": 1789061204437,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "Why do consistent hashing implementations use 'virtual nodes' (multiple points per physical node on the ring)?",
+    "Back": "A single point per physical node can lead to uneven load distribution (some nodes owning much larger ring arcs); virtual nodes spread each physical node's ownership across many smaller arcs, balancing load more evenly."
+   }
+  },
+  {
+   "noteId": 1789061204438,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "Why does a cache need an eviction policy even when using TTLs?",
+    "Back": "Memory is finite — even before TTLs expire, the cache may fill up and need to proactively remove entries to make room for new writes."
+   }
+  },
+  {
+   "noteId": 1789061204439,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "How does LFU (Least Frequently Used) eviction differ from LRU, and when might it be preferred?",
+    "Back": "LFU evicts the entry with the fewest total accesses (regardless of recency), which better protects consistently popular items from being evicted by a short burst of unrelated new accesses."
+   }
+  },
+  {
+   "noteId": 1789061204440,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What is a 'hot key' problem in a distributed cache?",
+    "Back": "A single key (e.g., a viral post or celebrity profile) receives disproportionately high traffic, overloading the one node that owns it via consistent hashing, even though the rest of the cluster is underutilized."
+   }
+  },
+  {
+   "noteId": 1789061204441,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "Describe the cache-aside (lazy loading) pattern for reads.",
+    "Back": "On a read: check the cache first; on a hit, return the cached value; on a miss, read from the database, then populate the cache with that value before returning it to the caller."
+   }
+  },
+  {
+   "noteId": 1789061204442,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What is a cache stampede (thundering herd), and how can it be prevented?",
+    "Back": "When a popular cached key expires, many concurrent requests simultaneously miss the cache and hit the database at once; prevented with request coalescing (only one request refetches, others wait) or staggered/jittered TTLs."
+   }
+  },
+  {
+   "noteId": 1789061204443,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Front": "What consistency tradeoff do distributed caches typically accept, and why?",
+    "Back": "Eventual consistency between cache and database (a write to the DB may take a moment to invalidate/update the cache) — acceptable because caches optimize for speed, and most applications tolerate briefly stale reads."
+   }
+  },
+  {
+   "noteId": 1789061204444,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "A distributed cache prioritizes {{c1::very low latency (sub-millisecond to low-millisecond)}} and {{c1::high throughput}} over strict durability — cache data is often treated as {{c2::disposable/reconstructible from the source of truth}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204445,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "A distributed cache client typically talks to the cluster via simple operations: <pre><code>GET key\nSET key value TTL\nDEL key</code></pre> where {{c1::TTL}} lets entries expire automatically without explicit deletion.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204446,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "Naively sharding keys with <pre><code>hash(key) % N</code></pre> works until the cluster resizes (N changes) — then {{c1::almost all keys remap to different nodes}}, causing a massive cache miss storm.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204447,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "With consistent hashing, adding or removing one node out of N remaps only about {{c1::1/N of the keys}} on average, instead of remapping nearly all keys as with modulo hashing.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204448,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "To tolerate node failure, a distributed cache typically replicates each key to the next {{c1::N-1 nodes clockwise on the hash ring}} (its 'preference list'), so losing one node doesn't lose that key's data.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204449,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "{{c1::LRU (Least Recently Used)}} eviction removes the entry that hasn't been accessed for the {{c1::longest time}}, based on the assumption that recently accessed items are more likely to be accessed again soon.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204450,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "Hot keys are commonly mitigated by {{c1::replicating the hot key's value onto multiple nodes/local caches so reads are load-balanced}}, or by adding a {{c2::random suffix (key sharding) so a single logical key is split across several physical keys}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204451,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "In {{c1::write-through}} caching, writes go to the cache and the database synchronously (safer, slower); in {{c2::write-back (write-behind)}} caching, writes go to the cache immediately and are flushed to the database asynchronously later (faster, riskier on cache failure).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204452,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "As traffic grows, a distributed cache's bottleneck shifts from any single node's CPU/memory to {{c1::network bandwidth and connection count}} on hot nodes, addressed by {{c2::adding more nodes (with consistent hashing) and/or client-side local caching}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204453,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-distributed-cache"
+   ],
+   "fields": {
+    "Text": "Distributed caches usually keep data purely {{c1::in-memory}} (optionally with limited disk persistence for faster restart), trading {{c2::durability guarantees}} for the speed benefits of avoiding disk I/O on the hot path.",
+    "Extra": ""
+   }
+  }
+ ]
+}

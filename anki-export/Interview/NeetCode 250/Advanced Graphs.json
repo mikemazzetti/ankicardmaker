@@ -1,0 +1,147 @@
+{
+ "deck": "Interview::NeetCode 250::Advanced Graphs",
+ "note_count": 10,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585594,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-path-with-minimum-effort",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hiker crosses a grid of cells, each with an elevation, from the top-left to the bottom-right, stepping between adjacent cells. The strain of a route is its single biggest up-or-down elevation jump between consecutive cells. Find the route whose biggest jump is as small as possible, and report that smallest possible biggest-jump.",
+    "Back": "<b>Maps to:</b> Minimax path via Dijkstra or binary search + connectivity (Path with Minimum Effort).<br><br><b>Model it:</b> Minimize the maximum edge weight (absolute height difference) along a path from corner to corner.<br><br><b>Approach &amp; variations:</b><ul><li>Dijkstra-style: the cost of reaching a cell is the max jump so far; always expand the frontier cell with the smallest such max.</li><li>Alternatively binary-search the threshold and check with a flood fill whether corners connect using only jumps <= threshold.</li><li>Union-find over edges sorted by difference also works (add edges until corners join).</li></ul><b>Time:</b> O(rows*cols*log(rows*cols)) — Dijkstra over grid cells with a heap.<br><b>Space:</b> O(rows*cols) — the cost grid and heap."
+   }
+  },
+  {
+   "noteId": 1788998585595,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-network-delay-time",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A signal is sent from one relay station and travels along one-way wires, each with a known travel time, to other stations. It fans out along all wires at once. How long until every station has received the signal — or report that some station can never be reached?",
+    "Back": "<b>Maps to:</b> Single-source shortest paths (Network Delay Time / Dijkstra).<br><br><b>Model it:</b> Find the maximum over all nodes of the shortest-path distance from the source; infinity if any is unreachable.<br><br><b>Approach &amp; variations:</b><ul><li>Run Dijkstra from the source to get each station's earliest arrival time.</li><li>The answer is the largest of those times; if any station stays unreached, return -1.</li><li>Bellman-Ford also works and handles the same directed weighted edges (needed if negatives existed).</li></ul><b>Time:</b> O(E log V) — Dijkstra with a binary heap.<br><b>Space:</b> O(V + E) — adjacency plus distance array and heap."
+   }
+  },
+  {
+   "noteId": 1788998585596,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-reconstruct-flight-path",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You hold a stack of one-way plane tickets, each naming a departure and arrival airport. Starting from a fixed home airport, you must use every single ticket exactly once to form one continuous trip. Among all trips that use all tickets, produce the one that reads earliest alphabetically when the airport codes are listed in order.",
+    "Back": "<b>Maps to:</b> Eulerian path with lexical greedy (Reconstruct Itinerary / Hierholzer).<br><br><b>Model it:</b> Find an Eulerian path using every directed edge once, choosing the lexicographically smallest sequence.<br><br><b>Approach &amp; variations:</b><ul><li>Each ticket is a directed edge; you need a trail using all edges once starting at the home airport.</li><li>Hierholzer's algorithm: from each airport visit destinations in sorted (smallest-first) order, and append an airport to the route only after its outgoing tickets are exhausted.</li><li>Reverse the post-order stack to get the final itinerary.</li></ul><b>Time:</b> O(E log E) — sorting destinations plus visiting each ticket once.<br><b>Space:</b> O(E) — adjacency lists and the route stack."
+   }
+  },
+  {
+   "noteId": 1788998585597,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-min-cost-to-connect-points",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Several houses sit at known map coordinates. You want to lay wire so every house is connected to every other (directly or through others). The cost of a direct wire between two houses is the walking-block distance between them. What is the least total wire cost to connect them all?",
+    "Back": "<b>Maps to:</b> Minimum spanning tree (Min Cost to Connect All Points).<br><br><b>Model it:</b> On a complete graph with Manhattan-distance edge weights, find the minimum spanning tree's total weight.<br><br><b>Approach &amp; variations:</b><ul><li>Prim's: grow a connected cluster, each step adding the cheapest wire from the cluster to a house outside it.</li><li>Kruskal's: sort all candidate wires by length and add each if it joins two separate groups (union-find), stopping at N-1 wires.</li><li>With N points, Prim's with a heap is natural since the graph is dense (all pairs).</li></ul><b>Time:</b> O(N^2 log N) heap Prim's, or O(N^2) dense Prim's.<br><b>Space:</b> O(N) to O(N^2) — depending on whether edges are materialized."
+   }
+  },
+  {
+   "noteId": 1788998585598,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-swim-in-rising-water",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A square pool is a grid where each cell has a wall height. Water level rises over time; at level t you may stand in any cell whose height is at most t, and you can instantly move between adjacent flooded cells. Starting top-left, wanting to reach bottom-right, what is the earliest level at which a continuous flooded route between the corners exists?",
+    "Back": "<b>Maps to:</b> Minimax path via Dijkstra or binary search + flood fill (Swim in Rising Water).<br><br><b>Model it:</b> Minimize the maximum cell height along a path from corner to corner; that max is the earliest time.<br><br><b>Approach &amp; variations:</b><ul><li>Dijkstra-style: expand the reachable cell with the smallest 'max height so far' until you pop the destination.</li><li>Or binary-search the level and flood-fill to test if corners connect using only cells <= level.</li><li>Kruskal union-find adding cells in height order until the corners join also gives the answer.</li></ul><b>Time:</b> O(N^2 log N) — heap over the N^2 cells.<br><b>Space:</b> O(N^2) — visited/cost grid and heap."
+   }
+  },
+  {
+   "noteId": 1788998585599,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-foreign-dictionary",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You are handed a list of words written in an unknown language, and you are told the list is already sorted by that language's own dictionary order. From that ordering alone, deduce the relative order of the language's letters. Output any full letter ordering consistent with the words, or report that the list contradicts itself.",
+    "Back": "<b>Maps to:</b> Topological sort of inferred letter order (Alien Dictionary / Foreign Dictionary).<br><br><b>Model it:</b> Derive letter-precedence edges from adjacent word pairs, then topologically order the letters.<br><br><b>Approach &amp; variations:</b><ul><li>For each adjacent word pair, the first differing letter gives an ordering edge earlier-letter -> later-letter.</li><li>Topologically sort the resulting letter graph (Kahn's or DFS) to get a valid alphabet.</li><li>A cycle means contradiction; also fail if a longer word precedes its own prefix.</li><li>Include all letters that appear, even those with no constraints.</li></ul><b>Time:</b> O(total characters) — comparing pairs plus a topo sort over <=26 letters.<br><b>Space:</b> O(1) — bounded by the 26-letter graph (plus input)."
+   }
+  },
+  {
+   "noteId": 1788998585600,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-cheapest-flight-path",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You want to travel from your home city to a destination city using one-way flights, each with a price. To keep it bearable you'll accept at most K intermediate stopovers along the way. What is the cheapest total fare for a trip from home to destination that uses no more than K stops, or is it not doable within that limit?",
+    "Back": "<b>Maps to:</b> Bounded-hop shortest path (Cheapest Flights Within K Stops / Bellman-Ford).<br><br><b>Model it:</b> Find the minimum-cost path from source to destination using at most K+1 edges.<br><br><b>Approach &amp; variations:</b><ul><li>Bellman-Ford relaxed exactly K+1 rounds, using a snapshot of distances each round so a single round can't chain multiple hops.</li><li>Alternatively BFS/Dijkstra tracking (city, stops-used) states, allowing revisits with fewer stops.</li><li>The stop limit is why plain Dijkstra alone can be wrong — cheaper-but-longer routes may be disallowed.</li></ul><b>Time:</b> O(K * E) — K+1 relaxation rounds over all flights.<br><b>Space:</b> O(V) — distance arrays (current and previous round)."
+   }
+  },
+  {
+   "noteId": 1788998585601,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A town wants to connect all its buildings with the cheapest possible set of roads, each candidate road having a fixed cost. For each candidate road, classify it: 'critical' if leaving it out forces any cheapest connection plan to cost more (or become impossible), and 'important-but-optional' if it can appear in some cheapest plan but isn't forced. Report both groups.",
+    "Back": "<b>Maps to:</b> MST edge criticality analysis (Find Critical and Pseudo-Critical Edges).<br><br><b>Model it:</b> Classify each edge relative to the minimum spanning tree cost: critical if excluding it raises the MST cost, pseudo-critical if it fits in some MST but isn't mandatory.<br><br><b>Approach &amp; variations:</b><ul><li>Compute the baseline MST weight with Kruskal + union-find.</li><li>An edge is critical if excluding it makes the MST weight larger (or disconnected).</li><li>An edge is pseudo-critical if forcing it in (add it first, then Kruskal) still yields the baseline weight, but it isn't critical.</li><li>Index edges before sorting so you can report original positions.</li></ul><b>Time:</b> O(E^2 * alpha) — re-run Kruskal per edge over sorted edges.<br><b>Space:</b> O(E + V) — edge list and union-find."
+   }
+  },
+  {
+   "noteId": 1788998585602,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-build-a-matrix-with-conditions",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "You must arrange the numbers 1..k into a k-by-k grid so each number appears exactly once and the rest of the cells are blank. You're given two rule sets: one says certain numbers must sit in a higher row than certain others, the other says certain numbers must sit in a column further left than certain others. Produce any grid satisfying all rules, or report it's impossible.",
+    "Back": "<b>Maps to:</b> Two independent topological sorts (Build a Matrix With Conditions).<br><br><b>Model it:</b> Order numbers vertically by the row constraints and horizontally by the column constraints via two separate topological sorts, then place each number at the intersection.<br><br><b>Approach &amp; variations:</b><ul><li>Row conditions form a directed graph on numbers; topologically sort it to get each number's row index.</li><li>Column conditions likewise give a topological order for column indices.</li><li>If either sort hits a cycle, it's impossible; otherwise place value v at (rowRank[v], colRank[v]).</li><li>The two dimensions are independent, so solve them separately.</li></ul><b>Time:</b> O(k + conditions) — two topo sorts over k nodes.<br><b>Space:</b> O(k + conditions) — two graphs plus the output grid (O(k^2))."
+   }
+  },
+  {
+   "noteId": 1788998585603,
+   "modelName": "Basic",
+   "tags": [
+    "advanced-graphs",
+    "ankicardmaker",
+    "nc-greatest-common-divisor-traversal",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A row of numbered tokens sits on a table. You may hop from one token to another only if the two share a common factor greater than one. Can you get from every token to every other token by some sequence of such hops?",
+    "Back": "<b>Maps to:</b> Union-find via shared prime factors (Greatest Common Divisor Traversal).<br><br><b>Model it:</b> Tokens are connected if they share a prime factor; check whether the whole set forms one connected component.<br><br><b>Approach &amp; variations:</b><ul><li>Linking every pair directly is too slow; instead union each number with its prime factors.</li><li>Two numbers sharing a prime end up in the same group through that prime's node.</li><li>After processing all numbers, everything is reachable iff all numbers belong to one group.</li><li>A value of 1 shares no prime, so any 1 present (with n>1) makes it impossible.</li></ul><b>Time:</b> O(N * sqrt(maxVal)) or O(N log maxVal) with a smallest-prime sieve for factoring.<br><b>Space:</b> O(N + maxVal) — union-find over numbers and prime nodes."
+   }
+  }
+ ]
+}

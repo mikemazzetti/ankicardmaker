@@ -1,0 +1,241 @@
+{
+ "deck": "Interview::Resume Prep::FastAPI",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000601954,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a FastAPI path parameter with a type hint?",
+    "Back": "<pre><code>from fastapi import FastAPI\napp = FastAPI()\n\n@app.get(\"/items/{item_id}\")\ndef read_item(item_id: int):\n    return {\"item_id\": item_id}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601955,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In FastAPI, how does a function parameter become a query parameter vs a path parameter?",
+    "Back": "If the parameter name matches a <code>{name}</code> placeholder in the route path, it's a path parameter; any other function parameter with a simple type (not a Pydantic model) is automatically treated as a query parameter."
+   }
+  },
+  {
+   "noteId": 1789000601956,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an optional query parameter with a default value in FastAPI?",
+    "Back": "<pre><code>@app.get(\"/items\")\ndef list_items(q: str | None = None, limit: int = 10):\n    return {\"q\": q, \"limit\": limit}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601957,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Pydantic model used for in FastAPI request bodies?",
+    "Back": "A class subclassing <code>BaseModel</code> that declares field names and types for the JSON request body; FastAPI parses, type-converts, and validates incoming JSON against it automatically, returning a 422 error on mismatch."
+   }
+  },
+  {
+   "noteId": 1789000601958,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a FastAPI POST endpoint that accepts a JSON body validated by a Pydantic model?",
+    "Back": "<pre><code>from pydantic import BaseModel\n\nclass Item(BaseModel):\n    name: str\n    price: float\n\n@app.post(\"/items\")\ndef create_item(item: Item):\n    return item</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601959,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does FastAPI's dependency injection system (<code>Depends</code>) let you do?",
+    "Back": "It lets you declare reusable pieces of logic (e.g. get a DB session, verify auth) as functions, and have FastAPI automatically call them and inject their return value into any route that needs it."
+   }
+  },
+  {
+   "noteId": 1789000601960,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a FastAPI dependency that provides a DB session and use it in a route?",
+    "Back": "<pre><code>def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n\n@app.get(\"/users\")\ndef list_users(db: Session = Depends(get_db)):\n    return db.query(User).all()</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601961,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why does a FastAPI dependency using <code>yield</code> support setup/teardown logic?",
+    "Back": "Code before the <code>yield</code> runs before the request is handled (setup, e.g. opening a DB session); code after the <code>yield</code> runs after the response is sent (teardown, e.g. closing the session), even if an exception occurred."
+   }
+  },
+  {
+   "noteId": 1789000601962,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an async FastAPI endpoint that awaits an external HTTP call?",
+    "Back": "<pre><code>import httpx\n\n@app.get(\"/proxy\")\nasync def proxy():\n    async with httpx.AsyncClient() as client:\n        resp = await client.get(\"https://api.example.com\")\n    return resp.json()</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601963,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should a FastAPI route be declared <code>async def</code> vs plain <code>def</code>?",
+    "Back": "Use <code>async def</code> when the handler awaits non-blocking async I/O (e.g. an async DB driver or HTTP client); use plain <code>def</code> for blocking/sync code — FastAPI automatically runs sync <code>def</code> routes in a thread pool so they don't block the event loop."
+   }
+  },
+  {
+   "noteId": 1789000601964,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does FastAPI generate interactive OpenAPI docs (Swagger UI, ReDoc) automatically?",
+    "Back": "It builds an OpenAPI schema from your route declarations, type hints, and Pydantic models at startup, then serves interactive docs (Swagger UI at <code>/docs</code>, ReDoc at <code>/redoc</code>) from that schema with no extra configuration needed."
+   }
+  },
+  {
+   "noteId": 1789000601965,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a FastAPI <code>response_model</code> used for?",
+    "Back": "It declares the Pydantic model FastAPI should validate and filter the returned data against before serializing the response, ensuring extra or internal fields (like a hashed password) aren't accidentally exposed."
+   }
+  },
+  {
+   "noteId": 1789000601966,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a FastAPI route that returns a specific status code and raises a 404 when not found?",
+    "Back": "<pre><code>from fastapi import HTTPException, status\n\n@app.get(\"/items/{item_id}\", status_code=status.HTTP_200_OK)\ndef get_item(item_id: int):\n    if item_id not in db:\n        raise HTTPException(status_code=404, detail=\"Item not found\")\n    return db[item_id]</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601967,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does adding a <code>@validator</code> (Pydantic v1) or <code>field_validator</code> (Pydantic v2) to a model field let you do?",
+    "Back": "Define custom validation logic beyond basic type checking, e.g. rejecting a negative price or normalizing a string, that runs automatically when FastAPI parses the request body into that model."
+   }
+  },
+  {
+   "noteId": 1789000601968,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between a FastAPI path parameter declared as <code>item_id: int</code> versus <code>item_id: str</code>?",
+    "Back": "With <code>int</code>, FastAPI automatically converts and validates the URL segment as an integer, returning a 422 if it isn't numeric; with <code>str</code> any raw segment is accepted as-is with no conversion."
+   }
+  },
+  {
+   "noteId": 1789000601969,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you organize a larger FastAPI app's routes into separate files/modules?",
+    "Back": "Use <code>APIRouter</code> in each module to define a group of related routes, then include it in the main app with <code>app.include_router(router, prefix=\"/users\")</code>."
+   }
+  },
+  {
+   "noteId": 1789000601970,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code registering an APIRouter with a prefix and tag in FastAPI?",
+    "Back": "<pre><code># users.py\nrouter = APIRouter()\n\n@router.get(\"/\")\ndef list_users():\n    return []\n\n# main.py\napp.include_router(users.router, prefix=\"/users\", tags=[\"users\"])</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000639872,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "fastapi",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "In FastAPI, a Pydantic field validation failure on the request body returns HTTP status {{c1::422}} (Unprocessable Entity) with a JSON body describing which fields failed.",
+    "Extra": ""
+   }
+  }
+ ]
+}

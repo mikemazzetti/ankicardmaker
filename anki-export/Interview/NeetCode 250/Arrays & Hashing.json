@@ -1,0 +1,315 @@
+{
+ "deck": "Interview::NeetCode 250::Arrays & Hashing",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585220,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-concatenation-of-array",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A street painter has a strip of numbered flags in a fixed order. A parade organizer wants a strip that is exactly twice as long: the same flags in the same order, then the whole run repeated once more right after. Produce that doubled strip.",
+    "Back": "<b>Maps to:</b> Direct array construction / index arithmetic (Concatenation of Array).<br><br><b>Model it:</b> Given <code>nums</code> of length n, return an array <code>ans</code> of length 2n where <code>ans[i] == nums[i % n]</code>.<br><br><b>Approach &amp; variations:</b><ul><li>Allocate the output and copy the input twice, or append the input to a copy of itself.</li><li>Equivalent one-liner: <code>ans[i] = nums[i % n]</code> for i in [0, 2n).</li><li>No cleverness needed — it is a warm-up in indexing.</li></ul><b>Time:</b> O(n) — every output slot is filled once.<br><b>Space:</b> O(n) — the result holds 2n items (O(1) beyond the required output)."
+   }
+  },
+  {
+   "noteId": 1788998585222,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-duplicate-integer",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A coat-check clerk receives a pile of claim tickets. She only needs to answer one yes/no question: did any single ticket number get handed in more than once during the day?",
+    "Back": "<b>Maps to:</b> Hash set membership (Contains Duplicate).<br><br><b>Model it:</b> Return true if any value in the array appears at least twice.<br><br><b>Approach &amp; variations:</b><ul><li>Sweep once, keeping seen values in a set; the moment a value is already present, answer yes.</li><li>Alternative: sort and check neighbors (O(n log n), O(1) extra).</li><li>Shortcut: compare set size to array length.</li></ul><b>Time:</b> O(n) — one pass with O(1) set operations.<br><b>Space:</b> O(n) — the set may hold every distinct value."
+   }
+  },
+  {
+   "noteId": 1788998585223,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-is-anagram",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Two children each spell a word using lettered fridge magnets. They want to know if one child could rearrange their own magnets to exactly spell the other's word — same magnets, just shuffled, none missing or extra.",
+    "Back": "<b>Maps to:</b> Character frequency count (Valid Anagram).<br><br><b>Model it:</b> Decide whether two strings contain the same multiset of characters.<br><br><b>Approach &amp; variations:</b><ul><li>Tally each character in the first, subtract for the second; all counts must end at zero.</li><li>Fast reject when lengths differ.</li><li>A size-26 count array works for lowercase letters; a map handles Unicode.</li><li>Sorting both and comparing also works (O(n log n)).</li></ul><b>Time:</b> O(n) — count both strings once.<br><b>Space:</b> O(1) for a fixed alphabet (O(k) for k distinct characters)."
+   }
+  },
+  {
+   "noteId": 1788998585224,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-two-integer-sum",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A cashier has a row of unsorted price tags and a target total. She needs the two specific tags whose prices add up to exactly that total, and she wants their shelf positions, checking each tag only once as she goes.",
+    "Back": "<b>Maps to:</b> Hash map of complements (Two Sum).<br><br><b>Model it:</b> Find indices i, j with <code>nums[i] + nums[j] == target</code> in an unsorted array.<br><br><b>Approach &amp; variations:</b><ul><li>For each value, look up whether its needed complement (target minus it) was already seen.</li><li>Store value -> index as you pass; return the pair on a hit.</li><li>Because it is unsorted, the hash map beats two pointers here.</li></ul><b>Time:</b> O(n) — single pass with O(1) lookups.<br><b>Space:</b> O(n) — the map of seen values."
+   }
+  },
+  {
+   "noteId": 1788998585225,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-longest-common-prefix",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A filing clerk has a stack of folder labels. She wants the longest run of starting letters that every single label shares from its very first character — the common opening they all begin with, if any.",
+    "Back": "<b>Maps to:</b> Vertical character scan (Longest Common Prefix).<br><br><b>Model it:</b> Return the longest prefix string shared by all strings in the list.<br><br><b>Approach &amp; variations:</b><ul><li>Walk column by column: compare the k-th character across all words; stop at the first mismatch or when any word ends.</li><li>Alternatively shrink a candidate prefix against each word.</li><li>Empty list or any empty word yields an empty prefix.</li></ul><b>Time:</b> O(total characters) — worst case every character of every word is examined.<br><b>Space:</b> O(1) beyond the returned prefix."
+   }
+  },
+  {
+   "noteId": 1788998585226,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-anagram-groups",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A librarian has a cart of word cards and wants to bundle together every card whose letters can be rearranged into the same word. Cards that are letter-shuffles of one another go in one pile; each distinct pile stays separate.",
+    "Back": "<b>Maps to:</b> Hash map keyed by a canonical signature (Group Anagrams).<br><br><b>Model it:</b> Partition strings into groups that share the same multiset of characters.<br><br><b>Approach &amp; variations:</b><ul><li>Build a key per word that is identical for anagrams: its sorted letters, or a 26-length count tuple.</li><li>Use that key in a map from signature -> list of words.</li><li>Count-tuple key gives O(word length) keying vs O(len log len) for sorting.</li></ul><b>Time:</b> O(N·K) with count keys (or O(N·K log K) sorting), N words of length up to K.<br><b>Space:</b> O(N·K) — all words stored across the groups."
+   }
+  },
+  {
+   "noteId": 1788998585227,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-remove-element",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A conveyor belt of parts passes a worker who must discard every part of one specific defective type. He can only rearrange parts on the same belt (no second belt) and afterward reports how many good parts remain packed at the front.",
+    "Back": "<b>Maps to:</b> Two-pointer in-place overwrite (Remove Element).<br><br><b>Model it:</b> In place, remove all occurrences of a given value and return the count of remaining elements (order among them free).<br><br><b>Approach &amp; variations:</b><ul><li>A write pointer marks the next 'keep' slot; a read pointer scans everything.</li><li>Copy each non-target value to the write slot and advance it.</li><li>The write index is the final kept count; leftover tail can be ignored.</li></ul><b>Time:</b> O(n) — one scan.<br><b>Space:</b> O(1) — done in place."
+   }
+  },
+  {
+   "noteId": 1788998585228,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-majority-element",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "At a town meeting everyone shouts the name of their favorite color, one after another. You are promised one color was shouted by strictly more than half the crowd. Name it, ideally without tallying every color and without writing much down.",
+    "Back": "<b>Maps to:</b> Boyer–Moore voting (Majority Element).<br><br><b>Model it:</b> Return the value that appears more than n/2 times, guaranteed to exist.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a candidate and a count; matching votes increment, differing votes decrement, and a zero count adopts the next value as candidate.</li><li>The true majority survives because it outnumbers all others combined.</li><li>A hash-map tally also works but uses O(n) space.</li></ul><b>Time:</b> O(n) — one pass.<br><b>Space:</b> O(1) — a candidate and a counter."
+   }
+  },
+  {
+   "noteId": 1788998585229,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-design-hashset",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Design a coat rack that only tracks which membership numbers are present — no duplicates, no extra data. It must support hanging a number, checking if a number is on the rack, and taking a number off, all near-instantly for any number in a huge range.",
+    "Back": "<b>Maps to:</b> Hashing with buckets and chaining (Design HashSet).<br><br><b>Model it:</b> Implement add / contains / remove for integer keys without a built-in set.<br><br><b>Approach &amp; variations:</b><ul><li>Fix a bucket count; map each key to a bucket via key mod count.</li><li>Each bucket is a small list; collisions chain within it.</li><li>For a bounded key range a plain boolean array is the simplest set.</li><li>Resize/rehash if load grows to keep chains short.</li></ul><b>Time:</b> O(1) average per operation (O(n/buckets) worst case).<br><b>Space:</b> O(n) — storage grows with stored keys."
+   }
+  },
+  {
+   "noteId": 1788998585230,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-design-hashmap",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "Design a lost-and-found ledger where each claim number maps to one description. You can file a number with its description (overwriting any old one), look up a number's current description, and erase a number, all fast for numbers across a vast range.",
+    "Back": "<b>Maps to:</b> Hashing with key-value buckets (Design HashMap).<br><br><b>Model it:</b> Implement put / get / remove for integer keys mapping to values without a built-in map.<br><br><b>Approach &amp; variations:</b><ul><li>Bucket array indexed by key mod count; each bucket holds key-value pairs.</li><li>put updates in place if the key exists, else appends; get scans the bucket; remove unlinks it.</li><li>A direct-index array works when the key range is small and bounded.</li><li>Rehash when the load factor climbs.</li></ul><b>Time:</b> O(1) average per operation (O(n/buckets) worst case).<br><b>Space:</b> O(n) — one entry per stored key."
+   }
+  },
+  {
+   "noteId": 1788998585231,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-sort-an-array",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A dealer is handed a shuffled deck of numbered chips and must return them in ascending order. She may not lean on any built-in sorting helper — she has to arrange them herself, and it must stay fast even for a very large stack.",
+    "Back": "<b>Maps to:</b> Efficient comparison sort — merge sort or heap sort (Sort an Array).<br><br><b>Model it:</b> Return the array sorted ascending, implementing the sort yourself in O(n log n).<br><br><b>Approach &amp; variations:</b><ul><li>Merge sort: recursively split, then merge sorted halves (stable, O(n) extra).</li><li>Heap sort: build a heap and pop repeatedly (in place, O(1) extra).</li><li>Quicksort works but needs randomized pivots to avoid O(n²) on adversarial input.</li><li>Counting sort beats these when values sit in a small bounded range.</li></ul><b>Time:</b> O(n log n) — the comparison-sort lower bound, met by merge/heap.<br><b>Space:</b> O(n) merge sort (O(1) for heap sort)."
+   }
+  },
+  {
+   "noteId": 1788998585232,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-sort-colors",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A line of tiles comes in only three shades — say red, white, blue. Rearrange the line so all reds sit first, whites in the middle, blues last, doing it in a single sweep along the same line without counting shades in a first pass.",
+    "Back": "<b>Maps to:</b> Dutch National Flag three-way partition (Sort Colors).<br><br><b>Model it:</b> Sort an array of only three distinct values in place in one pass.<br><br><b>Approach &amp; variations:</b><ul><li>Keep three pointers: low boundary, current scanner, high boundary.</li><li>Scanner sees a red -> swap to low and advance both; a blue -> swap to high and shrink high (don't advance scanner); a white -> just advance.</li><li>Simpler two-pass alternative: count each shade, then overwrite.</li></ul><b>Time:</b> O(n) — one linear scan.<br><b>Space:</b> O(1) — in-place swaps."
+   }
+  },
+  {
+   "noteId": 1788998585233,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-top-k-elements-in-list",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A café logs every drink ordered all day. The manager wants the K drinks ordered most often — just those few names — without fully ranking the entire menu by popularity.",
+    "Back": "<b>Maps to:</b> Frequency count + bucket sort (or heap) (Top K Frequent Elements).<br><br><b>Model it:</b> Return the K values with the highest occurrence counts in the array.<br><br><b>Approach &amp; variations:</b><ul><li>Tally counts in a map.</li><li>Bucket by frequency: index i holds values seen i times; scan buckets from high to low and collect K.</li><li>A size-K heap over the counts is the alternative (O(n log k)).</li><li>Bucketing gives linear time since frequency is bounded by n.</li></ul><b>Time:</b> O(n) with buckets (O(n log k) with a heap).<br><b>Space:</b> O(n) — counts and buckets."
+   }
+  },
+  {
+   "noteId": 1788998585234,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-string-encode-and-decode",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A courier must pack several notes — which may themselves contain any punctuation, spaces, even the delimiter you might pick — into one sealed message, then hand it off so the recipient can split it back into the exact original notes with none merged or lost.",
+    "Back": "<b>Maps to:</b> Length-prefixed serialization (Encode and Decode Strings).<br><br><b>Model it:</b> Serialize a list of arbitrary strings into one string and parse it back losslessly.<br><br><b>Approach &amp; variations:</b><ul><li>Prefix each note with its length and a separator, e.g. <code>5#hello</code>.</li><li>To decode, read digits up to the separator, then take exactly that many characters as the note; repeat.</li><li>Length prefixing is robust because content can contain any character, so no delimiter alone is safe.</li></ul><b>Time:</b> O(total length) — each character is written and read once.<br><b>Space:</b> O(total length) — the encoded string and decoded list."
+   }
+  },
+  {
+   "noteId": 1788998585235,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-range-sum-query-2d-immutable",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A museum has a fixed grid of rooms, each with a visitor count that never changes. Guides keep asking for the total visitors inside various rectangular blocks of rooms. After a one-time setup, answer each rectangle instantly.",
+    "Back": "<b>Maps to:</b> 2D prefix-sum table (Range Sum Query 2D Immutable).<br><br><b>Model it:</b> Precompute so any submatrix rectangle sum is returned in O(1).<br><br><b>Approach &amp; variations:</b><ul><li>Build a table where entry (r,c) is the sum of everything above-and-left.</li><li>A rectangle sum = bottom-right − top-strip − left-strip + doubly-subtracted corner (inclusion–exclusion).</li><li>Works only because values are immutable; updates would need a Fenwick/segment structure.</li></ul><b>Time:</b> O(m·n) build, O(1) per query.<br><b>Space:</b> O(m·n) — the prefix table."
+   }
+  },
+  {
+   "noteId": 1788998585236,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-products-of-array-discluding-self",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A jeweler lines up gemstones each with a weight. For every stone she wants a tag showing the product of all the other stones' weights — everything except that stone. And her contract forbids using division to cancel out the current stone.",
+    "Back": "<b>Maps to:</b> Prefix and suffix products (Product of Array Except Self).<br><br><b>Model it:</b> For each index return the product of all elements except that one, without division.<br><br><b>Approach &amp; variations:</b><ul><li>First pass fills each slot with the running product of everything to its left.</li><li>Second pass multiplies in the running product of everything to its right.</li><li>Handle zeros naturally — the two-pass method needs no special case for them.</li><li>Output array can double as the prefix buffer for O(1) extra space.</li></ul><b>Time:</b> O(n) — two linear passes.<br><b>Space:</b> O(1) extra (beyond the output array)."
+   }
+  },
+  {
+   "noteId": 1788998585237,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-valid-sudoku",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "An inspector reviews a partly filled nine-by-nine puzzle grid. She only checks legality of what's already written: no digit repeats within any single row, any single column, or any of the nine three-by-three blocks. She isn't solving it — just flagging conflicts.",
+    "Back": "<b>Maps to:</b> Hash sets per row/column/box (Valid Sudoku).<br><br><b>Model it:</b> Verify no digit repeats within any row, column, or 3×3 sub-box of a partially filled board.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a seen-set for each of the 9 rows, 9 columns, and 9 boxes.</li><li>For each filled cell, compute its box index as <code>(r/3)*3 + c/3</code> and check all three sets.</li><li>A repeat in any set means invalid; empty cells are skipped.</li></ul><b>Time:</b> O(1) — a fixed 81-cell board (O(n²) in grid side generally).<br><b>Space:</b> O(1) — a fixed number of small sets."
+   }
+  },
+  {
+   "noteId": 1788998585238,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-longest-consecutive-sequence",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A collector dumps a jumbled box of numbered tokens on a table. She wants the length of the longest unbroken run of consecutive numbers she could line up (like 7,8,9,10), regardless of where they sat in the pile — and she needs it fast, not by sorting the whole box.",
+    "Back": "<b>Maps to:</b> Hash set with sequence-start detection (Longest Consecutive Sequence).<br><br><b>Model it:</b> Find the length of the longest run of consecutive integers present, in O(n).<br><br><b>Approach &amp; variations:</b><ul><li>Put all values in a set.</li><li>A value starts a run only if value−1 is absent; from each start, walk value+1, value+2… counting length.</li><li>Each number is visited at most twice, keeping it linear despite the nested walk.</li><li>Sorting would solve it too but costs O(n log n).</li></ul><b>Time:</b> O(n) — set lookups, each element extends a run once.<br><b>Space:</b> O(n) — the set of values."
+   }
+  },
+  {
+   "noteId": 1788998585239,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-best-time-to-buy-and-sell-stock-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A trader sees a fruit's daily price for a whole season. He may buy and sell as many times as he likes, but must sell before buying again (hold at most one crate). What's the maximum total profit he can bank over the season?",
+    "Back": "<b>Maps to:</b> Greedy sum of positive daily gains (Best Time to Buy and Sell Stock II).<br><br><b>Model it:</b> Maximize total profit with unlimited non-overlapping buy/sell pairs.<br><br><b>Approach &amp; variations:</b><ul><li>Add up every upward step: whenever tomorrow's price exceeds today's, pocket the difference.</li><li>This captures every rising stretch, equivalent to buying at each valley and selling at each peak.</li><li>No lookahead or DP needed because unlimited transactions remove any tradeoff.</li></ul><b>Time:</b> O(n) — one pass over prices.<br><b>Space:</b> O(1) — a running total."
+   }
+  },
+  {
+   "noteId": 1788998585240,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-majority-element-ii",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "At a rally people call out team names. Any team named by more than a third of the crowd should be listed — there can be at most two such teams. Find them using barely any scratch paper.",
+    "Back": "<b>Maps to:</b> Boyer–Moore voting for two candidates (Majority Element II).<br><br><b>Model it:</b> Return all values appearing more than n/3 times (at most two).<br><br><b>Approach &amp; variations:</b><ul><li>Track two candidates with two counts; each value matches one, else decrements both, else fills an empty slot.</li><li>At most two values can exceed n/3, which is why two slots suffice.</li><li>A required second pass verifies each candidate truly exceeds n/3.</li></ul><b>Time:</b> O(n) — two linear passes.<br><b>Space:</b> O(1) — two candidates and two counters."
+   }
+  },
+  {
+   "noteId": 1788998585241,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-subarray-sum-equals-k",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hiker logs each day's elevation gain (some days negative) in order. She wants to count how many stretches of consecutive days add up to exactly a target gain K. Days can't be reordered — only contiguous runs count.",
+    "Back": "<b>Maps to:</b> Prefix sums with a hash map of counts (Subarray Sum Equals K).<br><br><b>Model it:</b> Count contiguous subarrays whose sum equals K.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a running total; a stretch summing to K exists whenever a prior running total equals current−K.</li><li>Store how many times each running total has occurred; add that many on each step.</li><li>Seed the map with total 0 seen once to catch prefixes that themselves equal K.</li><li>Handles negatives, unlike a sliding window.</li></ul><b>Time:</b> O(n) — one pass with O(1) map ops.<br><b>Space:</b> O(n) — map of prefix-sum frequencies."
+   }
+  },
+  {
+   "noteId": 1788998585242,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "arrays-hashing",
+    "nc-first-missing-positive",
+    "neetcode250"
+   ],
+   "fields": {
+    "Front": "A hotel has rooms numbered 1, 2, 3, … A clerk holds a messy list of occupied room numbers (some junk, some huge, some repeats). She needs the smallest positive room number that is NOT occupied — using essentially only the list's own paper for scratch, no separate ledger.",
+    "Back": "<b>Maps to:</b> Index-as-hash in-place placement (First Missing Positive).<br><br><b>Model it:</b> Find the smallest positive integer absent from the array using O(1) extra space.<br><br><b>Approach &amp; variations:</b><ul><li>Treat the array as its own hash: swap each value v (when 1≤v≤n) to index v−1 until settled.</li><li>Then scan for the first position i whose value isn't i+1 — that's the answer.</li><li>Values ≤0 or >n are irrelevant and left where they fall.</li><li>The answer always lies in [1, n+1].</li></ul><b>Time:</b> O(n) — each value is placed at most once via swaps.<br><b>Space:</b> O(1) — rearranges the array in place."
+   }
+  }
+ ]
+}

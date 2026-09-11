@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Deck of Cards",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200558,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what's the core scope of a \"Design a Deck of Cards\" system, before layering a specific game on top?",
+    "Back": "Model a standard 52-card deck: represent individual cards (suit + rank), build/reset a full deck, shuffle it, and deal cards to players/hands — general enough that specific games (Poker, Blackjack, ...) can be built on top."
+   }
+  },
+  {
+   "noteId": 1789061200559,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "What single responsibility does the Card class have?",
+    "Back": "Hold an immutable pair of (Suit, Rank) and expose read-only accessors — it does not know about decks, hands, or games."
+   }
+  },
+  {
+   "noteId": 1789061200560,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Why make Card immutable (no setters)?",
+    "Back": "A Card's identity never changes after creation, so immutability lets it be shared safely across Deck/Hand/discard-pile collections without defensive copying, and keeps equals()/hashCode() simple to reason about."
+   }
+  },
+  {
+   "noteId": 1789061200561,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "What kind of relationship does Deck have with Card?",
+    "Back": "Composition — Deck owns a List<Card>; cards are created once (typically by a factory) and moved between Deck/Hand/discard collections rather than duplicated."
+   }
+  },
+  {
+   "noteId": 1789061200562,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits letting Deck use different shuffling algorithms (Fisher-Yates, seeded-for-tests, etc.)?",
+    "Back": "Strategy pattern: define a ShuffleStrategy interface with shuffle(List<Card>), and inject a concrete strategy into Deck instead of hardcoding one algorithm."
+   }
+  },
+  {
+   "noteId": 1789061200563,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Which pattern fits creating a full standard 52-card deck (and variants like a 24-card Euchre deck)?",
+    "Back": "Factory Method — a static DeckFactory.createStandardDeck() (or createEuchreDeck()) builds and returns a populated Deck, isolating construction logic from the Deck class itself."
+   }
+  },
+  {
+   "noteId": 1789061200564,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Since Ace can rank high or low depending on the game, how should card comparison be designed?",
+    "Back": "Pull ordering out of Card into an injectable Comparator<Card> (or Strategy) supplied per game, rather than hardcoding one ranking inside Card itself."
+   }
+  },
+  {
+   "noteId": 1789061200565,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "What does Deck.deal(int n) do, and what state does it mutate?",
+    "Back": "Removes and returns the top n Cards as a List<Card>, shrinking the Deck's internal remaining-cards collection (mutates Deck state)."
+   }
+  },
+  {
+   "noteId": 1789061200566,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Beyond storing cards, what should a Hand class expose?",
+    "Back": "addCard(Card), removeCard(Card), and ways to inspect the hand (getCards(), size()) — game-specific scoring/evaluation belongs in a separate evaluator, not in Hand itself."
+   }
+  },
+  {
+   "noteId": 1789061200567,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Why does Card need a correct equals()/hashCode() implementation?",
+    "Back": "So game logic (detecting duplicate cards dealt, matching pairs in a hand) can rely on value equality of (suit, rank) instead of reference equality."
+   }
+  },
+  {
+   "noteId": 1789061200568,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "How would you extend this design to support Jokers?",
+    "Back": "Add a JOKER rank (or a dedicated subtype) whose suit may be null/absent, and make sure comparison/equality logic and any Strategy/Comparator handle that case explicitly rather than assuming every card has a real suit."
+   }
+  },
+  {
+   "noteId": 1789061200569,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Java: implement an immutable Card class with Suit/Rank fields, value equality, and natural ordering by rank.",
+    "Back": "<pre><code>public final class Card implements Comparable&lt;Card&gt; {\n    private final Suit suit;\n    private final Rank rank;\n\n    public Card(Suit suit, Rank rank) {\n        this.suit = suit;\n        this.rank = rank;\n    }\n\n    public Suit getSuit() { return suit; }\n    public Rank getRank() { return rank; }\n\n    @Override\n    public boolean equals(Object o) {\n        if (!(o instanceof Card)) return false;\n        Card other = (Card) o;\n        return suit == other.suit &amp;&amp; rank == other.rank;\n    }\n\n    @Override\n    public int hashCode() {\n        return Objects.hash(suit, rank);\n    }\n\n    @Override\n    public int compareTo(Card other) {\n        return this.rank.compareTo(other.rank);\n    }\n\n    @Override\n    public String toString() {\n        return rank + \" of \" + suit;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200570,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Python: implement Suit/Rank enums, an immutable Card dataclass, and a build_standard_deck() factory.",
+    "Back": "<pre><code>from dataclasses import dataclass\nfrom enum import Enum\nfrom typing import List\n\nclass Suit(Enum):\n    CLUBS = \"Clubs\"\n    DIAMONDS = \"Diamonds\"\n    HEARTS = \"Hearts\"\n    SPADES = \"Spades\"\n\nclass Rank(Enum):\n    TWO, THREE, FOUR, FIVE = 2, 3, 4, 5\n    SIX, SEVEN, EIGHT, NINE = 6, 7, 8, 9\n    TEN, JACK, QUEEN, KING, ACE = 10, 11, 12, 13, 14\n\n@dataclass(frozen=True)\nclass Card:\n    suit: Suit\n    rank: Rank\n\ndef build_standard_deck() -&gt; List[Card]:\n    return [Card(suit, rank) for suit in Suit for rank in Rank]</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200571,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Java: implement Deck.shuffle() and Deck.deal(int n) using a backing Deque<Card>, rejecting a deal that exceeds what remains.",
+    "Back": "<pre><code>public class Deck {\n    private final Deque&lt;Card&gt; cards = new ArrayDeque&lt;&gt;();\n\n    public Deck(List&lt;Card&gt; initialCards) {\n        cards.addAll(initialCards);\n    }\n\n    public void shuffle() {\n        List&lt;Card&gt; temp = new ArrayList&lt;&gt;(cards);\n        Collections.shuffle(temp);\n        cards.clear();\n        cards.addAll(temp);\n    }\n\n    public List&lt;Card&gt; deal(int n) {\n        if (n &gt; cards.size()) {\n            throw new IllegalStateException(\"Not enough cards remaining to deal \" + n);\n        }\n        List&lt;Card&gt; dealt = new ArrayList&lt;&gt;();\n        for (int i = 0; i &lt; n; i++) {\n            dealt.add(cards.pollFirst());\n        }\n        return dealt;\n    }\n\n    public int remaining() {\n        return cards.size();\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200572,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Python: implement a Hand class with add_card, remove_card, size, and a readable repr.",
+    "Back": "<pre><code>from typing import List\n\nclass Hand:\n    def __init__(self) -&gt; None:\n        self._cards: List[\"Card\"] = []\n\n    def add_card(self, card: \"Card\") -&gt; None:\n        self._cards.append(card)\n\n    def remove_card(self, card: \"Card\") -&gt; None:\n        self._cards.remove(card)\n\n    def size(self) -&gt; int:\n        return len(self._cards)\n\n    def __repr__(self) -&gt; str:\n        return f\"Hand({self._cards!r})\"</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200573,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Text": "A generic Deck of Cards design typically has core classes {{c1::Card}}, {{c2::Deck}}, {{c3::Hand}}, and {{c4::Player}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200574,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Text": "The {{c1::Suit}} enum has exactly four constant values: {{c2::CLUBS, DIAMONDS, HEARTS, SPADES}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200575,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Text": "The {{c1::Rank}} enum has 13 values, {{c2::TWO through ACE}}, and Ace's numeric value may need to flex between high (14) and low (1) depending on the game.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200576,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Text": "If deal(n) is called with fewer than n cards remaining, the Deck should {{c1::throw an exception (e.g. IllegalStateException/EmptyDeckException) rather than silently returning a short list}}, so callers can't mistake a short hand for a full one.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200582,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-deck-of-cards"
+   ],
+   "fields": {
+    "Front": "Deck (class)",
+    "Back": "A collection of 52 unique Card objects, responsible for building a full set, shuffling it, and dealing cards from the top."
+   }
+  }
+ ]
+}

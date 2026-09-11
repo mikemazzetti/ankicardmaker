@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Q&A::BMO (Calculator & AI-SDLC)",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202568,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "During the Jan–Apr 2026 BMO internship, what end-to-end web app did Michele build?",
+    "Back": "A <b>Mortgage &amp; Loan Calculator</b> web application."
+   }
+  },
+  {
+   "noteId": 1789061202569,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What frontend framework did Michele use for the Mortgage &amp; Loan Calculator?",
+    "Back": "<code>Angular</code>"
+   }
+  },
+  {
+   "noteId": 1789061202570,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What language did Michele write the Mortgage &amp; Loan Calculator's frontend in?",
+    "Back": "<code>TypeScript</code>"
+   }
+  },
+  {
+   "noteId": 1789061202571,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What backend runtime powered the Mortgage &amp; Loan Calculator, and where did it run?",
+    "Back": "<code>Node.js</code>, deployed on <b>AWS</b>."
+   }
+  },
+  {
+   "noteId": 1789061202572,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What AI-focused initiative did Michele lead during the Jan–Apr 2026 internship?",
+    "Back": "An <b>AI-driven SDLC pipeline proof-of-concept (PoC)</b>."
+   }
+  },
+  {
+   "noteId": 1789061202573,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What tech stack was the AI-driven SDLC PoC built with?",
+    "Back": "<code>Python</code> + <code>FastAPI</code>"
+   }
+  },
+  {
+   "noteId": 1789061202574,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "In the AI-driven SDLC PoC, how were the LLM agents organized?",
+    "Back": "As <b>specialized LLM agents, one per project phase</b> of the SDLC."
+   }
+  },
+  {
+   "noteId": 1789061202575,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "Who did Michele present the AI-driven SDLC pipeline PoC to?",
+    "Back": "<b>Directors</b> at BMO."
+   }
+  },
+  {
+   "noteId": 1789061202576,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What backend architecture did Michele design to decouple loan submission from credit checks?",
+    "Back": "A <b>serverless, event-driven backend</b> using <code>AWS Lambda</code> + <code>EventBridge</code>."
+   }
+  },
+  {
+   "noteId": 1789061202577,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "By how much did the Lambda + EventBridge redesign reduce coupling between submission logic and credit checks?",
+    "Back": "<b>40%</b> less coupling."
+   }
+  },
+  {
+   "noteId": 1789061202578,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What failure mode did the Lambda + EventBridge decoupling prevent?",
+    "Back": "<b>Cascading failures</b> — a slow/failing third-party credit check could no longer take down loan submission."
+   }
+  },
+  {
+   "noteId": 1789061202579,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What frontend architecture did Michele migrate the loan/mortgage app to?",
+    "Back": "A <b>React single-page application (SPA)</b>."
+   }
+  },
+  {
+   "noteId": 1789061202580,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What database schema did Michele design as part of the React SPA migration?",
+    "Back": "A <b>DynamoDB</b> schema."
+   }
+  },
+  {
+   "noteId": 1789061202581,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "What processing-speed improvement resulted from the React SPA + DynamoDB migration?",
+    "Back": "<b>60% faster</b> processing."
+   }
+  },
+  {
+   "noteId": 1789061202582,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Walk me through a time you improved a system's resilience to a third-party dependency.\"",
+    "Back": "<b>S:</b> BMO's loan/mortgage submission flow called a third-party credit-check service directly, so a slow or failing check could cascade into submission failures.<br><b>T:</b> Decouple submission from the credit-check dependency so one failure mode couldn't take down the other.<br><b>A:</b> Architected a serverless event-driven backend using AWS Lambda + EventBridge — submission logic published events instead of calling the credit-check service synchronously.<br><b>R:</b> Reduced coupling by 40% and eliminated cascading failures between the two systems."
+   }
+  },
+  {
+   "noteId": 1789061202583,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about a time you presented technical work to senior leadership.\"",
+    "Back": "<b>S:</b> During the Jan–Apr 2026 BMO internship, leadership was exploring how AI could speed up the software development lifecycle.<br><b>T:</b> Lead a proof-of-concept demonstrating an AI-driven SDLC pipeline.<br><b>A:</b> Built the PoC in Python + FastAPI, implementing specialized LLM agents assigned to different phases of the SDLC.<br><b>R:</b> Presented the working PoC directly to Directors, demonstrating a viable AI-assisted development workflow."
+   }
+  },
+  {
+   "noteId": 1789061202584,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Describe a full-stack feature you owned end to end.\"",
+    "Back": "<b>S:</b> BMO needed a Mortgage &amp; Loan Calculator web app for branch/customer use.<br><b>T:</b> Build and later modernize it end to end, frontend to data layer.<br><b>A:</b> Built the app with Angular/TypeScript on Node.js/AWS, then owned migrating the frontend to a React SPA and designing a new DynamoDB schema.<br><b>R:</b> The migration made processing 60% faster while keeping the app on AWS-native infrastructure."
+   }
+  },
+  {
+   "noteId": 1789061202586,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Text": "The Mortgage &amp; Loan Calculator was built end-to-end using {{c1::Angular}} and {{c2::TypeScript}} on the frontend, with {{c3::Node.js}} on AWS for the backend.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202587,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Text": "Michele architected a serverless event-driven backend with {{c1::AWS Lambda}} + {{c2::EventBridge}} to decouple submission logic from third-party credit checks, cutting coupling by {{c3::40%}} and preventing {{c4::cascading failures}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202603,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-bmo-1"
+   ],
+   "fields": {
+    "Front": "EventBridge (in the BMO Lambda backend)",
+    "Back": "An AWS event bus service used to route events between decoupled services (e.g. loan submission → credit check) instead of direct synchronous calls."
+   }
+  }
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "deck": "Interview::NeetCode 250::Stack",
+ "note_count": 15,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585328,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-baseball-game",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A scorekeeper processes a list of instructions in order. Each is either a plain number to record, the word 'double' meaning record twice the last recorded number, the word 'sum' meaning record the total of the last two recorded numbers, or 'undo' meaning erase the most recent record. At the end, what is the sum of everything still on the sheet?",
+    "Back": "<b>Maps to:</b> Stack of recorded values with push/pop operations (Baseball Game).<br><br><b>Model it:</b> Process operations that reference the last one or two records, then total the surviving records.<br><br><b>Approach &amp; variations:</b><ul><li>Maintain a growing pile of recorded numbers; a plain number pushes onto it.</li><li>'undo' removes the top; 'double' pushes twice the top; 'sum' pushes the top two added.</li><li>Each operation touches only the top one or two entries — order of records matters.</li><li>Sum whatever remains after all instructions.</li></ul><b>Time:</b> O(n) — one pass, constant work per instruction.<br><b>Space:</b> O(n) — the pile can hold every recorded number."
+   }
+  },
+  {
+   "noteId": 1788998585329,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-validate-parentheses",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A ribbon of nested brackets of three shapes — round, square, and curly — comes off a printer, each either an opener or a closer. The ribbon is well-formed only if every opener is later closed by a matching-shape closer, closers come in the right nested order, and nothing is left dangling. Is this ribbon well-formed?",
+    "Back": "<b>Maps to:</b> Stack of open brackets matched on close (Valid Parentheses).<br><br><b>Model it:</b> Decide if a string of brackets is properly nested and matched across three types.<br><br><b>Approach &amp; variations:</b><ul><li>Push each opener onto a pile as you read left to right.</li><li>On a closer, the pile's top must be the matching opener; pop it, else it's invalid.</li><li>A closer with an empty pile is invalid (nothing to match).</li><li>Valid only if the pile is empty at the very end (no unclosed openers).</li></ul><b>Time:</b> O(n) — each bracket is pushed and popped at most once.<br><b>Space:</b> O(n) — the pile in the worst case of all openers."
+   }
+  },
+  {
+   "noteId": 1788998585330,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-implement-stack-using-queues",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "You must build a last-in-first-out tray dispenser, but the only storage you're allowed is one or more line-up lanes where items can only join at the back and leave from the front. Design push, pop-most-recent, peek-most-recent, and empty-check so that the newest item added always comes out first, using only these front-in/back-out lanes.",
+    "Back": "<b>Maps to:</b> Simulate a LIFO stack using FIFO queue(s) (Implement Stack Using Queues).<br><br><b>Model it:</b> Expose stack operations while the only primitive is a first-in-first-out queue.<br><br><b>Approach &amp; variations:</b><ul><li>One-queue trick: after enqueuing a new item, rotate the queue by moving every earlier item to the back so the newest sits at the front.</li><li>Then push is O(n) and pop/top are O(1) — the front is always the most recent.</li><li>Alternatively keep pushes O(1) and pay O(n) on pop by shuffling to the last element.</li><li>Empty-check just asks whether the lane has any items.</li></ul><b>Time:</b> O(n) for the rotating operation, O(1) for the others.<br><b>Space:</b> O(n) — one lane holding all items."
+   }
+  },
+  {
+   "noteId": 1788998585331,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-implement-queue-using-stacks",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "You must build a first-come-first-served ticket line, but the only storage you have is spring-loaded tubes where items can only be pushed onto and popped off the top. Design join-the-back, serve-the-front, peek-the-front, and empty-check so that the oldest waiting item is always served first, using only these top-in/top-out tubes.",
+    "Back": "<b>Maps to:</b> Simulate a FIFO queue using two LIFO stacks (Implement Queue using Stacks).<br><br><b>Model it:</b> Expose queue operations while the only primitive is a last-in-first-out stack.<br><br><b>Approach &amp; variations:</b><ul><li>Keep an 'in' tube for arrivals and an 'out' tube for departures.</li><li>To serve or peek, if 'out' is empty, pour all of 'in' into 'out', reversing the order so the oldest is on top.</li><li>Push is always O(1); each item moves between tubes at most once, so pop is amortized O(1).</li><li>Empty means both tubes are empty.</li></ul><b>Time:</b> Amortized O(1) per operation; a single transfer is O(n).<br><b>Space:</b> O(n) — two tubes holding all items."
+   }
+  },
+  {
+   "noteId": 1788998585332,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-minimum-stack",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A warehouse keeps a single spring-loaded chute where boxes are added and removed only from the top. Besides the usual add, remove-top, and read-top, the foreman needs to instantly know the lightest box currently in the chute at any moment — without digging through it. Design the chute so that lightest-box lookup is immediate.",
+    "Back": "<b>Maps to:</b> Stack augmented with running minimums (Min Stack).<br><br><b>Model it:</b> Support push, pop, top, and get-minimum all in constant time.<br><br><b>Approach &amp; variations:</b><ul><li>Alongside the main pile keep a parallel pile of running minimums.</li><li>On push, record min(new value, current running min) on the min pile.</li><li>On pop, remove from both piles together; the min pile's top is always the current minimum.</li><li>Alternatively store (value, min-so-far) pairs in one pile.</li></ul><b>Time:</b> O(1) — every operation touches only the tops.<br><b>Space:</b> O(n) — the auxiliary minimum pile mirrors the main one."
+   }
+  },
+  {
+   "noteId": 1788998585333,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-evaluate-reverse-polish-notation",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A calculator reads a strip of tokens left to right. Each token is either a number or one of +, -, *, / that acts on the two most recently produced numbers (first-produced on the left of the operation), replacing them with the result. The strip is arranged so this always works out. What single number remains at the end?",
+    "Back": "<b>Maps to:</b> Stack-based postfix expression evaluation (Evaluate Reverse Polish Notation).<br><br><b>Model it:</b> Evaluate an expression given in postfix order where operators follow their operands.<br><br><b>Approach &amp; variations:</b><ul><li>Push numbers onto a pile as they appear.</li><li>On an operator, pop the top two, apply it with the correct operand order, and push the result.</li><li>Division truncates toward zero; watch operand order for subtraction and division.</li><li>The last remaining value on the pile is the answer.</li></ul><b>Time:</b> O(n) — one pass, constant work per token.<br><b>Space:</b> O(n) — the pile of pending operands."
+   }
+  },
+  {
+   "noteId": 1788998585334,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-generate-parentheses",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A ribbon-maker must produce every possible well-formed ribbon of exactly N openers and N closers, where at no point reading left to right have more closers appeared than openers, and the ribbon ends balanced. List all distinct such ribbons. How do you generate them without producing malformed ones?",
+    "Back": "<b>Maps to:</b> Backtracking with an open/close balance constraint (Generate Parentheses).<br><br><b>Model it:</b> Enumerate all balanced bracket strings using N pairs.<br><br><b>Approach &amp; variations:</b><ul><li>Build left to right, tracking how many openers and closers are placed.</li><li>May add an opener while openers used < N; may add a closer only while closers < openers placed.</li><li>When the string reaches length 2N it is a valid result; record it.</li><li>The balance rule prunes every invalid branch, so no filtering is needed.</li></ul><b>Time:</b> O(4^n / sqrt(n)) — the count of valid strings (Catalan number), each built in O(n).<br><b>Space:</b> O(n) recursion depth plus the output list."
+   }
+  },
+  {
+   "noteId": 1788998585335,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-asteroid-collision",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "Rocks fly along a single track, each with a size and a direction — some drifting right, some left, listed in their left-to-right positions. Rightward and leftward rocks moving toward each other collide; the smaller one is destroyed, or both if equal size. Same-direction rocks never meet. Which rocks survive after all collisions settle?",
+    "Back": "<b>Maps to:</b> Stack simulating collisions of surviving elements (Asteroid Collision).<br><br><b>Model it:</b> Given signed values (sign = direction, magnitude = size), resolve collisions between right-movers and following left-movers.<br><br><b>Approach &amp; variations:</b><ul><li>Push rocks onto a pile; a collision is only possible when a leftward rock meets a rightward rock on top.</li><li>While the top is a rightward rock smaller than the incoming leftward rock, pop it (it's destroyed).</li><li>Equal sizes destroy both; if the incoming rock is destroyed, stop pushing it.</li><li>Rocks that survive the pile are the answer, in order.</li></ul><b>Time:</b> O(n) — each rock is pushed and popped at most once.<br><b>Space:</b> O(n) — the survivor pile."
+   }
+  },
+  {
+   "noteId": 1788998585336,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-daily-temperatures",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A hiker logs each day's high temperature in a row by date. For every day she wants to know how many days she must wait until a strictly warmer day arrives later in the log. If no warmer day ever comes, that day's answer is zero. Produce the wait count for each day.",
+    "Back": "<b>Maps to:</b> Monotonic decreasing stack of pending indices (Daily Temperatures).<br><br><b>Model it:</b> For each element find the distance to the next strictly greater element on its right.<br><br><b>Approach &amp; variations:</b><ul><li>Scan left to right keeping a pile of days still waiting for a warmer day (temperatures decreasing down the pile).</li><li>When today is warmer than the pile's top, pop it and record the day gap as its answer.</li><li>Repeat popping while today beats the new top; then push today.</li><li>Days left on the pile at the end get zero.</li></ul><b>Time:</b> O(n) — each day is pushed and popped once.<br><b>Space:</b> O(n) — the pile of unresolved days."
+   }
+  },
+  {
+   "noteId": 1788998585337,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-online-stock-span",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A trader is fed a coin's price one day at a time and can never see the future. For each new day she must immediately report, counting today and backward, the length of the longest run of consecutive most-recent days whose prices were all less than or equal to today's. Report this streak live as each price arrives.",
+    "Back": "<b>Maps to:</b> Monotonic stack of (price, span) pairs answered online (Online Stock Span).<br><br><b>Model it:</b> Streaming: for each incoming value count consecutive preceding values <= it (including itself).<br><br><b>Approach &amp; variations:</b><ul><li>Keep a pile of (price, accumulated span) with prices strictly decreasing down the pile.</li><li>For a new price start its span at 1, then while the top price is <= today, pop it and add its span to today's.</li><li>Push today with its total span and return that span immediately.</li><li>Each price is popped at most once, so amortized work per query is constant.</li></ul><b>Time:</b> Amortized O(1) per query, O(n) total — each price pushed/popped once.<br><b>Space:</b> O(n) — the pile of price/span pairs."
+   }
+  },
+  {
+   "noteId": 1788998585338,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-car-fleet",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "Several cars head to the same finish line on a one-lane road, each at a known starting distance from the line and a fixed top speed. A faster car catching a slower one ahead cannot pass; it slows and they travel bunched together as one group thereafter, arriving together. How many distinct groups cross the finish line?",
+    "Back": "<b>Maps to:</b> Sort by position, compare arrival times with a stack (Car Fleet).<br><br><b>Model it:</b> Count clusters: process cars from nearest-to-finish backward, merging any that would catch the group ahead.<br><br><b>Approach &amp; variations:</b><ul><li>Sort cars by starting position, closest to the finish first.</li><li>Compute each car's solo time to the finish = remaining distance / speed.</li><li>Walk from the front; a car whose time is <= the current lead group's time joins it, else it starts a new group (push its time).</li><li>The number of times a new lead time survives equals the fleet count.</li></ul><b>Time:</b> O(n log n) — dominated by sorting positions.<br><b>Space:</b> O(n) — the stack of fleet lead times."
+   }
+  },
+  {
+   "noteId": 1788998585339,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-simplify-path",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A hiker is handed messy walking directions through nested rooms: names of rooms to enter, some redundant 'stay here' markers, some 'go back one room' markers, and sloppy repeated separators. Collapse this into the cleanest possible description of where she actually ends up, never backing out past the entrance. What is the tidied route?",
+    "Back": "<b>Maps to:</b> Stack of path components (Simplify Path).<br><br><b>Model it:</b> Canonicalize a Unix-style path, resolving '.', '..', and redundant slashes.<br><br><b>Approach &amp; variations:</b><ul><li>Split the route on separators, ignoring empty pieces and 'stay here' ('.') markers.</li><li>For a 'go back' ('..'), pop the last room if any, otherwise stay at the entrance.</li><li>Push any real room name onto the pile.</li><li>Join the surviving rooms with single separators, prefixed from the root.</li></ul><b>Time:</b> O(n) — one pass over the components.<br><b>Space:</b> O(n) — the pile of surviving room names."
+   }
+  },
+  {
+   "noteId": 1788998585340,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-decode-string",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A knitter follows a compressed pattern where a number followed by a bracketed sub-pattern means 'repeat that sub-pattern that many times,' and these repeats can nest inside one another. Expand the whole compressed pattern into the full literal sequence of stitches it describes.",
+    "Back": "<b>Maps to:</b> Two stacks for counts and partial strings (Decode String).<br><br><b>Model it:</b> Expand an encoding like 3[a2[c]] into its fully repeated string, honoring nesting.<br><br><b>Approach &amp; variations:</b><ul><li>Scan left to right building the current segment; on a digit, accumulate the full repeat number.</li><li>On an opener, push the current segment and the count, then start a fresh segment.</li><li>On a closer, pop the count and prior segment, and append the current segment repeated that many times.</li><li>Plain letters just extend the current segment.</li></ul><b>Time:</b> O(total output length) — work is proportional to the expanded result.<br><b>Space:</b> O(depth + output) — nested counts and segments on the stacks."
+   }
+  },
+  {
+   "noteId": 1788998585341,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-maximum-frequency-stack",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A cluttered inbox lets you drop in tagged notes and pull one out. But pull always removes the tag that has appeared most often so far; if several tags tie for most-often, it removes whichever of those tied tags was dropped in most recently. Design push and this special pull so both are fast.",
+    "Back": "<b>Maps to:</b> Frequency map plus stacks grouped by frequency (Maximum Frequency Stack / Freq Stack).<br><br><b>Model it:</b> Support push and a pop that returns the most frequent element, breaking ties by most recent.<br><br><b>Approach &amp; variations:</b><ul><li>Track each tag's current count in a frequency map.</li><li>Keep a group of piles indexed by frequency level; pushing a tag places it on the pile for its new count.</li><li>Also track the maximum frequency present; pull takes from that top pile (naturally the most recent among ties) and lowers max if it empties.</li><li>Popping decrements that tag's count in the map.</li></ul><b>Time:</b> O(1) per push and pop — map and top-of-pile operations.<br><b>Space:</b> O(n) — every pushed element is stored once across the piles."
+   }
+  },
+  {
+   "noteId": 1788998585342,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-largest-rectangle-in-histogram",
+    "neetcode250",
+    "stack"
+   ],
+   "fields": {
+    "Front": "A row of adjacent buildings of equal width but varying heights stands shoulder to shoulder. A window washer wants to hang the largest possible rectangular banner flat against the fronts, spanning some run of consecutive buildings, but the banner's height is capped by the shortest building it covers. What is the greatest banner area achievable?",
+    "Back": "<b>Maps to:</b> Monotonic increasing stack of bar indices (Largest Rectangle in Histogram).<br><br><b>Model it:</b> Find the maximum-area rectangle bounded by consecutive bars, height limited by the shortest bar spanned.<br><br><b>Approach &amp; variations:</b><ul><li>Keep a pile of indices with increasing heights as you scan.</li><li>When a shorter building appears, pop taller ones and, for each popped bar, compute its widest rectangle at that height using the new left/right bounds.</li><li>The right bound is the current index; the left bound is the new pile top after popping.</li><li>Flush the pile at the end (treat as a zero-height sentinel) and keep the maximum area.</li></ul><b>Time:</b> O(n) — each bar is pushed and popped once.<br><b>Space:</b> O(n) — the index pile."
+   }
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "deck": "Interview::Resume Prep::PySpark",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000602343,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why do most PySpark applications prefer DataFrames over raw RDDs?",
+    "Back": "DataFrames carry a schema and run through Spark's Catalyst optimizer and Tungsten execution engine, giving much better performance than RDDs' unoptimized, low-level operations."
+   }
+  },
+  {
+   "noteId": 1789000602344,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does \"lazy evaluation\" mean in Spark?",
+    "Back": "Spark builds up a logical execution plan from transformations but doesn't actually run any computation until an action is called."
+   }
+  },
+  {
+   "noteId": 1789000602345,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Give two examples of Spark transformations.",
+    "Back": "e.g. <code>filter()</code>, <code>select()</code>, <code>withColumn()</code>, <code>groupBy()</code> — each returns a new DataFrame/RDD lazily, without triggering computation."
+   }
+  },
+  {
+   "noteId": 1789000602346,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Give two examples of Spark actions.",
+    "Back": "e.g. <code>collect()</code>, <code>count()</code>, <code>show()</code>, <code>write()</code> — these trigger execution of the accumulated transformation plan."
+   }
+  },
+  {
+   "noteId": 1789000602347,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a \"partition\" in Spark?",
+    "Back": "A chunk of a distributed dataset that lives on one node/executor; Spark processes partitions in parallel as its basic unit of parallelism."
+   }
+  },
+  {
+   "noteId": 1789000602348,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you filter a Spark DataFrame for rows where <code>age &gt; 30</code> and select just <code>name</code> and <code>age</code>?",
+    "Back": "<code>df.filter(df.age &gt; 30).select('name', 'age')</code>"
+   }
+  },
+  {
+   "noteId": 1789000602349,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you add a new column <code>bonus</code> equal to <code>salary * 0.1</code> on a Spark DataFrame?",
+    "Back": "<code>df = df.withColumn('bonus', df.salary * 0.1)</code>"
+   }
+  },
+  {
+   "noteId": 1789000602350,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you group a Spark DataFrame by <code>dept</code> and compute the average <code>salary</code> per group?",
+    "Back": "<code>df.groupBy('dept').agg(avg('salary'))</code>"
+   }
+  },
+  {
+   "noteId": 1789000602351,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a \"shuffle\" in Spark, and why is it expensive?",
+    "Back": "Redistributing data across partitions/nodes over the network (needed for operations like <code>groupBy</code>, joins, or <code>repartition</code>) — expensive due to network I/O, disk spills, and serialization."
+   }
+  },
+  {
+   "noteId": 1789000602352,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Name three Spark operations that typically trigger a shuffle.",
+    "Back": "<code>groupBy</code>, joins, <code>distinct</code>, <code>repartition</code>, and <code>orderBy</code>/<code>sortBy</code>."
+   }
+  },
+  {
+   "noteId": 1789000602353,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you run a SQL query against a Spark DataFrame?",
+    "Back": "<pre><code>df.createOrReplaceTempView('t')\nspark.sql('SELECT * FROM t WHERE age &gt; 30')</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602354,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why use Spark instead of pandas for big data processing?",
+    "Back": "Spark distributes both data and computation across a cluster of machines, so it can handle datasets far larger than one machine's memory — pandas runs single-node, in-memory only."
+   }
+  },
+  {
+   "noteId": 1789000602355,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does <code>df.repartition(n)</code> differ from <code>df.coalesce(n)</code>?",
+    "Back": "<code>repartition(n)</code> does a full shuffle to produce exactly n partitions (can increase or decrease count); <code>coalesce(n)</code> merges existing partitions without a full shuffle, so it's cheaper but can only decrease the count."
+   }
+  },
+  {
+   "noteId": 1789000602356,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "If all Spark transformations are lazy, what actually triggers execution?",
+    "Back": "Calling an action, e.g. <code>.collect()</code>, <code>.count()</code>, <code>.show()</code>, or <code>.write()</code>."
+   }
+  },
+  {
+   "noteId": 1789000602357,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>df.cache()</code> (or <code>.persist()</code>) do, and when is it useful?",
+    "Back": "It materializes the DataFrame/RDD and keeps it in memory (or memory+disk) after the first computation, avoiding recomputation when the same DataFrame is reused across multiple actions."
+   }
+  },
+  {
+   "noteId": 1789000602358,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Spark SQL, what is the Catalyst optimizer responsible for?",
+    "Back": "Analyzing and rewriting logical query plans — predicate pushdown, column pruning, join reordering, etc. — into an efficient physical execution plan."
+   }
+  },
+  {
+   "noteId": 1789000602359,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "RDD (Spark)",
+    "Back": "Resilient Distributed Dataset — Spark's low-level, immutable collection of objects partitioned and distributed across a cluster."
+   }
+  },
+  {
+   "noteId": 1789000639972,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "pyspark",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "Spark builds a {{c1::DAG (directed acyclic graph)}} of stages from a chain of transformations, then schedules {{c2::tasks}} to run that DAG on executors, one task per partition.",
+    "Extra": ""
+   }
+  }
+ ]
+}

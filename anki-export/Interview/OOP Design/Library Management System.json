@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Library Management System",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200786,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what should you clarify first about the Library Management System's scope before designing classes?",
+    "Back": "The core use cases: catalog search, checkout/return of items, reservations/holds, membership limits, and fine/fee policy — plus scale (single branch vs multi-branch)."
+   }
+  },
+  {
+   "noteId": 1789061200787,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Why does a Library Management System model both a Book and a BookItem class instead of just Book?",
+    "Back": "Book holds catalog metadata shared by all copies (title, author, ISBN); BookItem represents one physical/circulating copy with its own barcode, status, and due date."
+   }
+  },
+  {
+   "noteId": 1789061200788,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "What is the primary responsibility of the Library class in an LMS design?",
+    "Back": "Acts as the top-level aggregate root: owns the catalog of Books/BookItems, coordinates search, and manages Member and Librarian accounts."
+   }
+  },
+  {
+   "noteId": 1789061200789,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "What distinguishes a Librarian from a Member in the LMS class model?",
+    "Back": "Both extend a common Account/Person base, but Librarian has extra privileges: adding/removing BookItems, managing memberships, and waiving fines."
+   }
+  },
+  {
+   "noteId": 1789061200790,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "What relationship exists between Library and BookItem in the class diagram?",
+    "Back": "Composition (one-to-many): a Library owns many BookItems, and a BookItem cannot exist independently of the Library's catalog."
+   }
+  },
+  {
+   "noteId": 1789061200791,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "How do Reservation and Loan differ as classes in an LMS design?",
+    "Back": "A Reservation records that a Member is waiting for a currently-unavailable BookItem; a Loan records that a Member currently holds a checked-out BookItem with a due date."
+   }
+  },
+  {
+   "noteId": 1789061200792,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits notifying waiting members when a reserved book becomes available, and why?",
+    "Back": "Observer: each BookItem maintains a list of Members reserved on it; when its status changes to AVAILABLE, it notifies the next Member in the reservation queue."
+   }
+  },
+  {
+   "noteId": 1789061200793,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits computing overdue fines that may vary by member type or book category, and why?",
+    "Back": "Strategy: encapsulate the fine calculation in interchangeable FineStrategy implementations (e.g., FlatRateStrategy, TieredStrategy) so the policy can change without touching Loan/Library code."
+   }
+  },
+  {
+   "noteId": 1789061200794,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "What does the method <code>checkout(BookItem, Member)</code> need to validate before completing a loan?",
+    "Back": "BookItem.status == AVAILABLE, the Member is in good standing (no unpaid fines / under loan limit), then it creates a Loan, sets BookItem.status = LOANED, and sets the due date."
+   }
+  },
+  {
+   "noteId": 1789061200795,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "What should <code>returnBook(BookItem)</code> do after a member returns an item?",
+    "Back": "Close the associated Loan, calculate any overdue fine, and update BookItem.status — to RESERVED if a hold queue exists, otherwise AVAILABLE."
+   }
+  },
+  {
+   "noteId": 1789061200796,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Edge case: two members try to reserve the same BookItem at the same instant. How should the design handle it?",
+    "Back": "Serialize access to the reservation queue per BookItem (e.g., a lock or atomic enqueue) so only one reservation is accepted first-come-first-served; the loser stays queued behind it."
+   }
+  },
+  {
+   "noteId": 1789061200797,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Edge case: a member loses a checked-out book. What should the system do?",
+    "Back": "Mark the BookItem status LOST, close the Loan, charge the member a replacement fee, and remove the item from the searchable catalog (or flag it for reorder)."
+   }
+  },
+  {
+   "noteId": 1789061200798,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Edge case: a member wants to renew a loan that already has a reservation queue behind it. What's the correct behavior?",
+    "Back": "Deny the renewal — items with pending reservations must be returned on the original due date so the next member in the queue can be served."
+   }
+  },
+  {
+   "noteId": 1789061200799,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Why should <code>search(query)</code> be defined on Library rather than on Book or BookItem?",
+    "Back": "Search spans the whole catalog and needs a single entry point with an index (by title/author/ISBN); putting it on an individual Book/BookItem would have no access to the full collection."
+   }
+  },
+  {
+   "noteId": 1789061200800,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Implement the <code>checkout</code> method on a Java <code>BookItem</code> class that transitions status and records the borrower and due date.",
+    "Back": "<pre><code>public class BookItem {\n    private String barcode;\n    private BookStatus status;\n    private Member borrowedBy;\n    private LocalDate dueDate;\n\n    public void checkout(Member member, int loanDays) {\n        if (status != BookStatus.AVAILABLE) {\n            throw new IllegalStateException(\"Item not available: \" + barcode);\n        }\n        this.status = BookStatus.LOANED;\n        this.borrowedBy = member;\n        this.dueDate = LocalDate.now().plusDays(loanDays);\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200801,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Implement a Python <code>Library.search</code> method that filters BookItems by title substring, case-insensitively, returning only available copies.",
+    "Back": "<pre><code>class Library:\n    def __init__(self):\n        self.book_items = []\n\n    def search(self, title_query):\n        query = title_query.lower()\n        return [\n            item for item in self.book_items\n            if query in item.book.title.lower()\n            and item.status == BookStatus.AVAILABLE\n        ]\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200802,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Implement the Observer pattern in Java so a BookItem notifies the next waiting Member when it becomes available.",
+    "Back": "<pre><code>public interface ReservationObserver {\n    void onAvailable(BookItem item);\n}\n\npublic class BookItem {\n    private Queue&lt;ReservationObserver&gt; waitList = new LinkedList&lt;&gt;();\n    private BookStatus status;\n\n    public void reserve(ReservationObserver observer) {\n        waitList.add(observer);\n        status = BookStatus.RESERVED;\n    }\n\n    public void markReturned() {\n        if (!waitList.isEmpty()) {\n            ReservationObserver next = waitList.poll();\n            status = BookStatus.RESERVED;\n            next.onAvailable(this);\n        } else {\n            status = BookStatus.AVAILABLE;\n        }\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200803,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "Implement the Strategy pattern in Python for two interchangeable overdue-fine policies.",
+    "Back": "<pre><code>from abc import ABC, abstractmethod\n\nclass FineStrategy(ABC):\n    @abstractmethod\n    def calculate(self, days_overdue):\n        ...\n\nclass FlatRateFine(FineStrategy):\n    def calculate(self, days_overdue):\n        return 0.25 * days_overdue\n\nclass TieredFine(FineStrategy):\n    def calculate(self, days_overdue):\n        if days_overdue &lt;= 7:\n            return 0.10 * days_overdue\n        return 0.70 + 0.50 * (days_overdue - 7)\n\nclass Loan:\n    def __init__(self, fine_strategy: FineStrategy):\n        self.fine_strategy = fine_strategy\n\n    def overdue_fine(self, days_overdue):\n        return self.fine_strategy.calculate(days_overdue)\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200804,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Text": "A BookItem's lifecycle typically moves through the status values {{c1::AVAILABLE}}, {{c2::RESERVED}}, {{c3::LOANED}}, and {{c4::LOST}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200813,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-library"
+   ],
+   "fields": {
+    "Front": "ISBN",
+    "Back": "International Standard Book Number — a unique identifier for a Book's edition/title, used as the catalog lookup key (not per physical copy)."
+   }
+  }
+ ]
+}

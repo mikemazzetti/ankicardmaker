@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Instagram",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203655,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Text": "Core functional requirements of an Instagram-like system include: {{c1::users can upload photos/videos}}, {{c2::users can follow other users}}, and {{c3::users can view a feed of posts from people they follow}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203656,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Text": "Non-functional requirements for an Instagram-like system include: {{c1::high availability}}, {{c2::low latency media delivery (fast image/video load)}}, and {{c3::durability &mdash; uploaded media must never be lost}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203657,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Text": "The high-level architecture of an Instagram-like system typically includes: {{c1::an upload/media service}}, {{c2::object/blob storage for media files}}, {{c3::a CDN for serving media}}, {{c4::a metadata database for posts}}, and {{c5::a feed service}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203658,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Text": "Scaling bottlenecks and fixes for an Instagram-like system: {{c1::origin storage/bandwidth overload from popular media}} is fixed by {{c2::CDN edge caching}}; {{c3::the feed database becoming a hotspot for popular accounts}} is fixed by {{c4::caching feed data and sharding by user_id}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203666,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Should an Instagram-like system support likes and comments as core functional requirements?",
+    "Back": "Yes &mdash; likes and comments on posts are typically included as core functional requirements alongside upload and feed viewing."
+   }
+  },
+  {
+   "noteId": 1789061203667,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why is durability an especially strict non-functional requirement for media storage in Instagram-like systems?",
+    "Back": "User-generated photos/videos are irreplaceable &mdash; unlike a feed entry that can be regenerated, losing original media is permanent data loss, so storage must guarantee very high durability (e.g. 99.999999999%)."
+   }
+  },
+  {
+   "noteId": 1789061203668,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "If 50M photos are uploaded per day, what is the approximate write QPS for uploads?",
+    "Back": "~580 QPS (50,000,000 / 86,400 &asymp; 578)."
+   }
+  },
+  {
+   "noteId": 1789061203669,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "If the average photo size is 200KB and 50M photos are uploaded per day, what is the daily storage growth?",
+    "Back": "~10 TB/day (50M &times; 200KB = 10,000,000,000 KB &asymp; 10 TB)."
+   }
+  },
+  {
+   "noteId": 1789061203670,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why does read QPS for viewing photos vastly exceed write QPS for uploading them?",
+    "Back": "Each uploaded photo is viewed by many followers, often repeatedly, so the read:write ratio for media viewing is much higher than 1:1 (commonly cited around 100:1 to 1000:1 depending on virality)."
+   }
+  },
+  {
+   "noteId": 1789061203671,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint to upload a new photo post.",
+    "Back": "<pre><code>POST /api/v1/posts\nContent-Type: multipart/form-data\nFields: { \"userId\": \"string\", \"caption\": \"string\", \"media\": file }\nResponse: { \"postId\": \"string\", \"mediaUrl\": \"string\" }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203672,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint to fetch a user's home feed.",
+    "Back": "<pre><code>GET /api/v1/feed?userId={id}&amp;cursor={cursor}&amp;limit={n}\nResponse: { \"posts\": [ {...} ], \"nextCursor\": \"string\" }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203673,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Write a minimal schema for the <code>posts</code> table (metadata only, not the media blob).",
+    "Back": "<pre><code>posts(\n  post_id    BIGINT PRIMARY KEY,\n  user_id    BIGINT,\n  media_url  TEXT,\n  caption    VARCHAR(2200),\n  created_at TIMESTAMP\n)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203674,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Where should the actual photo/video bytes be stored &mdash; in the relational/NoSQL database, or elsewhere?",
+    "Back": "In object storage (e.g. S3/blob storage), not the database; the database only stores metadata plus a URL/key pointing to the object storage location."
+   }
+  },
+  {
+   "noteId": 1789061203675,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why is media upload typically handled asynchronously (upload raw file, then process in the background)?",
+    "Back": "Processing (resizing, transcoding, thumbnail generation) is slow and CPU-intensive; doing it synchronously would block the upload request for a long time, so the raw file is stored first and a background worker processes it, updating status when done."
+   }
+  },
+  {
+   "noteId": 1789061203676,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why is object storage (e.g. S3) preferred over a filesystem or database for storing photos/videos at scale?",
+    "Back": "Object storage is designed for cheap, durable, horizontally scalable storage of large binary blobs with simple key-based access, unlike a relational DB (poor at large blobs) or a single filesystem (doesn't scale/replicate easily)."
+   }
+  },
+  {
+   "noteId": 1789061203677,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "What is the role of a CDN in an Instagram-like architecture?",
+    "Back": "The CDN caches media at edge locations close to users, so requests are served from a nearby edge server instead of round-tripping to origin object storage, cutting latency and origin load."
+   }
+  },
+  {
+   "noteId": 1789061203678,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why does an upload pipeline generate multiple resolutions/thumbnails of the same image instead of storing just the original?",
+    "Back": "Different clients/contexts (feed thumbnail, profile grid, full-screen view) need different sizes; serving a pre-resized image avoids sending an oversized original and re-scaling on the client, saving bandwidth and load time."
+   }
+  },
+  {
+   "noteId": 1789061203679,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why have clients upload directly to object storage via a pre-signed URL instead of routing the file through the app server?",
+    "Back": "It avoids using app server bandwidth/CPU to proxy large media files, letting the app server just issue a signed URL while object storage handles the heavy data transfer directly."
+   }
+  },
+  {
+   "noteId": 1789061203680,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "How does sharding the metadata database (e.g. by user_id or post_id) help scale an Instagram-like system?",
+    "Back": "It spreads read/write load for post metadata across many database nodes instead of a single instance, avoiding a single point of contention as the number of posts grows."
+   }
+  },
+  {
+   "noteId": 1789061203681,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff of generating many image resolutions at upload time vs. resizing on demand?",
+    "Back": "Pre-generating at upload time costs extra storage and upfront processing but gives fast, consistent read latency; resizing on demand saves storage but adds latency and repeated CPU cost on every unique request."
+   }
+  },
+  {
+   "noteId": 1789061203682,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Why might an Instagram-like system choose eventual consistency for the feed instead of strong consistency across all replicas?",
+    "Back": "Strong consistency would require synchronous replication before a post is visible anywhere, hurting availability and latency; eventual consistency lets a post appear slightly later in some replicas/feeds, an acceptable tradeoff for higher availability and throughput."
+   }
+  },
+  {
+   "noteId": 1789061203683,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-instagram"
+   ],
+   "fields": {
+    "Front": "Pre-signed URL (in the context of media upload)",
+    "Back": "A temporary, signed URL that grants a client direct, time-limited permission to upload/download an object directly to/from object storage, bypassing the application server for the actual file transfer."
+   }
+  }
+ ]
+}

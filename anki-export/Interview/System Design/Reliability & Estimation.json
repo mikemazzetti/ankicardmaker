@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Reliability & Estimation",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203546,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What does 'three nines' (99.9%) availability translate to in downtime per year?",
+    "Back": "About 8.76 hours of downtime per year."
+   }
+  },
+  {
+   "noteId": 1789061203547,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What does 'five nines' (99.999%) availability translate to in downtime per year?",
+    "Back": "About 5.26 minutes of downtime per year."
+   }
+  },
+  {
+   "noteId": 1789061203548,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "Why is an SLO typically set stricter than the corresponding SLA?",
+    "Back": "To leave a safety margin, so the team notices and fixes problems internally before the customer-facing SLA is actually breached."
+   }
+  },
+  {
+   "noteId": 1789061203549,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What is redundancy in system design?",
+    "Back": "Running duplicate components (servers, replicas, data centers) so that if one fails, others can take over without a service outage."
+   }
+  },
+  {
+   "noteId": 1789061203550,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What is failover?",
+    "Back": "The automatic process of switching to a redundant/standby component when the active one fails."
+   }
+  },
+  {
+   "noteId": 1789061203551,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What is graceful degradation?",
+    "Back": "Under failure or overload, a system keeps its core functionality working by disabling or simplifying non-essential features rather than failing completely."
+   }
+  },
+  {
+   "noteId": 1789061203552,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What problem does a circuit breaker solve?",
+    "Back": "It stops a service from repeatedly calling a downstream dependency that is failing, failing fast instead and giving the dependency time to recover."
+   }
+  },
+  {
+   "noteId": 1789061203553,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What are the three states of a circuit breaker?",
+    "Back": "Closed (calls flow normally), Open (calls fail immediately without trying), and Half-Open (a few test calls are let through to check for recovery)."
+   }
+  },
+  {
+   "noteId": 1789061203554,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "Why use exponential backoff when retrying a failed request?",
+    "Back": "Increasing the wait time between retries avoids overwhelming an already struggling downstream service with a retry storm."
+   }
+  },
+  {
+   "noteId": 1789061203555,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "Why should retry backoff usually include random jitter?",
+    "Back": "Without jitter, many clients retry at the exact same intervals in sync, causing repeated synchronized traffic spikes (a 'thundering herd')."
+   }
+  },
+  {
+   "noteId": 1789061203556,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What does a request timeout protect against?",
+    "Back": "A slow or unresponsive dependency holding a caller's resources (threads/connections) indefinitely, which could cascade into resource exhaustion."
+   }
+  },
+  {
+   "noteId": 1789061203557,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What is the bulkhead pattern?",
+    "Back": "Isolating resources (e.g. thread pools or connection pools) per dependency or service, so one failing dependency can't exhaust resources needed by others."
+   }
+  },
+  {
+   "noteId": 1789061203558,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "How does the token bucket rate-limiting algorithm work?",
+    "Back": "Tokens are added to a bucket at a fixed rate up to a max capacity; each request consumes a token, and requests are rejected/delayed once the bucket is empty — this allows short bursts."
+   }
+  },
+  {
+   "noteId": 1789061203559,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "How does the leaky bucket rate-limiting algorithm work?",
+    "Back": "Requests enter a fixed-size queue and are processed ('leak out') at a constant rate, smoothing bursty traffic into a steady output rate."
+   }
+  },
+  {
+   "noteId": 1789061203560,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What is an idempotency key used for in an API?",
+    "Back": "A client-supplied unique id attached to a request so that if the request is retried (e.g. after a timeout), the server can detect the duplicate and avoid double-processing it (e.g. double-charging a payment)."
+   }
+  },
+  {
+   "noteId": 1789061203561,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "In back-of-envelope estimation, how do you roughly estimate QPS from daily active users?",
+    "Back": "<code>(daily active users &times; actions per user per day) / 86,400 seconds</code>, often multiplied by a peak-factor (e.g. 2-3x) to get peak QPS. Note: a day has about 86,400 seconds (~10^5), a useful constant to memorize."
+   }
+  },
+  {
+   "noteId": 1789061203562,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "What is the difference between a liveness and a readiness health check?",
+    "Back": "Liveness asks 'is the process still running/not deadlocked' (restart it if failing); readiness asks 'is the service ready to accept traffic' (remove it from the load balancer if failing, without necessarily restarting it)."
+   }
+  },
+  {
+   "noteId": 1789061203563,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Front": "Why is monitoring with alerting important beyond just logging?",
+    "Back": "Logs require someone to go look; monitoring with alerts proactively notifies the team when a metric crosses a threshold, enabling faster incident response."
+   }
+  },
+  {
+   "noteId": 1789061203564,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Text": "{{c1::SLA}} (Service Level Agreement) is the external contract/promise made to customers; {{c2::SLO}} (Service Level Objective) is the internal target a team aims for; {{c3::SLI}} (Service Level Indicator) is the actual measured metric.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203565,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Text": "Token bucket allows {{c1::bursts}} of traffic up to the bucket size, while leaky bucket enforces a {{c2::constant, smoothed}} output rate regardless of burstiness.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203566,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Text": "Rough powers-of-two/ten memory sizes for estimation: {{c1::1 KB}} &asymp; 10^3 bytes, {{c2::1 MB}} &asymp; 10^6 bytes, {{c3::1 GB}} &asymp; 10^9 bytes, {{c4::1 TB}} &asymp; 10^12 bytes.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203567,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-reliability"
+   ],
+   "fields": {
+    "Text": "Latency numbers worth memorizing: L1 cache reference &asymp; 1 ns, main memory reference &asymp; 100 ns, round trip within the same data center &asymp; 0.5 ms, and a round trip {{c1::across the US/continent}} &asymp; tens of ms (roughly 40-60 ms).",
+    "Extra": ""
+   }
+  }
+ ]
+}

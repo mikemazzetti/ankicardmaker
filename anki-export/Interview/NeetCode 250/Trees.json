@@ -1,0 +1,329 @@
+{
+ "deck": "Interview::NeetCode 250::Trees",
+ "note_count": 23,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585429,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-inorder-traversal",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A family estate branches downward, each ancestor having at most a left heir and a right heir. List everyone by this rule applied at every level: fully list the left branch, then the ancestor, then the right branch. Produce that ordering.",
+    "Back": "<b>Maps to:</b> Inorder depth-first traversal (Binary Tree Inorder Traversal).<br><br><b>Model it:</b> Output the tree's values in left-root-right order.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse left, visit the node, recurse right.</li><li>The iterative version pushes lefts onto a stack, then pops to visit and turn right.</li><li>For a search tree this yields sorted order.</li></ul><b>Time:</b> O(n) — every node visited once.<br><b>Space:</b> O(h) — recursion/stack depth equals the height."
+   }
+  },
+  {
+   "noteId": 1788998585430,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-preorder-traversal",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A family estate branches downward, each ancestor having at most a left and a right heir. List everyone by this rule at every level: name the ancestor first, then the whole left branch, then the whole right branch.",
+    "Back": "<b>Maps to:</b> Preorder depth-first traversal (Binary Tree Preorder Traversal).<br><br><b>Model it:</b> Output the tree's values in root-left-right order.<br><br><b>Approach &amp; variations:</b><ul><li>Visit the node, recurse left, recurse right.</li><li>The iterative version pushes the right child before the left onto a stack.</li><li>Natural for copying or top-down serialization of the structure.</li></ul><b>Time:</b> O(n) — one visit per node.<br><b>Space:</b> O(h) — stack/recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585431,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-postorder-traversal",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A family estate branches downward, each ancestor having at most a left and a right heir. List everyone by this rule at every level: the whole left branch, then the whole right branch, and only then the ancestor themselves.",
+    "Back": "<b>Maps to:</b> Postorder depth-first traversal (Binary Tree Postorder Traversal).<br><br><b>Model it:</b> Output the tree's values in left-right-root order.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse left, recurse right, then visit the node.</li><li>Iterative: reverse a modified root-right-left preorder, or use two stacks.</li><li>Natural for freeing/processing children before their parent.</li></ul><b>Time:</b> O(n) — one visit per node.<br><b>Space:</b> O(h) — recursion/stack depth."
+   }
+  },
+  {
+   "noteId": 1788998585432,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-invert-a-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "You have a branching family chart where everyone has at most a left and a right heir. Produce its mirror image: at every ancestor, swap the entire left branch with the entire right branch, all the way down.",
+    "Back": "<b>Maps to:</b> Recursive subtree swap (Invert Binary Tree).<br><br><b>Model it:</b> Mirror a binary tree by swapping left and right children at every node.<br><br><b>Approach &amp; variations:</b><ul><li>At each node swap its two children, then recurse into both.</li><li>Works with either depth-first or breadth-first order.</li><li>Base case: an empty spot returns itself.</li></ul><b>Time:</b> O(n) — visits each node once.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585433,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-depth-of-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A branching family chart hangs from a single founder at the top, each person having at most two heirs below. How many generations deep does the longest lineage run, counting from the founder down to the most distant descendant?",
+    "Back": "<b>Maps to:</b> Depth-first (or level) height computation (Maximum Depth of Binary Tree).<br><br><b>Model it:</b> Return the number of nodes on the longest root-to-leaf path.<br><br><b>Approach &amp; variations:</b><ul><li>Depth = 1 + max(depth of left, depth of right).</li><li>An empty spot contributes depth 0.</li><li>Counting levels with a queue works equally well.</li></ul><b>Time:</b> O(n) — every node examined.<br><b>Space:</b> O(h) — recursion stack."
+   }
+  },
+  {
+   "noteId": 1788998585434,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-diameter",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "In a branching family chart, pick any two people and trace the chain of relatives connecting them upward through a shared ancestor and back down. What is the largest number of steps in the longest such connecting chain found anywhere in the whole chart?",
+    "Back": "<b>Maps to:</b> DFS returning height while tracking the best split (Diameter of Binary Tree).<br><br><b>Model it:</b> Find the longest path, in edges, between any two nodes of a binary tree.<br><br><b>Approach &amp; variations:</b><ul><li>At each node the candidate path length is left height + right height.</li><li>Recurse returning height, updating a global maximum of that sum.</li><li>The best path need not pass through the top ancestor.</li></ul><b>Time:</b> O(n) — one DFS.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585435,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-balanced-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A branching family chart is 'well-proportioned' if, for every single person in it, their left lineage and right lineage never differ in depth by more than one generation. Decide whether the whole chart is well-proportioned.",
+    "Back": "<b>Maps to:</b> Bottom-up height check (Balanced Binary Tree).<br><br><b>Model it:</b> Check that at every node the two subtree heights differ by at most 1.<br><br><b>Approach &amp; variations:</b><ul><li>A DFS returns each subtree's height, or a sentinel once an imbalance is found below.</li><li>At each node compare left and right heights and bail out early if the gap exceeds 1.</li><li>Naive top-down recomputation is O(n^2); this bottom-up pass is O(n).</li></ul><b>Time:</b> O(n) — each height computed once.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585436,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-same-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "Two branching family charts are drawn on separate sheets. Decide whether they are truly identical: the same shape and the same name at every matching position, checked all the way down.",
+    "Back": "<b>Maps to:</b> Parallel depth-first comparison (Same Tree).<br><br><b>Model it:</b> Determine whether two binary trees are structurally identical with equal values.<br><br><b>Approach &amp; variations:</b><ul><li>Compare the current pair, then recurse on left-with-left and right-with-right.</li><li>Both empty means equal; one empty or values differing means not equal.</li><li>Any mismatch short-circuits to false.</li></ul><b>Time:</b> O(n) — matching nodes visited once.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585437,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-subtree-of-a-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "You have a big branching family chart and a small one. Decide whether the small chart appears intact somewhere inside the big one: some person in the big chart, together with everyone below them, exactly matches the small chart in both shape and names.",
+    "Back": "<b>Maps to:</b> DFS plus a same-tree check at each node (Subtree of Another Tree).<br><br><b>Model it:</b> Check whether tree t equals some subtree rooted inside tree s.<br><br><b>Approach &amp; variations:</b><ul><li>At each node of s, run an identical-tree test against t.</li><li>Recurse down s until a match is found or s is exhausted.</li><li>Alternative: serialize both and substring-search for O(n+m).</li></ul><b>Time:</b> O(n*m) naive — a same-tree check at each of n nodes.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585438,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-lowest-common-ancestor-in-binary-search-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "In an org chart where every manager's left-hand reports carry smaller badge numbers and right-hand reports carry larger ones, two employees are named. Find their lowest common boss, the deepest manager who oversees both, using the badge-number ordering to steer your descent.",
+    "Back": "<b>Maps to:</b> Ordered descent using the search-tree property (Lowest Common Ancestor of a BST).<br><br><b>Model it:</b> Find the lowest common ancestor of two nodes in a binary search tree.<br><br><b>Approach &amp; variations:</b><ul><li>Start at the top; if both targets are smaller go left, if both are larger go right.</li><li>The first node where the two targets split (or that equals one target) is the answer.</li><li>The ordering avoids any full search.</li></ul><b>Time:</b> O(h) — one root-to-split descent.<br><b>Space:</b> O(1) — an iterative pointer walk."
+   }
+  },
+  {
+   "noteId": 1788998585439,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-insert-into-a-binary-search-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "In a directory where each entry sends smaller keys left and larger keys right, you receive a new key guaranteed not already present. Place it so the left-smaller / right-larger rule still holds everywhere, adding it as a new bottom entry.",
+    "Back": "<b>Maps to:</b> Search-tree insertion by descent (Insert into a BST).<br><br><b>Model it:</b> Insert a value into a binary search tree and return the new root.<br><br><b>Approach &amp; variations:</b><ul><li>Descend left or right by comparing the new key to each entry.</li><li>When the next step is empty, attach the new entry there.</li><li>A plain search tree needs no rebalancing.</li></ul><b>Time:</b> O(h) — one descent to an empty spot.<br><b>Space:</b> O(h) recursive, O(1) iterative."
+   }
+  },
+  {
+   "noteId": 1788998585440,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-delete-node-in-a-bst",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "In a directory where smaller keys go left and larger keys go right, remove a given key while keeping that ordering intact everywhere. The tricky case: the removed entry has branches on both sides, so who takes its place?",
+    "Back": "<b>Maps to:</b> Search-tree deletion with successor swap (Delete Node in a BST).<br><br><b>Model it:</b> Delete a key from a binary search tree and return a still-valid root.<br><br><b>Approach &amp; variations:</b><ul><li>Find the entry; with zero or one branch, splice it out directly.</li><li>With two branches, replace its value with the in-order successor (smallest on its right), then delete that successor.</li><li>The in-order predecessor works symmetrically.</li></ul><b>Time:</b> O(h) — a search plus a successor find.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585441,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-level-order-traversal-of-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A branching family chart hangs from one founder. List everyone generation by generation: the top row first, reading left to right within each generation, then the next generation, and so on.",
+    "Back": "<b>Maps to:</b> Breadth-first traversal by levels (Binary Tree Level Order Traversal).<br><br><b>Model it:</b> Return node values grouped by depth level, top to bottom.<br><br><b>Approach &amp; variations:</b><ul><li>Use a queue and finish the current level before starting the next.</li><li>Record each level's size so you know where it ends.</li><li>Enqueue the left child, then the right child.</li></ul><b>Time:</b> O(n) — each node enqueued once.<br><b>Space:</b> O(n) — the queue can hold a full level."
+   }
+  },
+  {
+   "noteId": 1788998585442,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-right-side-view",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "You stand to the right of a branching family chart and can see, in each generation, only the person standing furthest to the right. Reading top to bottom, who do you see?",
+    "Back": "<b>Maps to:</b> BFS taking the last node of each level (Binary Tree Right Side View).<br><br><b>Model it:</b> Return the rightmost node value at each depth of a binary tree.<br><br><b>Approach &amp; variations:</b><ul><li>Level-order traverse and keep the last node seen at each level.</li><li>Or DFS visiting the right child first, recording the first node reached at each new depth.</li><li>A missing right branch falls through to a visible left one.</li></ul><b>Time:</b> O(n) — every node visited.<br><b>Space:</b> O(n) — queue or recursion."
+   }
+  },
+  {
+   "noteId": 1788998585443,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-construct-quad-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "You have a square grid of black and white tiles whose side is a power of two. Compress it: if a square region is all one color, record it as a single solid block; otherwise split it into four equal quadrants and describe each the same way, recursively. Produce that nested description.",
+    "Back": "<b>Maps to:</b> Recursive quadrant subdivision (Construct Quad Tree).<br><br><b>Model it:</b> Build a quad tree from an n x n grid of 0/1 cells, merging uniform regions into leaves.<br><br><b>Approach &amp; variations:</b><ul><li>If the current square is uniform, make a solid leaf with that value.</li><li>Otherwise split into four sub-squares and recurse on each.</li><li>Merge four same-valued leaves back into one leaf.</li></ul><b>Time:</b> O(n^2 log n) — each cell is touched at each subdivision level.<br><b>Space:</b> O(log n) recursion depth, plus the output."
+   }
+  },
+  {
+   "noteId": 1788998585444,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-count-good-nodes-in-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "Along each downward lineage in a branching chart starting from the founder, a person is 'notable' if nobody above them on that same path has a greater value. Count how many notable people the whole chart contains.",
+    "Back": "<b>Maps to:</b> DFS carrying the max-so-far (Count Good Nodes in Binary Tree).<br><br><b>Model it:</b> Count nodes whose value is at least the maximum value on the path from the root to them.<br><br><b>Approach &amp; variations:</b><ul><li>DFS downward, passing along the largest value seen so far on the path.</li><li>A node counts when its value is greater than or equal to that running maximum.</li><li>Update the maximum before recursing into the children.</li></ul><b>Time:</b> O(n) — one DFS pass.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585445,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-valid-binary-search-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "Someone claims a directory obeys the rule that everything in a person's left branch is smaller than them and everything in their right branch is larger, not just the immediate children but every descendant beneath. Verify the claim holds everywhere.",
+    "Back": "<b>Maps to:</b> DFS with (low, high) bounds (Validate Binary Search Tree).<br><br><b>Model it:</b> Check whether a binary tree satisfies the global search-tree ordering property.<br><br><b>Approach &amp; variations:</b><ul><li>Pass an allowed open interval (low, high) downward; each node must fall strictly inside.</li><li>Going left tightens the upper bound; going right tightens the lower bound.</li><li>Alternatively, an in-order traversal must be strictly increasing.</li></ul><b>Time:</b> O(n) — each node validated once.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585446,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-kth-smallest-integer-in-bst",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "In a directory where smaller keys sit left and larger keys sit right, find the entry holding the k-th smallest key, ideally without listing them all.",
+    "Back": "<b>Maps to:</b> In-order traversal stopping at the k-th element (Kth Smallest Element in a BST).<br><br><b>Model it:</b> Return the k-th smallest value in a binary search tree.<br><br><b>Approach &amp; variations:</b><ul><li>An in-order traversal yields the keys in increasing order; stop at the k-th.</li><li>Use an explicit stack to halt early rather than traversing everything.</li><li>For many repeated queries, augment each node with its subtree count.</li></ul><b>Time:</b> O(h + k) — descend, then pop k times.<br><b>Space:</b> O(h) — stack depth."
+   }
+  },
+  {
+   "noteId": 1788998585447,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-from-preorder-and-inorder-traversal",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "You are given two guest lists describing the same branching seating chart. One was recorded by always naming a host before their two sub-groups; the other by naming the left sub-group, then the host, then the right sub-group. Reconstruct the exact chart.",
+    "Back": "<b>Maps to:</b> Recursive split using the preorder root to partition the inorder list (Construct Binary Tree from Preorder and Inorder Traversal).<br><br><b>Model it:</b> Rebuild a binary tree from its preorder and inorder traversals.<br><br><b>Approach &amp; variations:</b><ul><li>The next preorder value is the current root; locate it in the inorder list to split left from right.</li><li>The left inorder segment's size determines how much of preorder forms the left subtree; recurse.</li><li>A value->index map on the inorder list makes each lookup O(1).</li></ul><b>Time:</b> O(n) — each node placed once with hashed lookups.<br><b>Space:</b> O(n) — the index map plus recursion."
+   }
+  },
+  {
+   "noteId": 1788998585448,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-house-robber-iii",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "A crime spree is planned over a branching chart of houses. Robbing a house earns its stash, but you may never rob a house together with either of the two houses directly linked just below it on the same night. Maximize the total loot across the whole chart.",
+    "Back": "<b>Maps to:</b> Tree DP returning (rob, skip) pairs (House Robber III).<br><br><b>Model it:</b> Choose a maximum-sum set of tree nodes such that no chosen node is a parent of another.<br><br><b>Approach &amp; variations:</b><ul><li>Each node returns two totals: the best if it is robbed and the best if it is skipped.</li><li>Robbed = value + children's skipped totals; skipped = sum of each child's better option.</li><li>The answer is the top node's max of its two totals.</li></ul><b>Time:</b> O(n) — a single post-order pass.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585449,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-delete-leaves-with-a-given-value",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "In a branching chart, repeatedly snip off any dead-end person (nobody below them) whose value equals a target. Snipping one may expose a new dead-end above with the same value, which must then also go. Produce the final pruned chart.",
+    "Back": "<b>Maps to:</b> Post-order pruning with cascade (Delete Leaves With a Given Value).<br><br><b>Model it:</b> Remove all leaves equal to target, cascading upward, from a binary tree.<br><br><b>Approach &amp; variations:</b><ul><li>Recurse into both children first, then re-examine the current node.</li><li>After pruning, if the node is now a dead-end and equals target, delete it (return empty).</li><li>Post-order makes the upward cascade automatic in one pass.</li></ul><b>Time:</b> O(n) — one post-order pass.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585450,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-binary-tree-maximum-path-sum",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "Along a branching chart, a 'route' is any connected chain of people that bends through at most one shared high point and never revisits anyone. Each person carries a value that may be negative. Find the route with the greatest total value anywhere in the chart.",
+    "Back": "<b>Maps to:</b> DFS returning the best downward gain while tracking a global best (Binary Tree Maximum Path Sum).<br><br><b>Model it:</b> Find the maximum-sum path between any two nodes in a binary tree.<br><br><b>Approach &amp; variations:</b><ul><li>Each node returns its best single-sided downward sum, clamped at 0.</li><li>At each node consider value + left gain + right gain as a route apex, updating a global maximum.</li><li>Return only value + the better one side upward, since a route cannot split twice.</li></ul><b>Time:</b> O(n) — one post-order pass.<br><b>Space:</b> O(h) — recursion depth."
+   }
+  },
+  {
+   "noteId": 1788998585451,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-serialize-and-deserialize-binary-tree",
+    "neetcode250",
+    "trees"
+   ],
+   "fields": {
+    "Front": "You must flatten a branching family chart into a single written string you can text to a friend, such that they can rebuild the identical chart, exact shape and names and empty spots included, from your string alone. Design both the encoding and the rebuild.",
+    "Back": "<b>Maps to:</b> Preorder encoding with empty-markers, plus a queue-driven decode (Serialize and Deserialize Binary Tree).<br><br><b>Model it:</b> Convert a binary tree to a string and reconstruct it losslessly.<br><br><b>Approach &amp; variations:</b><ul><li>Preorder DFS writing each value and a marker for every empty child.</li><li>Rebuild by consuming tokens in the same preorder, recursing when a real value appears and stopping on markers.</li><li>A level-order encoding with markers works equivalently.</li></ul><b>Time:</b> O(n) — each node written and read once.<br><b>Space:</b> O(n) — the string plus recursion/queue."
+   }
+  }
+ ]
+}

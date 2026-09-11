@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::System Design::Distributed Key-Value Store",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203991,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What are the two core client-facing operations a distributed key-value store must support?",
+    "Back": "put(key, value) and get(key)."
+   }
+  },
+  {
+   "noteId": 1789061203992,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "Why do Dynamo-style KV stores favor availability over strict consistency (per CAP)?",
+    "Back": "During a network partition, write availability matters more for workloads like a shopping cart than immediate consistency; conflicting writes are reconciled later."
+   }
+  },
+  {
+   "noteId": 1789061203993,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "For 100M keys averaging 1KB each, roughly how much raw storage is needed before replication?",
+    "Back": "~100GB (100M × 1KB). With 3x replication, ~300GB."
+   }
+  },
+  {
+   "noteId": 1789061203994,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "If a KV store serves 50,000 reads/sec and 5,000 writes/sec, what read:write ratio should the design optimize for?",
+    "Back": "10:1 — read-heavy, so optimize caching and read replicas."
+   }
+  },
+  {
+   "noteId": 1789061203995,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What might a vector clock look like when serialized in a PUT response, so the client can supply it on the next write?",
+    "Back": "<pre><code>{\n  \"key\": \"user123\",\n  \"value\": \"...\",\n  \"vector_clock\": {\n    \"nodeA\": 2,\n    \"nodeB\": 1\n  }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203996,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "In a Dynamo-style KV store, what structure is a value stored with?",
+    "Back": "The value itself, plus a vector clock (version metadata), stored as (key, value, vector_clock)."
+   }
+  },
+  {
+   "noteId": 1789061203997,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What problem does consistent hashing solve in a distributed KV store?",
+    "Back": "It minimizes key remapping when nodes are added or removed — only about K/N keys move instead of nearly all keys."
+   }
+  },
+  {
+   "noteId": 1789061203998,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "Why do Dynamo-style systems assign multiple virtual nodes (vnodes) to each physical node on the hash ring?",
+    "Back": "To spread load more evenly, and so that when a node fails, its keys are redistributed across many other nodes rather than overloading one neighbor."
+   }
+  },
+  {
+   "noteId": 1789061203999,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "In Dynamo-style replication, how is a key's replica set chosen on the hash ring?",
+    "Back": "The key is placed at its hash position, and the next N-1 distinct physical nodes walking clockwise around the ring also store replicas."
+   }
+  },
+  {
+   "noteId": 1789061204000,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "With N=3, W=1, R=1, what consistency/availability tradeoff is being made?",
+    "Back": "Maximizes availability and lowers latency, but sacrifices consistency — reads can return stale data since R+W ≤ N."
+   }
+  },
+  {
+   "noteId": 1789061204001,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What does a vector clock entry (node, counter) capture for a value?",
+    "Back": "Which node performed the write and how many writes that node has made to the key, letting the system detect causality between versions."
+   }
+  },
+  {
+   "noteId": 1789061204002,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "When two versions of a key have vector clocks that are neither ancestor nor descendant of each other, what does the KV store do?",
+    "Back": "It flags them as a sibling/conflict and returns both versions to the client or application to reconcile, e.g. via last-writer-wins or app-level merge logic."
+   }
+  },
+  {
+   "noteId": 1789061204003,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What KV-store mechanism repairs a replica that missed a write due to a temporary node outage, without blocking the client?",
+    "Back": "Hinted handoff — a healthy node temporarily stores the write with a 'hint' and forwards it to the original replica once it recovers."
+   }
+  },
+  {
+   "noteId": 1789061204004,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What is a common bottleneck when a single key becomes extremely popular (a hot key) in a sharded KV store?",
+    "Back": "That key's owning node(s) get disproportionate load, causing hotspotting even though the cluster as a whole is balanced."
+   }
+  },
+  {
+   "noteId": 1789061204005,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff of increasing the replication factor N in a KV store?",
+    "Back": "Higher durability and read availability, but more storage cost and more write coordination overhead/latency."
+   }
+  },
+  {
+   "noteId": 1789061204007,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Text": "A distributed KV store's core non-functional requirements are {{c1::high availability}}, {{c2::horizontal scalability}}, {{c3::low latency}}, and {{c4::eventual consistency}} (tunable).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204008,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Text": "A minimal KV store HTTP API exposes {{c1::PUT /keys/{key}}} to write, {{c2::GET /keys/{key}}} to read, and {{c3::DELETE /keys/{key}}} to remove a value.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204009,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Text": "The main components of a distributed KV store are {{c1::a coordinator/router node}} (routes requests), {{c2::storage nodes}} (persist key ranges), and {{c3::a membership/gossip layer}} (tracks cluster state).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204010,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Text": "Dynamo-style quorum consistency uses three tunable parameters: {{c1::N}} (replicas), {{c2::R}} (nodes that must ack a read), and {{c3::W}} (nodes that must ack a write); strong consistency requires {{c4::R + W > N}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204020,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-kv-store"
+   ],
+   "fields": {
+    "Front": "Gossip protocol (in a distributed KV store)",
+    "Back": "A peer-to-peer mechanism where nodes periodically exchange membership/health state, so join/leave/failure information spreads through the cluster without a central coordinator."
+   }
+  }
+ ]
+}

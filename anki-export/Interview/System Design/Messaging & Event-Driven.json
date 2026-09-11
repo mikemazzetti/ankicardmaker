@@ -1,0 +1,259 @@
+{
+ "deck": "Interview::System Design::Messaging & Event-Driven",
+ "note_count": 21,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203513,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What is the key difference between a message queue and pub/sub?",
+    "Back": "A queue delivers each message to exactly one consumer (point-to-point); pub/sub broadcasts each message to every subscriber of a topic."
+   }
+  },
+  {
+   "noteId": 1789061203514,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Give an example use case better suited to a message queue than pub/sub.",
+    "Back": "Distributing work items across a pool of workers, where each task should be processed by only one worker (e.g. a background job queue)."
+   }
+  },
+  {
+   "noteId": 1789061203515,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Give an example use case better suited to pub/sub than a message queue.",
+    "Back": "Broadcasting an event (e.g. 'order placed') to multiple independent services that each need to react — email, analytics, inventory."
+   }
+  },
+  {
+   "noteId": 1789061203516,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "In Kafka, what is a topic?",
+    "Back": "A named stream/category of messages that producers write to and consumers read from."
+   }
+  },
+  {
+   "noteId": 1789061203517,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "In Kafka, what is a partition?",
+    "Back": "A topic is split into ordered, append-only partitions, each of which can be processed independently to allow parallelism."
+   }
+  },
+  {
+   "noteId": 1789061203518,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "In Kafka, what is an offset?",
+    "Back": "A sequential id marking a message's position within a partition, used by consumers to track their read progress."
+   }
+  },
+  {
+   "noteId": 1789061203519,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "In Kafka, what is a consumer group?",
+    "Back": "A set of consumers that share the work of reading a topic, where each partition is consumed by only one consumer in the group at a time."
+   }
+  },
+  {
+   "noteId": 1789061203520,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Why does Kafka only guarantee message ordering within a partition, not across a whole topic?",
+    "Back": "Partitions are processed independently and in parallel by different consumers, so there's no global order across them — only within each partition's own sequence."
+   }
+  },
+  {
+   "noteId": 1789061203521,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Why is 'at-least-once' delivery the most common choice in practice, even though it can duplicate messages?",
+    "Back": "It's simpler and cheaper to guarantee than exactly-once; the duplication risk is handled by making the consumer's handler idempotent."
+   }
+  },
+  {
+   "noteId": 1789061203522,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What does it mean for a message handler to be idempotent?",
+    "Back": "Processing the same message multiple times produces the same result as processing it once, with no duplicate side effects."
+   }
+  },
+  {
+   "noteId": 1789061203523,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Give a common technique to make an operation idempotent.",
+    "Back": "Use a unique idempotency key (e.g. request or message id), and check/record it before applying the operation, skipping it if already processed."
+   }
+  },
+  {
+   "noteId": 1789061203524,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What is a dead-letter queue (DLQ)?",
+    "Back": "A separate queue that messages are routed to after repeatedly failing processing, so they don't block the main queue and can be inspected or retried later."
+   }
+  },
+  {
+   "noteId": 1789061203525,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What is backpressure in a messaging system?",
+    "Back": "A mechanism that slows or pauses producers when consumers can't keep up, preventing the system from being overwhelmed."
+   }
+  },
+  {
+   "noteId": 1789061203526,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Name one way a system can apply backpressure.",
+    "Back": "Bounded queues that block or reject new messages once full, or pull-based consumers that explicitly request a limited batch size."
+   }
+  },
+  {
+   "noteId": 1789061203527,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What is event sourcing?",
+    "Back": "Storing all changes to application state as an immutable sequence of events, rather than just the current state, so state is derived by replaying events."
+   }
+  },
+  {
+   "noteId": 1789061203528,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What is a key benefit of event sourcing?",
+    "Back": "A full audit log/history of how state was reached, plus the ability to rebuild or replay state as of any point in time."
+   }
+  },
+  {
+   "noteId": 1789061203529,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Why is CQRS often paired with event sourcing?",
+    "Back": "Events from the write model naturally serve as the source of truth used to build and update optimized read-side projections."
+   }
+  },
+  {
+   "noteId": 1789061203530,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff between synchronous (request/response) and asynchronous (event/message-based) service communication?",
+    "Back": "Sync is simpler and gives an immediate result but couples services' availability and latency together; async decouples services and improves resilience/throughput but adds complexity (eventual consistency, harder debugging)."
+   }
+  },
+  {
+   "noteId": 1789061203531,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Front": "Why can strict message ordering be hard to achieve at scale?",
+    "Back": "Parallelism (multiple partitions/consumers) is needed for throughput, but processing in parallel breaks global order — ordering is usually only guaranteed per-partition or per-key."
+   }
+  },
+  {
+   "noteId": 1789061203532,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Text": "Message delivery semantics: {{c1::at-most-once}} (message may be lost, never duplicated), {{c2::at-least-once}} (message may be duplicated, never lost), {{c3::exactly-once}} (message delivered and processed exactly one time).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203533,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-messaging"
+   ],
+   "fields": {
+    "Text": "CQRS separates the {{c1::write model}} (handles commands that change state) from the {{c2::read model}} (optimized for queries), often backed by different data stores.",
+    "Extra": ""
+   }
+  }
+ ]
+}

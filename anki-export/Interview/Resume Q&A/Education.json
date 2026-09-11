@@ -1,0 +1,223 @@
+{
+ "deck": "Interview::Resume Q&A::Education",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203085,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What university does Michele attend?",
+    "Back": "Western University"
+   }
+  },
+  {
+   "noteId": 1789061203087,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What degree is Michele pursuing?",
+    "Back": "BSc Computer Science"
+   }
+  },
+  {
+   "noteId": 1789061203088,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What is Michele's academic minor?",
+    "Back": "Biology"
+   }
+  },
+  {
+   "noteId": 1789061203089,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What program stream is Michele's degree part of?",
+    "Back": "Co-op"
+   }
+  },
+  {
+   "noteId": 1789061203090,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "When does Michele graduate?",
+    "Back": "April 2027"
+   }
+  },
+  {
+   "noteId": 1789061203091,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Which course covers sorting, searching, and complexity analysis?",
+    "Back": "Data Structures & Algorithms"
+   }
+  },
+  {
+   "noteId": 1789061203092,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Which coursework is most relevant to Michele's ML/NLP work (e.g. TruthLens)?",
+    "Back": "Machine Learning"
+   }
+  },
+  {
+   "noteId": 1789061203093,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Which coursework most directly underpins Michele's database/schema-design work (e.g. the DynamoDB schema at BMO)?",
+    "Back": "Databases"
+   }
+  },
+  {
+   "noteId": 1789061203094,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Which coursework grounds Michele's object-oriented backend design (e.g. Spring Boot services)?",
+    "Back": "OOP Design"
+   }
+  },
+  {
+   "noteId": 1789061203095,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Which coursework relates most to Michele's cloud/event-driven systems work?",
+    "Back": "Networking"
+   }
+  },
+  {
+   "noteId": 1789061203096,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What named student award has Michele received?",
+    "Back": "Charlie Hanes Student Award"
+   }
+  },
+  {
+   "noteId": 1789061203097,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What scholarship did Michele receive upon admission to Western?",
+    "Back": "Western Admission Scholarship"
+   }
+  },
+  {
+   "noteId": 1789061203098,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "What recognition has Michele earned for sustained academic performance?",
+    "Back": "Dean's Honor List"
+   }
+  },
+  {
+   "noteId": 1789061203099,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Interview practice: Why did Michele choose to study Computer Science?",
+    "Back": "To build and ship real systems end-to-end - visible in his path from full-stack web development (Angular, React) to cloud/backend engineering (AWS, serverless) to AI-driven development at BMO and ML research at WesternAI."
+   }
+  },
+  {
+   "noteId": 1789061203100,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Front": "Interview practice: How does the Biology minor complement Michele's CS work?",
+    "Back": "It reinforces the data-driven, evidence-based reasoning behind his ML/statistics coursework and NLP projects (e.g. TruthLens), pairing naturally with his Statistics coursework for rigorous experimental analysis."
+   }
+  },
+  {
+   "noteId": 1789061203123,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Text": "Michele is completing a {{c1::BSc Computer Science}} with a {{c2::Minor in Biology}} (Co-op) at {{c3::Western University}}, graduating {{c4::April 2027}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203124,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Text": "Michele's coursework includes {{c1::Data Structures & Algorithms}}, {{c2::Discrete Math}}, and {{c3::Databases}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203125,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-education"
+   ],
+   "fields": {
+    "Text": "Michele's coursework also includes {{c1::Machine Learning}}, {{c2::OOP Design}}, {{c3::Statistics}}, and {{c4::Networking}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

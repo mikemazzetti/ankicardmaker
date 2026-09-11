@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Hotel Management System",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200845,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "What core use cases should an OOD interview design for a Hotel Management System cover?",
+    "Back": "Searching room availability by date range/type, booking/reservation, check-in and check-out, billing/invoicing, and housekeeping status tracking."
+   }
+  },
+  {
+   "noteId": 1789061200846,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the Hotel class vs. a HotelBranch class in a multi-location design?",
+    "Back": "Hotel is the top-level entity (brand) that owns multiple HotelBranch objects; each HotelBranch owns its own Rooms, staff, and local bookings."
+   }
+  },
+  {
+   "noteId": 1789061200847,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Why model Room and RoomType as separate concepts?",
+    "Back": "Room is a specific physical room (number, floor, branch); RoomType captures shared attributes like price, capacity, and amenities so many Rooms can reference one RoomType without duplicating data."
+   }
+  },
+  {
+   "noteId": 1789061200848,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "What relationship exists between Booking and Room in the class model?",
+    "Back": "A Booking references one (or more) Rooms for a specific date range; it's an association, not composition — the Room continues to exist independently of any particular Booking."
+   }
+  },
+  {
+   "noteId": 1789061200849,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "How does an Invoice relate to a Booking?",
+    "Back": "One Invoice is generated per completed Booking (or per stay), aggregating room charges, service charges, and taxes; composition — the Invoice's line items belong to that Booking."
+   }
+  },
+  {
+   "noteId": 1789061200850,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits creating different Room subtypes (Suite, Deluxe, Standard) with type-specific setup, and why?",
+    "Back": "Factory Method: a RoomFactory centralizes construction logic so client code calls <code>createRoom(RoomType)</code> instead of branching on type everywhere a Room is instantiated."
+   }
+  },
+  {
+   "noteId": 1789061200851,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits managing a Room's status transitions (AVAILABLE → RESERVED → OCCUPIED → CLEANING), and why?",
+    "Back": "State: each status becomes a State object with allowed-transition logic, so invalid transitions (e.g., checking in an already-OCCUPIED room) are rejected by the state itself rather than scattered if-checks."
+   }
+  },
+  {
+   "noteId": 1789061200852,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits varying room pricing by season/demand, and why?",
+    "Back": "Strategy: encapsulate pricing rules in interchangeable PricingStrategy implementations (e.g., PeakSeasonPricing, WeekdayPricing) selected at booking time."
+   }
+  },
+  {
+   "noteId": 1789061200853,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "What must <code>searchRooms(startDate, endDate, roomType)</code> check to return correct availability?",
+    "Back": "It must exclude any Room of that type with an overlapping existing Booking in the given date range, not just Rooms currently marked OCCUPIED today."
+   }
+  },
+  {
+   "noteId": 1789061200854,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "What should <code>checkIn(booking)</code> validate before allowing check-in?",
+    "Back": "That today's date falls within the booking's date range, the Room's status is RESERVED (not still OCCUPIED by a prior guest), and identity/payment hold is confirmed."
+   }
+  },
+  {
+   "noteId": 1789061200855,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "What should <code>checkOut(booking)</code> trigger?",
+    "Back": "Finalize the Invoice (add incidental charges), set Room status to UNDER_MAINTENANCE or CLEANING (not directly AVAILABLE), and close the Booking."
+   }
+  },
+  {
+   "noteId": 1789061200856,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Edge case: a guest wants to extend their stay by one night at checkout time. How should the design handle it?",
+    "Back": "Check the Room's availability for the extra night before approving; if another Booking already reserves it, offer a room change instead of overbooking."
+   }
+  },
+  {
+   "noteId": 1789061200857,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Edge case: overbooking — two Bookings end up referencing the same Room for overlapping dates. What prevents this?",
+    "Back": "The booking-creation path must atomically check availability and reserve the Room (e.g., a DB-level unique constraint or lock on Room+date range) so the overlap check and the reservation happen as one operation."
+   }
+  },
+  {
+   "noteId": 1789061200858,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Edge case: a Room needs emergency maintenance while it has a future Booking against it. What should the system do?",
+    "Back": "Flag the Room UNDER_MAINTENANCE, and trigger a reassignment workflow that finds an equivalent RoomType for the affected Booking or notifies staff to contact the guest."
+   }
+  },
+  {
+   "noteId": 1789061200859,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Edge case: a guest cancels within a non-refundable window. What must Booking/Invoice logic enforce?",
+    "Back": "The cancellation policy (a date-based rule tied to the Booking) must be checked before refunding; late cancellations should still generate a partial or full charge on the Invoice."
+   }
+  },
+  {
+   "noteId": 1789061200860,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Implement a Java Factory Method that creates Room objects for different RoomTypes.",
+    "Back": "<pre><code>public class RoomFactory {\n    public static Room createRoom(String roomNumber, RoomType type) {\n        switch (type) {\n            case SUITE:\n                return new Room(roomNumber, type, 2, 350.00);\n            case DELUXE:\n                return new Room(roomNumber, type, 2, 200.00);\n            case STANDARD:\n                return new Room(roomNumber, type, 1, 120.00);\n            default:\n                throw new IllegalArgumentException(\"Unknown RoomType: \" + type);\n        }\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200861,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Implement the State pattern in Python for a Room's status transitions, rejecting invalid check-ins.",
+    "Back": "<pre><code>class RoomState:\n    def check_in(self, room):\n        raise Exception(\"Cannot check in from this state\")\n\nclass Available(RoomState):\n    def check_in(self, room):\n        room.state = Occupied()\n\nclass Reserved(RoomState):\n    def check_in(self, room):\n        room.state = Occupied()\n\nclass Occupied(RoomState):\n    def check_in(self, room):\n        raise Exception(\"Room already occupied\")\n\nclass Room:\n    def __init__(self):\n        self.state = Available()\n\n    def check_in(self):\n        self.state.check_in(self)\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200862,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Implement a Java method that checks whether a Room is free for a requested date range against its existing Bookings.",
+    "Back": "<pre><code>public boolean isAvailable(Room room, LocalDate start, LocalDate end) {\n    for (Booking b : room.getBookings()) {\n        boolean overlaps = start.isBefore(b.getEndDate())\n                && end.isAfter(b.getStartDate());\n        if (overlaps) {\n            return false;\n        }\n    }\n    return true;\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200870,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Text": "A Room's status typically cycles through {{c1::AVAILABLE}}, {{c2::RESERVED}}, {{c3::OCCUPIED}}, and {{c4::UNDER_MAINTENANCE}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200887,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-hotel"
+   ],
+   "fields": {
+    "Front": "Housekeeping status",
+    "Back": "A Room attribute (distinct from booking status) tracking whether the room is CLEAN, DIRTY, or INSPECTED — checked before a Room can move from UNDER_MAINTENANCE/CLEANING back to AVAILABLE."
+   }
+  }
+ ]
+}

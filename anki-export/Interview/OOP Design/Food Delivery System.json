@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Food Delivery System",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202142,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements to clarify for a Food Delivery System OOD interview?",
+    "Back": "1) Customer browses a restaurant's menu and places an order. 2) Restaurant confirms/prepares the order. 3) A driver is assigned and delivers it. 4) The order's status is tracked end-to-end. 5) Payment is processed and can be refunded on cancellation/failure."
+   }
+  },
+  {
+   "noteId": 1789061202143,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What should you explicitly mark out of scope when designing a Food Delivery System in an interview?",
+    "Back": "Real-time GPS routing/map algorithms, payment-gateway integration internals, and surge/dynamic pricing math &mdash; treat driver assignment and pricing as pluggable strategies rather than implementing the algorithms."
+   }
+  },
+  {
+   "noteId": 1789061202144,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Order</code> class?",
+    "Back": "Holds the customer, restaurant, list of ordered <code>MenuItem</code>s with quantities, total price, and its own <code>OrderState</code>; exposes <code>advance()</code> and <code>cancel()</code> but delegates the actual transition rules to its current state object."
+   }
+  },
+  {
+   "noteId": 1789061202145,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>DispatchService</code> class?",
+    "Back": "Maintains the pool of available drivers and, using a pluggable assignment strategy, matches an order that has entered preparation to a driver, then hands off tracking of the delivery leg."
+   }
+  },
+  {
+   "noteId": 1789061202146,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Restaurant</code> class?",
+    "Back": "Holds identity/location data and its current <code>MenuItem</code> catalog (with availability toggles), and can accept or reject an incoming <code>Order</code> based on capacity/hours."
+   }
+  },
+  {
+   "noteId": 1789061202147,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "How does <code>Order</code> relate to <code>MenuItem</code>?",
+    "Back": "Aggregation through a line-item wrapper: <code>Order</code> holds a list of <code>OrderLineItem</code> (menuItem reference + quantity + any customizations), not raw <code>MenuItem</code>s, so removing an item from the restaurant's menu later doesn't corrupt past orders."
+   }
+  },
+  {
+   "noteId": 1789061202148,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "How does <code>DispatchService</code> relate to <code>Driver</code>?",
+    "Back": "Aggregation: <code>DispatchService</code> tracks a pool of currently-available <code>Driver</code>s (drivers exist independently of dispatch, e.g. they can be off-shift); it removes a driver from the pool on assignment and returns them after delivery completes."
+   }
+  },
+  {
+   "noteId": 1789061202149,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits the order lifecycle, and why?",
+    "Back": "<b>State</b>. Each status (Placed, Confirmed, Preparing, OutForDelivery, Delivered, Cancelled) is a state object that knows which transitions are legal from it; <code>Order.advance()</code> delegates to <code>state.next(order)</code>, keeping transition rules out of a big switch statement and making illegal transitions (e.g. Delivered &rarr; Preparing) a compile-time-obvious non-option."
+   }
+  },
+  {
+   "noteId": 1789061202150,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits driver assignment, and why?",
+    "Back": "<b>Strategy</b>. A <code>DriverAssignmentStrategy</code> interface (e.g. NearestDriverStrategy, LoadBalancedStrategy) lets <code>DispatchService</code> swap the assignment algorithm &mdash; nearest driver at normal times, load-balanced during surge &mdash; without changing dispatch's calling code."
+   }
+  },
+  {
+   "noteId": 1789061202151,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What does <code>Order.advance()</code> do, and why does <code>Order</code> not implement the transition logic itself?",
+    "Back": "It delegates to <code>state.next(this)</code>, returning the new state to assign as <code>this.state</code>. Keeping the logic in state classes (not in <code>Order</code>) means adding a new status is a new class, and each state can encapsulate side effects specific to that transition (e.g. PreparingState.next() calls DispatchService.requestDriver())."
+   }
+  },
+  {
+   "noteId": 1789061202152,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "What is the shape of <code>DispatchService</code>'s core API?",
+    "Back": "<code>requestDriver(Order order)</code> &mdash; delegates to the current <code>DriverAssignmentStrategy</code> and returns/assigns a <code>Driver</code>, raising a domain error if none is available &mdash; plus <code>setStrategy(DriverAssignmentStrategy)</code> to swap algorithms at runtime."
+   }
+  },
+  {
+   "noteId": 1789061202153,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "Edge case: an assigned driver cancels mid-delivery, after pickup. How should the design handle this?",
+    "Back": "The order stays in <code>OUT_FOR_DELIVERY</code> (not reverted to an earlier state); <code>DispatchService</code> is invoked again to find a replacement driver for the same order, and the customer is notified of the delay &mdash; the order's state machine doesn't need a new state, just a driver re-assignment at the dispatch layer."
+   }
+  },
+  {
+   "noteId": 1789061202154,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "Edge case: a restaurant can't fulfill an order after it was placed (e.g. out of an ingredient). How should this be modeled?",
+    "Back": "The restaurant transitions the order directly to <code>CANCELLED</code> from <code>PLACED</code>/<code>CONFIRMED</code> (a valid transition only from early states, enforced by the state classes), which triggers an automatic refund and a customer notification."
+   }
+  },
+  {
+   "noteId": 1789061202155,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "Edge case: no drivers are available in <code>DispatchService</code>'s pool during a peak-hour rush. What should happen?",
+    "Back": "<code>requestDriver()</code> should not throw and drop the order; instead the order is queued for retry (exponential backoff or event-driven re-trigger when a driver becomes free), and the assignment strategy can itself be swapped to one that widens the search radius during surge."
+   }
+  },
+  {
+   "noteId": 1789061202156,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "(Java) Implement the <code>OrderState</code> interface and a <code>PreparingState</code> concrete implementation.",
+    "Back": "<pre><code>public interface OrderState {\n    OrderStatus getStatus();\n    OrderState next(Order order);\n}\n\npublic class PreparingState implements OrderState {\n    @Override\n    public OrderStatus getStatus() { return OrderStatus.PREPARING; }\n\n    @Override\n    public OrderState next(Order order) {\n        DispatchService.getInstance().requestDriver(order);\n        return new OutForDeliveryState();\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202157,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "(Python) Implement the <code>DriverAssignmentStrategy</code> interface and a <code>NearestDriverStrategy</code>.",
+    "Back": "<pre><code>class DriverAssignmentStrategy:\n    def assign(self, order, available_drivers):\n        raise NotImplementedError\n\n\nclass NearestDriverStrategy(DriverAssignmentStrategy):\n    def assign(self, order, available_drivers):\n        restaurant_loc = order.restaurant.location\n        return min(\n            available_drivers,\n            key=lambda d: distance(d.current_location, restaurant_loc),\n            default=None,\n        )</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202158,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "(Java) Implement <code>Order.advance()</code> and <code>Order.cancel()</code> using the State pattern.",
+    "Back": "<pre><code>public class Order {\n    private OrderState state;\n    private final List&lt;OrderLineItem&gt; items;\n\n    public void advance() {\n        this.state = state.next(this);\n    }\n\n    public OrderStatus getStatus() {\n        return state.getStatus();\n    }\n\n    public void cancel() {\n        if (state.getStatus() == OrderStatus.DELIVERED) {\n            throw new IllegalStateException(\"Cannot cancel a delivered order\");\n        }\n        this.state = new CancelledState();\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202159,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Front": "(Python) Implement <code>DispatchService.request_driver()</code> with a swappable strategy and a no-drivers error.",
+    "Back": "<pre><code>class DispatchService:\n    def __init__(self, strategy):\n        self.strategy = strategy\n        self.available_drivers = []\n\n    def set_strategy(self, strategy):\n        self.strategy = strategy\n\n    def request_driver(self, order):\n        driver = self.strategy.assign(order, self.available_drivers)\n        if driver is None:\n            raise NoDriversAvailableError(order.id)\n        driver.assign_order(order)\n        self.available_drivers.remove(driver)\n        return driver</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202160,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Text": "The core classes in a Food Delivery System design are {{c1::Order}}, {{c2::Restaurant}} (with a menu), {{c3::MenuItem}}, {{c4::Driver}}, and {{c5::DispatchService}} (assigns drivers to orders).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202161,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-food-delivery"
+   ],
+   "fields": {
+    "Text": "The <code>OrderStatus</code> enum for order lifecycle is {{c1::PLACED}}, {{c2::CONFIRMED}}, {{c3::PREPARING}}, {{c4::OUT_FOR_DELIVERY}}, {{c5::DELIVERED}}, and {{c6::CANCELLED}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

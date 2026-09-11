@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::System Design::Notification System",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203948,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Text": "Core functional requirements for a notification system: send notifications via {{c1::multiple channels}} (push, email, SMS), support {{c2::user opt-in/preferences}}, and provide {{c3::delivery tracking}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203949,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Text": "Key non-functional requirements: {{c1::high throughput}} (bursts of millions of notifications), {{c2::low latency}} for time-sensitive alerts, {{c3::reliability}} (no lost notifications), and {{c4::avoiding duplicate delivery}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203950,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Text": "A notification record typically stores {{c1::notificationId}}, {{c2::userId}}, {{c3::channel}}, {{c4::status (queued/sent/delivered/failed)}}, and {{c5::timestamp}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203951,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Text": "Core components of a notification system: {{c1::notification service/API}}, {{c2::message queue}} for buffering, {{c3::per-channel workers}} (push/email/SMS), {{c4::third-party gateways}} (APNs/FCM, SES, Twilio), and {{c5::preference/opt-out store}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203952,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Text": "A typical multi-channel fanout pipeline: {{c1::trigger event}} -&gt; {{c2::look up user preferences}} -&gt; {{c3::filter enabled channels}} -&gt; {{c4::enqueue one job per channel}} -&gt; {{c5::channel worker delivers via third-party gateway}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203964,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "Why does a notification system typically favor at-least-once delivery over at-most-once, despite the risk of duplicates?",
+    "Back": "Losing a notification, such as a security alert or OTP, is usually worse than a user occasionally receiving a duplicate; at-least-once delivery combined with idempotency-based dedup gives the best of both."
+   }
+  },
+  {
+   "noteId": 1789061203965,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "If a system must fan out a broadcast to 50M users within 10 minutes, what sustained throughput is required?",
+    "Back": "50M / 600s ≈ 83,000 notifications/sec sustained throughput."
+   }
+  },
+  {
+   "noteId": 1789061203966,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "Why is notification storage for delivery logs usually much larger in volume than the notification content itself?",
+    "Back": "Every send generates a log/status record per user and channel; e.g. one broadcast to 50M users across 2 channels creates 100M log rows, dwarfing the shared notification template's storage size."
+   }
+  },
+  {
+   "noteId": 1789061203967,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "What would a typical internal API call to trigger a notification look like?",
+    "Back": "<pre><code>POST /notifications/send\n{ userId, type, channel, templateId, data }\n-&gt; returns notificationId, status: queued</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203968,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "What endpoint would let a client fetch a user's notification preferences?",
+    "Back": "<code>GET /users/{userId}/notification-preferences</code>, returning which channels (push/email/SMS) the user allows for each notification type."
+   }
+  },
+  {
+   "noteId": 1789061203969,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "Why store user notification preferences as a separate table/service rather than embedding them in every notification request?",
+    "Back": "Preferences change independently of individual sends and are read on nearly every notification; a dedicated, cacheable preference store avoids duplicating and re-validating the same data across every request."
+   }
+  },
+  {
+   "noteId": 1789061203970,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "Why does a notification system place a message queue between the API layer and the channel-specific senders rather than sending synchronously?",
+    "Back": "Sending is often slow or rate-limited by third-party providers; queuing decouples request acceptance from delivery, allows retries, and smooths bursty traffic across available worker capacity."
+   }
+  },
+  {
+   "noteId": 1789061203971,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "In a fanout-on-write approach, what happens immediately when a notification is triggered?",
+    "Back": "The system immediately writes or queues a delivery job for every target recipient at trigger time; fast to read/deliver later, but expensive up front for very large recipient lists such as millions of followers."
+   }
+  },
+  {
+   "noteId": 1789061203972,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "What is fanout-on-read, and when is it preferred over fanout-on-write?",
+    "Back": "Recipients are computed or resolved at delivery time rather than precomputed; preferred for extremely large or dynamic audiences, such as a broadcast to all users matching some condition, where precomputing every job upfront would be too costly."
+   }
+  },
+  {
+   "noteId": 1789061203973,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "Why does each channel (push, email, SMS) typically get its own dedicated queue and worker pool rather than sharing one?",
+    "Back": "Each channel has different throughput limits, latency characteristics, and third-party rate limits, such as APNs vs. Twilio; isolating queues prevents a slow or rate-limited channel from backing up delivery for the others."
+   }
+  },
+  {
+   "noteId": 1789061203974,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "What retry strategy is typically used when a third-party gateway temporarily fails to deliver a notification?",
+    "Back": "Exponential backoff with a capped number of retries, after which the notification is marked failed and optionally routed to a dead-letter queue for investigation."
+   }
+  },
+  {
+   "noteId": 1789061203975,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "How is a notification typically deduplicated when at-least-once delivery causes the same message to be processed twice?",
+    "Back": "Each notification is assigned an idempotency key, such as notificationId; the worker checks a dedup store like Redis with a TTL before sending, and skips sending if that key was already processed."
+   }
+  },
+  {
+   "noteId": 1789061203976,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "Why must the dedup check-and-mark operation be atomic in a distributed notification worker pool?",
+    "Back": "Multiple worker instances could pull the same retried job concurrently; without an atomic check-and-set (e.g. Redis SETNX), a race condition could let two workers both pass the dedup check and send duplicate notifications."
+   }
+  },
+  {
+   "noteId": 1789061203977,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "What is the main scaling bottleneck when fanning out a single notification to tens of millions of users at once?",
+    "Back": "Third-party gateway rate limits, such as APNs/FCM throughput caps, and queue/worker throughput; mitigated by batching, rate-limiting outbound calls per provider, and horizontally scaling worker pools."
+   }
+  },
+  {
+   "noteId": 1789061203978,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-notification"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff between fanout-on-write and fanout-on-read for notifications?",
+    "Back": "Fanout-on-write gives fast, precomputed delivery but costs heavy upfront write load for huge audiences; fanout-on-read saves upfront cost but adds latency and complexity at delivery time since recipients must be resolved on demand."
+   }
+  }
+ ]
+}

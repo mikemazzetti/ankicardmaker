@@ -1,0 +1,267 @@
+{
+ "deck": "Interview::Resume Prep::JavaScript",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000601671,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In the JS event loop, which runs first after the current synchronous task finishes: all queued microtasks, or the next macrotask?",
+    "Back": "All queued microtasks (e.g. resolved Promise callbacks) run to completion before the next macrotask (e.g. <code>setTimeout</code> callback)."
+   }
+  },
+  {
+   "noteId": 1789000601672,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a closure-based counter function that returns an incrementing count each call?",
+    "Back": "<pre><code>function makeCounter() {\n  let count = 0;\n  return function () {\n    count += 1;\n    return count;\n  };\n}\nconst next = makeCounter();</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601673,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How is the value of <code>this</code> determined in a regular function vs an arrow function?",
+    "Back": "A regular function's <code>this</code> is set by how it's called (call-site); an arrow function has no own <code>this</code> — it lexically inherits <code>this</code> from its enclosing scope."
+   }
+  },
+  {
+   "noteId": 1789000601674,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a constructor function <code>Dog</code> that adds a <code>bark</code> method to its prototype (not per-instance)?",
+    "Back": "<pre><code>function Dog(name) {\n  this.name = name;\n}\nDog.prototype.bark = function () {\n  return this.name + ' says woof';\n};</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601675,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the key difference between <code>==</code> and <code>===</code> in JavaScript?",
+    "Back": "<code>==</code> compares after coercing operands to a common type; <code>===</code> compares value and type with no coercion."
+   }
+  },
+  {
+   "noteId": 1789000601676,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does 'hoisting' mean for <code>var</code> declarations and function declarations in JavaScript?",
+    "Back": "Their declarations are moved to the top of their scope at compile time, so they can be referenced before the line they're written on (<code>var</code> is hoisted as <code>undefined</code>; function declarations are hoisted fully)."
+   }
+  },
+  {
+   "noteId": 1789000601677,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an async function that fetches JSON from a URL and handles errors with try/catch?",
+    "Back": "<pre><code>async function getData(url) {\n  try {\n    const res = await fetch(url);\n    return await res.json();\n  } catch (err) {\n    console.error(err);\n    throw err;\n  }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601678,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What are the three states a Promise can be in?",
+    "Back": "Pending, fulfilled, and rejected."
+   }
+  },
+  {
+   "noteId": 1789000601679,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a Promise-wrapped version of a callback-style delay function?",
+    "Back": "<pre><code>function delay(ms) {\n  return new Promise((resolve) => {\n    setTimeout(resolve, ms);\n  });\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601680,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a chain that filters an array for numbers over 10, then doubles them, using array methods?",
+    "Back": "<pre><code>const result = nums.filter((n) => n > 10).map((n) => n * 2);</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601681,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you destructure an object <code>{ id, name }</code> from a function parameter directly?",
+    "Back": "<pre><code>function printUser({ id, name }) {\n  console.log(id, name);\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601682,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>Promise.all([p1, p2, p3])</code> do if one of the promises rejects?",
+    "Back": "It immediately rejects with that first rejection reason, even if the other promises are still pending."
+   }
+  },
+  {
+   "noteId": 1789000601683,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Between a resolved Promise's <code>.then()</code> callback and a <code>setTimeout(fn, 0)</code> callback, which runs first and why?",
+    "Back": "The <code>.then()</code> callback runs first — it's a microtask, and the microtask queue always drains completely before the next macrotask (<code>setTimeout</code>) runs."
+   }
+  },
+  {
+   "noteId": 1789000601684,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How can a closure cause a memory leak in JavaScript?",
+    "Back": "If a closure keeps a reference to a large object (e.g. a DOM node or big array) and that closure itself is kept alive (e.g. attached as a long-lived event listener), the referenced object can't be garbage collected."
+   }
+  },
+  {
+   "noteId": 1789000601685,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a <code>debounce(fn, delay)</code> higher-order function using a closure?",
+    "Back": "<pre><code>function debounce(fn, delay) {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601686,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When you access a property that isn't on an object directly, where does JavaScript look next?",
+    "Back": "It walks up the object's prototype chain (via <code>[[Prototype]]</code> / <code>__proto__</code>) until it finds the property or reaches <code>null</code>."
+   }
+  },
+  {
+   "noteId": 1789000601687,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code merging two arrays and adding one extra element using the spread operator?",
+    "Back": "<pre><code>const merged = [...arr1, ...arr2, extraItem];</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601712,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Arrow function",
+    "Back": "A function that does not have its own <code>this</code>, <code>arguments</code>, or prototype, and inherits <code>this</code> lexically from its enclosing scope."
+   }
+  },
+  {
+   "noteId": 1789000639798,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "A {{c1::closure}} is formed when an inner function retains access to variables from its enclosing function's scope even after that outer function has returned.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639799,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "javascript",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "<code>var</code> is {{c1::function-scoped}}, while <code>let</code> and <code>const</code> are {{c2::block-scoped}}; <code>let</code>/<code>const</code> also sit in a {{c3::temporal dead zone}} before their declaration line.",
+    "Extra": ""
+   }
+  }
+ ]
+}

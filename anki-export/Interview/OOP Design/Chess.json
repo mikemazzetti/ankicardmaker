@@ -1,0 +1,235 @@
+{
+ "deck": "Interview::OOP Design::Chess",
+ "note_count": 19,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200642,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "What's the core scope of a \"Design Chess\" OOD problem?",
+    "Back": "Model an 8x8 board with the standard piece set and legal-move rules, alternate turns between two players, detect check/checkmate/stalemate, and optionally support special moves (castling, en passant, pawn promotion)."
+   }
+  },
+  {
+   "noteId": 1789061200643,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Why make Piece an abstract class/interface rather than one class with a type field, and what pattern name does this correspond to?",
+    "Back": "Each piece type has fundamentally different movement rules, so polymorphism lets each concrete subclass (Knight, Bishop, ...) implement its own getValidMoves()/canMove() instead of one giant switch — this is effectively the Strategy pattern, with the piece's own class selecting the algorithm."
+   }
+  },
+  {
+   "noteId": 1789061200644,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Which pattern fits representing a single Move, with support for undo/redo and move history?",
+    "Back": "Command pattern — a Move object encapsulates the source/destination Square, the piece moved, any captured piece, and an undo() that restores the prior board state."
+   }
+  },
+  {
+   "noteId": 1789061200645,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Which pattern fits notifying a UI/logger when the game enters check or ends?",
+    "Back": "Observer pattern — Game publishes events (CHECK, CHECKMATE, STALEMATE) to registered listeners rather than calling UI/log code directly."
+   }
+  },
+  {
+   "noteId": 1789061200646,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "What does Game.makeMove(Move) need to validate before applying it?",
+    "Back": "That the move is legal for that piece type, that it's the correct player's turn, that the destination isn't occupied by the mover's own piece, and that applying it would not leave the mover's own King in check."
+   }
+  },
+  {
+   "noteId": 1789061200647,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "What's the difference between checkmate and stalemate?",
+    "Back": "Checkmate: the King is in check with no legal moves available (a loss). Stalemate: the King is NOT in check, but the player has no legal moves at all (a draw)."
+   }
+  },
+  {
+   "noteId": 1789061200648,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: how do you prevent a player from making a move that leaves their own King in check (e.g. moving a pinned piece)?",
+    "Back": "Tentatively apply the move on a scratch copy of the board, then re-run check-detection for the mover's own King; if it's still (or newly) in check, reject the move as illegal before committing it."
+   }
+  },
+  {
+   "noteId": 1789061200649,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "How is castling modeled, given it moves two pieces (King + Rook) in a single turn?",
+    "Back": "As its own special Move type (or flag) that atomically updates both King and Rook positions, gated by preconditions: neither piece has moved before, the squares between them are empty, and the King doesn't pass through or land in check."
+   }
+  },
+  {
+   "noteId": 1789061200650,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "How is en passant modeled, given the captured pawn isn't on the destination square?",
+    "Back": "The Move needs an explicit \"captured piece location\" separate from its destination Square, set only when the precondition holds (an adjacent enemy pawn just advanced two squares on the immediately preceding turn)."
+   }
+  },
+  {
+   "noteId": 1789061200651,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "How is pawn promotion handled in the design?",
+    "Back": "When a Pawn reaches the farthest rank, Game/Move triggers a replace-piece step that swaps the Pawn for a new Piece (usually Queen, or player-chosen) on that Square — often built via a PieceFactory."
+   }
+  },
+  {
+   "noteId": 1789061200652,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Java: implement an abstract Piece with getValidMoves(Board, Square), and a concrete Knight subclass.",
+    "Back": "<pre><code>public abstract class Piece {\n    protected final Color color;\n\n    protected Piece(Color color) {\n        this.color = color;\n    }\n\n    public Color getColor() { return color; }\n\n    public abstract List&lt;Square&gt; getValidMoves(Board board, Square current);\n}\n\npublic class Knight extends Piece {\n    private static final int[][] OFFSETS = {\n        {1, 2}, {2, 1}, {-1, 2}, {-2, 1},\n        {1, -2}, {2, -1}, {-1, -2}, {-2, -1}\n    };\n\n    public Knight(Color color) { super(color); }\n\n    @Override\n    public List&lt;Square&gt; getValidMoves(Board board, Square current) {\n        List&lt;Square&gt; moves = new ArrayList&lt;&gt;();\n        for (int[] offset : OFFSETS) {\n            int row = current.getRow() + offset[0];\n            int col = current.getCol() + offset[1];\n            if (board.isOnBoard(row, col)) {\n                Piece occupant = board.getPieceAt(row, col);\n                if (occupant == null || occupant.getColor() != color) {\n                    moves.add(board.getSquare(row, col));\n                }\n            }\n        }\n        return moves;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200653,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Python: implement is_in_check(board, color) by scanning the opposing pieces' valid moves for the king's square.",
+    "Back": "<pre><code>def is_in_check(board, color):\n    king_square = board.find_king(color)\n    opponent = Color.BLACK if color == Color.WHITE else Color.WHITE\n\n    for square in board.squares_with_color(opponent):\n        piece = board.get_piece_at(square)\n        if king_square in piece.get_valid_moves(board, square):\n            return True\n    return False</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200654,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Java: implement a Move class encapsulating from/to/captured piece with apply() and undo().",
+    "Back": "<pre><code>public class Move {\n    private final Square from;\n    private final Square to;\n    private final Piece movedPiece;\n    private final Piece capturedPiece;\n\n    public Move(Square from, Square to, Piece movedPiece, Piece capturedPiece) {\n        this.from = from;\n        this.to = to;\n        this.movedPiece = movedPiece;\n        this.capturedPiece = capturedPiece;\n    }\n\n    public void apply(Board board) {\n        board.setPieceAt(to, movedPiece);\n        board.setPieceAt(from, null);\n    }\n\n    public void undo(Board board) {\n        board.setPieceAt(from, movedPiece);\n        board.setPieceAt(to, capturedPiece);\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200655,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Python: implement a minimal Board class with an 8x8 grid, get_piece_at, set_piece_at, and is_on_board.",
+    "Back": "<pre><code>class Board:\n    def __init__(self):\n        self._grid = [[None for _ in range(8)] for _ in range(8)]\n\n    def get_piece_at(self, row, col):\n        return self._grid[row][col]\n\n    def set_piece_at(self, row, col, piece):\n        self._grid[row][col] = piece\n\n    def is_on_board(self, row, col):\n        return 0 &lt;= row &lt; 8 and 0 &lt;= col &lt; 8</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200656,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Text": "{{c1::Board}}, {{c2::Square}}, {{c3::Piece}} (abstract), and {{c4::Game}} are core classes; concrete pieces like {{c5::King, Queen, Rook, Bishop, Knight, Pawn}} extend Piece.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200657,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Text": "The {{c1::Color}} enum has two values, {{c2::WHITE and BLACK}}, used for both pieces and for tracking whose turn it is.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200658,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Text": "A player is in {{c1::check}} when their King is under attack by at least one opposing piece given the current board state.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200659,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Text": "{{c1::Checkmate}} occurs when a player is in check and has no legal move that removes the check — no move escapes, blocks, or captures the attacker.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200662,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-chess"
+   ],
+   "fields": {
+    "Front": "Square",
+    "Back": "A single position on the 8x8 Board, identified by (row, col) or algebraic notation like e4, optionally holding a Piece."
+   }
+  }
+ ]
+}

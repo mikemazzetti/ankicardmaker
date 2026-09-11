@@ -1,0 +1,280 @@
+{
+ "deck": "Interview::Resume Prep::Kubernetes",
+ "note_count": 21,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000602110,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Kubernetes Pod?",
+    "Back": "The smallest deployable unit in Kubernetes &mdash; one or more containers that share the same network namespace (IP, port space) and storage volumes, and are always scheduled together on the same node."
+   }
+  },
+  {
+   "noteId": 1789000602111,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the relationship between a Deployment and a ReplicaSet?",
+    "Back": "A Deployment manages ReplicaSets: it creates a new ReplicaSet whenever the Pod template changes and orchestrates the rollout, scaling, and rollback. You typically create/manage Deployments, not ReplicaSets, directly."
+   }
+  },
+  {
+   "noteId": 1789000602112,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a Kubernetes Service of type NodePort do?",
+    "Back": "Exposes the Service on a static port (30000-32767 by default) on every node's IP, so external traffic can reach it via &lt;NodeIP&gt;:&lt;NodePort&gt;, in addition to still getting a normal ClusterIP."
+   }
+  },
+  {
+   "noteId": 1789000602113,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a Kubernetes Service of type LoadBalancer do?",
+    "Back": "Provisions an external load balancer via the cloud provider (e.g. an AWS ELB) that routes external traffic into the Service, which then load-balances across the matching Pods. Builds on top of NodePort/ClusterIP."
+   }
+  },
+  {
+   "noteId": 1789000602114,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between a ConfigMap and a Secret in Kubernetes?",
+    "Back": "Both inject configuration into Pods (as env vars or mounted files), but a Secret is meant for sensitive data &mdash; stored base64-encoded (not encrypted by default) with tighter access controls &mdash; while a ConfigMap holds non-sensitive plain configuration."
+   }
+  },
+  {
+   "noteId": 1789000602115,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Kubernetes Namespace used for?",
+    "Back": "A virtual partition of a single physical cluster used to isolate and organize groups of resources (e.g. per team or environment), scoping resource names and enabling per-namespace quotas and RBAC."
+   }
+  },
+  {
+   "noteId": 1789000602116,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the kubelet do on each node?",
+    "Back": "An agent running on every node that makes sure the containers described in Pod specs assigned to that node are running and healthy, and reports node/Pod status back to the control plane."
+   }
+  },
+  {
+   "noteId": 1789000602117,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the Kubernetes scheduler do?",
+    "Back": "Watches for newly created Pods that have no assigned node, and picks a suitable node for each based on resource requirements, affinity/anti-affinity rules, and taints/tolerations."
+   }
+  },
+  {
+   "noteId": 1789000602118,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you list all Pods with kubectl?",
+    "Back": "<code>kubectl get pods</code> for the current namespace; add <code>-A</code> / <code>--all-namespaces</code> for every namespace, or <code>-n &lt;namespace&gt;</code> for a specific one."
+   }
+  },
+  {
+   "noteId": 1789000602119,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you view logs for one container inside a multi-container Pod?",
+    "Back": "<code>kubectl logs &lt;pod-name&gt; -c &lt;container-name&gt;</code> &mdash; the <code>-c</code> flag is only required when the Pod has more than one container."
+   }
+  },
+  {
+   "noteId": 1789000602120,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you get a shell inside a running Pod's container?",
+    "Back": "<code>kubectl exec -it &lt;pod-name&gt; -- sh</code> (or <code>bash</code>)."
+   }
+  },
+  {
+   "noteId": 1789000602121,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between a liveness probe and a readiness probe?",
+    "Back": "A liveness probe checks whether a container is still healthy; on failure, Kubernetes restarts the container. A readiness probe checks whether a container is ready to serve traffic; on failure, the Pod is pulled from Service endpoints but NOT restarted."
+   }
+  },
+  {
+   "noteId": 1789000602122,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "During a Deployment rolling update, how does Kubernetes avoid downtime by default?",
+    "Back": "It incrementally replaces old Pods with new ones: it creates new Pods and waits for them to pass their readiness probe before terminating old ones, bounded by the <code>maxSurge</code> and <code>maxUnavailable</code> settings of the rolling update strategy."
+   }
+  },
+  {
+   "noteId": 1789000602123,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a HorizontalPodAutoscaler (HPA) do?",
+    "Back": "Automatically scales the number of Pod replicas in a Deployment or ReplicaSet up or down based on observed metrics (commonly CPU or memory utilization) to track a target value."
+   }
+  },
+  {
+   "noteId": 1789000602124,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is a Kubernetes Ingress?",
+    "Back": "An API object that manages external HTTP/HTTPS access into cluster Services, providing host/path-based routing rules, TLS termination, and a single external entry point &mdash; it requires an Ingress controller to actually implement the routing."
+   }
+  },
+  {
+   "noteId": 1789000602125,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a minimal Kubernetes Deployment YAML for an nginx app with 3 replicas.",
+    "Back": "<pre><code>apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.25\n        ports:\n        - containerPort: 80</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602126,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How does a Kubernetes Service know which Pods to route traffic to?",
+    "Back": "Via label selectors &mdash; the Service's <code>selector</code> field is matched against Pod labels, and any Pod with matching labels becomes an endpoint the Service load-balances across; membership is tracked continuously, not as a static list."
+   }
+  },
+  {
+   "noteId": 1789000602127,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "ReplicaSet",
+    "Back": "A Kubernetes controller that ensures a specified number of identical Pod replicas are running at all times, creating or deleting Pods as needed to match the desired count."
+   }
+  },
+  {
+   "noteId": 1789000639914,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "A Kubernetes Service of type {{c1::ClusterIP}} (the default) exposes a stable virtual IP reachable only from inside the cluster.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789000639915,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "The Kubernetes control plane consists of the {{c1::API server}}, {{c2::etcd}} (the cluster state store), the {{c3::scheduler}}, and the {{c4::controller manager}}.",
+    "Extra": "Typically runs on dedicated control-plane/master nodes."
+   }
+  },
+  {
+   "noteId": 1789000639916,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "kubernetes",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "<code>kubectl {{c1::apply}} -f deployment.yaml</code> declaratively creates or updates resources to match the YAML file, while <code>kubectl {{c2::delete}} -f deployment.yaml</code> removes the resources it defines.",
+    "Extra": ""
+   }
+  }
+ ]
+}

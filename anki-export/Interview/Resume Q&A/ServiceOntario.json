@@ -1,0 +1,235 @@
+{
+ "deck": "Interview::Resume Q&A::ServiceOntario",
+ "note_count": 19,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202685,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What was Michele's role and employer for the Sep–Dec 2025 internship?",
+    "Back": "<b>Software Engineering Intern at ServiceOntario</b>."
+   }
+  },
+  {
+   "noteId": 1789061202686,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What backend framework powered ServiceOntario's compliance workflows?",
+    "Back": "<code>Spring Boot</code>"
+   }
+  },
+  {
+   "noteId": 1789061202687,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What frontend framework was paired with Spring Boot at ServiceOntario?",
+    "Back": "<code>React</code>"
+   }
+  },
+  {
+   "noteId": 1789061202688,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "How many residents did the ServiceOntario compliance workflows serve?",
+    "Back": "<b>15M+</b> residents."
+   }
+  },
+  {
+   "noteId": 1789061202689,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What class of performance bug did Michele fix in ServiceOntario's compliance workflows?",
+    "Back": "An <b>N+1 query bottleneck</b>."
+   }
+  },
+  {
+   "noteId": 1789061202690,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What JPQL technique did Michele use to fix the N+1 problem at ServiceOntario?",
+    "Back": "<code>JOIN FETCH</code>"
+   }
+  },
+  {
+   "noteId": 1789061202691,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What other Hibernate-level tuning did Michele apply alongside JOIN FETCH?",
+    "Back": "Tuned <b>Hibernate batch sizes</b>."
+   }
+  },
+  {
+   "noteId": 1789061202692,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What read-latency improvement resulted from the N+1 fix at ServiceOntario?",
+    "Back": "<b>40% lower</b> read latency."
+   }
+  },
+  {
+   "noteId": 1789061202693,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What accessibility standard did Michele's UI library comply with at ServiceOntario?",
+    "Back": "<b>WCAG 2.1</b>."
+   }
+  },
+  {
+   "noteId": 1789061202694,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What language was the WCAG 2.1-compliant UI library built in?",
+    "Back": "<code>TypeScript</code>"
+   }
+  },
+  {
+   "noteId": 1789061202695,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "What development-speed benefit did the TypeScript UI library provide?",
+    "Back": "<b>30% faster</b> frontend development cycles."
+   }
+  },
+  {
+   "noteId": 1789061202696,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "Why does tuning Hibernate batch size help alongside JOIN FETCH?",
+    "Back": "It groups remaining lazy-load queries into fewer batched round-trips to the database, reducing overhead JOIN FETCH alone doesn't eliminate."
+   }
+  },
+  {
+   "noteId": 1789061202697,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "Why build a reusable WCAG 2.1 TypeScript component library instead of styling each page individually?",
+    "Back": "It centralizes accessible, typed components so every new screen reuses tested, compliant building blocks instead of re-implementing accessibility per page — which is what drove the 30% faster frontend cycles."
+   }
+  },
+  {
+   "noteId": 1789061202698,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about a performance problem you diagnosed and fixed.\"",
+    "Back": "<b>S:</b> ServiceOntario's Spring Boot + React compliance workflows, used by 15M+ residents, had slow read paths.<br><b>T:</b> Find and fix the root cause of the read-latency issue.<br><b>A:</b> Diagnosed an N+1 query bottleneck, fixed it with JPQL JOIN FETCH to eagerly load associations in one query, and tuned Hibernate batch sizes for remaining lazy loads.<br><b>R:</b> Read latency dropped 40%."
+   }
+  },
+  {
+   "noteId": 1789061202699,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Tell me about a time you improved accessibility in a product.\"",
+    "Back": "<b>S:</b> ServiceOntario's frontend needed to meet public-sector accessibility requirements while shipping features quickly.<br><b>T:</b> Provide reusable, compliant UI building blocks for the team.<br><b>A:</b> Built a WCAG 2.1-compliant TypeScript UI component library.<br><b>R:</b> Frontend development cycles got 30% faster since teams reused accessible components instead of building them from scratch."
+   }
+  },
+  {
+   "noteId": 1789061202700,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "Interview prompt: \"Walk me through a full-stack project you worked on at scale.\"",
+    "Back": "<b>S:</b> ServiceOntario needed compliance workflows serving 15M+ residents.<br><b>T:</b> Contribute full-stack, from backend performance to frontend accessibility.<br><b>A:</b> Worked across a Spring Boot + React stack — fixed an N+1 bottleneck with JOIN FETCH and Hibernate batch tuning, and built a WCAG 2.1 TypeScript UI library.<br><b>R:</b> 40% lower read latency and 30% faster frontend cycles, on a system serving 15M+ residents."
+   }
+  },
+  {
+   "noteId": 1789061202705,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Text": "At ServiceOntario, Michele fixed N+1 query bottlenecks using JPQL {{c1::JOIN FETCH}} and tuned {{c2::Hibernate batch sizes}}, achieving {{c3::40%}} lower read latency.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202718,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "N+1 query problem",
+    "Back": "A performance bug where fetching a list of N records triggers one additional query per record (N extra queries) instead of a single batched/joined query."
+   }
+  },
+  {
+   "noteId": 1789061202719,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-serviceontario"
+   ],
+   "fields": {
+    "Front": "JOIN FETCH (JPQL)",
+    "Back": "A JPQL clause that eagerly loads an associated entity or collection within the same query, avoiding the extra per-row queries that cause N+1 problems."
+   }
+  }
+ ]
+}

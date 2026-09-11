@@ -1,0 +1,267 @@
+{
+ "deck": "Interview::Resume Prep::HTML & CSS",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000601764,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Give three semantic HTML5 tags you'd use instead of generic <code>&lt;div&gt;</code>s for a page's structure.",
+    "Back": "<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code> (any three)."
+   }
+  },
+  {
+   "noteId": 1789000601765,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a flex container that centers its child both horizontally and vertically?",
+    "Back": "<pre><code>.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601766,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a CSS grid container with 3 equal-width columns and a 16px gap?",
+    "Back": "<pre><code>.grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 16px;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601767,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Ranked highest to lowest, what is the CSS specificity order for inline styles, ID selectors, class/attribute/pseudo-class selectors, and element selectors?",
+    "Back": "Inline style &gt; ID selector &gt; class/attribute/pseudo-class selector &gt; element/pseudo-element selector."
+   }
+  },
+  {
+   "noteId": 1789000601768,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>position: absolute</code> and <code>position: relative</code>?",
+    "Back": "<code>relative</code> positions an element relative to its own normal position, without removing it from the document flow; <code>absolute</code> removes it from flow and positions it relative to its nearest positioned ancestor."
+   }
+  },
+  {
+   "noteId": 1789000601769,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>position: fixed</code> and <code>position: sticky</code>?",
+    "Back": "<code>fixed</code> is always positioned relative to the viewport, ignoring scroll; <code>sticky</code> behaves like <code>relative</code> until a scroll threshold is crossed, then sticks like <code>fixed</code> within its containing block."
+   }
+  },
+  {
+   "noteId": 1789000601770,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What do the CSS units <code>rem</code>, <code>em</code>, and <code>%</code> each size relative to?",
+    "Back": "<code>rem</code> is relative to the root (<code>&lt;html&gt;</code>) font size; <code>em</code> is relative to the current element's own (or inherited) font size; <code>%</code> is relative to the corresponding property of the parent element."
+   }
+  },
+  {
+   "noteId": 1789000601771,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a media query that sets <code>.container</code> to full width on screens 600px wide or narrower?",
+    "Back": "<pre><code>@media (max-width: 600px) {\n  .container {\n    width: 100%;\n  }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601772,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an accessible icon-only button using an ARIA attribute so screen readers announce its purpose?",
+    "Back": "<pre><code><button aria-label=\"Close dialog\">\n  &times;\n</button></code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601773,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does the <code>aria-label</code> attribute do?",
+    "Back": "It provides an accessible name for an element that screen readers announce, used when there's no visible text (or the visible text isn't descriptive enough)."
+   }
+  },
+  {
+   "noteId": 1789000601774,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a form input properly associated with its visible label for accessibility?",
+    "Back": "<pre><code><label for=\"email\">Email</label>\n<input id=\"email\" type=\"email\" name=\"email\" /></code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601775,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does <code>box-sizing: border-box</code> change about how an element's <code>width</code> is calculated?",
+    "Back": "<code>width</code> includes the padding and border, so the element's total rendered width stays equal to the declared <code>width</code> (instead of content-box, where padding/border are added on top)."
+   }
+  },
+  {
+   "noteId": 1789000601776,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code a flex row that spaces its items evenly with equal gaps between them (not at the edges)?",
+    "Back": "<pre><code>.row {\n  display: flex;\n  justify-content: space-between;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601777,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>visibility: hidden</code> and <code>display: none</code>?",
+    "Back": "<code>visibility: hidden</code> hides the element but it still occupies layout space and is present in the accessibility tree in some contexts; <code>display: none</code> removes it from layout entirely and from the accessibility tree."
+   }
+  },
+  {
+   "noteId": 1789000601778,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "For <code>z-index</code> to have any effect on an element, what other CSS property must be set on it?",
+    "Back": "<code>position</code> must be set to something other than <code>static</code> (e.g. <code>relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>)."
+   }
+  },
+  {
+   "noteId": 1789000601779,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you code an <code>&lt;img&gt;</code> that scales down responsively but never exceeds its container's width?",
+    "Back": "<pre><code>img {\n  max-width: 100%;\n  height: auto;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000601780,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What is the default value of <code>flex-direction</code> on a flex container?",
+    "Back": "<code>row</code> (items laid out left to right along the main axis)."
+   }
+  },
+  {
+   "noteId": 1789000601781,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In <code>grid-template-columns: 2fr 1fr</code>, how is the available space divided between the two columns?",
+    "Back": "Into 3 fractional shares total; the first column gets 2/3 of the remaining space, the second gets 1/3."
+   }
+  },
+  {
+   "noteId": 1789000601782,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Why is a <code>&lt;button&gt;</code> preferable to a <code>&lt;div onClick&gt;</code> for a clickable action, from an accessibility standpoint?",
+    "Back": "<code>&lt;button&gt;</code> is natively focusable, keyboard-activatable (Enter/Space), and announced with the 'button' role by screen readers; a <code>&lt;div&gt;</code> gets none of that for free and needs <code>tabindex</code>, key handlers, and <code>role=\"button\"</code> to match."
+   }
+  },
+  {
+   "noteId": 1789000639814,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "html-css",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "From innermost to outermost, the CSS box model layers are: {{c1::content}}, {{c2::padding}}, {{c3::border}}, {{c4::margin}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

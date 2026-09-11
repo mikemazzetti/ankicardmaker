@@ -1,0 +1,130 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::Binary Search",
+ "note_count": 7,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038120860,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer"
+   ],
+   "fields": {
+    "title": "Median of Two Sorted Arrays",
+    "id": "4",
+    "slug": "median-of-two-sorted-arrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120918,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Search in Rotated Sorted Array",
+    "id": "33",
+    "slug": "search-in-rotated-sorted-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121000,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "matrix"
+   ],
+   "fields": {
+    "title": "Search a 2D Matrix",
+    "id": "74",
+    "slug": "search-a-2d-matrix",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "array, binary-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121158,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Find Minimum in Rotated Sorted Array",
+    "id": "153",
+    "slug": "find-minimum-in-rotated-sorted-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122260,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag"
+   ],
+   "fields": {
+    "title": "Binary Search",
+    "id": "704",
+    "slug": "binary-search",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122602,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag"
+   ],
+   "fields": {
+    "title": "Koko Eating Bananas",
+    "id": "875",
+    "slug": "koko-eating-bananas",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122814,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "string"
+   ],
+   "fields": {
+    "title": "Time Based Key-Value Store",
+    "id": "981",
+    "slug": "time-based-key-value-store",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "hash-table, string, binary-search, design",
+    "paid": "no"
+   }
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "deck": "Interview::OOP Design::Tic-Tac-Toe",
+ "note_count": 19,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200605,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "What's the core scope of a \"Design Tic-Tac-Toe\" OOD problem?",
+    "Back": "An NxN board (usually 3x3) where two players alternate placing X/O; after each move, detect a win or draw; reject invalid moves (occupied cell, out-of-bounds, wrong turn, game already over)."
+   }
+  },
+  {
+   "noteId": 1789061200606,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "What does the Board class own?",
+    "Back": "A 2D grid of Cell (or PieceType) values, plus methods to place a piece at a position and query the current state of any cell."
+   }
+  },
+  {
+   "noteId": 1789061200607,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "What relationship does Game have with Board and Player, and why doesn't Board know about Player?",
+    "Back": "Game composes one Board and a list of Players, coordinating whose turn it is; Board stays unaware of Player so it remains a simple, reusable grid abstraction."
+   }
+  },
+  {
+   "noteId": 1789061200608,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Why is the Strategy pattern a good fit for win detection in Tic-Tac-Toe?",
+    "Back": "Win conditions vary (3-in-a-row on 3x3, k-in-a-row on an NxN board, diagonals-only variants); a WinningStrategy interface with checkWinner(Board, lastMove) lets you swap rules without touching Game or Board."
+   }
+  },
+  {
+   "noteId": 1789061200609,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits notifying a UI/console/logger whenever a move is made or the game ends?",
+    "Back": "Observer pattern — Game publishes state-change events to registered GameObservers instead of calling UI code directly."
+   }
+  },
+  {
+   "noteId": 1789061200610,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "What's an efficient way to check for a win after each move, instead of rescanning the whole board?",
+    "Back": "Track running sums/counts per row, column, and both diagonals; update only the row/col/diagonal touched by the last move, and check if any count reaches the winning length — O(1) per move instead of O(N^2)."
+   }
+  },
+  {
+   "noteId": 1789061200611,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "What must Game.makeMove(Player, row, col) validate before applying the move?",
+    "Back": "That the game isn't already over, that it's this player's turn, and that the target cell is in bounds and currently EMPTY."
+   }
+  },
+  {
+   "noteId": 1789061200612,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: what should happen if a player attempts a move after the game already has a winner?",
+    "Back": "makeMove() should reject it (return failure or throw) rather than mutating the board further — Game must check its status before applying any move."
+   }
+  },
+  {
+   "noteId": 1789061200613,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "How would you generalize the design from 3x3 Tic-Tac-Toe to an NxN board with a k-in-a-row win condition?",
+    "Back": "Parameterize Board with size N and Game/WinningStrategy with a target k, and generalize the row/col/diagonal running counters so a win is \"k of the same symbol in a line,\" not necessarily the full board dimension."
+   }
+  },
+  {
+   "noteId": 1789061200614,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Why keep PieceType/Symbol as an enum rather than a raw char or boolean?",
+    "Back": "Type safety and extensibility (e.g. more than 2 symbols) plus an explicit EMPTY value that's clearer than overloading null or '\\0'."
+   }
+  },
+  {
+   "noteId": 1789061200615,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Java: implement a Board with a 2D grid and a placeMark(row, col, mark) method that validates bounds and occupancy.",
+    "Back": "<pre><code>public class Board {\n    private final PieceType[][] grid;\n    private final int size;\n\n    public Board(int size) {\n        this.size = size;\n        this.grid = new PieceType[size][size];\n        for (PieceType[] row : grid) {\n            Arrays.fill(row, PieceType.EMPTY);\n        }\n    }\n\n    public boolean placeMark(int row, int col, PieceType mark) {\n        if (row &lt; 0 || row &gt;= size || col &lt; 0 || col &gt;= size) {\n            throw new IllegalArgumentException(\"Cell out of bounds\");\n        }\n        if (grid[row][col] != PieceType.EMPTY) {\n            return false;\n        }\n        grid[row][col] = mark;\n        return true;\n    }\n\n    public PieceType getCell(int row, int col) {\n        return grid[row][col];\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200616,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Python: implement a WinChecker that uses running row/column/diagonal counts to detect a win in O(1) per move.",
+    "Back": "<pre><code>from enum import Enum\n\nclass Piece(Enum):\n    EMPTY = 0\n    X = 1\n    O = -1\n\nclass WinChecker:\n    def __init__(self, size: int) -&gt; None:\n        self.size = size\n        self.rows = [0] * size\n        self.cols = [0] * size\n        self.diag = 0\n        self.anti_diag = 0\n\n    def record_move(self, row: int, col: int, piece: Piece) -&gt; bool:\n        value = piece.value\n        self.rows[row] += value\n        self.cols[col] += value\n        if row == col:\n            self.diag += value\n        if row + col == self.size - 1:\n            self.anti_diag += value\n\n        target = self.size * value\n        return target in (self.rows[row], self.cols[col], self.diag, self.anti_diag)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200617,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Java: implement Game.makeMove(row, col) combining board placement, win/draw check, and turn advancement.",
+    "Back": "<pre><code>public boolean makeMove(int row, int col) {\n    if (status != GameStatus.IN_PROGRESS) {\n        throw new IllegalStateException(\"Game already over\");\n    }\n    Player current = players.get(currentPlayerIndex);\n    if (!board.placeMark(row, col, current.getSymbol())) {\n        return false;\n    }\n    if (checkWinner(row, col, current.getSymbol())) {\n        status = GameStatus.WIN;\n    } else if (isBoardFull()) {\n        status = GameStatus.DRAW;\n    } else {\n        currentPlayerIndex = (currentPlayerIndex + 1) % players.size();\n    }\n    return true;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200618,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Python: implement a Player dataclass and a Game class that alternates turns.",
+    "Back": "<pre><code>from dataclasses import dataclass\n\n@dataclass\nclass Player:\n    name: str\n    symbol: \"Piece\"\n\nclass Game:\n    def __init__(self, board, players):\n        self.board = board\n        self.players = players\n        self.current_index = 0\n\n    def current_player(self):\n        return self.players[self.current_index]\n\n    def advance_turn(self):\n        self.current_index = (self.current_index + 1) % len(self.players)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200619,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Text": "{{c1::Board}}, {{c2::Cell}}, {{c3::Player}}, and {{c4::Game}} are the core classes in a Tic-Tac-Toe design.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200620,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Text": "The {{c1::PieceType}} (or Symbol) enum typically has values {{c2::X, O, EMPTY}} representing what occupies a cell.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200621,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Text": "A draw is declared when {{c1::the board is completely full and no win condition has been met}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200622,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Text": "Game typically tracks {{c1::whose turn it is}} via a currentPlayerIndex (or similar reference), advanced only after a move is successfully applied.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061200623,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-tic-tac-toe"
+   ],
+   "fields": {
+    "Front": "Cell",
+    "Back": "A single position on the Board holding a PieceType (EMPTY by default) and its own (row, col) coordinates."
+   }
+  }
+ ]
+}

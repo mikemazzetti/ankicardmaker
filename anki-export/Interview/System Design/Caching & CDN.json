@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Caching & CDN",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203302,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Why introduce a cache in a system?",
+    "Back": "To reduce latency and load on the primary data store by serving frequently accessed data from faster storage."
+   }
+  },
+  {
+   "noteId": 1789061203303,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "In the cache-aside (lazy-loading) pattern, who is responsible for populating the cache on a miss?",
+    "Back": "The application: it reads from the cache, and on a miss it reads from the DB and writes the result into the cache itself."
+   }
+  },
+  {
+   "noteId": 1789061203304,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "In read-through caching, who populates the cache on a miss?",
+    "Back": "The cache itself — it sits in front of the DB and transparently loads missing data, so the application only ever talks to the cache."
+   }
+  },
+  {
+   "noteId": 1789061203305,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is write-through caching?",
+    "Back": "Writes go to the cache and the underlying DB synchronously as one operation, keeping the cache always consistent with the DB but adding write latency."
+   }
+  },
+  {
+   "noteId": 1789061203306,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is write-back (write-behind) caching?",
+    "Back": "Writes go to the cache immediately and are asynchronously flushed to the DB later, giving low write latency but risking data loss if the cache fails before flushing."
+   }
+  },
+  {
+   "noteId": 1789061203307,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Cache-aside vs read-through: what's the key difference in responsibility?",
+    "Back": "In cache-aside the application manages loading the cache on a miss; in read-through the cache layer manages it transparently."
+   }
+  },
+  {
+   "noteId": 1789061203308,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Why is TTL-based eviction useful even alongside LRU/LFU?",
+    "Back": "It guarantees data won't stay stale forever, bounding how out-of-date a cached value can get."
+   }
+  },
+  {
+   "noteId": 1789061203309,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Why is cache invalidation considered a hard problem?",
+    "Back": "It's difficult to guarantee every cached copy of a piece of data is updated or removed exactly when the underlying data changes, especially across distributed caches and concurrent writes."
+   }
+  },
+  {
+   "noteId": 1789061203310,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is a 'thundering herd' (cache stampede)?",
+    "Back": "When a popular cached key expires or is evicted and many concurrent requests simultaneously miss the cache and hammer the backend to recompute the same value."
+   }
+  },
+  {
+   "noteId": 1789061203311,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is a local (in-process) cache?",
+    "Back": "A cache stored in a single application instance's own memory — very fast, but not shared across instances and lost on restart."
+   }
+  },
+  {
+   "noteId": 1789061203312,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is a distributed cache, and give an example technology?",
+    "Back": "A cache shared across multiple application instances over the network, e.g. Redis or Memcached."
+   }
+  },
+  {
+   "noteId": 1789061203313,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is one key architectural difference between Redis and Memcached?",
+    "Back": "Redis supports rich data structures and persistence/replication; Memcached is a simpler, purely in-memory key-value cache."
+   }
+  },
+  {
+   "noteId": 1789061203314,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is the main tradeoff of a local cache vs a distributed cache?",
+    "Back": "Local caches are faster with no network hop but cause inconsistency across instances; distributed caches stay consistent across instances but add network latency."
+   }
+  },
+  {
+   "noteId": 1789061203315,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is a CDN's primary purpose?",
+    "Back": "To cache and serve content from servers geographically close to the user, reducing latency and offloading the origin server."
+   }
+  },
+  {
+   "noteId": 1789061203316,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What is 'edge caching'?",
+    "Back": "Storing copies of content at edge servers distributed near end users, rather than only at a central origin, so requests are served from the nearest location."
+   }
+  },
+  {
+   "noteId": 1789061203317,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "What does 'cache consistency' refer to?",
+    "Back": "How closely the data in a cache matches the current true state of the underlying data source."
+   }
+  },
+  {
+   "noteId": 1789061203318,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Name a core tradeoff in cache consistency design.",
+    "Back": "Stronger consistency (always fresh) typically costs more latency and invalidation overhead; weaker (eventual) consistency is faster but can serve stale data."
+   }
+  },
+  {
+   "noteId": 1789061203320,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Cache hit",
+    "Back": "A request that finds the requested data already present in the cache."
+   }
+  },
+  {
+   "noteId": 1789061203321,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Front": "Cache miss",
+    "Back": "A request for data not found in the cache, requiring a fetch from the slower underlying source."
+   }
+  },
+  {
+   "noteId": 1789061203338,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Text": "The four common cache read/write patterns are {{c1::cache-aside}}, {{c2::read-through}}, {{c3::write-through}}, and {{c4::write-back}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203339,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Text": "Common cache eviction policies: {{c1::LRU}} (evicts the least recently used item), {{c2::LFU}} (evicts the least frequently used item), and {{c3::TTL}} (expires items after a fixed time regardless of usage).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203340,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-caching"
+   ],
+   "fields": {
+    "Text": "Cache stampedes can be mitigated with techniques like {{c1::locking/mutex around the recompute}}, {{c2::early or probabilistic refresh before expiry}}, or {{c3::serving stale data while recomputing in the background}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

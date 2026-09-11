@@ -1,0 +1,235 @@
+{
+ "deck": "Interview::OOP Design::Movie Ticket Booking",
+ "note_count": 19,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201501,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what are the 3 core functional requirements for a Movie Ticket Booking system?",
+    "Back": "1) Browse movies/shows by theater, date, and time. 2) Select and reserve specific seats for a show. 3) Complete payment to confirm the booking, with seats correctly released if payment fails or times out."
+   }
+  },
+  {
+   "noteId": 1789061201502,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Why must seat reservation in a movie booking system rely on concurrency control / locking rather than plain read-then-write?",
+    "Back": "Multiple users can try to book the same seat for the same show at nearly the same instant; without locking, two threads could both read 'AVAILABLE', both proceed, and both charge a customer for the same physical seat (double-booking)."
+   }
+  },
+  {
+   "noteId": 1789061201503,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Compare pessimistic vs optimistic locking for reserving a seat, and when you'd prefer each.",
+    "Back": "Pessimistic locking acquires a lock (DB row lock or distributed lock) before letting anyone read/modify the seat, blocking contenders — simpler correctness, more contention overhead; good under high contention. Optimistic locking reads a version number, and the update only commits if the version hasn't changed (compare-and-swap), retrying on conflict — less blocking, better throughput when contention is low."
+   }
+  },
+  {
+   "noteId": 1789061201504,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Why does a seat lock need an expiry (TTL), e.g. 'held for 10 minutes'?",
+    "Back": "If a user locks a seat and then abandons checkout (closes the tab, connection drops), the seat must not stay locked forever — a TTL automatically releases it back to AVAILABLE so other users can book it."
+   }
+  },
+  {
+   "noteId": 1789061201505,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "In a single-database design, what SQL mechanism implements pessimistic seat locking?",
+    "Back": "<code>SELECT ... FOR UPDATE</code> on the seat row inside a transaction — it blocks other transactions from reading/locking that same row until the current transaction commits or rolls back."
+   }
+  },
+  {
+   "noteId": 1789061201506,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "In a distributed/multi-instance booking service, what tool is commonly used to implement a seat lock across service instances?",
+    "Back": "A distributed lock via Redis (e.g. SET seat:id NX with a TTL, or the Redlock algorithm) — NX ensures only one instance can acquire the lock, and the TTL provides automatic expiry if the holder crashes."
+   }
+  },
+  {
+   "noteId": 1789061201507,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Edge case: a seat lock expires (TTL hits zero) at the exact moment the user submits payment. What must the booking flow do?",
+    "Back": "Before confirming, re-validate that the lock is still held by this user's session; if it expired, reject the confirmation and prompt the user to reselect seats rather than charging them for a seat that may now belong to someone else."
+   }
+  },
+  {
+   "noteId": 1789061201508,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Edge case: payment succeeds but the confirm-booking step (marking seats BOOKED) fails or times out. How do you avoid losing money or double-selling the seat?",
+    "Back": "Use a transaction/saga: only mark seats BOOKED after payment confirmation, and if that step fails, retry it idempotently (keyed by payment/booking id) rather than re-charging; if it can't be reconciled automatically, refund and release the seats."
+   }
+  },
+  {
+   "noteId": 1789061201509,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Why is BookingManager often implemented as a Singleton (or a single coordinating service) in this design?",
+    "Back": "Seat-lock state for a given show must be checked and mutated consistently from one authoritative place; a single coordinating manager (or a shared lock store like Redis) prevents different parts of the app from making conflicting concurrent decisions about the same seat."
+   }
+  },
+  {
+   "noteId": 1789061201510,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "What core fields does a Booking object typically carry?",
+    "Back": "Booking id, user, show reference, list of seat ids, total price, BookingStatus (e.g. PENDING, CONFIRMED, CANCELLED), and a payment reference."
+   }
+  },
+  {
+   "noteId": 1789061201511,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Why is Factory a reasonable pattern for creating Payment objects (credit card, wallet, UPI) in a booking checkout flow?",
+    "Back": "The checkout code just needs a PaymentMethod that can charge(amount); a PaymentFactory maps a payment-type enum to the right concrete implementation, so adding a new payment method doesn't touch the checkout logic."
+   }
+  },
+  {
+   "noteId": 1789061201512,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Edge case: how should the system prevent a single user from locking an unreasonable number of seats (e.g. scripted seat-hoarding)?",
+    "Back": "Cap the number of seats a single lock/session can hold per show (e.g. max 10), enforced server-side at the lock-acquisition step, independent of any client-side UI limit."
+   }
+  },
+  {
+   "noteId": 1789061201513,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Implement seat locking in Java using a per-seat ReentrantLock with tryLock and a timeout.",
+    "Back": "<pre><code>class SeatLockManager {\n    private final Map&lt;String, ReentrantLock&gt; locks = new ConcurrentHashMap&lt;&gt;();\n\n    boolean lockSeat(String seatId, long timeoutMs) throws InterruptedException {\n        ReentrantLock lock = locks.computeIfAbsent(\n            seatId, id -&gt; new ReentrantLock()\n        );\n        return lock.tryLock(timeoutMs, TimeUnit.MILLISECONDS);\n    }\n\n    void unlockSeat(String seatId) {\n        ReentrantLock lock = locks.get(seatId);\n        if (lock != null &amp;&amp; lock.isHeldByCurrentThread()) {\n            lock.unlock();\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201514,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Implement a Redis-based distributed seat lock in Python using SET NX with a TTL.",
+    "Back": "<pre><code>import redis\nimport uuid\n\nr = redis.Redis()\n\ndef try_lock_seat(seat_id, ttl_seconds=600):\n    token = str(uuid.uuid4())\n    acquired = r.set(\n        f\"seat_lock:{seat_id}\", token,\n        nx=True, ex=ttl_seconds\n    )\n    return token if acquired else None\n\ndef release_seat(seat_id, token):\n    # only release if we still own the lock\n    if r.get(f\"seat_lock:{seat_id}\") == token.encode():\n        r.delete(f\"seat_lock:{seat_id}\")</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201515,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Implement a Java confirmBooking() method that atomically checks the seat lock is still valid before marking seats BOOKED.",
+    "Back": "<pre><code>public Booking confirmBooking(String userId, List&lt;String&gt; seatIds, Payment payment) {\n    for (String seatId : seatIds) {\n        if (!seatLockManager.isLockedBy(seatId, userId)) {\n            throw new SeatLockExpiredException(seatId);\n        }\n    }\n    PaymentResult result = payment.charge();\n    if (!result.isSuccess()) {\n        throw new PaymentFailedException(result.getReason());\n    }\n    for (String seatId : seatIds) {\n        seatRepository.markBooked(seatId);\n        seatLockManager.unlockSeat(seatId);\n    }\n    return bookingRepository.save(new Booking(userId, seatIds, result));\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201516,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Implement a Python background job that scans for and releases expired seat locks (for a design not using a TTL-native store).",
+    "Back": "<pre><code>def release_expired_locks(lock_store, now):\n    expired = [\n        seat_id for seat_id, lock in lock_store.items()\n        if lock.expires_at &lt;= now\n    ]\n    for seat_id in expired:\n        del lock_store[seat_id]\n        seat_repository.mark_available(seat_id)\n    return expired</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201526,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Text": "A {{c1::Show}} represents one scheduled screening: it links a {{c2::Movie}} to a {{c3::Screen}} at a specific start time, and owns the seat-availability state for that screening.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201527,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Text": "SeatStatus for a given show typically has three states: {{c1::AVAILABLE}}, {{c2::LOCKED}} (temporarily held during checkout), and {{c3::BOOKED}} (payment confirmed).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201541,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-movie-booking"
+   ],
+   "fields": {
+    "Front": "Seat (Movie Ticket Booking)",
+    "Back": "A bookable unit within a Screen, identified by row/column, with a SeatType (e.g. REGULAR, PREMIUM, RECLINER) and a per-Show SeatStatus (AVAILABLE, LOCKED, BOOKED)."
+   }
+  }
+ ]
+}

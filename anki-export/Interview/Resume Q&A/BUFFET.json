@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Q&A::BUFFET",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203028,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What is BUFFET?",
+    "Back": "An NLP algorithmic trader project that analyzes comment sentiment to inform trading decisions."
+   }
+  },
+  {
+   "noteId": 1789061203029,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What language was the BUFFET data-ingestion pipeline built in?",
+    "Back": "Python."
+   }
+  },
+  {
+   "noteId": 1789061203030,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "How many comments did the BUFFET pipeline ingest?",
+    "Back": "63,000+ comments."
+   }
+  },
+  {
+   "noteId": 1789061203031,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What uptime did the BUFFET ingestion pipeline achieve?",
+    "Back": "99.9% uptime."
+   }
+  },
+  {
+   "noteId": 1789061203032,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What sentiment analysis model did BUFFET build on?",
+    "Back": "VADER (Valence Aware Dictionary and sEntiment Reasoner)."
+   }
+  },
+  {
+   "noteId": 1789061203033,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "Why use VADER as the base sentiment model instead of training a sentiment classifier from scratch?",
+    "Back": "VADER is a lightweight, rule-based lexicon model tuned for short, informal text and needs no training data or model training — it can be used and extended out of the box, ideal for fast iteration on high-volume comment sentiment."
+   }
+  },
+  {
+   "noteId": 1789061203034,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "How did you improve VADER's accuracy for BUFFET?",
+    "Back": "By enhancing it with a custom financial lexicon."
+   }
+  },
+  {
+   "noteId": 1789061203035,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What accuracy gain did the custom financial lexicon provide?",
+    "Back": "+18% accuracy improvement over stock VADER."
+   }
+  },
+  {
+   "noteId": 1789061203036,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What does injecting a custom financial lexicon into VADER actually do?",
+    "Back": "It adds finance-specific terms and their sentiment valence scores — words/phrases missing from VADER's general-purpose lexicon — so the model correctly scores financial sentiment that generic VADER would misread or ignore."
+   }
+  },
+  {
+   "noteId": 1789061203037,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "Why does generic VADER underperform on financial/trading comments without customization?",
+    "Back": "VADER's default lexicon is tuned for general social-media language and doesn't capture domain-specific financial slang and terms, so it misjudges sentiment specific to trading discussion."
+   }
+  },
+  {
+   "noteId": 1789061203038,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What operational challenge did the BUFFET Python pipeline have to manage?",
+    "Back": "API rate limits from the data source(s) it ingested comments from."
+   }
+  },
+  {
+   "noteId": 1789061203039,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "How did the pipeline maintain 99.9% uptime while respecting API rate limits?",
+    "Back": "It was engineered to actively manage and throttle requests against the API's rate limits, avoiding being blocked or dropped while continuously ingesting comment data."
+   }
+  },
+  {
+   "noteId": 1789061203040,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What is the end goal of BUFFET's sentiment pipeline?",
+    "Back": "To feed sentiment signals from ingested comments into algorithmic trading decisions."
+   }
+  },
+  {
+   "noteId": 1789061203041,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "What kind of data source likely produced the 63,000+ comments for BUFFET?",
+    "Back": "A social/community platform with public trading discussion, accessed via a rate-limited API."
+   }
+  },
+  {
+   "noteId": 1789061203042,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Describe the BUFFET reliability challenge and how you solved it.",
+    "Back": "Task: continuously ingest a high volume of comments (63,000+) through a rate-limited API without downtime. Action: built a Python pipeline that actively managed API rate limits. Result: sustained 99.9% uptime on ingestion."
+   }
+  },
+  {
+   "noteId": 1789061203043,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: How did you improve sentiment accuracy for financial text specifically?",
+    "Back": "Task: generic VADER sentiment scoring didn't capture financial/trading slang. Action: built and injected a custom financial lexicon into VADER. Result: +18% accuracy improvement in sentiment classification for the trading use case."
+   }
+  },
+  {
+   "noteId": 1789061203044,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Why was VADER the right starting point rather than a deep-learning sentiment model?",
+    "Back": "Task: needed fast, interpretable sentiment scoring on large volumes of short comments. Action: chose rule-based VADER and extended it with a domain-specific financial lexicon rather than training a heavier model from scratch. Result: a meaningful (+18%) accuracy gain with a lightweight, explainable, easily-tunable approach."
+   }
+  },
+  {
+   "noteId": 1789061203045,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Summarize BUFFET's technical contribution in one breath.",
+    "Back": "A Python pipeline that reliably ingested 63,000+ comments at 99.9% uptime under API rate limits, and boosted VADER sentiment accuracy 18% with a custom financial lexicon — powering an NLP algorithmic trading signal."
+   }
+  },
+  {
+   "noteId": 1789061203046,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Front": "VADER",
+    "Back": "A lexicon/rule-based sentiment analysis tool; in BUFFET it was enhanced with a custom financial lexicon for a +18% accuracy gain."
+   }
+  },
+  {
+   "noteId": 1789061203054,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-buffet"
+   ],
+   "fields": {
+    "Text": "BUFFET's Python pipeline ingested {{c1::63,000+}} comments at {{c2::99.9%}} uptime while managing API rate limits, and enhanced {{c3::VADER}} sentiment with a custom {{c4::financial lexicon}} for a {{c5::+18%}} accuracy gain.",
+    "Extra": ""
+   }
+  }
+ ]
+}

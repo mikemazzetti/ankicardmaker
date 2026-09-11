@@ -1,0 +1,203 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::2-D DP",
+ "note_count": 11,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038120872,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "recursion",
+    "string"
+   ],
+   "fields": {
+    "title": "Regular Expression Matching",
+    "id": "10",
+    "slug": "regular-expression-matching",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120976,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math"
+   ],
+   "fields": {
+    "title": "Unique Paths",
+    "id": "62",
+    "slug": "unique-paths",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120996,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Edit Distance",
+    "id": "72",
+    "slug": "edit-distance",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121046,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Interleaving String",
+    "id": "97",
+    "slug": "interleaving-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121082,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Distinct Subsequences",
+    "id": "115",
+    "slug": "distinct-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121470,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "id": "309",
+    "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121476,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Burst Balloons",
+    "id": "312",
+    "slug": "burst-balloons",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121510,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "matrix",
+    "memoization",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Longest Increasing Path in a Matrix",
+    "id": "329",
+    "slug": "longest-increasing-path-in-a-matrix",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, depth-first-search, breadth-first-search, graph, topological-sort, memoization, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121840,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Target Sum",
+    "id": "494",
+    "slug": "target-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121888,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Coin Change II",
+    "id": "518",
+    "slug": "coin-change-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123138,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Common Subsequence",
+    "id": "1143",
+    "slug": "longest-common-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  }
+ ]
+}

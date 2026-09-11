@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Notification System",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201416,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "In an OOD interview, what are the 3 core functional requirements for a Notification System?",
+    "Back": "1) Send notifications through multiple channels (email, SMS, push). 2) Respect per-user channel preferences/opt-outs. 3) Let new channels or event types be added without rewriting existing sending logic."
+   }
+  },
+  {
+   "noteId": 1789061201417,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Why is the Observer pattern a natural fit for how a Notification System reacts to domain events (e.g. 'order shipped')?",
+    "Back": "The event source (e.g. OrderService) doesn't need to know who cares about it — it just publishes an event; the NotificationService subscribes as an observer and is notified automatically, decoupling triggering logic from notification logic."
+   }
+  },
+  {
+   "noteId": 1789061201418,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Why is Strategy a good fit for per-channel sending logic in a Notification System?",
+    "Back": "Email, SMS, and push all need very different transport code (SMTP client, SMS gateway API, push provider SDK) but share the same send(user, message) contract — Strategy lets the NotificationService pick and swap the algorithm at runtime without conditionals."
+   }
+  },
+  {
+   "noteId": 1789061201419,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Why use a Factory to create channel-specific notification objects instead of `new EmailNotification()` scattered through the codebase?",
+    "Back": "A NotificationFactory centralizes the mapping from NotificationType to the concrete class, so adding a new channel means adding one factory branch/registration instead of hunting down every call site that constructs notifications."
+   }
+  },
+  {
+   "noteId": 1789061201420,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "How do Factory and Strategy typically combine in a Notification System's design?",
+    "Back": "The Factory creates the right NotificationChannel (Strategy) implementation for a given NotificationType; the NotificationService then calls that strategy's send() method without knowing which concrete channel it got."
+   }
+  },
+  {
+   "noteId": 1789061201421,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "What core fields does a Notification/Message object typically carry?",
+    "Back": "Recipient (User), channel type, subject/title, body content, priority, timestamp, and delivery status."
+   }
+  },
+  {
+   "noteId": 1789061201422,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "How does an Observer-based design let a user 'subscribe' to updates on a specific entity, e.g. a price drop on a product?",
+    "Back": "The entity (Subject) keeps a list of observers; subscribe(user) adds the user (or their notification handler) to that list, and when the entity's state changes it calls notify(), which invokes update() on each registered observer."
+   }
+  },
+  {
+   "noteId": 1789061201423,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Edge case: a push notification send fails due to a transient network error. How should the system handle it?",
+    "Back": "Retry with exponential backoff up to a max attempt count, and after exhausting retries, move the notification to a dead-letter store/queue for later inspection rather than silently dropping it or retrying forever."
+   }
+  },
+  {
+   "noteId": 1789061201424,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Edge case: how should the system behave if a user has opted out of email for a given event type?",
+    "Back": "The NotificationService should check NotificationPreference before dispatching and simply skip the email channel for that user/event — it should not fall back to another channel unless the user separately enabled that one."
+   }
+  },
+  {
+   "noteId": 1789061201425,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Edge case: what problem does batching solve for a notification system with high-frequency events (e.g. 50 likes on a post in a minute)?",
+    "Back": "Without batching, the user gets 50 separate notifications (spam); a batching/debounce window aggregates events over a short interval into a single summarized notification."
+   }
+  },
+  {
+   "noteId": 1789061201426,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Why should NotificationChannel.send() be designed as idempotent (or paired with a delivery-id dedup check)?",
+    "Back": "Retries after a timeout can cause the same notification to be sent twice even though the first attempt actually succeeded; an idempotency key lets the channel or provider recognize and drop the duplicate."
+   }
+  },
+  {
+   "noteId": 1789061201427,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "What's the tradeoff of sending notifications synchronously inside the request that triggers them, versus asynchronously via a queue?",
+    "Back": "Synchronous sending is simpler but couples request latency/availability to the (possibly slow or flaky) notification provider; asynchronous sending via a queue keeps the triggering request fast and isolates notification failures, at the cost of added infrastructure and eventual-consistency delay."
+   }
+  },
+  {
+   "noteId": 1789061201428,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Implement a NotificationChannel Strategy interface in Java plus an EmailNotificationChannel implementation.",
+    "Back": "<pre><code>interface NotificationChannel {\n    void send(User user, Notification notification);\n}\n\nclass EmailNotificationChannel implements NotificationChannel {\n    private final EmailClient emailClient;\n\n    EmailNotificationChannel(EmailClient emailClient) {\n        this.emailClient = emailClient;\n    }\n\n    public void send(User user, Notification notification) {\n        emailClient.sendMail(\n            user.getEmail(),\n            notification.getSubject(),\n            notification.getBody()\n        );\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201429,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Implement a NotificationFactory in Python that maps a NotificationType to the right channel strategy.",
+    "Back": "<pre><code>class NotificationFactory:\n    _channels = {\n        \"EMAIL\": EmailNotificationChannel,\n        \"SMS\": SMSNotificationChannel,\n        \"PUSH\": PushNotificationChannel,\n    }\n\n    @classmethod\n    def create(cls, channel_type, **deps):\n        if channel_type not in cls._channels:\n            raise ValueError(f\"Unknown channel: {channel_type}\")\n        return cls._channels[channel_type](**deps)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201430,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Implement a minimal Observer pattern in Java: a Subject interface and a concrete OrderTracker that notifies subscribed observers when the order ships.",
+    "Back": "<pre><code>interface Observer {\n    void update(String eventType, Object payload);\n}\n\nclass OrderTracker {\n    private final List&lt;Observer&gt; observers = new ArrayList&lt;&gt;();\n\n    void subscribe(Observer o) { observers.add(o); }\n    void unsubscribe(Observer o) { observers.remove(o); }\n\n    void markShipped(Order order) {\n        order.setStatus(\"SHIPPED\");\n        for (Observer o : observers) {\n            o.update(\"ORDER_SHIPPED\", order);\n        }\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201431,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "Implement a Python NotificationService.notify() method that checks user preferences, resolves a channel via the factory, and sends with basic retry.",
+    "Back": "<pre><code>class NotificationService:\n    def __init__(self, preferences, factory, max_retries=3):\n        self.preferences = preferences\n        self.factory = factory\n        self.max_retries = max_retries\n\n    def notify(self, user, event_type, notification):\n        for channel_type in self.preferences.enabled_channels(user, event_type):\n            channel = self.factory.create(channel_type)\n            self._send_with_retry(channel, user, notification)\n\n    def _send_with_retry(self, channel, user, notification):\n        for attempt in range(self.max_retries):\n            try:\n                channel.send(user, notification)\n                return\n            except TransientError:\n                continue\n        raise DeliveryFailed(notification)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201436,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Text": "A {{c1::NotificationService}} is the central entry point apps call to trigger notifications; it looks up user preferences and delegates actual delivery to channel-specific {{c2::NotificationChannel}} implementations.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201437,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Text": "NotificationType is typically an enum with values {{c1::EMAIL}}, {{c2::SMS}}, and {{c3::PUSH}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201438,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Text": "A {{c1::NotificationPreference}} object stores, per user and per event type, which channels are opted into — letting the NotificationService skip channels the user disabled.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201457,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-notification"
+   ],
+   "fields": {
+    "Front": "NotificationChannel (Notification System)",
+    "Back": "An interface/strategy representing one delivery mechanism (email, SMS, push) with a send(user, message) method; each concrete channel encapsulates its own transport logic."
+   }
+  }
+ ]
+}

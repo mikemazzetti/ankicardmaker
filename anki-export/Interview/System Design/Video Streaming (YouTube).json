@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Video Streaming (YouTube)",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203767,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Text": "Core functional requirements for a video streaming system include {{c1::video upload}}, {{c2::video streaming/playback}}, and {{c3::video search}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203768,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Text": "Key non-functional requirements for a video streaming platform: {{c1::high availability}}, {{c2::low latency streaming (fast start, smooth playback)}}, and {{c3::durability of stored video}} (no data loss).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203769,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Text": "A video metadata record typically stores {{c1::videoId}}, {{c2::uploaderId}}, {{c3::title/description}}, {{c4::duration}}, {{c5::status (processing/ready)}}, and {{c6::CDN URLs per resolution}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203770,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Text": "Core components of a video streaming architecture: {{c1::upload service}}, {{c2::transcoding/encoding pipeline}}, {{c3::metadata database}}, {{c4::blob storage (e.g. S3)}}, and {{c5::CDN}} for delivery.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203771,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Text": "Adaptive bitrate streaming works by encoding the same video into {{c1::multiple resolution/bitrate variants}}, splitting each into short {{c2::segments}}, and having the client {{c3::dynamically switch}} between variants based on measured network bandwidth.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203779,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why do video streaming systems generally favor availability over strong consistency for metadata like view counts and comments?",
+    "Back": "Users tolerate briefly stale counts/comments, but any downtime for playback directly hurts UX and revenue, so the system favors an AP (available, eventually consistent) design for non-critical metadata."
+   }
+  },
+  {
+   "noteId": 1789061203780,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "If a video platform has 2B total users and 5% watch videos daily, what is the approximate DAU?",
+    "Back": "2B x 5% = ~100 million daily active users."
+   }
+  },
+  {
+   "noteId": 1789061203781,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Given 100M DAU each watching 5 videos/day, what is the approximate average read QPS for video views?",
+    "Back": "100M x 5 / 86,400s ≈ 5,787 QPS (roughly 6K QPS)."
+   }
+  },
+  {
+   "noteId": 1789061203782,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "If 1M videos are uploaded daily averaging 300MB each, what is the approximate daily raw storage need (before replication)?",
+    "Back": "1M x 300MB = 300TB/day."
+   }
+  },
+  {
+   "noteId": 1789061203783,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why is peak QPS often estimated as 2-3x the average QPS when sizing a video streaming system?",
+    "Back": "Traffic is not uniform across the day; evening and weekend peaks can be several times the daily average, so capacity must be provisioned for bursts, not just the mean."
+   }
+  },
+  {
+   "noteId": 1789061203784,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "What would a resumable video upload API call look like in a YouTube-like system?",
+    "Back": "<pre><code>POST /videos/upload\n{ title, description, tags }\n-&gt; returns uploadId, presigned URL</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203785,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "What API endpoint would a client call to fetch the streaming manifest for a given video?",
+    "Back": "<code>GET /videos/{videoId}/manifest</code> returns the master playlist (e.g. HLS .m3u8) listing the available bitrate variants."
+   }
+  },
+  {
+   "noteId": 1789061203786,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "In the video metadata table, what primary key design is typically used, and why?",
+    "Back": "A globally unique videoId (UUID or Snowflake-style ID) generated at upload time, avoiding collisions across distributed upload servers and decoupling the ID from any single database's auto-increment."
+   }
+  },
+  {
+   "noteId": 1789061203787,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why does the upload flow write the raw video to blob storage before transcoding, rather than transcoding inline during upload?",
+    "Back": "It decouples upload latency from transcoding time, which can take minutes; the client gets a fast upload confirmation while transcoding happens asynchronously via a queue and worker pool."
+   }
+  },
+  {
+   "noteId": 1789061203788,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "What role does a message queue (e.g. Kafka/SQS) play between the upload service and the transcoding workers?",
+    "Back": "It buffers upload events so transcoding workers can pull jobs at their own pace, smoothing bursty upload traffic and allowing independent horizontal scaling of the worker pool."
+   }
+  },
+  {
+   "noteId": 1789061203789,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why is an uploaded video split into small segments before/during transcoding?",
+    "Back": "It enables parallel encoding across multiple workers, and adaptive bitrate clients need short segments to switch quality mid-playback without re-downloading the whole file."
+   }
+  },
+  {
+   "noteId": 1789061203790,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "What two adaptive bitrate streaming protocols are most commonly used today?",
+    "Back": "HLS (HTTP Live Streaming, Apple) and MPEG-DASH, both using a manifest file (.m3u8 / .mpd) that points to segmented bitrate variants."
+   }
+  },
+  {
+   "noteId": 1789061203791,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why does a CDN dramatically reduce origin server load and latency for video delivery?",
+    "Back": "It caches video segments at edge servers geographically close to viewers, so most playback requests are served from a nearby edge cache instead of round-tripping to the origin blob storage."
+   }
+  },
+  {
+   "noteId": 1789061203792,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why is a pull CDN generally preferred over a push CDN for a platform with millions of long-tail videos?",
+    "Back": "A push CDN would waste storage replicating rarely-watched videos to every edge node; a pull CDN only caches content at edges where it is actually requested, matching cache usage to real demand."
+   }
+  },
+  {
+   "noteId": 1789061203793,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "What is the main scaling bottleneck for the transcoding pipeline as upload volume grows?",
+    "Back": "Compute throughput of the transcoding workers; video encoding is CPU/GPU-intensive, so worker pool size and queue depth become the limiting factor under high upload volume."
+   }
+  },
+  {
+   "noteId": 1789061203794,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "Why can the video metadata database become a bottleneck at YouTube scale, and what is a common fix?",
+    "Back": "Billions of video rows under heavy read traffic overload a single database; the fix is sharding by videoId/uploaderId plus read replicas and caching hot metadata."
+   }
+  },
+  {
+   "noteId": 1789061203795,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-youtube"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff between transcoding a video into many resolution variants vs. just a few?",
+    "Back": "More variants improve playback quality-adaptation and bandwidth efficiency for viewers, but increase storage cost and transcoding compute time."
+   }
+  }
+ ]
+}

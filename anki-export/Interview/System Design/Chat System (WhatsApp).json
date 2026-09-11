@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Chat System (WhatsApp)",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203735,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Text": "Core functional requirements of a WhatsApp-like chat system include: {{c1::sending and receiving 1:1 messages}}, {{c2::group messaging}}, and {{c3::message delivery/read status}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203736,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Text": "Non-functional requirements for a chat system include: {{c1::low latency message delivery (near real-time)}}, {{c2::high availability}}, and {{c3::message ordering should be preserved per conversation}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203737,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Text": "The high-level architecture of a chat system typically includes: {{c1::a connection/gateway service managing WebSocket connections}}, {{c2::a message service that stores and routes messages}}, {{c3::a presence service tracking online status}}, and {{c4::a message queue (e.g. Kafka) between services}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203738,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Text": "The three standard message states in a chat system's delivery/read-receipt model are: {{c1::sent (single check &mdash; left the sender's client)}}, {{c2::delivered (double check &mdash; reached the recipient's device)}}, and {{c3::read (blue double check &mdash; recipient opened it)}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203739,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Text": "Scaling bottlenecks and fixes for a chat system: {{c1::a single server capping the number of concurrent WebSocket connections}} is fixed by {{c2::horizontally scaling gateway servers behind a connection registry}}; {{c3::message store write/read hotspots for very active conversations}} is fixed by {{c4::sharding messages by conversation_id and caching recent messages}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203745,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Should a chat system support offline message delivery (a user receives messages sent while they were offline)?",
+    "Back": "Yes &mdash; messages sent to an offline user must be stored and delivered once they reconnect, not dropped."
+   }
+  },
+  {
+   "noteId": 1789061203746,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why is strong consistency (not just eventual consistency) important for message ordering within a single conversation?",
+    "Back": "Users expect messages within a chat to appear in a consistent, logical order for all participants &mdash; out-of-order messages break conversational meaning, so per-conversation ordering is a strict requirement even though other parts of the system can be eventually consistent."
+   }
+  },
+  {
+   "noteId": 1789061203747,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "If 500M daily active users send 40 messages/day on average, what is the approximate write QPS for messages?",
+    "Back": "~230,000 QPS (500M &times; 40 / 86,400 &asymp; 231,481)."
+   }
+  },
+  {
+   "noteId": 1789061203748,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "If the average message is 100 bytes and 20B messages are sent per day, what is the daily storage for message content?",
+    "Back": "~2 TB/day (20,000,000,000 &times; 100 bytes = 2&times;10^12 bytes = 2 TB)."
+   }
+  },
+  {
+   "noteId": 1789061203749,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why must a chat system also estimate the number of concurrent open WebSocket connections, not just message QPS?",
+    "Back": "Delivery requires a persistent connection per online user; connection count (not just message rate) determines how many connection-handling servers are needed, since each server can hold only a limited number of open sockets (e.g. ~1M per host)."
+   }
+  },
+  {
+   "noteId": 1789061203750,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Write the WebSocket message format a client sends to deliver a chat message.",
+    "Back": "<pre><code>// WS message (client -&gt; server)\n{\n  \"type\": \"MESSAGE\",\n  \"senderId\": \"string\",\n  \"receiverId\": \"string\",\n  \"text\": \"string\",\n  \"clientMsgId\": \"string\"\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203751,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint to fetch message history for a conversation.",
+    "Back": "<pre><code>GET /api/v1/conversations/{id}/messages?cursor={cursor}&amp;limit={n}\nResponse: { \"messages\": [ {...} ], \"nextCursor\": \"string\" }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203752,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Write a minimal schema for a <code>messages</code> table.",
+    "Back": "<pre><code>messages(\n  message_id      BIGINT,\n  conversation_id BIGINT,\n  sender_id       BIGINT,\n  text            TEXT,\n  sent_at         TIMESTAMP,\n  PRIMARY KEY (conversation_id, message_id)\n)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203753,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why is conversation_id typically the partition/shard key for the messages table rather than message_id?",
+    "Back": "All reads for a chat fetch messages by conversation, so partitioning by conversation_id keeps a conversation's messages colocated for fast range queries, and naturally shards load across many conversations."
+   }
+  },
+  {
+   "noteId": 1789061203754,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why can't a single application server just hold every user's WebSocket connection directly wired to the message-processing logic?",
+    "Back": "Connections must be spread across many gateway servers for scale, so the system needs a way to route a message to whichever gateway server currently holds the recipient's connection (e.g. a connection-registry lookup, often in Redis) rather than assuming all logic is co-located."
+   }
+  },
+  {
+   "noteId": 1789061203755,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why is WebSocket preferred over HTTP polling for real-time chat delivery?",
+    "Back": "WebSocket keeps a single persistent, full-duplex connection open, letting the server push messages instantly with minimal overhead, whereas polling repeatedly opens/closes connections and adds latency between poll intervals plus wasted requests when there's nothing new."
+   }
+  },
+  {
+   "noteId": 1789061203756,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "How does the server know which gateway server holds a given user's active WebSocket connection?",
+    "Back": "A connection registry (e.g. in Redis) maps user_id &rarr; the gateway server/host currently holding their socket; when routing a message, the message service looks up the registry to forward it to the correct gateway."
+   }
+  },
+  {
+   "noteId": 1789061203757,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "How is a message typically delivered to a recipient who is currently offline?",
+    "Back": "It's persisted in the message store and queued; when the recipient's client reconnects and opens a WebSocket, the server pushes/syncs any undelivered messages from storage."
+   }
+  },
+  {
+   "noteId": 1789061203758,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "How is online/presence status typically tracked and propagated in a chat system?",
+    "Back": "A presence service keeps a heartbeat/TTL entry per user (e.g. in Redis) refreshed while their WebSocket is connected; when a user's status changes, the service notifies their contacts (e.g. via pub/sub) so clients can update the shown status."
+   }
+  },
+  {
+   "noteId": 1789061203759,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why is presence status usually eventually consistent rather than strongly consistent?",
+    "Back": "Propagating exact real-time online/offline status to every contact instantly at strong consistency would be costly at scale, and a brief lag (a second or two) in showing 'online'/'last seen' is an acceptable UX tradeoff for much lower system overhead."
+   }
+  },
+  {
+   "noteId": 1789061203760,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "Why is a message queue (e.g. Kafka) often placed between the gateway and the message-persistence/delivery logic?",
+    "Back": "It decouples ingestion from processing/fanout to group members, absorbing traffic bursts and letting the persistence and delivery services scale and retry independently without blocking the sender's connection."
+   }
+  },
+  {
+   "noteId": 1789061203761,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-chat"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff of storing full message history indefinitely vs. only recent messages?",
+    "Back": "Storing full history preserves complete conversation context and search but grows storage cost indefinitely; limiting retention (e.g. archiving/cold-storing old messages) saves cost and keeps hot storage fast, at the cost of slower or unavailable access to old messages."
+   }
+  }
+ ]
+}

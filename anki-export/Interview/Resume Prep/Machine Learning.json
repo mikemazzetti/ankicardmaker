@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Prep::Machine Learning",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202282,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Text": "In {{c1::supervised}} learning, a model is trained on labeled examples (input-output pairs) to learn a mapping it can apply to new, unseen inputs.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202283,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Text": "In {{c1::unsupervised}} learning, a model finds structure or patterns (e.g., clusters) in unlabeled data, with no predefined output labels.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202284,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Text": "{{c1::Cross-entropy loss}} is the standard loss function for classification tasks, while {{c2::Mean Squared Error (MSE)}} is the standard loss function for regression tasks.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202285,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Text": "L1 regularization (Lasso) adds the sum of absolute weight values and tends to produce {{c1::sparse weights, some exactly zero (built-in feature selection)}}; L2 regularization (Ridge) adds the sum of squared weight values and tends to {{c2::shrink weights smoothly toward zero without eliminating them}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202286,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Text": "Given confusion-matrix counts TP, TN, FP, FN: Accuracy = {{c1::(TP + TN) / (TP + TN + FP + FN)}}, Precision = {{c2::TP / (TP + FP)}}, Recall = {{c3::TP / (TP + FN)}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202287,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Text": "The {{c1::F1 score}} is the harmonic mean of precision and recall. {{c2::ROC-AUC}} is the area under the ROC curve, summarizing a classifier's ability to separate classes across all thresholds. A {{c3::confusion matrix}} tabulates a classifier's True Positive, False Positive, True Negative, and False Negative counts.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202299,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "In reinforcement learning, what does an agent learn to do?",
+    "Back": "Choose actions in an environment, guided by rewards and penalties it receives, so as to maximize cumulative reward over time."
+   }
+  },
+  {
+   "noteId": 1789061202300,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "Why split data into training, validation, and test sets instead of just training and test?",
+    "Back": "The validation set is used to tune hyperparameters and select between models during development without touching the test set, so the test set stays an unbiased, final estimate of how the model generalizes to unseen data."
+   }
+  },
+  {
+   "noteId": 1789061202301,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "What does gradient descent do during model training?",
+    "Back": "It iteratively updates model parameters in the direction that most reduces the loss function, using the gradient of the loss with respect to the parameters."
+   }
+  },
+  {
+   "noteId": 1789061202302,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "What does the learning rate control in gradient descent, and what happens if it's set too high?",
+    "Back": "It controls the size of each parameter update step. If it's too high, training can become unstable and the loss can oscillate or diverge instead of converging to a minimum."
+   }
+  },
+  {
+   "noteId": 1789061202303,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "What does dropout do during neural network training?",
+    "Back": "It randomly deactivates a fraction of neurons on each forward/backward pass, preventing units from co-adapting and reducing overfitting."
+   }
+  },
+  {
+   "noteId": 1789061202304,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "What is the purpose of k-fold cross-validation?",
+    "Back": "It splits the data into k folds, trains on k-1 folds and validates on the remaining fold, rotating through all k folds, to get a more reliable estimate of model performance than a single train/validation split."
+   }
+  },
+  {
+   "noteId": 1789061202305,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "Why is feature scaling (standardization/normalization) important before training many ML models?",
+    "Back": "Algorithms based on distances or gradient magnitudes (e.g., k-means, k-NN, gradient descent, SVMs) converge faster and behave correctly when features share a comparable scale; otherwise large-scale features can dominate."
+   }
+  },
+  {
+   "noteId": 1789061202306,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "What's the difference between a classification task and a regression task in supervised learning?",
+    "Back": "Classification predicts a discrete category or class label; regression predicts a continuous numeric value."
+   }
+  },
+  {
+   "noteId": 1789061202307,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "How does a random forest differ from a single decision tree?",
+    "Back": "A random forest trains many decision trees on bootstrapped samples of the data with random subsets of features at each split, then averages (regression) or votes (classification) their predictions, reducing the overfitting a single tree is prone to."
+   }
+  },
+  {
+   "noteId": 1789061202308,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "In k-means clustering, what does the algorithm iteratively update to form k clusters?",
+    "Back": "Cluster centroids: each point is assigned to its nearest centroid, then each centroid is recomputed as the mean of its assigned points, repeating until the assignments stop changing."
+   }
+  },
+  {
+   "noteId": 1789061202309,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "Write scikit-learn code that splits data into an 80/20 train/test set and fits a Logistic Regression model.",
+    "Back": "<pre><code>from sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LogisticRegression\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\nscore = model.score(X_test, y_test)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202310,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "At WesternAI, what classification accuracy did Michele's TruthLens model achieve for real-time misinformation detection?",
+    "Back": "93%"
+   }
+  },
+  {
+   "noteId": 1789061202314,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "Overfitting",
+    "Back": "A model fits the training data (including its noise) too closely, resulting in high variance and poor generalization to new, unseen data."
+   }
+  },
+  {
+   "noteId": 1789061202315,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ml"
+   ],
+   "fields": {
+    "Front": "Underfitting",
+    "Back": "A model is too simple to capture the underlying pattern in the data, resulting in high bias and poor performance on both training and test data."
+   }
+  }
+ ]
+}

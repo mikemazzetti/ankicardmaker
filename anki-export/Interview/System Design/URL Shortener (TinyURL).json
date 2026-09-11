@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::URL Shortener (TinyURL)",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203582,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Text": "The two core functional requirements of a URL shortener are: {{c1::generate a unique short URL for a given long URL}} and {{c2::redirect a short URL to its original long URL}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203583,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Text": "Non-functional requirements for a URL shortener include {{c1::high availability}}, {{c2::low latency redirection}}, and {{c3::the short URL should not be easily predictable/guessable}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203584,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Text": "The high-level architecture of a URL shortener typically includes: {{c1::a load balancer}}, {{c2::stateless application servers}}, {{c3::a key-value store for URL mappings}}, and {{c4::a cache layer (e.g. Redis) in front of the database}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203585,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Text": "Key scaling bottlenecks in a URL shortener and their fixes: {{c1::hot-key read traffic}} is fixed by {{c2::a caching layer (e.g. Redis) plus CDN edge caching}}; {{c3::a single ID-generation service becoming a bottleneck}} is fixed by {{c4::pre-allocating ID ranges per server or using a distributed ID generator like Snowflake}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203593,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Should short URLs in a URL shortener system expire?",
+    "Back": "Optionally yes &mdash; support a configurable expiration/TTL per link, after which the short link becomes invalid."
+   }
+  },
+  {
+   "noteId": 1789061203594,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Why must a URL shortener prioritize availability over strong consistency?",
+    "Back": "Redirects are on the critical read path for every click; an outage breaks all shared links, so the system favors AP (availability) in the CAP tradeoff, tolerating brief staleness of newly created links across replicas."
+   }
+  },
+  {
+   "noteId": 1789061203595,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "In a typical URL shortener capacity estimate, if there are 100M new URLs created per month, what is the approximate write QPS?",
+    "Back": "~40 writes/sec (100,000,000 / (30&times;24&times;3600) &asymp; 38.6 &asymp; ~40 QPS)."
+   }
+  },
+  {
+   "noteId": 1789061203596,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "If the read:write ratio for a URL shortener is 100:1 and write QPS is ~40, what is the approximate read QPS?",
+    "Back": "~4,000 QPS (100 &times; 40)."
+   }
+  },
+  {
+   "noteId": 1789061203597,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Estimate storage needed for 100M URLs/month over 5 years if each record is ~500 bytes.",
+    "Back": "100M &times; 12 &times; 5 = 6B records &times; 500 bytes &asymp; 3 TB total."
+   }
+  },
+  {
+   "noteId": 1789061203598,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint to create a short URL, given a long URL and optional custom alias/expiration.",
+    "Back": "<pre><code>POST /api/v1/shorten\nRequest body: { \"longUrl\": \"string\", \"customAlias\": \"string (optional)\", \"expiresAt\": \"datetime (optional)\" }\nResponse: { \"shortUrl\": \"string\" }</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203599,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Write the REST endpoint used to redirect a short URL to its long URL.",
+    "Back": "<pre><code>GET /{shortCode}\nResponse: 301/302 redirect to longUrl</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203600,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Should the redirect endpoint use a 301 or 302 HTTP status, and why does it matter?",
+    "Back": "302 (temporary redirect) is generally preferred &mdash; it keeps every click hitting the server for analytics. 301 (permanent) lets browsers cache the redirect, saving server load but losing per-click analytics."
+   }
+  },
+  {
+   "noteId": 1789061203601,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Write a minimal schema for the <code>urls</code> table in a URL shortener.",
+    "Back": "<pre><code>urls(\n  short_code VARCHAR(7) PRIMARY KEY,\n  long_url   TEXT NOT NULL,\n  user_id    BIGINT,\n  created_at TIMESTAMP,\n  expires_at TIMESTAMP NULL\n)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061203602,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Why is a key-value store (e.g. DynamoDB/Cassandra) often preferred over a relational DB for the URL mapping table?",
+    "Back": "The access pattern is a simple key lookup (short_code &rarr; long_url) at huge read scale with no complex joins/transactions needed, so a KV store scales horizontally more easily and cheaply than a relational DB."
+   }
+  },
+  {
+   "noteId": 1789061203603,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Why add a cache (e.g. Redis) in front of the URL mapping database?",
+    "Back": "Redirect traffic follows a hot-key distribution &mdash; a small percentage of URLs get most of the clicks &mdash; so caching hot mappings drastically cuts database read load and latency."
+   }
+  },
+  {
+   "noteId": 1789061203604,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "What alphabet does base62 encoding use for short URL codes?",
+    "Back": "62 characters: a-z, A-Z, 0-9 (26+26+10)."
+   }
+  },
+  {
+   "noteId": 1789061203605,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "How many unique short codes does a 7-character base62 string provide?",
+    "Back": "62^7 &asymp; 3.5 trillion unique codes."
+   }
+  },
+  {
+   "noteId": 1789061203606,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Describe the counter + base62 approach to generating short URLs.",
+    "Back": "Maintain a globally unique, monotonically increasing counter (e.g. via a distributed ID generator or a DB auto-increment range), then base62-encode the counter value to produce the short code &mdash; this guarantees uniqueness with no collision checking needed."
+   }
+  },
+  {
+   "noteId": 1789061203607,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "What is a drawback of using a simple auto-increment counter for short codes, and how is it mitigated?",
+    "Back": "Sequential codes are predictable/guessable, letting users enumerate all URLs. Mitigate by pre-shuffling the ID space (e.g. a random permutation, or hashing the counter before encoding) so codes appear random while staying unique."
+   }
+  },
+  {
+   "noteId": 1789061203608,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "Describe the alternative hash-based (MD5/SHA + truncate) approach to generating short codes, and its main problem.",
+    "Back": "Hash the long URL (e.g. MD5), base62-encode it, and take the first 7 characters. Problem: truncated hashes can collide, so you must check the DB for an existing code and retry with a salt/suffix on collision."
+   }
+  },
+  {
+   "noteId": 1789061203609,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "How can the database layer be scaled once a single instance can't handle URL mapping read volume?",
+    "Back": "Horizontally shard the key-value store (e.g. by a hash of short_code) and add read replicas, so reads are distributed across many nodes."
+   }
+  },
+  {
+   "noteId": 1789061203610,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-url-shortener"
+   ],
+   "fields": {
+    "Front": "What is the main tradeoff when choosing a 301 (permanent) redirect over a 302 for short links?",
+    "Back": "301 improves performance (browsers cache it, reducing server hits) but sacrifices the ability to track every click for analytics, since cached redirects never reach the server again."
+   }
+  }
+ ]
+}

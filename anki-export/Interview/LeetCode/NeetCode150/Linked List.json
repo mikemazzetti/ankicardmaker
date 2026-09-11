@@ -1,0 +1,204 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::Linked List",
+ "note_count": 11,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038120856,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "math",
+    "recursion"
+   ],
+   "fields": {
+    "title": "Add Two Numbers",
+    "id": "2",
+    "slug": "add-two-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, math, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120890,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Remove Nth Node From End of List",
+    "id": "19",
+    "slug": "remove-nth-node-from-end-of-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120894,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "recursion"
+   ],
+   "fields": {
+    "title": "Merge Two Sorted Lists",
+    "id": "21",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "<font color=\"green\">Easy</font>",
+    "topics": "linked-list, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120898,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "linked-list",
+    "merge-sort"
+   ],
+   "fields": {
+    "title": "Merge k Sorted Lists",
+    "id": "23",
+    "slug": "merge-k-sorted-lists",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "linked-list, divide-and-conquer, heap-priority-queue, merge-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120902,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "linked-list",
+    "recursion"
+   ],
+   "fields": {
+    "title": "Reverse Nodes in k-Group",
+    "id": "25",
+    "slug": "reverse-nodes-in-k-group",
+    "difficulty": "<font color=\"red\">Hard</font>",
+    "topics": "linked-list, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121128,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "linked-list"
+   ],
+   "fields": {
+    "title": "Copy List with Random Pointer",
+    "id": "138",
+    "slug": "copy-list-with-random-pointer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121134,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Linked List Cycle",
+    "id": "141",
+    "slug": "linked-list-cycle",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121138,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "recursion",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reorder List",
+    "id": "143",
+    "slug": "reorder-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121144,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "doubly-linked-list",
+    "hash-table",
+    "linked-list"
+   ],
+   "fields": {
+    "title": "LRU Cache",
+    "id": "146",
+    "slug": "lru-cache",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, linked-list, design, doubly-linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121264,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "recursion"
+   ],
+   "fields": {
+    "title": "Reverse Linked List",
+    "id": "206",
+    "slug": "reverse-linked-list",
+    "difficulty": "<font color=\"green\">Easy</font>",
+    "topics": "linked-list, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121426,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find the Duplicate Number",
+    "id": "287",
+    "slug": "find-the-duplicate-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, bit-manipulation",
+    "paid": "no"
+   }
+  }
+ ]
+}

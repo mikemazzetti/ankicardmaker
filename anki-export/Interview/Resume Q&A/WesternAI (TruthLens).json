@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::Resume Q&A::WesternAI (TruthLens)",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202854,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What is TruthLens?",
+    "Back": "A full-stack NLP platform built at WesternAI to proactively flag deceptive web content in real time."
+   }
+  },
+  {
+   "noteId": 1789061202855,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What was your role and timeframe on the TruthLens project?",
+    "Back": "Machine Learning Developer at WesternAI, Jan–Aug 2026, London, ON."
+   }
+  },
+  {
+   "noteId": 1789061202856,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What accuracy did TruthLens achieve on misinformation classification?",
+    "Back": "93% accuracy in real-time misinformation classification."
+   }
+  },
+  {
+   "noteId": 1789061202857,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "Which base model did you fine-tune for TruthLens's classifier?",
+    "Back": "RoBERTa."
+   }
+  },
+  {
+   "noteId": 1789061202858,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "Why fine-tune RoBERTa instead of training a classifier from scratch?",
+    "Back": "RoBERTa already has strong language representations from large-scale pretraining, so fine-tuning it on the misinformation task needs far less labeled data and compute than training a model from scratch, while still reaching high task-specific accuracy (93%)."
+   }
+  },
+  {
+   "noteId": 1789061202859,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What NLP architecture did TruthLens add beyond the classifier?",
+    "Back": "A Retrieval-Augmented Generation (RAG) architecture."
+   }
+  },
+  {
+   "noteId": 1789061202860,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What does the RAG layer in TruthLens retrieve?",
+    "Back": "Counter-evidence — supporting or refuting source material relevant to a flagged claim."
+   }
+  },
+  {
+   "noteId": 1789061202861,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "Why add a RAG layer instead of relying only on the classifier's label output?",
+    "Back": "The classifier alone only outputs a verdict; RAG retrieves real evidence so the system can show users transparent, sourced reasoning behind a flag instead of an unexplained label."
+   }
+  },
+  {
+   "noteId": 1789061202862,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What tool did you integrate into TruthLens for explainability?",
+    "Back": "SHAP (SHapley Additive exPlanations)."
+   }
+  },
+  {
+   "noteId": 1789061202863,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What does SHAP add to TruthLens?",
+    "Back": "Transparent explainability — it attributes the classifier's decision to specific input features, supporting the RAG counter-evidence with interpretable reasoning."
+   }
+  },
+  {
+   "noteId": 1789061202864,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "Why does explainability (via SHAP) matter specifically for a misinformation-flagging tool?",
+    "Back": "Users are more likely to trust and act on a flag if they can see why content was flagged, rather than accepting an opaque black-box verdict."
+   }
+  },
+  {
+   "noteId": 1789061202865,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "What kind of content does TruthLens analyze?",
+    "Back": "Deceptive web content, classified in real time for misinformation."
+   }
+  },
+  {
+   "noteId": 1789061202866,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "Describe the TruthLens pipeline end to end.",
+    "Back": "Web content is classified in real time by a fine-tuned RoBERTa model; a flag triggers RAG retrieval of counter-evidence, and SHAP explains which input features drove the classification."
+   }
+  },
+  {
+   "noteId": 1789061202867,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "Was TruthLens a front-end-only, back-end-only, or full-stack build?",
+    "Back": "Full-stack — TruthLens is described as a full-stack NLP platform."
+   }
+  },
+  {
+   "noteId": 1789061202868,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Describe the core problem TruthLens solved.",
+    "Back": "Situation/Task: deceptive web content spreads faster than users can evaluate it. Action: fine-tuned RoBERTa for real-time misinformation classification and layered RAG + SHAP for evidence-backed, explainable flags. Result: 93% classification accuracy with transparent counter-evidence, not just a black-box label."
+   }
+  },
+  {
+   "noteId": 1789061202869,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Why is TruthLens more trustworthy than a plain classifier?",
+    "Back": "Action: added a RAG layer to retrieve real counter-evidence and SHAP to expose which features drove each decision. Result: users get an explainable, evidence-backed verdict instead of an opaque 93%-accurate prediction."
+   }
+  },
+  {
+   "noteId": 1789061202870,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: What technical trade-off did you navigate in the RoBERTa fine-tuning?",
+    "Back": "Task: reach high accuracy without the cost of training a language model from scratch. Action: started from pretrained RoBERTa and fine-tuned it on the misinformation classification task. Result: 93% accuracy by leveraging RoBERTa's existing language understanding."
+   }
+  },
+  {
+   "noteId": 1789061202871,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Summarize TruthLens's architecture in one breath for an interview.",
+    "Back": "A full-stack NLP platform: fine-tuned RoBERTa flags deceptive content in real time at 93% accuracy, a RAG layer retrieves counter-evidence, and SHAP explains the decision — so flags are accurate and transparent, not a black box."
+   }
+  },
+  {
+   "noteId": 1789061202872,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Front": "RAG (as used in TruthLens)",
+    "Back": "Retrieval-Augmented Generation — an architecture that retrieves supporting evidence to ground and explain a model's output."
+   }
+  },
+  {
+   "noteId": 1789061202885,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-westernai"
+   ],
+   "fields": {
+    "Text": "TruthLens combines a fine-tuned {{c1::RoBERTa}} classifier, a {{c2::RAG}} architecture for counter-evidence retrieval, and {{c3::SHAP}} for explainability.",
+    "Extra": ""
+   }
+  }
+ ]
+}

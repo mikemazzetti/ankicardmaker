@@ -1,0 +1,218 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::1-D DP",
+ "note_count": 12,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1686038120862,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Palindromic Substring",
+    "id": "5",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120992,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "math",
+    "memoization"
+   ],
+   "fields": {
+    "title": "Climbing Stairs",
+    "id": "70",
+    "slug": "climbing-stairs",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121034,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Decode Ways",
+    "id": "91",
+    "slug": "decode-ways",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121130,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "memoization",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Word Break",
+    "id": "139",
+    "slug": "word-break",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, dynamic-programming, trie, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121156,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Product Subarray",
+    "id": "152",
+    "slug": "maximum-product-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121248,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "House Robber",
+    "id": "198",
+    "slug": "house-robber",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121278,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "House Robber II",
+    "id": "213",
+    "slug": "house-robber-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121452,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Longest Increasing Subsequence",
+    "id": "300",
+    "slug": "longest-increasing-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121496,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Coin Change",
+    "id": "322",
+    "slug": "coin-change",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121684,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Partition Equal Subset Sum",
+    "id": "416",
+    "slug": "partition-equal-subset-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122146,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindromic Substrings",
+    "id": "647",
+    "slug": "palindromic-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122344,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "dynamic-programming"
+   ],
+   "fields": {
+    "title": "Min Cost Climbing Stairs",
+    "id": "746",
+    "slug": "min-cost-climbing-stairs",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  }
+ ]
+}

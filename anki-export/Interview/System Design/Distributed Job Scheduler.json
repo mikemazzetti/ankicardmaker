@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Distributed Job Scheduler",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061204353,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements of a distributed job scheduler?",
+    "Back": "Allow users to schedule jobs to run at a specific time or on a recurring (cron) schedule, execute jobs reliably on worker nodes, and track job status/results."
+   }
+  },
+  {
+   "noteId": 1789061204354,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "Why must a distributed job scheduler assume at-least-once rather than exactly-once execution by default?",
+    "Back": "Because a worker can crash after executing a job but before reporting success, so the scheduler cannot distinguish 'failed' from 'succeeded but unreported' — it must safely retry, risking duplicate execution."
+   }
+  },
+  {
+   "noteId": 1789061204355,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "If a scheduler manages 10M scheduled jobs with an average trigger rate of 1 job/hour each, what is the average job-dispatch QPS?",
+    "Back": "10,000,000 / 3,600 ~ 2,780 jobs/sec average"
+   }
+  },
+  {
+   "noteId": 1789061204356,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What endpoint lets a client check whether a scheduled job's latest run succeeded?",
+    "Back": "<pre><code>GET /v1/jobs/{job_id}/runs/latest</code></pre> returning run status (pending/running/succeeded/failed) and timestamps."
+   }
+  },
+  {
+   "noteId": 1789061204357,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What are the two main tables/entities in a job scheduler's data model?",
+    "Back": "Job (definition: id, cron/schedule, payload, owner) and JobRun (execution record: run_id, job_id, worker_id, status, start/end time)."
+   }
+  },
+  {
+   "noteId": 1789061204358,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "Why use a message queue between the scheduler and workers instead of the scheduler calling workers directly?",
+    "Back": "It decouples job production from consumption, smooths load spikes, allows workers to scale independently, and provides built-in retry/redelivery on worker failure."
+   }
+  },
+  {
+   "noteId": 1789061204359,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What is the tradeoff between a scheduler polling a 'due jobs' table versus using a delay/priority queue?",
+    "Back": "Polling is simple but adds latency (bounded by poll interval) and DB load; a delay queue (e.g., a priority queue keyed by next_run_time) can push due jobs immediately with less wasted work."
+   }
+  },
+  {
+   "noteId": 1789061204360,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "How should job handlers be written to tolerate at-least-once execution safely?",
+    "Back": "As idempotent operations — e.g., using upserts, dedup keys, or checking 'has this been done already' before applying an effect — so re-running the same job produces the same end state."
+   }
+  },
+  {
+   "noteId": 1789061204361,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What retry strategy do distributed job schedulers typically use for failed jobs?",
+    "Back": "Exponential backoff with a maximum retry count (and often jitter), after which the job is moved to a dead-letter queue for manual inspection."
+   }
+  },
+  {
+   "noteId": 1789061204362,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "Why does a distributed job scheduler need leader election among its coordinator nodes?",
+    "Back": "To ensure only one coordinator instance is actively dispatching a given job at a time (preventing duplicate dispatch from multiple active coordinators), while allowing automatic failover if the leader dies."
+   }
+  },
+  {
+   "noteId": 1789061204363,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What problem can occur if a scheduler leader is falsely presumed dead (e.g., due to a network partition) and a new leader is elected?",
+    "Back": "Split-brain: two coordinators both believe they are leader and may double-dispatch the same jobs; mitigated with fencing tokens/leases that invalidate the old leader's actions."
+   }
+  },
+  {
+   "noteId": 1789061204364,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "How do workers typically claim jobs from the queue in a way that avoids two workers running the same job?",
+    "Back": "Workers use atomic 'claim' operations (e.g., a visibility timeout / lease on the queue message) so once one worker picks up a job, it's hidden from others until it either completes or the lease expires."
+   }
+  },
+  {
+   "noteId": 1789061204365,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Front": "What tradeoff exists between scheduling precision and system load in a job scheduler?",
+    "Back": "Checking for due jobs very frequently (e.g., every second) gives tighter timing precision but increases DB/coordination load; longer poll intervals reduce load but delay job dispatch."
+   }
+  },
+  {
+   "noteId": 1789061204377,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "A job scheduler must guarantee jobs run {{c1::at-least-once}} (never silently dropped), be {{c2::horizontally scalable}} to handle millions of scheduled jobs, and tolerate worker/node failures without losing jobs.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204378,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "Scheduling a job typically uses <pre><code>POST /v1/jobs\n{ \"cron\": \"0 * * * *\", \"payload\": {...}, \"idempotency_key\": \"...\" }</code></pre> where {{c1::cron}} defines the recurrence and the response returns a {{c2::job_id}} for tracking.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204379,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "A distributed job scheduler's core components are a {{c1::scheduler/coordinator}} that decides when jobs are due, a {{c2::distributed queue}} that holds ready-to-run jobs, and a pool of {{c3::worker nodes}} that pull from the queue and execute.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204380,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "Rather than scanning all jobs every second, a scalable scheduler stores each job's {{c1::next_run_time}} and uses a {{c2::time-ordered index (e.g., a min-heap or sorted DB index)}} to cheaply find jobs that are due.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204381,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "At-least-once execution means a job may run {{c1::more than once}} (e.g., after a worker crash triggers a retry) — so the scheduler pushes the burden of correctness under duplication onto {{c2::job idempotency}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204382,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "Jobs that exhaust their retry budget are moved to a {{c1::dead-letter queue (DLQ)}} instead of being retried forever, preventing one broken job from consuming worker capacity indefinitely.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204383,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "Leader election is commonly implemented using a coordination service like {{c1::ZooKeeper, etcd, or Consul}}, where nodes compete for a {{c2::distributed lock/lease}} that must be periodically renewed (heartbeat) or it expires and a new leader is elected.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204384,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "As job volume grows, the {{c1::central scheduler/coordinator}} querying 'what's due now' can become a bottleneck; this is mitigated by {{c2::sharding jobs across multiple coordinator instances}} (e.g., by job_id hash or tenant).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204385,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-job-scheduler"
+   ],
+   "fields": {
+    "Text": "Job schedulers persist job definitions and pending runs to durable storage (not just in-memory) so that {{c1::a coordinator crash/restart never silently loses scheduled jobs}}, at the cost of extra write latency per schedule.",
+    "Extra": ""
+   }
+  }
+ ]
+}

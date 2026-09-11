@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::LRU Cache",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061201242,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "What is the functional requirement an LRU Cache design must satisfy?",
+    "Back": "A fixed-capacity key-value store where both <code>get</code> and <code>put</code> run in O(1) time, and when capacity is exceeded, the Least Recently Used entry is evicted."
+   }
+  },
+  {
+   "noteId": 1789061201243,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Why does an efficient LRU Cache combine a HashMap with a doubly linked list instead of using just one of them?",
+    "Back": "The HashMap gives O(1) key lookup but no ordering; the doubly linked list gives O(1) reordering (move-to-front) and O(1) removal-from-middle — the HashMap maps keys directly to their list nodes so both operations stay O(1)."
+   }
+  },
+  {
+   "noteId": 1789061201244,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Why must the linked list be doubly linked rather than singly linked for O(1) LRU operations?",
+    "Back": "Removing an arbitrary node (the one being accessed or evicted) requires updating its neighbor's pointers; without a prev pointer you'd need O(n) traversal to find the predecessor."
+   }
+  },
+  {
+   "noteId": 1789061201245,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "What does each Node in the LRU Cache's linked list store?",
+    "Back": "The key, the value, and prev/next pointers — storing the key (not just the value) lets you evict from the HashMap in O(1) when you evict the tail node."
+   }
+  },
+  {
+   "noteId": 1789061201246,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Where in the doubly linked list do the most-recently-used and least-recently-used entries live, by convention?",
+    "Back": "Most-recently-used is kept at the head; least-recently-used sits at the tail — so eviction removes the tail and every access moves the touched node to the head."
+   }
+  },
+  {
+   "noteId": 1789061201247,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "What are the two sentinel (dummy) nodes commonly used in an LRU Cache implementation, and why?",
+    "Back": "A dummy head and dummy tail — they eliminate null-checks when inserting/removing at the boundaries, since every real node always has a non-null neighbor on each side."
+   }
+  },
+  {
+   "noteId": 1789061201248,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "What steps does <code>get(key)</code> perform in an O(1) LRU Cache?",
+    "Back": "Look up the node in the HashMap (return -1/not-found if absent), detach it from its current position in the list, move it to the head, and return its value."
+   }
+  },
+  {
+   "noteId": 1789061201249,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "What steps does <code>put(key, value)</code> perform when the key already exists?",
+    "Back": "Update the existing node's value, then detach and move it to the head — the same recency update as a get, just with a value overwrite first."
+   }
+  },
+  {
+   "noteId": 1789061201250,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "What steps does <code>put(key, value)</code> perform when the key is new and the cache is at capacity?",
+    "Back": "Evict the tail node (remove it from both the list and the HashMap), then insert a new node for the key at the head and add it to the HashMap."
+   }
+  },
+  {
+   "noteId": 1789061201251,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "How does the HashMap's value type differ between a plain cache and an LRU cache?",
+    "Back": "A plain cache maps key to value directly; an LRU cache maps key to Node (the linked-list node), so the map can both fetch the value and manipulate the node's position in O(1)."
+   }
+  },
+  {
+   "noteId": 1789061201252,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Edge case: what should <code>put</code> do when capacity is 0?",
+    "Back": "Reject the insert immediately (no-op or explicit error) rather than evicting — with zero capacity there is no tail node to evict, so eviction logic must special-case this."
+   }
+  },
+  {
+   "noteId": 1789061201253,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Edge case: calling <code>put</code> on an existing key with a new value — does this count as an eviction-candidate reset?",
+    "Back": "Yes: updating an existing key must still move it to the head (most-recently-used), even though no new slot was consumed — recency is about access, not just insertion."
+   }
+  },
+  {
+   "noteId": 1789061201254,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Edge case: is <code>get</code> alone enough to change eviction order, or does only <code>put</code> affect it?",
+    "Back": "Get alone changes eviction order — reading a key is itself a 'use', so a successful get must also move that node to the head, not just return the value."
+   }
+  },
+  {
+   "noteId": 1789061201255,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Edge case: how would you extend a single-threaded O(1) LRU Cache to be safe under concurrent access?",
+    "Back": "Guard the map and list mutations with a single lock (coarse-grained) around get/put, or use a concurrent map plus a separate synchronized recency structure — naive lock-free reordering of a doubly linked list under concurrent writers is unsafe."
+   }
+  },
+  {
+   "noteId": 1789061201256,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Implement a complete O(1) LRU Cache in Java using a HashMap and a doubly linked list with sentinel nodes.",
+    "Back": "<pre><code>import java.util.HashMap;\nimport java.util.Map;\n\npublic class LRUCache {\n    private class Node {\n        int key, value;\n        Node prev, next;\n        Node(int key, int value) { this.key = key; this.value = value; }\n    }\n\n    private final int capacity;\n    private final Map&lt;Integer, Node&gt; map = new HashMap&lt;&gt;();\n    private final Node head = new Node(0, 0);\n    private final Node tail = new Node(0, 0);\n\n    public LRUCache(int capacity) {\n        this.capacity = capacity;\n        head.next = tail;\n        tail.prev = head;\n    }\n\n    private void remove(Node node) {\n        node.prev.next = node.next;\n        node.next.prev = node.prev;\n    }\n\n    private void insertAtHead(Node node) {\n        node.next = head.next;\n        node.prev = head;\n        head.next.prev = node;\n        head.next = node;\n    }\n\n    public int get(int key) {\n        if (!map.containsKey(key)) return -1;\n        Node node = map.get(key);\n        remove(node);\n        insertAtHead(node);\n        return node.value;\n    }\n\n    public void put(int key, int value) {\n        if (map.containsKey(key)) {\n            remove(map.get(key));\n        }\n        Node node = new Node(key, value);\n        map.put(key, node);\n        insertAtHead(node);\n        if (map.size() &gt; capacity) {\n            Node lru = tail.prev;\n            remove(lru);\n            map.remove(lru.key);\n        }\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201257,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Implement a complete O(1) LRU Cache in Python using a dict and a doubly linked list with sentinel nodes.",
+    "Back": "<pre><code>class Node:\n    def __init__(self, key=0, value=0):\n        self.key = key\n        self.value = value\n        self.prev = None\n        self.next = None\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.map = {}\n        self.head = Node()\n        self.tail = Node()\n        self.head.next = self.tail\n        self.tail.prev = self.head\n\n    def _remove(self, node):\n        node.prev.next = node.next\n        node.next.prev = node.prev\n\n    def _insert_at_head(self, node):\n        node.next = self.head.next\n        node.prev = self.head\n        self.head.next.prev = node\n        self.head.next = node\n\n    def get(self, key: int) -&gt; int:\n        if key not in self.map:\n            return -1\n        node = self.map[key]\n        self._remove(node)\n        self._insert_at_head(node)\n        return node.value\n\n    def put(self, key: int, value: int) -&gt; None:\n        if key in self.map:\n            self._remove(self.map[key])\n        node = Node(key, value)\n        self.map[key] = node\n        self._insert_at_head(node)\n        if len(self.map) &gt; self.capacity:\n            lru = self.tail.prev\n            self._remove(lru)\n            del self.map[lru.key]\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201258,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Implement an O(1) LRU Cache in Java using <code>LinkedHashMap</code>'s built-in access-order mode instead of a hand-rolled linked list.",
+    "Back": "<pre><code>import java.util.LinkedHashMap;\nimport java.util.Map;\n\npublic class LRUCache extends LinkedHashMap&lt;Integer, Integer&gt; {\n    private final int capacity;\n\n    public LRUCache(int capacity) {\n        super(capacity, 0.75f, true);\n        this.capacity = capacity;\n    }\n\n    public int get(int key) {\n        return super.getOrDefault(key, -1);\n    }\n\n    public void put(int key, int value) {\n        super.put(key, value);\n    }\n\n    @Override\n    protected boolean removeEldestEntry(Map.Entry&lt;Integer, Integer&gt; eldest) {\n        return size() &gt; capacity;\n    }\n}\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201259,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "Implement an O(1) LRU Cache in Python using <code>collections.OrderedDict</code> instead of a hand-rolled linked list.",
+    "Back": "<pre><code>from collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = OrderedDict()\n\n    def get(self, key: int) -&gt; int:\n        if key not in self.cache:\n            return -1\n        self.cache.move_to_end(key)\n        return self.cache[key]\n\n    def put(self, key: int, value: int) -&gt; None:\n        if key in self.cache:\n            self.cache.move_to_end(key)\n        self.cache[key] = value\n        if len(self.cache) &gt; self.capacity:\n            self.cache.popitem(last=False)\n</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061201260,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Text": "In an LRU Cache backed by a HashMap and doubly linked list, get and put both run in {{c1::O(1)}} time, and the cache evicts the {{c2::least recently used}} entry when it exceeds capacity.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061201289,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "ood-lru-cache"
+   ],
+   "fields": {
+    "Front": "LRU (Least Recently Used) eviction policy",
+    "Back": "A cache-replacement policy that discards the entry that hasn't been accessed for the longest time when the cache is full, on the assumption that recently used items are more likely to be reused soon."
+   }
+  }
+ ]
+}

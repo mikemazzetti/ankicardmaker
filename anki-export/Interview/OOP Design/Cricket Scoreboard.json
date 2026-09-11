@@ -1,0 +1,247 @@
+{
+ "deck": "Interview::OOP Design::Cricket Scoreboard",
+ "note_count": 20,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202225,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements to clarify for a Cricket Scoreboard OOD interview?",
+    "Back": "1) Track runs, wickets, and overs bowled per innings, live, ball by ball. 2) Record how a batsman got out (dismissal type). 3) Handle extras (wide, no-ball, bye, leg-bye) correctly. 4) Rotate strike between batsmen. 5) Progress the match through innings and end states (completed/abandoned) and expose live updates to a display."
+   }
+  },
+  {
+   "noteId": 1789061202226,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What should you explicitly mark out of scope when designing a Cricket Scoreboard in an interview?",
+    "Back": "Duckworth&ndash;Lewis-style rain-adjusted target calculation, full tournament/league standings, and video-referral (DRS) workflow &mdash; model the match/innings/ball state machine and scoring rules, not these extensions."
+   }
+  },
+  {
+   "noteId": 1789061202227,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Match</code> class?",
+    "Back": "Owns the two (or four, for Tests) <code>Innings</code> in order, the two competing <code>Team</code>s, and the overall <code>MatchState</code>; delegates each incoming <code>Ball</code> to the current innings via its state object and decides when to move to the next innings or end the match."
+   }
+  },
+  {
+   "noteId": 1789061202228,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Innings</code> class?",
+    "Back": "Tracks the batting/bowling team, total runs, wickets fallen, overs bowled (as a list of <code>Over</code>, each a list of <code>Ball</code>s), and which two batsmen are currently at the crease (striker/non-striker); applies each ball's effect via <code>applyBall()</code> and reports <code>isComplete()</code>."
+   }
+  },
+  {
+   "noteId": 1789061202229,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Scoreboard</code> class?",
+    "Back": "Acts purely as a publisher: it holds no scoring logic itself, just a list of observers (live display, mobile push, commentary feed) that it notifies whenever a ball is bowled or the match state changes."
+   }
+  },
+  {
+   "noteId": 1789061202230,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "How does <code>Match</code> relate to <code>Innings</code>?",
+    "Back": "Composition with strict sequencing: a <code>Match</code> owns an ordered list of <code>Innings</code> objects and only one is ever \"current\" at a time; an innings only starts once the previous one is marked complete."
+   }
+  },
+  {
+   "noteId": 1789061202231,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits the match/innings lifecycle, and why?",
+    "Back": "<b>State</b>. States like NotStarted, InProgress, InningsBreak, Completed, and Abandoned each know which ball-handling/transition behavior is legal; <code>Match.recordBall()</code> delegates to <code>state.recordBall(match, ball)</code>, so e.g. balls arriving during an innings break are simply invalid for that state rather than needing ad hoc guard checks scattered around."
+   }
+  },
+  {
+   "noteId": 1789061202232,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits pushing live score updates to displays/apps, and why?",
+    "Back": "<b>Observer</b>. <code>Scoreboard</code> (the subject) notifies every registered listener &mdash; a stadium display, a mobile app, a commentary system &mdash; on each ball, so new consumers of live score data can be added without touching the scoring logic."
+   }
+  },
+  {
+   "noteId": 1789061202233,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What is the shape of <code>Match.recordBall()</code>'s API and what does it return/update?",
+    "Back": "<code>recordBall(Ball ball)</code> delegates to <code>currentState.recordBall(this, ball)</code>, which applies the ball to the current innings, decides whether the innings/match has ended, and returns the new <code>MatchState</code> to assign &mdash; keeping all transition logic out of <code>Match</code> itself."
+   }
+  },
+  {
+   "noteId": 1789061202234,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "What does <code>Innings.isComplete()</code> check?",
+    "Back": "Whether all ten wickets have fallen (<code>wickets &gt;= 10</code>) or the maximum overs for the format have been bowled (<code>overs.size() &gt;= maxOvers</code>) &mdash; either condition alone ends the innings."
+   }
+  },
+  {
+   "noteId": 1789061202235,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "Edge case: how do WIDE and NO_BALL extras affect scoring differently from a normal run?",
+    "Back": "Both add at least 1 extra run to the team total that is credited to neither batsman's individual tally, and the ball does not count toward the 6-ball over. A NO_BALL additionally grants the batting side a \"free hit\" on the next legal delivery, during which the batsman cannot be dismissed except by run-out."
+   }
+  },
+  {
+   "noteId": 1789061202236,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "Edge case: when does strike rotate between the striker and non-striker batsman?",
+    "Back": "After any ball where the batsmen complete an odd number of runs (1 or 3), and automatically at the end of every completed over (6 legal balls) &mdash; unless that same last ball of the over was also an odd-run ball, in which case the two swaps cancel out (no net rotation)."
+   }
+  },
+  {
+   "noteId": 1789061202237,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "Edge case: a match is interrupted by rain partway through an innings. How should the state machine represent this, and what should it explicitly avoid doing?",
+    "Back": "Introduce a distinct <code>ABANDONED</code>/<code>INTERRUPTED</code> state separate from <code>COMPLETED</code>, so downstream consumers (results, stats) can tell a rain-shortened match apart from a normally finished one. It should NOT attempt to compute a revised target itself &mdash; Duckworth&ndash;Lewis-style recalculation is explicitly out of scope and left to a separate pluggable component."
+   }
+  },
+  {
+   "noteId": 1789061202238,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "(Java) Implement the <code>MatchState</code> interface and an <code>InProgressState</code> that handles a ball and detects innings completion.",
+    "Back": "<pre><code>public interface MatchState {\n    MatchState recordBall(Match match, Ball ball);\n}\n\npublic class InProgressState implements MatchState {\n    @Override\n    public MatchState recordBall(Match match, Ball ball) {\n        match.getCurrentInnings().applyBall(ball);\n        if (match.getCurrentInnings().isComplete()) {\n            return match.hasSecondInningsRemaining()\n                ? new InningsBreakState()\n                : new CompletedState();\n        }\n        return this;\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202239,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "(Python) Implement an Observer-pattern <code>Scoreboard</code> subject and a <code>LiveScoreDisplay</code> listener.",
+    "Back": "<pre><code>class Scoreboard:\n    def __init__(self):\n        self._observers = []\n\n    def attach(self, observer):\n        self._observers.append(observer)\n\n    def notify_ball(self, ball, innings):\n        for observer in self._observers:\n            observer.on_ball_bowled(ball, innings)\n\n\nclass LiveScoreDisplay:\n    def on_ball_bowled(self, ball, innings):\n        print(f\"{innings.team.name}: {innings.total_runs}/{innings.wickets} \"\n              f\"({innings.overs_bowled} ov) - {ball.outcome}\")</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202240,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "(Java) Implement <code>Innings.applyBall()</code> and <code>isComplete()</code>, handling wides/no-balls and wickets.",
+    "Back": "<pre><code>public class Innings {\n    private int totalRuns = 0;\n    private int wickets = 0;\n    private List&lt;Over&gt; overs = new ArrayList&lt;&gt;();\n\n    public void applyBall(Ball ball) {\n        totalRuns += ball.getRuns();\n        if (ball.getExtraType() == ExtraType.WIDE || ball.getExtraType() == ExtraType.NO_BALL) {\n            totalRuns += 1;\n        }\n        if (ball.isWicket()) {\n            wickets++;\n        }\n        getCurrentOver().addBall(ball);\n    }\n\n    public boolean isComplete() {\n        return wickets &gt;= 10 || overs.size() &gt;= maxOvers();\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202241,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Front": "(Python) Implement strike rotation on <code>Innings</code> for odd runs and end-of-over.",
+    "Back": "<pre><code>class Innings:\n    def __init__(self, batting_team, max_overs):\n        self.striker, self.non_striker = batting_team.opening_pair()\n        self.max_overs = max_overs\n\n    def apply_ball(self, ball):\n        if ball.runs % 2 == 1:\n            self._swap_strike()\n        if ball.is_last_of_over and not ball.is_wicket:\n            self._swap_strike()\n\n    def _swap_strike(self):\n        self.striker, self.non_striker = self.non_striker, self.striker</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061202245,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Text": "The core classes in a Cricket Scoreboard design are {{c1::Match}}, {{c2::Innings}}, {{c3::Team}}, {{c4::Player}}, {{c5::Ball}} (a single delivery), and {{c6::Scoreboard}} (the live display/publisher).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202246,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Text": "The <code>DismissalType</code> enum includes {{c1::BOWLED}}, {{c2::CAUGHT}}, {{c3::LBW}}, {{c4::RUN_OUT}}, {{c5::STUMPED}}, and {{c6::HIT_WICKET}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061202247,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "ood-cricket-scoreboard"
+   ],
+   "fields": {
+    "Text": "The <code>ExtraType</code> enum for a delivery includes {{c1::WIDE}}, {{c2::NO_BALL}}, {{c3::BYE}}, and {{c4::LEG_BYE}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Ticketmaster Booking",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061204214,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What are the core functional requirements of a Ticketmaster-like booking system?",
+    "Back": "Browse events/venues, view real-time seat availability, reserve/hold seats temporarily, and complete payment to confirm a booking."
+   }
+  },
+  {
+   "noteId": 1789061204215,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "For a popular on-sale event with 1M users trying to book 50,000 seats in the first minute, what does this imply about system design?",
+    "Back": "A massive, short-lived traffic spike (thundering herd) requiring queuing/rate-limiting in front of the booking service, since only 5% of users can succeed."
+   }
+  },
+  {
+   "noteId": 1789061204216,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "If checkout takes an average of 3 minutes and a venue has 20,000 seats, how many holds could be active concurrently in the worst case?",
+    "Back": "Up to 20,000 concurrent holds — the system must be able to track that many temporary reservations at once."
+   }
+  },
+  {
+   "noteId": 1789061204217,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What are the key sequential API calls a client makes to book a seat?",
+    "Back": "GET /events/{id}/seats (view availability) → POST /reservations (hold a seat) → POST /payments (pay), after which the hold is converted to a confirmed booking."
+   }
+  },
+  {
+   "noteId": 1789061204218,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "Why does POST /reservations return a reservation_id and expiry time rather than immediately confirming the booking?",
+    "Back": "The seat is only temporarily held pending payment; the client needs the hold's ID and expiry to complete checkout within the time window."
+   }
+  },
+  {
+   "noteId": 1789061204219,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What states can a seat be in within the booking system's data model?",
+    "Back": "Available, held (reserved), and booked (sold/confirmed)."
+   }
+  },
+  {
+   "noteId": 1789061204220,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What fields does a seat 'hold' record need beyond seat ID and state?",
+    "Back": "The user/session ID holding it, and an expiry timestamp for when the hold auto-releases."
+   }
+  },
+  {
+   "noteId": 1789061204221,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What race condition must a booking system prevent when two users click the same seat simultaneously?",
+    "Back": "Double-booking — both requests reading 'available' before either write completes, so both proceed to reserve the same seat."
+   }
+  },
+  {
+   "noteId": 1789061204222,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What database technique lets only one of two simultaneous requests for the same seat succeed, using a conditional update?",
+    "Back": "Optimistic concurrency control — a conditional UPDATE that only affects a row if it's still available; the loser gets zero rows updated and retries or fails.<pre><code>UPDATE seats\nSET state = 'held', held_by = ?, expires_at = ?\nWHERE seat_id = ? AND state = 'available';</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061204223,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What's the alternative pessimistic approach to prevent double-booking, and its downside?",
+    "Back": "Acquire a distributed lock (e.g. via Redis SETNX or a DB row lock) on the seat before reserving; simpler to reason about, but creates contention/latency and risks deadlocks or stuck locks if a client crashes mid-hold."
+   }
+  },
+  {
+   "noteId": 1789061204224,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "Why is a distributed lock (e.g. Redis-based) typically given a short TTL when used for seat holds?",
+    "Back": "So that if the holding client crashes or never completes checkout, the lock/hold automatically expires instead of permanently blocking the seat."
+   }
+  },
+  {
+   "noteId": 1789061204225,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What mechanism actually releases an expired hold back to 'available' at scale, without polling every seat?",
+    "Back": "A TTL-based expiry (e.g. Redis key expiration) or a delayed job/message scheduled at hold-creation time that flips the seat state back when it fires."
+   }
+  },
+  {
+   "noteId": 1789061204226,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "Why is eventual consistency generally unacceptable for seat inventory state, unlike many other system-design domains?",
+    "Back": "Selling the same physical seat to two people is a direct, visible business/customer failure, so seat state needs strong (linearizable) consistency, at least within a venue/event."
+   }
+  },
+  {
+   "noteId": 1789061204227,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "How can seat-level locking be scaled without a single giant lock table becoming a bottleneck?",
+    "Back": "Shard the lock/inventory store by event/venue (and possibly by section), so contention is isolated per hot event rather than global."
+   }
+  },
+  {
+   "noteId": 1789061204228,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "Why must payment confirmation, not the initial hold, be the trigger that finalizes a booking?",
+    "Back": "The hold only reserves the seat provisionally; the booking should only become permanent once payment actually succeeds, avoiding charging for seats not actually secured."
+   }
+  },
+  {
+   "noteId": 1789061204229,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What's the primary bottleneck during a flash on-sale for a single popular event?",
+    "Back": "Extreme write contention on a small set of hot rows (that event's seats/inventory counters), far exceeding the normal per-second traffic the database can handle."
+   }
+  },
+  {
+   "noteId": 1789061204230,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What's a common mitigation for the thundering-herd problem at ticket on-sale time?",
+    "Back": "A virtual waiting room / queue in front of the booking service that admits users at a controlled rate, smoothing the spike."
+   }
+  },
+  {
+   "noteId": 1789061204231,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What's the tradeoff of a longer seat-hold timer (e.g. 15 min) vs a shorter one (e.g. 3 min)?",
+    "Back": "Longer holds give users more comfortable checkout time but reduce seat availability/throughput during high demand; shorter holds free seats faster but risk more checkout failures and abandoned carts."
+   }
+  },
+  {
+   "noteId": 1789061204232,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "What's the tradeoff of pessimistic locking vs optimistic concurrency control for seat reservation?",
+    "Back": "Pessimistic locking gives simpler correctness guarantees but can hurt throughput under contention and risks stuck locks; optimistic control scales better under low contention but requires retry logic and can waste work on conflicts."
+   }
+  },
+  {
+   "noteId": 1789061204233,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Text": "Key non-functional requirements: {{c1::strong consistency for seat state}} (no double-booking), {{c2::high availability}} during on-sale spikes, and {{c3::low latency}} seat-map reads.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204234,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Text": "Core components: a {{c1::seat inventory/availability service}} (source of truth on seat state), a {{c2::reservation/booking service}} (manages holds), a {{c3::payment service}}, and a {{c4::queue/rate-limiter}} in front to throttle traffic during on-sales.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204243,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-ticketmaster"
+   ],
+   "fields": {
+    "Front": "Hold timer (seat reservation)",
+    "Back": "A time window (e.g. 5-10 minutes) during which a seat is reserved for one user to complete payment, before it is automatically released back to available."
+   }
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "deck": "Interview::OOP Design::Vending Machine",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200540,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What scope questions should you clarify before designing a Vending Machine System?",
+    "Back": "What products/inventory does it stock? What payment types are accepted (cash, card, mobile)? Does it dispense change? Are there multiple slots per product and a restocking flow?"
+   }
+  },
+  {
+   "noteId": 1789061200541,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What is the primary functional requirement of a Vending Machine design?",
+    "Back": "Let a user select a product, accept payment, verify sufficient inventory and funds, dispense the product, and return change if applicable."
+   }
+  },
+  {
+   "noteId": 1789061200542,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>VendingMachine</code> class?",
+    "Back": "Top-level coordinator holding the current state, inventory, and balance; delegates behavior for each user action to the active state object."
+   }
+  },
+  {
+   "noteId": 1789061200543,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Inventory</code> class?",
+    "Back": "Tracks product slots, quantities, and prices; checks stock availability and decrements it when a product is dispensed."
+   }
+  },
+  {
+   "noteId": 1789061200544,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Product</code> class?",
+    "Back": "Represents an item for sale — holds its id/name and price."
+   }
+  },
+  {
+   "noteId": 1789061200545,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of a <code>PaymentHandler</code> class?",
+    "Back": "Accepts inserted money, tracks the running balance, computes change owed, and validates that sufficient payment has been made."
+   }
+  },
+  {
+   "noteId": 1789061200546,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What enum represents the vending machine's operating states?",
+    "Back": "<code>State { IDLE, HAS_MONEY, DISPENSING, SOLD_OUT }</code>"
+   }
+  },
+  {
+   "noteId": 1789061200547,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What enum represents accepted coin denominations?",
+    "Back": "<code>Coin { NICKEL, DIME, QUARTER, DOLLAR }</code>"
+   }
+  },
+  {
+   "noteId": 1789061200548,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Is the relationship between <code>VendingMachine</code> and <code>Inventory</code> composition or aggregation, and why?",
+    "Back": "Composition — the inventory has no meaning or lifecycle outside its owning machine."
+   }
+  },
+  {
+   "noteId": 1789061200549,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Which design pattern is the natural fit for a Vending Machine's core behavior, and why?",
+    "Back": "State — the machine's response to insert-coin/select-product/dispense actions differs entirely by its current mode (Idle, HasMoney, Dispensing, SoldOut), so each mode implements a common interface instead of branching on a status flag everywhere."
+   }
+  },
+  {
+   "noteId": 1789061200550,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "In the State pattern implementation of a Vending Machine, what does each concrete state class implement?",
+    "Back": "A common <code>VendingState</code> interface (e.g. <code>insertCoin()</code>, <code>selectProduct()</code>, <code>dispense()</code>, <code>refund()</code>) — each state defines only the behavior valid for that mode and transitions the machine to the next state."
+   }
+  },
+  {
+   "noteId": 1789061200551,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "What are the main public methods on the <code>VendingMachine</code> API?",
+    "Back": "<code>insertCoin(coin)</code>, <code>selectProduct(code)</code>, <code>dispense()</code>, and <code>refund()</code>."
+   }
+  },
+  {
+   "noteId": 1789061200552,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: a user inserts more money than the product costs — what must <code>dispense()</code> handle?",
+    "Back": "Compute and return correct change using available coin denominations, and fail gracefully (return the money, don't dispense) if exact change can't be made."
+   }
+  },
+  {
+   "noteId": 1789061200553,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: the selected product's specific slot is empty even though other slots still have stock — what should happen?",
+    "Back": "Track stock per slot (not just \"has any product\"), and on a sold-out slot refund the inserted money for that selection or prompt the user to reselect."
+   }
+  },
+  {
+   "noteId": 1789061200554,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: <code>dispense()</code> is called but the hardware fails to physically release the product — what should happen?",
+    "Back": "Don't deduct inventory or keep the payment until physical dispense is confirmed; on failure, refund the balance and flag the machine for maintenance/restock."
+   }
+  },
+  {
+   "noteId": 1789061200555,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Code a <code>VendingState</code> interface and an <code>IdleState</code> implementation in Java that transitions to <code>HasMoneyState</code> on <code>insertCoin</code>.",
+    "Back": "<pre><code>public interface VendingState {\n    void insertCoin(VendingMachine machine, Coin coin);\n    void selectProduct(VendingMachine machine, String code);\n    void dispense(VendingMachine machine);\n}\n\npublic class IdleState implements VendingState {\n    @Override\n    public void insertCoin(VendingMachine machine, Coin coin) {\n        machine.addBalance(coin.getValue());\n        machine.setState(new HasMoneyState());\n    }\n\n    @Override\n    public void selectProduct(VendingMachine machine, String code) {\n        System.out.println(\"Insert coins before selecting a product.\");\n    }\n\n    @Override\n    public void dispense(VendingMachine machine) {\n        System.out.println(\"Nothing to dispense.\");\n    }\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200556,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Code an <code>Inventory</code> class in Python storing product code to (product, quantity), with a method to dispense that checks and decrements stock.",
+    "Back": "<pre><code>class Inventory:\n    def __init__(self):\n        self.slots = {}  # code -&gt; (Product, quantity)\n\n    def add_stock(self, code, product, quantity):\n        self.slots[code] = (product, quantity)\n\n    def is_available(self, code):\n        return code in self.slots and self.slots[code][1] &gt; 0\n\n    def dispense(self, code):\n        if not self.is_available(code):\n            raise ValueError(\"Product unavailable\")\n        product, quantity = self.slots[code]\n        self.slots[code] = (product, quantity - 1)\n        return product</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200557,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-vending-machine"
+   ],
+   "fields": {
+    "Front": "Code a <code>VendingMachine.selectProduct</code> method in Java that checks inventory and sufficient balance before transitioning to a dispensing state.",
+    "Back": "<pre><code>public void selectProduct(String code) {\n    Product product = inventory.getProduct(code);\n    if (product == null || !inventory.isAvailable(code)) {\n        System.out.println(\"Product unavailable.\");\n        return;\n    }\n    if (balance &lt; product.getPrice()) {\n        System.out.println(\"Insufficient funds.\");\n        return;\n    }\n    this.selectedProduct = product;\n    setState(new DispensingState());\n}</code></pre>"
+   }
+  }
+ ]
+}

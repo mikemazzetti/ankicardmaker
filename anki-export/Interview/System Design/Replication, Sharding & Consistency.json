@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Replication, Sharding & Consistency",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061203471,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is leader-follower (single-leader) replication?",
+    "Back": "One node (the leader) accepts all writes and propagates them to follower nodes, which serve reads."
+   }
+  },
+  {
+   "noteId": 1789061203472,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is multi-leader replication?",
+    "Back": "Multiple nodes each accept writes independently and replicate changes to one another, requiring conflict resolution."
+   }
+  },
+  {
+   "noteId": 1789061203473,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is the main risk introduced by multi-leader replication?",
+    "Back": "Write conflicts — the same data can be modified concurrently on different leaders and must be reconciled."
+   }
+  },
+  {
+   "noteId": 1789061203474,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "Why might a system use asynchronous replication despite the risk of data loss?",
+    "Back": "It gives lower write latency and higher availability, since the leader doesn't block on slow or unreachable followers."
+   }
+  },
+  {
+   "noteId": 1789061203475,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is range-based sharding/partitioning?",
+    "Back": "Partitioning data by contiguous ranges of the key (e.g. A-M, N-Z), which supports efficient range queries but risks hotspots."
+   }
+  },
+  {
+   "noteId": 1789061203476,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is hash-based sharding/partitioning?",
+    "Back": "Partitioning data by hashing the key and assigning it to a shard, spreading load evenly but losing ordered range-query locality."
+   }
+  },
+  {
+   "noteId": 1789061203477,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What problem does consistent hashing solve?",
+    "Back": "It minimizes the number of keys that must be remapped when a node is added or removed, unlike simple modulo-based hashing."
+   }
+  },
+  {
+   "noteId": 1789061203478,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is a hotspot in a sharded/partitioned system?",
+    "Back": "A single shard or key that receives disproportionately high traffic, becoming a bottleneck while other shards sit idle."
+   }
+  },
+  {
+   "noteId": 1789061203479,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "How can you mitigate a hotspot caused by one very popular key?",
+    "Back": "Add randomness/salting to the key to spread its writes or reads across multiple shards, or cache it separately."
+   }
+  },
+  {
+   "noteId": 1789061203480,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "In a CAP 'CP' tradeoff, what does the system favor, with an example?",
+    "Back": "It favors consistency over availability during a partition — it rejects or blocks requests rather than return stale data (e.g. typical ZooKeeper/HBase configurations)."
+   }
+  },
+  {
+   "noteId": 1789061203481,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "In a CAP 'AP' tradeoff, what does the system favor, with an example?",
+    "Back": "It favors availability over consistency during a partition — it keeps responding but may return stale data (e.g. Cassandra, DynamoDB by default)."
+   }
+  },
+  {
+   "noteId": 1789061203482,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What does PACELC add to the CAP theorem?",
+    "Back": "It notes that even without a Partition, you still face an Else tradeoff between Latency and Consistency — CAP only describes behavior during partitions."
+   }
+  },
+  {
+   "noteId": 1789061203483,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "In quorum-based replication, what does the condition <code>W + R &gt; N</code> guarantee?",
+    "Back": "That every read quorum overlaps with every write quorum, so at least one node in a read has the latest write — guaranteeing read-your-writes consistency."
+   }
+  },
+  {
+   "noteId": 1789061203484,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "In quorum notation, what do N, W, and R represent?",
+    "Back": "N = total number of replicas, W = replicas that must acknowledge a write, R = replicas that must respond to a read."
+   }
+  },
+  {
+   "noteId": 1789061203485,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is read-repair in a quorum-based system?",
+    "Back": "When a read detects that some replicas returned stale data, it triggers a background write to update those replicas to the latest value."
+   }
+  },
+  {
+   "noteId": 1789061203486,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is leader election, and why is it needed?",
+    "Back": "The process by which distributed nodes agree on a new leader (e.g. via Raft or Paxos) after the current leader fails, so writes can continue."
+   }
+  },
+  {
+   "noteId": 1789061203487,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "What is split-brain in a distributed system?",
+    "Back": "A failure scenario where a network partition causes two nodes to each believe they are the leader, leading to conflicting writes."
+   }
+  },
+  {
+   "noteId": 1789061203488,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Text": "In {{c1::synchronous}} replication the leader waits for followers to confirm before acknowledging a write (safer, slower); in {{c2::asynchronous}} replication the leader acknowledges immediately without waiting (faster, risks data loss on leader failure).",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203489,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Text": "The CAP theorem states a distributed system can only guarantee two of three properties during a network partition: {{c1::Consistency}}, {{c2::Availability}}, and {{c3::Partition tolerance}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203490,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Text": "PACELC: if there is a {{c1::Partition}}, trade off {{c2::Availability}} vs {{c3::Consistency}}; {{c4::Else}} (normal operation), trade off {{c5::Latency}} vs Consistency.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061203493,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "Strong consistency",
+    "Back": "Every read reflects the most recent write; all clients see the same data at the same time."
+   }
+  },
+  {
+   "noteId": 1789061203494,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "sd-consistency"
+   ],
+   "fields": {
+    "Front": "Eventual consistency",
+    "Back": "Replicas may temporarily diverge after a write, but will converge to the same value once no new writes occur."
+   }
+  }
+ ]
+}

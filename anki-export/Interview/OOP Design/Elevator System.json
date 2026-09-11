@@ -1,0 +1,223 @@
+{
+ "deck": "Interview::OOP Design::Elevator System",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061200504,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What scope questions should you clarify before designing an Elevator System?",
+    "Back": "How many elevators and floors? A single bank or multiple? What dispatch/scheduling behavior is expected (nearest car, SCAN)? Capacity limits per car? Are requests external (hall calls) and/or internal (floor selection)?"
+   }
+  },
+  {
+   "noteId": 1789061200505,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What is the primary functional requirement of an Elevator System design?",
+    "Back": "Accept up/down pickup requests from floors and destination requests from inside a car, then dispatch/move the optimal elevator to serve each request efficiently."
+   }
+  },
+  {
+   "noteId": 1789061200506,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>ElevatorController</code> class?",
+    "Back": "Manages all elevator cars in the system, receives external and internal requests, and dispatches the best car to serve each request."
+   }
+  },
+  {
+   "noteId": 1789061200507,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of the <code>Elevator</code> (car) class?",
+    "Back": "Tracks its own current floor, direction, and state (idle/moving); maintains its internal destination queue and moves toward requested floors."
+   }
+  },
+  {
+   "noteId": 1789061200508,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What is the responsibility of a <code>Request</code> (hall call) class?",
+    "Back": "Represents a single pickup request — a floor plus a desired direction — waiting to be served by an assigned elevator."
+   }
+  },
+  {
+   "noteId": 1789061200509,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What enum represents an elevator's direction of travel in this design?",
+    "Back": "<code>Direction { UP, DOWN, IDLE }</code>"
+   }
+  },
+  {
+   "noteId": 1789061200510,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What enum represents an elevator car's operational status?",
+    "Back": "<code>ElevatorStatus { IDLE, MOVING, DOORS_OPEN, MAINTENANCE }</code>"
+   }
+  },
+  {
+   "noteId": 1789061200511,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Is the relationship between <code>ElevatorController</code> and <code>Elevator</code> composition or aggregation, and why?",
+    "Back": "Composition — the controller owns and manages the full lifecycle of its elevator cars; they don't exist independently of the system."
+   }
+  },
+  {
+   "noteId": 1789061200512,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "How should different dispatch algorithms (nearest-car, SCAN/look) be represented in the class design?",
+    "Back": "As interchangeable implementations of a common <code>SchedulingStrategy</code> interface, injected into <code>ElevatorController</code> rather than hardcoded."
+   }
+  },
+  {
+   "noteId": 1789061200513,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits swapping the elevator dispatch/scheduling algorithm, and why?",
+    "Back": "Strategy — each algorithm (nearest-car, SCAN) implements a common interface, so the controller can select or switch policy without changing its own code."
+   }
+  },
+  {
+   "noteId": 1789061200514,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Which design pattern fits an elevator car behaving differently depending on whether it's Idle, Moving, or in Maintenance, and why?",
+    "Back": "State — encapsulate each mode's behavior in its own class, avoiding large conditionals scattered across <code>Elevator</code>'s methods."
+   }
+  },
+  {
+   "noteId": 1789061200515,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What are the two main entry-point APIs on <code>ElevatorController</code>?",
+    "Back": "<code>requestElevator(floor, direction)</code> for an external hall call, and <code>selectFloor(elevatorId, floor)</code> for an internal destination request."
+   }
+  },
+  {
+   "noteId": 1789061200516,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "What should <code>Elevator.step()</code> do on each tick of the simulation?",
+    "Back": "Move one floor toward its next destination, update its current floor and direction, and open its doors if it has arrived at a requested stop."
+   }
+  },
+  {
+   "noteId": 1789061200517,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: two hall calls request opposite directions from the same floor at the same time — how should this be handled?",
+    "Back": "Treat them as two independent hall calls; the dispatcher assigns cars based on each car's current direction and position — an up-call should not be served by a car already moving down past that floor."
+   }
+  },
+  {
+   "noteId": 1789061200518,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Tricky edge case: the nearest elevator to a hall call is already at full capacity — what should the dispatcher do?",
+    "Back": "Exclude full cars from dispatch consideration (or have the car skip the stop) and assign/queue the request to the next available car instead."
+   }
+  },
+  {
+   "noteId": 1789061200519,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Code an <code>Elevator</code> class in Python with <code>current_floor</code>, <code>direction</code>, and a method to add a destination and move one step.",
+    "Back": "<pre><code>class Elevator:\n    def __init__(self, id, current_floor=1):\n        self.id = id\n        self.current_floor = current_floor\n        self.direction = \"IDLE\"\n        self.destinations = set()\n\n    def add_destination(self, floor):\n        self.destinations.add(floor)\n        if floor &gt; self.current_floor:\n            self.direction = \"UP\"\n        elif floor &lt; self.current_floor:\n            self.direction = \"DOWN\"\n\n    def step(self):\n        if not self.destinations:\n            self.direction = \"IDLE\"\n            return\n        if self.direction == \"UP\":\n            self.current_floor += 1\n        elif self.direction == \"DOWN\":\n            self.current_floor -= 1\n        if self.current_floor in self.destinations:\n            self.destinations.remove(self.current_floor)</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200520,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Code a nearest-idle-car dispatch method in Java: given a list of elevators and a requested floor, return the closest idle elevator.",
+    "Back": "<pre><code>public Elevator findNearestIdleElevator(List&lt;Elevator&gt; elevators, int requestedFloor) {\n    Elevator best = null;\n    int bestDistance = Integer.MAX_VALUE;\n\n    for (Elevator elevator : elevators) {\n        if (elevator.getStatus() != ElevatorStatus.IDLE) {\n            continue;\n        }\n        int distance = Math.abs(elevator.getCurrentFloor() - requestedFloor);\n        if (distance &lt; bestDistance) {\n            bestDistance = distance;\n            best = elevator;\n        }\n    }\n    return best;\n}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061200521,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "ood-elevator"
+   ],
+   "fields": {
+    "Front": "Code a simple State pattern in Python for an elevator's Idle/Moving states, each with a <code>handle_request</code> method.",
+    "Back": "<pre><code>from abc import ABC, abstractmethod\n\nclass ElevatorState(ABC):\n    @abstractmethod\n    def handle_request(self, elevator, floor):\n        ...\n\nclass IdleState(ElevatorState):\n    def handle_request(self, elevator, floor):\n        elevator.add_destination(floor)\n        elevator.state = MovingState()\n\nclass MovingState(ElevatorState):\n    def handle_request(self, elevator, floor):\n        elevator.add_destination(floor)</code></pre>"
+   }
+  }
+ ]
+}

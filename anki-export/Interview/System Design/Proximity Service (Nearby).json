@@ -1,0 +1,271 @@
+{
+ "deck": "Interview::System Design::Proximity Service (Nearby)",
+ "note_count": 22,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061204268,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What are the two core functional requirements of a Proximity/Nearby-Places service?",
+    "Back": "1) Given a user's location and a search radius, return nearby places (e.g., restaurants). 2) Business owners can add, update, and delete place data (CRUD)."
+   }
+  },
+  {
+   "noteId": 1789061204269,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "Should a proximity service be read-heavy or write-heavy, and why?",
+    "Back": "Read-heavy — millions of users search constantly, but businesses are added/updated/deleted relatively rarely (low write:read ratio)."
+   }
+  },
+  {
+   "noteId": 1789061204270,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "If a proximity service has 100M DAU and each user performs 5 nearby-searches per day, what is the average search QPS?",
+    "Back": "100,000,000 x 5 / 86,400 ~ 5,800 QPS"
+   }
+  },
+  {
+   "noteId": 1789061204271,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "With 200M businesses, each needing ~100 bytes for id, name, lat/long, category, roughly how much raw storage is needed for the business dataset?",
+    "Back": "200,000,000 x 100 bytes ~ 20 GB"
+   }
+  },
+  {
+   "noteId": 1789061204272,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What three endpoints does a proximity service typically expose for business owners to manage listings?",
+    "Back": "<pre><code>POST /v1/business\nPUT /v1/business/{id}\nDELETE /v1/business/{id}</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789061204273,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What fields does a minimal 'Business' record need in a proximity service data model?",
+    "Back": "business_id, name, category, latitude, longitude, address (plus optional attributes like rating, hours)."
+   }
+  },
+  {
+   "noteId": 1789061204274,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What are the main components in a high-level proximity service architecture?",
+    "Back": "Load balancer, stateless API/search servers, a geospatial index service (geohash/QuadTree), a business database, and a cache for hot queries."
+   }
+  },
+  {
+   "noteId": 1789061204275,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What is a geohash?",
+    "Back": "An algorithm that encodes a 2D lat/long coordinate into a single alphanumeric string by interleaving bits of latitude and longitude, so nearby locations tend to share string prefixes."
+   }
+  },
+  {
+   "noteId": 1789061204276,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What is the main weakness of geohash for nearby search, and how is it fixed?",
+    "Back": "Two points can be physically close but have very different geohash prefixes near boundary edges; fixed by also querying the 8 neighboring geohash cells, not just the exact match."
+   }
+  },
+  {
+   "noteId": 1789061204277,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What is a QuadTree and how does it help nearby search?",
+    "Back": "A tree where each node represents a rectangular region, recursively split into 4 quadrants once a region holds more than a threshold of points — enabling fast range queries by pruning empty/sparse regions."
+   }
+  },
+  {
+   "noteId": 1789061204278,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "Describe the basic algorithm for a 'search nearby places within radius R' query using a geohash index.",
+    "Back": "1) Compute the geohash of the user's location at a precision matching R. 2) Query that cell plus its 8 neighbors. 3) Filter candidates by exact distance <= R. 4) Return results."
+   }
+  },
+  {
+   "noteId": 1789061204279,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What is the primary scaling bottleneck as a proximity service's business count and QPS grow?",
+    "Back": "The geospatial index (and DB) becomes too large/hot for a single server, requiring sharding of the geo-index by location and caching of dense/popular regions."
+   }
+  },
+  {
+   "noteId": 1789061204280,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "Why is caching effective for a proximity service, and what should be cached?",
+    "Back": "Search traffic clusters around dense urban geohash cells; caching popular (geohash cell -> nearby business list) query results in Redis/Memcached absorbs most read traffic and reduces DB/index load."
+   }
+  },
+  {
+   "noteId": 1789061204281,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Front": "What consistency tradeoff does a proximity service typically accept, and why is it acceptable?",
+    "Back": "Eventual consistency for business updates (new/changed listings may take seconds to propagate to the index) — acceptable because slightly stale nearby results rarely harm the user experience."
+   }
+  },
+  {
+   "noteId": 1789061204283,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "A proximity service favors {{c1::availability}} over strong consistency (slightly stale place data is fine), and demands {{c2::low latency}} — results should return within a couple hundred milliseconds.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204284,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "The main read endpoint of a proximity service is typically <pre><code>GET /v1/search?latitude={lat}&amp;longitude={lon}&amp;radius={r}</code></pre> which returns a list of {{c1::nearby place IDs (with distance), not full place details}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204285,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "Because place data is read-heavy, simple, and doesn't need complex joins or transactions, a proximity service can use either a {{c1::relational DB with geospatial indexing (e.g., PostGIS)}} or a {{c2::purpose-built geo-index/in-memory structure}} for the hot search path.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204286,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "Geohash precision is controlled by {{c1::string length}} — each additional character roughly {{c2::quarters the size of the bounding box}}, giving finer resolution.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204287,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "Geohash is {{c1::simpler to shard and cache (string-based keys, easy to distribute)}}, while a QuadTree {{c2::adapts to non-uniform data density, giving more balanced regions in dense cities vs. sparse rural areas}}.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204288,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "Beyond raw distance, nearby-search ranking typically also factors in {{c1::business rating/popularity}} and {{c1::relevance to the query (category match)}} — not just proximity.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204289,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "Because geohash strings encode location as a prefix, a proximity service can shard its geo-index {{c1::by geohash prefix}}, so nearby locations land on the same or adjacent shards, keeping range queries efficient.",
+    "Extra": ""
+   }
+  },
+  {
+   "noteId": 1789061204290,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "sd-proximity"
+   ],
+   "fields": {
+    "Text": "In dense cities, a single geohash cell can become a {{c1::hot spot}} with disproportionate query load; this is mitigated by using {{c2::finer-grained precision in dense areas and/or replicating hot cells across multiple cache nodes}}.",
+    "Extra": ""
+   }
+  }
+ ]
+}

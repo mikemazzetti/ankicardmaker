@@ -1,0 +1,223 @@
+{
+ "deck": "Interview::Resume Q&A::Develop for Good",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789061202913,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What was your role at Develop for Good?",
+    "Back": "Site Technical Lead (remote), May–Aug 2026."
+   }
+  },
+  {
+   "noteId": 1789061202914,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "Which nonprofit's website did you lead the redesign for at Develop for Good?",
+    "Back": "LiberArte."
+   }
+  },
+  {
+   "noteId": 1789061202915,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What was the main deliverable of the Develop for Good project?",
+    "Back": "A responsive, accessibility-friendly website redesign for LiberArte."
+   }
+  },
+  {
+   "noteId": 1789061202916,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "As Site Technical Lead, what team did you lead?",
+    "Back": "The engineering team responsible for LiberArte's website redesign."
+   }
+  },
+  {
+   "noteId": 1789061202917,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "Which other teams did you collaborate with on the Develop for Good project?",
+    "Back": "Management, design, and client teams."
+   }
+  },
+  {
+   "noteId": 1789061202918,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What was your core job in translating requirements at Develop for Good?",
+    "Back": "Translating designs and client requirements into a responsive, accessibility-friendly website."
+   }
+  },
+  {
+   "noteId": 1789061202919,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What quality attribute, beyond responsiveness, did the LiberArte site have to meet?",
+    "Back": "Accessibility-friendliness."
+   }
+  },
+  {
+   "noteId": 1789061202920,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "Was the Develop for Good Site Technical Lead role remote or on-site?",
+    "Back": "Remote."
+   }
+  },
+  {
+   "noteId": 1789061202921,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What organization type is LiberArte, Develop for Good's client?",
+    "Back": "A nonprofit."
+   }
+  },
+  {
+   "noteId": 1789061202922,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "Why does 'translating client requirements into a responsive, accessibility-friendly website' matter as a skill?",
+    "Back": "It shows the ability to convert non-technical stakeholder needs and design specs into a technically sound, inclusive implementation."
+   }
+  },
+  {
+   "noteId": 1789061202923,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What two site qualities did the LiberArte redesign need to satisfy simultaneously?",
+    "Back": "Responsive design and accessibility compliance."
+   }
+  },
+  {
+   "noteId": 1789061202924,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "What management skill did the Site Technical Lead role require beyond coding?",
+    "Back": "Leading and coordinating an engineering team while collaborating cross-functionally with management, design, and client stakeholders."
+   }
+  },
+  {
+   "noteId": 1789061202925,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Describe leading LiberArte's website redesign.",
+    "Back": "Task: LiberArte, a nonprofit, needed a redesigned website. Action: as Site Technical Lead, I led the engineering team and coordinated with management, design, and client teams to translate their requirements into a build. Result: a responsive, accessibility-friendly website delivered remotely."
+   }
+  },
+  {
+   "noteId": 1789061202926,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: How did you handle stakeholder collaboration across management, design, and client teams?",
+    "Back": "Action: served as the technical translation point — turning designs and client requirements from three different stakeholder groups into concrete engineering work for my team. Result: a cohesive site matching both the design vision and client needs."
+   }
+  },
+  {
+   "noteId": 1789061202927,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: Why did accessibility matter for this project?",
+    "Back": "Task: LiberArte's site needed to be usable by all visitors. Action: ensured the redesign was built to be accessibility-friendly alongside being responsive. Result: an inclusive, nonprofit-facing website serving a broader audience."
+   }
+  },
+  {
+   "noteId": 1789061202928,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "STAR — Talking point: What does this role demonstrate about leading a fully remote team?",
+    "Back": "Situation: fully remote engineering lead role. Action: led the engineering team through LiberArte's redesign while liaising remotely with management, design, and client stakeholders. Result: successfully delivered a responsive, accessibility-friendly site, demonstrating remote technical leadership."
+   }
+  },
+  {
+   "noteId": 1789061202929,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Front": "Site Technical Lead (Develop for Good)",
+    "Back": "The role you held at Develop for Good, leading the engineering team on LiberArte's website redesign."
+   }
+  },
+  {
+   "noteId": 1789061202940,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "resume-dfg"
+   ],
+   "fields": {
+    "Text": "At Develop for Good, I was {{c1::Site Technical Lead}} (remote) leading the engineering team on {{c2::LiberArte}}'s website redesign, collaborating with {{c3::management, design, and client}} teams.",
+    "Extra": ""
+   }
+  }
+ ]
+}

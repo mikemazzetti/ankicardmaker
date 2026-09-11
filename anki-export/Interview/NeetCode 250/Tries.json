@@ -1,0 +1,63 @@
+{
+ "deck": "Interview::NeetCode 250::Tries",
+ "note_count": 4,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1788998585527,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-implement-prefix-tree",
+    "neetcode250",
+    "tries"
+   ],
+   "fields": {
+    "Front": "A librarian builds a card-catalog gadget that stores words letter by letter along shared branching paths, so common beginnings are stored only once. It must support filing a new word, checking whether an exact word was filed, and checking whether any filed word begins with a given opening. Design this gadget.",
+    "Back": "<b>Maps to:</b> Trie / prefix tree with per-node children and end-of-word flag (Implement Trie).<br><br><b>Model it:</b> Build a structure supporting insert, exact-word search, and prefix search over strings.<br><br><b>Approach &amp; variations:</b><ul><li>Each node holds up to 26 child links and a boolean marking a complete word ends there.</li><li>Insert walks/creates a path of nodes letter by letter, flagging the last.</li><li>search returns the end flag at the path's terminal; startsWith just checks the path exists.</li></ul><b>Time:</b> O(L) per insert/search/startsWith for a word of length L.<br><b>Space:</b> O(total characters inserted) across all trie nodes."
+   }
+  },
+  {
+   "noteId": 1788998585528,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-design-word-search-data-structure",
+    "neetcode250",
+    "tries"
+   ],
+   "fields": {
+    "Front": "A stamp collector files words into a catalog and later looks them up, but a lookup query may contain a wildcard mark that matches any single letter in that position. Design a catalog supporting filing a word and answering whether any filed word matches a possibly-wildcarded query.",
+    "Back": "<b>Maps to:</b> Trie with DFS for wildcard positions (Add and Search Words / WordDictionary).<br><br><b>Model it:</b> Store words and answer search where '.' matches any single character.<br><br><b>Approach &amp; variations:</b><ul><li>Insert like a normal prefix tree along letter paths.</li><li>Search walks the trie; on a wildcard, recurse into every existing child at that position.</li><li>Match succeeds only if a path consumes the whole query and ends on a word-end flag.</li></ul><b>Time:</b> O(L) for a concrete query; up to O(26^L) worst case when many wildcards force branching.<br><b>Space:</b> O(total characters stored) for the trie, plus O(L) recursion for wildcard search."
+   }
+  },
+  {
+   "noteId": 1788998585529,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-extra-characters-in-a-string",
+    "neetcode250",
+    "tries"
+   ],
+   "fields": {
+    "Front": "A proofreader has a banner of letters and a dictionary of valid words. She may carve the banner into non-overlapping pieces that are each a dictionary word; any leftover letters not covered by a chosen word are wasted. What is the fewest leftover letters possible?",
+    "Back": "<b>Maps to:</b> DP over indices with a trie (or dictionary set) for word lookups (Extra Characters in a String).<br><br><b>Model it:</b> Segment a string into dictionary words minimizing the count of uncovered characters.<br><br><b>Approach &amp; variations:</b><ul><li>Let dp[i] be the fewest extras for the suffix starting at i.</li><li>Option one: waste character i (1 + dp[i+1]); option two: for any dictionary word matching at i, take dp[i + wordLen].</li><li>A trie over the dictionary lets you scan all words starting at i in one walk; take the minimum.</li></ul><b>Time:</b> O(n^2) checking substrings, or O(n * maxWordLen) with a trie walk from each index.<br><b>Space:</b> O(n) for the dp array plus O(dictionary size) for the trie."
+   }
+  },
+  {
+   "noteId": 1788998585530,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "nc-search-for-word-ii",
+    "neetcode250",
+    "tries"
+   ],
+   "fields": {
+    "Front": "A grid of lettered tiles sits on a table alongside a long shopping list of target words. A player traces each word by stepping between edge-adjacent tiles without reusing a tile in a single trace. Which words from the list can be found somewhere on the board? Report all of them efficiently, not one slow search per word.",
+    "Back": "<b>Maps to:</b> Trie of the word list plus DFS backtracking over the grid (Word Search II).<br><br><b>Model it:</b> Find which of many words appear as adjacent-cell paths in a character grid, searching all words at once.<br><br><b>Approach &amp; variations:</b><ul><li>Build a trie from the word list so one board traversal checks all words simultaneously.</li><li>DFS from each cell, descending the trie by the current letter; record a word when a node marks a word end.</li><li>Mark cells visited during a path and restore on backtrack; prune trie leaves after finding to speed up.</li></ul><b>Time:</b> O(m * n * 4^Lmax) worst case, but the trie prunes dead prefixes sharply.<br><b>Space:</b> O(total letters in the word list) for the trie plus O(Lmax) recursion."
+   }
+  }
+ ]
+}

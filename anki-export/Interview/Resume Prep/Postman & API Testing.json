@@ -1,0 +1,241 @@
+{
+ "deck": "Interview::Resume Prep::Postman & API Testing",
+ "note_count": 18,
+ "exported": "2026-09-11",
+ "notes": [
+  {
+   "noteId": 1789000602519,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you use HTTP <code>GET</code>?",
+    "Back": "To retrieve a resource without causing side effects. Safe (no server state change) and idempotent; no request body."
+   }
+  },
+  {
+   "noteId": 1789000602520,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you use HTTP <code>POST</code>?",
+    "Back": "To create a new resource or trigger a non-idempotent action (e.g. submit an order). Not safe, not guaranteed idempotent &mdash; repeating it can create duplicates."
+   }
+  },
+  {
+   "noteId": 1789000602521,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you use HTTP <code>PUT</code>?",
+    "Back": "To replace a resource entirely at a known URI. Idempotent: sending the same PUT twice leaves the resource in the same state as sending it once."
+   }
+  },
+  {
+   "noteId": 1789000602522,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you use HTTP <code>PATCH</code>?",
+    "Back": "To apply a partial update to a resource (only the changed fields). Not guaranteed idempotent &mdash; depends on how the server implements the patch."
+   }
+  },
+  {
+   "noteId": 1789000602523,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "When should you use HTTP <code>DELETE</code>?",
+    "Back": "To remove the resource at a given URI. Idempotent: deleting an already-deleted resource still leaves it gone."
+   }
+  },
+  {
+   "noteId": 1789000602524,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What status code should a successful <code>POST</code> that creates a new resource return?",
+    "Back": "<code>201 Created</code> (often with a <code>Location</code> header pointing to the new resource)."
+   }
+  },
+  {
+   "noteId": 1789000602525,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What status code means the request succeeded but there is no body to send back (e.g. a successful DELETE)?",
+    "Back": "<code>204 No Content</code>"
+   }
+  },
+  {
+   "noteId": 1789000602526,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between <code>401 Unauthorized</code> and <code>403 Forbidden</code>?",
+    "Back": "401 = the request lacks valid authentication (\"who are you?\"). 403 = the server knows who you are but you don't have permission for this resource (\"you can't do that\")."
+   }
+  },
+  {
+   "noteId": 1789000602527,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What does a <code>429</code> status code indicate?",
+    "Back": "Too Many Requests &mdash; the client has exceeded a rate limit and should back off/retry later (often per a <code>Retry-After</code> header)."
+   }
+  },
+  {
+   "noteId": 1789000602528,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What are the main components you configure on a request in Postman?",
+    "Back": "Method + URL, query Params, Headers, Body (raw/JSON/form-data), and Authorization."
+   }
+  },
+  {
+   "noteId": 1789000602529,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Postman, what's the difference between a Collection and an Environment?",
+    "Back": "A Collection groups related requests together (plus their scripts/tests, run in sequence). An Environment holds a set of variables (base URL, tokens, IDs) that requests reference, so you can switch the same collection between dev/staging/prod by swapping environments."
+   }
+  },
+  {
+   "noteId": 1789000602530,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Postman test script asserting the response status code is 200.",
+    "Back": "<pre><code>pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602531,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Write a Postman test script asserting the JSON response body has an <code>id</code> property.",
+    "Back": "<pre><code>pm.test(\"Response has id property\", function () {\n    const json = pm.response.json();\n    pm.expect(json).to.have.property(\"id\");\n});</code></pre>"
+   }
+  },
+  {
+   "noteId": 1789000602532,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "How do you save a value from a Postman response (e.g. an auth token) into an environment variable for later requests to use?",
+    "Back": "<pre><code>pm.environment.set(\"token\", pm.response.json().token);</code></pre> Later requests can then reference it as <code>{{token}}</code>."
+   }
+  },
+  {
+   "noteId": 1789000602533,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "What's the difference between Bearer Token auth and Basic auth?",
+    "Back": "Basic auth sends a base64-encoded <code>username:password</code> on every request. Bearer auth sends a previously-issued token (e.g. JWT from OAuth/login) in the <code>Authorization</code> header, without resending raw credentials each time."
+   }
+  },
+  {
+   "noteId": 1789000602534,
+   "modelName": "Basic",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "In Postman, what are pre-request scripts used for?",
+    "Back": "JavaScript that runs before the request is sent &mdash; e.g. computing a timestamp/signature, generating dynamic test data, or setting an auth header/variable that the request needs."
+   }
+  },
+  {
+   "noteId": 1789000602535,
+   "modelName": "Basic (and reversed card)",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Front": "Idempotent (HTTP request)",
+    "Back": "Making the identical request multiple times leaves the server in the same state as making it once. GET, PUT, and DELETE are idempotent; POST is not."
+   }
+  },
+  {
+   "noteId": 1789000640013,
+   "modelName": "Cloze",
+   "tags": [
+    "ankicardmaker",
+    "api-testing",
+    "resume-prep"
+   ],
+   "fields": {
+    "Text": "HTTP status codes are grouped by their first digit: {{c1::2xx}} = success, {{c2::3xx}} = redirection, {{c3::4xx}} = client error, {{c4::5xx}} = server error.",
+    "Extra": ""
+   }
+  }
+ ]
+}
