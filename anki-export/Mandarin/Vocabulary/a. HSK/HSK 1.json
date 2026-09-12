@@ -1,7 +1,7 @@
 {
  "deck": "Mandarin::Vocabulary::a. HSK::HSK 1",
  "note_count": 150,
- "exported": "2026-09-11",
+ "exported": "2026-09-12",
  "notes": [
   {
    "noteId": 1393817665650,
@@ -87,7 +87,7 @@
     "SentencePinyin.2": "<div>Xie4xie ni3.</div>",
     "SentenceMeaning": "<div>Thank you.</div>",
     "SentenceAudio": "<div>[sound:part1s123.mp3]</div>",
-    "SentenceImage": "<img src=\"fl9f2h5v7jn40.jpg\" /><br>"
+    "SentenceImage": "<img src=\"fl9f2h5v7jn40.jpg\"><br>"
    }
   },
   {

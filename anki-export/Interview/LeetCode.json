@@ -1,7 +1,7 @@
 {
  "deck": "Interview::LeetCode",
  "note_count": 2569,
- "exported": "2026-09-11",
+ "exported": "2026-09-12",
  "notes": [
   {
    "noteId": 1686038120864,
@@ -45077,7 +45077,7 @@
     "title": "Create Hello World Function",
     "id": "2667",
     "slug": "create-hello-world-function",
-    "difficulty": "<font color='green'>Easy</font>",
+    "difficulty": "<font color=\"green\">Easy</font>",
     "topics": "",
     "paid": "no"
    }

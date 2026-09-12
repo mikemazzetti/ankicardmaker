@@ -1,7 +1,7 @@
 {
  "deck": "Mandarin::HSK Sentences::HSK 1",
  "note_count": 591,
- "exported": "2026-09-11",
+ "exported": "2026-09-12",
  "notes": [
   {
    "noteId": 1628997086585,
@@ -222,7 +222,7 @@
     "Sentence": "你是学生吗？",
     "Character Audio": "[sound:azure-56bdf643-f26b5ea2-6222dc5d-a2fd0bdb-3183b827.mp3]",
     "Sentence Audio": "[sound:azure-8d3bf9b3-2fbe2072-41945294-5afb7497-5d1c0ef8.mp3]",
-    "English Definition": "particle, used at the end of a question",
+    "English Definition": "particle, used at the end of a question, turns it into yes or no question sorta of",
     "Pinyin": "nǐ shì xuéshēng ma ？",
     "Traditional": "你是學生嗎？"
    }

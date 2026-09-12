@@ -1,8 +1,8 @@
 # Anki collection export
 
-Snapshot generated 2026-09-11 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
+Snapshot generated 2026-09-12 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
 
-**Total: 14574 notes across 160 decks.**
+**Total: 13790 notes across 120 decks.**
 
 | Deck | Notes |
 |------|------:|
@@ -43,35 +43,6 @@ Snapshot generated 2026-09-11 from AnkiWeb via GitHub Actions (scripts/anki_clou
 | Interview::NeetCode 250::Trees | 23 |
 | Interview::NeetCode 250::Tries | 4 |
 | Interview::NeetCode 250::Two Pointers | 13 |
-| Interview::OOP Design::ATM | 19 |
-| Interview::OOP Design::Airline Reservation | 20 |
-| Interview::OOP Design::Amazon Locker | 20 |
-| Interview::OOP Design::Chess | 19 |
-| Interview::OOP Design::Coffee Maker | 20 |
-| Interview::OOP Design::Cricket Scoreboard | 20 |
-| Interview::OOP Design::Deck of Cards | 20 |
-| Interview::OOP Design::Elevator System | 18 |
-| Interview::OOP Design::File System | 20 |
-| Interview::OOP Design::Food Delivery System | 20 |
-| Interview::OOP Design::Fundamentals | 24 |
-| Interview::OOP Design::Hotel Management System | 20 |
-| Interview::OOP Design::LRU Cache | 20 |
-| Interview::OOP Design::Library Management System | 20 |
-| Interview::OOP Design::Logging Framework | 20 |
-| Interview::OOP Design::Meeting Scheduler | 20 |
-| Interview::OOP Design::Movie Ticket Booking | 19 |
-| Interview::OOP Design::Music Streaming Service | 20 |
-| Interview::OOP Design::Notification System | 20 |
-| Interview::OOP Design::Online Shopping Cart | 18 |
-| Interview::OOP Design::Parking Lot | 20 |
-| Interview::OOP Design::Restaurant Management | 17 |
-| Interview::OOP Design::Ride-Sharing (Uber) | 20 |
-| Interview::OOP Design::Snake and Ladder | 19 |
-| Interview::OOP Design::Splitwise | 20 |
-| Interview::OOP Design::Stack Overflow | 20 |
-| Interview::OOP Design::Tic-Tac-Toe | 19 |
-| Interview::OOP Design::Traffic Signal Controller | 20 |
-| Interview::OOP Design::Vending Machine | 18 |
 | Interview::Resume Prep::AWS | 22 |
 | Interview::Resume Prep::AWS SQS, EventBridge, CodeBuild & Boto3 | 20 |
 | Interview::Resume Prep::Accessibility (WCAG) | 18 |
@@ -118,17 +89,6 @@ Snapshot generated 2026-09-11 from AnkiWeb via GitHub Actions (scripts/anki_clou
 | Interview::Resume Prep::TensorFlow | 18 |
 | Interview::Resume Prep::TypeScript | 20 |
 | Interview::Resume Prep::Web & API Fundamentals | 19 |
-| Interview::Resume Q&A::BMO (C++ Engine & Modernization) | 20 |
-| Interview::Resume Q&A::BMO (Calculator & AI-SDLC) | 20 |
-| Interview::Resume Q&A::BUFFET | 20 |
-| Interview::Resume Q&A::Behavioral & STAR | 20 |
-| Interview::Resume Q&A::COMPLIANCE360 | 17 |
-| Interview::Resume Q&A::Develop for Good | 18 |
-| Interview::Resume Q&A::Education | 18 |
-| Interview::Resume Q&A::Government of Ontario | 20 |
-| Interview::Resume Q&A::ServiceOntario | 19 |
-| Interview::Resume Q&A::Skills & Tools | 22 |
-| Interview::Resume Q&A::WesternAI (TruthLens) | 20 |
 | Interview::System Design::Caching & CDN | 22 |
 | Interview::System Design::Chat System (WhatsApp) | 22 |
 | Interview::System Design::Databases & Storage | 21 |
