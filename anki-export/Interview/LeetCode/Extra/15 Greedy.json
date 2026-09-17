@@ -1,0 +1,2839 @@
+{
+ "deck": "Interview::LeetCode::Extra::15 Greedy",
+ "note_count": 150,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121122,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Candy",
+    "id": "135",
+    "slug": "candy",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121210,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest Number",
+    "id": "179",
+    "slug": "largest-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121412,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Wiggle Sort",
+    "id": "280",
+    "slug": "wiggle-sort",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121512,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Patching Array",
+    "id": "330",
+    "slug": "patching-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121520,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Increasing Triplet Subsequence",
+    "id": "334",
+    "slug": "increasing-triplet-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121670,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Palindrome",
+    "id": "409",
+    "slug": "longest-palindrome",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121756,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "id": "452",
+    "slug": "minimum-number-of-arrows-to-burst-balloons",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121886,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Super Washing Machines",
+    "id": "517",
+    "slug": "super-washing-machines",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121962,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Split Concatenated Strings",
+    "id": "555",
+    "slug": "split-concatenated-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121974,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting-sort",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Array Partition",
+    "id": "561",
+    "slug": "array-partition",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting, counting-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122062,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Can Place Flowers",
+    "id": "605",
+    "slug": "can-place-flowers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122100,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Distance in Arrays",
+    "id": "624",
+    "slug": "maximum-distance-in-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122102,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Factorization",
+    "id": "625",
+    "slug": "minimum-factorization",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122150,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "queue",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Dota2 Senate",
+    "id": "649",
+    "slug": "dota2-senate",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy, queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122192,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Swap",
+    "id": "670",
+    "slug": "maximum-swap",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122328,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Monotone Increasing Digits",
+    "id": "738",
+    "slug": "monotone-increasing-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122366,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Set Intersection Size At Least Two",
+    "id": "757",
+    "slug": "set-intersection-size-at-least-two",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122414,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Rabbits in Forest",
+    "id": "781",
+    "slug": "rabbits-in-forest",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122466,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Max Increase to Keep City Skyline",
+    "id": "807",
+    "slug": "max-increase-to-keep-city-skyline",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122572,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Lemonade Change",
+    "id": "860",
+    "slug": "lemonade-change",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122574,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Score After Flipping Matrix",
+    "id": "861",
+    "slug": "score-after-flipping-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, bit-manipulation, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122672,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Smallest Range II",
+    "id": "910",
+    "slug": "smallest-range-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122742,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Increment to Make Array Unique",
+    "id": "945",
+    "slug": "minimum-increment-to-make-array-unique",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122760,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Array of Doubled Pairs",
+    "id": "954",
+    "slug": "array-of-doubled-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122762,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Delete Columns to Make Sorted II",
+    "id": "955",
+    "slug": "delete-columns-to-make-sorted-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122804,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Perimeter Triangle",
+    "id": "976",
+    "slug": "largest-perimeter-triangle",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, math, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122820,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "String Without AAA or BBB",
+    "id": "984",
+    "slug": "string-without-aaa-or-bbb",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122834,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Broken Calculator",
+    "id": "991",
+    "slug": "broken-calculator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122862,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximize Sum Of Array After K Negations",
+    "id": "1005",
+    "slug": "maximize-sum-of-array-after-k-negations",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122866,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Domino Rotations For Equal Row",
+    "id": "1007",
+    "slug": "minimum-domino-rotations-for-equal-row",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122878,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Partition Array Into Three Parts With Equal Sum",
+    "id": "1013",
+    "slug": "partition-array-into-three-parts-with-equal-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122910,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Two City Scheduling",
+    "id": "1029",
+    "slug": "two-city-scheduling",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122958,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Previous Permutation With One Swap",
+    "id": "1053",
+    "slug": "previous-permutation-with-one-swap",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122966,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Campus Bikes",
+    "id": "1057",
+    "slug": "campus-bikes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122968,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimize Rounding Error to Meet Target",
+    "id": "1058",
+    "slug": "minimize-rounding-error-to-meet-target",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, string, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123032,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Values From Labels",
+    "id": "1090",
+    "slug": "largest-values-from-labels",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123094,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Divide Array Into Increasing Sequences",
+    "id": "1121",
+    "slug": "divide-array-into-increasing-sequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123140,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Decrease Elements To Make Array Zigzag",
+    "id": "1144",
+    "slug": "decrease-elements-to-make-array-zigzag",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123244,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "How Many Apples Can You Put into the Basket",
+    "id": "1196",
+    "slug": "how-many-apples-can-you-put-into-the-basket",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123286,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Move Chips to The Same Position",
+    "id": "1217",
+    "slug": "minimum-cost-to-move-chips-to-the-same-position",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123294,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Split a String in Balanced Strings",
+    "id": "1221",
+    "slug": "split-a-string-in-balanced-strings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123346,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Swaps to Make Strings Equal",
+    "id": "1247",
+    "slug": "minimum-swaps-to-make-strings-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123358,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Reconstruct a 2-Row Binary Matrix",
+    "id": "1253",
+    "slug": "reconstruct-a-2-row-binary-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123444,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Divide Array in Sets of K Consecutive Numbers",
+    "id": "1296",
+    "slug": "divide-array-in-sets-of-k-consecutive-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123498,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum 69 Number",
+    "id": "1323",
+    "slug": "maximum-69-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123508,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Break a Palindrome",
+    "id": "1328",
+    "slug": "break-a-palindrome",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123512,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Reverse Subarray To Maximize Array Value",
+    "id": "1330",
+    "slug": "reverse-subarray-to-maximize-array-value",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123624,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Cinema Seat Allocation",
+    "id": "1386",
+    "slug": "cinema-seat-allocation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123652,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Construct K Palindrome Strings",
+    "id": "1400",
+    "slug": "construct-k-palindrome-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123658,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Subsequence in Non-Increasing Order",
+    "id": "1403",
+    "slug": "minimum-subsequence-in-non-increasing-order",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123680,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Find the Minimum Number of Fibonacci Numbers Whose Sum Is K",
+    "id": "1414",
+    "slug": "find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123716,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Max Difference You Can Get From Changing an Integer",
+    "id": "1432",
+    "slug": "max-difference-you-can-get-from-changing-an-integer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123718,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Check If a String Can Break Another String",
+    "id": "1433",
+    "slug": "check-if-a-string-can-break-another-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123782,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+    "id": "1465",
+    "slug": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123814,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Least Number of Unique Integers after K Removals",
+    "id": "1481",
+    "slug": "least-number-of-unique-integers-after-k-removals",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123870,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Difference Between Largest and Smallest Value in Three Moves",
+    "id": "1509",
+    "slug": "minimum-difference-between-largest-and-smallest-value-in-three-moves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123892,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Non-Overlapping Substrings",
+    "id": "1520",
+    "slug": "maximum-number-of-non-overlapping-substrings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123910,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Suffix Flips",
+    "id": "1529",
+    "slug": "minimum-suffix-flips",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123924,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Swaps to Arrange a Binary Grid",
+    "id": "1536",
+    "slug": "minimum-swaps-to-arrange-a-binary-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123944,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Number of Non-Overlapping Subarrays With Sum Equals Target",
+    "id": "1546",
+    "slug": "maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123968,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Numbers of Function Calls to Make Target Array",
+    "id": "1558",
+    "slug": "minimum-numbers-of-function-calls-to-make-target-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123980,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Put Boxes Into the Warehouse I",
+    "id": "1564",
+    "slug": "put-boxes-into-the-warehouse-i",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124012,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Put Boxes Into the Warehouse II",
+    "id": "1580",
+    "slug": "put-boxes-into-the-warehouse-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124022,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Check If String Is Transformable With Substring Sort Operations",
+    "id": "1585",
+    "slug": "check-if-string-is-transformable-with-substring-sort-operations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124030,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Sum Obtained of Any Permutation",
+    "id": "1589",
+    "slug": "maximum-sum-obtained-of-any-permutation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124062,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Find Valid Matrix Given Row and Column Sums",
+    "id": "1605",
+    "slug": "find-valid-matrix-given-row-and-column-sums",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124146,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Deletions to Make Character Frequencies Unique",
+    "id": "1647",
+    "slug": "minimum-deletions-to-make-character-frequencies-unique",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124178,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Smallest String With A Given Numeric Value",
+    "id": "1663",
+    "slug": "smallest-string-with-a-given-numeric-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124182,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Initial Energy to Finish Tasks",
+    "id": "1665",
+    "slug": "minimum-initial-energy-to-finish-tasks",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124230,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+    "id": "1689",
+    "slug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124256,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Binary String After Change",
+    "id": "1702",
+    "slug": "maximum-binary-string-after-change",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124268,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Largest Subarray Length K",
+    "id": "1708",
+    "slug": "largest-subarray-length-k",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124272,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Units on a Truck",
+    "id": "1710",
+    "slug": "maximum-units-on-a-truck",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124306,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Submatrix With Rearrangements",
+    "id": "1727",
+    "slug": "largest-submatrix-with-rearrangements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124318,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Number of People to Teach",
+    "id": "1733",
+    "slug": "minimum-number-of-people-to-teach",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124324,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Latest Time by Replacing Hidden Digits",
+    "id": "1736",
+    "slug": "latest-time-by-replacing-hidden-digits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124380,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Form Array by Concatenating Subarrays of Another Array",
+    "id": "1764",
+    "slug": "form-array-by-concatenating-subarrays-of-another-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124402,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Equal Sum Arrays With Minimum Number of Operations",
+    "id": "1775",
+    "slug": "equal-sum-arrays-with-minimum-number-of-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124422,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Elements to Add to Form a Given Sum",
+    "id": "1785",
+    "slug": "minimum-elements-to-add-to-form-a-given-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124428,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximize the Beauty of the Garden",
+    "id": "1788",
+    "slug": "maximize-the-beauty-of-the-garden",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124440,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Pairs of Equal Substrings With Minimum Difference",
+    "id": "1794",
+    "slug": "count-pairs-of-equal-substrings-with-minimum-difference",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124448,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Number of Consecutive Values You Can Make",
+    "id": "1798",
+    "slug": "maximum-number-of-consecutive-values-you-can-make",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124506,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make the Array Increasing",
+    "id": "1827",
+    "slug": "minimum-operations-to-make-the-array-increasing",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124518,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Ice Cream Bars",
+    "id": "1833",
+    "slug": "maximum-ice-cream-bars",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124544,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Element After Decreasing and Rearranging",
+    "id": "1846",
+    "slug": "maximum-element-after-decreasing-and-rearranging",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124580,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Swaps to Make the Binary String Alternating",
+    "id": "1864",
+    "slug": "minimum-number-of-swaps-to-make-the-binary-string-alternating",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124600,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimize Product Sum of Two Arrays",
+    "id": "1874",
+    "slug": "minimize-product-sum-of-two-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124614,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Value after Insertion",
+    "id": "1881",
+    "slug": "maximum-value-after-insertion",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124658,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest Odd Number in String",
+    "id": "1903",
+    "slug": "largest-odd-number-in-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124694,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Eliminate Maximum Number of Monsters",
+    "id": "1921",
+    "slug": "eliminate-maximum-number-of-monsters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124724,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Add Minimum Number of Rungs",
+    "id": "1936",
+    "slug": "add-minimum-number-of-rungs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124744,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest Number After Mutating Substring",
+    "id": "1946",
+    "slug": "largest-number-after-mutating-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124758,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Number of Weeks for Which You Can Work",
+    "id": "1953",
+    "slug": "maximum-number-of-weeks-for-which-you-can-work",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124788,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Array With Elements Not Equal to Average of Neighbors",
+    "id": "1968",
+    "slug": "array-with-elements-not-equal-to-average-of-neighbors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124790,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "recursion",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Non-Zero Product of the Array Elements",
+    "id": "1969",
+    "slug": "minimum-non-zero-product-of-the-array-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124800,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Time to Type Word Using Special Typewriter",
+    "id": "1974",
+    "slug": "minimum-time-to-type-word-using-special-typewriter",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124802,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Matrix Sum",
+    "id": "1975",
+    "slug": "maximum-matrix-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124830,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Number of People That Can Be Caught in Tag",
+    "id": "1989",
+    "slug": "maximum-number-of-people-that-can-be-caught-in-tag",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124866,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Original Array From Doubled Array",
+    "id": "2007",
+    "slug": "find-original-array-from-doubled-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124906,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Moves to Convert String",
+    "id": "2027",
+    "slug": "minimum-moves-to-convert-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125008,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Two Furthest Houses With Different Colors",
+    "id": "2078",
+    "slug": "two-furthest-houses-with-different-colors",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125026,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "matrix",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Cost Homecoming of a Robot in a Grid",
+    "id": "2087",
+    "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125034,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Removing Minimum and Maximum From Array",
+    "id": "2091",
+    "slug": "removing-minimum-and-maximum-from-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125048,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Subsequence of Size K With the Largest Even Sum",
+    "id": "2098",
+    "slug": "subsequence-of-size-k-with-the-largest-even-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125104,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Destroying Asteroids",
+    "id": "2126",
+    "slug": "destroying-asteroids",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125114,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Palindrome by Concatenating Two Letter Words",
+    "id": "2131",
+    "slug": "longest-palindrome-by-concatenating-two-letter-words",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125116,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "matrix",
+    "prefix-sum",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Stamping the Grid",
+    "id": "2132",
+    "slug": "stamping-the-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, matrix, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125124,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Earliest Possible Day of Full Bloom",
+    "id": "2136",
+    "slug": "earliest-possible-day-of-full-bloom",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125130,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Moves to Reach Target Score",
+    "id": "2139",
+    "slug": "minimum-moves-to-reach-target-score",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125140,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Cost of Buying Candies With Discount",
+    "id": "2144",
+    "slug": "minimum-cost-of-buying-candies-with-discount",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125172,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+    "id": "2160",
+    "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125192,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make the Array Alternating",
+    "id": "2170",
+    "slug": "minimum-operations-to-make-the-array-alternating",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125242,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Append K Integers With Minimal Sum",
+    "id": "2195",
+    "slug": "append-k-integers-with-minimal-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125256,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximize the Topmost Element After K Moves",
+    "id": "2202",
+    "slug": "maximize-the-topmost-element-after-k-moves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125266,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximize Number of Subsequences in a String",
+    "id": "2207",
+    "slug": "maximize-number-of-subsequences-in-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125280,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Health to Beat Game",
+    "id": "2214",
+    "slug": "minimum-health-to-beat-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125300,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Operations to Convert Time",
+    "id": "2224",
+    "slug": "minimum-number-of-operations-to-convert-time",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125334,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Design an ATM Machine",
+    "id": "2241",
+    "slug": "design-an-atm-machine",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125340,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Rounds to Complete All Tasks",
+    "id": "2244",
+    "slug": "minimum-rounds-to-complete-all-tasks",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125370,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "enumeration",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Digit From Number to Maximize Result",
+    "id": "2259",
+    "slug": "remove-digit-from-number-to-maximize-result",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, greedy, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125388,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Keypresses",
+    "id": "2268",
+    "slug": "minimum-number-of-keypresses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, greedy, sorting, counting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125410,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Bags With Full Capacity of Rocks",
+    "id": "2279",
+    "slug": "maximum-bags-with-full-capacity-of-rocks",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125440,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Partition Array Such That Maximum Difference Is K",
+    "id": "2294",
+    "slug": "partition-array-such-that-maximum-difference-is-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125498,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Minimum Time to Finish All Jobs II",
+    "id": "2323",
+    "slug": "find-minimum-time-to-finish-all-jobs-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125532,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Adjacent Swaps to Make a Valid Array",
+    "id": "2340",
+    "slug": "minimum-adjacent-swaps-to-make-a-valid-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125552,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Shortest Impossible Sequence of Rolls",
+    "id": "2350",
+    "slug": "shortest-impossible-sequence-of-rolls",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125584,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Replacements to Sort the Array",
+    "id": "2366",
+    "slug": "minimum-replacements-to-sort-the-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125618,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Hours of Training to Win a Competition",
+    "id": "2383",
+    "slug": "minimum-hours-of-training-to-win-a-competition",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125620,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest Palindromic Number",
+    "id": "2384",
+    "slug": "largest-palindromic-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125662,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Optimal Partition of String",
+    "id": "2405",
+    "slug": "optimal-partition-of-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125676,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Money Required Before Transactions",
+    "id": "2412",
+    "slug": "minimum-money-required-before-transactions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125710,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimize XOR",
+    "id": "2429",
+    "slug": "minimize-xor",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "greedy, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125750,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Number of Operations to Make Arrays Similar",
+    "id": "2449",
+    "slug": "minimum-number-of-operations-to-make-arrays-similar",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125766,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Addition to Make Integer Beautiful",
+    "id": "2457",
+    "slug": "minimum-addition-to-make-integer-beautiful",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125770,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort Array by Moving Items to Empty Space",
+    "id": "2459",
+    "slug": "sort-array-by-moving-items-to-empty-space",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125850,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-hard-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Total Cost to Make Arrays Unequal",
+    "id": "2499",
+    "slug": "minimum-total-cost-to-make-arrays-unequal",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, greedy, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125934,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make Array Equal II",
+    "id": "2541",
+    "slug": "minimum-operations-to-make-array-equal-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125948,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Price to Fill a Bag",
+    "id": "2548",
+    "slug": "maximum-price-to-fill-a-bag",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125974,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Rearranging Fruits",
+    "id": "2561",
+    "slug": "rearranging-fruits",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125984,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Difference by Remapping a Digit",
+    "id": "2566",
+    "slug": "maximum-difference-by-remapping-a-digit",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125986,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Score by Changing Two Elements",
+    "id": "2567",
+    "slug": "minimum-score-by-changing-two-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126008,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Split With Minimum Sum",
+    "id": "2578",
+    "slug": "split-with-minimum-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126026,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Rearrange Array to Maximize Prefix Score",
+    "id": "2587",
+    "slug": "rearrange-array-to-maximize-prefix-score",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126034,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Distribute Money to Maximum Children",
+    "id": "2591",
+    "slug": "distribute-money-to-maximum-children",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126048,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Smallest Missing Non-negative Integer After Operations",
+    "id": "2598",
+    "slug": "smallest-missing-non-negative-integer-after-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126052,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "math",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "K Items With the Maximum Sum",
+    "id": "2600",
+    "slug": "k-items-with-the-maximum-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126164,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum Sum With Exactly K Elements ",
+    "id": "2656",
+    "slug": "maximum-sum-with-exactly-k-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126178,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::15-greedy",
+    "string"
+   ],
+   "fields": {
+    "title": "Lexicographically Smallest Beautiful String",
+    "id": "2663",
+    "slug": "lexicographically-smallest-beautiful-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126212,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::15-greedy"
+   ],
+   "fields": {
+    "title": "Maximum OR",
+    "id": "2680",
+    "slug": "maximum-or",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126268,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "recursion",
+    "roadmap::15-greedy",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Strength of a Group",
+    "id": "2708",
+    "slug": "maximum-strength-of-a-group",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, recursion, sorting",
+    "paid": "no"
+   }
+  }
+ ]
+}

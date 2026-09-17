@@ -1,0 +1,1216 @@
+{
+ "deck": "Interview::LeetCode::Extra::18 Bit Manipulation",
+ "note_count": 64,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120910,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Divide Two Integers",
+    "id": "29",
+    "slug": "divide-two-integers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120986,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::18-bit-manipulation",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Add Binary",
+    "id": "67",
+    "slug": "add-binary",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, string, bit-manipulation, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121126,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Single Number II",
+    "id": "137",
+    "slug": "single-number-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121254,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Bitwise AND of Numbers Range",
+    "id": "201",
+    "slug": "bitwise-and-of-numbers-range",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121314,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "recursion",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Power of Two",
+    "id": "231",
+    "slug": "power-of-two",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, bit-manipulation, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121372,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Single Number III",
+    "id": "260",
+    "slug": "single-number-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121384,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindrome Permutation",
+    "id": "266",
+    "slug": "palindrome-permutation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, bit-manipulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121488,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Product of Word Lengths",
+    "id": "318",
+    "slug": "maximum-product-of-word-lengths",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121536,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "recursion",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Power of Four",
+    "id": "342",
+    "slug": "power-of-four",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, bit-manipulation, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121630,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the Difference",
+    "id": "389",
+    "slug": "find-the-difference",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, bit-manipulation, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121638,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "UTF-8 Validation",
+    "id": "393",
+    "slug": "utf-8-validation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121662,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Convert a Number to Hexadecimal",
+    "id": "405",
+    "slug": "convert-a-number-to-hexadecimal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121774,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Hamming Distance",
+    "id": "461",
+    "slug": "hamming-distance",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121804,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Number Complement",
+    "id": "476",
+    "slug": "number-complement",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121806,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Total Hamming Distance",
+    "id": "477",
+    "slug": "total-hamming-distance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122142,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Set Mismatch",
+    "id": "645",
+    "slug": "set-mismatch",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, bit-manipulation, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122238,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Binary Number with Alternating Bits",
+    "id": "693",
+    "slug": "binary-number-with-alternating-bits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122354,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "IP to CIDR",
+    "id": "751",
+    "slug": "ip-to-cidr",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, bit-manipulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122376,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Prime Number of Set Bits in Binary Representation",
+    "id": "762",
+    "slug": "prime-number-of-set-bits-in-binary-representation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122410,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "recursion",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "K-th Symbol in Grammar",
+    "id": "779",
+    "slug": "k-th-symbol-in-grammar",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, bit-manipulation, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122416,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "math",
+    "matrix",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Transform to Chessboard",
+    "id": "782",
+    "slug": "transform-to-chessboard",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, bit-manipulation, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122588,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Binary Gap",
+    "id": "868",
+    "slug": "binary-gap",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122766,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Prison Cells After N Days",
+    "id": "957",
+    "slug": "prison-cells-after-n-days",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122816,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Triples with Bitwise AND Equal To Zero",
+    "id": "982",
+    "slug": "triples-with-bitwise-and-equal-to-zero",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122870,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Complement of Base 10 Integer",
+    "id": "1009",
+    "slug": "complement-of-base-10-integer",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123206,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Can Make Palindrome from Substring",
+    "id": "1177",
+    "slug": "can-make-palindrome-from-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123364,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Encode Number",
+    "id": "1256",
+    "slug": "encode-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, bit-manipulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123472,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "XOR Queries of a Subarray",
+    "id": "1310",
+    "slug": "xor-queries-of-a-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123488,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Minimum Flips to Make a OR b Equal to c",
+    "id": "1318",
+    "slug": "minimum-flips-to-make-a-or-b-equal-to-c",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123536,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Number of Steps to Reduce a Number to Zero",
+    "id": "1342",
+    "slug": "number-of-steps-to-reduce-a-number-to-zero",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123564,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "counting",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort Integers by The Number of 1 Bits",
+    "id": "1356",
+    "slug": "sort-integers-by-the-number-of-1-bits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, bit-manipulation, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123594,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the Longest Substring Containing Vowels in Even Counts",
+    "id": "1371",
+    "slug": "find-the-longest-substring-containing-vowels-in-even-counts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123660,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+    "id": "1404",
+    "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123736,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "math",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Count Triplets That Can Form Two Arrays of Equal XOR",
+    "id": "1442",
+    "slug": "count-triplets-that-can-form-two-arrays-of-equal-xor",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123774,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "rolling-hash",
+    "string"
+   ],
+   "fields": {
+    "title": "Check If a String Contains All Binary Codes of Size K",
+    "id": "1461",
+    "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, bit-manipulation, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123824,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "XOR Operation in an Array",
+    "id": "1486",
+    "slug": "xor-operation-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123936,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Longest Awesome Substring",
+    "id": "1542",
+    "slug": "find-longest-awesome-substring",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124212,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Concatenation of Consecutive Binary Numbers",
+    "id": "1680",
+    "slug": "concatenation-of-consecutive-binary-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, bit-manipulation, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124220,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Count the Number of Consistent Strings",
+    "id": "1684",
+    "slug": "count-the-number-of-consistent-strings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124292,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Decode XORed Array",
+    "id": "1720",
+    "slug": "decode-xored-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124320,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Decode XORed Permutation",
+    "id": "1734",
+    "slug": "decode-xored-permutation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124510,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Maximum XOR for Each Query",
+    "id": "1829",
+    "slug": "maximum-xor-for-each-query",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124522,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Find XOR Sum of All Pairs Bitwise AND",
+    "id": "1835",
+    "slug": "find-xor-sum-of-all-pairs-bitwise-and",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124682,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Wonderful Substrings",
+    "id": "1915",
+    "slug": "number-of-wonderful-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125108,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "matrix",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Remove All Ones With Row and Column Flips",
+    "id": "2128",
+    "slug": "remove-all-ones-with-row-and-column-flips",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, bit-manipulation, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125122,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Words Obtained After Adding a Letter",
+    "id": "2135",
+    "slug": "count-words-obtained-after-adding-a-letter",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, bit-manipulation, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125264,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Divide Array Into Equal Pairs",
+    "id": "2206",
+    "slug": "divide-array-into-equal-pairs",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, bit-manipulation, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125276,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "enumeration",
+    "recursion",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Maximum Points in an Archery Competition",
+    "id": "2212",
+    "slug": "maximum-points-in-an-archery-competition",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, recursion, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125292,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Minimum Bit Flips to Convert Number",
+    "id": "2220",
+    "slug": "minimum-bit-flips-to-convert-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125402,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Largest Combination With Bitwise AND Greater Than Zero",
+    "id": "2275",
+    "slug": "largest-combination-with-bitwise-and-greater-than-zero",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, bit-manipulation, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125464,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "enumeration",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Naming a Company",
+    "id": "2306",
+    "slug": "naming-a-company",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, bit-manipulation, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125486,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Maximum XOR After Operations ",
+    "id": "2317",
+    "slug": "maximum-xor-after-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125690,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "brainteaser",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Longest Subarray With Maximum Bitwise AND",
+    "id": "2419",
+    "slug": "longest-subarray-with-maximum-bitwise-and",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, brainteaser",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125702,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "brainteaser",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Bitwise XOR of All Pairings",
+    "id": "2425",
+    "slug": "bitwise-xor-of-all-pairings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, brainteaser",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125718,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Find The Original Array of Prefix Xor",
+    "id": "2433",
+    "slug": "find-the-original-array-of-prefix-xor",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125728,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Range Product Queries of Powers",
+    "id": "2438",
+    "slug": "range-product-queries-of-powers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125862,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "brainteaser",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Bitwise OR of All Subsequence Sums",
+    "id": "2505",
+    "slug": "bitwise-or-of-all-subsequence-sums",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, bit-manipulation, brainteaser",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125906,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Find Xor-Beauty of Array",
+    "id": "2527",
+    "slug": "find-xor-beauty-of-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125944,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Apply Bitwise Operations to Make Strings Equal",
+    "id": "2546",
+    "slug": "apply-bitwise-operations-to-make-strings-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125980,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::18-bit-manipulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Substring XOR Queries",
+    "id": "2564",
+    "slug": "substring-xor-queries",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125988,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "brainteaser",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Minimum Impossible OR",
+    "id": "2568",
+    "slug": "minimum-impossible-or",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, brainteaser",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126028,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Count the Number of Beautiful Subarrays",
+    "id": "2588",
+    "slug": "count-the-number-of-beautiful-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, bit-manipulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126042,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Number of Even and Odd Bits",
+    "id": "2595",
+    "slug": "number-of-even-and-odd-bits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126218,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::18-bit-manipulation"
+   ],
+   "fields": {
+    "title": "Neighboring Bitwise XOR",
+    "id": "2683",
+    "slug": "neighboring-bitwise-xor",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation",
+    "paid": "no"
+   }
+  }
+ ]
+}

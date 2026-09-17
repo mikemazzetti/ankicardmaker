@@ -1,0 +1,7624 @@
+{
+ "deck": "Interview::LeetCode::Extra::01 Arrays & Hashing",
+ "note_count": 417,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120864,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Zigzag Conversion",
+    "id": "6",
+    "slug": "zigzag-conversion",
+    "difficulty": "<font color=\"orange\">Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120868,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "String to Integer (atoi)",
+    "id": "8",
+    "slug": "string-to-integer-atoi",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120928,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count and Say",
+    "id": "38",
+    "slug": "count-and-say",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120934,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "First Missing Positive",
+    "id": "41",
+    "slug": "first-missing-positive",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120968,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Length of Last Word",
+    "id": "58",
+    "slug": "length-of-last-word",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120982,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Number",
+    "id": "65",
+    "slug": "valid-number",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120988,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Text Justification",
+    "id": "68",
+    "slug": "text-justification",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121166,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "interactive",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Read N Characters Given Read4",
+    "id": "157",
+    "slug": "read-n-characters-given-read4",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, simulation, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121168,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "interactive",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Read N Characters Given read4 II - Call Multiple Times",
+    "id": "158",
+    "slug": "read-n-characters-given-read4-ii-call-multiple-times",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, simulation, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121178,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Missing Ranges",
+    "id": "163",
+    "slug": "missing-ranges",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121180,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bucket-sort",
+    "difficulty-hard-tag",
+    "radix-sort",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Gap",
+    "id": "164",
+    "slug": "maximum-gap",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, sorting, bucket-sort, radix-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121190,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Majority Element",
+    "id": "169",
+    "slug": "majority-element",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, divide-and-conquer, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121262,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Isomorphic Strings",
+    "id": "205",
+    "slug": "isomorphic-strings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121280,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::01-arrays-hashing",
+    "rolling-hash",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Shortest Palindrome",
+    "id": "214",
+    "slug": "shortest-palindrome",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, rolling-hash, string-matching, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121308,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Summary Ranges",
+    "id": "228",
+    "slug": "summary-ranges",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121310,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Majority Element II",
+    "id": "229",
+    "slug": "majority-element-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121338,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shortest Word Distance",
+    "id": "243",
+    "slug": "shortest-word-distance",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121342,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shortest Word Distance III",
+    "id": "245",
+    "slug": "shortest-word-distance-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121346,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "recursion",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Strobogrammatic Number II",
+    "id": "247",
+    "slug": "strobogrammatic-number-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, recursion",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121348,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "recursion",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Strobogrammatic Number III",
+    "id": "248",
+    "slug": "strobogrammatic-number-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, recursion",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121350,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Group Shifted Strings",
+    "id": "249",
+    "slug": "group-shifted-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121400,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting-sort",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "H-Index",
+    "id": "274",
+    "slug": "h-index",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, counting-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121414,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "queue",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Zigzag Iterator",
+    "id": "281",
+    "slug": "zigzag-iterator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, design, queue, iterator",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121420,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Peeking Iterator",
+    "id": "284",
+    "slug": "peeking-iterator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, design, iterator",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121428,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Unique Word Abbreviation",
+    "id": "288",
+    "slug": "unique-word-abbreviation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121432,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Word Pattern",
+    "id": "290",
+    "slug": "word-pattern",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121438,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Flip Game",
+    "id": "293",
+    "slug": "flip-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121450,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Bulls and Cows",
+    "id": "299",
+    "slug": "bulls-and-cows",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121458,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Range Sum Query - Immutable",
+    "id": "303",
+    "slug": "range-sum-query-immutable",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, design, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121502,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Size Subarray Sum Equals k",
+    "id": "325",
+    "slug": "maximum-size-subarray-sum-equals-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121544,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-easy-tag",
+    "queue",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Moving Average from Data Stream",
+    "id": "346",
+    "slug": "moving-average-from-data-stream",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, design, queue, data-stream",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121570,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Logger Rate Limiter",
+    "id": "359",
+    "slug": "logger-rate-limiter",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121592,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Range Addition",
+    "id": "370",
+    "slug": "range-addition",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121618,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Ransom Note",
+    "id": "383",
+    "slug": "ransom-note",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121626,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "queue",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "First Unique Character in a String",
+    "id": "387",
+    "slug": "first-unique-character-in-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, queue, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121680,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Third Maximum Number",
+    "id": "414",
+    "slug": "third-maximum-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121720,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Segments in a String",
+    "id": "434",
+    "slug": "number-of-segments-in-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121736,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find All Duplicates in an Array",
+    "id": "442",
+    "slug": "find-all-duplicates-in-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121748,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find All Numbers Disappeared in an Array",
+    "id": "448",
+    "slug": "find-all-numbers-disappeared-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121760,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "4Sum II",
+    "id": "454",
+    "slug": "4sum-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121770,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Repeated Substring Pattern",
+    "id": "459",
+    "slug": "repeated-substring-pattern",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121788,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Validate IP Address",
+    "id": "468",
+    "slug": "validate-ip-address",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121816,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "License Key Formatting",
+    "id": "482",
+    "slug": "license-key-formatting",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121822,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Max Consecutive Ones",
+    "id": "485",
+    "slug": "max-consecutive-ones",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121842,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Teemo Attacking",
+    "id": "495",
+    "slug": "teemo-attacking",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121852,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Keyboard Row",
+    "id": "500",
+    "slug": "keyboard-row",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121892,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Detect Capital",
+    "id": "520",
+    "slug": "detect-capital",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121894,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Uncommon Subsequence I",
+    "id": "521",
+    "slug": "longest-uncommon-subsequence-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121902,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Contiguous Array",
+    "id": "525",
+    "slug": "contiguous-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121922,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Encode and Decode TinyURL",
+    "id": "535",
+    "slug": "encode-and-decode-tinyurl",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121940,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "recursion",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Output Contest Matches",
+    "id": "544",
+    "slug": "output-contest-matches",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, recursion, simulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121948,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Split Array with Equal Sum",
+    "id": "548",
+    "slug": "split-array-with-equal-sum",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121954,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Student Attendance Record I",
+    "id": "551",
+    "slug": "student-attendance-record-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121960,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Brick Wall",
+    "id": "554",
+    "slug": "brick-wall",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121972,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Subarray Sum Equals K",
+    "id": "560",
+    "slug": "subarray-sum-equals-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122002,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Distribute Candies",
+    "id": "575",
+    "slug": "distribute-candies",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122040,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Longest Harmonious Subsequence",
+    "id": "594",
+    "slug": "longest-harmonious-subsequence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122050,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Index Sum of Two Lists",
+    "id": "599",
+    "slug": "minimum-index-sum-of-two-lists",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122060,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-easy-tag",
+    "hash-table",
+    "iterator",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Design Compressed String Iterator",
+    "id": "604",
+    "slug": "design-compressed-string-iterator",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string, design, iterator",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122070,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Duplicate File in System",
+    "id": "609",
+    "slug": "find-duplicate-file-in-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122122,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Design Log Storage System",
+    "id": "635",
+    "slug": "design-log-storage-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122166,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Robot Return to Origin",
+    "id": "657",
+    "slug": "robot-return-to-origin",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122182,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Non-decreasing Array",
+    "id": "665",
+    "slug": "non-decreasing-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122200,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Longest Continuous Increasing Subsequence",
+    "id": "674",
+    "slug": "longest-continuous-increasing-subsequence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122214,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Next Closest Time",
+    "id": "681",
+    "slug": "next-closest-time",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, enumeration",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122224,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Repeated String Match",
+    "id": "686",
+    "slug": "repeated-string-match",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122246,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Degree of an Array",
+    "id": "697",
+    "slug": "degree-of-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122270,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "To Lower Case",
+    "id": "709",
+    "slug": "to-lower-case",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122286,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "1-bit and 2-bit Characters",
+    "id": "717",
+    "slug": "1-bit-and-2-bit-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122296,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Comments",
+    "id": "722",
+    "slug": "remove-comments",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122300,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Pivot Index",
+    "id": "724",
+    "slug": "find-pivot-index",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122320,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Sentence Similarity",
+    "id": "734",
+    "slug": "sentence-similarity",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122346,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Number At Least Twice of Others",
+    "id": "747",
+    "slug": "largest-number-at-least-twice-of-others",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122348,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shortest Completing Word",
+    "id": "748",
+    "slug": "shortest-completing-word",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122362,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Pour Water",
+    "id": "755",
+    "slug": "pour-water",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122372,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Anagram Mappings",
+    "id": "760",
+    "slug": "find-anagram-mappings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122374,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "recursion",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Special Binary String",
+    "id": "761",
+    "slug": "special-binary-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122394,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Jewels and Stones",
+    "id": "771",
+    "slug": "jewels-and-stones",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122434,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Custom Sort String",
+    "id": "791",
+    "slug": "custom-sort-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122440,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Tic-Tac-Toe State",
+    "id": "794",
+    "slug": "valid-tic-tac-toe-state",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122444,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Rotate String",
+    "id": "796",
+    "slug": "rotate-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122448,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Smallest Rotation with Highest Score",
+    "id": "798",
+    "slug": "smallest-rotation-with-highest-score",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122460,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Unique Morse Code Words",
+    "id": "804",
+    "slug": "unique-morse-code-words",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122464,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Lines To Write String",
+    "id": "806",
+    "slug": "number-of-lines-to-write-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122474,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Subdomain Visit Count",
+    "id": "811",
+    "slug": "subdomain-visit-count",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122490,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Most Common Word",
+    "id": "819",
+    "slug": "most-common-word",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122496,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Card Flipping Game",
+    "id": "822",
+    "slug": "card-flipping-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122500,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Goat Latin",
+    "id": "824",
+    "slug": "goat-latin",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122512,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Positions of Large Groups",
+    "id": "830",
+    "slug": "positions-of-large-groups",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122514,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Masking Personal Information",
+    "id": "831",
+    "slug": "masking-personal-information",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122518,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Find And Replace in String",
+    "id": "833",
+    "slug": "find-and-replace-in-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122548,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shifting Letters",
+    "id": "848",
+    "slug": "shifting-letters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122550,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximize Distance to Closest Person",
+    "id": "849",
+    "slug": "maximize-distance-to-closest-person",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122570,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Buddy Strings",
+    "id": "859",
+    "slug": "buddy-strings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122600,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Walking Robot Simulation",
+    "id": "874",
+    "slug": "walking-robot-simulation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122620,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Uncommon Words from Two Sentences",
+    "id": "884",
+    "slug": "uncommon-words-from-two-sentences",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122632,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Find and Replace Pattern",
+    "id": "890",
+    "slug": "find-and-replace-pattern",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122638,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Groups of Special-Equivalent Strings",
+    "id": "893",
+    "slug": "groups-of-special-equivalent-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122644,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Monotonic Array",
+    "id": "896",
+    "slug": "monotonic-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122652,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "RLE Iterator",
+    "id": "900",
+    "slug": "rle-iterator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, design, counting, iterator",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122684,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Word Subsets",
+    "id": "916",
+    "slug": "word-subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122710,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Unique Email Addresses",
+    "id": "929",
+    "slug": "unique-email-addresses",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122718,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-easy-tag",
+    "queue",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Recent Calls",
+    "id": "933",
+    "slug": "number-of-recent-calls",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "design, queue, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122726,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Reorder Data in Log Files",
+    "id": "937",
+    "slug": "reorder-data-in-log-files",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122734,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Valid Mountain Array",
+    "id": "941",
+    "slug": "valid-mountain-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122740,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Delete Columns to Make Sorted",
+    "id": "944",
+    "slug": "delete-columns-to-make-sorted",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122750,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest Time for Given Digits",
+    "id": "949",
+    "slug": "largest-time-for-given-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122752,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "queue",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Reveal Cards In Increasing Order",
+    "id": "950",
+    "slug": "reveal-cards-in-increasing-order",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, queue, sorting, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122758,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Verifying an Alien Dictionary",
+    "id": "953",
+    "slug": "verifying-an-alien-dictionary",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122774,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "N-Repeated Element in Size 2N Array",
+    "id": "961",
+    "slug": "n-repeated-element-in-size-2n-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122784,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Vowel Spellchecker",
+    "id": "966",
+    "slug": "vowel-spellchecker",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122800,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Subarray Sums Divisible by K",
+    "id": "974",
+    "slug": "subarray-sums-divisible-by-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122822,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Sum of Even Numbers After Queries",
+    "id": "985",
+    "slug": "sum-of-even-numbers-after-queries",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122854,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Grid Illumination",
+    "id": "1001",
+    "slug": "grid-illumination",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122856,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Common Characters",
+    "id": "1002",
+    "slug": "find-common-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122872,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Pairs of Songs With Total Durations Divisible by 60",
+    "id": "1010",
+    "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122884,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Binary String With Substrings Representing 1 To N",
+    "id": "1016",
+    "slug": "binary-string-with-substrings-representing-1-to-n",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122888,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Binary Prefix Divisible By 5",
+    "id": "1018",
+    "slug": "binary-prefix-divisible-by-5",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122954,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting-sort",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Height Checker",
+    "id": "1051",
+    "slug": "height-checker",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting, counting-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123008,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Occurrences After Bigram",
+    "id": "1078",
+    "slug": "occurrences-after-bigram",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123024,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "High Five",
+    "id": "1086",
+    "slug": "high-five",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123068,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Defanging an IP Address",
+    "id": "1108",
+    "slug": "defanging-an-ip-address",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123070,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Corporate Flight Bookings",
+    "id": "1109",
+    "slug": "corporate-flight-bookings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123090,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Vowels from a String",
+    "id": "1119",
+    "slug": "remove-vowels-from-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123096,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting-sort",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Relative Sort Array",
+    "id": "1122",
+    "slug": "relative-sort-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting, counting-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123108,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Equivalent Domino Pairs",
+    "id": "1128",
+    "slug": "number-of-equivalent-domino-pairs",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123118,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Unique Number",
+    "id": "1133",
+    "slug": "largest-unique-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123128,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Alphabet Board Path",
+    "id": "1138",
+    "slug": "alphabet-board-path",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123156,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Analyze User Website Visit Pattern",
+    "id": "1152",
+    "slug": "analyze-user-website-visit-pattern",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123158,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "String Transforms Into Another String",
+    "id": "1153",
+    "slug": "string-transforms-into-another-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123172,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Words That Can Be Formed by Characters",
+    "id": "1160",
+    "slug": "find-words-that-can-be-formed-by-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123182,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Single-Row Keyboard",
+    "id": "1165",
+    "slug": "single-row-keyboard",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123190,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Invalid Transactions",
+    "id": "1169",
+    "slug": "invalid-transactions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123214,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Before and After Puzzle",
+    "id": "1181",
+    "slug": "before-and-after-puzzle",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123220,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Distance Between Bus Stops",
+    "id": "1184",
+    "slug": "distance-between-bus-stops",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123230,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Balloons",
+    "id": "1189",
+    "slug": "maximum-number-of-balloons",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123252,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Absolute Difference",
+    "id": "1200",
+    "slug": "minimum-absolute-difference",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123266,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Unique Number of Occurrences",
+    "id": "1207",
+    "slug": "unique-number-of-occurrences",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123300,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Equal Frequency",
+    "id": "1224",
+    "slug": "maximum-equal-frequency",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123338,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Array Transformation",
+    "id": "1243",
+    "slug": "array-transformation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123340,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Design A Leaderboard",
+    "id": "1244",
+    "slug": "design-a-leaderboard",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123400,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "interactive",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Ships in a Rectangle",
+    "id": "1274",
+    "slug": "number-of-ships-in-a-rectangle",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, divide-and-conquer, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123416,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Group the People Given the Group Size They Belong To",
+    "id": "1282",
+    "slug": "group-the-people-given-the-group-size-they-belong-to",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123426,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Element Appearing More Than 25% In Sorted Array",
+    "id": "1287",
+    "slug": "element-appearing-more-than-25-in-sorted-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123434,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Sequential Digits",
+    "id": "1291",
+    "slug": "sequential-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123442,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Numbers with Even Number of Digits",
+    "id": "1295",
+    "slug": "find-numbers-with-even-number-of-digits",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123450,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Replace Elements with Greatest Element on Right Side",
+    "id": "1299",
+    "slug": "replace-elements-with-greatest-element-on-right-side",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123470,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Decrypt String from Alphabet to Integer Mapping",
+    "id": "1309",
+    "slug": "decrypt-string-from-alphabet-to-integer-mapping",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123478,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Decompress Run-Length Encoded List",
+    "id": "1313",
+    "slug": "decompress-run-length-encoded-list",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123500,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Print Words Vertically",
+    "id": "1324",
+    "slug": "print-words-vertically",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123514,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Rank Transform of an Array",
+    "id": "1331",
+    "slug": "rank-transform-of-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123518,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Filter Restaurants by Vegan-Friendly, Price and Distance",
+    "id": "1333",
+    "slug": "filter-restaurants-by-vegan-friendly-price-and-distance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123546,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Steps to Make Two Strings Anagram",
+    "id": "1347",
+    "slug": "minimum-number-of-steps-to-make-two-strings-anagram",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123566,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Apply Discount Every n Orders",
+    "id": "1357",
+    "slug": "apply-discount-every-n-orders",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123582,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "How Many Numbers Are Smaller Than the Current Number",
+    "id": "1365",
+    "slug": "how-many-numbers-are-smaller-than-the-current-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123584,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Rank Teams by Votes",
+    "id": "1366",
+    "slug": "rank-teams-by-votes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123592,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Increasing Decreasing String",
+    "id": "1370",
+    "slug": "increasing-decreasing-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123600,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Generate a String With Characters That Have Odd Counts",
+    "id": "1374",
+    "slug": "generate-a-string-with-characters-that-have-odd-counts",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123602,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Times Binary String Is Prefix-Aligned",
+    "id": "1375",
+    "slug": "number-of-times-binary-string-is-prefix-aligned",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123630,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Create Target Array in the Given Order",
+    "id": "1389",
+    "slug": "create-target-array-in-the-given-order",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123636,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::01-arrays-hashing",
+    "rolling-hash",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Longest Happy Prefix",
+    "id": "1392",
+    "slug": "longest-happy-prefix",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, rolling-hash, string-matching, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123640,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Lucky Integer in an Array",
+    "id": "1394",
+    "slug": "find-lucky-integer-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123644,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Design Underground System",
+    "id": "1396",
+    "slug": "design-underground-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123668,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "String Matching in an Array",
+    "id": "1408",
+    "slug": "string-matching-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123672,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "HTML Entity Parser",
+    "id": "1410",
+    "slug": "html-entity-parser",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123678,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Minimum Value to Get Positive Step by Step Sum",
+    "id": "1413",
+    "slug": "minimum-value-to-get-positive-step-by-step-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123686,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Reformat The String",
+    "id": "1417",
+    "slug": "reformat-the-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123688,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Display Table of Food Orders in a Restaurant",
+    "id": "1418",
+    "slug": "display-table-of-food-orders-in-a-restaurant",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123690,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Frogs Croaking",
+    "id": "1419",
+    "slug": "minimum-number-of-frogs-croaking",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123696,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Score After Splitting a String",
+    "id": "1422",
+    "slug": "maximum-score-after-splitting-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123704,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Counting Elements",
+    "id": "1426",
+    "slug": "counting-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123710,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "queue",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "First Unique Number",
+    "id": "1429",
+    "slug": "first-unique-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design, queue, data-stream",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123714,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Kids With the Greatest Number of Candies",
+    "id": "1431",
+    "slug": "kids-with-the-greatest-number-of-candies",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123724,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Destination City",
+    "id": "1436",
+    "slug": "destination-city",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123726,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Check If All 1's Are at Least Length K Places Away",
+    "id": "1437",
+    "slug": "check-if-all-1s-are-at-least-length-k-places-away",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123744,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Consecutive Characters",
+    "id": "1446",
+    "slug": "consecutive-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123752,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Students Doing Homework at a Given Time",
+    "id": "1450",
+    "slug": "number-of-students-doing-homework-at-a-given-time",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123754,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Rearrange Words in a Sentence",
+    "id": "1451",
+    "slug": "rearrange-words-in-a-sentence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123756,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "People Whose List of Favorite Companies Is Not a Subset of Another List",
+    "id": "1452",
+    "slug": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123762,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+    "id": "1455",
+    "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123772,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Make Two Arrays Equal by Reversing Subarrays",
+    "id": "1460",
+    "slug": "make-two-arrays-equal-by-reversing-subarrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123792,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Shuffle the Array",
+    "id": "1470",
+    "slug": "shuffle-the-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123812,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Running Sum of 1d Array",
+    "id": "1480",
+    "slug": "running-sum-of-1d-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123826,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Making File Names Unique",
+    "id": "1487",
+    "slug": "making-file-names-unique",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123834,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Average Salary Excluding the Minimum and Maximum Salary",
+    "id": "1491",
+    "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123844,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Path Crossing",
+    "id": "1496",
+    "slug": "path-crossing",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123846,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Check If Array Pairs Are Divisible by k",
+    "id": "1497",
+    "slug": "check-if-array-pairs-are-divisible-by-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123856,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Can Make Arithmetic Progression From Sequence",
+    "id": "1502",
+    "slug": "can-make-arithmetic-progression-from-sequence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123866,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Reformat Date",
+    "id": "1507",
+    "slug": "reformat-date",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123908,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shuffle String",
+    "id": "1528",
+    "slug": "shuffle-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123920,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Good Triplets",
+    "id": "1534",
+    "slug": "count-good-triplets",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123922,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Find the Winner of an Array Game",
+    "id": "1535",
+    "slug": "find-the-winner-of-an-array-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123932,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Can Convert String in K Moves",
+    "id": "1540",
+    "slug": "can-convert-string-in-k-moves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123942,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "recursion",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Kth Bit in Nth Binary String",
+    "id": "1545",
+    "slug": "find-kth-bit-in-nth-binary-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123952,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Three Consecutive Odds",
+    "id": "1550",
+    "slug": "three-consecutive-odds",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123960,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "rolling-hash",
+    "string"
+   ],
+   "fields": {
+    "title": "Strings Differ by One Character",
+    "id": "1554",
+    "slug": "strings-differ-by-one-character",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, rolling-hash, hash-function",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123964,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Thousand Separator",
+    "id": "1556",
+    "slug": "thousand-separator",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123972,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Most Visited Sector in  a Circular Track",
+    "id": "1560",
+    "slug": "most-visited-sector-in-a-circular-track",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123984,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Detect Pattern of Length M Repeated K or More Times",
+    "id": "1566",
+    "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124004,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
+    "id": "1576",
+    "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124018,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Count Unhappy Friends",
+    "id": "1583",
+    "slug": "count-unhappy-friends",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124032,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Make Sum Divisible by P",
+    "id": "1590",
+    "slug": "make-sum-divisible-by-p",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124036,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Rearrange Spaces Between Words",
+    "id": "1592",
+    "slug": "rearrange-spaces-between-words",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124050,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Maximum Profit of Operating a Centennial Wheel",
+    "id": "1599",
+    "slug": "maximum-profit-of-operating-a-centennial-wheel",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124058,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "design",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Design Parking System",
+    "id": "1603",
+    "slug": "design-parking-system",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "design, simulation, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124060,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Alert Using Same Key-Card Three or More Times in a One Hour Period",
+    "id": "1604",
+    "slug": "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124090,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Mean of Array After Removing Some Elements",
+    "id": "1619",
+    "slug": "mean-of-array-after-removing-some-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124092,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Coordinate With Maximum Network Quality",
+    "id": "1620",
+    "slug": "coordinate-with-maximum-network-quality",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124100,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest Substring Between Two Equal Characters",
+    "id": "1624",
+    "slug": "largest-substring-between-two-equal-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124110,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Slowest Key",
+    "id": "1629",
+    "slug": "slowest-key",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124112,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Arithmetic Subarrays",
+    "id": "1630",
+    "slug": "arithmetic-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124124,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort Array by Increasing Frequency",
+    "id": "1636",
+    "slug": "sort-array-by-increasing-frequency",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124126,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Widest Vertical Area Between Two Points Containing No Points",
+    "id": "1637",
+    "slug": "widest-vertical-area-between-two-points-containing-no-points",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124132,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Check Array Formation Through Concatenation",
+    "id": "1640",
+    "slug": "check-array-formation-through-concatenation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124156,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Defuse the Bomb",
+    "id": "1652",
+    "slug": "defuse-the-bomb",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124164,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Design an Ordered Stream",
+    "id": "1656",
+    "slug": "design-an-ordered-stream",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, design, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124166,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Determine if Two Strings Are Close",
+    "id": "1657",
+    "slug": "determine-if-two-strings-are-close",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124176,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check If Two String Arrays are Equivalent",
+    "id": "1662",
+    "slug": "check-if-two-string-arrays-are-equivalent",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124188,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Maximum Repeating Substring",
+    "id": "1668",
+    "slug": "maximum-repeating-substring",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124200,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Minimum Moves to Make Array Complementary",
+    "id": "1674",
+    "slug": "minimum-moves-to-make-array-complementary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124208,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Goal Parser Interpretation",
+    "id": "1678",
+    "slug": "goal-parser-interpretation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124240,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Reformat Phone Number",
+    "id": "1694",
+    "slug": "reformat-phone-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124254,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Average Waiting Time",
+    "id": "1701",
+    "slug": "average-waiting-time",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124260,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Determine if String Halves Are Alike",
+    "id": "1704",
+    "slug": "determine-if-string-halves-are-alike",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124274,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Good Meals",
+    "id": "1711",
+    "slug": "count-good-meals",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124302,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number Of Rectangles That Can Form The Largest Square",
+    "id": "1725",
+    "slug": "number-of-rectangles-that-can-form-the-largest-square",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124304,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Tuple with Same Product",
+    "id": "1726",
+    "slug": "tuple-with-same-product",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124316,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Highest Altitude",
+    "id": "1732",
+    "slug": "find-the-highest-altitude",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124326,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Change Minimum Characters to Satisfy One of Three Conditions",
+    "id": "1737",
+    "slug": "change-minimum-characters-to-satisfy-one-of-three-conditions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, counting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124338,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Restore the Array From Adjacent Pairs",
+    "id": "1743",
+    "slug": "restore-the-array-from-adjacent-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124340,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Can You Eat Your Favorite Candy on Your Favorite Day?",
+    "id": "1744",
+    "slug": "can-you-eat-your-favorite-candy-on-your-favorite-day",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124348,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Sum of Unique Elements",
+    "id": "1748",
+    "slug": "sum-of-unique-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124356,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Check if Array Is Sorted and Rotated",
+    "id": "1752",
+    "slug": "check-if-array-is-sorted-and-rotated",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124368,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Changes To Make Alternating Binary String",
+    "id": "1758",
+    "slug": "minimum-changes-to-make-alternating-binary-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124390,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Operations to Move All Balls to Each Box",
+    "id": "1769",
+    "slug": "minimum-number-of-operations-to-move-all-balls-to-each-box",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124396,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Sort Features by Popularity",
+    "id": "1772",
+    "slug": "sort-features-by-popularity",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124398,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Items Matching a Rule",
+    "id": "1773",
+    "slug": "count-items-matching-a-rule",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124410,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Nearest Point That Has the Same X or Y Coordinate",
+    "id": "1779",
+    "slug": "find-nearest-point-that-has-the-same-x-or-y-coordinate",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124414,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Sum of Beauty of All Substrings",
+    "id": "1781",
+    "slug": "sum-of-beauty-of-all-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124420,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if Binary String Has at Most One Segment of Ones",
+    "id": "1784",
+    "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124432,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if One String Swap Can Make Strings Equal",
+    "id": "1790",
+    "slug": "check-if-one-string-swap-can-make-strings-equal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124444,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Second Largest Digit in a String",
+    "id": "1796",
+    "slug": "second-largest-digit-in-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124446,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Design Authentication Manager",
+    "id": "1797",
+    "slug": "design-authentication-manager",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124452,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Ascending Subarray Sum",
+    "id": "1800",
+    "slug": "maximum-ascending-subarray-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124462,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Different Integers in a String",
+    "id": "1805",
+    "slug": "number-of-different-integers-in-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124466,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Evaluate the Bracket Pairs of a String",
+    "id": "1807",
+    "slug": "evaluate-the-bracket-pairs-of-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124484,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Truncate Sentence",
+    "id": "1816",
+    "slug": "truncate-sentence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124486,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Finding the Users Active Minutes",
+    "id": "1817",
+    "slug": "finding-the-users-active-minutes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124516,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if the Sentence Is Pangram",
+    "id": "1832",
+    "slug": "check-if-the-sentence-is-pangram",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124540,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Replace All Digits with Characters",
+    "id": "1844",
+    "slug": "replace-all-digits-with-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124548,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Minimum Distance to the Target Element",
+    "id": "1848",
+    "slug": "minimum-distance-to-the-target-element",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124560,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Population Year",
+    "id": "1854",
+    "slug": "maximum-population-year",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124570,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Sorting the Sentence",
+    "id": "1859",
+    "slug": "sorting-the-sentence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124572,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Incremental Memory Leak",
+    "id": "1860",
+    "slug": "incremental-memory-leak",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124582,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Finding Pairs With a Certain Sum",
+    "id": "1865",
+    "slug": "finding-pairs-with-a-certain-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124590,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Longer Contiguous Segments of Ones than Zeros",
+    "id": "1869",
+    "slug": "longer-contiguous-segments-of-ones-than-zeros",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124612,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if Word Equals Summation of Two Words",
+    "id": "1880",
+    "slug": "check-if-word-equals-summation-of-two-words",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124626,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Reduction Operations to Make the Array Elements Equal",
+    "id": "1887",
+    "slug": "reduction-operations-to-make-the-array-elements-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124638,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Check if All the Integers in a Range Are Covered",
+    "id": "1893",
+    "slug": "check-if-all-the-integers-in-a-range-are-covered",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124646,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Redistribute Characters to Make All Strings Equal",
+    "id": "1897",
+    "slug": "redistribute-characters-to-make-all-strings-equal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124664,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Minimum Absolute Difference Queries",
+    "id": "1906",
+    "slug": "minimum-absolute-difference-queries",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124670,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Remove One Element to Make the Array Strictly Increasing",
+    "id": "1909",
+    "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124672,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove All Occurrences of a Substring",
+    "id": "1910",
+    "slug": "remove-all-occurrences-of-a-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124678,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Product Difference Between Two Pairs",
+    "id": "1913",
+    "slug": "maximum-product-difference-between-two-pairs",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124692,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Build Array from Permutation",
+    "id": "1920",
+    "slug": "build-array-from-permutation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124710,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Concatenation of Array",
+    "id": "1929",
+    "slug": "concatenation-of-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124712,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Unique Length-3 Palindromic Subsequences",
+    "id": "1930",
+    "slug": "unique-length-3-palindromic-subsequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124718,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if String Is Decomposable Into Value-Equal Substrings",
+    "id": "1933",
+    "slug": "check-if-string-is-decomposable-into-value-equal-substrings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124722,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Words You Can Type",
+    "id": "1935",
+    "slug": "maximum-number-of-words-you-can-type",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124732,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Longest Common Subsequence Between Sorted Arrays",
+    "id": "1940",
+    "slug": "longest-common-subsequence-between-sorted-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124734,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if All Characters Have Equal Number of Occurrences",
+    "id": "1941",
+    "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124738,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Describe the Painting",
+    "id": "1943",
+    "slug": "describe-the-painting",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124742,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Sum of Digits of String After Convert",
+    "id": "1945",
+    "slug": "sum-of-digits-of-string-after-convert",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124766,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Delete Characters to Make Fancy String",
+    "id": "1957",
+    "slug": "delete-characters-to-make-fancy-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124772,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::01-arrays-hashing",
+    "rolling-hash",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Product of the Length of Two Palindromic Substrings",
+    "id": "1960",
+    "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124774,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check If String Is a Prefix of Array",
+    "id": "1961",
+    "slug": "check-if-string-is-a-prefix-of-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124786,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Strings That Appear as Substrings in Word",
+    "id": "1967",
+    "slug": "number-of-strings-that-appear-as-substrings-in-word",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124816,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Array Given Subset Sums",
+    "id": "1982",
+    "slug": "find-array-given-subset-sums",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, divide-and-conquer",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124818,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Widest Pair of Indices With Equal Range Sum",
+    "id": "1983",
+    "slug": "widest-pair-of-indices-with-equal-range-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124834,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Middle Index in Array",
+    "id": "1991",
+    "slug": "find-the-middle-index-in-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124842,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Special Quadruplets",
+    "id": "1995",
+    "slug": "count-special-quadruplets",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124864,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Number of Pairs With Absolute Difference K",
+    "id": "2006",
+    "slug": "count-number-of-pairs-with-absolute-difference-k",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124874,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Final Value of Variable After Performing Operations",
+    "id": "2011",
+    "slug": "final-value-of-variable-after-performing-operations",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124876,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Sum of Beauty in the Array",
+    "id": "2012",
+    "slug": "sum-of-beauty-in-the-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124884,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Difference Between Increasing Elements",
+    "id": "2016",
+    "slug": "maximum-difference-between-increasing-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124894,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "ordered-set",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Brightest Position on Street",
+    "id": "2021",
+    "slug": "brightest-position-on-street",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124898,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Pairs of Strings With Concatenation Equal to Target",
+    "id": "2023",
+    "slug": "number-of-pairs-of-strings-with-concatenation-equal-to-target",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124902,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-hard-tag",
+    "enumeration",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Number of Ways to Partition an Array",
+    "id": "2025",
+    "slug": "maximum-number-of-ways-to-partition-an-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, counting, enumeration, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124916,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Two Out of Three",
+    "id": "2032",
+    "slug": "two-out-of-three",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124926,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Number of Moves to Seat Everyone",
+    "id": "2037",
+    "slug": "minimum-number-of-moves-to-seat-everyone",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124936,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if Numbers Are Ascending in a Sentence",
+    "id": "2042",
+    "slug": "check-if-numbers-are-ascending-in-a-sentence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124938,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Simple Bank System",
+    "id": "2043",
+    "slug": "simple-bank-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124946,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Valid Words in a Sentence",
+    "id": "2047",
+    "slug": "number-of-valid-words-in-a-sentence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124958,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Kth Distinct String in an Array",
+    "id": "2053",
+    "slug": "kth-distinct-string-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124966,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Smallest Index With Equal Value",
+    "id": "2057",
+    "slug": "smallest-index-with-equal-value",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124976,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Vowel Substrings of a String",
+    "id": "2062",
+    "slug": "count-vowel-substrings-of-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124986,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Equal Count Substrings",
+    "id": "2067",
+    "slug": "number-of-equal-count-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, counting, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124988,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check Whether Two Strings are Almost Equivalent",
+    "id": "2068",
+    "slug": "check-whether-two-strings-are-almost-equivalent",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124990,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Walking Robot Simulation II",
+    "id": "2069",
+    "slug": "walking-robot-simulation-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "design, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124998,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "queue",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Time Needed to Buy Tickets",
+    "id": "2073",
+    "slug": "time-needed-to-buy-tickets",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125002,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Decode the Slanted Ciphertext",
+    "id": "2075",
+    "slug": "decode-the-slanted-ciphertext",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125010,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Watering Plants",
+    "id": "2079",
+    "slug": "watering-plants",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125022,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Common Words With One Occurrence",
+    "id": "2085",
+    "slug": "count-common-words-with-one-occurrence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125040,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "enumeration",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Finding 3-Digit Even Numbers",
+    "id": "2094",
+    "slug": "finding-3-digit-even-numbers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125058,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Rings and Rods",
+    "id": "2103",
+    "slug": "rings-and-rods",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125070,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Adding Spaces to a String",
+    "id": "2109",
+    "slug": "adding-spaces-to-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125078,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Elements in Array After Removing and Replacing Elements",
+    "id": "2113",
+    "slug": "elements-in-array-after-removing-and-replacing-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125080,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Words Found in Sentences",
+    "id": "2114",
+    "slug": "maximum-number-of-words-found-in-sentences",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125092,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Execution of All Suffix Instructions Staying in a Grid",
+    "id": "2120",
+    "slug": "execution-of-all-suffix-instructions-staying-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125096,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "enumeration",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Recover the Original Array",
+    "id": "2122",
+    "slug": "recover-the-original-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, sorting, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125100,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if All A's Appears Before All B's",
+    "id": "2124",
+    "slug": "check-if-all-as-appears-before-all-bs",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125110,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Capitalize the Title",
+    "id": "2129",
+    "slug": "capitalize-the-title",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125128,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Divide a String Into Groups of Size k",
+    "id": "2138",
+    "slug": "divide-a-string-into-groups-of-size-k",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125142,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count the Hidden Sequences",
+    "id": "2145",
+    "slug": "count-the-hidden-sequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125148,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Count Elements With Strictly Smaller and Greater Elements ",
+    "id": "2148",
+    "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125152,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find All Lonely Numbers in the Array",
+    "id": "2150",
+    "slug": "find-all-lonely-numbers-in-the-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125160,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Keep Multiplying Found Values by Two",
+    "id": "2154",
+    "slug": "keep-multiplying-found-values-by-two",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125162,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "All Divisions With the Highest Score of a Binary Array",
+    "id": "2155",
+    "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125180,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort Even and Odd Indices Independently",
+    "id": "2164",
+    "slug": "sort-even-and-odd-indices-independently",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125184,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Design Bitset",
+    "id": "2166",
+    "slug": "design-bitset",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125188,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "rolling-hash",
+    "string"
+   ],
+   "fields": {
+    "title": "Unique Substrings With Equal Digit Frequency",
+    "id": "2168",
+    "slug": "unique-substrings-with-equal-digit-frequency",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, rolling-hash, counting, hash-function",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125194,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Removing Minimum Number of Magic Beans",
+    "id": "2171",
+    "slug": "removing-minimum-number-of-magic-beans",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125204,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Equal and Divisible Pairs in an Array",
+    "id": "2176",
+    "slug": "count-equal-and-divisible-pairs-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125222,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Counting Words With a Given Prefix",
+    "id": "2185",
+    "slug": "counting-words-with-a-given-prefix",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125224,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Steps to Make Two Strings Anagram II",
+    "id": "2186",
+    "slug": "minimum-number-of-steps-to-make-two-strings-anagram-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125232,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Most Frequent Number Following Key In an Array",
+    "id": "2190",
+    "slug": "most-frequent-number-following-key-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125234,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort the Jumbled Numbers",
+    "id": "2191",
+    "slug": "sort-the-jumbled-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125240,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Cells in a Range on an Excel Sheet",
+    "id": "2194",
+    "slug": "cells-in-a-range-on-an-excel-sheet",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125252,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find All K-Distant Indices in an Array",
+    "id": "2200",
+    "slug": "find-all-k-distant-indices-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125254,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Count Artifacts That Can Be Extracted",
+    "id": "2201",
+    "slug": "count-artifacts-that-can-be-extracted",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125272,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Hills and Valleys in an Array",
+    "id": "2210",
+    "slug": "count-hills-and-valleys-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125282,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Difference of Two Arrays",
+    "id": "2215",
+    "slug": "find-the-difference-of-two-arrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125290,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Sum Score of Array",
+    "id": "2219",
+    "slug": "maximum-sum-score-of-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125302,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Players With Zero or One Losses",
+    "id": "2225",
+    "slug": "find-players-with-zero-or-one-losses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125310,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Check if an Array Is Consecutive",
+    "id": "2229",
+    "slug": "check-if-an-array-is-consecutive",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125316,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimize Result by Adding Parentheses to Expression",
+    "id": "2232",
+    "slug": "minimize-result-by-adding-parentheses-to-expression",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125326,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Positions on Street With Required Brightness",
+    "id": "2237",
+    "slug": "count-positions-on-street-with-required-brightness",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125330,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Closest Number to Zero",
+    "id": "2239",
+    "slug": "find-closest-number-to-zero",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125338,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Calculate Digit Sum of a String",
+    "id": "2243",
+    "slug": "calculate-digit-sum-of-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125348,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Intersection of Multiple Arrays",
+    "id": "2248",
+    "slug": "intersection-of-multiple-arrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125362,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Prefixes of a Given String",
+    "id": "2255",
+    "slug": "count-prefixes-of-a-given-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125364,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Minimum Average Difference",
+    "id": "2256",
+    "slug": "minimum-average-difference",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125380,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Largest 3-Same-Digit Number in String",
+    "id": "2264",
+    "slug": "largest-3-same-digit-number-in-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125392,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Ways to Split Array",
+    "id": "2270",
+    "slug": "number-of-ways-to-split-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125398,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Resultant Array After Removing Anagrams",
+    "id": "2273",
+    "slug": "find-resultant-array-after-removing-anagrams",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125400,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Consecutive Floors Without Special Floors",
+    "id": "2274",
+    "slug": "maximum-consecutive-floors-without-special-floors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125408,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Percentage of Letter in String",
+    "id": "2278",
+    "slug": "percentage-of-letter-in-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125418,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if Number Has Equal Digit Count and Digit Value",
+    "id": "2283",
+    "slug": "check-if-number-has-equal-digit-count-and-digit-value",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125420,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Sender With Largest Word Count",
+    "id": "2284",
+    "slug": "sender-with-largest-word-count",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125426,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Rearrange Characters to Make Target String",
+    "id": "2287",
+    "slug": "rearrange-characters-to-make-target-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125428,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Apply Discount to Prices",
+    "id": "2288",
+    "slug": "apply-discount-to-prices",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125438,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Min Max Game",
+    "id": "2293",
+    "slug": "min-max-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125442,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Replace Elements in an Array",
+    "id": "2295",
+    "slug": "replace-elements-in-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125450,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Strong Password Checker II",
+    "id": "2299",
+    "slug": "strong-password-checker-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125454,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Match Substring After Replacement",
+    "id": "2301",
+    "slug": "match-substring-after-replacement",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125458,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Calculate Amount Paid in Taxes",
+    "id": "2303",
+    "slug": "calculate-amount-paid-in-taxes",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125470,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "enumeration",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Greatest English Letter in Upper and Lower Case",
+    "id": "2309",
+    "slug": "greatest-english-letter-in-upper-and-lower-case",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125482,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Asterisks",
+    "id": "2315",
+    "slug": "count-asterisks",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125502,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Decode the Message",
+    "id": "2325",
+    "slug": "decode-the-message",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125534,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Maximum Number of Pairs in Array",
+    "id": "2341",
+    "slug": "maximum-number-of-pairs-in-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125546,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Best Poker Hand",
+    "id": "2347",
+    "slug": "best-poker-hand",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125554,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "First Letter to Appear Twice",
+    "id": "2351",
+    "slug": "first-letter-to-appear-twice",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125578,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Merge Similar Items",
+    "id": "2363",
+    "slug": "merge-similar-items",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125580,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Number of Bad Pairs",
+    "id": "2364",
+    "slug": "count-number-of-bad-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125582,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Task Scheduler II",
+    "id": "2365",
+    "slug": "task-scheduler-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125614,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shifting Letters II",
+    "id": "2381",
+    "slug": "shifting-letters-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125634,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Amount of Time to Collect Garbage",
+    "id": "2391",
+    "slug": "minimum-amount-of-time-to-collect-garbage",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125642,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Subarrays With Equal Sum",
+    "id": "2395",
+    "slug": "find-subarrays-with-equal-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125650,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Check Distances Between Same Letters",
+    "id": "2399",
+    "slug": "check-distances-between-same-letters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125660,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Most Frequent Even Element",
+    "id": "2404",
+    "slug": "most-frequent-even-element",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125668,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Design SQL",
+    "id": "2408",
+    "slug": "design-sql",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125680,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Length of the Longest Alphabetical Continuous Substring",
+    "id": "2414",
+    "slug": "length-of-the-longest-alphabetical-continuous-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125688,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Sort the People",
+    "id": "2418",
+    "slug": "sort-the-people",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125698,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Letter To Equalize Frequency",
+    "id": "2423",
+    "slug": "remove-letter-to-equalize-frequency",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125716,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "The Employee That Worked on the Longest Task",
+    "id": "2432",
+    "slug": "the-employee-that-worked-on-the-longest-task",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125726,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "enumeration",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Valid Clock Times",
+    "id": "2437",
+    "slug": "number-of-valid-clock-times",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125744,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Determine if Two Events Have Conflict",
+    "id": "2446",
+    "slug": "determine-if-two-events-have-conflict",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125754,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Odd String Difference",
+    "id": "2451",
+    "slug": "odd-string-difference",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125756,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Words Within Two Edits of Dictionary",
+    "id": "2452",
+    "slug": "words-within-two-edits-of-dictionary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125758,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Destroy Sequential Targets",
+    "id": "2453",
+    "slug": "destroy-sequential-targets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125772,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Apply Operations to an Array",
+    "id": "2460",
+    "slug": "apply-operations-to-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125802,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Unequal Triplets in Array",
+    "id": "2475",
+    "slug": "number-of-unequal-triplets-in-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125818,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Penalty for a Shop",
+    "id": "2483",
+    "slug": "minimum-penalty-for-a-shop",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125828,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Count Subarrays With Median K",
+    "id": "2488",
+    "slug": "count-subarrays-with-median-k",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125832,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Circular Sentence",
+    "id": "2490",
+    "slug": "circular-sentence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125844,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Value of a String in an Array",
+    "id": "2496",
+    "slug": "maximum-value-of-a-string-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125856,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Design Memory Allocator",
+    "id": "2502",
+    "slug": "design-memory-allocator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, design, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125864,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Pairs Of Similar Strings",
+    "id": "2506",
+    "slug": "count-pairs-of-similar-strings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125882,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Shortest Distance to Target String in a Circular Array",
+    "id": "2515",
+    "slug": "shortest-distance-to-target-string-in-a-circular-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125904,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "queue",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find Consecutive Integers from a Data Stream",
+    "id": "2526",
+    "slug": "find-consecutive-integers-from-a-data-stream",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, queue, counting, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125914,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Make Number of Distinct Characters Equal",
+    "id": "2531",
+    "slug": "make-number-of-distinct-characters-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125920,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "queue",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Time Taken to Cross the Door",
+    "id": "2534",
+    "slug": "time-taken-to-cross-the-door",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, queue, simulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125958,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Separate the Digits in an Array",
+    "id": "2553",
+    "slug": "separate-the-digits-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125970,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Vowel Strings in Ranges",
+    "id": "2559",
+    "slug": "count-vowel-strings-in-ranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126000,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Left and Right Sum Differences",
+    "id": "2574",
+    "slug": "left-and-right-sum-differences",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126012,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Count Ways to Group Overlapping Ranges",
+    "id": "2580",
+    "slug": "count-ways-to-group-overlapping-ranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126024,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Count the Number of Vowel Strings in Range",
+    "id": "2586",
+    "slug": "count-the-number-of-vowel-strings-in-range",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126032,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Design a Todo List",
+    "id": "2590",
+    "slug": "design-a-todo-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, design, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126062,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "enumeration",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Form Smallest Number From Two Digit Arrays",
+    "id": "2605",
+    "slug": "form-smallest-number-from-two-digit-arrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126070,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the Longest Balanced Substring of a Binary String",
+    "id": "2609",
+    "slug": "find-the-longest-balanced-substring-of-a-binary-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126072,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Convert an Array Into a 2D Array With Conditions",
+    "id": "2610",
+    "slug": "convert-an-array-into-a-2d-array-with-conditions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126082,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Sum of Distances",
+    "id": "2615",
+    "slug": "sum-of-distances",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126132,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Score of All Prefixes of an Array",
+    "id": "2640",
+    "slug": "find-the-score-of-all-prefixes-of-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126140,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Maximum Divisibility Score",
+    "id": "2644",
+    "slug": "find-the-maximum-divisibility-score",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126162,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Maximal Uncovered Ranges",
+    "id": "2655",
+    "slug": "find-maximal-uncovered-ranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126166,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Prefix Common Array of Two Arrays",
+    "id": "2657",
+    "slug": "find-the-prefix-common-array-of-two-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126172,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Determine the Winner of a Bowling Game",
+    "id": "2660",
+    "slug": "determine-the-winner-of-a-bowling-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126192,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Find the Distinct Difference Array",
+    "id": "2670",
+    "slug": "find-the-distinct-difference-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126194,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Frequency Tracker",
+    "id": "2671",
+    "slug": "frequency-tracker",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126196,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Number of Adjacent Elements With the Same Color",
+    "id": "2672",
+    "slug": "number-of-adjacent-elements-with-the-same-color",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126208,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Senior Citizens",
+    "id": "2678",
+    "slug": "number-of-senior-citizens",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126216,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Find the Losers of the Circular Game",
+    "id": "2682",
+    "slug": "find-the-losers-of-the-circular-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126264,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Buy Two Chocolates",
+    "id": "2706",
+    "slug": "buy-two-chocolates",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126272,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Trailing Zeros From a String",
+    "id": "2710",
+    "slug": "remove-trailing-zeros-from-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126284,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimize String Length",
+    "id": "2716",
+    "slug": "minimize-string-length",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126286,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::01-arrays-hashing",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Semi-Ordered Permutation",
+    "id": "2717",
+    "slug": "semi-ordered-permutation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126288,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Sum of Matrix After Queries",
+    "id": "2718",
+    "slug": "sum-of-matrix-after-queries",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  }
+ ]
+}

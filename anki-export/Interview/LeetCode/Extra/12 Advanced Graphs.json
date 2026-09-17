@@ -1,0 +1,568 @@
+{
+ "deck": "Interview::LeetCode::Extra::12 Advanced Graphs",
+ "note_count": 28,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121650,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::12-advanced-graphs",
+    "shortest-path",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Evaluate Division",
+    "id": "399",
+    "slug": "evaluate-division",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, graph, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121850,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "The Maze III",
+    "id": "499",
+    "slug": "the-maze-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, heap-priority-queue, shortest-path",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121862,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "The Maze II",
+    "id": "505",
+    "slug": "the-maze-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, heap-priority-queue, shortest-path",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122358,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "eulerian-circuit",
+    "graph",
+    "roadmap::12-advanced-graphs"
+   ],
+   "fields": {
+    "title": "Cracking the Safe",
+    "id": "753",
+    "slug": "cracking-the-safe",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, graph, eulerian-circuit",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122616,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Reachable Nodes In Subdivided Graph",
+    "id": "882",
+    "slug": "reachable-nodes-in-subdivided-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123122,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "minimum-spanning-tree",
+    "roadmap::12-advanced-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Connecting Cities With Minimum Cost",
+    "id": "1135",
+    "slug": "connecting-cities-with-minimum-cost",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "union-find, graph, heap-priority-queue, minimum-spanning-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123188,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "minimum-spanning-tree",
+    "roadmap::12-advanced-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Optimize Water Distribution in a Village",
+    "id": "1168",
+    "slug": "optimize-water-distribution-in-a-village",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "union-find, graph, minimum-spanning-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123236,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "biconnected-component",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::12-advanced-graphs"
+   ],
+   "fields": {
+    "title": "Critical Connections in a Network",
+    "id": "1192",
+    "slug": "critical-connections-in-a-network",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, graph, biconnected-component",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123520,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+    "id": "1334",
+    "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, graph, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123588,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+    "id": "1368",
+    "slug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, graph, heap-priority-queue, matrix, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123830,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "minimum-spanning-tree",
+    "roadmap::12-advanced-graphs",
+    "sorting",
+    "strongly-connected-component",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+    "id": "1489",
+    "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "union-find, graph, sorting, minimum-spanning-tree, strongly-connected-component",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123880,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Path with Maximum Probability",
+    "id": "1514",
+    "slug": "path-with-maximum-probability",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, graph, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123988,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::12-advanced-graphs",
+    "strongly-connected-component"
+   ],
+   "fields": {
+    "title": "Minimum Number of Days to Disconnect Island",
+    "id": "1568",
+    "slug": "minimum-number-of-days-to-disconnect-island",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix, strongly-connected-component",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124300,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "minimum-spanning-tree",
+    "roadmap::12-advanced-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Checking Existence of Edge Length Limited Paths II",
+    "id": "1724",
+    "slug": "checking-existence-of-edge-length-limited-paths-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "union-find, graph, minimum-spanning-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124424,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Number of Restricted Paths From First to Last Node",
+    "id": "1786",
+    "slug": "number-of-restricted-paths-from-first-to-last-node",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, graph, topological-sort, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124804,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::12-advanced-graphs",
+    "shortest-path",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Number of Ways to Arrive at Destination",
+    "id": "1976",
+    "slug": "number-of-ways-to-arrive-at-destination",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, graph, topological-sort, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124942,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Second Minimum Time to Reach Destination",
+    "id": "2045",
+    "slug": "second-minimum-time-to-reach-destination",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "breadth-first-search, graph, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125038,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Reach City With Discounts",
+    "id": "2093",
+    "slug": "minimum-cost-to-reach-city-with-discounts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "graph, shortest-path",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125046,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "eulerian-circuit",
+    "graph",
+    "roadmap::12-advanced-graphs"
+   ],
+   "fields": {
+    "title": "Valid Arrangement of Pairs",
+    "id": "2097",
+    "slug": "valid-arrangement-of-pairs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, graph, eulerian-circuit",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125258,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Weighted Subgraph With the Required Paths",
+    "id": "2203",
+    "slug": "minimum-weighted-subgraph-with-the-required-paths",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125432,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Obstacle Removal to Reach Corner",
+    "id": "2290",
+    "slug": "minimum-obstacle-removal-to-reach-corner",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, graph, heap-priority-queue, matrix, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125446,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "graph",
+    "monotonic-stack",
+    "roadmap::12-advanced-graphs",
+    "shortest-path",
+    "stack"
+   ],
+   "fields": {
+    "title": "Jump Game VIII",
+    "id": "2297",
+    "slug": "jump-game-viii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, stack, graph, monotonic-stack, shortest-path",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125798,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Buy Apples",
+    "id": "2473",
+    "slug": "minimum-cost-to-buy-apples",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, graph, heap-priority-queue, shortest-path",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126006,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Time to Visit a Cell In a Grid",
+    "id": "2577",
+    "slug": "minimum-time-to-visit-a-cell-in-a-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, graph, heap-priority-queue, matrix, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126136,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Design Graph With Shortest Path Calculator",
+    "id": "2642",
+    "slug": "design-graph-with-shortest-path-calculator",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph, design, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126176,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Minimum Cost of a Path With Special Roads",
+    "id": "2662",
+    "slug": "minimum-cost-of-a-path-with-special-roads",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, graph, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126250,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Modify Graph Edge Weights",
+    "id": "2699",
+    "slug": "modify-graph-edge-weights",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph, heap-priority-queue, shortest-path",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126280,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "heap-priority-queue",
+    "roadmap::12-advanced-graphs",
+    "shortest-path"
+   ],
+   "fields": {
+    "title": "Find Shortest Path with K Hops",
+    "id": "2714",
+    "slug": "find-shortest-path-with-k-hops",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph, heap-priority-queue, shortest-path",
+    "paid": "yes"
+   }
+  }
+ ]
+}

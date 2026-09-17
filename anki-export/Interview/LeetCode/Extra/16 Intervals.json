@@ -1,0 +1,331 @@
+{
+ "deck": "Interview::LeetCode::Extra::16 Intervals",
+ "note_count": 17,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121556,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "design",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::16-intervals"
+   ],
+   "fields": {
+    "title": "Data Stream as Disjoint Intervals",
+    "id": "352",
+    "slug": "data-stream-as-disjoint-intervals",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "binary-search, design, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121634,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "line-sweep",
+    "roadmap::16-intervals"
+   ],
+   "fields": {
+    "title": "Perfect Rectangle",
+    "id": "391",
+    "slug": "perfect-rectangle",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, line-sweep",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121724,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::16-intervals",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Right Interval",
+    "id": "436",
+    "slug": "find-right-interval",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122310,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "ordered-set",
+    "roadmap::16-intervals",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "My Calendar I",
+    "id": "729",
+    "slug": "my-calendar-i",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "binary-search, design, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122314,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "ordered-set",
+    "roadmap::16-intervals",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "My Calendar II",
+    "id": "731",
+    "slug": "my-calendar-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "binary-search, design, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122316,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "design",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::16-intervals",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "My Calendar III",
+    "id": "732",
+    "slug": "my-calendar-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "binary-search, design, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122682,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::16-intervals"
+   ],
+   "fields": {
+    "title": "Partition Array into Disjoint Intervals",
+    "id": "915",
+    "slug": "partition-array-into-disjoint-intervals",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122824,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::16-intervals",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Interval List Intersections",
+    "id": "986",
+    "slug": "interval-list-intersections",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123040,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "prefix-sum",
+    "roadmap::16-intervals",
+    "simulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Car Pooling",
+    "id": "1094",
+    "slug": "car-pooling",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, heap-priority-queue, simulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123100,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "monotonic-stack",
+    "prefix-sum",
+    "roadmap::16-intervals",
+    "stack"
+   ],
+   "fields": {
+    "title": "Longest Well-Performing Interval",
+    "id": "1124",
+    "slug": "longest-well-performing-interval",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, stack, monotonic-stack, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123396,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::16-intervals"
+   ],
+   "fields": {
+    "title": "Remove Interval",
+    "id": "1272",
+    "slug": "remove-interval",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123428,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::16-intervals",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Remove Covered Intervals",
+    "id": "1288",
+    "slug": "remove-covered-intervals",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123898,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::16-intervals"
+   ],
+   "fields": {
+    "title": "Count Odd Numbers in an Interval Range",
+    "id": "1523",
+    "slug": "count-odd-numbers-in-an-interval-range",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125094,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::16-intervals"
+   ],
+   "fields": {
+    "title": "Intervals Between Identical Elements",
+    "id": "2121",
+    "slug": "intervals-between-identical-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125404,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::16-intervals",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Count Integers in Intervals",
+    "id": "2276",
+    "slug": "count-integers-in-intervals",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "design, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125656,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::16-intervals",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Meeting Rooms III",
+    "id": "2402",
+    "slug": "meeting-rooms-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125664,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "prefix-sum",
+    "roadmap::16-intervals",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Divide Intervals Into Minimum Number of Groups",
+    "id": "2406",
+    "slug": "divide-intervals-into-minimum-number-of-groups",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting, heap-priority-queue, prefix-sum",
+    "paid": "no"
+   }
+  }
+ ]
+}

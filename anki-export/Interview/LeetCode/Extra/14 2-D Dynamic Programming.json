@@ -1,0 +1,699 @@
+{
+ "deck": "Interview::LeetCode::Extra::14 2-D Dynamic Programming",
+ "note_count": 36,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120940,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "recursion",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Wildcard Matching",
+    "id": "44",
+    "slug": "wildcard-matching",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, greedy, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120978,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Unique Paths II",
+    "id": "63",
+    "slug": "unique-paths-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120980,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Path Sum",
+    "id": "64",
+    "slug": "minimum-path-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121022,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "monotonic-stack",
+    "roadmap::14-2-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Maximal Rectangle",
+    "id": "85",
+    "slug": "maximal-rectangle",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, stack, matrix, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121200,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Dungeon Game",
+    "id": "174",
+    "slug": "dungeon-game",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121294,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximal Square",
+    "id": "221",
+    "slug": "maximal-square",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121574,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Bomb Enemy",
+    "id": "361",
+    "slug": "bomb-enemy",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121976,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Longest Line of Consecutive One in Matrix",
+    "id": "562",
+    "slug": "longest-line-of-consecutive-one-in-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121988,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Vacation Days",
+    "id": "568",
+    "slug": "maximum-vacation-days",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122018,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Delete Operation for Two Strings",
+    "id": "583",
+    "slug": "delete-operation-for-two-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122276,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum ASCII Delete Sum for Two Strings",
+    "id": "712",
+    "slug": "minimum-ascii-delete-sum-for-two-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122334,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Cherry Pickup",
+    "id": "741",
+    "slug": "cherry-pickup",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122352,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number Of Corner Rectangles",
+    "id": "750",
+    "slug": "number-of-corner-rectangles",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122714,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Falling Path Sum",
+    "id": "931",
+    "slug": "minimum-falling-path-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122732,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Distinct Subsequences II",
+    "id": "940",
+    "slug": "distinct-subsequences-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123036,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Shortest Common Supersequence ",
+    "id": "1092",
+    "slug": "shortest-common-supersequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123130,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Largest 1-Bordered Square",
+    "id": "1139",
+    "slug": "largest-1-bordered-square",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123406,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Square Submatrices with All Ones",
+    "id": "1277",
+    "slug": "count-square-submatrices-with-all-ones",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123430,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Falling Path Sum II",
+    "id": "1289",
+    "slug": "minimum-falling-path-sum-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123454,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Paths with Max Score",
+    "id": "1301",
+    "slug": "number-of-paths-with-max-score",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123492,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Distance to Type a Word Using Two Fingers",
+    "id": "1320",
+    "slug": "minimum-distance-to-type-a-word-using-two-fingers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123550,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Students Taking Exam",
+    "id": "1349",
+    "slug": "maximum-students-taking-exam",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, matrix, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123740,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "memoization",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways of Cutting a Pizza",
+    "id": "1444",
+    "slug": "number-of-ways-of-cutting-a-pizza",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, memoization, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123778,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Cherry Pickup II",
+    "id": "1463",
+    "slug": "cherry-pickup-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123860,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "monotonic-stack",
+    "roadmap::14-2-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Count Submatrices With All Ones",
+    "id": "1504",
+    "slug": "count-submatrices-with-all-ones",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, stack, matrix, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124040,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Non Negative Product in a Matrix",
+    "id": "1594",
+    "slug": "maximum-non-negative-product-in-a-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124042,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Connect Two Groups of Points",
+    "id": "1595",
+    "slug": "minimum-cost-to-connect-two-groups-of-points",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, matrix, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124814,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimize the Difference Between Target and Chosen Elements",
+    "id": "1981",
+    "slug": "minimize-the-difference-between-target-and-chosen-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124972,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::14-2-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if an Original String Exists Given Two Encoded Strings",
+    "id": "2060",
+    "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125028,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Fertile Pyramids in a Land",
+    "id": "2088",
+    "slug": "count-fertile-pyramids-in-a-land",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125386,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": " Check if There Is a Valid Parentheses String Path",
+    "id": "2267",
+    "slug": "check-if-there-is-a-valid-parentheses-string-path",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125460,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Path Cost in a Grid",
+    "id": "2304",
+    "slug": "minimum-path-cost-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125722,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Paths in Matrix Whose Sum Is Divisible by K",
+    "id": "2435",
+    "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125872,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Check if There is a Path With Equal Number of 0's And 1's",
+    "id": "2510",
+    "slug": "check-if-there-is-a-path-with-equal-number-of-0s-and-1s",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126220,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::14-2-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Number of Moves in a Grid",
+    "id": "2684",
+    "slug": "maximum-number-of-moves-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126278,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "matrix",
+    "memoization",
+    "roadmap::14-2-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Strictly Increasing Cells in a Matrix",
+    "id": "2713",
+    "slug": "maximum-strictly-increasing-cells-in-a-matrix",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, memoization, sorting, matrix",
+    "paid": "no"
+   }
+  }
+ ]
+}

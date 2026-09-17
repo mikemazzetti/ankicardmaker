@@ -1,0 +1,1800 @@
+{
+ "deck": "Interview::LeetCode::Extra::08 Heap - Priority Queue",
+ "note_count": 89,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121500,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "quickselect",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Wiggle Sort II",
+    "id": "324",
+    "slug": "wiggle-sort-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, sorting, quickselect",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121568,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-hard-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Rearrange String k Distance Apart",
+    "id": "358",
+    "slug": "rearrange-string-k-distance-apart",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, greedy, sorting, heap-priority-queue, counting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121598,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Find K Pairs with Smallest Sums",
+    "id": "373",
+    "slug": "find-k-pairs-with-smallest-sums",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121608,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Kth Smallest Element in a Sorted Matrix",
+    "id": "378",
+    "slug": "kth-smallest-element-in-a-sorted-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121692,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "string"
+   ],
+   "fields": {
+    "title": "Strong Password Checker",
+    "id": "420",
+    "slug": "strong-password-checker",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121754,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bucket-sort",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Sort Characters By Frequency",
+    "id": "451",
+    "slug": "sort-characters-by-frequency",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sorting, heap-priority-queue, bucket-sort, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121812,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Sliding Window Median",
+    "id": "480",
+    "slug": "sliding-window-median",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, sliding-window, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121856,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "IPO",
+    "id": "502",
+    "slug": "ipo",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121864,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Relative Ranks",
+    "id": "506",
+    "slug": "relative-ranks",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122112,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Course Schedule III",
+    "id": "630",
+    "slug": "course-schedule-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122116,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Smallest Range Covering Elements from K Lists",
+    "id": "632",
+    "slug": "smallest-range-covering-elements-from-k-lists",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, greedy, sliding-window, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122168,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find K Closest Elements",
+    "id": "658",
+    "slug": "find-k-closest-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sliding-window, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122170,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Split Array into Consecutive Subsequences",
+    "id": "659",
+    "slug": "split-array-into-consecutive-subsequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122370,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Employee Free Time",
+    "id": "759",
+    "slug": "employee-free-time",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122386,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Reorganize String",
+    "id": "767",
+    "slug": "reorganize-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, greedy, sorting, heap-priority-queue, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122424,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "K-th Smallest Prime Fraction",
+    "id": "786",
+    "slug": "k-th-smallest-prime-fraction",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122562,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Exam Room",
+    "id": "855",
+    "slug": "exam-room",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "design, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122566,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Hire K Workers",
+    "id": "857",
+    "slug": "minimum-cost-to-hire-k-workers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122576,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "monotonic-queue",
+    "prefix-sum",
+    "queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Shortest Subarray with Sum at Least K",
+    "id": "862",
+    "slug": "shortest-subarray-with-sum-at-least-k",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, queue, sliding-window, heap-priority-queue, prefix-sum, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122676,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bucket-sort",
+    "counting-sort",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "merge-sort",
+    "radix-sort",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort an Array",
+    "id": "912",
+    "slug": "sort-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, sorting, heap-priority-queue, merge-sort, bucket-sort, radix-sort, counting-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122960,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Distant Barcodes",
+    "id": "1054",
+    "slug": "distant-barcodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting, heap-priority-queue, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123186,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Connect Sticks",
+    "id": "1167",
+    "slug": "minimum-cost-to-connect-sticks",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123196,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "stack"
+   ],
+   "fields": {
+    "title": "Dinner Plate Stacks",
+    "id": "1172",
+    "slug": "dinner-plate-stacks",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, stack, design, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123218,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Maximum Number of Ones",
+    "id": "1183",
+    "slug": "maximum-number-of-ones",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "greedy, heap-priority-queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123250,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "math",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Minimum Time to Build Blocks",
+    "id": "1199",
+    "slug": "minimum-time-to-build-blocks",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, greedy, heap-priority-queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123526,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "The K Weakest Rows in a Matrix",
+    "id": "1337",
+    "slug": "the-k-weakest-rows-in-a-matrix",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search, sorting, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123528,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Reduce Array Size to The Half",
+    "id": "1338",
+    "slug": "reduce-array-size-to-the-half",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123558,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Events That Can Be Attended",
+    "id": "1353",
+    "slug": "maximum-number-of-events-that-can-be-attended",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123560,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Construct Target Array With Multiple Sums",
+    "id": "1354",
+    "slug": "construct-target-array-with-multiple-sums",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123618,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Performance of a Team",
+    "id": "1383",
+    "slug": "maximum-performance-of-a-team",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123662,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Happy String",
+    "id": "1405",
+    "slug": "longest-happy-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123700,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Diagonal Traverse II",
+    "id": "1424",
+    "slug": "diagonal-traverse-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123728,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "monotonic-queue",
+    "ordered-set",
+    "queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+    "id": "1438",
+    "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, queue, sliding-window, heap-priority-queue, ordered-set, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123730,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Find the Kth Smallest Sum of a Matrix With Sorted Rows",
+    "id": "1439",
+    "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123780,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Product of Two Elements in an Array",
+    "id": "1464",
+    "slug": "maximum-product-of-two-elements-in-an-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123828,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Avoid Flood in The City",
+    "id": "1488",
+    "slug": "avoid-flood-in-the-city",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123850,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "monotonic-queue",
+    "queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Max Value of Equation",
+    "id": "1499",
+    "slug": "max-value-of-equation",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, queue, sliding-window, heap-priority-queue, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123852,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Design a File Sharing System",
+    "id": "1500",
+    "slug": "design-a-file-sharing-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, heap-priority-queue, data-stream",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124064,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Find Servers That Handled Most Number of Requests",
+    "id": "1606",
+    "slug": "find-servers-that-handled-most-number-of-requests",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124136,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Furthest Building You Can Reach",
+    "id": "1642",
+    "slug": "furthest-building-you-can-reach",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124148,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "math",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sell Diminishing-Valued Colored Balls",
+    "id": "1648",
+    "slug": "sell-diminishing-valued-colored-balls",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, binary-search, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124202,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Minimize Deviation in Array",
+    "id": "1675",
+    "slug": "minimize-deviation-in-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124262,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Maximum Number of Eaten Apples",
+    "id": "1705",
+    "slug": "maximum-number-of-eaten-apples",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124328,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "matrix",
+    "prefix-sum",
+    "quickselect",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Find Kth Largest XOR Coordinate Value",
+    "id": "1738",
+    "slug": "find-kth-largest-xor-coordinate-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, bit-manipulation, heap-priority-queue, matrix, prefix-sum, quickselect",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124358,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "math",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Maximum Score From Removing Stones",
+    "id": "1753",
+    "slug": "maximum-score-from-removing-stones",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124404,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "math",
+    "monotonic-stack",
+    "roadmap::08-heap-priority-queue",
+    "stack"
+   ],
+   "fields": {
+    "title": "Car Fleet II",
+    "id": "1776",
+    "slug": "car-fleet-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, stack, heap-priority-queue, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124436,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Maximum Average Pass Ratio",
+    "id": "1792",
+    "slug": "maximum-average-pass-ratio",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124454,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Number of Orders in the Backlog",
+    "id": "1801",
+    "slug": "number-of-orders-in-the-backlog",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, heap-priority-queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124502,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "ordered-set",
+    "queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Finding MK Average",
+    "id": "1825",
+    "slug": "finding-mk-average",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "design, queue, heap-priority-queue, data-stream, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124520,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Single-Threaded CPU",
+    "id": "1834",
+    "slug": "single-threaded-cpu",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124542,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Seat Reservation Manager",
+    "id": "1845",
+    "slug": "seat-reservation-manager",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "design, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124608,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "math",
+    "matrix",
+    "prefix-sum",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Get Biggest Three Rhombus Sums in a Grid",
+    "id": "1878",
+    "slug": "get-biggest-three-rhombus-sums-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, sorting, heap-priority-queue, matrix, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124616,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Process Tasks Using Servers",
+    "id": "1882",
+    "slug": "process-tasks-using-servers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124676,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Design Movie Rental System",
+    "id": "1912",
+    "slug": "design-movie-rental-system",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, design, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124736,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "The Number of the Smallest Unoccupied Chair",
+    "id": "1942",
+    "slug": "the-number-of-the-smallest-unoccupied-chair",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124776,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Remove Stones to Minimize the Total",
+    "id": "1962",
+    "slug": "remove-stones-to-minimize-the-total",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124822,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "quickselect",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the Kth Largest Integer in the Array",
+    "id": "1985",
+    "slug": "find-the-kth-largest-integer-in-the-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, divide-and-conquer, sorting, heap-priority-queue, quickselect",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124882,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Average Height of Buildings in Each Segment",
+    "id": "2015",
+    "slug": "average-height-of-buildings-in-each-segment",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124920,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Stock Price Fluctuation ",
+    "id": "2034",
+    "slug": "stock-price-fluctuation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, heap-priority-queue, data-stream, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125050,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Subsequence of Length K With the Largest Sum",
+    "id": "2099",
+    "slug": "find-subsequence-of-length-k-with-the-largest-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125056,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Sequentially Ordinal Rank Tracker",
+    "id": "2102",
+    "slug": "sequentially-ordinal-rank-tracker",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "design, heap-priority-queue, data-stream, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125216,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "string"
+   ],
+   "fields": {
+    "title": "Construct String With Repeat Limit",
+    "id": "2182",
+    "slug": "construct-string-with-repeat-limit",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, greedy, heap-priority-queue, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125268,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Halve Array Sum",
+    "id": "2208",
+    "slug": "minimum-operations-to-halve-array-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125314,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Number After Digit Swaps by Parity",
+    "id": "2231",
+    "slug": "largest-number-after-digit-swaps-by-parity",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125318,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Maximum Product After K Increments",
+    "id": "2233",
+    "slug": "maximum-product-after-k-increments",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125518,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "math",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Sum of Squared Difference",
+    "id": "2333",
+    "slug": "minimum-sum-of-squared-difference",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125522,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Amount of Time to Fill Cups",
+    "id": "2335",
+    "slug": "minimum-amount-of-time-to-fill-cups",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125524,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Smallest Number in Infinite Set",
+    "id": "2336",
+    "slug": "smallest-number-in-infinite-set",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125536,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Max Sum of a Pair With Equal Sum of Digits",
+    "id": "2342",
+    "slug": "max-sum-of-a-pair-with-equal-sum-of-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125538,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "quickselect",
+    "radix-sort",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Query Kth Smallest Trimmed Number",
+    "id": "2343",
+    "slug": "query-kth-smallest-trimmed-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, divide-and-conquer, sorting, heap-priority-queue, radix-sort, quickselect",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125540,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "math",
+    "number-theory",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Deletions to Make Array Divisible",
+    "id": "2344",
+    "slug": "minimum-deletions-to-make-array-divisible",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, sorting, heap-priority-queue, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125550,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Design a Number Container System",
+    "id": "2349",
+    "slug": "design-a-number-container-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125558,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Design a Food Rating System",
+    "id": "2353",
+    "slug": "design-a-food-rating-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, design, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125566,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "simulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Make Array Zero by Subtracting Equal Amounts",
+    "id": "2357",
+    "slug": "make-array-zero-by-subtracting-equal-amounts",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, greedy, sorting, heap-priority-queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125624,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find the K-Sum of an Array",
+    "id": "2386",
+    "slug": "find-the-k-sum-of-an-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125648,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "prefix-sum",
+    "queue",
+    "roadmap::08-heap-priority-queue",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Number of Robots Within Budget",
+    "id": "2398",
+    "slug": "maximum-number-of-robots-within-budget",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, queue, sliding-window, heap-priority-queue, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125760,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "monotonic-stack",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "Next Greater Element IV",
+    "id": "2454",
+    "slug": "next-greater-element-iv",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, stack, sorting, heap-priority-queue, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125764,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Most Popular Video Creator",
+    "id": "2456",
+    "slug": "most-popular-video-creator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125776,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Total Cost to Hire K Workers",
+    "id": "2462",
+    "slug": "total-cost-to-hire-k-workers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, heap-priority-queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125876,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Reward Top K Students",
+    "id": "2512",
+    "slug": "reward-top-k-students",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125912,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Maximal Score After Applying K Operations",
+    "id": "2530",
+    "slug": "maximal-score-after-applying-k-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125916,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Time to Cross a Bridge",
+    "id": "2532",
+    "slug": "time-to-cross-a-bridge",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, heap-priority-queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125936,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Subsequence Score",
+    "id": "2542",
+    "slug": "maximum-subsequence-score",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125954,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Put Marbles in Bags",
+    "id": "2551",
+    "slug": "put-marbles-in-bags",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125968,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Take Gifts From the Richest Pile",
+    "id": "2558",
+    "slug": "take-gifts-from-the-richest-pile",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, heap-priority-queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126038,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "simulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Score of an Array After Marking All Elements",
+    "id": "2593",
+    "slug": "find-score-of-an-array-after-marking-all-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, heap-priority-queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126050,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue"
+   ],
+   "fields": {
+    "title": "Make the Prefix Sum Non-negative",
+    "id": "2599",
+    "slug": "make-the-prefix-sum-non-negative",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, heap-priority-queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126074,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::08-heap-priority-queue",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Mice and Cheese",
+    "id": "2611",
+    "slug": "mice-and-cheese",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126210,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::08-heap-priority-queue",
+    "simulation",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sum in a Matrix",
+    "id": "2679",
+    "slug": "sum-in-a-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sorting, heap-priority-queue, matrix, simulation",
+    "paid": "no"
+   }
+  }
+ ]
+}

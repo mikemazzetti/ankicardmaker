@@ -1,0 +1,1990 @@
+{
+ "deck": "Interview::LeetCode::Extra::05 Binary Search",
+ "note_count": 104,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120920,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "id": "34",
+    "slug": "find-first-and-last-position-of-element-in-sorted-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120922,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Search Insert Position",
+    "id": "35",
+    "slug": "search-insert-position",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120990,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Sqrt(x)",
+    "id": "69",
+    "slug": "sqrtx",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121014,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Search in Rotated Sorted Array II",
+    "id": "81",
+    "slug": "search-in-rotated-sorted-array-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121160,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find Minimum in Rotated Sorted Array II",
+    "id": "154",
+    "slug": "find-minimum-in-rotated-sorted-array-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121176,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find Peak Element",
+    "id": "162",
+    "slug": "find-peak-element",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121332,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "matrix",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Search a 2D Matrix II",
+    "id": "240",
+    "slug": "search-a-2d-matrix-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, divide-and-conquer, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121402,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "H-Index II",
+    "id": "275",
+    "slug": "h-index-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121408,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-easy-tag",
+    "interactive",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "First Bad Version",
+    "id": "278",
+    "slug": "first-bad-version",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "binary-search, interactive",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121576,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "queue",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Design Hit Counter",
+    "id": "362",
+    "slug": "design-hit-counter",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, design, queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121578,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "ordered-set",
+    "prefix-sum",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Max Sum of Rectangle No Larger Than K",
+    "id": "363",
+    "slug": "max-sum-of-rectangle-no-larger-than-k",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, matrix, prefix-sum, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121586,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Valid Perfect Square",
+    "id": "367",
+    "slug": "valid-perfect-square",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121600,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-easy-tag",
+    "interactive",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Guess Number Higher or Lower",
+    "id": "374",
+    "slug": "guess-number-higher-or-lower",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "binary-search, interactive",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121652,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Nth Digit",
+    "id": "400",
+    "slug": "nth-digit",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121734,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Arranging Coins",
+    "id": "441",
+    "slug": "arranging-coins",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121818,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Smallest Good Base",
+    "id": "483",
+    "slug": "smallest-good-base",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121846,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "ordered-set",
+    "prefix-sum",
+    "randomized",
+    "reservoir-sampling",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Random Point in Non-overlapping Rectangles",
+    "id": "497",
+    "slug": "random-point-in-non-overlapping-rectangles",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, binary-search, reservoir-sampling, prefix-sum, ordered-set, randomized",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121908,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "prefix-sum",
+    "randomized",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Random Pick with Weight",
+    "id": "528",
+    "slug": "random-pick-with-weight",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, binary-search, prefix-sum, randomized",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121932,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Single Element in a Sorted Array",
+    "id": "540",
+    "slug": "single-element-in-a-sorted-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122140,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Maximum Average Subarray II",
+    "id": "644",
+    "slug": "maximum-average-subarray-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, prefix-sum",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122188,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Kth Smallest Number in Multiplication Table",
+    "id": "668",
+    "slug": "kth-smallest-number-in-multiplication-table",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122256,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "interactive",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Search in a Sorted Array of Unknown Size",
+    "id": "702",
+    "slug": "search-in-a-sorted-array-of-unknown-size",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122272,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "math",
+    "randomized",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Random Pick with Blacklist",
+    "id": "710",
+    "slug": "random-pick-with-blacklist",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, math, binary-search, sorting, randomized",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122340,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find Smallest Letter Greater Than Target",
+    "id": "744",
+    "slug": "find-smallest-letter-greater-than-target",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122360,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Reach a Number",
+    "id": "754",
+    "slug": "reach-a-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122400,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimize Max Distance to Gas Station",
+    "id": "774",
+    "slug": "minimize-max-distance-to-gas-station",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122438,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Preimage Size of Factorial Zeroes Function",
+    "id": "793",
+    "slug": "preimage-size-of-factorial-zeroes-function",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122556,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Peak Index in a Mountain Array",
+    "id": "852",
+    "slug": "peak-index-in-a-mountain-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122608,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Nth Magical Number",
+    "id": "878",
+    "slug": "nth-magical-number",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122628,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Fair Candy Swap",
+    "id": "888",
+    "slug": "fair-candy-swap",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122674,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Online Election",
+    "id": "911",
+    "slug": "online-election",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122874,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Capacity To Ship Packages Within D Days",
+    "id": "1011",
+    "slug": "capacity-to-ship-packages-within-d-days",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122972,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Missing Element in Sorted Array",
+    "id": "1060",
+    "slug": "missing-element-in-sorted-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122980,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Fixed Point",
+    "id": "1064",
+    "slug": "fixed-point",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123042,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "interactive",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find in Mountain Array",
+    "id": "1095",
+    "slug": "find-in-mountain-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, interactive",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123144,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Snapshot Array",
+    "id": "1146",
+    "slug": "snapshot-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123152,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Check If a Number Is Majority Element in a Sorted Array",
+    "id": "1150",
+    "slug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123192,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::05-binary-search",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Compare Strings by Frequency of the Smallest Character",
+    "id": "1170",
+    "slug": "compare-strings-by-frequency-of-the-smallest-character",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123248,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "matrix",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find Smallest Common Element in All Rows",
+    "id": "1198",
+    "slug": "find-smallest-common-element-in-all-rows",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, matrix, counting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123254,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "number-theory",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Ugly Number III",
+    "id": "1201",
+    "slug": "ugly-number-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, binary-search, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123278,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Intersection of Three Sorted Arrays",
+    "id": "1213",
+    "slug": "intersection-of-three-sorted-arrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, binary-search, counting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123314,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Divide Chocolate",
+    "id": "1231",
+    "slug": "divide-chocolate",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123418,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find the Smallest Divisor Given a Threshold",
+    "id": "1283",
+    "slug": "find-the-smallest-divisor-given-a-threshold",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123436,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "prefix-sum",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
+    "id": "1292",
+    "slug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, matrix, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123452,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sum of Mutated Array Closest to Target",
+    "id": "1300",
+    "slug": "sum-of-mutated-array-closest-to-target",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123548,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Tweet Counts Per Frequency",
+    "id": "1348",
+    "slug": "tweet-counts-per-frequency",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, binary-search, design, sorting, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123554,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "matrix",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Count Negative Numbers in a Sorted Matrix",
+    "id": "1351",
+    "slug": "count-negative-numbers-in-a-sorted-matrix",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123708,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "interactive",
+    "matrix",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Leftmost Column with at Least a One",
+    "id": "1428",
+    "slug": "leftmost-column-with-at-least-a-one",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, matrix, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123816,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Number of Days to Make m Bouquets",
+    "id": "1482",
+    "slug": "minimum-number-of-days-to-make-m-bouquets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123918,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "interactive",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find the Index of the Large Integer",
+    "id": "1533",
+    "slug": "find-the-index-of-the-large-integer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123930,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Kth Missing Positive Number",
+    "id": "1539",
+    "slug": "kth-missing-positive-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123956,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Magnetic Force Between Two Balls",
+    "id": "1552",
+    "slug": "magnetic-force-between-two-balls",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123976,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Find Latest Group of Size M",
+    "id": "1562",
+    "slug": "find-latest-group-of-size-m",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124068,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Special Array With X Elements Greater Than or Equal X",
+    "id": "1608",
+    "slug": "special-array-with-x-elements-greater-than-or-equal-x",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124088,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "interactive",
+    "roadmap::05-binary-search",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Font to Fit a Sentence in a Screen",
+    "id": "1618",
+    "slug": "maximum-font-to-fit-a-sentence-in-a-screen",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, binary-search, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124278,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make a Subsequence",
+    "id": "1713",
+    "slug": "minimum-operations-to-make-a-subsequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124330,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Building Boxes",
+    "id": "1739",
+    "slug": "building-boxes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124372,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Limit of Balls in a Bag",
+    "id": "1760",
+    "slug": "minimum-limit-of-balls-in-a-bag",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124456,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Maximum Value at a Given Index in a Bounded Array",
+    "id": "1802",
+    "slug": "maximum-value-at-a-given-index-in-a-bounded-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124488,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "ordered-set",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Absolute Sum Difference",
+    "id": "1818",
+    "slug": "minimum-absolute-sum-difference",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124546,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Closest Room",
+    "id": "1847",
+    "slug": "closest-room",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124576,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "math",
+    "prefix-sum",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Sum of Floored Pairs",
+    "id": "1862",
+    "slug": "sum-of-floored-pairs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, binary-search, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124592,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Speed to Arrive on Time",
+    "id": "1870",
+    "slug": "minimum-speed-to-arrive-on-time",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124622,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Count Pairs in Two Arrays",
+    "id": "1885",
+    "slug": "count-pairs-in-two-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124630,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Space Wasted From Packaging",
+    "id": "1889",
+    "slug": "minimum-space-wasted-from-packaging",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124634,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Cutting Ribbons",
+    "id": "1891",
+    "slug": "cutting-ribbons",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124640,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Find the Student that Will Replace the Chalk",
+    "id": "1894",
+    "slug": "find-the-student-that-will-replace-the-chalk",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, simulation, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124648,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Removable Characters",
+    "id": "1898",
+    "slug": "maximum-number-of-removable-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124654,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Find a Peak Element II",
+    "id": "1901",
+    "slug": "find-a-peak-element-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124760,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Garden Perimeter to Collect Enough Apples",
+    "id": "1954",
+    "slug": "minimum-garden-perimeter-to-collect-enough-apples",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124764,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "enumeration",
+    "geometry",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Time For K Virus Variants to Spread",
+    "id": "1956",
+    "slug": "minimum-time-for-k-virus-variants-to-spread",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, binary-search, geometry, enumeration",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124784,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Binary Searchable Numbers in an Unsorted Array",
+    "id": "1966",
+    "slug": "binary-searchable-numbers-in-an-unsorted-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124870,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Number of Operations to Make Array Continuous",
+    "id": "2009",
+    "slug": "minimum-number-of-operations-to-make-array-continuous",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124932,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Kth Smallest Product of Two Sorted Arrays",
+    "id": "2040",
+    "slug": "kth-smallest-product-of-two-sorted-arrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124962,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "string"
+   ],
+   "fields": {
+    "title": "Plates Between Candles",
+    "id": "2055",
+    "slug": "plates-between-candles",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, binary-search, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124980,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimized Maximum of Products Distributed to Any Store",
+    "id": "2064",
+    "slug": "minimized-maximum-of-products-distributed-to-any-store",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124992,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Most Beautiful Item for Each Query",
+    "id": "2070",
+    "slug": "most-beautiful-item-for-each-query",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125030,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Find Target Indices After Sorting Array",
+    "id": "2089",
+    "slug": "find-target-indices-after-sorting-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125074,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make the Array K-Increasing",
+    "id": "2111",
+    "slug": "minimum-operations-to-make-the-array-k-increasing",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125126,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Pour Water Between Buckets to Make Water Levels Equal",
+    "id": "2137",
+    "slug": "pour-water-between-buckets-to-make-water-levels-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125134,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Running Time of N Computers",
+    "id": "2141",
+    "slug": "maximum-running-time-of-n-computers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125226,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Time to Complete Trips",
+    "id": "2187",
+    "slug": "minimum-time-to-complete-trips",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125304,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Maximum Candies Allocated to K Children",
+    "id": "2226",
+    "slug": "maximum-candies-allocated-to-k-children",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125354,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "ordered-set",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Number of Flowers in Full Bloom",
+    "id": "2251",
+    "slug": "number-of-flowers-in-full-bloom",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, binary-search, sorting, prefix-sum, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125394,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum White Tiles Covered by a Carpet",
+    "id": "2271",
+    "slug": "maximum-white-tiles-covered-by-a-carpet",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, greedy, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125560,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Number of Excellent Pairs",
+    "id": "2354",
+    "slug": "number-of-excellent-pairs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, binary-search, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125568,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Maximum Number of Groups Entering a Competition",
+    "id": "2358",
+    "slug": "maximum-number-of-groups-entering-a-competition",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125626,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Median of a Row Wise Sorted Matrix",
+    "id": "2387",
+    "slug": "median-of-a-row-wise-sorted-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125630,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Longest Subsequence With Limited Sum",
+    "id": "2389",
+    "slug": "longest-subsequence-with-limited-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search, greedy, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125748,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Make Array Equal",
+    "id": "2448",
+    "slug": "minimum-cost-to-make-array-equal",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, greedy, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125788,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search",
+    "string"
+   ],
+   "fields": {
+    "title": "Split Message Based on Limit",
+    "id": "2468",
+    "slug": "split-message-based-on-limit",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125848,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Frog Jump II",
+    "id": "2498",
+    "slug": "frog-jump-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125878,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "number-theory",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimize the Maximum of Two Arrays",
+    "id": "2513",
+    "slug": "minimize-the-maximum-of-two-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, binary-search, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125886,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Tastiness of Candy Basket",
+    "id": "2517",
+    "slug": "maximum-tastiness-of-candy-basket",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125910,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "counting",
+    "difficulty-easy-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Maximum Count of Positive Integer and Negative Integer",
+    "id": "2529",
+    "slug": "maximum-count-of-positive-integer-and-negative-integer",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, binary-search, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125960,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Integers to Choose From a Range I",
+    "id": "2554",
+    "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125966,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Integers to Choose From a Range II",
+    "id": "2557",
+    "slug": "maximum-number-of-integers-to-choose-from-a-range-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, greedy, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125972,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "House Robber IV",
+    "id": "2560",
+    "slug": "house-robber-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126040,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Time to Repair Cars",
+    "id": "2594",
+    "slug": "minimum-time-to-repair-cars",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126054,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "number-theory",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Prime Subtraction Operation",
+    "id": "2601",
+    "slug": "prime-subtraction-operation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, binary-search, greedy, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126056,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make All Array Elements Equal",
+    "id": "2602",
+    "slug": "minimum-operations-to-make-all-array-elements-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126060,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Time to Eat All Grains",
+    "id": "2604",
+    "slug": "minimum-time-to-eat-all-grains",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126084,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimize the Maximum Difference of Pairs",
+    "id": "2616",
+    "slug": "minimize-the-maximum-difference-of-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126256,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::05-binary-search"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Make Numbers Non-positive",
+    "id": "2702",
+    "slug": "minimum-operations-to-make-numbers-non-positive",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search",
+    "paid": "yes"
+   }
+  }
+ ]
+}

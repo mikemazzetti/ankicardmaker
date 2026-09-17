@@ -1,0 +1,2275 @@
+{
+ "deck": "Interview::LeetCode::Extra::02 Two Pointers",
+ "note_count": 118,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120884,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "3Sum Closest",
+    "id": "16",
+    "slug": "3sum-closest",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120888,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "4Sum",
+    "id": "18",
+    "slug": "4sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120904,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Remove Duplicates from Sorted Array",
+    "id": "26",
+    "slug": "remove-duplicates-from-sorted-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120906,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Remove Element",
+    "id": "27",
+    "slug": "remove-element",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120908,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "string-matching",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find the Index of the First Occurrence in a String",
+    "id": "28",
+    "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120914,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Next Permutation",
+    "id": "31",
+    "slug": "next-permutation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121002,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sort Colors",
+    "id": "75",
+    "slug": "sort-colors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121012,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Remove Duplicates from Sorted Array II",
+    "id": "80",
+    "slug": "remove-duplicates-from-sorted-array-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121028,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Merge Sorted Array",
+    "id": "88",
+    "slug": "merge-sorted-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121154,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse Words in a String",
+    "id": "151",
+    "slug": "reverse-words-in-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121174,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "One Edit Distance",
+    "id": "161",
+    "slug": "one-edit-distance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121182,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Compare Version Numbers",
+    "id": "165",
+    "slug": "compare-version-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121192,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Two Sum III - Data structure design",
+    "id": "170",
+    "slug": "two-sum-iii-data-structure-design",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, design, data-stream",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121224,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse Words in a String II",
+    "id": "186",
+    "slug": "reverse-words-in-a-string-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121230,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Rotate Array",
+    "id": "189",
+    "slug": "rotate-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121340,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Shortest Word Distance II",
+    "id": "244",
+    "slug": "shortest-word-distance-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, string, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121344,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Strobogrammatic Number",
+    "id": "246",
+    "slug": "strobogrammatic-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, two-pointers, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121354,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Flatten 2D Vector",
+    "id": "251",
+    "slug": "flatten-2d-vector",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, design, iterator",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121370,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "3Sum Smaller",
+    "id": "259",
+    "slug": "3sum-smaller",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121418,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Move Zeroes",
+    "id": "283",
+    "slug": "move-zeroes",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121540,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse String",
+    "id": "344",
+    "slug": "reverse-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121542,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse Vowels of a String",
+    "id": "345",
+    "slug": "reverse-vowels-of-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121550,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Intersection of Two Arrays",
+    "id": "349",
+    "slug": "intersection-of-two-arrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121552,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Intersection of Two Arrays II",
+    "id": "350",
+    "slug": "intersection-of-two-arrays-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121572,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sort Transformed Array",
+    "id": "360",
+    "slug": "sort-transformed-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, two-pointers, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121668,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Valid Word Abbreviation",
+    "id": "408",
+    "slug": "valid-word-abbreviation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121738,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "String Compression",
+    "id": "443",
+    "slug": "string-compression",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121762,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Assign Cookies",
+    "id": "455",
+    "slug": "assign-cookies",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121766,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Circular Array Loop",
+    "id": "457",
+    "slug": "circular-array-loop",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121802,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Heaters",
+    "id": "475",
+    "slug": "heaters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121814,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Magical String",
+    "id": "481",
+    "slug": "magical-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121896,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Longest Uncommon Subsequence II",
+    "id": "522",
+    "slug": "longest-uncommon-subsequence-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121900,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Longest Word in Dictionary through Deleting",
+    "id": "524",
+    "slug": "longest-word-in-dictionary-through-deleting",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121916,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "K-diff Pairs in an Array",
+    "id": "532",
+    "slug": "k-diff-pairs-in-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121934,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse String II",
+    "id": "541",
+    "slug": "reverse-string-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121964,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Next Greater Element III",
+    "id": "556",
+    "slug": "next-greater-element-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121966,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse Words in a String III",
+    "id": "557",
+    "slug": "reverse-words-in-a-string-iii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122074,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Valid Triangle Number",
+    "id": "611",
+    "slug": "valid-triangle-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122118,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sum of Square Numbers",
+    "id": "633",
+    "slug": "sum-of-square-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, two-pointers, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122212,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Valid Palindrome II",
+    "id": "680",
+    "slug": "valid-palindrome-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122244,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Count Binary Substrings",
+    "id": "696",
+    "slug": "count-binary-substrings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122290,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find K-th Smallest Pair Distance",
+    "id": "719",
+    "slug": "find-k-th-smallest-pair-distance",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122298,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::02-two-pointers",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Candy Crush",
+    "id": "723",
+    "slug": "candy-crush",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, matrix, simulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122406,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Swap Adjacent in LR String",
+    "id": "777",
+    "slug": "swap-adjacent-in-lr-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122442,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Number of Subarrays with Bounded Maximum",
+    "id": "795",
+    "slug": "number-of-subarrays-with-bounded-maximum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122470,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Expressive Words",
+    "id": "809",
+    "slug": "expressive-words",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122494,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Shortest Distance to a Character",
+    "id": "821",
+    "slug": "shortest-distance-to-a-character",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122502,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Friends Of Appropriate Ages",
+    "id": "825",
+    "slug": "friends-of-appropriate-ages",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122504,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Most Profit Assigning Work",
+    "id": "826",
+    "slug": "most-profit-assigning-work",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122516,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "matrix",
+    "roadmap::02-two-pointers",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Flipping an Image",
+    "id": "832",
+    "slug": "flipping-an-image",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, matrix, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122592,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Advantage Shuffle",
+    "id": "870",
+    "slug": "advantage-shuffle",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122614,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Boats to Save People",
+    "id": "881",
+    "slug": "boats-to-save-people",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122662,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sort Array By Parity",
+    "id": "905",
+    "slug": "sort-array-by-parity",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122686,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse Only Letters",
+    "id": "917",
+    "slug": "reverse-only-letters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122696,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sort Array By Parity II",
+    "id": "922",
+    "slug": "sort-array-by-parity-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122698,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "3Sum With Multiplicity",
+    "id": "923",
+    "slug": "3sum-with-multiplicity",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, sorting, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122702,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Long Pressed Name",
+    "id": "925",
+    "slug": "long-pressed-name",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122736,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "DI String Match",
+    "id": "942",
+    "slug": "di-string-match",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122748,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Bag of Tokens",
+    "id": "948",
+    "slug": "bag-of-tokens",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122790,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Pancake Sorting",
+    "id": "969",
+    "slug": "pancake-sorting",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122806,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Squares of a Sorted Array",
+    "id": "977",
+    "slug": "squares-of-a-sorted-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122932,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Moving Stones Until Consecutive II",
+    "id": "1040",
+    "slug": "moving-stones-until-consecutive-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122962,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Shortest Way to Form String",
+    "id": "1055",
+    "slug": "shortest-way-to-form-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123030,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Duplicate Zeros",
+    "id": "1089",
+    "slug": "duplicate-zeros",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123050,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Two Sum Less Than K",
+    "id": "1099",
+    "slug": "two-sum-less-than-k",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123178,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Last Substring in Lexicographical Order",
+    "id": "1163",
+    "slug": "last-substring-in-lexicographical-order",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123310,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Meeting Scheduler",
+    "id": "1229",
+    "slug": "meeting-scheduler",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123326,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "interactive",
+    "math",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find Positive Integer Solution for a Given Equation",
+    "id": "1237",
+    "slug": "find-positive-integer-solution-for-a-given-equation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, two-pointers, binary-search, interactive",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123516,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Remove Palindromic Subsequences",
+    "id": "1332",
+    "slug": "remove-palindromic-subsequences",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123544,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Check If N and Its Double Exist",
+    "id": "1346",
+    "slug": "check-if-n-and-its-double-exist",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123622,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find the Distance Value Between Two Arrays",
+    "id": "1385",
+    "slug": "find-the-distance-value-between-two-arrays",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123794,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "The k Strongest Values in an Array",
+    "id": "1471",
+    "slug": "the-k-strongest-values-in-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123848,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Number of Subsequences That Satisfy the Given Sum Condition",
+    "id": "1498",
+    "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123868,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Range Sum of Sorted Subarray Sums",
+    "id": "1508",
+    "slug": "range-sum-of-sorted-subarray-sums",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123992,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Dot Product of Two Sparse Vectors",
+    "id": "1570",
+    "slug": "dot-product-of-two-sparse-vectors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124006,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "math",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Number of Ways Where Square of Number Is Equal to Product of Two Numbers",
+    "id": "1577",
+    "slug": "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124084,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Split Two Strings to Make Palindrome",
+    "id": "1616",
+    "slug": "split-two-strings-to-make-palindrome",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124210,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Max Number of K-Sum Pairs",
+    "id": "1679",
+    "slug": "max-number-of-k-sum-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124276,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Ways to Split Array Into Three Subarrays",
+    "id": "1712",
+    "slug": "ways-to-split-array-into-three-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124352,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Minimum Length of String After Deleting Similar Ends",
+    "id": "1750",
+    "slug": "minimum-length-of-string-after-deleting-similar-ends",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124360,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Largest Merge Of Two Strings",
+    "id": "1754",
+    "slug": "largest-merge-of-two-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124388,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Merge Strings Alternately",
+    "id": "1768",
+    "slug": "merge-strings-alternately",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124478,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sentence Similarity III",
+    "id": "1813",
+    "slug": "sentence-similarity-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124504,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Faulty Sensor",
+    "id": "1826",
+    "slug": "faulty-sensor",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124536,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Next Palindrome Using Same Digits",
+    "id": "1842",
+    "slug": "next-palindrome-using-same-digits",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124552,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Minimum Adjacent Swaps to Reach the Kth Smallest Number",
+    "id": "1850",
+    "slug": "minimum-adjacent-swaps-to-reach-the-kth-smallest-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124562,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximum Distance Between a Pair of Values",
+    "id": "1855",
+    "slug": "maximum-distance-between-a-pair-of-values",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124574,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Rotating the Box",
+    "id": "1861",
+    "slug": "rotating-the-box",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124588,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Product of Two Run-Length Encoded Arrays",
+    "id": "1868",
+    "slug": "product-of-two-run-length-encoded-arrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124594,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Jump Game VII",
+    "id": "1871",
+    "slug": "jump-game-vii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124606,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Minimize Maximum Pair Sum in Array",
+    "id": "1877",
+    "slug": "minimize-maximum-pair-sum-in-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124852,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Reverse Prefix of Word",
+    "id": "2000",
+    "slug": "reverse-prefix-of-word",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125062,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Watering Plants II",
+    "id": "2105",
+    "slug": "watering-plants-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125068,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find First Palindromic String in the Array",
+    "id": "2108",
+    "slug": "find-first-palindromic-string-in-the-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125150,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Rearrange Array Elements by Sign",
+    "id": "2149",
+    "slug": "rearrange-array-elements-by-sign",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125174,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Partition Array According to Given Pivot",
+    "id": "2161",
+    "slug": "partition-array-according-to-given-pivot",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125320,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximum Total Beauty of the Gardens",
+    "id": "2234",
+    "slug": "maximum-total-beauty-of-the-gardens",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, binary-search, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125452,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Successful Pairs of Spells and Potions",
+    "id": "2300",
+    "slug": "successful-pairs-of-spells-and-potions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125512,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Valid Palindrome IV",
+    "id": "2330",
+    "slug": "valid-palindrome-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125516,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "The Latest Time to Catch a Bus",
+    "id": "2332",
+    "slug": "the-latest-time-to-catch-a-bus",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125526,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Move Pieces to Obtain a String",
+    "id": "2337",
+    "slug": "move-pieces-to-obtain-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125586,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "enumeration",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Number of Arithmetic Triplets",
+    "id": "2367",
+    "slug": "number-of-arithmetic-triplets",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125644,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "brainteaser",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Strictly Palindromic Number",
+    "id": "2396",
+    "slug": "strictly-palindromic-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, two-pointers, brainteaser",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125672,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximum Matching of Players With Trainers",
+    "id": "2410",
+    "slug": "maximum-matching-of-players-with-trainers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125696,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Merge Operations to Turn Array Into a Palindrome",
+    "id": "2422",
+    "slug": "merge-operations-to-turn-array-into-a-palindrome",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125734,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Largest Positive Integer That Exists With Its Negative",
+    "id": "2441",
+    "slug": "largest-positive-integer-that-exists-with-its-negative",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125782,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Number of Distinct Averages",
+    "id": "2465",
+    "slug": "number-of-distinct-averages",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125824,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Append Characters to String to Make Subsequence",
+    "id": "2486",
+    "slug": "append-characters-to-string-to-make-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125834,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Divide Players Into Teams of Equal Skill",
+    "id": "2491",
+    "slug": "divide-players-into-teams-of-equal-skill",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125874,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximum Enemy Forts That Can Be Captured",
+    "id": "2511",
+    "slug": "maximum-enemy-forts-that-can-be-captured",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125932,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Minimum Common Value",
+    "id": "2540",
+    "slug": "minimum-common-value",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125976,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "simulation",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find the Array Concatenation Value",
+    "id": "2562",
+    "slug": "find-the-array-concatenation-value",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, two-pointers, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125978,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Count the Number of Fair Pairs",
+    "id": "2563",
+    "slug": "count-the-number-of-fair-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125982,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Subsequence With the Minimum Score",
+    "id": "2565",
+    "slug": "subsequence-with-the-minimum-score",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, string, binary-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125992,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::02-two-pointers",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Merge Two 2D Arrays by Summing Values",
+    "id": "2570",
+    "slug": "merge-two-2d-arrays-by-summing-values",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126004,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find the Maximum Number of Marked Indices",
+    "id": "2576",
+    "slug": "find-the-maximum-number-of-marked-indices",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126036,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::02-two-pointers",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximize Greatness of an Array",
+    "id": "2592",
+    "slug": "maximize-greatness-of-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126246,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::02-two-pointers",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Lexicographically Smallest Palindrome",
+    "id": "2697",
+    "slug": "lexicographically-smallest-palindrome",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string",
+    "paid": "no"
+   }
+  }
+ ]
+}

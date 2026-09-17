@@ -9,6 +9,9 @@ downloads, never uploads.
 """
 import os, json, re, tempfile, datetime, collections, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from export_prune import prune
+
 from anki.collection import Collection
 from anki.sync import SyncAuth
 from anki import sync_pb2
@@ -60,7 +63,7 @@ def export(col):
             "tags": sorted(note.tags),
             "fields": {k: v for k, v in note.items()},
         })
-    index, grand = [], 0
+    index, grand, written = [], 0, []
     today = datetime.date.today().isoformat()
     for deck, notes in by_deck.items():
         notes.sort(key=lambda x: x["noteId"])
@@ -69,8 +72,14 @@ def export(col):
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"deck": deck, "note_count": len(notes), "exported": today,
                        "notes": notes}, f, ensure_ascii=False, indent=1)
+        written.append(path)
         index.append((deck, len(notes))); grand += len(notes)
         log("  %s -> %d notes" % (deck, len(notes)))
+    # drop snapshot files for decks that no longer exist. sync_down() has already
+    # raised on a failed/partial sync, and prune() refuses an empty write set, so
+    # this cannot wipe the snapshot on a bad run.
+    prune(OUT, written, log=log)
+
     lines = ["# Anki collection export", "",
              f"Snapshot generated {today} from AnkiWeb via GitHub Actions "
              "(scripts/anki_cloud_export.py). One JSON file per deck; media binaries "

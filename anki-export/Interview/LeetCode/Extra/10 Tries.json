@@ -1,0 +1,938 @@
+{
+ "deck": "Interview::LeetCode::Extra::10 Tries",
+ "note_count": 46,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120880,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Longest Common Prefix",
+    "id": "14",
+    "slug": "longest-common-prefix",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121132,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "hash-table",
+    "memoization",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Word Break II",
+    "id": "140",
+    "slug": "word-break-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, dynamic-programming, backtracking, trie, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121524,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Palindrome Pairs",
+    "id": "336",
+    "slug": "palindrome-pairs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121624,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "Lexicographical Numbers",
+    "id": "386",
+    "slug": "lexicographical-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121694,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "Maximum XOR of Two Numbers in an Array",
+    "id": "421",
+    "slug": "maximum-xor-of-two-numbers-in-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, bit-manipulation, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121702,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Word Squares",
+    "id": "425",
+    "slug": "word-squares",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, backtracking, trie",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121732,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "K-th Smallest in Lexicographical Order",
+    "id": "440",
+    "slug": "k-th-smallest-in-lexicographical-order",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121796,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Concatenated Words",
+    "id": "472",
+    "slug": "concatenated-words",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, dynamic-programming, depth-first-search, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121906,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::10-tries",
+    "sorting",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Word Abbreviation",
+    "id": "527",
+    "slug": "word-abbreviation",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, greedy, trie, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122028,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Design In-Memory File System",
+    "id": "588",
+    "slug": "design-in-memory-file-system",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122084,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "string-matching",
+    "trie"
+   ],
+   "fields": {
+    "title": "Add Bold Tag in String",
+    "id": "616",
+    "slug": "add-bold-tag-in-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, trie, string-matching",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122136,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Design Search Autocomplete System",
+    "id": "642",
+    "slug": "design-search-autocomplete-system",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, design, trie, data-stream",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122148,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Replace Words",
+    "id": "648",
+    "slug": "replace-words",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122204,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Implement Magic Dictionary",
+    "id": "676",
+    "slug": "implement-magic-dictionary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122206,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Map Sum Pairs",
+    "id": "677",
+    "slug": "map-sum-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122236,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bucket-sort",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "heap-priority-queue",
+    "roadmap::10-tries",
+    "sorting",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Top K Frequent Words",
+    "id": "692",
+    "slug": "top-k-frequent-words",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, trie, sorting, heap-priority-queue, bucket-sort, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122292,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "sorting",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Longest Word in Dictionary",
+    "id": "720",
+    "slug": "longest-word-in-dictionary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, trie, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122342,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Prefix and Suffix Search",
+    "id": "745",
+    "slug": "prefix-and-suffix-search",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122368,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "string-matching",
+    "trie"
+   ],
+   "fields": {
+    "title": "Bold Words in String",
+    "id": "758",
+    "slug": "bold-words-in-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, trie, string-matching",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122436,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "sorting",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Number of Matching Subsequences",
+    "id": "792",
+    "slug": "number-of-matching-subsequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, trie, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122492,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Short Encoding of Words",
+    "id": "820",
+    "slug": "short-encoding-of-words",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122898,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::10-tries",
+    "string",
+    "string-matching",
+    "trie",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Camelcase Matching",
+    "id": "1023",
+    "slug": "camelcase-matching",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, trie, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122916,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Stream of Characters",
+    "id": "1032",
+    "slug": "stream-of-characters",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, design, trie, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122940,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "sliding-window",
+    "string",
+    "suffix-array"
+   ],
+   "fields": {
+    "title": "Longest Duplicate Substring",
+    "id": "1044",
+    "slug": "longest-duplicate-substring",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, binary-search, sliding-window, rolling-hash, suffix-array, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122976,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-function",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "string",
+    "suffix-array"
+   ],
+   "fields": {
+    "title": "Longest Repeating Substring",
+    "id": "1062",
+    "slug": "longest-repeating-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, binary-search, dynamic-programming, rolling-hash, suffix-array, hash-function",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122982,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::10-tries",
+    "sorting",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Index Pairs of a String",
+    "id": "1065",
+    "slug": "index-pairs-of-a-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string, trie, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123184,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Design File System",
+    "id": "1166",
+    "slug": "design-file-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123208,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Number of Valid Words for Each Puzzle",
+    "id": "1178",
+    "slug": "number-of-valid-words-for-each-puzzle",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, bit-manipulation, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123318,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Remove Sub-Folders from the Filesystem",
+    "id": "1233",
+    "slug": "remove-sub-folders-from-the-filesystem",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123388,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Search Suggestions System",
+    "id": "1268",
+    "slug": "search-suggestions-system",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123484,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Distinct Echo Substrings",
+    "id": "1316",
+    "slug": "distinct-echo-substrings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, trie, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124248,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-function",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "string",
+    "suffix-array",
+    "trie"
+   ],
+   "fields": {
+    "title": "Number of Distinct Substrings in a String",
+    "id": "1698",
+    "slug": "number-of-distinct-substrings-in-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, trie, rolling-hash, suffix-array, hash-function",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124266,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "Maximum XOR With an Element From Array",
+    "id": "1707",
+    "slug": "maximum-xor-with-an-element-from-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124458,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "Count Pairs With XOR in a Range",
+    "id": "1803",
+    "slug": "count-pairs-with-xor-in-a-range",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124460,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Implement Trie II (Prefix Tree)",
+    "id": "1804",
+    "slug": "implement-trie-ii-prefix-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, design, trie",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124568,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "Longest Word With All Prefixes",
+    "id": "1858",
+    "slug": "longest-word-with-all-prefixes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, trie",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124698,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "suffix-array"
+   ],
+   "fields": {
+    "title": "Longest Common Subpath",
+    "id": "1923",
+    "slug": "longest-common-subpath",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, rolling-hash, suffix-array, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124728,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "trie"
+   ],
+   "fields": {
+    "title": "Maximum Genetic Difference Query",
+    "id": "1938",
+    "slug": "maximum-genetic-difference-query",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124748,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Delete Duplicate Folders in System",
+    "id": "1948",
+    "slug": "delete-duplicate-folders-in-system",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, trie, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124806,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::10-tries",
+    "string",
+    "suffix-array"
+   ],
+   "fields": {
+    "title": "Number of Ways to Separate Numbers",
+    "id": "1977",
+    "slug": "number-of-ways-to-separate-numbers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, suffix-array",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125298,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "string",
+    "string-matching",
+    "suffix-array"
+   ],
+   "fields": {
+    "title": "Sum of Scores of Built Strings",
+    "id": "2223",
+    "slug": "sum-of-scores-of-built-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, binary-search, rolling-hash, suffix-array, string-matching, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125306,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Encrypt and Decrypt Strings",
+    "id": "2227",
+    "slug": "encrypt-and-decrypt-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, string, design, trie",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125374,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "enumeration",
+    "hash-function",
+    "hash-table",
+    "roadmap::10-tries",
+    "rolling-hash",
+    "trie"
+   ],
+   "fields": {
+    "title": "K Divisible Elements Subarrays",
+    "id": "2261",
+    "slug": "k-divisible-elements-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, trie, rolling-hash, hash-function, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125684,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-hard-tag",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Sum of Prefix Scores of Strings",
+    "id": "2416",
+    "slug": "sum-of-prefix-scores-of-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, trie, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125810,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::10-tries",
+    "tree",
+    "trie"
+   ],
+   "fields": {
+    "title": "Maximum XOR of Two Non-Overlapping Subtrees",
+    "id": "2479",
+    "slug": "maximum-xor-of-two-non-overlapping-subtrees",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "tree, depth-first-search, graph, trie",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126266,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::10-tries",
+    "string",
+    "trie"
+   ],
+   "fields": {
+    "title": "Extra Characters in a String",
+    "id": "2707",
+    "slug": "extra-characters-in-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, dynamic-programming, trie",
+    "paid": "no"
+   }
+  }
+ ]
+}

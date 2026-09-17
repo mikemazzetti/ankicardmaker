@@ -1,0 +1,182 @@
+{
+ "deck": "Interview::LeetCode::NeetCode150::01 Arrays & Hashing",
+ "note_count": 9,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120854,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Two Sum",
+    "id": "1",
+    "slug": "two-sum",
+    "difficulty": "<font color=\"green\">Easy</font>",
+    "topics": "array, hash-table",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120924,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "matrix",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Valid Sudoku",
+    "id": "36",
+    "slug": "valid-sudoku",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120950,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Group Anagrams",
+    "id": "49",
+    "slug": "group-anagrams",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121108,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Longest Consecutive Sequence",
+    "id": "128",
+    "slug": "longest-consecutive-sequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121286,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Contains Duplicate",
+    "id": "217",
+    "slug": "contains-duplicate",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121328,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::01-arrays-hashing"
+   ],
+   "fields": {
+    "title": "Product of Array Except Self",
+    "id": "238",
+    "slug": "product-of-array-except-self",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121336,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::01-arrays-hashing",
+    "sorting",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Anagram",
+    "id": "242",
+    "slug": "valid-anagram",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121394,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "roadmap::01-arrays-hashing",
+    "string"
+   ],
+   "fields": {
+    "title": "Encode and Decode Strings",
+    "id": "271",
+    "slug": "encode-and-decode-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, design",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121546,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bucket-sort",
+    "counting",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "heap-priority-queue",
+    "quickselect",
+    "roadmap::01-arrays-hashing",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Top K Frequent Elements",
+    "id": "347",
+    "slug": "top-k-frequent-elements",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, divide-and-conquer, sorting, heap-priority-queue, bucket-sort, counting, quickselect",
+    "paid": "no"
+   }
+  }
+ ]
+}

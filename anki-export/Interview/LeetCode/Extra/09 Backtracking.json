@@ -1,0 +1,1541 @@
+{
+ "deck": "Interview::LeetCode::Extra::09 Backtracking",
+ "note_count": 78,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120926,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "hash-table",
+    "matrix",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Sudoku Solver",
+    "id": "37",
+    "slug": "sudoku-solver",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, backtracking, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120946,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Permutations II",
+    "id": "47",
+    "slug": "permutations-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120956,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-hard-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "N-Queens II",
+    "id": "52",
+    "slug": "n-queens-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121006,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Combinations",
+    "id": "77",
+    "slug": "combinations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121030,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Gray Code",
+    "id": "89",
+    "slug": "gray-code",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121038,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Restore IP Addresses",
+    "id": "93",
+    "slug": "restore-ip-addresses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121042,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking",
+    "tree"
+   ],
+   "fields": {
+    "title": "Unique Binary Search Trees II",
+    "id": "95",
+    "slug": "unique-binary-search-trees-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, backtracking, tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121078,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "tree"
+   ],
+   "fields": {
+    "title": "Path Sum II",
+    "id": "113",
+    "slug": "path-sum-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "backtracking, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121104,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Word Ladder II",
+    "id": "126",
+    "slug": "word-ladder-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, backtracking, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121284,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Combination Sum III",
+    "id": "216",
+    "slug": "combination-sum-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121360,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Factor Combinations",
+    "id": "254",
+    "slug": "factor-combinations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121366,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::09-backtracking",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Paths",
+    "id": "257",
+    "slug": "binary-tree-paths",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, backtracking, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121386,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindrome Permutation II",
+    "id": "267",
+    "slug": "palindrome-permutation-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, backtracking",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121416,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Expression Add Operators",
+    "id": "282",
+    "slug": "expression-add-operators",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121434,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Word Pattern II",
+    "id": "291",
+    "slug": "word-pattern-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, backtracking",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121440,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "memoization",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Flip Game II",
+    "id": "294",
+    "slug": "flip-game-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, backtracking, memoization, game-theory",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121454,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Invalid Parentheses",
+    "id": "301",
+    "slug": "remove-invalid-parentheses",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, backtracking, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121464,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Additive Number",
+    "id": "306",
+    "slug": "additive-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121492,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Generalized Abbreviation",
+    "id": "320",
+    "slug": "generalized-abbreviation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking, bit-manipulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121554,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Android Unlock Patterns",
+    "id": "351",
+    "slug": "android-unlock-patterns",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, backtracking",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121566,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Count Numbers with Unique Digits",
+    "id": "357",
+    "slug": "count-numbers-with-unique-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121654,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Binary Watch",
+    "id": "401",
+    "slug": "binary-watch",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121674,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Unique Word Abbreviation",
+    "id": "411",
+    "slug": "minimum-unique-word-abbreviation",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, backtracking, bit-manipulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121782,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Optimal Account Balancing",
+    "id": "465",
+    "slug": "optimal-account-balancing",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121798,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Matchsticks to Square",
+    "id": "473",
+    "slug": "matchsticks-to-square",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121830,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-hard-tag",
+    "interactive",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Robot Room Cleaner",
+    "id": "489",
+    "slug": "robot-room-cleaner",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "backtracking, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121834,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Non-decreasing Subsequences",
+    "id": "491",
+    "slug": "non-decreasing-subsequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121904,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Beautiful Arrangement",
+    "id": "526",
+    "slug": "beautiful-arrangement",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122128,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Shopping Offers",
+    "id": "638",
+    "slug": "shopping-offers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, memoization, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122210,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "24 Game",
+    "id": "679",
+    "slug": "24-game",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122234,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Stickers to Spell Word",
+    "id": "691",
+    "slug": "stickers-to-spell-word",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122248,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Partition to K Equal Sum Subsets",
+    "id": "698",
+    "slug": "partition-to-k-equal-sum-subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, memoization, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122420,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Letter Case Permutation",
+    "id": "784",
+    "slug": "letter-case-permutation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122484,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Ambiguous Coordinates",
+    "id": "816",
+    "slug": "ambiguous-coordinates",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122536,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Split Array into Fibonacci Sequence",
+    "id": "842",
+    "slug": "split-array-into-fibonacci-sequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122786,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Numbers With Same Consecutive Differences",
+    "id": "967",
+    "slug": "numbers-with-same-consecutive-differences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "backtracking, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122812,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Unique Paths III",
+    "id": "980",
+    "slug": "unique-paths-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, backtracking, bit-manipulation, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122844,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Number of Squareful Arrays",
+    "id": "996",
+    "slug": "number-of-squareful-arrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122984,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Campus Bikes II",
+    "id": "1066",
+    "slug": "campus-bikes-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123010,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "counting",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Letter Tile Possibilities",
+    "id": "1079",
+    "slug": "letter-tile-possibilities",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, backtracking, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123026,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Brace Expansion",
+    "id": "1087",
+    "slug": "brace-expansion",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123028,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Confusing Number II",
+    "id": "1088",
+    "slug": "confusing-number-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, backtracking",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123044,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::09-backtracking",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Brace Expansion II",
+    "id": "1096",
+    "slug": "brace-expansion-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, backtracking, stack, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123282,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Stepping Numbers",
+    "id": "1215",
+    "slug": "stepping-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "backtracking, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123290,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Path with Maximum Gold",
+    "id": "1219",
+    "slug": "path-with-maximum-gold",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123328,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Circular Permutation in Binary Representation",
+    "id": "1238",
+    "slug": "circular-permutation-in-binary-representation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123330,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Length of a Concatenated String with Unique Characters",
+    "id": "1239",
+    "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123332,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Tiling a Rectangle with the Fewest Squares",
+    "id": "1240",
+    "slug": "tiling-a-rectangle-with-the-fewest-squares",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123362,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Score Words Formed by Letters",
+    "id": "1255",
+    "slug": "maximum-score-words-formed-by-letters",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123424,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Iterator for Combination",
+    "id": "1286",
+    "slug": "iterator-for-combination",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking, design, iterator",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123466,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Verbal Arithmetic Puzzle",
+    "id": "1307",
+    "slug": "verbal-arithmetic-puzzle",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123682,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+    "id": "1415",
+    "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123786,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "probability-and-statistics",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Probability of a Two Boxes Having The Same Number of Distinct Balls",
+    "id": "1467",
+    "slug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, backtracking, combinatorics, probability-and-statistics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124038,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Split a String Into the Max Number of Unique Substrings",
+    "id": "1593",
+    "slug": "split-a-string-into-the-max-number-of-unique-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124054,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "enumeration",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximum Number of Achievable Transfer Requests",
+    "id": "1601",
+    "slug": "maximum-number-of-achievable-transfer-requests",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, backtracking, bit-manipulation, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124162,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Distribute Repeating Integers",
+    "id": "1655",
+    "slug": "distribute-repeating-integers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124288,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Construct the Lexicographically Largest Valid Sequence",
+    "id": "1718",
+    "slug": "construct-the-lexicographically-largest-valid-sequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124298,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Find Minimum Time to Finish All Jobs",
+    "id": "1723",
+    "slug": "find-minimum-time-to-finish-all-jobs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124400,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Closest Dessert Cost",
+    "id": "1774",
+    "slug": "closest-dessert-cost",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124450,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "number-theory",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximize Score After N Operations",
+    "id": "1799",
+    "slug": "maximize-score-after-n-operations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, backtracking, bit-manipulation, number-theory, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124492,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximum Number of Accepted Invitations",
+    "id": "1820",
+    "slug": "maximum-number-of-accepted-invitations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124550,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Splitting a String Into Descending Consecutive Values",
+    "id": "1849",
+    "slug": "splitting-a-string-into-descending-consecutive-values",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124578,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "combinatorics",
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Sum of All Subset XOR Totals",
+    "id": "1863",
+    "slug": "sum-of-all-subset-xor-totals",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, math, backtracking, bit-manipulation, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124746,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximum Compatibility Score Sum",
+    "id": "1947",
+    "slug": "maximum-compatibility-score-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124812,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Unique Binary String",
+    "id": "1980",
+    "slug": "find-unique-binary-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, backtracking",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124824,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Minimum Number of Work Sessions to Finish the Tasks",
+    "id": "1986",
+    "slug": "minimum-number-of-work-sessions-to-finish-the-tasks",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124856,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Product of the Length of Two Palindromic Subsequences",
+    "id": "2002",
+    "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124880,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "counting",
+    "difficulty-hard-tag",
+    "enumeration",
+    "greedy",
+    "roadmap::09-backtracking",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Subsequence Repeated k Times",
+    "id": "2014",
+    "slug": "longest-subsequence-repeated-k-times",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, backtracking, greedy, counting, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124940,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Count Number of Maximum Bitwise-OR Subsets",
+    "id": "2044",
+    "slug": "count-number-of-maximum-bitwise-or-subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124948,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "enumeration",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Next Greater Numerically Balanced Number",
+    "id": "2048",
+    "slug": "next-greater-numerically-balanced-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, backtracking, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124964,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "roadmap::09-backtracking",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Valid Move Combinations On Chessboard",
+    "id": "2056",
+    "slug": "number-of-valid-move-combinations-on-chessboard",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, backtracking, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125154,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "enumeration",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximum Good People Based on Statements",
+    "id": "2151",
+    "slug": "maximum-good-people-based-on-statements",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, backtracking, bit-manipulation, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125156,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "geometry",
+    "hash-table",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Minimum Number of Lines to Cover Points",
+    "id": "2152",
+    "slug": "minimum-number-of-lines-to-cover-points",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, dynamic-programming, backtracking, bit-manipulation, geometry, bitmask",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125208,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "greedy",
+    "math",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximum Split of Positive Even Integers",
+    "id": "2178",
+    "slug": "maximum-split-of-positive-even-integers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, backtracking, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125462,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Fair Distribution of Cookies",
+    "id": "2305",
+    "slug": "fair-distribution-of-cookies",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125602,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::09-backtracking",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Construct Smallest Number From DI String",
+    "id": "2375",
+    "slug": "construct-smallest-number-from-di-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, backtracking, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125646,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "enumeration",
+    "matrix",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "Maximum Rows Covered by Columns",
+    "id": "2397",
+    "slug": "maximum-rows-covered-by-columns",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, backtracking, bit-manipulation, matrix, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126046,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::09-backtracking"
+   ],
+   "fields": {
+    "title": "The Number of Beautiful Subsets",
+    "id": "2597",
+    "slug": "the-number-of-beautiful-subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, backtracking",
+    "paid": "no"
+   }
+  }
+ ]
+}

@@ -1,0 +1,785 @@
+{
+ "deck": "Interview::LeetCode::Extra::06 Linked List",
+ "note_count": 42,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120900,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "recursion",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Swap Nodes in Pairs",
+    "id": "24",
+    "slug": "swap-nodes-in-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038120974,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Rotate List",
+    "id": "61",
+    "slug": "rotate-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121016,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Remove Duplicates from Sorted List II",
+    "id": "82",
+    "slug": "remove-duplicates-from-sorted-list-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121018,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Remove Duplicates from Sorted List",
+    "id": "83",
+    "slug": "remove-duplicates-from-sorted-list",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121024,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Partition List",
+    "id": "86",
+    "slug": "partition-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121036,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Reverse Linked List II",
+    "id": "92",
+    "slug": "reverse-linked-list-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121136,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Linked List Cycle II",
+    "id": "142",
+    "slug": "linked-list-cycle-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121146,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Insertion Sort List",
+    "id": "147",
+    "slug": "insertion-sort-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121148,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "linked-list",
+    "merge-sort",
+    "roadmap::06-linked-list",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sort List",
+    "id": "148",
+    "slug": "sort-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers, divide-and-conquer, sorting, merge-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121172,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Intersection of Two Linked Lists",
+    "id": "160",
+    "slug": "intersection-of-two-linked-lists",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121258,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "recursion",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Remove Linked List Elements",
+    "id": "203",
+    "slug": "remove-linked-list-elements",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "linked-list, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121326,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Delete Node in a Linked List",
+    "id": "237",
+    "slug": "delete-node-in-a-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121508,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Odd Even Linked List",
+    "id": "328",
+    "slug": "odd-even-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121590,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "math",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Plus One Linked List",
+    "id": "369",
+    "slug": "plus-one-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, math",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121610,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "linked-list",
+    "queue",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design Phone Directory",
+    "id": "379",
+    "slug": "design-phone-directory",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, linked-list, design, queue",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121616,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "math",
+    "randomized",
+    "reservoir-sampling",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Linked List Random Node",
+    "id": "382",
+    "slug": "linked-list-random-node",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, math, reservoir-sampling, randomized",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121716,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "doubly-linked-list",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "All O`one Data Structure",
+    "id": "432",
+    "slug": "all-oone-data-structure",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, linked-list, design, doubly-linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121772,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "doubly-linked-list",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "LFU Cache",
+    "id": "460",
+    "slug": "lfu-cache",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, linked-list, design, doubly-linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122096,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "linked-list",
+    "queue",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design Circular Queue",
+    "id": "622",
+    "slug": "design-circular-queue",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, design, queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122134,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "linked-list",
+    "queue",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design Circular Deque",
+    "id": "641",
+    "slug": "design-circular-deque",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, design, queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122262,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-easy-tag",
+    "hash-function",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design HashSet",
+    "id": "705",
+    "slug": "design-hashset",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, linked-list, design, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122264,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-easy-tag",
+    "hash-function",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design HashMap",
+    "id": "706",
+    "slug": "design-hashmap",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, linked-list, design, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122266,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design Linked List",
+    "id": "707",
+    "slug": "design-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122268,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Insert into a Sorted Circular Linked List",
+    "id": "708",
+    "slug": "insert-into-a-sorted-circular-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122302,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Split Linked List in Parts",
+    "id": "725",
+    "slug": "split-linked-list-in-parts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122486,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Linked List Components",
+    "id": "817",
+    "slug": "linked-list-components",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122604,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Middle of the Linked List",
+    "id": "876",
+    "slug": "middle-of-the-linked-list",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123194,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+    "id": "1171",
+    "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123264,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design Skiplist",
+    "id": "1206",
+    "slug": "design-skiplist",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "linked-list, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123432,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "math",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Convert Binary Number in a Linked List to Integer",
+    "id": "1290",
+    "slug": "convert-binary-number-in-a-linked-list-to-integer",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "linked-list, math",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123800,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Delete N Nodes After M Nodes of a Linked List",
+    "id": "1474",
+    "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "linked-list",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124120,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "math",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Add Two Polynomials Represented as Linked Lists",
+    "id": "1634",
+    "slug": "add-two-polynomials-represented-as-linked-lists",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, math, two-pointers",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124190,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Merge In Between Linked Lists",
+    "id": "1669",
+    "slug": "merge-in-between-linked-lists",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124192,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "linked-list",
+    "queue",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Design Front Middle Back Queue",
+    "id": "1670",
+    "slug": "design-front-middle-back-queue",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, design, queue, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124294,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Swapping Nodes in a Linked List",
+    "id": "1721",
+    "slug": "swapping-nodes-in-a-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124524,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Remove Duplicates From an Unsorted Linked List",
+    "id": "1836",
+    "slug": "remove-duplicates-from-an-unsorted-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, linked-list",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124944,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "sorting",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Sort Linked List Already Sorted Using Absolute Values",
+    "id": "2046",
+    "slug": "sort-linked-list-already-sorted-using-absolute-values",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124968,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Find the Minimum and Maximum Number of Nodes Between Critical Points",
+    "id": "2058",
+    "slug": "find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125000,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list"
+   ],
+   "fields": {
+    "title": "Reverse Nodes in Even Length Groups",
+    "id": "2074",
+    "slug": "reverse-nodes-in-even-length-groups",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125042,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Delete the Middle Node of a Linked List",
+    "id": "2095",
+    "slug": "delete-the-middle-node-of-a-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125214,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::06-linked-list",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Merge Nodes in Between Zeros",
+    "id": "2181",
+    "slug": "merge-nodes-in-between-zeros",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125504,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "linked-list",
+    "matrix",
+    "roadmap::06-linked-list",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Spiral Matrix IV",
+    "id": "2326",
+    "slug": "spiral-matrix-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, matrix, simulation",
+    "paid": "no"
+   }
+  }
+ ]
+}

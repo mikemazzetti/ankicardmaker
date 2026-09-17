@@ -1,0 +1,5971 @@
+{
+ "deck": "Interview::LeetCode::Extra::13 1-D Dynamic Programming",
+ "note_count": 312,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120916,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Valid Parentheses",
+    "id": "32",
+    "slug": "longest-valid-parentheses",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121026,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Scramble String",
+    "id": "87",
+    "slug": "scramble-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121044,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Unique Binary Search Trees",
+    "id": "96",
+    "slug": "unique-binary-search-trees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121088,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Pascal's Triangle",
+    "id": "118",
+    "slug": "pascals-triangle",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121090,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Pascal's Triangle II",
+    "id": "119",
+    "slug": "pascals-triangle-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121092,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Triangle",
+    "id": "120",
+    "slug": "triangle",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121096,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Best Time to Buy and Sell Stock II",
+    "id": "122",
+    "slug": "best-time-to-buy-and-sell-stock-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121098,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Best Time to Buy and Sell Stock III",
+    "id": "123",
+    "slug": "best-time-to-buy-and-sell-stock-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121116,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindrome Partitioning II",
+    "id": "132",
+    "slug": "palindrome-partitioning-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121228,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Best Time to Buy and Sell Stock IV",
+    "id": "188",
+    "slug": "best-time-to-buy-and-sell-stock-iv",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121318,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "recursion",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Digit One",
+    "id": "233",
+    "slug": "number-of-digit-one",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121334,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "memoization",
+    "recursion",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Different Ways to Add Parentheses",
+    "id": "241",
+    "slug": "different-ways-to-add-parentheses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, dynamic-programming, recursion, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121364,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Paint House",
+    "id": "256",
+    "slug": "paint-house",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121380,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "heap-priority-queue",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Ugly Number II",
+    "id": "264",
+    "slug": "ugly-number-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, math, dynamic-programming, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121382,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Paint House II",
+    "id": "265",
+    "slug": "paint-house-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121404,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Paint Fence",
+    "id": "276",
+    "slug": "paint-fence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121410,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Perfect Squares",
+    "id": "279",
+    "slug": "perfect-squares",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121436,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "brainteaser",
+    "difficulty-easy-tag",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Nim Game",
+    "id": "292",
+    "slug": "nim-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, brainteaser, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121478,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Super Ugly Number",
+    "id": "313",
+    "slug": "super-ugly-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121518,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Largest BST Subtree",
+    "id": "333",
+    "slug": "largest-bst-subtree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121526,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "House Robber III",
+    "id": "337",
+    "slug": "house-robber-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121538,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Integer Break",
+    "id": "343",
+    "slug": "integer-break",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121560,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Russian Doll Envelopes",
+    "id": "354",
+    "slug": "russian-doll-envelopes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121588,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Largest Divisible Subset",
+    "id": "368",
+    "slug": "largest-divisible-subset",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121602,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Guess Number Higher or Lower II",
+    "id": "375",
+    "slug": "guess-number-higher-or-lower-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121604,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Wiggle Subsequence",
+    "id": "376",
+    "slug": "wiggle-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121606,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Combination Sum IV",
+    "id": "377",
+    "slug": "combination-sum-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121636,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Is Subsequence",
+    "id": "392",
+    "slug": "is-subsequence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121644,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Rotate Function",
+    "id": "396",
+    "slug": "rotate-function",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121646,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Integer Replacement",
+    "id": "397",
+    "slug": "integer-replacement",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, greedy, bit-manipulation, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121658,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Frog Jump",
+    "id": "403",
+    "slug": "frog-jump",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121672,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Split Array Largest Sum",
+    "id": "410",
+    "slug": "split-array-largest-sum",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, greedy, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121678,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Arithmetic Slices",
+    "id": "413",
+    "slug": "arithmetic-slices",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121688,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Sentence Screen Fitting",
+    "id": "418",
+    "slug": "sentence-screen-fitting",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, simulation",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121744,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Arithmetic Slices II - Subsequence",
+    "id": "446",
+    "slug": "arithmetic-slices-ii-subsequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121768,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Poor Pigs",
+    "id": "458",
+    "slug": "poor-pigs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121780,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Can I Win",
+    "id": "464",
+    "slug": "can-i-win",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, bit-manipulation, memoization, game-theory, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121784,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count The Repetitions",
+    "id": "466",
+    "slug": "count-the-repetitions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121786,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Unique Substrings in Wraparound String",
+    "id": "467",
+    "slug": "unique-substrings-in-wraparound-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121794,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Encode String with Shortest Length",
+    "id": "471",
+    "slug": "encode-string-with-shortest-length",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121800,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Ones and Zeroes",
+    "id": "474",
+    "slug": "ones-and-zeroes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121824,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "recursion",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Predict the Winner",
+    "id": "486",
+    "slug": "predict-the-winner",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, recursion, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121826,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Max Consecutive Ones II",
+    "id": "487",
+    "slug": "max-consecutive-ones-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121828,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Zuma Game",
+    "id": "488",
+    "slug": "zuma-game",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, stack, breadth-first-search, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121870,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "math",
+    "memoization",
+    "recursion",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Fibonacci Number",
+    "id": "509",
+    "slug": "fibonacci-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, dynamic-programming, recursion, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121880,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Freedom Trail",
+    "id": "514",
+    "slug": "freedom-trail",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121884,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Palindromic Subsequence",
+    "id": "516",
+    "slug": "longest-palindromic-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121944,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Remove Boxes",
+    "id": "546",
+    "slug": "remove-boxes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121956,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Student Attendance Record II",
+    "id": "552",
+    "slug": "student-attendance-record-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121958,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Optimal Division",
+    "id": "553",
+    "slug": "optimal-division",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122004,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Out of Boundary Paths",
+    "id": "576",
+    "slug": "out-of-boundary-paths",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122052,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Non-negative Integers without Consecutive Ones",
+    "id": "600",
+    "slug": "non-negative-integers-without-consecutive-ones",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122110,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "K Inverse Pairs Array",
+    "id": "629",
+    "slug": "k-inverse-pairs-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122120,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Find the Derangement of An Array",
+    "id": "634",
+    "slug": "find-the-derangement-of-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122130,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Decode Ways II",
+    "id": "639",
+    "slug": "decode-ways-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122144,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Length of Pair Chain",
+    "id": "646",
+    "slug": "maximum-length-of-pair-chain",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122152,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "2 Keys Keyboard",
+    "id": "650",
+    "slug": "2-keys-keyboard",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122154,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "4 Keys Keyboard",
+    "id": "651",
+    "slug": "4-keys-keyboard",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122164,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Coin Path",
+    "id": "656",
+    "slug": "coin-path",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122180,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Strange Printer",
+    "id": "664",
+    "slug": "strange-printer",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122198,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Number of Longest Increasing Subsequence",
+    "id": "673",
+    "slug": "number-of-longest-increasing-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, binary-indexed-tree, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122228,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Knight Probability in Chessboard",
+    "id": "688",
+    "slug": "knight-probability-in-chessboard",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122230,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+    "id": "689",
+    "slug": "maximum-sum-of-3-non-overlapping-subarrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122280,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+    "id": "714",
+    "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122288,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-function",
+    "roadmap::13-1-d-dynamic-programming",
+    "rolling-hash",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Length of Repeated Subarray",
+    "id": "718",
+    "slug": "maximum-length-of-repeated-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, dynamic-programming, sliding-window, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122306,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Window Subsequence",
+    "id": "727",
+    "slug": "minimum-window-subsequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122312,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Different Palindromic Subsequences",
+    "id": "730",
+    "slug": "count-different-palindromic-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122332,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Delete and Earn",
+    "id": "740",
+    "slug": "delete-and-earn",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122380,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Largest Plus Sign",
+    "id": "764",
+    "slug": "largest-plus-sign",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122428,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Rotated Digits",
+    "id": "788",
+    "slug": "rotated-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122432,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Domino and Tromino Tiling",
+    "id": "790",
+    "slug": "domino-and-tromino-tiling",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122450,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Champagne Tower",
+    "id": "799",
+    "slug": "champagne-tower",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122454,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Swaps To Make Sequences Increasing",
+    "id": "801",
+    "slug": "minimum-swaps-to-make-sequences-increasing",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122462,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Split Array With Same Average",
+    "id": "805",
+    "slug": "split-array-with-same-average",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122468,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "probability-and-statistics",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Soup Servings",
+    "id": "808",
+    "slug": "soup-servings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, probability-and-statistics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122472,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "brainteaser",
+    "difficulty-hard-tag",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Chalkboard XOR Game",
+    "id": "810",
+    "slug": "chalkboard-xor-game",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, bit-manipulation, brainteaser, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122478,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Largest Sum of Averages",
+    "id": "813",
+    "slug": "largest-sum-of-averages",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122488,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Race Car",
+    "id": "818",
+    "slug": "race-car",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122498,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Binary Trees With Factors",
+    "id": "823",
+    "slug": "binary-trees-with-factors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122508,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Unique Characters of All Substrings of a Given String",
+    "id": "828",
+    "slug": "count-unique-characters-of-all-substrings-of-a-given-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122526,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "probability-and-statistics",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "New 21 Game",
+    "id": "837",
+    "slug": "new-21-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, sliding-window, probability-and-statistics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122528,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Push Dominoes",
+    "id": "838",
+    "slug": "push-dominoes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122538,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "game-theory",
+    "interactive",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Guess the Word",
+    "id": "843",
+    "slug": "guess-the-word",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, string, interactive, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122542,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "enumeration",
+    "roadmap::13-1-d-dynamic-programming",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Longest Mountain in Array",
+    "id": "845",
+    "slug": "longest-mountain-in-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, dynamic-programming, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122594,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Number of Refueling Stops",
+    "id": "871",
+    "slug": "minimum-number-of-refueling-stops",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122598,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Length of Longest Fibonacci Subsequence",
+    "id": "873",
+    "slug": "length-of-longest-fibonacci-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122606,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game",
+    "id": "877",
+    "slug": "stone-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122610,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Profitable Schemes",
+    "id": "879",
+    "slug": "profitable-schemes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122626,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Super Egg Drop",
+    "id": "887",
+    "slug": "super-egg-drop",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, binary-search, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122640,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "memoization",
+    "recursion",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "All Possible Full Binary Trees",
+    "id": "894",
+    "slug": "all-possible-full-binary-trees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, tree, recursion, memoization, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122648,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Bitwise ORs of Subarrays",
+    "id": "898",
+    "slug": "bitwise-ors-of-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122656,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Numbers At Most N Given Digit Set",
+    "id": "902",
+    "slug": "numbers-at-most-n-given-digit-set",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, string, binary-search, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122658,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Permutations for DI Sequence",
+    "id": "903",
+    "slug": "valid-permutations-for-di-sequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122666,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "monotonic-stack",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Sum of Subarray Minimums",
+    "id": "907",
+    "slug": "sum-of-subarray-minimums",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122688,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "monotonic-queue",
+    "queue",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Sum Circular Subarray",
+    "id": "918",
+    "slug": "maximum-sum-circular-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, dynamic-programming, queue, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122692,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Music Playlists",
+    "id": "920",
+    "slug": "number-of-music-playlists",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122704,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Flip String to Monotone Increasing",
+    "id": "926",
+    "slug": "flip-string-to-monotone-increasing",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122722,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Knight Dialer",
+    "id": "935",
+    "slug": "knight-dialer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122738,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the Shortest Superstring",
+    "id": "943",
+    "slug": "find-the-shortest-superstring",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122764,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Tallest Billboard",
+    "id": "956",
+    "slug": "tallest-billboard",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122772,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Delete Columns to Make Sorted III",
+    "id": "960",
+    "slug": "delete-columns-to-make-sorted-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122780,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Least Operators to Express Number",
+    "id": "964",
+    "slug": "least-operators-to-express-number",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122788,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Cameras",
+    "id": "968",
+    "slug": "binary-tree-cameras",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122802,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "monotonic-stack",
+    "ordered-set",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Odd Even Jump",
+    "id": "975",
+    "slug": "odd-even-jump",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, stack, monotonic-stack, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122808,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Longest Turbulent Subarray",
+    "id": "978",
+    "slug": "longest-turbulent-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122818,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Cost For Tickets",
+    "id": "983",
+    "slug": "minimum-cost-for-tickets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122852,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Merge Stones",
+    "id": "1000",
+    "slug": "minimum-cost-to-merge-stones",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122876,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Numbers With Repeated Digits",
+    "id": "1012",
+    "slug": "numbers-with-repeated-digits",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122880,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Best Sightseeing Pair",
+    "id": "1014",
+    "slug": "best-sightseeing-pair",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122900,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Video Stitching",
+    "id": "1024",
+    "slug": "video-stitching",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122902,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "brainteaser",
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Divisor Game",
+    "id": "1025",
+    "slug": "divisor-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, dynamic-programming, brainteaser, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122906,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Longest Arithmetic Subsequence",
+    "id": "1027",
+    "slug": "longest-arithmetic-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122914,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Sum of Two Non-Overlapping Subarrays",
+    "id": "1031",
+    "slug": "maximum-sum-of-two-non-overlapping-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122922,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Uncrossed Lines",
+    "id": "1035",
+    "slug": "uncrossed-lines",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122930,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Score Triangulation of Polygon",
+    "id": "1039",
+    "slug": "minimum-score-triangulation-of-polygon",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122938,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Partition Array for Maximum Sum",
+    "id": "1043",
+    "slug": "partition-array-for-maximum-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122948,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Longest String Chain",
+    "id": "1048",
+    "slug": "longest-string-chain",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, two-pointers, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122950,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Last Stone Weight II",
+    "id": "1049",
+    "slug": "last-stone-weight-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122986,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Digit Count in Range",
+    "id": "1067",
+    "slug": "digit-count-in-range",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123062,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Filling Bookcase Shelves",
+    "id": "1105",
+    "slug": "filling-bookcase-shelves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123102,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Smallest Sufficient Team",
+    "id": "1125",
+    "slug": "smallest-sufficient-team",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123112,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Minimum Cost Tree From Leaf Values",
+    "id": "1130",
+    "slug": "minimum-cost-tree-from-leaf-values",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123126,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "math",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "N-th Tribonacci Number",
+    "id": "1137",
+    "slug": "n-th-tribonacci-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123132,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game II",
+    "id": "1140",
+    "slug": "stone-game-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123146,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "hash-function",
+    "roadmap::13-1-d-dynamic-programming",
+    "rolling-hash",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Longest Chunked Palindrome Decomposition",
+    "id": "1147",
+    "slug": "longest-chunked-palindrome-decomposition",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, string, dynamic-programming, greedy, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123162,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Dice Rolls With Target Sum",
+    "id": "1155",
+    "slug": "number-of-dice-rolls-with-target-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123216,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Shortest Distance to Target Color",
+    "id": "1182",
+    "slug": "shortest-distance-to-target-color",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123224,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Subarray Sum with One Deletion",
+    "id": "1186",
+    "slug": "maximum-subarray-sum-with-one-deletion",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123226,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Make Array Strictly Increasing",
+    "id": "1187",
+    "slug": "make-array-strictly-increasing",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123234,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "K-Concatenation Maximum Sum",
+    "id": "1191",
+    "slug": "k-concatenation-maximum-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123284,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Valid Palindrome III",
+    "id": "1216",
+    "slug": "valid-palindrome-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123288,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Longest Arithmetic Subsequence of Given Difference",
+    "id": "1218",
+    "slug": "longest-arithmetic-subsequence-of-given-difference",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123292,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Vowels Permutation",
+    "id": "1220",
+    "slug": "count-vowels-permutation",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123298,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Dice Roll Simulation",
+    "id": "1223",
+    "slug": "dice-roll-simulation",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123306,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "brainteaser",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "probability-and-statistics",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Airplane Seat Assignment Probability",
+    "id": "1227",
+    "slug": "airplane-seat-assignment-probability",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, brainteaser, probability-and-statistics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123312,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "probability-and-statistics",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Toss Strange Coins",
+    "id": "1230",
+    "slug": "toss-strange-coins",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, probability-and-statistics",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123322,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Profit in Job Scheduling",
+    "id": "1235",
+    "slug": "maximum-profit-in-job-scheduling",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123344,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Palindrome Removal",
+    "id": "1246",
+    "slug": "palindrome-removal",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123370,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Handshakes That Don't Cross",
+    "id": "1259",
+    "slug": "handshakes-that-dont-cross",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123376,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Greatest Sum Divisible by Three",
+    "id": "1262",
+    "slug": "greatest-sum-divisible-by-three",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123390,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Stay in the Same Place After Some Steps",
+    "id": "1269",
+    "slug": "number-of-ways-to-stay-in-the-same-place-after-some-steps",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123408,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindrome Partitioning III",
+    "id": "1278",
+    "slug": "palindrome-partitioning-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123476,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Insertion Steps to Make a String Palindrome",
+    "id": "1312",
+    "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123504,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Number of Taps to Open to Water a Garden",
+    "id": "1326",
+    "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123522,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Difficulty of a Job Schedule",
+    "id": "1335",
+    "slug": "minimum-difficulty-of-a-job-schedule",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123532,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Jump Game V",
+    "id": "1340",
+    "slug": "jump-game-v",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123570,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count All Valid Pickup and Delivery Options",
+    "id": "1359",
+    "slug": "count-all-valid-pickup-and-delivery-options",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123578,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Largest Multiple of Three",
+    "id": "1363",
+    "slug": "largest-multiple-of-three",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123596,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Longest ZigZag Path in a Binary Tree",
+    "id": "1372",
+    "slug": "longest-zigzag-path-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123598,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Sum BST in Binary Tree",
+    "id": "1373",
+    "slug": "maximum-sum-bst-in-binary-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123626,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Sort Integers by The Power Value",
+    "id": "1387",
+    "slug": "sort-integers-by-the-power-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, memoization, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123628,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Pizza With 3n Slices",
+    "id": "1388",
+    "slug": "pizza-with-3n-slices",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, greedy, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123642,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Number of Teams",
+    "id": "1395",
+    "slug": "count-number-of-teams",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, binary-indexed-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123646,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Find All Good Strings",
+    "id": "1397",
+    "slug": "find-all-good-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, string-matching",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123656,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Reducing Dishes",
+    "id": "1402",
+    "slug": "reducing-dishes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123664,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game III",
+    "id": "1406",
+    "slug": "stone-game-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123674,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Paint N × 3 Grid",
+    "id": "1411",
+    "slug": "number-of-ways-to-paint-n-3-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123684,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Restore The Array",
+    "id": "1416",
+    "slug": "restore-the-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123692,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Build Array Where You Can Find The Maximum Exactly K Comparisons",
+    "id": "1420",
+    "slug": "build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123702,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "heap-priority-queue",
+    "monotonic-queue",
+    "queue",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Constrained Subsequence Sum",
+    "id": "1425",
+    "slug": "constrained-subsequence-sum",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, queue, sliding-window, heap-priority-queue, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123720,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Wear Different Hats to Each Other",
+    "id": "1434",
+    "slug": "number-of-ways-to-wear-different-hats-to-each-other",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123750,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Form Largest Integer With Digits That Add up to Target",
+    "id": "1449",
+    "slug": "form-largest-integer-with-digits-that-add-up-to-target",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123768,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Max Dot Product of Two Subsequences",
+    "id": "1458",
+    "slug": "max-dot-product-of-two-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123798,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Paint House III",
+    "id": "1473",
+    "slug": "paint-house-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123806,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+    "id": "1477",
+    "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, dynamic-programming, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123808,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Allocate Mailboxes",
+    "id": "1478",
+    "slug": "allocate-mailboxes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123818,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "breadth-first-search",
+    "depth-first-search",
+    "design",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Kth Ancestor of a Tree Node",
+    "id": "1483",
+    "slug": "kth-ancestor-of-a-tree-node",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "binary-search, dynamic-programming, tree, depth-first-search, breadth-first-search, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123838,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Longest Subarray of 1's After Deleting One Element",
+    "id": "1493",
+    "slug": "longest-subarray-of-1s-after-deleting-one-element",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123872,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game IV",
+    "id": "1510",
+    "slug": "stone-game-iv",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123900,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Sub-arrays With Odd Sum",
+    "id": "1524",
+    "slug": "number-of-sub-arrays-with-odd-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123902,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Good Ways to Split a String",
+    "id": "1525",
+    "slug": "number-of-good-ways-to-split-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123904,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Minimum Number of Increments on Subarrays to Form a Target Array",
+    "id": "1526",
+    "slug": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123914,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "String Compression II",
+    "id": "1531",
+    "slug": "string-compression-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123926,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Get the Maximum Score",
+    "id": "1537",
+    "slug": "get-the-maximum-score",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123946,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Cut a Stick",
+    "id": "1547",
+    "slug": "minimum-cost-to-cut-a-stick",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123958,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Number of Days to Eat N Oranges",
+    "id": "1553",
+    "slug": "minimum-number-of-days-to-eat-n-oranges",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123974,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "game-theory",
+    "greedy",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Coins You Can Get",
+    "id": "1561",
+    "slug": "maximum-number-of-coins-you-can-get",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, greedy, sorting, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123978,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game V",
+    "id": "1563",
+    "slug": "stone-game-v",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123986,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Length of Subarray With Positive Product",
+    "id": "1567",
+    "slug": "maximum-length-of-subarray-with-positive-product",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124002,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count All Possible Routes",
+    "id": "1575",
+    "slug": "count-all-possible-routes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124008,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Time to Make Rope Colorful",
+    "id": "1578",
+    "slug": "minimum-time-to-make-rope-colorful",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124074,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum One Bit Operations to Make Integers Zero",
+    "id": "1611",
+    "slug": "minimum-one-bit-operations-to-make-integers-zero",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, bit-manipulation, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124086,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "enumeration",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Subtrees With Max Distance Between Cities",
+    "id": "1617",
+    "slug": "count-subtrees-with-max-distance-between-cities",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, bit-manipulation, tree, enumeration, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124094,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Sets of K Non-Overlapping Line Segments",
+    "id": "1621",
+    "slug": "number-of-sets-of-k-non-overlapping-line-segments",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124104,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Best Team With No Conflicts",
+    "id": "1626",
+    "slug": "best-team-with-no-conflicts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124128,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Substrings That Differ by One Character",
+    "id": "1638",
+    "slug": "count-substrings-that-differ-by-one-character",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124130,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Ways to Form a Target String Given a Dictionary",
+    "id": "1639",
+    "slug": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124134,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Sorted Vowel Strings",
+    "id": "1641",
+    "slug": "count-sorted-vowel-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124138,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Kth Smallest Instructions",
+    "id": "1643",
+    "slug": "kth-smallest-instructions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124144,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Get Maximum in Generated Array",
+    "id": "1646",
+    "slug": "get-maximum-in-generated-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, dynamic-programming, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124158,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Deletions to Make String Balanced",
+    "id": "1653",
+    "slug": "minimum-deletions-to-make-string-balanced",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124160,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Jumps to Reach Home",
+    "id": "1654",
+    "slug": "minimum-jumps-to-reach-home",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124170,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximize Grid Happiness",
+    "id": "1659",
+    "slug": "maximize-grid-happiness",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, bit-manipulation, memoization, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124180,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Ways to Make a Fair Array",
+    "id": "1664",
+    "slug": "ways-to-make-a-fair-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124194,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Number of Removals to Make Mountain Array",
+    "id": "1671",
+    "slug": "minimum-number-of-removals-to-make-mountain-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124214,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Incompatibility",
+    "id": "1681",
+    "slug": "minimum-incompatibility",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124216,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Palindromic Subsequence II",
+    "id": "1682",
+    "slug": "longest-palindromic-subsequence-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124224,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "game-theory",
+    "greedy",
+    "heap-priority-queue",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Stone Game VI",
+    "id": "1686",
+    "slug": "stone-game-vi",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, greedy, sorting, heap-priority-queue, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124226,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "heap-priority-queue",
+    "monotonic-queue",
+    "prefix-sum",
+    "queue",
+    "roadmap::13-1-d-dynamic-programming",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Delivering Boxes from Storage to Ports",
+    "id": "1687",
+    "slug": "delivering-boxes-from-storage-to-ports",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, segment-tree, queue, heap-priority-queue, prefix-sum, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124232,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game VII",
+    "id": "1690",
+    "slug": "stone-game-vii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124234,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Height by Stacking Cuboids ",
+    "id": "1691",
+    "slug": "maximum-height-by-stacking-cuboids",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124236,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Ways to Distribute Candies",
+    "id": "1692",
+    "slug": "count-ways-to-distribute-candies",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124244,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "heap-priority-queue",
+    "monotonic-queue",
+    "queue",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Jump Game VI",
+    "id": "1696",
+    "slug": "jump-game-vi",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, queue, sliding-window, heap-priority-queue, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124280,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Sum Of Special Evenly-Spaced Elements In Array",
+    "id": "1714",
+    "slug": "sum-of-special-evenly-spaced-elements-in-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124322,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "number-theory",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Ways to Make Array With Product",
+    "id": "1735",
+    "slug": "count-ways-to-make-array-with-product",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, combinatorics, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124342,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Palindrome Partitioning IV",
+    "id": "1745",
+    "slug": "palindrome-partitioning-iv",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124344,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Subarray Sum After One Operation",
+    "id": "1746",
+    "slug": "maximum-subarray-sum-after-one-operation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124350,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Absolute Sum of Any Subarray",
+    "id": "1749",
+    "slug": "maximum-absolute-sum-of-any-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124354,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Events That Can Be Attended II",
+    "id": "1751",
+    "slug": "maximum-number-of-events-that-can-be-attended-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124362,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Closest Subsequence Sum",
+    "id": "1755",
+    "slug": "closest-subsequence-sum",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124392,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Score from Performing Multiplication Operations",
+    "id": "1770",
+    "slug": "maximum-score-from-performing-multiplication-operations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124394,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximize Palindrome Length From Subsequences",
+    "id": "1771",
+    "slug": "maximize-palindrome-length-from-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124426,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Make the XOR of All Segments Equal to Zero",
+    "id": "1787",
+    "slug": "make-the-xor-of-all-segments-equal-to-zero",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124482,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Number of Groups Getting Fresh Donuts",
+    "id": "1815",
+    "slug": "maximum-number-of-groups-getting-fresh-donuts",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, memoization, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124500,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Sideway Jumps",
+    "id": "1824",
+    "slug": "minimum-sideway-jumps",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124584,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
+    "id": "1866",
+    "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124596,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game VIII",
+    "id": "1872",
+    "slug": "stone-game-viii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, prefix-sum, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124610,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum XOR Sum of Two Arrays",
+    "id": "1879",
+    "slug": "minimum-xor-sum-of-two-arrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124618,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Skips to Arrive at Meeting On Time",
+    "id": "1883",
+    "slug": "minimum-skips-to-arrive-at-meeting-on-time",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124620,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Egg Drop With 2 Eggs and N Floors",
+    "id": "1884",
+    "slug": "egg-drop-with-2-eggs-and-n-floors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124628,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Flips to Make the Binary String Alternating",
+    "id": "1888",
+    "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, greedy, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124644,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Change the Final Value of Expression",
+    "id": "1896",
+    "slug": "minimum-cost-to-change-the-final-value-of-expression",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, string, dynamic-programming, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124652,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "The Earliest and Latest Rounds Where Players Compete",
+    "id": "1900",
+    "slug": "the-earliest-and-latest-rounds-where-players-compete",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124668,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "brainteaser",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Game of Nim",
+    "id": "1908",
+    "slug": "game-of-nim",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, bit-manipulation, brainteaser, game-theory",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124674,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Alternating Subsequence Sum",
+    "id": "1911",
+    "slug": "maximum-alternating-subsequence-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124706,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "game-theory",
+    "greedy",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Sum Game",
+    "id": "1927",
+    "slug": "sum-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, greedy, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124714,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Painting a Grid With Three Different Colors",
+    "id": "1931",
+    "slug": "painting-a-grid-with-three-different-colors",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124726,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Number of Points with Cost",
+    "id": "1937",
+    "slug": "maximum-number-of-points-with-cost",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124762,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Number of Special Subsequences",
+    "id": "1955",
+    "slug": "count-number-of-special-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124770,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Total Space Wasted With K Resizing Operations",
+    "id": "1959",
+    "slug": "minimum-total-space-wasted-with-k-resizing-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124826,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Unique Good Subsequences",
+    "id": "1987",
+    "slug": "number-of-unique-good-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124840,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "The Number of Good Subsets",
+    "id": "1994",
+    "slug": "the-number-of-good-subsets",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124846,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "First Day Where You Have Been in All the Rooms",
+    "id": "1997",
+    "slug": "first-day-where-you-have-been-in-all-the-rooms",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124862,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Subtree Removal Game with Fibonacci Tree",
+    "id": "2005",
+    "slug": "subtree-removal-game-with-fibonacci-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, tree, binary-tree, game-theory",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124868,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Earnings From Taxi",
+    "id": "2008",
+    "slug": "maximum-earnings-from-taxi",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124890,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "The Score of Students Solving Math Expression",
+    "id": "2019",
+    "slug": "the-score-of-students-solving-math-expression",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, string, dynamic-programming, stack, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124910,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-medium-tag",
+    "game-theory",
+    "greedy",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Stone Game IX",
+    "id": "2029",
+    "slug": "stone-game-ix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, greedy, counting, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124922,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "ordered-set",
+    "roadmap::13-1-d-dynamic-programming",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+    "id": "2035",
+    "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, binary-search, dynamic-programming, bit-manipulation, ordered-set, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124924,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Alternating Subarray Sum",
+    "id": "2036",
+    "slug": "maximum-alternating-subarray-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124928,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "game-theory",
+    "greedy",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Colored Pieces if Both Neighbors are the Same Color",
+    "id": "2038",
+    "slug": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, greedy, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124956,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Separate Sentence Into Rows",
+    "id": "2052",
+    "slug": "minimum-cost-to-separate-sentence-into-rows",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124960,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "heap-priority-queue",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Two Best Non-Overlapping Events",
+    "id": "2054",
+    "slug": "two-best-non-overlapping-events",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, dynamic-programming, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124978,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Vowels of All Substrings",
+    "id": "2063",
+    "slug": "vowels-of-all-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125024,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Number of Food Buckets to Feed the Hamsters",
+    "id": "2086",
+    "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125052,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Find Good Days to Rob the Bank",
+    "id": "2100",
+    "slug": "find-good-days-to-rob-the-bank",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125072,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Smooth Descent Periods of a Stock",
+    "id": "2110",
+    "slug": "number-of-smooth-descent-periods-of-a-stock",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125132,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Solving Questions With Brainpower",
+    "id": "2140",
+    "slug": "solving-questions-with-brainpower",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125138,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Choose Numbers From Two Arrays in Range",
+    "id": "2143",
+    "slug": "choose-numbers-from-two-arrays-in-range",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125146,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Ways to Divide a Long Corridor",
+    "id": "2147",
+    "slug": "number-of-ways-to-divide-a-long-corridor",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125178,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "heap-priority-queue",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Difference in Sums After Removal of Elements",
+    "id": "2163",
+    "slug": "minimum-difference-in-sums-after-removal-of-elements",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125186,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Time to Remove All Cars Containing Illegal Goods",
+    "id": "2167",
+    "slug": "minimum-time-to-remove-all-cars-containing-illegal-goods",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125196,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum AND Sum of Array",
+    "id": "2172",
+    "slug": "maximum-and-sum-of-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125220,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Build Sturdy Brick Wall",
+    "id": "2184",
+    "slug": "number-of-ways-to-build-sturdy-brick-wall",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125228,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Time to Finish the Race",
+    "id": "2188",
+    "slug": "minimum-time-to-finish-the-race",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125230,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Build House of Cards",
+    "id": "2189",
+    "slug": "number-of-ways-to-build-house-of-cards",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125270,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum White Tiles After Covering With Carpets",
+    "id": "2209",
+    "slug": "minimum-white-tiles-after-covering-with-carpets",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125288,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Value of K Coins From Piles",
+    "id": "2218",
+    "slug": "maximum-value-of-k-coins-from-piles",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125296,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Ways to Select Buildings",
+    "id": "2222",
+    "slug": "number-of-ways-to-select-buildings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125376,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Total Appeal of A String",
+    "id": "2262",
+    "slug": "total-appeal-of-a-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125378,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Make Array Non-decreasing or Non-increasing",
+    "id": "2263",
+    "slug": "make-array-non-decreasing-or-non-increasing",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125384,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Number of Texts",
+    "id": "2266",
+    "slug": "count-number-of-texts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, math, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125396,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Substring With Largest Variance",
+    "id": "2272",
+    "slug": "substring-with-largest-variance",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125434,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Profit From Trading Stocks",
+    "id": "2291",
+    "slug": "maximum-profit-from-trading-stocks",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125472,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "enumeration",
+    "greedy",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Sum of Numbers With Units Digit K",
+    "id": "2310",
+    "slug": "sum-of-numbers-with-units-digit-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, greedy, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125474,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Binary Subsequence Less Than or Equal to K",
+    "id": "2311",
+    "slug": "longest-binary-subsequence-less-than-or-equal-to-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, greedy, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125476,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Selling Pieces of Wood",
+    "id": "2312",
+    "slug": "selling-pieces-of-wood",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125478,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Flips in Binary Tree to Get Result",
+    "id": "2313",
+    "slug": "minimum-flips-in-binary-tree-to-get-result",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125488,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "memoization",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Distinct Roll Sequences",
+    "id": "2318",
+    "slug": "number-of-distinct-roll-sequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, memoization",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125492,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Number of Ways to Place Houses",
+    "id": "2320",
+    "slug": "count-number-of-ways-to-place-houses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125494,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximum Score Of Spliced Array",
+    "id": "2321",
+    "slug": "maximum-score-of-spliced-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125506,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "queue",
+    "roadmap::13-1-d-dynamic-programming",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Number of People Aware of a Secret",
+    "id": "2327",
+    "slug": "number-of-people-aware-of-a-secret",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125528,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "number-theory",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count the Number of Ideal Arrays",
+    "id": "2338",
+    "slug": "count-the-number-of-ideal-arrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, combinatorics, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125562,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "monotonic-stack",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack"
+   ],
+   "fields": {
+    "title": "Maximum Number of Books You Can Take",
+    "id": "2355",
+    "slug": "maximum-number-of-books-you-can-take",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, stack, monotonic-stack",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125574,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Costs Using the Train Line",
+    "id": "2361",
+    "slug": "minimum-costs-using-the-train-line",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125590,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Check if There is a Valid Partition For The Array",
+    "id": "2369",
+    "slug": "check-if-there-is-a-valid-partition-for-the-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125592,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Ideal Subsequence",
+    "id": "2370",
+    "slug": "longest-ideal-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125604,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Special Integers",
+    "id": "2376",
+    "slug": "count-special-integers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125608,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Choose Edges to Maximize Score in a Tree",
+    "id": "2378",
+    "slug": "choose-edges-to-maximize-score-in-a-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, tree, depth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125612,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "simulation",
+    "string"
+   ],
+   "fields": {
+    "title": "Time Needed to Rearrange a Binary String",
+    "id": "2380",
+    "slug": "time-needed-to-rearrange-a-binary-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125638,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Strictly Increasing Subarrays",
+    "id": "2393",
+    "slug": "count-strictly-increasing-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125652,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Reach a Position After Exactly k Steps",
+    "id": "2400",
+    "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, dynamic-programming, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125658,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Time to Kill All Monsters",
+    "id": "2403",
+    "slug": "minimum-time-to-kill-all-monsters",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125666,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "monotonic-queue",
+    "queue",
+    "roadmap::13-1-d-dynamic-programming",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Longest Increasing Subsequence II",
+    "id": "2407",
+    "slug": "longest-increasing-subsequence-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, divide-and-conquer, dynamic-programming, binary-indexed-tree, segment-tree, queue, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125692,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Find All Good Indices",
+    "id": "2420",
+    "slug": "find-all-good-indices",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125712,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "hash-function",
+    "roadmap::13-1-d-dynamic-programming",
+    "rolling-hash",
+    "string",
+    "string-matching"
+   ],
+   "fields": {
+    "title": "Maximum Deletions on a String",
+    "id": "2430",
+    "slug": "maximum-deletions-on-a-string",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, rolling-hash, string-matching, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125714,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Maximize Total Tastiness of Purchased Fruits",
+    "id": "2431",
+    "slug": "maximize-total-tastiness-of-purchased-fruits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125724,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "math",
+    "number-theory",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Split Into Subarrays With GCD Greater Than One",
+    "id": "2436",
+    "slug": "minimum-split-into-subarrays-with-gcd-greater-than-one",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, greedy, number-theory",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125730,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimize Maximum of Array",
+    "id": "2439",
+    "slug": "minimize-maximum-of-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, dynamic-programming, greedy, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125778,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Total Distance Traveled",
+    "id": "2463",
+    "slug": "minimum-total-distance-traveled",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125780,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "number-theory",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Subarrays in a Valid Split",
+    "id": "2464",
+    "slug": "minimum-subarrays-in-a-valid-split",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, number-theory",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125784,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Ways To Build Good Strings",
+    "id": "2466",
+    "slug": "count-ways-to-build-good-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125796,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+    "id": "2472",
+    "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125808,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Beautiful Partitions",
+    "id": "2478",
+    "slug": "number-of-beautiful-partitions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125820,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Palindromic Subsequences",
+    "id": "2484",
+    "slug": "count-palindromic-subsequences",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125842,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Subarrays Having Even Product",
+    "id": "2495",
+    "slug": "number-of-subarrays-having-even-product",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125854,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Longest Square Streak in an Array",
+    "id": "2501",
+    "slug": "longest-square-streak-in-an-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, dynamic-programming, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125888,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Great Partitions",
+    "id": "2518",
+    "slug": "number-of-great-partitions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125896,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Partition String Into Substrings With Values at Most K",
+    "id": "2522",
+    "slug": "partition-string-into-substrings-with-values-at-most-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125918,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Good Binary Strings",
+    "id": "2533",
+    "slug": "number-of-good-binary-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125928,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Difference Between Maximum and Minimum Price Sum",
+    "id": "2538",
+    "slug": "difference-between-maximum-and-minimum-price-sum",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, tree, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125946,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Split an Array",
+    "id": "2547",
+    "slug": "minimum-cost-to-split-an-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, dynamic-programming, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125956,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "enumeration",
+    "prefix-sum",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count Increasing Quadruplets",
+    "id": "2552",
+    "slug": "count-increasing-quadruplets",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, binary-indexed-tree, enumeration, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125994,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Reduce an Integer to 0",
+    "id": "2571",
+    "slug": "minimum-operations-to-reduce-an-integer-to-0",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "dynamic-programming, greedy, bit-manipulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125996,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Count the Number of Square-Free Subsets",
+    "id": "2572",
+    "slug": "count-the-number-of-square-free-subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, dynamic-programming, bit-manipulation, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126014,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Number of Possible Root Nodes",
+    "id": "2581",
+    "slug": "count-number-of-possible-root-nodes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, dynamic-programming, tree, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126022,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming"
+   ],
+   "fields": {
+    "title": "Number of Ways to Earn Points",
+    "id": "2585",
+    "slug": "number-of-ways-to-earn-points",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126064,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "hash-table",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the Substring With Maximum Cost",
+    "id": "2606",
+    "slug": "find-the-substring-with-maximum-cost",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, dynamic-programming",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126128,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "roadmap::13-1-d-dynamic-programming",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Count the Number of K-Free Subsets",
+    "id": "2638",
+    "slug": "count-the-number-of-k-free-subsets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, sorting",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126142,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Additions to Make Valid String",
+    "id": "2645",
+    "slug": "minimum-additions-to-make-valid-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126198,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "tree"
+   ],
+   "fields": {
+    "title": "Make Costs of Paths Equal in a Binary Tree",
+    "id": "2673",
+    "slug": "make-costs-of-paths-equal-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, greedy, tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126276,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Make All Characters Equal",
+    "id": "2712",
+    "slug": "minimum-cost-to-make-all-characters-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, dynamic-programming, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126290,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "math",
+    "roadmap::13-1-d-dynamic-programming",
+    "string"
+   ],
+   "fields": {
+    "title": "Count of Integers",
+    "id": "2719",
+    "slug": "count-of-integers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, string, dynamic-programming",
+    "paid": "no"
+   }
+  }
+ ]
+}

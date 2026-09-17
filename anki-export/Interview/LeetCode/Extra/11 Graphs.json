@@ -1,0 +1,3174 @@
+{
+ "deck": "Interview::LeetCode::Extra::11 Graphs",
+ "note_count": 158,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121406,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "greedy",
+    "interactive",
+    "roadmap::11-graphs",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Find the Celebrity",
+    "id": "277",
+    "slug": "find-the-celebrity",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, greedy, graph, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121456,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Smallest Rectangle Enclosing Black Pixels",
+    "id": "302",
+    "slug": "smallest-rectangle-enclosing-black-pixels",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, depth-first-search, breadth-first-search, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121462,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Islands II",
+    "id": "305",
+    "slug": "number-of-islands-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, union-find",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121472,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Minimum Height Trees",
+    "id": "310",
+    "slug": "minimum-height-trees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121486,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Distance from All Buildings",
+    "id": "317",
+    "slug": "shortest-distance-from-all-buildings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121666,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Trapping Rain Water II",
+    "id": "407",
+    "slug": "trapping-rain-water-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121690,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Battleships in a Board",
+    "id": "419",
+    "slug": "battleships-in-a-board",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121740,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Sequence Reconstruction",
+    "id": "444",
+    "slug": "sequence-reconstruction",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, graph, topological-sort",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121778,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Island Perimeter",
+    "id": "463",
+    "slug": "island-perimeter",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121832,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "The Maze",
+    "id": "490",
+    "slug": "the-maze",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121910,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minesweeper",
+    "id": "529",
+    "slug": "minesweeper",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121936,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "01 Matrix",
+    "id": "542",
+    "slug": "01-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121946,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Provinces",
+    "id": "547",
+    "slug": "number-of-provinces",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122114,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Design Excel Sum Formula",
+    "id": "631",
+    "slug": "design-excel-sum-formula",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph, design, topological-sort",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122202,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Cut Off Trees for Golf Event",
+    "id": "675",
+    "slug": "cut-off-trees-for-golf-event",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122222,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Redundant Connection II",
+    "id": "685",
+    "slug": "redundant-connection-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122240,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Distinct Islands",
+    "id": "694",
+    "slug": "number-of-distinct-islands",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, depth-first-search, breadth-first-search, union-find, hash-function",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122274,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Distinct Islands II",
+    "id": "711",
+    "slug": "number-of-distinct-islands-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, depth-first-search, breadth-first-search, union-find, hash-function",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122294,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Accounts Merge",
+    "id": "721",
+    "slug": "accounts-merge",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, depth-first-search, breadth-first-search, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122318,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Flood Fill",
+    "id": "733",
+    "slug": "flood-fill",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122326,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Sentence Similarity II",
+    "id": "737",
+    "slug": "sentence-similarity-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, depth-first-search, breadth-first-search, union-find",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122350,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Contain Virus",
+    "id": "749",
+    "slug": "contain-virus",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122382,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "greedy",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Couples Holding Hands",
+    "id": "765",
+    "slug": "couples-holding-hands",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "greedy, depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122398,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Sliding Puzzle",
+    "id": "773",
+    "slug": "sliding-puzzle",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122422,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Is Graph Bipartite?",
+    "id": "785",
+    "slug": "is-graph-bipartite",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122446,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "backtracking",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "All Paths From Source to Target",
+    "id": "797",
+    "slug": "all-paths-from-source-to-target",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "backtracking, depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122456,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Find Eventual Safe States",
+    "id": "802",
+    "slug": "find-eventual-safe-states",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122458,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Bricks Falling When Hit",
+    "id": "803",
+    "slug": "bricks-falling-when-hit",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122506,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Making A Large Island",
+    "id": "827",
+    "slug": "making-a-large-island",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122520,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Sum of Distances in Tree",
+    "id": "834",
+    "slug": "sum-of-distances-in-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122530,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Similar String Groups",
+    "id": "839",
+    "slug": "similar-string-groups",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, depth-first-search, breadth-first-search, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122534,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Keys and Rooms",
+    "id": "841",
+    "slug": "keys-and-rooms",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122546,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "bitmask",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path Visiting All Nodes",
+    "id": "847",
+    "slug": "shortest-path-visiting-all-nodes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, bit-manipulation, breadth-first-search, graph, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122554,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Loud and Rich",
+    "id": "851",
+    "slug": "loud-and-rich",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122580,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path to Get All Keys",
+    "id": "864",
+    "slug": "shortest-path-to-get-all-keys",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122624,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Possible Bipartition",
+    "id": "886",
+    "slug": "possible-bipartition",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122670,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Snakes and Ladders",
+    "id": "909",
+    "slug": "snakes-and-ladders",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122678,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "graph",
+    "math",
+    "memoization",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Cat and Mouse",
+    "id": "913",
+    "slug": "cat-and-mouse",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, graph, topological-sort, memoization, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122700,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Minimize Malware Spread",
+    "id": "924",
+    "slug": "minimize-malware-spread",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122708,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Minimize Malware Spread II",
+    "id": "928",
+    "slug": "minimize-malware-spread-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122720,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Bridge",
+    "id": "934",
+    "slug": "shortest-bridge",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122746,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Most Stones Removed with Same Row or Column",
+    "id": "947",
+    "slug": "most-stones-removed-with-same-row-or-column",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122756,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "math",
+    "number-theory",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Largest Component Size by Common Factor",
+    "id": "952",
+    "slug": "largest-component-size-by-common-factor",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, union-find, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122770,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Regions Cut By Slashes",
+    "id": "959",
+    "slug": "regions-cut-by-slashes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122832,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Satisfiability of Equality Equations",
+    "id": "990",
+    "slug": "satisfiability-of-equality-equations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122846,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "graph",
+    "hash-table",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Find the Town Judge",
+    "id": "997",
+    "slug": "find-the-town-judge",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122892,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Enclaves",
+    "id": "1020",
+    "slug": "number-of-enclaves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122920,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Coloring A Border",
+    "id": "1034",
+    "slug": "coloring-a-border",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122936,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Flower Planting With No Adjacent",
+    "id": "1042",
+    "slug": "flower-planting-with-no-adjacent",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122970,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "All Paths from Source Lead to Destination",
+    "id": "1059",
+    "slug": "all-paths-from-source-lead-to-destination",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122974,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Lexicographically Smallest Equivalent String",
+    "id": "1061",
+    "slug": "lexicographically-smallest-equivalent-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123034,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path in Binary Matrix",
+    "id": "1091",
+    "slug": "shortest-path-in-binary-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123054,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "The Earliest Moment When Everyone Become Friends",
+    "id": "1101",
+    "slug": "the-earliest-moment-when-everyone-become-friends",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, union-find",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123056,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Path With Maximum Minimum Value",
+    "id": "1102",
+    "slug": "path-with-maximum-minimum-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, heap-priority-queue, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123110,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path with Alternating Colors",
+    "id": "1129",
+    "slug": "shortest-path-with-alternating-colors",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123124,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Parallel Courses",
+    "id": "1136",
+    "slug": "parallel-courses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "graph, topological-sort",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123176,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "As Far from Land as Possible",
+    "id": "1162",
+    "slug": "as-far-from-land-as-possible",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123256,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Smallest String With Swaps",
+    "id": "1202",
+    "slug": "smallest-string-with-swaps",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, depth-first-search, breadth-first-search, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123258,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Sort Items by Groups Respecting Dependencies",
+    "id": "1203",
+    "slug": "sort-items-by-groups-respecting-dependencies",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123272,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Moves to Reach Target with Rotations",
+    "id": "1210",
+    "slug": "minimum-moves-to-reach-target-with-rotations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123342,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort",
+    "tree"
+   ],
+   "fields": {
+    "title": "Tree Diameter",
+    "id": "1245",
+    "slug": "tree-diameter",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123360,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Closed Islands",
+    "id": "1254",
+    "slug": "number-of-closed-islands",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123368,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Synonymous Sentences",
+    "id": "1258",
+    "slug": "synonymous-sentences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, backtracking, union-find",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123378,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Moves to Move a Box to Their Target Location",
+    "id": "1263",
+    "slug": "minimum-moves-to-move-a-box-to-their-target-location",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123386,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "counting",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Count Servers that Communicate",
+    "id": "1267",
+    "slug": "count-servers-that-communicate",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123420,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Number of Flips to Convert Binary Matrix to Zero Matrix",
+    "id": "1284",
+    "slug": "minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123438,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path in a Grid with Obstacles Elimination",
+    "id": "1293",
+    "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123448,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Maximum Candies You Can Get from Boxes",
+    "id": "1298",
+    "slug": "maximum-candies-you-can-get-from-boxes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123474,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "hash-table",
+    "roadmap::11-graphs",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Get Watched Videos by Your Friends",
+    "id": "1311",
+    "slug": "get-watched-videos-by-your-friends",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, breadth-first-search, graph, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123490,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Operations to Make Network Connected",
+    "id": "1319",
+    "slug": "number-of-operations-to-make-network-connected",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123574,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "tree",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Validate Binary Tree Nodes",
+    "id": "1361",
+    "slug": "validate-binary-tree-nodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, union-find, graph, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123606,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Frog Position After T Seconds",
+    "id": "1377",
+    "slug": "frog-position-after-t-seconds",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123634,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Check if There is a Valid Path in a Grid",
+    "id": "1391",
+    "slug": "check-if-there-is-a-valid-path-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123776,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Course Schedule IV",
+    "id": "1462",
+    "slug": "course-schedule-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123784,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+    "id": "1466",
+    "slug": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123840,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Parallel Courses II",
+    "id": "1494",
+    "slug": "parallel-courses-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, bit-manipulation, graph, bitmask",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123948,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "The Most Similar Path in a Graph",
+    "id": "1548",
+    "slug": "the-most-similar-path-in-a-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123966,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Number of Vertices to Reach All Nodes",
+    "id": "1557",
+    "slug": "minimum-number-of-vertices-to-reach-all-nodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123970,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Detect Cycles in 2D Grid",
+    "id": "1559",
+    "slug": "detect-cycles-in-2d-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123990,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search-tree",
+    "binary-tree",
+    "combinatorics",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "math",
+    "memoization",
+    "roadmap::11-graphs",
+    "tree",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Ways to Reorder Array to Get Same BST",
+    "id": "1569",
+    "slug": "number-of-ways-to-reorder-array-to-get-same-bst",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, divide-and-conquer, dynamic-programming, tree, union-find, binary-search-tree, memoization, combinatorics, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124010,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+    "id": "1579",
+    "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124034,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "matrix",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Strange Printer II",
+    "id": "1591",
+    "slug": "strange-printer-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, graph, topological-sort, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124082,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Maximal Network Rank",
+    "id": "1615",
+    "slug": "maximal-network-rank",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124106,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Graph Connectivity With Threshold",
+    "id": "1627",
+    "slug": "graph-connectivity-with-threshold",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124114,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Path With Minimum Effort",
+    "id": "1631",
+    "slug": "path-with-minimum-effort",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, depth-first-search, breadth-first-search, union-find, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124116,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "greedy",
+    "matrix",
+    "roadmap::11-graphs",
+    "topological-sort",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Rank Transform of a Matrix",
+    "id": "1632",
+    "slug": "rank-transform-of-a-matrix",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, union-find, graph, topological-sort, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124246,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "sorting",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Checking Existence of Edge Length Limited Paths",
+    "id": "1697",
+    "slug": "checking-existence-of-edge-length-limited-paths",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, union-find, graph, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124264,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::11-graphs",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Where Will the Ball Fall",
+    "id": "1706",
+    "slug": "where-will-the-ball-fall",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, depth-first-search, matrix, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124290,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Number Of Ways To Reconstruct A Tree",
+    "id": "1719",
+    "slug": "number-of-ways-to-reconstruct-a-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "tree, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124296,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Minimize Hamming Distance After Swap Operations",
+    "id": "1722",
+    "slug": "minimize-hamming-distance-after-swap-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124308,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "game-theory",
+    "graph",
+    "math",
+    "matrix",
+    "memoization",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Cat and Mouse II",
+    "id": "1728",
+    "slug": "cat-and-mouse-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, dynamic-programming, graph, topological-sort, memoization, matrix, game-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124312,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path to Get Food",
+    "id": "1730",
+    "slug": "shortest-path-to-get-food",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124374,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Degree of a Connected Trio in a Graph",
+    "id": "1761",
+    "slug": "minimum-degree-of-a-connected-trio-in-a-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124382,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Map of Highest Peak",
+    "id": "1765",
+    "slug": "map-of-highest-peak",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124408,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "interactive",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Path in a Hidden Grid",
+    "id": "1778",
+    "slug": "shortest-path-in-a-hidden-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124416,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Count Pairs Of Nodes",
+    "id": "1782",
+    "slug": "count-pairs-of-nodes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, binary-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124434,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Find Center of Star Graph",
+    "id": "1791",
+    "slug": "find-center-of-star-graph",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124472,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "heap-priority-queue",
+    "interactive",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Path Cost in a Hidden Grid",
+    "id": "1810",
+    "slug": "minimum-path-cost-in-a-hidden-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, heap-priority-queue, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124566,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "hash-table",
+    "memoization",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Largest Color Value in a Directed Graph",
+    "id": "1857",
+    "slug": "largest-color-value-in-a-directed-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, dynamic-programming, graph, topological-sort, memoization, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124662,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Count Sub Islands",
+    "id": "1905",
+    "slug": "count-sub-islands",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124684,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "combinatorics",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "math",
+    "roadmap::11-graphs",
+    "topological-sort",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Ways to Build Rooms in an Ant Colony",
+    "id": "1916",
+    "slug": "count-ways-to-build-rooms-in-an-ant-colony",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, dynamic-programming, tree, graph, topological-sort, combinatorics",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124704,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Nearest Exit from Entrance in Maze",
+    "id": "1926",
+    "slug": "nearest-exit-from-entrance-in-maze",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124708,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Cost to Reach Destination in Time",
+    "id": "1928",
+    "slug": "minimum-cost-to-reach-destination-in-time",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124792,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Last Day Where You Can Still Cross",
+    "id": "1970",
+    "slug": "last-day-where-you-can-still-cross",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124794,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Find if Path Exists in Graph",
+    "id": "1971",
+    "slug": "find-if-path-exists-in-graph",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124836,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Find All Groups of Farmland",
+    "id": "1992",
+    "slug": "find-all-groups-of-farmland",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124848,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "math",
+    "number-theory",
+    "roadmap::11-graphs",
+    "sorting",
+    "union-find"
+   ],
+   "fields": {
+    "title": "GCD Sort of an Array",
+    "id": "1998",
+    "slug": "gcd-sort-of-an-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, union-find, sorting, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124858,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::11-graphs",
+    "tree",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Smallest Missing Genetic Value in Each Subtree",
+    "id": "2003",
+    "slug": "smallest-missing-genetic-value-in-each-subtree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, tree, depth-first-search, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124930,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "The Time When the Network Becomes Idle",
+    "id": "2039",
+    "slug": "the-time-when-the-network-becomes-idle",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124952,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Parallel Courses III",
+    "id": "2050",
+    "slug": "parallel-courses-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124982,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "backtracking",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Maximum Path Quality of a Graph",
+    "id": "2065",
+    "slug": "maximum-path-quality-of-a-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, backtracking, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125004,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Process Restricted Friend Requests",
+    "id": "2076",
+    "slug": "process-restricted-friend-requests",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125006,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Paths in Maze That Lead to Same Room",
+    "id": "2077",
+    "slug": "paths-in-maze-that-lead-to-same-room",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125036,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "sorting",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Find All People With Secret",
+    "id": "2092",
+    "slug": "find-all-people-with-secret",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125054,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "geometry",
+    "graph",
+    "math",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Detonate the Maximum Bombs",
+    "id": "2101",
+    "slug": "detonate-the-maximum-bombs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, math, depth-first-search, breadth-first-search, graph, geometry",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125082,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "hash-table",
+    "roadmap::11-graphs",
+    "string",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Find All Possible Recipes from Given Supplies",
+    "id": "2115",
+    "slug": "find-all-possible-recipes-from-given-supplies",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125098,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Remove Adjacent Ones in Matrix",
+    "id": "2123",
+    "slug": "minimum-operations-to-remove-adjacent-ones-in-matrix",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, graph, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125106,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Maximum Employees to Be Invited to a Meeting",
+    "id": "2127",
+    "slug": "maximum-employees-to-be-invited-to-a-meeting",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125144,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "matrix",
+    "roadmap::11-graphs",
+    "sorting"
+   ],
+   "fields": {
+    "title": "K Highest Ranked Items Within a Price Range",
+    "id": "2146",
+    "slug": "k-highest-ranked-items-within-a-price-range",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search, sorting, heap-priority-queue, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125166,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Groups of Strings",
+    "id": "2157",
+    "slug": "groups-of-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, bit-manipulation, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125200,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Remove All Ones With Row and Column Flips II",
+    "id": "2174",
+    "slug": "remove-all-ones-with-row-and-column-flips-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, breadth-first-search, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125236,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "All Ancestors of a Node in a Directed Acyclic Graph",
+    "id": "2192",
+    "slug": "all-ancestors-of-a-node-in-a-directed-acyclic-graph",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125260,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Distance to a Cycle in Undirected Graph",
+    "id": "2204",
+    "slug": "distance-to-a-cycle-in-undirected-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125336,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "enumeration",
+    "graph",
+    "roadmap::11-graphs",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Score of a Node Sequence",
+    "id": "2242",
+    "slug": "maximum-score-of-a-node-sequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, graph, sorting, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125344,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "string",
+    "topological-sort",
+    "tree"
+   ],
+   "fields": {
+    "title": "Longest Path With Different Adjacent Characters",
+    "id": "2246",
+    "slug": "longest-path-with-different-adjacent-characters",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, tree, depth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125346,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "bitmask",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Maximum Cost of Trip With K Highways",
+    "id": "2247",
+    "slug": "maximum-cost-of-trip-with-k-highways",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "dynamic-programming, bit-manipulation, graph, bitmask",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125368,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Escape the Spreading Fire",
+    "id": "2258",
+    "slug": "escape-the-spreading-fire",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125422,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::11-graphs",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Total Importance of Roads",
+    "id": "2285",
+    "slug": "maximum-total-importance-of-roads",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "greedy, graph, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125466,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Check for Contradictions in Equations",
+    "id": "2307",
+    "slug": "check-for-contradictions-in-equations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, depth-first-search, union-find, graph",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125484,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+    "id": "2316",
+    "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125508,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "matrix",
+    "memoization",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Number of Increasing Paths in a Grid",
+    "id": "2328",
+    "slug": "number-of-increasing-paths-in-a-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, depth-first-search, breadth-first-search, graph, topological-sort, memoization, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125520,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "monotonic-stack",
+    "roadmap::11-graphs",
+    "stack",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Subarray With Elements Greater Than Varying Threshold",
+    "id": "2334",
+    "slug": "subarray-with-elements-greater-than-varying-threshold",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, stack, union-find, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125570,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Find Closest Node to Given Two Nodes",
+    "id": "2359",
+    "slug": "find-closest-node-to-given-two-nodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125572,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Longest Cycle in a Graph",
+    "id": "2360",
+    "slug": "longest-cycle-in-a-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "depth-first-search, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125588,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "hash-table",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Reachable Nodes With Restrictions",
+    "id": "2368",
+    "slug": "reachable-nodes-with-restrictions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, tree, depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125594,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "greedy",
+    "matrix",
+    "roadmap::11-graphs",
+    "sorting",
+    "topological-sort",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Minimize Maximum Value in a Grid",
+    "id": "2371",
+    "slug": "minimize-maximum-value-in-a-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, union-find, graph, topological-sort, sorting, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125600,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "graph",
+    "hash-table",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Node With Highest Edge Score",
+    "id": "2374",
+    "slug": "node-with-highest-edge-score",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125616,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "prefix-sum",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Maximum Segment Sum After Removals",
+    "id": "2382",
+    "slug": "maximum-segment-sum-after-removals",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, union-find, prefix-sum, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125636,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "matrix",
+    "roadmap::11-graphs",
+    "topological-sort"
+   ],
+   "fields": {
+    "title": "Build a Matrix With Conditions",
+    "id": "2392",
+    "slug": "build-a-matrix-with-conditions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, graph, topological-sort, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125694,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "tree",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Number of Good Paths",
+    "id": "2421",
+    "slug": "number-of-good-paths",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, tree, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125700,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-indexed-tree",
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "heap-priority-queue",
+    "ordered-set",
+    "roadmap::11-graphs",
+    "segment-tree",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Longest Uploaded Prefix",
+    "id": "2424",
+    "slug": "longest-uploaded-prefix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "binary-search, union-find, design, binary-indexed-tree, segment-tree, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125786,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Most Profitable Path in a Tree",
+    "id": "2467",
+    "slug": "most-profitable-path-in-a-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, tree, depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125806,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Fuel Cost to Report to the Capital",
+    "id": "2477",
+    "slug": "minimum-fuel-cost-to-report-to-the-capital",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125836,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Minimum Score of a Path Between Two Cities",
+    "id": "2492",
+    "slug": "minimum-score-of-a-path-between-two-cities",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125838,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Divide Nodes Into the Maximum Number of Groups",
+    "id": "2493",
+    "slug": "divide-nodes-into-the-maximum-number-of-groups",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "breadth-first-search, union-find, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125846,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "graph",
+    "greedy",
+    "heap-priority-queue",
+    "roadmap::11-graphs",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Star Sum of a Graph",
+    "id": "2497",
+    "slug": "maximum-star-sum-of-a-graph",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, graph, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125858,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::11-graphs",
+    "sorting",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Maximum Number of Points From Grid Queries",
+    "id": "2503",
+    "slug": "maximum-number-of-points-from-grid-queries",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, union-find, sorting, heap-priority-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125868,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "graph",
+    "hash-table",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Add Edges to Make Degrees of All Nodes Even",
+    "id": "2508",
+    "slug": "add-edges-to-make-degrees-of-all-nodes-even",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125964,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "dynamic-programming",
+    "matrix",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Disconnect Path in a Binary Matrix by at Most One Flip",
+    "id": "2556",
+    "slug": "disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, dynamic-programming, depth-first-search, breadth-first-search, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125998,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "greedy",
+    "roadmap::11-graphs",
+    "string",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Find the String with LCP",
+    "id": "2573",
+    "slug": "find-the-string-with-lcp",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, dynamic-programming, greedy, union-find",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126044,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Check Knight Tour Configuration",
+    "id": "2596",
+    "slug": "check-knight-tour-configuration",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, matrix, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126058,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs",
+    "topological-sort",
+    "tree"
+   ],
+   "fields": {
+    "title": "Collect Coins in a Tree",
+    "id": "2603",
+    "slug": "collect-coins-in-a-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, tree, graph, topological-sort",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126068,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Shortest Cycle in a Graph",
+    "id": "2608",
+    "slug": "shortest-cycle-in-a-graph",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126086,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "roadmap::11-graphs",
+    "segment-tree",
+    "stack",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Minimum Number of Visited Cells in a Grid",
+    "id": "2617",
+    "slug": "minimum-number-of-visited-cells-in-a-grid",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, dynamic-programming, stack, union-find, binary-indexed-tree, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126144,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "dynamic-programming",
+    "graph",
+    "roadmap::11-graphs",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimize the Total Price of the Trips",
+    "id": "2646",
+    "slug": "minimize-the-total-price-of-the-trips",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, dynamic-programming, tree, depth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126168,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "matrix",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Maximum Number of Fish in a Grid",
+    "id": "2658",
+    "slug": "maximum-number-of-fish-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search, union-find, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126222,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "graph",
+    "roadmap::11-graphs"
+   ],
+   "fields": {
+    "title": "Count the Number of Complete Components",
+    "id": "2685",
+    "slug": "count-the-number-of-complete-components",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, graph",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126270,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "math",
+    "number-theory",
+    "roadmap::11-graphs",
+    "union-find"
+   ],
+   "fields": {
+    "title": "Greatest Common Divisor Traversal",
+    "id": "2709",
+    "slug": "greatest-common-divisor-traversal",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, union-find, number-theory",
+    "paid": "no"
+   }
+  }
+ ]
+}

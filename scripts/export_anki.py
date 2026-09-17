@@ -10,6 +10,9 @@ Re-run any time to refresh the snapshot, then commit the diff.
 """
 import json, sys, os, re, time, datetime, urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from export_prune import prune
+
 URL = "http://127.0.0.1:3141/"
 OUT = "anki-export"
 if "--out" in sys.argv:
@@ -61,7 +64,7 @@ def main():
 
     decks = [d for d in call("list_decks", {})["decks"] if not d.get("is_filtered")]
     os.makedirs(OUT, exist_ok=True)
-    index, grand_total = [], 0
+    index, grand_total, written = [], 0, []
     t0 = time.time()
 
     for d in decks:
@@ -88,9 +91,13 @@ def main():
             json.dump({"deck": name, "note_count": len(notes),
                        "exported": datetime.date.today().isoformat(),
                        "notes": notes}, f, ensure_ascii=False, indent=1)
+        written.append(path)
         index.append((name, len(notes)))
         grand_total += len(notes)
         print(f"  {name}  ->  {len(notes)} notes")
+
+    # drop snapshot files for decks that no longer exist
+    prune(OUT, written)
 
     # index
     lines = ["# Anki collection export", "",

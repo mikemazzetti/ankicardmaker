@@ -1,0 +1,4351 @@
+{
+ "deck": "Interview::LeetCode::Extra::07 Trees",
+ "note_count": 217,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121040,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Inorder Traversal",
+    "id": "94",
+    "slug": "binary-tree-inorder-traversal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121050,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Recover Binary Search Tree",
+    "id": "99",
+    "slug": "recover-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121054,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Symmetric Tree",
+    "id": "101",
+    "slug": "symmetric-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121058,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "id": "103",
+    "slug": "binary-tree-zigzag-level-order-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121064,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "id": "106",
+    "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, divide-and-conquer, tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121066,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Level Order Traversal II",
+    "id": "107",
+    "slug": "binary-tree-level-order-traversal-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121068,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-easy-tag",
+    "divide-and-conquer",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Convert Sorted Array to Binary Search Tree",
+    "id": "108",
+    "slug": "convert-sorted-array-to-binary-search-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, divide-and-conquer, tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121070,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "linked-list",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Convert Sorted List to Binary Search Tree",
+    "id": "109",
+    "slug": "convert-sorted-list-to-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, divide-and-conquer, tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121074,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Depth of Binary Tree",
+    "id": "111",
+    "slug": "minimum-depth-of-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121076,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Path Sum",
+    "id": "112",
+    "slug": "path-sum",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121080,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Flatten Binary Tree to Linked List",
+    "id": "114",
+    "slug": "flatten-binary-tree-to-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, stack, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121084,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Populating Next Right Pointers in Each Node",
+    "id": "116",
+    "slug": "populating-next-right-pointers-in-each-node",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121086,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Populating Next Right Pointers in Each Node II",
+    "id": "117",
+    "slug": "populating-next-right-pointers-in-each-node-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121110,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Sum Root to Leaf Numbers",
+    "id": "129",
+    "slug": "sum-root-to-leaf-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121140,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Preorder Traversal",
+    "id": "144",
+    "slug": "binary-tree-preorder-traversal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121142,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Postorder Traversal",
+    "id": "145",
+    "slug": "binary-tree-postorder-traversal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121164,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Upside Down",
+    "id": "156",
+    "slug": "binary-tree-upside-down",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121198,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Search Tree Iterator",
+    "id": "173",
+    "slug": "binary-search-tree-iterator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, tree, design, binary-search-tree, binary-tree, iterator",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121288,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "line-sweep",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "The Skyline Problem",
+    "id": "218",
+    "slug": "the-skyline-problem",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, divide-and-conquer, binary-indexed-tree, segment-tree, line-sweep, heap-priority-queue, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121296,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Complete Tree Nodes",
+    "id": "222",
+    "slug": "count-complete-tree-nodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "binary-search, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121324,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "id": "236",
+    "slug": "lowest-common-ancestor-of-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121352,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Univalue Subtrees",
+    "id": "250",
+    "slug": "count-univalue-subtrees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121362,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "recursion",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Verify Preorder Sequence in Binary Search Tree",
+    "id": "255",
+    "slug": "verify-preorder-sequence-in-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, tree, binary-search-tree, recursion, monotonic-stack, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121392,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Closest Binary Search Tree Value",
+    "id": "270",
+    "slug": "closest-binary-search-tree-value",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "binary-search, tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121396,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "heap-priority-queue",
+    "roadmap::07-trees",
+    "stack",
+    "tree",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Closest Binary Search Tree Value II",
+    "id": "272",
+    "slug": "closest-binary-search-tree-value-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, stack, tree, depth-first-search, binary-search-tree, heap-priority-queue, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121422,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Inorder Successor in BST",
+    "id": "285",
+    "slug": "inorder-successor-in-bst",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121448,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Longest Consecutive Sequence",
+    "id": "298",
+    "slug": "binary-tree-longest-consecutive-sequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121466,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "design",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Range Sum Query - Mutable",
+    "id": "307",
+    "slug": "range-sum-query-mutable",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, design, binary-indexed-tree, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121468,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "design",
+    "difficulty-hard-tag",
+    "matrix",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Range Sum Query 2D - Mutable",
+    "id": "308",
+    "slug": "range-sum-query-2d-mutable",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, design, binary-indexed-tree, segment-tree, matrix",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121480,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Vertical Order Traversal",
+    "id": "314",
+    "slug": "binary-tree-vertical-order-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121482,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Count of Smaller Numbers After Self",
+    "id": "315",
+    "slug": "count-of-smaller-numbers-after-self",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121506,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Count of Range Sum",
+    "id": "327",
+    "slug": "count-of-range-sum",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121514,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "stack",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Verify Preorder Serialization of a Binary Tree",
+    "id": "331",
+    "slug": "verify-preorder-serialization-of-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121530,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Nested List Weight Sum",
+    "id": "339",
+    "slug": "nested-list-weight-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121534,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "queue",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Flatten Nested List Iterator",
+    "id": "341",
+    "slug": "flatten-nested-list-iterator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, tree, depth-first-search, design, queue, iterator",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121580,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "stack"
+   ],
+   "fields": {
+    "title": "Nested List Weight Sum II",
+    "id": "364",
+    "slug": "nested-list-weight-sum-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121582,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Water and Jug Problem",
+    "id": "365",
+    "slug": "water-and-jug-problem",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121584,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Leaves of Binary Tree",
+    "id": "366",
+    "slug": "find-leaves-of-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121622,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Mini Parser",
+    "id": "385",
+    "slug": "mini-parser",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121628,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Absolute File Path",
+    "id": "388",
+    "slug": "longest-absolute-file-path",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121660,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Sum of Left Leaves",
+    "id": "404",
+    "slug": "sum-of-left-leaves",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121664,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::07-trees",
+    "segment-tree",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Queue Reconstruction by Height",
+    "id": "406",
+    "slug": "queue-reconstruction-by-height",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, greedy, binary-indexed-tree, segment-tree, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121704,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "doubly-linked-list",
+    "linked-list",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Convert Binary Search Tree to Sorted Doubly Linked List",
+    "id": "426",
+    "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, stack, tree, depth-first-search, binary-search-tree, binary-tree, doubly-linked-list",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121706,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "matrix",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Construct Quad Tree",
+    "id": "427",
+    "slug": "construct-quad-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, tree, matrix",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121708,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Serialize and Deserialize N-ary Tree",
+    "id": "428",
+    "slug": "serialize-and-deserialize-n-ary-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, tree, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121710,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "N-ary Tree Level Order Traversal",
+    "id": "429",
+    "slug": "n-ary-tree-level-order-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121712,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "doubly-linked-list",
+    "linked-list",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Flatten a Multilevel Doubly Linked List",
+    "id": "430",
+    "slug": "flatten-a-multilevel-doubly-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, depth-first-search, doubly-linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121714,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "design",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Encode N-ary Tree to Binary Tree",
+    "id": "431",
+    "slug": "encode-n-ary-tree-to-binary-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, design, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121718,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Genetic Mutation",
+    "id": "433",
+    "slug": "minimum-genetic-mutation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121726,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Path Sum III",
+    "id": "437",
+    "slug": "path-sum-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121750,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Serialize and Deserialize BST",
+    "id": "449",
+    "slug": "serialize-and-deserialize-bst",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, tree, depth-first-search, breadth-first-search, design, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121752,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Delete Node in a BST",
+    "id": "450",
+    "slug": "delete-node-in-a-bst",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121838,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Reverse Pairs",
+    "id": "493",
+    "slug": "reverse-pairs",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121854,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Mode in Binary Search Tree",
+    "id": "501",
+    "slug": "find-mode-in-binary-search-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121868,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Most Frequent Subtree Sum",
+    "id": "508",
+    "slug": "most-frequent-subtree-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121872,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Inorder Successor in BST II",
+    "id": "510",
+    "slug": "inorder-successor-in-bst-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, binary-search-tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121878,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Bottom Left Tree Value",
+    "id": "513",
+    "slug": "find-bottom-left-tree-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121882,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Largest Value in Each Tree Row",
+    "id": "515",
+    "slug": "find-largest-value-in-each-tree-row",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121912,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Absolute Difference in BST",
+    "id": "530",
+    "slug": "minimum-absolute-difference-in-bst",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121924,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Construct Binary Tree from String",
+    "id": "536",
+    "slug": "construct-binary-tree-from-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121928,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Convert BST to Greater Tree",
+    "id": "538",
+    "slug": "convert-bst-to-greater-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121942,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Boundary of Binary Tree",
+    "id": "545",
+    "slug": "boundary-of-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121950,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Longest Consecutive Sequence II",
+    "id": "549",
+    "slug": "binary-tree-longest-consecutive-sequence-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121968,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Logical OR of Two Binary Grids Represented as Quad-Trees",
+    "id": "558",
+    "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "divide-and-conquer, tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121970,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Depth of N-ary Tree",
+    "id": "559",
+    "slug": "maximum-depth-of-n-ary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121978,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Tilt",
+    "id": "563",
+    "slug": "binary-tree-tilt",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121982,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Array Nesting",
+    "id": "565",
+    "slug": "array-nesting",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122016,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Kill Process",
+    "id": "582",
+    "slug": "kill-process",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, tree, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122030,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "N-ary Tree Preorder Traversal",
+    "id": "589",
+    "slug": "n-ary-tree-preorder-traversal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, tree, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122032,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "N-ary Tree Postorder Traversal",
+    "id": "590",
+    "slug": "n-ary-tree-postorder-traversal",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, tree, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122064,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Construct String from Binary Tree",
+    "id": "606",
+    "slug": "construct-string-from-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122086,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Merge Two Binary Trees",
+    "id": "617",
+    "slug": "merge-two-binary-trees",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122098,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Add One Row to Tree",
+    "id": "623",
+    "slug": "add-one-row-to-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122126,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Average of Levels in Binary Tree",
+    "id": "637",
+    "slug": "average-of-levels-in-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122156,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Duplicate Subtrees",
+    "id": "652",
+    "slug": "find-duplicate-subtrees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122158,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Two Sum IV - Input is a BST",
+    "id": "653",
+    "slug": "two-sum-iv-input-is-a-bst",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, two-pointers, tree, depth-first-search, breadth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122160,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "monotonic-stack",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Binary Tree",
+    "id": "654",
+    "slug": "maximum-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, divide-and-conquer, stack, tree, monotonic-stack, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122162,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Print Binary Tree",
+    "id": "655",
+    "slug": "print-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122176,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Width of Binary Tree",
+    "id": "662",
+    "slug": "maximum-width-of-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122178,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Equal Tree Partition",
+    "id": "663",
+    "slug": "equal-tree-partition",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122184,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Path Sum IV",
+    "id": "666",
+    "slug": "path-sum-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122190,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Trim a Binary Search Tree",
+    "id": "669",
+    "slug": "trim-a-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122194,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Second Minimum Node In a Binary Tree",
+    "id": "671",
+    "slug": "second-minimum-node-in-a-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122196,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Bulb Switcher II",
+    "id": "672",
+    "slug": "bulb-switcher-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, bit-manipulation, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122218,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::07-trees",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "K Empty Slots",
+    "id": "683",
+    "slug": "k-empty-slots",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-indexed-tree, sliding-window, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122226,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Longest Univalue Path",
+    "id": "687",
+    "slug": "longest-univalue-path",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122232,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Employee Importance",
+    "id": "690",
+    "slug": "employee-importance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122250,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Falling Squares",
+    "id": "699",
+    "slug": "falling-squares",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122252,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Search in a Binary Search Tree",
+    "id": "700",
+    "slug": "search-in-a-binary-search-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122254,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Insert into a Binary Search Tree",
+    "id": "701",
+    "slug": "insert-into-a-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122282,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Range Module",
+    "id": "715",
+    "slug": "range-module",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "design, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122336,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Closest Leaf in a Binary Tree",
+    "id": "742",
+    "slug": "closest-leaf-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122356,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "string"
+   ],
+   "fields": {
+    "title": "Open the Lock",
+    "id": "752",
+    "slug": "open-the-lock",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122364,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Pyramid Transition Matrix",
+    "id": "756",
+    "slug": "pyramid-transition-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "bit-manipulation, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122404,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "recursion",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Split BST",
+    "id": "776",
+    "slug": "split-bst",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, binary-search-tree, recursion, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122418,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Distance Between BST Nodes",
+    "id": "783",
+    "slug": "minimum-distance-between-bst-nodes",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122480,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Pruning",
+    "id": "814",
+    "slug": "binary-tree-pruning",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122482,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Bus Routes",
+    "id": "815",
+    "slug": "bus-routes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122552,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "line-sweep",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Rectangle Area II",
+    "id": "850",
+    "slug": "rectangle-area-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, segment-tree, line-sweep, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122560,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "string"
+   ],
+   "fields": {
+    "title": "K-Similar Strings",
+    "id": "854",
+    "slug": "k-similar-strings",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122578,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "All Nodes Distance K in Binary Tree",
+    "id": "863",
+    "slug": "all-nodes-distance-k-in-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122582,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Smallest Subtree with all the Deepest Nodes",
+    "id": "865",
+    "slug": "smallest-subtree-with-all-the-deepest-nodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122596,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Leaf-Similar Trees",
+    "id": "872",
+    "slug": "leaf-similar-trees",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122630,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Construct Binary Tree from Preorder and Postorder Traversal",
+    "id": "889",
+    "slug": "construct-binary-tree-from-preorder-and-postorder-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, divide-and-conquer, tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122646,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Increasing Order Search Tree",
+    "id": "897",
+    "slug": "increasing-order-search-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122690,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Complete Binary Tree Inserter",
+    "id": "919",
+    "slug": "complete-binary-tree-inserter",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, design, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122728,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Range Sum of BST",
+    "id": "938",
+    "slug": "range-sum-of-bst",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122754,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Flip Equivalent Binary Trees",
+    "id": "951",
+    "slug": "flip-equivalent-binary-trees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122768,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Check Completeness of a Binary Tree",
+    "id": "958",
+    "slug": "check-completeness-of-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122782,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Univalued Binary Tree",
+    "id": "965",
+    "slug": "univalued-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122794,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Flip Binary Tree To Match Preorder Traversal",
+    "id": "971",
+    "slug": "flip-binary-tree-to-match-preorder-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122810,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Distribute Coins in Binary Tree",
+    "id": "979",
+    "slug": "distribute-coins-in-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122826,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Vertical Order Traversal of a Binary Tree",
+    "id": "987",
+    "slug": "vertical-order-traversal-of-a-binary-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122828,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Smallest String Starting From Leaf",
+    "id": "988",
+    "slug": "smallest-string-starting-from-leaf",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122838,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Cousins in Binary Tree",
+    "id": "993",
+    "slug": "cousins-in-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122848,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Binary Tree II",
+    "id": "998",
+    "slug": "maximum-binary-tree-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122868,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Construct Binary Search Tree from Preorder Traversal",
+    "id": "1008",
+    "slug": "construct-binary-search-tree-from-preorder-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, tree, binary-search-tree, monotonic-stack, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122896,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Sum of Root To Leaf Binary Numbers",
+    "id": "1022",
+    "slug": "sum-of-root-to-leaf-binary-numbers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122904,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Difference Between Node and Ancestor",
+    "id": "1026",
+    "slug": "maximum-difference-between-node-and-ancestor",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122908,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Recover a Tree From Preorder Traversal",
+    "id": "1028",
+    "slug": "recover-a-tree-from-preorder-traversal",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122924,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Escape a Large Maze",
+    "id": "1036",
+    "slug": "escape-a-large-maze",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122928,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Search Tree to Greater Sum Tree",
+    "id": "1038",
+    "slug": "binary-search-tree-to-greater-sum-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123012,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Insufficient Nodes in Root to Leaf Paths",
+    "id": "1080",
+    "slug": "insufficient-nodes-in-root-to-leaf-paths",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123060,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Path In Zigzag Labelled Binary Tree",
+    "id": "1104",
+    "slug": "path-in-zigzag-labelled-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123072,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Delete Nodes And Return Forest",
+    "id": "1110",
+    "slug": "delete-nodes-and-return-forest",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123092,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Average Subtree",
+    "id": "1120",
+    "slug": "maximum-average-subtree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123098,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Lowest Common Ancestor of Deepest Leaves",
+    "id": "1123",
+    "slug": "lowest-common-ancestor-of-deepest-leaves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123142,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Tree Coloring Game",
+    "id": "1145",
+    "slug": "binary-tree-coloring-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123166,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "design",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Online Majority Element In Subarray",
+    "id": "1157",
+    "slug": "online-majority-element-in-subarray",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, design, binary-indexed-tree, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123174,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Level Sum of a Binary Tree",
+    "id": "1161",
+    "slug": "maximum-level-sum-of-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123246,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Minimum Knight Moves",
+    "id": "1197",
+    "slug": "minimum-knight-moves",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123280,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "stack",
+    "tree",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Two Sum BSTs",
+    "id": "1214",
+    "slug": "two-sum-bsts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, binary-search, stack, tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123324,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "interactive",
+    "roadmap::07-trees",
+    "string"
+   ],
+   "fields": {
+    "title": "Web Crawler",
+    "id": "1236",
+    "slug": "web-crawler",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, depth-first-search, breadth-first-search, interactive",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123366,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Smallest Common Region",
+    "id": "1257",
+    "slug": "smallest-common-region",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, string, tree, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123374,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Elements in a Contaminated Binary Tree",
+    "id": "1261",
+    "slug": "find-elements-in-a-contaminated-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, design, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123398,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Delete Tree Nodes",
+    "id": "1273",
+    "slug": "delete-tree-nodes",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123456,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Deepest Leaves Sum",
+    "id": "1302",
+    "slug": "deepest-leaves-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123462,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "sorting",
+    "tree"
+   ],
+   "fields": {
+    "title": "All Elements in Two Binary Search Trees",
+    "id": "1305",
+    "slug": "all-elements-in-two-binary-search-trees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, sorting, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123464,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Jump Game III",
+    "id": "1306",
+    "slug": "jump-game-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123482,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Sum of Nodes with Even-Valued Grandparent",
+    "id": "1315",
+    "slug": "sum-of-nodes-with-even-valued-grandparent",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123502,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Delete Leaves With a Given Value",
+    "id": "1325",
+    "slug": "delete-leaves-with-a-given-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123530,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Maximum Product of Splitted Binary Tree",
+    "id": "1339",
+    "slug": "maximum-product-of-splitted-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123542,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Jump Game IV",
+    "id": "1345",
+    "slug": "jump-game-iv",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123586,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Linked List in Binary Tree",
+    "id": "1367",
+    "slug": "linked-list-in-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123604,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Time Needed to Inform All Employees",
+    "id": "1376",
+    "slug": "time-needed-to-inform-all-employees",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123610,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+    "id": "1379",
+    "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123616,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "greedy",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Balance a Binary Search Tree",
+    "id": "1382",
+    "slug": "balance-a-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "divide-and-conquer, greedy, tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123670,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "simulation"
+   ],
+   "fields": {
+    "title": "Queries on a Permutation With Key",
+    "id": "1409",
+    "slug": "queries-on-a-permutation-with-key",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-indexed-tree, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123712,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree",
+    "id": "1430",
+    "slug": "check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123738,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Time to Collect All Apples in a Tree",
+    "id": "1443",
+    "slug": "minimum-time-to-collect-all-apples-in-a-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123766,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "bit-manipulation",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Pseudo-Palindromic Paths in a Binary Tree",
+    "id": "1457",
+    "slug": "pseudo-palindromic-paths-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "bit-manipulation, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123790,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find All The Lonely Nodes",
+    "id": "1469",
+    "slug": "find-all-the-lonely-nodes",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123822,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Clone Binary Tree With Random Pointer",
+    "id": "1485",
+    "slug": "clone-binary-tree-with-random-pointer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123832,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Clone N-ary Tree",
+    "id": "1490",
+    "slug": "clone-n-ary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123862,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-indexed-tree",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::07-trees",
+    "segment-tree",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+    "id": "1505",
+    "slug": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, greedy, binary-indexed-tree, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123864,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Root of N-Ary Tree",
+    "id": "1506",
+    "slug": "find-root-of-n-ary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, bit-manipulation, tree, depth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123884,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Move Sub-Tree of N-Ary Tree",
+    "id": "1516",
+    "slug": "move-sub-tree-of-n-ary-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "tree, depth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123890,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "counting",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Number of Nodes in the Sub-Tree With the Same Label",
+    "id": "1519",
+    "slug": "number-of-nodes-in-the-sub-tree-with-the-same-label",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123894,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Find a Value of a Mysterious Function Closest to Target",
+    "id": "1521",
+    "slug": "find-a-value-of-a-mysterious-function-closest-to-target",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, bit-manipulation, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123896,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Diameter of N-Ary Tree",
+    "id": "1522",
+    "slug": "diameter-of-n-ary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123912,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Number of Good Leaf Nodes Pairs",
+    "id": "1530",
+    "slug": "number-of-good-leaf-nodes-pairs",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124024,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "design",
+    "difficulty-medium-tag",
+    "iterator",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Binary Search Tree Iterator II",
+    "id": "1586",
+    "slug": "binary-search-tree-iterator-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, tree, design, binary-search-tree, binary-tree, iterator",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124046,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "stack",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Build Binary Expression Tree From Infix Expression",
+    "id": "1597",
+    "slug": "build-binary-expression-tree-from-infix-expression",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, stack, tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124052,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Throne Inheritance",
+    "id": "1600",
+    "slug": "throne-inheritance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124056,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Nearest Right Node in Binary Tree",
+    "id": "1602",
+    "slug": "find-nearest-right-node-in-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124070,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Even Odd Tree",
+    "id": "1609",
+    "slug": "even-odd-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124076,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Check If Two Expression Trees are Equivalent",
+    "id": "1612",
+    "slug": "check-if-two-expression-trees-are-equivalent",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124096,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Fancy Sequence",
+    "id": "1622",
+    "slug": "fancy-sequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, design, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124102,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "string"
+   ],
+   "fields": {
+    "title": "Lexicographically Smallest String After Applying Operations",
+    "id": "1625",
+    "slug": "lexicographically-smallest-string-after-applying-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124108,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "design",
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::07-trees",
+    "stack",
+    "tree"
+   ],
+   "fields": {
+    "title": "Design an Expression Tree With Evaluate Function",
+    "id": "1628",
+    "slug": "design-an-expression-tree-with-evaluate-function",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, stack, tree, design, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124140,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Lowest Common Ancestor of a Binary Tree II",
+    "id": "1644",
+    "slug": "lowest-common-ancestor-of-a-binary-tree-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124150,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Create Sorted Array through Instructions",
+    "id": "1649",
+    "slug": "create-sorted-array-through-instructions",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124152,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Lowest Common Ancestor of a Binary Tree III",
+    "id": "1650",
+    "slug": "lowest-common-ancestor-of-a-binary-tree-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124172,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Correct a Binary Tree",
+    "id": "1660",
+    "slug": "correct-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124184,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Change the Root of a Binary Tree",
+    "id": "1666",
+    "slug": "change-the-root-of-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124204,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Lowest Common Ancestor of a Binary Tree IV",
+    "id": "1676",
+    "slug": "lowest-common-ancestor-of-a-binary-tree-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124332,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Find Distance in a Binary Tree",
+    "id": "1740",
+    "slug": "find-distance-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124364,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::07-trees",
+    "stack"
+   ],
+   "fields": {
+    "title": "Design Most Recently Used Queue",
+    "id": "1756",
+    "slug": "design-most-recently-used-queue",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, stack, design, binary-indexed-tree, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124384,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "math",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Tree of Coprimes",
+    "id": "1766",
+    "slug": "tree-of-coprimes",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, tree, depth-first-search, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124656,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "difficulty-medium-tag",
+    "ordered-set",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Depth of BST Given Insertion Order",
+    "id": "1902",
+    "slug": "depth-of-bst-given-insertion-order",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, binary-search-tree, binary-tree, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124716,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Merge BSTs to Create Single BST",
+    "id": "1932",
+    "slug": "merge-bsts-to-create-single-bst",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, binary-search, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124780,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Find the Longest Valid Obstacle Course at Each Position",
+    "id": "1964",
+    "slug": "find-the-longest-valid-obstacle-course-at-each-position",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, binary-indexed-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124798,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search-tree",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Nodes Equal to Sum of Descendants",
+    "id": "1973",
+    "slug": "count-nodes-equal-to-sum-of-descendants",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-search-tree, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124838,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "depth-first-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Operations on Tree",
+    "id": "1993",
+    "slug": "operations-on-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124914,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Count Subarrays With More Ones Than Zeros",
+    "id": "2031",
+    "slug": "count-subarrays-with-more-ones-than-zeros",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124950,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Nodes With the Highest Score",
+    "id": "2049",
+    "slug": "count-nodes-with-the-highest-score",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124970,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Convert Number",
+    "id": "2059",
+    "slug": "minimum-operations-to-convert-number",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125012,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "design",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Range Frequency Queries",
+    "id": "2080",
+    "slug": "range-frequency-queries",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, design, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125044,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "string",
+    "tree"
+   ],
+   "fields": {
+    "title": "Step-By-Step Directions From a Binary Tree Node to Another",
+    "id": "2096",
+    "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125168,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Amount of New Area Painted Each Day",
+    "id": "2158",
+    "slug": "amount-of-new-area-painted-each-day",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, segment-tree, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125210,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Count Good Triplets in an Array",
+    "id": "2179",
+    "slug": "count-good-triplets-in-an-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125238,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-indexed-tree",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::07-trees",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Minimum Number of Moves to Make Palindrome",
+    "id": "2193",
+    "slug": "minimum-number-of-moves-to-make-palindrome",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "two-pointers, string, greedy, binary-indexed-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125244,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Create Binary Tree From Descriptions",
+    "id": "2196",
+    "slug": "create-binary-tree-from-descriptions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125278,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Substring of One Repeating Character",
+    "id": "2213",
+    "slug": "longest-substring-of-one-repeating-character",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, string, segment-tree, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125324,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Root Equals Sum of Children",
+    "id": "2236",
+    "slug": "root-equals-sum-of-children",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125352,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Count Number of Rectangles Containing Each Point",
+    "id": "2250",
+    "slug": "count-number-of-rectangles-containing-each-point",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, binary-indexed-tree, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125382,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Count Nodes Equal to Average of Subtree",
+    "id": "2265",
+    "slug": "count-nodes-equal-to-average-of-subtree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125406,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Closest Node to Path in Tree",
+    "id": "2277",
+    "slug": "closest-node-to-path-in-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, tree, depth-first-search, breadth-first-search",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125424,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-indexed-tree",
+    "binary-search",
+    "design",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Booking Concert Tickets in Groups",
+    "id": "2286",
+    "slug": "booking-concert-tickets-in-groups",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "binary-search, design, binary-indexed-tree, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125496,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Score After Removals on a Tree",
+    "id": "2322",
+    "slug": "minimum-score-after-removals-on-a-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, tree, depth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125514,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Evaluate Boolean Binary Tree",
+    "id": "2331",
+    "slug": "evaluate-boolean-binary-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125622,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Amount of Time for Binary Tree to Be Infected",
+    "id": "2385",
+    "slug": "amount-of-time-for-binary-tree-to-be-infected",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125682,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Reverse Odd Levels of Binary Tree",
+    "id": "2415",
+    "slug": "reverse-odd-levels-of-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125704,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Number of Pairs Satisfying Inequality",
+    "id": "2426",
+    "slug": "number-of-pairs-satisfying-inequality",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125732,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "enumeration",
+    "math",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Create Components With Same Value",
+    "id": "2440",
+    "slug": "create-components-with-same-value",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, tree, depth-first-search, enumeration",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125742,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Number of Nodes With Value One",
+    "id": "2445",
+    "slug": "number-of-nodes-with-value-one",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125768,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Height of Binary Tree After Subtree Removal Queries",
+    "id": "2458",
+    "slug": "height-of-binary-tree-after-subtree-removal-queries",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125794,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Minimum Number of Operations to Sort a Binary Tree by Level",
+    "id": "2471",
+    "slug": "minimum-number-of-operations-to-sort-a-binary-tree-by-level",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "tree, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125804,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "binary-tree",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Closest Nodes Queries in a Binary Search Tree",
+    "id": "2476",
+    "slug": "closest-nodes-queries-in-a-binary-search-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, tree, depth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125870,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Cycle Length Queries in a Tree",
+    "id": "2509",
+    "slug": "cycle-length-queries-in-a-tree",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "tree, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125890,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "divide-and-conquer",
+    "merge-sort",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Count the Number of K-Big Indices",
+    "id": "2519",
+    "slug": "count-the-number-of-k-big-indices",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, divide-and-conquer, binary-indexed-tree, segment-tree, merge-sort, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125990,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "roadmap::07-trees",
+    "segment-tree"
+   ],
+   "fields": {
+    "title": "Handling Sum Queries After Update",
+    "id": "2569",
+    "slug": "handling-sum-queries-after-update",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, segment-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126018,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "breadth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Kth Largest Sum in a Binary Tree",
+    "id": "2583",
+    "slug": "kth-largest-sum-in-a-binary-tree",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "binary-search, tree, breadth-first-search",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126076,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "breadth-first-search",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::07-trees"
+   ],
+   "fields": {
+    "title": "Minimum Reverse Operations",
+    "id": "2612",
+    "slug": "minimum-reverse-operations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, breadth-first-search, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126134,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-tree",
+    "breadth-first-search",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Cousins in Binary Tree II",
+    "id": "2641",
+    "slug": "cousins-in-binary-tree-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, tree, depth-first-search, breadth-first-search, binary-tree",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126170,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-indexed-tree",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "ordered-set",
+    "roadmap::07-trees",
+    "segment-tree",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Make Array Empty",
+    "id": "2659",
+    "slug": "make-array-empty",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, greedy, binary-indexed-tree, segment-tree, sorting, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126230,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "depth-first-search",
+    "difficulty-easy-tag",
+    "roadmap::07-trees",
+    "tree"
+   ],
+   "fields": {
+    "title": "Extract Kth Character From The Rope Tree",
+    "id": "2689",
+    "slug": "extract-kth-character-from-the-rope-tree",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "tree, depth-first-search",
+    "paid": "yes"
+   }
+  }
+ ]
+}

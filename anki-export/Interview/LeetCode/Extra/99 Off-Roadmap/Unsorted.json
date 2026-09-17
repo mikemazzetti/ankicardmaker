@@ -1,0 +1,663 @@
+{
+ "deck": "Interview::LeetCode::Extra::99 Off-Roadmap::Unsorted",
+ "note_count": 41,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038126088,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Check if Object Instance of Class",
+    "id": "2618",
+    "slug": "check-if-object-instance-of-class",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126090,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Array Prototype Last",
+    "id": "2619",
+    "slug": "array-prototype-last",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126092,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Counter",
+    "id": "2620",
+    "slug": "counter",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126094,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sleep",
+    "id": "2621",
+    "slug": "sleep",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126096,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Cache With Time Limit",
+    "id": "2622",
+    "slug": "cache-with-time-limit",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126098,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Memoize",
+    "id": "2623",
+    "slug": "memoize",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126100,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Snail Traversal",
+    "id": "2624",
+    "slug": "snail-traversal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126102,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Flatten Deeply Nested Array",
+    "id": "2625",
+    "slug": "flatten-deeply-nested-array",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126104,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Array Reduce Transformation",
+    "id": "2626",
+    "slug": "array-reduce-transformation",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126106,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Debounce",
+    "id": "2627",
+    "slug": "debounce",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126108,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "JSON Deep Equal",
+    "id": "2628",
+    "slug": "json-deep-equal",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126110,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Function Composition",
+    "id": "2629",
+    "slug": "function-composition",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126112,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Memoize II",
+    "id": "2630",
+    "slug": "memoize-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126114,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Group By",
+    "id": "2631",
+    "slug": "group-by",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126116,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Curry",
+    "id": "2632",
+    "slug": "curry",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126118,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Convert Object to JSON String",
+    "id": "2633",
+    "slug": "convert-object-to-json-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126120,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Filter Elements from Array",
+    "id": "2634",
+    "slug": "filter-elements-from-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126122,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Apply Transform Over Each Element in Array",
+    "id": "2635",
+    "slug": "apply-transform-over-each-element-in-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126124,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Promise Pool",
+    "id": "2636",
+    "slug": "promise-pool",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126126,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Promise Time Limit",
+    "id": "2637",
+    "slug": "promise-time-limit",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126148,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Generate Fibonacci Sequence",
+    "id": "2648",
+    "slug": "generate-fibonacci-sequence",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126150,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Nested Array Generator",
+    "id": "2649",
+    "slug": "nested-array-generator",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126152,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Design Cancellable Function",
+    "id": "2650",
+    "slug": "design-cancellable-function",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126182,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Counter II",
+    "id": "2665",
+    "slug": "counter-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126184,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Allow One Function Call",
+    "id": "2666",
+    "slug": "allow-one-function-call",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126186,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Create Hello World Function",
+    "id": "2667",
+    "slug": "create-hello-world-function",
+    "difficulty": "<font color=\"green\">Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126200,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Split a Circular Linked List",
+    "id": "2674",
+    "slug": "split-a-circular-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126202,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Array of Objects to Matrix",
+    "id": "2675",
+    "slug": "array-of-objects-to-matrix",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126204,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Throttle",
+    "id": "2676",
+    "slug": "throttle",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126206,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Chunk Array",
+    "id": "2677",
+    "slug": "chunk-array",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126232,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Infinite Method Object",
+    "id": "2690",
+    "slug": "infinite-method-object",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126234,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Immutability Helper",
+    "id": "2691",
+    "slug": "immutability-helper",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126236,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Make Object Immutable",
+    "id": "2692",
+    "slug": "make-object-immutable",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126238,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Call Function with Custom Context",
+    "id": "2693",
+    "slug": "call-function-with-custom-context",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126240,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Event Emitter",
+    "id": "2694",
+    "slug": "event-emitter",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126242,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Array Wrapper",
+    "id": "2695",
+    "slug": "array-wrapper",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126252,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Differences Between Two Objects",
+    "id": "2700",
+    "slug": "differences-between-two-objects",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126258,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Return Length of Arguments Passed",
+    "id": "2703",
+    "slug": "return-length-of-arguments-passed",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126260,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "To Be Or Not To Be",
+    "id": "2704",
+    "slug": "to-be-or-not-to-be",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126262,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Compact Object",
+    "id": "2705",
+    "slug": "compact-object",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126282,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Execute Cancellable Function With Delay",
+    "id": "2715",
+    "slug": "execute-cancellable-function-with-delay",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "",
+    "paid": "no"
+   }
+  }
+ ]
+}

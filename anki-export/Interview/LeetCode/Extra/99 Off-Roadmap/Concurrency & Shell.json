@@ -1,0 +1,230 @@
+{
+ "deck": "Interview::LeetCode::Extra::99 Off-Roadmap::Concurrency & Shell",
+ "note_count": 13,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121236,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap",
+    "shell"
+   ],
+   "fields": {
+    "title": "Word Frequency",
+    "id": "192",
+    "slug": "word-frequency",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "shell",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121238,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap",
+    "shell"
+   ],
+   "fields": {
+    "title": "Valid Phone Numbers",
+    "id": "193",
+    "slug": "valid-phone-numbers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "shell",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121240,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap",
+    "shell"
+   ],
+   "fields": {
+    "title": "Transpose File",
+    "id": "194",
+    "slug": "transpose-file",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "shell",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121242,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap",
+    "shell"
+   ],
+   "fields": {
+    "title": "Tenth Line",
+    "id": "195",
+    "slug": "tenth-line",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "shell",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123080,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Print in Order",
+    "id": "1114",
+    "slug": "print-in-order",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "concurrency",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123082,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Print FooBar Alternately",
+    "id": "1115",
+    "slug": "print-foobar-alternately",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "concurrency",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123084,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Print Zero Even Odd",
+    "id": "1116",
+    "slug": "print-zero-even-odd",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "concurrency",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123086,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Building H2O",
+    "id": "1117",
+    "slug": "building-h2o",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "concurrency",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123228,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Design Bounded Blocking Queue",
+    "id": "1188",
+    "slug": "design-bounded-blocking-queue",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "concurrency",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123242,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Fizz Buzz Multithreaded",
+    "id": "1195",
+    "slug": "fizz-buzz-multithreaded",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "concurrency",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123304,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Dining Philosophers",
+    "id": "1226",
+    "slug": "the-dining-philosophers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "concurrency",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123336,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "breadth-first-search",
+    "concurrency",
+    "depth-first-search",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Web Crawler Multithreaded",
+    "id": "1242",
+    "slug": "web-crawler-multithreaded",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "depth-first-search, breadth-first-search, concurrency",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123410,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "concurrency",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Traffic Light Controlled Intersection",
+    "id": "1279",
+    "slug": "traffic-light-controlled-intersection",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "concurrency",
+    "paid": "yes"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1700 @@
+{
+ "deck": "Interview::LeetCode::Extra::04 Stack",
+ "note_count": 87,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120994,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Simplify Path",
+    "id": "71",
+    "slug": "simplify-path",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121300,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "math",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Basic Calculator",
+    "id": "224",
+    "slug": "basic-calculator",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, string, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121302,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-easy-tag",
+    "queue",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Implement Stack using Queues",
+    "id": "225",
+    "slug": "implement-stack-using-queues",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, design, queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121306,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Basic Calculator II",
+    "id": "227",
+    "slug": "basic-calculator-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121316,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-easy-tag",
+    "queue",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Implement Queue using Stacks",
+    "id": "232",
+    "slug": "implement-queue-using-stacks",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "stack, design, queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121320,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "linked-list",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Palindrome Linked List",
+    "id": "234",
+    "slug": "palindrome-linked-list",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "linked-list, two-pointers, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121484,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Duplicate Letters",
+    "id": "316",
+    "slug": "remove-duplicate-letters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121494,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Create Maximum Number",
+    "id": "321",
+    "slug": "create-maximum-number",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121640,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Decode String",
+    "id": "394",
+    "slug": "decode-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121656,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove K Digits",
+    "id": "402",
+    "slug": "remove-k-digits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121730,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Ternary Expression Parser",
+    "id": "439",
+    "slug": "ternary-expression-parser",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, recursion",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121742,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "math",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Add Two Numbers II",
+    "id": "445",
+    "slug": "add-two-numbers-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, math, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121764,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "ordered-set",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "132 Pattern",
+    "id": "456",
+    "slug": "132-pattern",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, stack, monotonic-stack, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121820,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Permutation",
+    "id": "484",
+    "slug": "find-permutation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, string, stack, greedy",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121844,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Next Greater Element I",
+    "id": "496",
+    "slug": "next-greater-element-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121858,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Next Greater Element II",
+    "id": "503",
+    "slug": "next-greater-element-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122014,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "sorting",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Shortest Unsorted Continuous Subarray",
+    "id": "581",
+    "slug": "shortest-unsorted-continuous-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, stack, greedy, sorting, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122034,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Tag Validator",
+    "id": "591",
+    "slug": "tag-validator",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122124,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Exclusive Time of Functions",
+    "id": "636",
+    "slug": "exclusive-time-of-functions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122216,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "simulation",
+    "stack"
+   ],
+   "fields": {
+    "title": "Baseball Game",
+    "id": "682",
+    "slug": "baseball-game",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, stack, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122284,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "doubly-linked-list",
+    "linked-list",
+    "ordered-set",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Max Stack",
+    "id": "716",
+    "slug": "max-stack",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "linked-list, stack, design, doubly-linked-list, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122304,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::04-stack",
+    "sorting",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Atoms",
+    "id": "726",
+    "slug": "number-of-atoms",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, stack, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122322,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Asteroid Collision",
+    "id": "735",
+    "slug": "asteroid-collision",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122324,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-table",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Parse Lisp Expression",
+    "id": "736",
+    "slug": "parse-lisp-expression",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122388,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "Max Chunks To Make Sorted II",
+    "id": "768",
+    "slug": "max-chunks-to-make-sorted-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, stack, greedy, sorting, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122390,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "Max Chunks To Make Sorted",
+    "id": "769",
+    "slug": "max-chunks-to-make-sorted",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, greedy, sorting, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122392,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-table",
+    "math",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Basic Calculator IV",
+    "id": "770",
+    "slug": "basic-calculator-iv",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, math, string, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122396,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "math",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Basic Calculator III",
+    "id": "772",
+    "slug": "basic-calculator-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "math, string, stack, recursion",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122540,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "simulation",
+    "stack",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Backspace String Compare",
+    "id": "844",
+    "slug": "backspace-string-compare",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "two-pointers, string, stack, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122564,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Score of Parentheses",
+    "id": "856",
+    "slug": "score-of-parentheses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122612,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Decoded String at Index",
+    "id": "880",
+    "slug": "decoded-string-at-index",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122642,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Maximum Frequency Stack",
+    "id": "895",
+    "slug": "maximum-frequency-stack",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, stack, design, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122654,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Online Stock Span",
+    "id": "901",
+    "slug": "online-stock-span",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "stack, design, monotonic-stack, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122694,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Add to Make Parentheses Valid",
+    "id": "921",
+    "slug": "minimum-add-to-make-parentheses-valid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122724,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "queue",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Stamping The Sequence",
+    "id": "936",
+    "slug": "stamping-the-sequence",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, stack, greedy, queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122744,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "simulation",
+    "stack"
+   ],
+   "fields": {
+    "title": "Validate Stack Sequences",
+    "id": "946",
+    "slug": "validate-stack-sequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122776,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Maximum Width Ramp",
+    "id": "962",
+    "slug": "maximum-width-ramp",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122858,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Check If Word Is Valid After Substitutions",
+    "id": "1003",
+    "slug": "check-if-word-is-valid-after-substitutions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122864,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "math",
+    "roadmap::04-stack",
+    "simulation",
+    "stack"
+   ],
+   "fields": {
+    "title": "Clumsy Factorial",
+    "id": "1006",
+    "slug": "clumsy-factorial",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "math, stack, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122890,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "linked-list",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Next Greater Node In Linked List",
+    "id": "1019",
+    "slug": "next-greater-node-in-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122894,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove Outermost Parentheses",
+    "id": "1021",
+    "slug": "remove-outermost-parentheses",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122946,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove All Adjacent Duplicates In String",
+    "id": "1047",
+    "slug": "remove-all-adjacent-duplicates-in-string",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122978,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Number of Valid Subarrays",
+    "id": "1063",
+    "slug": "number-of-valid-subarrays",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123014,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Smallest Subsequence of Distinct Characters",
+    "id": "1081",
+    "slug": "smallest-subsequence-of-distinct-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123064,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Parsing A Boolean Expression",
+    "id": "1106",
+    "slug": "parsing-a-boolean-expression",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, stack, recursion",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123074,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+    "id": "1111",
+    "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123232,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Reverse Substrings Between Each Pair of Parentheses",
+    "id": "1190",
+    "slug": "reverse-substrings-between-each-pair-of-parentheses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123270,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Remove All Adjacent Duplicates in String II",
+    "id": "1209",
+    "slug": "remove-all-adjacent-duplicates-in-string-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123350,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Remove to Make Valid Parentheses",
+    "id": "1249",
+    "slug": "minimum-remove-to-make-valid-parentheses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123382,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "recursion",
+    "roadmap::04-stack",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Print Immutable Linked List in Reverse",
+    "id": "1265",
+    "slug": "print-immutable-linked-list-in-reverse",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers, stack, recursion",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123614,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "design",
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Design a Stack With Increment Operation",
+    "id": "1381",
+    "slug": "design-a-stack-with-increment-operation",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, design",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123734,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "simulation",
+    "stack"
+   ],
+   "fields": {
+    "title": "Build an Array With Stack Operations",
+    "id": "1441",
+    "slug": "build-an-array-with-stack-operations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123796,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "data-stream",
+    "design",
+    "difficulty-medium-tag",
+    "doubly-linked-list",
+    "linked-list",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Design Browser History",
+    "id": "1472",
+    "slug": "design-browser-history",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, stack, design, doubly-linked-list, data-stream",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123802,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Final Prices With a Special Discount in a Shop",
+    "id": "1475",
+    "slug": "final-prices-with-a-special-discount-in-a-shop",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123934,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Insertions to Balance a Parentheses String",
+    "id": "1541",
+    "slug": "minimum-insertions-to-balance-a-parentheses-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123940,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Make The String Great",
+    "id": "1544",
+    "slug": "make-the-string-great",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124000,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Shortest Subarray to be Removed to Make Array Sorted",
+    "id": "1574",
+    "slug": "shortest-subarray-to-be-removed-to-make-array-sorted",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, two-pointers, binary-search, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124048,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Crawler Log Folder",
+    "id": "1598",
+    "slug": "crawler-log-folder",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124080,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Nesting Depth of the Parentheses",
+    "id": "1614",
+    "slug": "maximum-nesting-depth-of-the-parentheses",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124198,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Find the Most Competitive Subsequence",
+    "id": "1673",
+    "slug": "find-the-most-competitive-subsequence",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124252,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "queue",
+    "roadmap::04-stack",
+    "simulation",
+    "stack"
+   ],
+   "fields": {
+    "title": "Number of Students Unable to Eat Lunch",
+    "id": "1700",
+    "slug": "number-of-students-unable-to-eat-lunch",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, stack, queue, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124286,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Score From Removing Substrings",
+    "id": "1717",
+    "slug": "maximum-score-from-removing-substrings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124376,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Buildings With an Ocean View",
+    "id": "1762",
+    "slug": "buildings-with-an-ocean-view",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124438,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximum Score of a Good Subarray",
+    "id": "1793",
+    "slug": "maximum-score-of-a-good-subarray",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, two-pointers, binary-search, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124564,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "prefix-sum",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Maximum Subarray Min-Product",
+    "id": "1856",
+    "slug": "maximum-subarray-min-product",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124740,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Number of Visible People in a Queue",
+    "id": "1944",
+    "slug": "number-of-visible-people-in-a-queue",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124752,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Maximum of Minimum Values in All Subarrays",
+    "id": "1950",
+    "slug": "maximum-of-minimum-values-in-all-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124778,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack",
+    "string",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Minimum Number of Swaps to Make the String Balanced",
+    "id": "1963",
+    "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "two-pointers, string, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124844,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "The Number of Weak Characters in the Game",
+    "id": "1996",
+    "slug": "the-number-of-weak-characters-in-the-game",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, greedy, sorting, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124912,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "greedy",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Smallest K-Length Subsequence With Occurrences of a Letter",
+    "id": "2030",
+    "slug": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, stack, greedy, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125060,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Sum of Subarray Ranges",
+    "id": "2104",
+    "slug": "sum-of-subarray-ranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125084,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Check if a Parentheses String Can Be Valid",
+    "id": "2116",
+    "slug": "check-if-a-parentheses-string-can-be-valid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125112,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "roadmap::04-stack",
+    "stack",
+    "two-pointers"
+   ],
+   "fields": {
+    "title": "Maximum Twin Sum of a Linked List",
+    "id": "2130",
+    "slug": "maximum-twin-sum-of-a-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, two-pointers, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125246,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "math",
+    "number-theory",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Replace Non-Coprime Numbers in Array",
+    "id": "2197",
+    "slug": "replace-non-coprime-numbers-in-array",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, stack, number-theory",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125274,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Count Collisions on a Road",
+    "id": "2211",
+    "slug": "count-collisions-on-a-road",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125284,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Minimum Deletions to Make Array Beautiful",
+    "id": "2216",
+    "slug": "minimum-deletions-to-make-array-beautiful",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125360,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "hash-table",
+    "ordered-set",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Design Video Sharing Platform",
+    "id": "2254",
+    "slug": "design-video-sharing-platform",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, stack, design, ordered-set",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125414,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "monotonic-stack",
+    "prefix-sum",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Sum of Total Strength of Wizards",
+    "id": "2281",
+    "slug": "sum-of-total-strength-of-wizards",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, stack, monotonic-stack, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125416,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "matrix",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Number of People That Can Be Seen in a Grid",
+    "id": "2282",
+    "slug": "number-of-people-that-can-be-seen-in-a-grid",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, matrix, monotonic-stack",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125430,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "linked-list",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Steps to Make Array Non-decreasing",
+    "id": "2289",
+    "slug": "steps-to-make-array-non-decreasing",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, linked-list, stack, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125444,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "design",
+    "difficulty-hard-tag",
+    "doubly-linked-list",
+    "linked-list",
+    "roadmap::04-stack",
+    "simulation",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Design a Text Editor",
+    "id": "2296",
+    "slug": "design-a-text-editor",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "linked-list, string, stack, design, simulation, doubly-linked-list",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125542,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "monotonic-stack",
+    "roadmap::04-stack",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "Finding the Number of Visible Mountains",
+    "id": "2345",
+    "slug": "finding-the-number-of-visible-mountains",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, stack, sorting, monotonic-stack",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125632,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::04-stack",
+    "simulation",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Removing Stars From a String",
+    "id": "2390",
+    "slug": "removing-stars-from-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, stack, simulation",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125720,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "greedy",
+    "hash-table",
+    "roadmap::04-stack",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Using a Robot to Print the Lexicographically Smallest String",
+    "id": "2434",
+    "slug": "using-a-robot-to-print-the-lexicographically-smallest-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, stack, greedy",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125826,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "linked-list",
+    "monotonic-stack",
+    "recursion",
+    "roadmap::04-stack",
+    "stack"
+   ],
+   "fields": {
+    "title": "Remove Nodes From Linked List",
+    "id": "2487",
+    "slug": "remove-nodes-from-linked-list",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "linked-list, stack, recursion, monotonic-stack",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126030,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "roadmap::04-stack",
+    "sorting",
+    "stack"
+   ],
+   "fields": {
+    "title": "Minimum Time to Complete All Tasks",
+    "id": "2589",
+    "slug": "minimum-time-to-complete-all-tasks",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, stack, greedy, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126244,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::04-stack",
+    "simulation",
+    "stack",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum String Length After Removing Substrings",
+    "id": "2696",
+    "slug": "minimum-string-length-after-removing-substrings",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, stack, simulation",
+    "paid": "no"
+   }
+  }
+ ]
+}

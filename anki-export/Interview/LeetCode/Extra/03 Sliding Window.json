@@ -1,0 +1,1192 @@
+{
+ "deck": "Interview::LeetCode::Extra::03 Sliding Window",
+ "note_count": 61,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038120912,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Substring with Concatenation of All Words",
+    "id": "30",
+    "slug": "substring-with-concatenation-of-all-words",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121170,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Substring with At Most Two Distinct Characters",
+    "id": "159",
+    "slug": "longest-substring-with-at-most-two-distinct-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121226,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "hash-function",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "rolling-hash",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Repeated DNA Sequences",
+    "id": "187",
+    "slug": "repeated-dna-sequences",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, bit-manipulation, sliding-window, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121270,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Size Subarray Sum",
+    "id": "209",
+    "slug": "minimum-size-subarray-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121290,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Contains Duplicate II",
+    "id": "219",
+    "slug": "contains-duplicate-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121292,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bucket-sort",
+    "difficulty-hard-tag",
+    "ordered-set",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Contains Duplicate III",
+    "id": "220",
+    "slug": "contains-duplicate-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, sliding-window, sorting, bucket-sort, ordered-set",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121532,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Substring with At Most K Distinct Characters",
+    "id": "340",
+    "slug": "longest-substring-with-at-most-k-distinct-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121642,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Substring with At Least K Repeating Characters",
+    "id": "395",
+    "slug": "longest-substring-with-at-least-k-repeating-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, divide-and-conquer, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121728,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Find All Anagrams in a String",
+    "id": "438",
+    "slug": "find-all-anagrams-in-a-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122138,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Average Subarray I",
+    "id": "643",
+    "slug": "maximum-average-subarray-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122278,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Subarray Product Less Than K",
+    "id": "713",
+    "slug": "subarray-product-less-than-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122660,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Fruit Into Baskets",
+    "id": "904",
+    "slug": "fruit-into-baskets",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122712,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Binary Subarrays With Sum",
+    "id": "930",
+    "slug": "binary-subarrays-with-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122836,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "counting",
+    "difficulty-hard-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Subarrays with K Different Integers",
+    "id": "992",
+    "slug": "subarrays-with-k-different-integers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, sliding-window, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122842,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "queue",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Number of K Consecutive Bit Flips",
+    "id": "995",
+    "slug": "minimum-number-of-k-consecutive-bit-flips",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, bit-manipulation, queue, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122860,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Max Consecutive Ones III",
+    "id": "1004",
+    "slug": "max-consecutive-ones-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122956,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Grumpy Bookstore Owner",
+    "id": "1052",
+    "slug": "grumpy-bookstore-owner",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123052,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Find K-Length Substrings With No Repeated Characters",
+    "id": "1100",
+    "slug": "find-k-length-substrings-with-no-repeated-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123154,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Swaps to Group All 1's Together",
+    "id": "1151",
+    "slug": "minimum-swaps-to-group-all-1s-together",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123164,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Swap For Longest Repeated Character Substring",
+    "id": "1156",
+    "slug": "swap-for-longest-repeated-character-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123204,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Diet Plan Performance",
+    "id": "1176",
+    "slug": "diet-plan-performance",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123268,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Get Equal Substrings Within Budget",
+    "id": "1208",
+    "slug": "get-equal-substrings-within-budget",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123320,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Replace the Substring for Balanced String",
+    "id": "1234",
+    "slug": "replace-the-substring-for-balanced-string",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123348,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "math",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Count Number of Nice Subarrays",
+    "id": "1248",
+    "slug": "count-number-of-nice-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, math, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123446,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Occurrences of a Substring",
+    "id": "1297",
+    "slug": "maximum-number-of-occurrences-of-a-substring",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123538,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+    "id": "1343",
+    "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123568,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Number of Substrings Containing All Three Characters",
+    "id": "1358",
+    "slug": "number-of-substrings-containing-all-three-characters",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123698,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Points You Can Obtain from Cards",
+    "id": "1423",
+    "slug": "maximum-points-you-can-obtain-from-cards",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123764,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximum Number of Vowels in a Substring of Given Length",
+    "id": "1456",
+    "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124072,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "geometry",
+    "math",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Visible Points",
+    "id": "1610",
+    "slug": "maximum-number-of-visible-points",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, math, geometry, sliding-window, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124168,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "hash-table",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Operations to Reduce X to Zero",
+    "id": "1658",
+    "slug": "minimum-operations-to-reduce-x-to-zero",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124242,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Erasure Value",
+    "id": "1695",
+    "slug": "maximum-erasure-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124258,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Adjacent Swaps for K Consecutive Ones",
+    "id": "1703",
+    "slug": "minimum-adjacent-swaps-for-k-consecutive-ones",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, greedy, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124378,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "bit-manipulation",
+    "difficulty-easy-tag",
+    "divide-and-conquer",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Nice Substring",
+    "id": "1763",
+    "slug": "longest-nice-substring",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, divide-and-conquer, bit-manipulation, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124528,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "greedy",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Frequency of the Most Frequent Element",
+    "id": "1838",
+    "slug": "frequency-of-the-most-frequent-element",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, greedy, sliding-window, sorting, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124530,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Longest Substring Of All Vowels in Order",
+    "id": "1839",
+    "slug": "longest-substring-of-all-vowels-in-order",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124556,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Distinct Numbers in Each Subarray",
+    "id": "1852",
+    "slug": "distinct-numbers-in-each-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124604,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "counting",
+    "difficulty-easy-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Substrings of Size Three with Distinct Characters",
+    "id": "1876",
+    "slug": "substrings-of-size-three-with-distinct-characters",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "hash-table, string, sliding-window, counting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124688,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Kth Smallest Subarray Sum",
+    "id": "1918",
+    "slug": "kth-smallest-subarray-sum",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124820,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-easy-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Minimum Difference Between Highest and Lowest of K Scores",
+    "id": "1984",
+    "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "array, sliding-window, sorting",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124900,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "binary-search",
+    "difficulty-medium-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Maximize the Confusion of an Exam",
+    "id": "2024",
+    "slug": "maximize-the-confusion-of-an-exam",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "string, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124994,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "monotonic-queue",
+    "queue",
+    "roadmap::03-sliding-window",
+    "sorting"
+   ],
+   "fields": {
+    "title": "Maximum Number of Tasks You Can Assign",
+    "id": "2071",
+    "slug": "maximum-number-of-tasks-you-can-assign",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, greedy, queue, sorting, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125032,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "K Radius Subarray Averages",
+    "id": "2090",
+    "slug": "k-radius-subarray-averages",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125064,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Fruits Harvested After at Most K Steps",
+    "id": "2106",
+    "slug": "maximum-fruits-harvested-after-at-most-k-steps",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125066,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Number of Unique Flavors After Sharing K Candies",
+    "id": "2107",
+    "slug": "number-of-unique-flavors-after-sharing-k-candies",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125120,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Swaps to Group All 1's Together II",
+    "id": "2134",
+    "slug": "minimum-swaps-to-group-all-1s-together-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125164,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-hard-tag",
+    "hash-function",
+    "roadmap::03-sliding-window",
+    "rolling-hash",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Find Substring With Given Hash Value",
+    "id": "2156",
+    "slug": "find-substring-with-given-hash-value",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "string, sliding-window, rolling-hash, hash-function",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125372,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Minimum Consecutive Cards to Pick Up",
+    "id": "2260",
+    "slug": "minimum-consecutive-cards-to-pick-up",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125390,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "math",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Find the K-Beauty of a Number",
+    "id": "2269",
+    "slug": "find-the-k-beauty-of-a-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "math, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125456,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "prefix-sum",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Count Subarrays With Score Less Than K",
+    "id": "2302",
+    "slug": "count-subarrays-with-score-less-than-k",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125610,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-easy-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+    "id": "2379",
+    "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125654,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Longest Nice Subarray",
+    "id": "2401",
+    "slug": "longest-nice-subarray",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, bit-manipulation, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125674,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Smallest Subarrays With Maximum Bitwise OR",
+    "id": "2411",
+    "slug": "smallest-subarrays-with-maximum-bitwise-or",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, bit-manipulation, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125740,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "monotonic-queue",
+    "queue",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Count Subarrays With Fixed Bounds",
+    "id": "2444",
+    "slug": "count-subarrays-with-fixed-bounds",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, queue, sliding-window, monotonic-queue",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125774,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Sum of Distinct Subarrays With Length K",
+    "id": "2461",
+    "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125884,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window",
+    "string"
+   ],
+   "fields": {
+    "title": "Take K of Each Character From Left and Right",
+    "id": "2516",
+    "slug": "take-k-of-each-character-from-left-and-right",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "hash-table, string, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125900,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-hard-tag",
+    "hash-table",
+    "math",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximum Frequency Score of a Subarray",
+    "id": "2524",
+    "slug": "maximum-frequency-score-of-a-subarray",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, hash-table, math, sliding-window",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125908,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-hard-tag",
+    "greedy",
+    "prefix-sum",
+    "queue",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximize the Minimum Powered City",
+    "id": "2528",
+    "slug": "maximize-the-minimum-powered-city",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "array, binary-search, greedy, queue, sliding-window, prefix-sum",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125926,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Count the Number of Good Subarrays",
+    "id": "2537",
+    "slug": "count-the-number-of-good-subarrays",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125962,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "binary-search",
+    "difficulty-medium-tag",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Maximize Win From Two Segments",
+    "id": "2555",
+    "slug": "maximize-win-from-two-segments",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, binary-search, sliding-window",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038126158,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "array",
+    "difficulty-medium-tag",
+    "hash-table",
+    "roadmap::03-sliding-window",
+    "sliding-window"
+   ],
+   "fields": {
+    "title": "Sliding Subarray Beauty",
+    "id": "2653",
+    "slug": "sliding-subarray-beauty",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "array, hash-table, sliding-window",
+    "paid": "no"
+   }
+  }
+ ]
+}

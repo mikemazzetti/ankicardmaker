@@ -1,0 +1,3849 @@
+{
+ "deck": "Interview::LeetCode::Extra::99 Off-Roadmap::SQL & Database",
+ "note_count": 226,
+ "exported": "2026-09-17",
+ "notes": [
+  {
+   "noteId": 1686038121202,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Combine Two Tables",
+    "id": "175",
+    "slug": "combine-two-tables",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121204,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Second Highest Salary",
+    "id": "176",
+    "slug": "second-highest-salary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121206,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Nth Highest Salary",
+    "id": "177",
+    "slug": "nth-highest-salary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121208,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Rank Scores",
+    "id": "178",
+    "slug": "rank-scores",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121212,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Consecutive Numbers",
+    "id": "180",
+    "slug": "consecutive-numbers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121214,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Employees Earning More Than Their Managers",
+    "id": "181",
+    "slug": "employees-earning-more-than-their-managers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121216,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Duplicate Emails",
+    "id": "182",
+    "slug": "duplicate-emails",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121218,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customers Who Never Order",
+    "id": "183",
+    "slug": "customers-who-never-order",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121220,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Department Highest Salary",
+    "id": "184",
+    "slug": "department-highest-salary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121222,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Department Top Three Salaries",
+    "id": "185",
+    "slug": "department-top-three-salaries",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121244,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Delete Duplicate Emails",
+    "id": "196",
+    "slug": "delete-duplicate-emails",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121246,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Rising Temperature",
+    "id": "197",
+    "slug": "rising-temperature",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121376,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Trips and Users",
+    "id": "262",
+    "slug": "trips-and-users",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121874,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Game Play Analysis I",
+    "id": "511",
+    "slug": "game-play-analysis-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121876,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Game Play Analysis II",
+    "id": "512",
+    "slug": "game-play-analysis-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121920,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Game Play Analysis III",
+    "id": "534",
+    "slug": "game-play-analysis-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121952,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Game Play Analysis IV",
+    "id": "550",
+    "slug": "game-play-analysis-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121990,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Median Employee Salary",
+    "id": "569",
+    "slug": "median-employee-salary",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038121992,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Managers with at Least 5 Direct Reports",
+    "id": "570",
+    "slug": "managers-with-at-least-5-direct-reports",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038121994,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Median Given Frequency of Numbers",
+    "id": "571",
+    "slug": "find-median-given-frequency-of-numbers",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122000,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Winning Candidate",
+    "id": "574",
+    "slug": "winning-candidate",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122006,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Employee Bonus",
+    "id": "577",
+    "slug": "employee-bonus",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122008,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Get Highest Answer Rate Question",
+    "id": "578",
+    "slug": "get-highest-answer-rate-question",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122010,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Cumulative Salary of an Employee",
+    "id": "579",
+    "slug": "find-cumulative-salary-of-an-employee",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122012,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Count Student Number in Departments",
+    "id": "580",
+    "slug": "count-student-number-in-departments",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122020,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Customer Referee",
+    "id": "584",
+    "slug": "find-customer-referee",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122022,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Investments in 2016",
+    "id": "585",
+    "slug": "investments-in-2016",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122024,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customer Placing the Largest Number of Orders",
+    "id": "586",
+    "slug": "customer-placing-the-largest-number-of-orders",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122042,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Big Countries",
+    "id": "595",
+    "slug": "big-countries",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122044,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Classes More Than 5 Students",
+    "id": "596",
+    "slug": "classes-more-than-5-students",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122046,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Friend Requests I: Overall Acceptance Rate",
+    "id": "597",
+    "slug": "friend-requests-i-overall-acceptance-rate",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122054,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Human Traffic of Stadium",
+    "id": "601",
+    "slug": "human-traffic-of-stadium",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122056,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Friend Requests II: Who Has the Most Friends",
+    "id": "602",
+    "slug": "friend-requests-ii-who-has-the-most-friends",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122058,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Consecutive Available Seats",
+    "id": "603",
+    "slug": "consecutive-available-seats",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122066,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sales Person",
+    "id": "607",
+    "slug": "sales-person",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122068,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Tree Node",
+    "id": "608",
+    "slug": "tree-node",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122072,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Triangle Judgement",
+    "id": "610",
+    "slug": "triangle-judgement",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122076,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Shortest Distance in a Plane",
+    "id": "612",
+    "slug": "shortest-distance-in-a-plane",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122078,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Shortest Distance in a Line",
+    "id": "613",
+    "slug": "shortest-distance-in-a-line",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122080,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Second Degree Follower",
+    "id": "614",
+    "slug": "second-degree-follower",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122082,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Average Salary: Departments VS Company",
+    "id": "615",
+    "slug": "average-salary-departments-vs-company",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122088,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Students Report By Geography",
+    "id": "618",
+    "slug": "students-report-by-geography",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122090,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Biggest Single Number",
+    "id": "619",
+    "slug": "biggest-single-number",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122092,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Not Boring Movies",
+    "id": "620",
+    "slug": "not-boring-movies",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122104,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Exchange Seats",
+    "id": "626",
+    "slug": "exchange-seats",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122106,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Swap Salary",
+    "id": "627",
+    "slug": "swap-salary",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122942,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customers Who Bought All Products",
+    "id": "1045",
+    "slug": "customers-who-bought-all-products",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122952,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Actors and Directors Who Cooperated At Least Three Times",
+    "id": "1050",
+    "slug": "actors-and-directors-who-cooperated-at-least-three-times",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122988,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product Sales Analysis I",
+    "id": "1068",
+    "slug": "product-sales-analysis-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038122990,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product Sales Analysis II",
+    "id": "1069",
+    "slug": "product-sales-analysis-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038122992,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product Sales Analysis III",
+    "id": "1070",
+    "slug": "product-sales-analysis-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123002,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Project Employees I",
+    "id": "1075",
+    "slug": "project-employees-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123004,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Project Employees II",
+    "id": "1076",
+    "slug": "project-employees-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123006,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Project Employees III",
+    "id": "1077",
+    "slug": "project-employees-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123016,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sales Analysis I",
+    "id": "1082",
+    "slug": "sales-analysis-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123018,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sales Analysis II",
+    "id": "1083",
+    "slug": "sales-analysis-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123020,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sales Analysis III",
+    "id": "1084",
+    "slug": "sales-analysis-iii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123046,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Game Play Analysis V",
+    "id": "1097",
+    "slug": "game-play-analysis-v",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123048,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Unpopular Books",
+    "id": "1098",
+    "slug": "unpopular-books",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123066,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "New Users Daily Count",
+    "id": "1107",
+    "slug": "new-users-daily-count",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123076,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Highest Grade For Each Student",
+    "id": "1112",
+    "slug": "highest-grade-for-each-student",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123078,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Reported Posts",
+    "id": "1113",
+    "slug": "reported-posts",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123104,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Active Businesses",
+    "id": "1126",
+    "slug": "active-businesses",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123106,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "User Purchase Platform",
+    "id": "1127",
+    "slug": "user-purchase-platform",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123116,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Reported Posts II",
+    "id": "1132",
+    "slug": "reported-posts-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123134,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "User Activity for the Past 30 Days I",
+    "id": "1141",
+    "slug": "user-activity-for-the-past-30-days-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123136,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "User Activity for the Past 30 Days II",
+    "id": "1142",
+    "slug": "user-activity-for-the-past-30-days-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123148,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Article Views I",
+    "id": "1148",
+    "slug": "article-views-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123150,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Article Views II",
+    "id": "1149",
+    "slug": "article-views-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123168,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Market Analysis I",
+    "id": "1158",
+    "slug": "market-analysis-i",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123170,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Market Analysis II",
+    "id": "1159",
+    "slug": "market-analysis-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123180,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product Price at a Given Date",
+    "id": "1164",
+    "slug": "product-price-at-a-given-date",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123198,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Immediate Food Delivery I",
+    "id": "1173",
+    "slug": "immediate-food-delivery-i",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123200,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Immediate Food Delivery II",
+    "id": "1174",
+    "slug": "immediate-food-delivery-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123210,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Reformat Department Table",
+    "id": "1179",
+    "slug": "reformat-department-table",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123238,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Monthly Transactions I",
+    "id": "1193",
+    "slug": "monthly-transactions-i",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123240,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Tournament Winners",
+    "id": "1194",
+    "slug": "tournament-winners",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123260,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Last Person to Fit in the Bus",
+    "id": "1204",
+    "slug": "last-person-to-fit-in-the-bus",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123262,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Monthly Transactions II",
+    "id": "1205",
+    "slug": "monthly-transactions-ii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123274,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Queries Quality and Percentage",
+    "id": "1211",
+    "slug": "queries-quality-and-percentage",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123276,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Team Scores in Football Tournament",
+    "id": "1212",
+    "slug": "team-scores-in-football-tournament",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123302,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Report Contiguous Dates",
+    "id": "1225",
+    "slug": "report-contiguous-dates",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123334,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Comments per Post",
+    "id": "1241",
+    "slug": "number-of-comments-per-post",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123354,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Average Selling Price",
+    "id": "1251",
+    "slug": "average-selling-price",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123380,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Page Recommendations",
+    "id": "1264",
+    "slug": "page-recommendations",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123392,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "All People Report to the Given Manager",
+    "id": "1270",
+    "slug": "all-people-report-to-the-given-manager",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123412,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Students and Examinations",
+    "id": "1280",
+    "slug": "students-and-examinations",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123422,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find the Start and End Number of Continuous Ranges",
+    "id": "1285",
+    "slug": "find-the-start-and-end-number-of-continuous-ranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123440,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Weather Type in Each Country",
+    "id": "1294",
+    "slug": "weather-type-in-each-country",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123458,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find the Team Size",
+    "id": "1303",
+    "slug": "find-the-team-size",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123468,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Running Total for Different Genders",
+    "id": "1308",
+    "slug": "running-total-for-different-genders",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123494,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Restaurant Growth",
+    "id": "1321",
+    "slug": "restaurant-growth",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123496,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Ads Performance",
+    "id": "1322",
+    "slug": "ads-performance",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123506,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "List the Products Ordered in a Period",
+    "id": "1327",
+    "slug": "list-the-products-ordered-in-a-period",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123524,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Transactions per Visit",
+    "id": "1336",
+    "slug": "number-of-transactions-per-visit",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123534,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Movie Rating",
+    "id": "1341",
+    "slug": "movie-rating",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123552,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Students With Invalid Departments",
+    "id": "1350",
+    "slug": "students-with-invalid-departments",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123562,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Activity Participants",
+    "id": "1355",
+    "slug": "activity-participants",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123580,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Trusted Contacts of a Customer",
+    "id": "1364",
+    "slug": "number-of-trusted-contacts-of-a-customer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123590,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Get the Second Most Recent Activity",
+    "id": "1369",
+    "slug": "get-the-second-most-recent-activity",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123608,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Replace Employee ID With The Unique Identifier",
+    "id": "1378",
+    "slug": "replace-employee-id-with-the-unique-identifier",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123620,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Total Sales Amount by Year",
+    "id": "1384",
+    "slug": "total-sales-amount-by-year",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123638,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Capital Gain/Loss",
+    "id": "1393",
+    "slug": "capital-gainloss",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123648,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customers Who Bought Products A and B but Not C",
+    "id": "1398",
+    "slug": "customers-who-bought-products-a-and-b-but-not-c",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123666,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Top Travellers",
+    "id": "1407",
+    "slug": "top-travellers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123676,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find the Quiet Students in All Exams",
+    "id": "1412",
+    "slug": "find-the-quiet-students-in-all-exams",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123694,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "NPV Queries",
+    "id": "1421",
+    "slug": "npv-queries",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123722,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Create a Session Bar Chart",
+    "id": "1435",
+    "slug": "create-a-session-bar-chart",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123732,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Evaluate Boolean Expression",
+    "id": "1440",
+    "slug": "evaluate-boolean-expression",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123742,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Apples & Oranges",
+    "id": "1445",
+    "slug": "apples-oranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123760,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Active Users",
+    "id": "1454",
+    "slug": "active-users",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123770,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Rectangles Area",
+    "id": "1459",
+    "slug": "rectangles-area",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123788,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Calculate Salaries",
+    "id": "1468",
+    "slug": "calculate-salaries",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123810,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sales by Day of the Week",
+    "id": "1479",
+    "slug": "sales-by-day-of-the-week",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123820,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Group Sold Products By The Date",
+    "id": "1484",
+    "slug": "group-sold-products-by-the-date",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123842,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Friendly Movies Streamed Last Month",
+    "id": "1495",
+    "slug": "friendly-movies-streamed-last-month",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123854,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Countries You Can Safely Invest In",
+    "id": "1501",
+    "slug": "countries-you-can-safely-invest-in",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123874,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customer Order Frequency",
+    "id": "1511",
+    "slug": "customer-order-frequency",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123886,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Users With Valid E-Mails",
+    "id": "1517",
+    "slug": "find-users-with-valid-e-mails",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123906,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Patients With a Condition",
+    "id": "1527",
+    "slug": "patients-with-a-condition",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038123916,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Most Recent Three Orders",
+    "id": "1532",
+    "slug": "the-most-recent-three-orders",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123938,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Fix Product Name Format",
+    "id": "1543",
+    "slug": "fix-product-name-format",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123950,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Most Recent Orders for Each Product",
+    "id": "1549",
+    "slug": "the-most-recent-orders-for-each-product",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123962,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Bank Account Summary",
+    "id": "1555",
+    "slug": "bank-account-summary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123982,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Unique Orders and Customers Per Month",
+    "id": "1565",
+    "slug": "unique-orders-and-customers-per-month",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038123994,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Warehouse Manager",
+    "id": "1571",
+    "slug": "warehouse-manager",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124014,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customer Who Visited but Did Not Make Any Transactions",
+    "id": "1581",
+    "slug": "customer-who-visited-but-did-not-make-any-transactions",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124026,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Bank Account Summary II",
+    "id": "1587",
+    "slug": "bank-account-summary-ii",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124044,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Most Frequently Ordered Products for Each Customer",
+    "id": "1596",
+    "slug": "the-most-frequently-ordered-products-for-each-customer",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124066,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sellers With No Sales",
+    "id": "1607",
+    "slug": "sellers-with-no-sales",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124078,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find the Missing IDs",
+    "id": "1613",
+    "slug": "find-the-missing-ids",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124098,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "All Valid Triplets That Can Represent a Country",
+    "id": "1623",
+    "slug": "all-valid-triplets-that-can-represent-a-country",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124118,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Percentage of Users Attended a Contest",
+    "id": "1633",
+    "slug": "percentage-of-users-attended-a-contest",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124122,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Hopper Company Queries I",
+    "id": "1635",
+    "slug": "hopper-company-queries-i",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124142,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Hopper Company Queries II",
+    "id": "1645",
+    "slug": "hopper-company-queries-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124154,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Hopper Company Queries III",
+    "id": "1651",
+    "slug": "hopper-company-queries-iii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124174,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Average Time of Process per Machine",
+    "id": "1661",
+    "slug": "average-time-of-process-per-machine",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124186,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Fix Names in a Table",
+    "id": "1667",
+    "slug": "fix-names-in-a-table",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124206,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product's Worth Over Invoices",
+    "id": "1677",
+    "slug": "products-worth-over-invoices",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124218,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Invalid Tweets",
+    "id": "1683",
+    "slug": "invalid-tweets",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124238,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Daily Leads and Partners",
+    "id": "1693",
+    "slug": "daily-leads-and-partners",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124250,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Calls Between Two Persons",
+    "id": "1699",
+    "slug": "number-of-calls-between-two-persons",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124270,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Biggest Window Between Visits",
+    "id": "1709",
+    "slug": "biggest-window-between-visits",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124282,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Count Apples and Oranges",
+    "id": "1715",
+    "slug": "count-apples-and-oranges",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124310,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Followers Count",
+    "id": "1729",
+    "slug": "find-followers-count",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124314,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Employees Which Report to Each Employee",
+    "id": "1731",
+    "slug": "the-number-of-employees-which-report-to-each-employee",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124334,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Total Time Spent by Each Employee",
+    "id": "1741",
+    "slug": "find-total-time-spent-by-each-employee",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124346,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Leetflex Banned Accounts",
+    "id": "1747",
+    "slug": "leetflex-banned-accounts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124366,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Recyclable and Low Fat Products",
+    "id": "1757",
+    "slug": "recyclable-and-low-fat-products",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124386,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find the Subtasks That Did Not Execute",
+    "id": "1767",
+    "slug": "find-the-subtasks-that-did-not-execute",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124406,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product's Price for Each Store",
+    "id": "1777",
+    "slug": "products-price-for-each-store",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124418,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Grand Slam Titles",
+    "id": "1783",
+    "slug": "grand-slam-titles",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124430,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Primary Department for Each Employee",
+    "id": "1789",
+    "slug": "primary-department-for-each-employee",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124442,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Rearrange Products Table",
+    "id": "1795",
+    "slug": "rearrange-products-table",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124470,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Ad-Free Sessions",
+    "id": "1809",
+    "slug": "ad-free-sessions",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124474,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Interview Candidates",
+    "id": "1811",
+    "slug": "find-interview-candidates",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124494,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Customers With Positive Revenue this Year",
+    "id": "1821",
+    "slug": "find-customers-with-positive-revenue-this-year",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124514,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Maximum Transaction Each Day",
+    "id": "1831",
+    "slug": "maximum-transaction-each-day",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124534,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "League Statistics",
+    "id": "1841",
+    "slug": "league-statistics",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124538,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Suspicious Bank Accounts",
+    "id": "1843",
+    "slug": "suspicious-bank-accounts",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124558,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Convert Date Format",
+    "id": "1853",
+    "slug": "convert-date-format",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124586,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Orders With Maximum Quantity Above Average",
+    "id": "1867",
+    "slug": "orders-with-maximum-quantity-above-average",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124598,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Calculate Special Bonus",
+    "id": "1873",
+    "slug": "calculate-special-bonus",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124602,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Group Employees of the Same Salary",
+    "id": "1875",
+    "slug": "group-employees-of-the-same-salary",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124632,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Latest Login in 2020",
+    "id": "1890",
+    "slug": "the-latest-login-in-2020",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124636,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Page Recommendations II",
+    "id": "1892",
+    "slug": "page-recommendations-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124666,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Count Salary Categories",
+    "id": "1907",
+    "slug": "count-salary-categories",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124686,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Leetcodify Friends Recommendations",
+    "id": "1917",
+    "slug": "leetcodify-friends-recommendations",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124690,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Leetcodify Similar Friends",
+    "id": "1919",
+    "slug": "leetcodify-similar-friends",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124720,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Confirmation Rate",
+    "id": "1934",
+    "slug": "confirmation-rate",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124730,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Users That Actively Request Confirmation Messages",
+    "id": "1939",
+    "slug": "users-that-actively-request-confirmation-messages",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124750,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Strong Friendship",
+    "id": "1949",
+    "slug": "strong-friendship",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124754,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "All the Pairs With the Maximum Number of Common Followers",
+    "id": "1951",
+    "slug": "all-the-pairs-with-the-maximum-number-of-common-followers",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124782,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Employees With Missing Information",
+    "id": "1965",
+    "slug": "employees-with-missing-information",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124796,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "First and Last Call On the Same Day",
+    "id": "1972",
+    "slug": "first-and-last-call-on-the-same-day",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124808,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Employees Whose Manager Left the Company",
+    "id": "1978",
+    "slug": "employees-whose-manager-left-the-company",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038124828,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Cutoff Score for Each School",
+    "id": "1988",
+    "slug": "find-cutoff-score-for-each-school",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124832,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Count the Number of Experiments",
+    "id": "1990",
+    "slug": "count-the-number-of-experiments",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124860,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Seniors and Juniors to Join the Company",
+    "id": "2004",
+    "slug": "the-number-of-seniors-and-juniors-to-join-the-company",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124872,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Seniors and Juniors to Join the Company II",
+    "id": "2010",
+    "slug": "the-number-of-seniors-and-juniors-to-join-the-company-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124892,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Accounts That Did Not Stream",
+    "id": "2020",
+    "slug": "number-of-accounts-that-did-not-stream",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124904,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Low-Quality Problems",
+    "id": "2026",
+    "slug": "low-quality-problems",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124934,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Accepted Candidates From the Interviews",
+    "id": "2041",
+    "slug": "accepted-candidates-from-the-interviews",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124954,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Category of Each Member in the Store",
+    "id": "2051",
+    "slug": "the-category-of-each-member-in-the-store",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124984,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Account Balance",
+    "id": "2066",
+    "slug": "account-balance",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038124996,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Winner University",
+    "id": "2072",
+    "slug": "the-winner-university",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125016,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Rich Customers",
+    "id": "2082",
+    "slug": "the-number-of-rich-customers",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125020,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Drop Type 1 Orders for Customers With Type 0 Orders",
+    "id": "2084",
+    "slug": "drop-type-1-orders-for-customers-with-type-0-orders",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125076,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Airport With the Most Traffic",
+    "id": "2112",
+    "slug": "the-airport-with-the-most-traffic",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125088,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Build the Equation",
+    "id": "2118",
+    "slug": "build-the-equation",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125136,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Passengers in Each Bus I",
+    "id": "2142",
+    "slug": "the-number-of-passengers-in-each-bus-i",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125158,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Passengers in Each Bus II",
+    "id": "2153",
+    "slug": "the-number-of-passengers-in-each-bus-ii",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125170,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Order Two Columns Independently",
+    "id": "2159",
+    "slug": "order-two-columns-independently",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125198,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Longest Winning Streak",
+    "id": "2173",
+    "slug": "longest-winning-streak",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125202,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Change in Global Rankings",
+    "id": "2175",
+    "slug": "the-change-in-global-rankings",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125250,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Finding the Topic of Each Post",
+    "id": "2199",
+    "slug": "finding-the-topic-of-each-post",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125262,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Number of Users That Are Eligible for Discount",
+    "id": "2205",
+    "slug": "the-number-of-users-that-are-eligible-for-discount",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125308,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Users With Two Purchases Within Seven Days",
+    "id": "2228",
+    "slug": "users-with-two-purchases-within-seven-days",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125312,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The Users That Are Eligible for Discount",
+    "id": "2230",
+    "slug": "the-users-that-are-eligible-for-discount",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125328,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Times a Driver Was a Passenger",
+    "id": "2238",
+    "slug": "number-of-times-a-driver-was-a-passenger",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125356,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Dynamic Pivoting of a Table",
+    "id": "2252",
+    "slug": "dynamic-pivoting-of-a-table",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125358,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Dynamic Unpivoting of a Table",
+    "id": "2253",
+    "slug": "dynamic-unpivoting-of-a-table",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125436,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Products With Three or More Orders in Two Consecutive Years",
+    "id": "2292",
+    "slug": "products-with-three-or-more-orders-in-two-consecutive-years",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125448,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Tasks Count in the Weekend",
+    "id": "2298",
+    "slug": "tasks-count-in-the-weekend",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125468,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Arrange Table by Gender",
+    "id": "2308",
+    "slug": "arrange-table-by-gender",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125480,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "The First Day of the Maximum Recorded Degree in Each City",
+    "id": "2314",
+    "slug": "the-first-day-of-the-maximum-recorded-degree-in-each-city",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125500,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product Sales Analysis IV",
+    "id": "2324",
+    "slug": "product-sales-analysis-iv",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125510,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Product Sales Analysis V",
+    "id": "2329",
+    "slug": "product-sales-analysis-v",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125530,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "All the Matches of the League",
+    "id": "2339",
+    "slug": "all-the-matches-of-the-league",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125544,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Compute the Rank as a Percentage",
+    "id": "2346",
+    "slug": "compute-the-rank-as-a-percentage",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125564,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Number of Unique Subjects Taught by Each Teacher",
+    "id": "2356",
+    "slug": "number-of-unique-subjects-taught-by-each-teacher",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "no"
+   }
+  },
+  {
+   "noteId": 1686038125576,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Generate the Invoice",
+    "id": "2362",
+    "slug": "generate-the-invoice",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125596,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Calculate the Influence of Each Salesperson",
+    "id": "2372",
+    "slug": "calculate-the-influence-of-each-salesperson",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125606,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Sort the Olympic Table",
+    "id": "2377",
+    "slug": "sort-the-olympic-table",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125628,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Change Null Values in a Table to the Previous Value",
+    "id": "2388",
+    "slug": "change-null-values-in-a-table-to-the-previous-value",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125640,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Employees With Deductions",
+    "id": "2394",
+    "slug": "employees-with-deductions",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125800,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Customers With Strictly Increasing Purchases",
+    "id": "2474",
+    "slug": "customers-with-strictly-increasing-purchases",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125812,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Form a Chemical Bond",
+    "id": "2480",
+    "slug": "form-a-chemical-bond",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125840,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Merge Overlapping Events in the Same Hall",
+    "id": "2494",
+    "slug": "merge-overlapping-events-in-the-same-hall",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038125860,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Concatenate the Name and the Profession",
+    "id": "2504",
+    "slug": "concatenate-the-name-and-the-profession",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126188,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Latest Salaries",
+    "id": "2668",
+    "slug": "find-latest-salaries",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126190,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Count Artist Occurrences On Spotify Ranking List",
+    "id": "2669",
+    "slug": "count-artist-occurrences-on-spotify-ranking-list",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126224,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Immediate Food Delivery III",
+    "id": "2686",
+    "slug": "immediate-food-delivery-iii",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126226,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-easy-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Bikes Last Time Used ",
+    "id": "2687",
+    "slug": "bikes-last-time-used",
+    "difficulty": "<font color='green'>Easy</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126228,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-medium-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Find Active Users",
+    "id": "2688",
+    "slug": "find-active-users",
+    "difficulty": "<font color='orange'>Medium</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  },
+  {
+   "noteId": 1686038126254,
+   "modelName": "Leetcode model+++++++++",
+   "tags": [
+    "database",
+    "difficulty-hard-tag",
+    "roadmap::99-off-roadmap"
+   ],
+   "fields": {
+    "title": "Consecutive Transactions with Increasing Amounts",
+    "id": "2701",
+    "slug": "consecutive-transactions-with-increasing-amounts",
+    "difficulty": "<font color='red'>Hard</font>",
+    "topics": "database",
+    "paid": "yes"
+   }
+  }
+ ]
+}
