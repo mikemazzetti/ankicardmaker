@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Math & Geometry"
+deck: "Interview::NeetCode 250::17 Math & Geometry"
 topic: "NeetCode 250 — Math & Geometry"
 tags: [ankicardmaker, neetcode250, math-geometry]
 note_type: Basic

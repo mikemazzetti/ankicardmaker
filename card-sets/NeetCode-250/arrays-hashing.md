@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Arrays & Hashing"
+deck: "Interview::NeetCode 250::01 Arrays & Hashing"
 topic: "NeetCode 250 — Arrays & Hashing"
 tags: [ankicardmaker, neetcode250, arrays-hashing]
 note_type: Basic

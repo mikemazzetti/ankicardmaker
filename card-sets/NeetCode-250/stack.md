@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Stack"
+deck: "Interview::NeetCode 250::04 Stack"
 topic: "NeetCode 250 — Stack"
 tags: [ankicardmaker, neetcode250, stack]
 note_type: Basic

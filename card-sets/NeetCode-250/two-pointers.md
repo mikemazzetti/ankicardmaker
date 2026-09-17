@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Two Pointers"
+deck: "Interview::NeetCode 250::02 Two Pointers"
 topic: "NeetCode 250 — Two Pointers"
 tags: [ankicardmaker, neetcode250, two-pointers]
 note_type: Basic

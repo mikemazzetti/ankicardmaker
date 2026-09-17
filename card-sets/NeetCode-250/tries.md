@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Tries"
+deck: "Interview::NeetCode 250::10 Tries"
 topic: "NeetCode 250 — Tries"
 tags: [ankicardmaker, neetcode250, tries]
 note_type: Basic

@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Bit Manipulation"
+deck: "Interview::NeetCode 250::18 Bit Manipulation"
 topic: "NeetCode 250 — Bit Manipulation"
 tags: [ankicardmaker, neetcode250, bit-manipulation]
 note_type: Basic

@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Linked List"
+deck: "Interview::NeetCode 250::06 Linked List"
 topic: "NeetCode 250 — Linked List"
 tags: [ankicardmaker, neetcode250, linked-list]
 note_type: Basic

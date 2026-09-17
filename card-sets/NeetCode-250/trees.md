@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Trees"
+deck: "Interview::NeetCode 250::07 Trees"
 topic: "NeetCode 250 — Trees"
 tags: [ankicardmaker, neetcode250, trees]
 note_type: Basic

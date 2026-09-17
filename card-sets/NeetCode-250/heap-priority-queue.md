@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Heap / Priority Queue"
+deck: "Interview::NeetCode 250::08 Heap - Priority Queue"
 topic: "NeetCode 250 — Heap / Priority Queue"
 tags: [ankicardmaker, neetcode250, heap-priority-queue]
 note_type: Basic

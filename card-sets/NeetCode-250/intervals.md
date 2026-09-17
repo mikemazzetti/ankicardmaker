@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Intervals"
+deck: "Interview::NeetCode 250::16 Intervals"
 topic: "NeetCode 250 — Intervals"
 tags: [ankicardmaker, neetcode250, intervals]
 note_type: Basic

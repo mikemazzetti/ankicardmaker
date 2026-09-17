@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Backtracking"
+deck: "Interview::NeetCode 250::09 Backtracking"
 topic: "NeetCode 250 — Backtracking"
 tags: [ankicardmaker, neetcode250, backtracking]
 note_type: Basic

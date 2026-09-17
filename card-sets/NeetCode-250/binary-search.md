@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Binary Search"
+deck: "Interview::NeetCode 250::05 Binary Search"
 topic: "NeetCode 250 — Binary Search"
 tags: [ankicardmaker, neetcode250, binary-search]
 note_type: Basic

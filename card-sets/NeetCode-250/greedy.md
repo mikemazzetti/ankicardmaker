@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Greedy"
+deck: "Interview::NeetCode 250::15 Greedy"
 topic: "NeetCode 250 — Greedy"
 tags: [ankicardmaker, neetcode250, greedy]
 note_type: Basic

@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Sliding Window"
+deck: "Interview::NeetCode 250::03 Sliding Window"
 topic: "NeetCode 250 — Sliding Window"
 tags: [ankicardmaker, neetcode250, sliding-window]
 note_type: Basic

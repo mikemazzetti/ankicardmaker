@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::2-D Dynamic Programming"
+deck: "Interview::NeetCode 250::14 2-D Dynamic Programming"
 topic: "NeetCode 250 — 2-D Dynamic Programming"
 tags: [ankicardmaker, neetcode250, 2-d-dynamic-programming]
 note_type: Basic

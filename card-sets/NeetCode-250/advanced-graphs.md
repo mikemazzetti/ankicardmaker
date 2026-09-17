@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Advanced Graphs"
+deck: "Interview::NeetCode 250::12 Advanced Graphs"
 topic: "NeetCode 250 — Advanced Graphs"
 tags: [ankicardmaker, neetcode250, advanced-graphs]
 note_type: Basic

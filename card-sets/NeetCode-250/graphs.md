@@ -1,5 +1,5 @@
 ---
-deck: "NeetCode 250::Graphs"
+deck: "Interview::NeetCode 250::11 Graphs"
 topic: "NeetCode 250 — Graphs"
 tags: [ankicardmaker, neetcode250, graphs]
 note_type: Basic
