@@ -78,18 +78,42 @@ Interview::NeetCode 250
   Every moved note gets a `roadmap::NN-topic` tag, so a misfiled card is easy to
   find (`tag:roadmap::13-1-d-dynamic-programming`) and re-file.
 
+## Status
+
+**Applied 2026-09-17**: 2,969 cards moved into 57 decks and tagged, verified against
+the live collection (0 notes left loose in `Interview::LeetCode`, 2,969 carrying a
+`roadmap::` tag), then synced to AnkiWeb.
+
 ## Running it
 
 ```bash
-python3 scripts/neetcode_roadmap.py --plan             # offline, writes the plan CSV
+python3 scripts/neetcode_roadmap.py --plan             # offline, from anki-export/
 python3 scripts/neetcode_roadmap.py --apply --dry-run  # live read, prints moves, writes nothing
 python3 scripts/neetcode_roadmap.py --apply            # moves and tags the notes
 ```
 
 `--apply` needs Anki open with the AnkiMCP add-on (see `SETUP.md`). It discovers the
-current deck roots at run time rather than trusting `anki-export/`, which predates the
-re-parenting under `Interview`. The full plan is in `neetcode-roadmap-plan.csv`.
+current deck roots at run time rather than trusting `anki-export/`, and writes the
+mapping it actually executed to `neetcode-roadmap-plan.csv`, so a move can be traced
+or undone per note.
 
-Moving notes leaves the old subdecks behind, empty — delete them from Anki's deck
-list once the result looks right. Re-run `scripts/export_anki.py` afterwards to
-refresh the snapshot.
+AnkiMCP nests umbrella-tool arguments under `params`, and `card_management.change_deck`
+takes **card** ids while `tag_management.add_tags` takes **note** ids — `notes_info`
+supplies both. It is re-runnable: already-numbered subdecks are skipped.
+
+## Leftovers
+
+The 36 old topic subdecks are still there, now empty. AnkiMCP has no delete-deck tool,
+so remove them from Anki's Debug Console (`Cmd+Shift+;`, run with `Cmd+Return`):
+
+```python
+import re
+gone = [d.id for d in mw.col.decks.all_names_and_ids()
+        if re.match(r"^Interview::(LeetCode::NeetCode150|NeetCode 250)::", d.name)
+        and not re.match(r"^\d\d ", d.name.split("::")[-1])
+        and not mw.col.find_cards(f'deck:"{d.name}"')]
+mw.col.decks.remove(gone); mw.reset(); len(gone)
+```
+
+Then sync, and re-run `scripts/export_anki.py` to refresh the snapshot (or let the
+daily GitHub Action do it from AnkiWeb).

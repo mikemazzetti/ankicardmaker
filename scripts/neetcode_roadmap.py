@@ -136,6 +136,11 @@ def target_subpath(bucket):
 
 
 # ------------------------------------------------------------------- MCP client
+# AnkiMCP groups operations under umbrella tools taking an "action":
+#   card_management {params:{action:"change_deck", card_ids:[...], deck:"..."}}  <- CARD ids
+#   tag_management  {params:{action:"add_tags",    note_ids:[...], tags:"a b"}}  <- NOTE ids
+# The action args are nested under "params" (a discriminated union), and change_deck
+# takes CARD ids while add_tags takes NOTE ids.
 _id = [0]
 
 
@@ -150,7 +155,7 @@ def _post(method, params=None, notify=False):
         URL, data=json.dumps(body).encode(),
         headers={"content-type": "application/json",
                  "accept": "application/json, text/event-stream"}, method="POST")
-    with urllib.request.urlopen(req, timeout=120) as r:
+    with urllib.request.urlopen(req, timeout=180) as r:
         raw = r.read().decode()
     if notify:
         return None
@@ -165,7 +170,10 @@ def call(name, arguments):
     r = _post("tools/call", {"name": name, "arguments": arguments})
     if "error" in r:
         raise SystemExit(f"TOOL ERROR {name}: {json.dumps(r['error'])}")
-    return r["result"].get("structuredContent", r["result"])
+    res = r["result"]
+    if res.get("isError"):
+        raise SystemExit(f"TOOL ERROR {name}: {json.dumps(res)[:500]}")
+    return res.get("structuredContent", res)
 
 
 def connect():
@@ -177,156 +185,130 @@ def connect():
             f"Cannot reach AnkiMCP at {URL} ({e}).\n"
             "Open Anki (with the AnkiMCP add-on) and re-run. See docs/SETUP.md.")
     _post("notifications/initialized", notify=True)
-    return [t["name"] for t in _post("tools/list")["result"]["tools"]]
+    tools = {t["name"] for t in _post("tools/list")["result"]["tools"]}
+    missing = {"list_decks", "find_notes", "notes_info",
+               "card_management", "tag_management"} - tools
+    if missing:
+        raise SystemExit(f"AnkiMCP is missing {sorted(missing)}. Available: {sorted(tools)}")
 
 
-def resolve(tools, *candidates):
-    """AnkiMCP tool names vary by version; match on suffix, then on substring."""
-    for c in candidates:
-        for t in tools:
-            if t == c or t.endswith("." + c) or t.endswith("_" + c):
-                return t
-    for c in candidates:
-        for t in tools:
-            if c.replace("_", "") in t.replace("_", "").replace(".", "").lower():
-                return t
-    raise SystemExit(f"No tool matching {candidates} in AnkiMCP. Available: {sorted(tools)}")
-
-
-def find_ids(tool, query):
+def find_note_ids(query):
     ids, offset = [], 0
     while True:
-        r = call(tool, {"query": query, "limit": 100, "offset": offset})
+        r = call("find_notes", {"query": query, "limit": 500, "offset": offset})
         batch = r.get("noteIds", [])
         ids.extend(batch)
         if not r.get("hasMore") or not batch:
             break
-        offset += 100
+        offset += len(batch)
     return ids
 
 
-def chunked(seq, n=100):
+def chunked(seq, n):
     for i in range(0, len(seq), n):
         yield seq[i:i + n]
 
 
-# ----------------------------------------------------------------------- --plan
-def plan_offline():
-    """Build the move plan from the committed anki-export snapshot."""
-    rows = []
-
-    for path in sorted(glob.glob(f"{EXPORT}/LeetCode/NeetCode150/*.json")):
-        d = json.load(open(path))
-        topic = ALIASES.get(os.path.basename(path)[:-5], os.path.basename(path)[:-5])
-        for n in d["notes"]:
-            rows.append((n["noteId"], n["fields"].get("title", ""), d["deck"],
-                         f"NeetCode150::{NUM[topic]}", topic, "official"))
-
-    for path in sorted(glob.glob(f"{EXPORT}/NeetCode 250/*.json")):
-        d = json.load(open(path))
-        topic = ALIASES.get(os.path.basename(path)[:-5], os.path.basename(path)[:-5])
-        for n in d["notes"]:
-            front = n["fields"].get("Front", "")[:60]
-            rows.append((n["noteId"], front, d["deck"], NUM[topic], topic, "official"))
-
-    flat = json.load(open(f"{EXPORT}/LeetCode.json"))
-    for n in flat["notes"]:
-        title = n["fields"].get("title", "")
-        bucket = classify(n["tags"], title)
-        rows.append((n["noteId"], title, flat["deck"],
-                     f"Extra::{target_subpath(bucket)}", bucket, "heuristic"))
-
-    os.makedirs(os.path.dirname(PLAN), exist_ok=True)
-    with open(PLAN, "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["noteId", "title", "current_deck", "target_subpath", "bucket", "source"])
-        w.writerows(rows)
-
-    print(f"Wrote {PLAN} — {len(rows)} notes")
-    counts = {}
-    for r in rows:
-        counts[r[3].split("::")[0]] = counts.get(r[3].split("::")[0], 0) + 1
-    for k, v in sorted(counts.items()):
-        print(f"  {k:14} {v:5}")
-    heur = [r for r in rows if r[5] == "heuristic"]
-    print(f"\n{len(heur)} notes bucketed heuristically "
-          f"(~79% agreement on the 150 with a known answer); "
-          f"{len(rows) - len(heur)} keep their official topic.")
+def notes_detail(note_ids):
+    """Yield (noteId, cardIds, tags, title) for each note."""
+    for batch in chunked(note_ids, 100):
+        for n in call("notes_info", {"notes": batch})["notes"]:
+            fields = n.get("fields") or {}
+            title = fields.get("title") or fields.get("Front") or ""
+            if isinstance(title, dict):
+                title = title.get("value", "")
+            yield n["noteId"], n.get("cards", []), n.get("tags", []), title
 
 
 # ---------------------------------------------------------------------- --apply
 def apply_live(dry_run):
-    tools = connect()
-    t_decks = resolve(tools, "list_decks")
-    t_find = resolve(tools, "find_notes")
-    t_info = resolve(tools, "notes_info", "note_info", "get_notes")
-    t_move = resolve(tools, "change_deck", "set_deck", "move_notes")
-    t_tag = resolve(tools, "add_tags", "add_note_tags")
-    print(f"tools: move={t_move} tag={t_tag} info={t_info}")
-
-    decks = [d["name"] for d in call(t_decks, {})["decks"]]
+    connect()
+    decks = [d["name"] for d in call("list_decks", {})["decks"]]
 
     def root_for(leaf):
-        exact = [d for d in decks if d == leaf or d.endswith("::" + leaf)]
-        if not exact:
+        hits = [d for d in decks if d == leaf or d.endswith("::" + leaf)]
+        if not hits:
             raise SystemExit(f"No deck named or ending in '{leaf}'. Decks: {sorted(decks)}")
-        return min(exact, key=len)
+        return min(hits, key=len)
 
     lc_root = root_for("LeetCode")
     nc150_root = root_for("NeetCode150")
     nc250_root = root_for("NeetCode 250")
-    print(f"roots: {lc_root!r}, {nc150_root!r}, {nc250_root!r}")
+    print(f"roots: {lc_root!r} | {nc150_root!r} | {nc250_root!r}\n")
 
-    moves = {}   # target deck -> [noteId]
-    tags = {}    # tag -> [noteId]
+    moves = {}   # target deck -> [card ids]
+    tags = {}    # tag -> [note ids]
+    rows = []    # executed plan, written to PLAN so the move is reversible
+    seen = 0
 
-    def stage(note_ids, deck, bucket):
-        if not note_ids:
-            return
-        moves.setdefault(deck, []).extend(note_ids)
-        tags.setdefault(tag_for(bucket), []).extend(note_ids)
+    def stage(deck, bucket, card_ids, note_ids):
+        if card_ids:
+            moves.setdefault(deck, []).extend(card_ids)
+        if note_ids:
+            tags.setdefault(tag_for(bucket), []).extend(note_ids)
 
-    # 1. NeetCode150 + NeetCode 250: renumber in place, topic already known.
+    # 1. NeetCode150 + NeetCode 250 -- topic already known, renumber only.
     for root in (nc150_root, nc250_root):
-        for sub in [d for d in decks if d.startswith(root + "::")]:
+        for sub in sorted(d for d in decks if d.startswith(root + "::")):
             leaf = sub[len(root) + 2:]
             if "::" in leaf or re.match(r"^\d\d ", leaf):
-                continue                       # nested or already numbered
+                continue                      # nested, or already renumbered
             topic = ALIASES.get(leaf, leaf)
             if topic not in NUM:
-                print(f"  ! skipping unrecognised subdeck {sub!r}")
+                print(f"  ! unrecognised subdeck, skipping: {sub!r}")
                 continue
-            stage(find_ids(t_find, f'deck:"{sub}" -deck:"{sub}::*"'),
-                  f"{root}::{NUM[topic]}", topic)
+            note_ids = find_note_ids(f'deck:"{sub}" -deck:"{sub}::*"')
+            cards, notes = [], []
+            for nid, cids, _t, title in notes_detail(note_ids):
+                cards.extend(cids)
+                notes.append(nid)
+                rows.append((nid, title[:80], sub, f"{root}::{NUM[topic]}", topic, "official"))
+            seen += len(notes)
+            stage(f"{root}::{NUM[topic]}", topic, cards, notes)
+            print(f"  {len(notes):5} {leaf:26} -> {NUM[topic]}")
 
-    # 2. The flat LeetCode deck: bucket from tags.
-    loose = find_ids(t_find, f'deck:"{lc_root}" -deck:"{lc_root}::*"')
-    print(f"{len(loose)} notes loose in {lc_root!r}")
-    for batch in chunked(loose):
-        for n in call(t_info, {"noteIds": batch})["notes"]:
-            title = (n.get("fields") or {}).get("title", "")
-            if isinstance(title, dict):
-                title = title.get("value", "")
-            bucket = classify(n.get("tags", []), title)
-            stage([n["noteId"]], f"{lc_root}::Extra::{target_subpath(bucket)}", bucket)
+    # 2. The flat LeetCode deck -- bucket from LeetCode topic tags.
+    loose = find_note_ids(f'deck:"{lc_root}" -deck:"{lc_root}::*"')
+    print(f"\n  {len(loose)} notes loose in {lc_root!r}, classifying...")
+    hist = {}
+    for nid, cids, ntags, title in notes_detail(loose):
+        bucket = classify(ntags, title)
+        hist[bucket] = hist.get(bucket, 0) + 1
+        seen += 1
+        dest = f"{lc_root}::Extra::{target_subpath(bucket)}"
+        rows.append((nid, title[:80], lc_root, dest, bucket, "heuristic"))
+        stage(dest, bucket, cids, [nid])
+    for b in ROADMAP + OFF_ROADMAP:
+        if hist.get(b):
+            print(f"  {hist[b]:5} {b}")
 
-    total = sum(len(v) for v in moves.values())
-    print(f"\n{total} notes -> {len(moves)} decks")
-    for deck in sorted(moves):
-        print(f"  {len(moves[deck]):5}  {deck}")
+    total_cards = sum(len(v) for v in moves.values())
+    print(f"\n{seen} notes / {total_cards} cards -> {len(moves)} decks")
+    os.makedirs(os.path.dirname(PLAN), exist_ok=True)
+    with open(PLAN, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["noteId", "title", "from_deck", "to_deck", "bucket", "source"])
+        w.writerows(rows)
+    print(f"executed plan -> {PLAN}")
     if dry_run:
+        for deck in sorted(moves):
+            print(f"  {len(moves[deck]):5}  {deck}")
         print("\n--dry-run: nothing written.")
         return
 
-    for deck, ids in sorted(moves.items()):
-        for batch in chunked(ids):
-            call(t_move, {"noteIds": batch, "deck": deck})
-        print(f"  moved {len(ids):5} -> {deck}")
+    for i, deck in enumerate(sorted(moves), 1):
+        ids = moves[deck]
+        for batch in chunked(ids, 200):
+            call("card_management", {"params": {"action": "change_deck",
+                                               "card_ids": batch, "deck": deck}})
+        print(f"  [{i:2}/{len(moves)}] moved {len(ids):5} cards -> {deck}")
     for tag, ids in sorted(tags.items()):
-        for batch in chunked(ids):
-            call(t_tag, {"noteIds": batch, "tags": tag})
-    print(f"\nDone. {total} notes moved, {len(tags)} roadmap tags applied.")
-    print("Old empty subdecks remain — delete them in Anki's deck list when happy.")
+        for batch in chunked(sorted(set(ids)), 200):
+            call("tag_management", {"params": {"action": "add_tags",
+                                              "note_ids": batch, "tags": tag}})
+    print(f"\nDone. {total_cards} cards moved, {len(tags)} roadmap tags applied.")
+    print("Old subdecks are now empty -- delete them from Anki's deck list when happy.")
+    print("Then: python3 scripts/export_anki.py   to refresh the snapshot.")
 
 
 if __name__ == "__main__":
