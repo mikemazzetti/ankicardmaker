@@ -103,17 +103,25 @@ supplies both. It is re-runnable: already-numbered subdecks are skipped.
 
 ## Leftovers
 
-The 36 old topic subdecks are still there, now empty. AnkiMCP has no delete-deck tool,
-so remove them from Anki's Debug Console (`Cmd+Shift+;`, run with `Cmd+Return`):
+The 17 empty `NeetCode150` topic subdecks were deleted on 2026-09-17. AnkiMCP has no
+delete-deck tool (`filtered_deck.delete` refuses a normal deck), so it was done from
+Anki's Debug Console (`Cmd+Shift+;`, run with `Cmd+Return`).
+
+The same 17 are still sitting empty under `Interview::NeetCode 250::`. To drop those,
+change the prefix in the first line and run the same snippet:
 
 ```python
 import re
-gone = [d.id for d in mw.col.decks.all_names_and_ids()
-        if re.match(r"^Interview::(LeetCode::NeetCode150|NeetCode 250)::", d.name)
-        and not re.match(r"^\d\d ", d.name.split("::")[-1])
-        and not mw.col.find_cards(f'deck:"{d.name}"')]
-mw.col.decks.remove(gone); mw.reset(); len(gone)
+_t=[d for d in mw.col.decks.all_names_and_ids()
+    if d.name.startswith("Interview::NeetCode 250::")
+    and not re.match(r"^\d\d ", d.name.split("::")[-1])]
+_e=[d for d in _t if not mw.col.find_cards('deck:"'+d.name+'"')]
+mw.col.decks.remove([d.id for d in _e])
+mw.reset()
+print(len(_e), "deleted;", len(_t)-len(_e), "skipped as non-empty")
 ```
+
+It only removes decks that hold no cards, and reports anything it skipped.
 
 Then sync, and re-run `scripts/export_anki.py` to refresh the snapshot (or let the
 daily GitHub Action do it from AnkiWeb).
