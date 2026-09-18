@@ -1,0 +1,241 @@
+{
+ "deck": "CS3357A Networks::Week 1::Protocol layers",
+ "note_count": 18,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872920,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why do we use layering to organize networks? (two reasons from the slides)",
+    "Back": "1) Explicit structure allows identification of and relationships among a complex system's pieces (a layered reference model for discussion). 2) Modularization eases maintenance and updating: a change in one layer's service implementation is transparent to the rest of the system.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872922,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the air-travel analogy, what are the five layers/services?",
+    "Back": "Ticketing service, baggage service, gate service, runway (takeoff/landing) service, and airplane routing service.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872924,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does each layer implement its service?",
+    "Back": "Via its own internal-layer actions, and by relying on the services provided by the layer below it.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872926,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Each layer implements a service via its own {{c1::internal-layer actions}} and by relying on services provided by the {{c2::layer below}}.",
+    "Extra": "",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872929,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give a potential drawback of layering ('layering considered harmful').",
+    "Back": "Layers may duplicate functionality (e.g., error recovery both per-link and end-to-end), or one layer may need information available only in another layer, violating separation.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872931,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the five layers of the Internet protocol stack, top to bottom.",
+    "Back": "Application, transport, network, link, physical.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872933,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Internet protocol stack (top to bottom): {{c1::application}}, {{c2::transport}}, {{c3::network}}, {{c4::link}}, {{c5::physical}}.",
+    "Extra": "",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872939,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Application layer: role and example protocols.",
+    "Back": "Supports network applications. Examples: HTTP, SMTP, IMAP (also DNS). Its packet is a message.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872941,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Transport layer: role and example protocols.",
+    "Back": "Process-to-process data transfer. Examples: TCP (connection-oriented, reliable, flow and congestion control) and UDP (connectionless, no-frills). Its packet is a segment.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872943,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Network layer: role and example protocols.",
+    "Back": "Routing of datagrams from source host to destination host. Examples: IP and routing protocols. Its packet is a datagram.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872945,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Link layer: role and example protocols.",
+    "Back": "Data transfer between neighbouring network elements (one hop). Examples: Ethernet, 802.11 (WiFi), PPP. Its packet is a frame.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872947,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The physical layer moves the individual {{c1::bits 'on the wire'}} from one node to the next; its protocol depends on the medium.",
+    "Extra": "",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872949,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Application-layer protocols include {{c1::HTTP, SMTP, IMAP}}; transport: {{c2::TCP, UDP}}; network: {{c3::IP, routing protocols}}; link: {{c4::Ethernet, 802.11 (WiFi), PPP}}.",
+    "Extra": "",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872954,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Name the packet (PDU) at each layer: application, transport, network, link.",
+    "Back": "Message (application), segment (transport), datagram (network), frame (link). The physical layer carries bits.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872956,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Text": "PDU names: application = {{c1::message}}, transport = {{c2::segment}}, network = {{c3::datagram}}, link = {{c4::frame}}.",
+    "Extra": "",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872961,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which layers are TCP, IP, HTTP, Ethernet, and UDP in?",
+    "Back": "TCP: transport. IP: network. HTTP: application. Ethernet: link. UDP: transport.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872963,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How many layers does the ISO/OSI reference model have, and which two are not in the Internet stack?",
+    "Back": "Seven. The presentation layer (data interpretation: encryption, compression, machine conventions) and the session layer (delimiting, synchronization, checkpointing/recovery) sit between application and transport; the Internet leaves these to the application.",
+    "Topic": "Protocol layers"
+   }
+  },
+  {
+   "noteId": 1789678872965,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Protocol_layers",
+    "week1"
+   ],
+   "fields": {
+    "Text": "OSI 7-layer model, top to bottom: application, {{c1::presentation}}, {{c2::session}}, transport, network, {{c3::data link}}, physical.",
+    "Extra": "",
+    "Topic": "Protocol layers"
+   }
+  }
+ ]
+}

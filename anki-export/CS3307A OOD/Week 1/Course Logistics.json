@@ -1,0 +1,215 @@
+{
+ "deck": "CS3307A OOD::Week 1::Course Logistics",
+ "note_count": 16,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839126,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the four assessments in CS3307A and their weights?",
+    "Back": "Project Proposal 20%, Intermediate Design and Partial Implementation 30%, Final Project Submission 30%, Final Examination 20%.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839128,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When is the CS3307A Project Proposal due?",
+    "Back": "Tuesday, October 6, 2026 at 11:59 PM (20%).",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839130,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When is the Intermediate Design and Partial Implementation due?",
+    "Back": "Tuesday, November 10, 2026 at 11:59 PM (30%).",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839132,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When is the Final Project Submission due?",
+    "Back": "Tuesday, December 8, 2026 at 11:59 PM (30%).",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839134,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When is the CS3307A final exam period?",
+    "Back": "December 11-22, 2026, scheduled by the Registrar (20%).",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839136,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Each CS3307A project deliverable has an automatic {{c1::48-hour}} no-late-penalty period after the deadline.",
+    "Extra": "It is not a replacement due date; after it closes you need approved Academic Consideration.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839138,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The CS3307A project is worth {{c1::80%}} of the grade and must be completed in {{c2::pairs of two students}}.",
+    "Extra": "",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839141,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What must Deliverable 1 (Proposal) contain?",
+    "Back": "Problem Statement, System Features, Design Approach, Initial UML Class Diagram.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839143,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What must Deliverable 2 (Intermediate Design and Partial Implementation) contain?",
+    "Back": "Complete UML Diagrams, Use Case Descriptions, Partial Implementation in C++, Design Rationale Document.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839145,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What must Deliverable 3 (Final Submission) contain?",
+    "Back": "Complete System Implementation, Final UML Diagrams, Comprehensive Documentation.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839147,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In what format must UML diagrams be submitted, and through which platforms are deliverables submitted?",
+    "Back": "PDF format; through Brightspace and GitHub.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839149,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What question types are on the CS3307A final exam, and what does the instructor emphasize?",
+    "Back": "Mix of multiple-choice, short answer, and problem-solving; 'lots and lots of refactoring' and writing code by hand.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839151,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which testing frameworks does CS3307A use?",
+    "Back": "GoogleTest and Google Mock (C++).",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839153,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Is generative AI allowed in CS3307A?",
+    "Back": "Permitted with disclosure for project work; strictly prohibited on the final examination.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839155,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Who teaches CS3307A and what is their research area?",
+    "Back": "Dr. Umair Rehman, Director of the Human-Centered Computing Group; human-centered AI, games, human-computer interaction.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789678839157,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "CS3307A has no Tuesday/Thursday classes during Fall Reading Week, October {{c1::13}} and October {{c2::15}}, 2026.",
+    "Extra": "",
+    "Topic": "Course Logistics"
+   }
+  }
+ ]
+}

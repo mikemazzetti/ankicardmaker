@@ -1,0 +1,163 @@
+{
+ "deck": "CS3307A OOD::Week 1::OODA Basics",
+ "note_count": 12,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839196,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is Object-Oriented Design and Analysis (OODA)?",
+    "Back": "Designing a system using objects that represent real-world entities and interact to solve a problem, structuring the system to be modular, flexible, and easy to maintain.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839198,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is encapsulation (Week 1 preview definition)?",
+    "Back": "Bundling data (attributes) and methods (behaviors) into a single unit (the object) and restricting direct access to some of the object's components.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839200,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Inheritance}} allows one class to derive properties and behaviors from another class.",
+    "Extra": "",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839202,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Polymorphism}} allows one interface to be used for different data types or classes (e.g., function overloading, overriding).",
+    "Extra": "",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839204,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Compile-time polymorphism includes {{c1::function overloading}} and {{c2::operator overloading}}.",
+    "Extra": "From the speaker notes on the Polymorphism advantage slide.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839207,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the three steps for designing classes and objects?",
+    "Back": "1. Identify objects; 2. Define attributes and methods; 3. Determine relationships.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839209,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In an online shopping system, what candidate objects do the slides identify?",
+    "Back": "<code>Customer</code>, <code>Product</code>, <code>Order</code>, <code>ShoppingCart</code>.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839211,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What attributes and methods might a <code>Product</code> class have?",
+    "Back": "Attributes <code>name</code>, <code>price</code>, <code>stockQuantity</code>; methods <code>getPrice()</code>, <code>updateStock()</code>.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839213,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define association (Week 1) with the slide example.",
+    "Back": "Objects know about each other; e.g., a <code>Customer</code> has an <code>Order</code>.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839215,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define aggregation (Week 1) with the slide example.",
+    "Back": "One object contains or is composed of other objects; e.g., an <code>Order</code> contains multiple <code>Product</code> objects.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839217,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define inheritance as a relationship (Week 1) with the slide example.",
+    "Back": "One object is a specialized version of another; e.g., <code>Admin</code> and <code>RegularUser</code> inheriting from <code>User</code>.",
+    "Topic": "OODA Basics"
+   }
+  },
+  {
+   "noteId": 1789678839219,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OODA_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Relationship types in OODA: {{c1::Association}} = objects know about each other; {{c2::Aggregation}} = one object contains others; {{c3::Inheritance}} = one object is a specialized version of another.",
+    "Extra": "",
+    "Topic": "OODA Basics"
+   }
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "deck": "CS3357A Networks::Week 1::Throughput",
+ "note_count": 9,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872900,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define throughput, and distinguish instantaneous from average throughput.",
+    "Back": "The rate (bits per unit time) at which bits are delivered from sender to receiver. Instantaneous: rate at a given point in time. Average: rate over a longer period (F bits in T seconds gives F/T).",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872902,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Throughput for a server-to-client path with link rates Rs and Rc?",
+    "Back": "min(Rs, Rc): the rate of the bottleneck link. If Rs &lt; Rc throughput is Rs; if Rs &gt; Rc it is Rc.",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872904,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Text": "End-to-end throughput over links Rs and Rc is {{c1::min(Rs, Rc)}}, the rate of the {{c2::bottleneck link}}; for N links in series it is {{c3::min(R1, ..., RN)}}.",
+    "Extra": "",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872908,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The {{c1::bottleneck link}} is the link on the end-to-end path that constrains (limits) the end-to-end throughput.",
+    "Extra": "",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872910,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: F = 32 million bits, Rs = 2 Mbps, Rc = 1 Mbps. Throughput and transfer time?",
+    "Back": "Throughput = min(2, 1) = 1 Mbps; T = 32 x 10^6 / 10^6 = 32 s.",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872912,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: server access link 10 Mbps, client access link 4 Mbps, uncongested core, 40 Mbit file. Throughput and time?",
+    "Back": "Throughput = min(10, 4) = 4 Mbps; T = 40 x 10^6 / 4 x 10^6 = 10 s.",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872914,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Text": "10 connections fairly share a backbone link R; server links Rs, client links Rc. Per-connection throughput = {{c1::min(Rc, Rs, R/10)}}.",
+    "Extra": "",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872916,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric (slide): Rs = 2 bps, Rc = 3 bps, R = 6 bps shared by 10 connections. Per-connection throughput?",
+    "Back": "min(3, 2, 6/10) = 0.6 bps; the shared backbone link is the bottleneck.",
+    "Topic": "Throughput"
+   }
+  },
+  {
+   "noteId": 1789678872918,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Throughput",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In practice, which link is usually the bottleneck for an Internet connection?",
+    "Back": "The access links (Rc or Rs), because the Internet core is over-provisioned with high-speed links.",
+    "Topic": "Throughput"
+   }
+  }
+ ]
+}

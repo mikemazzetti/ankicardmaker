@@ -1,0 +1,124 @@
+{
+ "deck": "CS3357A Networks::Week 1::History",
+ "note_count": 9,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678873002,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Who published the first work on packet switching, and when?",
+    "Back": "Leonard Kleinrock at MIT, 1961 (using queueing theory to show packet switching's effectiveness for bursty traffic). Paul Baran (RAND) and Donald Davies (NPL, UK) developed the idea independently.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873004,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What was the ARPAnet, and when and where was its first packet switch installed?",
+    "Back": "The first packet-switched computer network and direct ancestor of the Internet; the first packet switch was installed at UCLA in 1969 (four nodes by end of 1969).",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873006,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The first packet switch of the ARPAnet was installed at {{c1::UCLA}} in {{c2::1969}}; the first email program was written by {{c3::Ray Tomlinson}} in 1972.",
+    "Extra": "",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873010,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Who designed the architecture for interconnecting networks ('internetting') that led to TCP/IP?",
+    "Back": "Vinton Cerf and Robert Kahn (1974); TCP, UDP and IP were conceptually in place by the end of the 1970s.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873012,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What was ALOHAnet's contribution, and who built on it to create Ethernet?",
+    "Back": "ALOHAnet (Hawaii, Abramson) introduced the first multiple-access protocol for a shared radio medium; Metcalfe and Boggs built on it to develop Ethernet (1976).",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873014,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::TCP/IP}} was officially deployed on ARPAnet on {{c2::January 1, 1983}}, replacing {{c3::NCP}}.",
+    "Extra": "",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873018,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Who invented the World Wide Web, where, and what were its four key components?",
+    "Back": "Tim Berners-Lee at CERN, 1989-1991: HTML, HTTP, a Web server, and a browser.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873020,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The Web was invented by {{c1::Tim Berners-Lee}} at {{c2::CERN}} (1989-1991).",
+    "Extra": "Its four components: HTML, HTTP, a web server, a browser.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789678873023,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What were the four 'killer applications' of the Internet by the end of the 1990s?",
+    "Back": "Email, the Web, instant messaging, and peer-to-peer file sharing (Napster).",
+    "Topic": "History"
+   }
+  }
+ ]
+}

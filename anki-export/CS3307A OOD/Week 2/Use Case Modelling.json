@@ -1,0 +1,254 @@
+{
+ "deck": "CS3307A OOD::Week 2::Use Case Modelling",
+ "note_count": 19,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839501,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What gap does use case modelling bridge?",
+    "Back": "Between what the system needs to do (requirements) and how the system will achieve it (design).",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839503,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The four elements of a use case model: {{c1::System}}, {{c2::Actors}}, {{c3::Use Cases}}, {{c4::Relationships}}.",
+    "Extra": "",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839508,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In use case modelling, what is the 'system'?",
+    "Back": "What you are developing (game, app, website, software); every system has a goal.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839510,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is an actor?",
+    "Back": "Something that uses the system to achieve a goal: usually a person, but also an organization or external device.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839512,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does it mean that actors are 'categorical' and 'external'?",
+    "Back": "Categorical: they are roles, not individuals (Person, not Michael; Bank, not RBC). External: they sit outside the system boundary.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839514,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Primary actor vs secondary actor?",
+    "Back": "Primary actor initiates system use; secondary actor is reactionary (responds to the system).",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839516,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is a use case?",
+    "Back": "An action to accomplish a certain task within a system, drawn as an oval with a verb phrase.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839518,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Use case relationship: Association.",
+    "Back": "A connection between an actor and a use case (solid line).",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839520,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Use case relationship: Include.",
+    "Back": "A use case always includes another; dashed arrow labelled <code>&lt;&lt;include&gt;&gt;</code> from the base use case to the included one.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839522,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Use case relationship: Extend.",
+    "Back": "A use case optionally adds behavior to another; dashed arrow labelled <code>&lt;&lt;extend&gt;&gt;</code> from the extending use case to the base.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839524,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Use case relationship: Generalization.",
+    "Back": "A specialized use case inherits from another; hollow-headed arrow from the specialized use case to the general one.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839526,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the Banking App diagram, who are the actors?",
+    "Back": "Customer (primary, left) and Bank (secondary, right).",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839528,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the Banking App diagram, what does 'Log in' include and what extends it?",
+    "Back": "Includes 'Verify password'; extended by 'Display login error'.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839530,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the Banking App diagram, which use cases include 'Verify sufficient funds'?",
+    "Back": "'Transfer funds' and 'Make payment'.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839532,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the Banking App diagram, which use cases specialize 'Make payment'?",
+    "Back": "'Pay from checking' and 'Pay from savings' (generalization).",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839534,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What techniques identify use cases?",
+    "Back": "Analyze user interactions from gathered requirements; focus on user goals (e.g., 'Borrow Book', 'Return Book'); look for recurring activities involving the system.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839536,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How should use cases be prioritized?",
+    "Back": "Most important/high-impact first ('Borrow Book' over 'Renew Book'); consider risk—high-risk or complex use cases may need to be addressed earlier.",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839538,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Use case relationships: {{c1::Include}} = always includes another; {{c2::Extend}} = optionally adds behavior; {{c3::Generalization}} = specialized use case inherits from another.",
+    "Extra": "",
+    "Topic": "Use Case Modelling"
+   }
+  },
+  {
+   "noteId": 1789678839542,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Use_Case_Modelling",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A {{c1::primary}} actor initiates system use; a {{c2::secondary}} actor is reactionary.",
+    "Extra": "",
+    "Topic": "Use Case Modelling"
+   }
+  }
+ ]
+}

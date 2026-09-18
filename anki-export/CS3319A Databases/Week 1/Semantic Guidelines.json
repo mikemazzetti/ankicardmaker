@@ -1,0 +1,124 @@
+{
+ "deck": "CS3319A Databases::Week 1::Semantic Guidelines",
+ "note_count": 9,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991676,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Entity names should be all {{c1::singular}} (preferred) or all plural, but never {{c2::mixed}}.",
+    "Extra": "",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991679,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In which directions should relationships read on an ER diagram?",
+    "Back": "Left to right and top to bottom, using meaningful names.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991681,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is wrong with the diagram PATIENT --- Treats --- DOCTORS --- Is employee by --- NURSE?",
+    "Back": "'Doctors' is plural while others are singular; 'Treats' reads backwards (should be IS TREATED BY); 'Is employee by' is wrong and reads backwards (should be EMPLOYS).",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991683,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the cardinalities of Patient IS TREATED BY Doctor and Doctor EMPLOYS Nurse (speaker notes)?",
+    "Back": "Patient-Doctor: many to many. Doctor-Nurse: one to many.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991685,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What kinds of names does the instructor tell you to avoid?",
+    "Back": "Meaningless names like 'item one' or 'object two'; use meaningful names.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991687,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Is reading left-to-right and top-to-bottom mandatory?",
+    "Back": "No: 'if possible... it's not a big deal if you can't'. It just makes the diagram easier to explain to users. Singular names, however, are required in this course.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991689,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Case study: 'Department works for employee' reads badly, so the instructor renames the relationship '{{c1::has}}' (department has employee).",
+    "Extra": "",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991691,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give two ways to fix 'Patient treats Doctor'.",
+    "Back": "Rename the relationship IS TREATED BY, or swap the positions of DOCTOR and PATIENT so 'treats' reads left to right.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789692991693,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the doctor's-office practice example, what participation did the instructor assign to Doctor EMPLOYS Nurse?",
+    "Back": "Total on both sides: every doctor has a nurse helping them and every nurse works for some doctor; one doctor per nurse assuming a single-doctor office.",
+    "Topic": "Semantic Guidelines"
+   }
+  }
+ ]
+}

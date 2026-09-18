@@ -1,0 +1,345 @@
+{
+ "deck": "CS3319A Databases::Week 2::Keys",
+ "note_count": 26,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991809,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define 'key' of a relation.",
+    "Back": "A combination of attributes (or a single attribute) that can be used to enforce that no two tuples can be identical.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991811,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "For the table SSN | LastName | FirstName (34 Simpson Homer; 56 Simpson Marge; 78 Smithers Marge; 99 Simpson Homer), what is the key?",
+    "Back": "Likely SSN alone (also SSN+FirstName, SSN+LastName, or all three). NOT LastName, FirstName, or LastName+FirstName (Simpson Homer appears twice).",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991813,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A table LastName | FirstName with rows Simpson Homer, Simpson Marge, Smithers Marge, Simpson Homer: what is the key?",
+    "Back": "There is no key: rows 1 and 4 are identical, which Codd's model does not even allow. If the last row were Smithers Homer, (LastName, FirstName) could be a key in that snapshot, but the instructor calls it 'just a snapshot in time' and 'not a good key': the next Homer Smithers would break it.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991815,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Table Attribute1|Attribute2|Attribute3 with rows (a1,b1,c1),(a1,b2,c1),(a2,b1,c2),(a2,b2,c2): possible keys?",
+    "Back": "(Attribute1, Attribute2) or (Attribute2, Attribute3) or all three. No single attribute works; (Attribute1, Attribute3) fails because (a1,c1) repeats.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991817,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A superkey is {{c1::any}} set of attributes that enforces that no two tuples are alike.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991819,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A candidate key is a {{c1::minimal}} superkey: no {{c2::proper subset}} of it is itself a superkey.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991822,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The primary key is the one candidate key we pick, signified by {{c1::underlining}} it; it may be {{c2::composite}} (two or more attributes).",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991825,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define 'foreign key'.",
+    "Back": "An attribute or set of attributes in one relation that matches the candidate key of some other (possibly the same) relation.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991827,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A {{c1::superkey}} is any attribute set that makes tuples unique; a {{c2::candidate key}} is a minimal superkey; the {{c3::primary key}} is the chosen candidate key; a {{c4::foreign key}} matches the candidate key of another (or the same) relation.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991832,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give a set of attributes that is a superkey but NOT a candidate key of the Attribute1/2/3 table.",
+    "Back": "(Attribute1, Attribute2, Attribute3): removing Attribute3 still leaves a superkey, so it is not minimal.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991834,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Department(DeptID, DeptName, MgrEmpID, MgrStartDate) and Employee(EmpID, LastName, FirstName, DeptID, Sex): what are the foreign keys?",
+    "Back": "Employee.DeptID references Department.DeptID; Department.MgrEmpID references Employee.EmpID.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991836,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Car table (LicenseNum, EngineSerialNum, Make, Model, Year): give 3 superkeys.",
+    "Back": "LicenseNum; EngineSerialNum; and a combination such as (LicenseNum, Make) or (EngineSerialNum, Make). Any set containing either candidate key is a superkey; Make alone is not, because Make repeats.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991838,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "For the car table the candidate keys are {{c1::LicenseNum}} and {{c2::EngineSerialNum}}; the slide chooses {{c3::EngineSerialNum}} as primary key, though the instructor says the choice depends on what the table is for.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991842,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why is (Make, Model, Year) not a key of the car table?",
+    "Back": "Ford Mustang 98 appears twice.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991844,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "State the two key constraints.",
+    "Back": "Keys must be unique; the primary key must be non-null (the entity integrity constraint). Most DBMSs enforce both.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991846,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The rule that the primary key must be non-null is called the {{c1::entity integrity constraint}}.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991848,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Key constraints and domain constraints apply to what scope? What kind of constraint applies between tables?",
+    "Back": "To individual (single) tables; referential integrity constraints apply to relationships between tables.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991850,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "On the course slides, foreign keys are marked with {{c1::an asterisk}} in the column heading.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991852,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give the instructor's plain-language definition of a key.",
+    "Back": "An attribute, or more than one attribute, that forces each row to be unique, just like your student number.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991854,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Keys video objectives: explain the importance of a key; identify key attributes in a table; tell if {{c1::inserting a new row}} will cause a key to fail; know the terms {{c2::primary, foreign, candidate and super}} key.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991857,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In Codd's relational model, why is the LastName/FirstName table with two identical Simpson Homer rows not even allowed?",
+    "Back": "Because no two rows in a relation may be identical; the table has no working key at all.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991859,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the instructor describe choosing between LicenseNum and EngineSerialNum as the car table's primary key?",
+    "Back": "It depends on context: to track who drives which car, use LicenseNum; a mechanic or dealer would use EngineSerialNum. The designer decides what the table is for.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991861,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The primary key is {{c1::always a candidate key}}: a minimal set of attributes that the database designer picks to identify rows from then on.",
+    "Extra": "",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991863,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does a DBMS do if you try to store a null primary key or a duplicate primary key?",
+    "Back": "It refuses. DBMSs enforce both uniqueness and NOT NULL automatically, as long as you have identified the primary key.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991865,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give the instructor's phrasing for what makes a superkey a candidate key.",
+    "Back": "'I don't include any extra attributes; I just include the minimum number of attributes that will force uniqueness.' Attribute3 was not needed alongside Attribute1 and Attribute2, so all three form a superkey but not a candidate key.",
+    "Topic": "Keys"
+   }
+  },
+  {
+   "noteId": 1789692991867,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Keys",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the instructor describe a foreign key in plain words?",
+    "Back": "An attribute inside a table that references the primary key from another table, e.g. DeptID 11 in Employee refers to DeptID 11 in Department.",
+    "Topic": "Keys"
+   }
+  }
+ ]
+}

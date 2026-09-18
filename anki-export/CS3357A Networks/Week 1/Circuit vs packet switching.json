@@ -1,0 +1,228 @@
+{
+ "deck": "CS3357A Networks::Week 1::Circuit vs packet switching",
+ "note_count": 17,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872778,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define circuit switching.",
+    "Back": "End-to-end resources (link capacity, buffers) are allocated to and reserved for a 'call' between source and destination for its duration; dedicated resources, no sharing, guaranteed circuit-like performance; used in traditional telephone networks.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872780,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In circuit switching, what happens to a circuit segment when the call is not using it?",
+    "Back": "It sits idle: no sharing, so reserved but unused capacity is wasted (e.g., silent periods in a phone call).",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872782,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Circuit switching: resources are {{c1::reserved}} for the call, giving {{c2::guaranteed}} performance, but idle circuit capacity is {{c3::wasted (no sharing)}}; commonly used in {{c4::traditional telephone networks}}.",
+    "Extra": "",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872787,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A circuit on a link is implemented with either {{c1::frequency division multiplexing (FDM)}} or {{c2::time division multiplexing (TDM)}}.",
+    "Extra": "",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872790,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe FDM.",
+    "Back": "The link's optical/electromagnetic frequency range is divided into narrow frequency bands; each call gets its own band for the whole call and transmits at the max rate of that narrow band, all the time.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872792,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe TDM.",
+    "Back": "Time is divided into frames, each into slots; each call gets the same periodic slot(s) in every frame and may transmit at the max rate of the full (wider) band, but only during its slot.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872794,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Text": "FDM: each call gets its own narrow {{c1::frequency band}} all the time. TDM: each call gets the whole band only during its periodic {{c2::time slot(s)}}.",
+    "Extra": "",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872797,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: a 1.536 Mbps TDM link has 24 slots. What is the rate of one circuit, and how long to send 640,000 bits if circuit setup takes 500 ms?",
+    "Back": "One circuit = 1.536 Mbps / 24 = 64 kbps. Transmission = 640,000 / 64,000 = 10 s. Total = 10 s + 0.5 s = 10.5 s (independent of number of links).",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872799,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Slide example: 1 Gb/s link, each user needs 100 Mb/s when active and is active 10% of the time. How many users under circuit switching?",
+    "Back": "1 Gb/s / 100 Mb/s = 10 users (100 Mb/s must be reserved per user at all times).",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872801,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Slide example: same 1 Gb/s link with packet switching and 35 users. What is the probability that more than 10 users are active simultaneously, and how is it computed?",
+    "Back": "About 0.0004. It is the binomial tail: sum for k = 11..35 of C(35,k) (0.1)^k (0.9)^(35-k). So 35 users are served with essentially no delay 99.96% of the time.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872803,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In the 1 Gb/s example, circuit switching supports {{c1::10}} users while packet switching supports {{c2::35}} users with probability of more than 10 active being less than {{c3::0.0004}}.",
+    "Extra": "",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872807,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What happens in the 35-user example if there are more than 35 users?",
+    "Back": "The probability that more than 10 are simultaneously active grows, so overload becomes common: queues build at the link, causing delay and packet loss.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872809,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Textbook example: 10 users share a 1 Mbps link; one user sends 1,000 packets of 1,000 bits while the others are idle. Time under TDM (10 slots) vs packet switching?",
+    "Back": "TDM: the user gets 1/10 of the link, so 1 Mbit takes 10 s. Packet switching: the user sends at the full 1 Mbps and finishes in 1 s.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872811,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is packet switching good for 'bursty' data?",
+    "Back": "Bursty sources sometimes have data and sometimes not; packet switching allocates link capacity on demand (resource sharing) and is simpler with no call setup, so idle capacity is used by others.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872813,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the main drawback of packet switching, and what does it require?",
+    "Back": "Excessive congestion is possible: packet delay and loss from buffer overflow. It requires protocols for reliable data transfer and congestion control.",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872815,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Packet switching is great for {{c1::bursty}} data (resource sharing, no call setup) but suffers possible {{c2::congestion}} (delay and loss), requiring protocols for {{c3::reliable data transfer and congestion control}}.",
+    "Extra": "",
+    "Topic": "Circuit vs packet switching"
+   }
+  },
+  {
+   "noteId": 1789678872819,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Circuit_vs_packet_switching",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the restaurant analogy for circuit vs packet switching.",
+    "Back": "Circuit switching = restaurant requiring reservations (hassle up front, guaranteed table). Packet switching = no reservations (no hassle, but you may have to wait for a table).",
+    "Topic": "Circuit vs packet switching"
+   }
+  }
+ ]
+}

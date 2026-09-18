@@ -1,0 +1,176 @@
+{
+ "deck": "CS3357A Networks::Week 1::Network core",
+ "note_count": 13,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872750,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The network core is a {{c1::mesh of interconnected routers}} that forwards packets from router to router along the path from source to destination.",
+    "Extra": "",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872752,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In packet switching each packet is transmitted at the {{c1::full link capacity (transmission rate R)}} of the link, not a fraction of it.",
+    "Extra": "",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872754,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does store-and-forward mean?",
+    "Back": "The entire packet must arrive at a router (be stored) before its first bit can be transmitted on the next link.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872756,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Store-and-forward: the {{c1::entire packet}} must arrive at the router before it can be transmitted on the next link; end-to-end delay over one router (two links) is {{c2::2L/R}} ignoring propagation.",
+    "Extra": "",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872759,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Transmission delay of an L-bit packet on a link of rate R: d_trans = {{c1::L / R}} seconds.",
+    "Extra": "Bits divided by bits per second.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872761,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Slide example: L = 10 Kbits, R = 100 Mbps gives a one-hop transmission delay of {{c1::0.1 ms}}.",
+    "Extra": "10,000 / 100,000,000 = 1 x 10^-4 s.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872763,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "One packet over N links each of rate R, store-and-forward, no propagation/processing delay: end-to-end delay = {{c1::N * L / R}}.",
+    "Extra": "",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872765,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: a 5,000-bit packet crosses 3 links of 2 Mbps each (2 routers), no propagation/processing delay. End-to-end delay?",
+    "Back": "3 x 5,000 / 2,000,000 = 3 x 2.5 ms = 7.5 ms.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872767,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Sending P packets over N links (each rate R) with store-and-forward takes how long?",
+    "Back": "(N + P - 1) * L / R, because transmissions pipeline: the source sends packet 2 while the router forwards packet 1. E.g., 3 packets over 2 links = 4L/R.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872769,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When do packets queue at a router, and when are they lost?",
+    "Back": "They queue when the arrival rate (bps) to a link exceeds the link's transmission rate for a period of time; they are dropped (lost) when the router's buffer memory fills up.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872771,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define forwarding.",
+    "Back": "A LOCAL action: moving an arriving packet from the router's input link to the appropriate output link, by looking up the destination address in the packet header in the local forwarding table.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872773,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define routing.",
+    "Back": "A GLOBAL action: determining the source-to-destination paths taken by packets, performed by routing algorithms; the results populate each router's local forwarding table.",
+    "Topic": "Network core"
+   }
+  },
+  {
+   "noteId": 1789678872775,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Network_core",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Forwarding is a {{c1::local}} action (input link to output link using the forwarding table); routing is a {{c2::global}} action (determining source-destination paths via routing algorithms).",
+    "Extra": "",
+    "Topic": "Network core"
+   }
+  }
+ ]
+}

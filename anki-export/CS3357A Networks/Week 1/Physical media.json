@@ -1,0 +1,124 @@
+{
+ "deck": "CS3357A Networks::Week 1::Physical media",
+ "note_count": 9,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872726,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Guided}} media: signals propagate in a solid medium (copper, fiber, coax). {{c2::Unguided}} media: signals propagate freely (e.g., radio).",
+    "Extra": "",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872729,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Twisted pair: two insulated copper wires. Category 5 supports {{c1::100 Mbps and 1 Gbps}} Ethernet; Category 6 supports {{c2::10 Gbps}} Ethernet.",
+    "Extra": "The twisting reduces electrical interference from nearby pairs.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872732,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe coaxial cable and its key properties.",
+    "Back": "Two concentric copper conductors; bidirectional; broadband (multiple frequency channels on one cable), hundreds of Mbps per channel. Used by cable TV / cable Internet, can act as a shared medium.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872734,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the advantages of fiber optic cable?",
+    "Back": "Glass fiber carrying light pulses (each pulse a bit); high-speed point-to-point transmission (tens to hundreds of Gbps); low error rate: repeaters spaced far apart and immune to electromagnetic noise.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872736,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Fiber optic: each light pulse is a {{c1::bit}}; rates of {{c2::10s-100s of Gbps}}; immune to {{c3::electromagnetic noise}}.",
+    "Extra": "",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872740,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What three propagation-environment effects affect wireless radio links?",
+    "Back": "Reflection, obstruction by objects, and interference.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872742,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Wireless radio links are described on the slides as 'broadcast' and what duplex mode?",
+    "Back": "Half-duplex (sender to receiver, one direction at a time); the signal is carried in the electromagnetic spectrum with no physical wire.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872744,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the rates for the four radio link types on the slides.",
+    "Back": "Terrestrial microwave: up to 45 Mbps per channel. Wireless LAN (WiFi): up to hundreds of Mbps. Wide-area cellular (4G): ~tens of Mbps. Satellite: up to 45 Mbps per channel, 270 ms end-to-end delay.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789678872746,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A geosynchronous satellite link has about {{c1::270 ms}} end-to-end delay; the two satellite types are {{c2::geosynchronous}} and {{c3::low-earth-orbit (LEO)}}.",
+    "Extra": "Geosynchronous satellites orbit ~36,000 km up; LEO satellites are much closer and have ~10 ms delays.",
+    "Topic": "Physical media"
+   }
+  }
+ ]
+}

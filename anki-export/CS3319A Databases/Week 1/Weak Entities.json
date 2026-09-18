@@ -1,0 +1,215 @@
+{
+ "deck": "CS3319A Databases::Week 1::Weak Entities",
+ "note_count": 16,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991638,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the defining properties of a weak entity type.",
+    "Back": "No key attribute of its own; cannot exist without its identifying owner; always total participation with the owner (double line); owner may have partial participation; has a partial key (dashed underline); drawn as double rectangle with double-diamond identifying relationship; can sometimes be modelled as a composite multi-valued attribute instead.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991640,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How is a weak entity drawn in Chen notation?",
+    "Back": "Double-outlined rectangle; its identifying relationship with the owner is a double-outlined diamond; its partial key has a dashed underline; the line to the identifying relationship is double (total).",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991642,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A weak entity is drawn as a {{c1::double rectangle}}, its identifying relationship as a {{c2::double diamond}}, and its partial key with a {{c3::dashed underline}}.",
+    "Extra": "",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991646,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a partial key?",
+    "Back": "The attribute(s) that distinguish weak entities within one owner (e.g. RoomNumber within a Building). The full key is owner key + partial key.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991648,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the BUILDING HAS ROOM example, why is ROOM weak, and what is its full key?",
+    "Back": "RoomNumber is not unique across buildings; a room exists only in a building. Full key: (BuildingCode, RoomNumber). Cardinality BUILDING (1) HAS (M) ROOM.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991650,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Does an identifying owner have to have at least one weak entity?",
+    "Back": "No; the owner may have partial participation (a building may have no rooms recorded).",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991652,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A weak entity always has {{c1::total}} participation in its identifying relationship (drawn as a {{c2::double line}}).",
+    "Extra": "",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991655,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When might a weak entity be represented instead as an attribute of the owner?",
+    "Back": "As a composite, multi-valued attribute (e.g. Rooms(RoomNumber, FloorNumber, SquareMetres) on BUILDING) when it has few attributes and no relationships of its own.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991657,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What relationship was added to the BUILDING/ROOM example, and why does it favour making ROOM an entity?",
+    "Back": "TENANT (1) RENTS (M) ROOM; because ROOM participates in its own relationship, it is better as a (weak) entity than as an attribute.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991659,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the instructor's two tests for a weak entity?",
+    "Back": "(1) Its key is not really a true key: it only identifies the entity within its owner (room 24 exists in many buildings). (2) It cannot exist without the owner entity.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991661,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Instructor's analogy: a {{c1::cell}} cannot exist without the {{c2::spreadsheet}}, so it would be a weak entity.",
+    "Extra": "",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991664,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Contrast Student takes Course with Building has Room using the existence test.",
+    "Back": "A student can exist without the course and a course without the student (ordinary relationship); a room cannot exist without its building (weak entity).",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991666,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In TENANT RENTS ROOM the diamond is single because the tenant {{c1::does not own}} the room; only the identifying relationship with {{c2::BUILDING}} gets the double diamond.",
+    "Extra": "",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991669,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the George Foreman joke about?",
+    "Back": "Foreman named all his sons George, so Name would fail even as a partial key within that family; for most families Name distinguishes dependents within one employee.",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991671,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Dependent Name is only a {{c1::partial (weak)}} key: unique within one family, but another family may also have a son named {{c2::John}}.",
+    "Extra": "",
+    "Topic": "Weak Entities"
+   }
+  },
+  {
+   "noteId": 1789692991674,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Weak_Entities",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is the instructor's student number a good example of a true key?",
+    "Back": "Nobody else will ever get her student number (it merely gained an extra zero over the years); likewise her Western user ID is unique to her. A room number is not like that.",
+    "Topic": "Weak Entities"
+   }
+  }
+ ]
+}

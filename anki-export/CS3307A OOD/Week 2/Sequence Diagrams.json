@@ -1,0 +1,150 @@
+{
+ "deck": "CS3307A OOD::Week 2::Sequence Diagrams",
+ "note_count": 11,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839586,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does a sequence diagram show?",
+    "Back": "The flow of messages (method calls) between objects during a particular scenario or use case, over time as a sequence of events.",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839588,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What are the four elements of a sequence diagram listed in the slides?",
+    "Back": "Actors (external entities), Objects/Participants, Messages (arrows), Conditions (control-flow structures like <code>alt</code> and loops).",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839590,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In a sequence diagram, what is an <code>alt</code> fragment?",
+    "Back": "A frame for alternatives: divided into regions each guarded by a condition in brackets (e.g., <code>[If card is valid]</code>); exactly one region executes.",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839592,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In which direction does time flow in a sequence diagram?",
+    "Back": "Downward: lower messages happen later.",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839594,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "ATM sequence diagram participants: {{c1::User}} (actor), {{c2::ATM}}, {{c3::BankServer}}, {{c4::BankAccount}}.",
+    "Extra": "",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839599,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "ATM sequence diagram nested <code>alt</code> guards, outer to inner: [If {{c1::card is valid}}], [If {{c2::PIN is valid}}], [If {{c3::funds are sufficient}}].",
+    "Extra": "",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839603,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the ATM sequence diagram, what happens when funds are sufficient?",
+    "Back": "BankAccount → BankServer: Funds OK; BankServer → ATM: Withdraw Amount; ATM → User: Dispense Cash; BankServer → ATM: Transaction Successful.",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839605,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the ATM sequence diagram, what happens in the [Insufficient funds] region?",
+    "Back": "BankAccount → BankServer: Insufficient Funds; BankServer → ATM: Transaction Unsuccessful; ATM → User: Eject Card.",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839607,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What three modelling guidelines are given for sequence diagrams?",
+    "Back": "Clarity over completeness; iterative design; avoid pitfalls (too many classes, diagrams too detailed for the audience).",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839609,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Sequence diagram pitfalls: {{c1::too many classes}} and making diagrams {{c2::too detailed for the audience}}.",
+    "Extra": "",
+    "Topic": "Sequence Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839612,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Sequence_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In the ATM sequence diagram, the first message is User → ATM: {{c1::Insert Card}}, followed by ATM → BankServer: {{c2::Verify Card}}.",
+    "Extra": "",
+    "Topic": "Sequence Diagrams"
+   }
+  }
+ ]
+}

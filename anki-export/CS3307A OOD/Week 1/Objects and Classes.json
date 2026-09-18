@@ -1,0 +1,228 @@
+{
+ "deck": "CS3307A OOD::Week 1::Objects and Classes",
+ "note_count": 17,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839160,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the two main parts of an object?",
+    "Back": "Attributes (data members) and behaviors (member functions or methods).",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839162,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "An object's attributes are also called {{c1::data members}}; its behaviors are also called {{c2::member functions or methods}}.",
+    "Extra": "",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839165,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a class?",
+    "Back": "A blueprint or template that defines the properties (attributes) and behaviors (methods) of an object.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839167,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "An object is an {{c1::instance}} of a class.",
+    "Extra": "Once a class is defined, you can create objects from it.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839169,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "If <code>Car</code> is a class, what would objects of that class be?",
+    "Back": "Specific cars, such as a Ford or a Toyota.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839171,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are attributes in C++ terms, and where are they declared?",
+    "Back": "Variables that store information about the object; declared inside the class. Example for <code>Car</code>: <code>color</code>, <code>speed</code>, <code>model</code>.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839173,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What do methods define? Give the <code>Car</code> examples.",
+    "Back": "The behavior of an object (what actions it can perform): <code>accelerate()</code>, <code>brake()</code>, <code>getSpeed()</code>.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839175,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which members can be accessed by <code>private</code> code?",
+    "Back": "Only code within the class itself.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839177,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does the <code>public</code> access specifier allow?",
+    "Back": "Attributes and methods can be accessed from outside the class.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839179,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "`{{c1::protected}}` members are accessible to derived classes but not from outside the class.",
+    "Extra": "",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839181,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In a C++ <code>class</code>, members declared before any access specifier are {{c1::private}} by default.",
+    "Extra": "",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839183,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A {{c1::constructor}} is a special method that initializes objects of a class; a {{c2::destructor}} cleans up resources when an object is destroyed.",
+    "Extra": "Destructor syntax: <code>~Car()</code>.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839186,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the slide's <code>Car</code> class, what does <code>Car(std::string carModel, int carYear)</code> do?",
+    "Back": "It is the constructor: assigns <code>carModel</code> to the member <code>model</code> and <code>carYear</code> to the member <code>year</code>.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839188,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>Car myCar(\"Toyota\", 2022); myCar.displayInfo();</code> prints `{{c1::Model: Toyota, Year: 2022}}`.",
+    "Extra": "",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839190,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why does <code>myCar.year = 1999;</code> fail to compile for the slide's <code>Car</code> class?",
+    "Back": "<code>year</code> is declared under <code>private:</code>, so it cannot be accessed from outside the class.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839192,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>Account(double initialBalance) : balance(initialBalance) {}</code> uses a {{c1::member initializer list}} to initialize <code>balance</code>.",
+    "Extra": "",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789678839194,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is <code>double getBalance() const</code> declared <code>const</code>?",
+    "Back": "It promises not to modify the object; getters should be <code>const</code>.",
+    "Topic": "Objects and Classes"
+   }
+  }
+ ]
+}

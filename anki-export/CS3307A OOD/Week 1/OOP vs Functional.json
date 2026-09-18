@@ -1,0 +1,397 @@
+{
+ "deck": "CS3307A OOD::Week 1::OOP vs Functional",
+ "note_count": 30,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839223,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does functional programming focus on?",
+    "Back": "Pure functions and immutability; does not modify external state; computation as evaluation of mathematical functions; data flow through functions rather than changing object states.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839225,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A {{c1::pure function}} does not modify external state and returns the same output for the same inputs (no side effects).",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839227,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the functional <code>deposit</code> example, how is the new balance produced?",
+    "Back": "<code>double deposit(double balance, double amount) { return balance + amount; }</code> returns a new balance without modifying input state.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839229,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does the functional <code>withdraw</code> do when funds are insufficient?",
+    "Back": "Prints <code>Insufficient funds!</code> and returns the original balance unchanged.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839231,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Starting at 100, depositing 50 and withdrawing 30 gives a final balance of {{c1::120}} in both the OOP and functional bank examples.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839233,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does OOP handle state and mutability?",
+    "Back": "Objects maintain internal state that methods modify; objects modify each other's states; the program state evolves over time (e.g., <code>deposit()</code> changes the balance directly).",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839235,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does functional programming handle state?",
+    "Back": "Emphasizes immutability: data does not change once created; new data structures are created from transformations (return a new balance rather than modifying the existing one).",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839237,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How is reuse achieved in OOP?",
+    "Back": "By defining reusable classes; inheritance and polymorphism extend existing classes; methods are tightly bound to the objects they operate on.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839239,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How is reuse achieved in functional programming?",
+    "Back": "By writing pure, reusable functions that can be combined, passed as arguments, or returned (higher-order functions); composing small functions.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839241,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a higher-order function?",
+    "Back": "A function that takes another function as an argument or returns a function.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839243,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In <code>int applyFunction(int x, int y, int (*func)(int, int))</code>, what is the third parameter?",
+    "Back": "A pointer to a function that takes two <code>int</code>s and returns an <code>int</code>.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839245,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>applyFunction(5, 3, add)</code> returns {{c1::8}} because it calls <code>add(5, 3)</code>.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839247,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is concurrency complex in OOP?",
+    "Back": "Shared mutable state leads to race conditions, deadlocks, and difficult debugging; requires locks or synchronization.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839249,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is concurrency easier in functional programming?",
+    "Back": "Immutability: data is not modified after creation, so multiple functions can operate on it without interference.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839251,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does functional programming achieve abstraction without relying on encapsulation?",
+    "Back": "Through higher-order functions, function composition, and pure functions.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839253,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does <code>squareNumber(doubleNumber(5))</code> evaluate to, and in what order?",
+    "Back": "100: first <code>doubleNumber(5)</code> = 10, then <code>squareNumber(10)</code> = 100 (inner call first).",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839255,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the downside of OOP flexibility via inheritance, according to the slides?",
+    "Back": "Tightly coupled systems; harder to change one aspect without affecting others; complexity grows as the class hierarchy grows.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839257,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>virtual void draw() = 0;</code> declares a {{c1::pure virtual}} method, making <code>Shape</code> an {{c2::abstract class}} that cannot be instantiated.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839260,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does the <code>override</code> keyword do in <code>void draw() override</code>?",
+    "Back": "Tells the compiler this method must override a base-class virtual function; a mismatch is a compile error.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839262,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does it mean that functions are 'first-class citizens'?",
+    "Back": "They can be passed as arguments, returned from functions, assigned to variables, and stored in data structures.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839264,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What type is <code>drawFunc</code> in <code>void drawShape(function&lt;void()&gt; drawFunc)</code>?",
+    "Back": "<code>std::function&lt;void()&gt;</code>: a wrapper for any callable taking no arguments and returning nothing (function, function pointer, or lambda).",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839266,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>[]() { cout &lt;&lt; \"Drawing Circle\" &lt;&lt; endl; }</code> is a {{c1::lambda expression}} with an empty capture list and no parameters.",
+    "Extra": "Passed to <code>drawShape(function&lt;void()&gt; drawFunc)</code>.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839268,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the typical use cases for OOP?",
+    "Back": "User interfaces, games, business systems (payroll, inventory); systems that map to real-world entities where managing state matters.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839270,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the typical use cases for functional programming?",
+    "Back": "Data transformation, scientific computing, concurrent processing; stateless web apps, reactive systems, where immutability is crucial.",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839272,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "OOP vs FP focus: OOP focuses on {{c1::objects (data + behavior)}}; FP focuses on {{c2::functions (transformation of data)}}.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839275,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "OOP vs FP state management: OOP uses {{c1::mutable state within objects}}; FP uses {{c2::immutable state, new data structures}}.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839278,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "OOP vs FP modularity: OOP uses {{c1::classes and object hierarchies}}; FP uses {{c2::functions and composition}}.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839281,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "OOP vs FP reuse: OOP reuses via {{c1::inheritance and polymorphism}}; FP reuses via {{c2::higher-order functions and function composition}}.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839284,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "OOP vs FP concurrency: OOP is {{c1::complex due to mutable state}}; FP is {{c2::easier with immutability}}.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  },
+  {
+   "noteId": 1789678839287,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "OOP_vs_Functional",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The functional composition example computes <code>squareNumber(doubleNumber(5))</code> = {{c1::100}}.",
+    "Extra": "",
+    "Topic": "OOP vs Functional"
+   }
+  }
+ ]
+}

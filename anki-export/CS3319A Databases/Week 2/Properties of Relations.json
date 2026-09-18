@@ -1,0 +1,293 @@
+{
+ "deck": "CS3319A Databases::Week 2::Properties of Relations",
+ "note_count": 22,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991922,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "List the seven properties of relations.",
+    "Back": "Unique relation name; each cell holds one atomic value (1NF); unique attribute names within a table; values of an attribute come from the same domain; attribute order has no significance; each tuple is distinct (no duplicates); tuple order has no significance.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991924,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A relation whose cells each contain exactly one atomic value is said to be normalized, or in {{c1::First Normal Form (1NF)}}.",
+    "Extra": "",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991926,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Tuple order has no significance because a relation is a {{c1::set}} (though records in a file always have a physical order).",
+    "Extra": "",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991928,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why must tuples be unique?",
+    "Back": "Because a relation is a set, and a set has no repeated elements.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991930,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why must all values in a column come from the same domain?",
+    "Back": "Because in a mathematical relation the possible values at a position are determined by the domain on which that position is defined.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991932,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Are mathematical relations normalized? Are relational-model relations?",
+    "Back": "Mathematical relations are not necessarily normalized; Codd chose relations in the relational model to be normalized (atomic cells).",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991934,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Two tables both named EMPLOYEE in one database: what property is violated?",
+    "Back": "Relation names must be unique.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991936,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "THINGY_TABLE has rows (Apple,Dog,77),(Orange,Cat,77),(Apple,Dog,77),(Orange,Pig,77): what is wrong?",
+    "Back": "Duplicate tuples (rows 1 and 3); tuples must be distinct.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991938,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Two tables with the same rows listed in a different order are {{c1::the same relation}}, because tuple order has no significance.",
+    "Extra": "",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991940,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Two tables have the same rows but columns in a different order (YThingy, XThingy, ZThingy vs XThingy, YThingy, ZThingy): same relation?",
+    "Back": "Yes; attribute order has no significance.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991942,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A table has columns YThingy, XThingy, YThingy: what is wrong?",
+    "Back": "Duplicate attribute name; attribute names within a table must be unique.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991944,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "DEPARTMENT has Location values 'NCB, WSC' and 'BG, NCB': what is wrong?",
+    "Back": "Cells are not atomic (two values in one cell), violating first normal form; a multi-valued attribute needs its own table.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991946,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Annotated EMPLOYEE table (SSN, FirstName, LastName, Department, Position; Laura Reid, Bob Bryan, Sylvia Osborn, Bob Bryan): how many tuples, attributes, and what is the key and SSN domain?",
+    "Back": "4 tuples; 5 attributes; key SSN; sample domain of SSN is 000 to 999.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991948,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Two rows for 'Bob Bryan' (SSN 005 and 137) in the EMPLOYEE table: is this a problem?",
+    "Back": "No; the tuples differ in SSN, so they are distinct.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991950,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is a cell, according to the instructor?",
+    "Back": "Where a row (tuple) and a column (attribute) meet; it may contain only one atomic value, not ten values separated by commas.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991952,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give the instructor's phone-number example for the 'same domain' property.",
+    "Back": "If tuple 1 stores a 10-digit phone number, tuple 17 must also store a 10-digit value; you cannot have some tuples store numbers and others store letters for the same attribute.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991954,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Attribute order has no significance, but the norm is to put the {{c1::key}} first (EmpID or StudentNum before the names).",
+    "Extra": "",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991956,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "When might duplicate rows or a particular row order appear in practice, and what is the theoretical rule?",
+    "Back": "A query may return the same row twice, results may be displayed alphabetically, and rows may be stored on disk in an order for efficiency; in Codd's theory, tuples are never duplicated and order has no meaning.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991958,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Two tables both named EMPLOYEE (say full-time and part-time staff) in one database violate the {{c1::unique relation name}} property, even though their SSNs differ.",
+    "Extra": "",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991960,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why does the instructor say duplicate rows mean 'the key isn't working'?",
+    "Back": "A key is supposed to force every row to be unique; if two identical rows exist, no attribute set is doing that job.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991962,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Two columns are both named YThingy but have different domains. Is the relation valid?",
+    "Back": "No. Attribute names within a table must be unique regardless of domain.",
+    "Topic": "Properties of Relations"
+   }
+  },
+  {
+   "noteId": 1789692991964,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Properties_of_Relations",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A table with more than one value in a cell (e.g. Location = 'NCB, WSC') is not in {{c1::first normal form}}, which Codd's model requires.",
+    "Extra": "",
+    "Topic": "Properties of Relations"
+   }
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "deck": "CS3319A Databases::Week 1::ER Modelling Basics",
+ "note_count": 12,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991372,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What should you always start with when building a database system: the data or the code?",
+    "Back": "The data, not the code. Build a model (ER diagram) before creating the database.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991374,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the steps for figuring out what data to store (requirements for a large system).",
+    "Back": "Gather all reports the customers use/print/generate; look at screens where they enter/modify data; find the customers'/stakeholders' requirements; figure out how they view the data; integrate the views to get the minimal data to store.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991376,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The ER model was created by {{c1::Peter Chen}} in {{c2::1976}}.",
+    "Extra": "",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991379,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Tools for drawing ER diagrams include {{c1::Microsoft Visio}}, {{c2::draw.io}} and {{c3::SmartDraw}}.",
+    "Extra": "",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991383,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What blueprint examples does the instructor show to argue for modelling first?",
+    "Back": "The Wright brothers' original plane, a building blueprint with measurements and a visualization, and a baby gate.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991385,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Model first because otherwise you 'build something large and waste all your time... then you make a {{c1::mistake}}'; a model gets rid of {{c2::errors}} before building.",
+    "Extra": "",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991388,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'From this day forward, I want you to think about your {{c1::data}} before you ever think how you're going to {{c2::code}} something.'",
+    "Extra": "",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991391,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What hospital report and screen does the instructor use to show how to discover data to store?",
+    "Back": "A 'number of falls' report, and a patient-entry screen with first/middle/last name, date of death, laboratory details and SSN; each field reveals something that must be stored.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991393,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why integrate the users' overlapping views of the data?",
+    "Back": "So each piece of data is stored once rather than twice for two different users; the code that accesses it gets it from that one spot.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991395,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give two reasons the instructor gives for why an ER diagram is useful.",
+    "Back": "It can be read without knowing any code, so you can sit down with users and they will understand it; it is independent of any DBMS and is then mapped to the relational model (most common) or another model.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991397,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Visio, draw.io, SmartDraw: which is free for Western students, which is online, which needs a sign-up?",
+    "Back": "Visio is probably free for Western students; draw.io is online and free; SmartDraw requires signing up.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789692991399,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What advantage of Visio over draw.io does the instructor mention in Lesson 6?",
+    "Back": "Visio can help convert your ER diagram into a relational database; draw.io does not.",
+    "Topic": "ER Modelling Basics"
+   }
+  }
+ ]
+}

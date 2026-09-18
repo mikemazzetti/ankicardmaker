@@ -1,0 +1,397 @@
+{
+ "deck": "CS3319A Databases::Week 2::Pre-relational Models",
+ "note_count": 30,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991739,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The two pre-relational data models are the {{c1::hierarchical}} model and the {{c2::network}} model.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991742,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The most popular hierarchical DBMS is IBM's {{c1::IMS}}, which is still being used.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991744,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The hierarchical model is based on {{c1::records}} (grouped into record types) and {{c2::parent-child relationships}}.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991747,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A parent-child relationship type is a {{c1::1:M}} relationship between {{c2::two record types}}.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991750,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is an occurrence (instance) of a PCR?",
+    "Back": "One parent record together with a number of records of the child record type.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991752,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What three situations does the hierarchical model have trouble modelling?",
+    "Back": "M:N relationships; a record type that is a child in more than one PCR type; n-ary relationships with more than two participating types.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991754,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the rule for mapping an M:N relationship to the hierarchical model?",
+    "Back": "Only 1:N can be modelled, so represent the M:N relationship as if it were 1:N and use pointers to save on duplication of data.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991756,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Where is the data redundancy in the hierarchical company example?",
+    "Back": "An employee who works on several projects appears as a child record under each project, so the same employee's data is stored multiple times.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991758,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Who designed the network model, when, and what is it often called?",
+    "Back": "The CODASYL committee (Conference on Data System Languages) in 1971; often called the CODASYL model. A popular DBMS: IDMS.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991760,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The network model was designed by the {{c1::CODASYL}} committee in {{c2::1971}}; a popular DBMS using it is {{c3::IDMS}}.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991764,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The network model's two basic data structures are {{c1::records}} and {{c2::sets}}.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991767,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is a set type in the network model, and what are its three elements?",
+    "Back": "A 1:N relationship between two record types, consisting of a name for the set, an owner record type and a member record type.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991769,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A network-model set type has three elements: a {{c1::name}}, an {{c2::owner record type}} and a {{c3::member record type}}.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991773,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the network model differ from the hierarchical model regarding parents?",
+    "Back": "A record type can participate as owner or member in any number of set types, so a record can have several 'parents' (no tree restriction).",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991775,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Network-model set occurrences are implemented as {{c1::circular linked lists}}.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991777,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "List the navigation operations the network model supports.",
+    "Back": "Given an owner, find all members of the set occurrence; given an owner, find the first/nth/last member; given a member, find the next/previous member; given a member, find the owner.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991779,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "State the four rules for mapping an ER diagram to the network model.",
+    "Back": "1. Regular entities -&gt; record type. 2. Weak entities -&gt; record type. 3. 1:1 and 1:N -&gt; a set type (1:1: pick either as owner; 1:N: the one side is the owner). 4. M:N -&gt; create a linking record type X and make it the member in two set types. (The instructor says you do NOT need to know how to map an ER diagram to the network model; know the models and their problems.)",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991781,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The relational model was introduced by {{c1::Codd}} in {{c2::1970}}; most DBMSs today are based on it.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991784,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the relational model represent a database?",
+    "Back": "As a collection of relations; each relation is a table, which is a set of rows, each row being a collection of related data values.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991786,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What analogy does the instructor use for the relational model's importance in databases?",
+    "Back": "It is 'the Meryl Streep of acting or the Beatles of rock and roll': the be-all and end-all of databases, and the rest of the course is dedicated to it.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991788,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the hierarchical company tree, in which three places is the same employee's data stored?",
+    "Back": "As an employee under the department, as a supervisee under another employee (SSN and name stored twice), and as a worker under each project the employee works on.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991790,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The instructor's rule of thumb: 'In a really good model for a database you don't have to store things {{c1::twice}}.'",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991792,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "According to the instructor, what was the hierarchical model good at and where did it need a 'weird pointer'?",
+    "Back": "It was great with one-to-many relationships; for many-to-many relationships it had to make up pointers to make things work.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991794,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What realisation about data and code drove the new database models of the 1970s?",
+    "Back": "That data should be separated from code: code accesses the data, but changing how data is stored should not break the code, and changing the code should not break the stored data.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991796,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What example does the instructor give of a network-model set occurrence?",
+    "Back": "A course (owner, e.g. Computer Science) with the students registered in it (members), linked in a circular linked list.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991798,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Who was Ted Codd and what was his famous 1970 paper called?",
+    "Back": "A mathematician (formerly a university professor) working at IBM; the paper was 'A Relational Model of Data for Large Shared Data Banks'.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991800,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What three problems does the instructor say Codd's relational model solved?",
+    "Back": "It got rid of the issue with many-to-many relationships, kept everything connected ('glued together') so queries were possible, and avoided redundancy (repeated data).",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991802,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "When does the relational model fall short, and what do such companies use instead?",
+    "Back": "For massive data volumes (Google-scale) it is less suitable, so NoSQL databases were developed; most reasonably sized companies still use a relational database as their primary database.",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991804,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The instructor says you do {{c1::not}} need to know how to map an ER diagram to the {{c2::network}} model; you need to know the two older models and why they struggled.",
+    "Extra": "",
+    "Topic": "Pre-relational Models"
+   }
+  },
+  {
+   "noteId": 1789692991807,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Pre-relational_Models",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What personal anecdote does the instructor give about the hierarchical model still being used?",
+    "Back": "When she was job hunting, newspaper job ads listed experience with this model as a required skill; she believes companies still run software built on it (IBM's IMS).",
+    "Topic": "Pre-relational Models"
+   }
+  }
+ ]
+}

@@ -1,0 +1,228 @@
+{
+ "deck": "CS3307A OOD::Week 2::UML Class Diagrams",
+ "note_count": 17,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839545,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A UML class box has three sections, top to bottom: {{c1::name}}, {{c2::attributes}}, {{c3::methods}}.",
+    "Extra": "",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839549,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What do <code>-</code> and <code>+</code> before an attribute or method mean in UML?",
+    "Back": "<code>-</code> private, <code>+</code> public (and <code>#</code> protected).",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839551,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Association: phrase and slide example.",
+    "Back": "'has-a' relationship; e.g., teacher has a student.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839553,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Inheritance: phrase and slide example.",
+    "Back": "'is-a' relationship; e.g., <code>Admin</code> is a type of <code>User</code>.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839555,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Composition: phrase and slide example.",
+    "Back": "'strong has-a' relationship; e.g., <code>Car</code> contains an <code>Engine</code>.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839557,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the e-commerce class diagram, which classes inherit from <code>User</code>?",
+    "Back": "<code>Customer</code> and <code>Administrator</code>.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839559,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the e-commerce class diagram, what does <code>Customer</code> own by composition, with what multiplicities?",
+    "Back": "<code>Shopping Cart</code> (1 Customer to 0..* carts) and <code>Orders</code> (1 Customer to 0..* orders).",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839561,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the e-commerce class diagram, what does <code>Orders</code> own by composition?",
+    "Back": "<code>Shipping Info</code> (1 to 1) and <code>Order Details</code> (1 to 1, labelled 'has a').",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839563,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Multiplicity: plain line with no numbers between A and B means?",
+    "Back": "One B with each A; one A with each B.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839565,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Multiplicity: <code>1</code> at A and <code>*</code> at B means?",
+    "Back": "Zero or more Bs with each A; one A with each B.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839567,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Multiplicity: <code>*</code> at both A and B means?",
+    "Back": "Zero or more Bs with each A, and zero or more As with each B (many-to-many).",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839569,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Multiplicity: <code>1</code> at A and <code>2..5</code> at B means?",
+    "Back": "Two to five Bs with each A; one A with each B.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839571,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does a single arrowhead from A to B with <code>*</code> at B mean?",
+    "Back": "Zero or more Bs with each A, and B knows nothing about A (navigable only from A to B).",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839573,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What guidance is given for refining class diagrams?",
+    "Back": "Iterative design; avoid overcomplicating diagrams; each class should represent a clear, distinct concept.",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839575,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "UML class relationships: association is {{c1::'has-a'}}, inheritance is {{c2::'is-a'}}, composition is {{c3::'strong has-a'}}.",
+    "Extra": "",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839579,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "UML notation: a {{c1::solid line}} for association, an {{c2::arrow}} for inheritance, a {{c3::diamond}} for composition.",
+    "Extra": "",
+    "Topic": "UML Class Diagrams"
+   }
+  },
+  {
+   "noteId": 1789678839583,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_Class_Diagrams",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In UML multiplicity, <code>*</code> alone means {{c1::zero or more}} and <code>2..5</code> means {{c2::two to five}}.",
+    "Extra": "",
+    "Topic": "UML Class Diagrams"
+   }
+  }
+ ]
+}

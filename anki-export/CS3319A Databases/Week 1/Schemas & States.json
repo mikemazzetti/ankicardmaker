@@ -1,0 +1,176 @@
+{
+ "deck": "CS3319A Databases::Week 1::Schemas & States",
+ "note_count": 13,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991305,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'database schema'.",
+    "Back": "A description of the database, but NOT the data itself; similar to a type in a programming language.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991307,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'instance' (in the schema/state sense).",
+    "Back": "An occurrence of a data item described in the schema, e.g. patient name 'Homer Simpson' with OHIP number '123-345-567'.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991309,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'database state' (snapshot).",
+    "Back": "The data in the database at a moment in time: the current set of instances. Every add, delete or change of a value changes the state.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991311,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The schema of the schema is called {{c1::meta-data}}; the DBMS stores it for each database.",
+    "Extra": "",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991313,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Defining a new database specifies its {{c1::schema}}; the initial state/snapshot is {{c2::empty}}.",
+    "Extra": "",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991316,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which changes frequently: the database schema, the database state, or both?",
+    "Back": "The state changes constantly (every insert/delete/update); the schema changes rarely.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991318,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Making sure every database state is a valid state is part of the job of the {{c1::DBMS}}.",
+    "Extra": "",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991320,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the three-table example schema from the slides.",
+    "Back": "Patient (patient name, OHIP number); Room (room number, num of beds); Nurse (nurse name, nurse employee id).",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991322,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What programming analogy does the instructor use for a schema?",
+    "Back": "Declaring a variable as integer, real or char tells you its type, not the number or letter it holds; the schema is like the type, describing the database but not the data.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991324,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Name three operations on the hospital database that the instructor says change the state (snapshot).",
+    "Back": "Deleting Homer; changing his OHIP number; changing the room he is in.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991326,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the instructor's two examples of the DBMS refusing to move to an invalid state.",
+    "Back": "Typing letters into an OHIP number that accepts only integers; inserting a new patient with a blank OHIP number ('every patient has to have an OHIP number').",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991328,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the instructor's example of meta-data, and why does a DBMS hold a lot of it?",
+    "Back": "A description saying the hospital database has five tables. The DBMS stores such a schema-of-the-schema for every database it manages.",
+    "Topic": "Schemas & States"
+   }
+  },
+  {
+   "noteId": 1789692991330,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Schemas_&_States",
+    "week1"
+   ],
+   "fields": {
+    "Text": "At creation you specify the {{c1::schema}}; no data has been stored, so 'you can have a schema with an {{c2::empty}} database'.",
+    "Extra": "",
+    "Topic": "Schemas & States"
+   }
+  }
+ ]
+}

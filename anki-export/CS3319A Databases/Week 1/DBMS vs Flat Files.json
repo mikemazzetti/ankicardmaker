@@ -1,0 +1,163 @@
+{
+ "deck": "CS3319A Databases::Week 1::DBMS vs Flat Files",
+ "note_count": 12,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991244,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give three advantages of a DBMS over a flat file system.",
+    "Back": "Any three of: reduced data redundancy/inconsistency; isolates programs from the data; persistent storage between program runs; multiple users can share the data; more abstract conceptual views; security, integrity and backups; generalized query tools; multiple user interfaces; enforced standards (centralized data); reduced development time; up-to-date information managed centrally.",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991246,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the three disadvantages of a DBMS compared with flat files (from the lecture notes)?",
+    "Back": "Cost (flat files are free; note MySQL and PostgreSQL are also free now, but some DBMSs are very expensive), initial complexity (you must build a model and tables first), and the need for trained/skilled staff to maintain it.",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991248,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Three disadvantages of a DBMS: {{c1::cost}}, {{c2::initial complexity}}, and the need for {{c3::skilled/trained people}}.",
+    "Extra": "",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991252,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which DBMS advantage means programs no longer need to know the byte layout of the data?",
+    "Back": "Isolation of programs from the data (program-data independence).",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991254,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The DBMS advantage that lets you ask new questions without writing a new program is {{c1::generalized query tools (a query language)}}.",
+    "Extra": "",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991256,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Orders flat file: one address was entered as 'Oxford Street West' and the next as 'Richmond St' with 'W', so the data became {{c1::inconsistent}}; a DBMS reduces {{c2::redundancy and inconsistency}}.",
+    "Extra": "",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991259,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Orders flat file: the price $76 was an integer, then a later record stored $76.00 as a real. What problem does the instructor say this illustrates?",
+    "Back": "The reading code has to change, so the code is no longer isolated/abstracted from the data (program-data dependence). A DBMS isolates programs from the data.",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991261,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Instructor on persistence: with a DBMS, if a program {{c1::crashes in the middle of a write}}, we know we are not going to lose any data.",
+    "Extra": "",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991263,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the instructor's example of a DBMS providing 'multiple user interfaces'?",
+    "Back": "One MySQL database accessed online through JavaScript or PHP by one person, and through plain Java or Python code by another.",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991265,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Cost is a smaller DBMS disadvantage today because {{c1::MySQL and PostgreSQL}} are free, although some DBMSs (e.g. commercial ones) can be {{c2::very expensive}}.",
+    "Extra": "",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991268,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'Initially it's very complex': before you can store anything in a DBMS you must {{c1::come up with a model}} and then {{c2::build the tables}}.",
+    "Extra": "",
+    "Topic": "DBMS vs Flat Files"
+   }
+  },
+  {
+   "noteId": 1789692991271,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "DBMS_vs_Flat_Files",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the instructor's example of DBMS security?",
+    "Back": "Not just anyone can use the database; users must have a user ID.",
+    "Topic": "DBMS vs Flat Files"
+   }
+  }
+ ]
+}

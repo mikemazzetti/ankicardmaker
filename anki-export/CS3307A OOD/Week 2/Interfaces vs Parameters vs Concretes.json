@@ -1,0 +1,189 @@
+{
+ "deck": "CS3307A OOD::Week 2::Interfaces vs Parameters vs Concretes",
+ "note_count": 14,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839431,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "When should you use an interface?",
+    "Back": "When the variation is behavioral (different algorithms); enables polymorphism and DIP; consumers couple to the abstraction; flexible, extensible, testable.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839433,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "When should you use parameters instead of subclasses?",
+    "Back": "When the variation is only data (numbers, labels, configs); keep one class configured via constructor arguments or fields; avoids subclass explosion.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839435,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "When is a plain concrete class (no abstraction) acceptable?",
+    "Back": "For tiny apps or one-off utilities; simplest approach, but consumers are tied to the concrete implementation and it is harder to extend or swap later.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839437,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "State the rule of thumb for choosing between interface, parameter, and concrete.",
+    "Back": "Behavior → Interface; Data → Parameter; Toy/simple case → Concrete.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839439,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is wrong with <code>DebugLogger</code> and <code>ErrorLogger</code> in case study 1?",
+    "Back": "Both print to console and differ only in the prefix string (<code>[DEBUG]</code> vs <code>[ERROR]</code>); that is just data, so separate subclasses are pointless.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839441,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the right way to handle the logger level variation while keeping <code>ILogger</code>?",
+    "Back": "One parameterized concrete: <code>ConsoleLogger(std::string lvl)</code> storing <code>level</code>, printing <code>[level] msg</code>; callers hold <code>ILogger&amp;</code>.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839443,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Text": "`{{c1::explicit}}<code> on a single-argument constructor such as </code>ConsoleLogger(std::string lvl)<code> prevents implicit conversion from </code>std::string<code> to </code>ConsoleLogger`.",
+    "Extra": "",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839445,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Text": "`level({{c1::std::move}}(lvl))` moves the by-value constructor parameter into the member instead of copying it.",
+    "Extra": "",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839447,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the trade-off of case study 2 (a <code>Logger</code> class with no interface)?",
+    "Back": "Minimal and fine for tiny apps, but callers depend on a concrete type; a new logging behavior (e.g., file) would force refactoring callers.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839449,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What role does <code>AuditService</code> play in case study 3?",
+    "Back": "High-level consumer: holds <code>ILogger&amp; logger</code> (injected via constructor, aggregation) and calls <code>logger.log(msg)</code> polymorphically in <code>record()</code>.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839451,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is DI?",
+    "Back": "Dependency Injection: supplying a class's dependencies from outside (e.g., through the constructor) rather than creating them inside.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839453,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Rule of thumb: behavioral variation → {{c1::interface}}; data-only variation → {{c2::parameter}}; toy/simple case → {{c3::concrete}}.",
+    "Extra": "",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839457,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Lesson of case study 1: when variation is only data (e.g., label text), don't make {{c1::subclasses}}; keep the interface and use {{c2::one parameterized class}}.",
+    "Extra": "",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789678839460,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Case study 3 summary: when behavior differs, use {{c1::interfaces + DI}} to couple to the abstraction and swap implementations freely.",
+    "Extra": "",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  }
+ ]
+}

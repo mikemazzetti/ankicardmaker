@@ -1,0 +1,46 @@
+{
+ "deck": "CS3307A OOD::Week 2::UML and OO Paradigm",
+ "note_count": 3,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839495,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_and_OO_Paradigm",
+    "week2"
+   ],
+   "fields": {
+    "Text": "UML stands for {{c1::Unified Modeling Language}}: a standard set of notations for modelling object-oriented systems.",
+    "Extra": "",
+    "Topic": "UML and OO Paradigm"
+   }
+  },
+  {
+   "noteId": 1789678839497,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_and_OO_Paradigm",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How do OO techniques view a software system?",
+    "Back": "As networks of communicating objects; each object is an instance of a class; objects of a class share attributes and methods; classes can be specialized by subclasses; objects communicate by sending messages.",
+    "Topic": "UML and OO Paradigm"
+   }
+  },
+  {
+   "noteId": 1789678839499,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_and_OO_Paradigm",
+    "week2"
+   ],
+   "fields": {
+    "Front": "List the five things an object may do in response to a message.",
+    "Back": "Update its internal state; return a value from its state; perform a calculation based on its state and return it; create a new object (or set of objects); delegate part or all of the task to another object.",
+    "Topic": "UML and OO Paradigm"
+   }
+  }
+ ]
+}

@@ -1,0 +1,410 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::Unit1 Intro",
+ "note_count": 31,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789690333078,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the two possible sources of energy behind natural disasters and catastrophes?",
+    "Back": "Energy internal to Earth (drives earthquakes, tsunami, volcanic eruptions) and energy external to Earth (drives hurricanes, climate change, asteroid impacts).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333080,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the steps of the scientific method in order (as in the Unit 1 reading).",
+    "Back": "Observation(s) -&gt; hypothesis -&gt; experiment/test -&gt; (publication) -&gt; further testing -&gt; theory -&gt; prediction -&gt; after very long, always-successful testing, a law.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333082,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In the scientific method, a {{c1::hypothesis}} is formed from observations; successful hypotheses build a {{c2::theory}}, which after very long successful testing is reworded as a {{c3::law}}.",
+    "Extra": "",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333086,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the scientific method, does a successful theory prove its predictions absolutely?",
+    "Back": "No. Testing never stops; a single contrary observation (one rude poodle) overturns the theory and you start over.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333088,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Bertrand Russell}} (1928, The Outline of Philosophy) wrote that scientists are 'slow to believe, and never speak without modification'.",
+    "Extra": "Bertrand Russell, 1928, The Outline of Philosophy.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333090,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'natural process' (course definition).",
+    "Back": "An event directed by physical, chemical and biological activity, e.g. earthquakes, volcanic eruptions, hurricanes.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333092,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When does a natural process become a 'natural hazard'?",
+    "Back": "When it is a potential threat to life or property (property ranging from a person's home to a shoreline prone to erosion).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333094,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "According to the reading, why do disasters commonly occur?",
+    "Back": "Because of careless appraisal of a natural hazard.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333096,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is 'assessing risk' in the Unit 1 reading?",
+    "Back": "Learning the conditions that precede hazardous processes (precursor signs / process indicators) so we can predict them, reduce their effects, and get out of the way.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333098,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Dictionary definition of 'disaster' used in the course?",
+    "Back": "A sudden or great misfortune; a calamity.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333100,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the key difference between a disaster and a catastrophe?",
+    "Back": "Scale: disasters are local scale; catastrophes are regional to global scale and totally disrupt or end a society.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333102,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Name the four levels of the instructor's qualitative disaster/catastrophe scale.",
+    "Back": "Local disaster, regional disaster, regional catastrophe, global catastrophe.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333104,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'local disaster' (course scale).",
+    "Back": "A significant disruption to local society and communities, but the consequences are contained locally.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333106,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'regional disaster' (course scale).",
+    "Back": "Disruption greater than a single city area might occupy, with more widespread consequences.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333108,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'regional catastrophe' (course scale).",
+    "Back": "Disruption of sufficient magnitude that large regions (provinces, states, countries) must deal with the consequences, including death and numerous injuries to the regional population.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333110,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'global catastrophe' (course scale).",
+    "Back": "Disruption felt and dealt with on a global scale; death of many whole species is common.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333112,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "On the course scale, the 1985 Mexico City earthquake was a {{c1::regional disaster}}; the 1976 Tangshan earthquake was a {{c2::regional catastrophe}}.",
+    "Extra": "",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333115,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "On the course scale, the 2004 Boxing Day earthquake-tsunami was a {{c1::global catastrophe (low end)}}; the 65.5 Ma asteroid impact was a {{c2::global catastrophe (high end)}}.",
+    "Extra": "",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333118,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What happened to the Hotel de Carlo in Mexico City in 1985?",
+    "Back": "Two closely spaced buildings swayed and banged repeatedly against each other until one middle section collapsed, killing occupants; damage was widespread across the city and region.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333120,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The {{c1::1976}} Tangshan (China) earthquake officially killed {{c2::250,000}} (residents say 400,000-600,000) of ~1 million - a {{c3::regional catastrophe}} and the first modern giant quake centred beneath a large city.",
+    "Extra": "Official 250,000; residents say over 400,000 and possibly 600,000; urban region of nearly 1 million, so at least one third killed. First modern instance of a very large quake centred directly beneath a large city.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333124,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The {{c1::26 December 2004}} Indian Ocean earthquake was the {{c2::second}} largest ever recorded; its tsunami killed at least {{c3::230,000}} and was detected on tide gauges in Vancouver.",
+    "Extra": "Second largest earthquake ever recorded; tsunami killed at least 230,000 (mostly drowning); felt worldwide, triggered quakes as far as Alaska, detected on tide gauges in Vancouver.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333128,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What happened about 65.5 million years ago and what fraction of species died?",
+    "Back": "A very large asteroid made an enormous crater in Mexico; approximately 70% of all species went extinct (Chapter 1 says 65-70%).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333130,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why does the course exclude famine, and what famine statistics does it cite?",
+    "Back": "Famine is largely man-made. 1900-1969: 110.5 million famine deaths worldwide, 59.5 million in China alone (1958-1969).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333132,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In the 1950s the average cost of hazardous processes was a 'mere' {{c1::$3.9 billion}} per year.",
+    "Extra": "A 'mere' $3.9 billion per year (EM-DAT data; costs have risen dramatically since).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333134,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Does the rising cost of disasters mean there are more severe eruptions and earthquakes now?",
+    "Back": "No. Population has greatly increased and people live closer to known hazards (volcano slopes, fault zones) with more expensive infrastructure.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333136,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "World population was about {{c1::300 million}} in 0 AD and {{c2::7.3 billion}} today; at the current rate it would reach {{c3::384 billion}} by 2300.",
+    "Extra": "",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333140,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Complete: 'If disasters are having a greater impact today, it's primarily the result of ...'",
+    "Back": "'... human nature rather than Mother Nature.' More people can be affected, and expensive infrastructure is built in hazard-prone areas (coasts, fire-prone forests, steep slopes, flood plains).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333142,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why do people put themselves in harm's way (reading)?",
+    "Back": "A combination of arrogance and ignorance plus sheer numbers; over-reliance on early warning technology; and benefits of hazardous areas (fertile volcanic soils, fertile Nile banks, coastal fisheries and transport).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333144,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Big disasters of the decade: 2004 Indonesian tsunami (~{{c1::230,000}} dead), 2008 Myanmar {{c2::Nargis}} Cyclone (~150,000), 2010 {{c3::Haiti}} earthquake (Red Cross 50,000; government 300,000).",
+    "Extra": "2004 Indonesian earthquake-tsunami (~230,000); 2008 Myanmar Nargis Cyclone (~150,000); 2010 Haiti earthquake (Red Cross 50,000; Haitian government 300,000).",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333148,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'The Mother of all Extinctions', about {{c1::251}} million years ago, wiped out about {{c2::96%}} of all species on Earth.",
+    "Extra": "An extinction event about 251 million years ago that wiped out about 96% of all species on Earth.",
+    "Topic": "Unit1 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333151,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit1_Intro",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The reading claims that in the last {{c1::150}} years humans caused more damage to Earth than in the previous {{c2::7 thousand}} years, and that population might stabilize at {{c3::12 billion}} within 100 years.",
+    "Extra": "",
+    "Topic": "Unit1 Intro"
+   }
+  }
+ ]
+}

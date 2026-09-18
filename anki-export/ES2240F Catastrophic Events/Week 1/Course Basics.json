@@ -1,0 +1,85 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::Course Basics",
+ "note_count": 6,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789690333064,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Course_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "ES2240F: what percentage of the grade is the midterm, and what does it cover?",
+    "Back": "20%. Two-hour written exam, online with Proctortrack, October 24; covers Units 1 and 2 (to the end of Chapter 9). Make-up October 27 only with academic counsellor permission.",
+    "Topic": "Course Basics"
+   }
+  },
+  {
+   "noteId": 1789690333066,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Course_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "ES2240F: how are the scientific report marks split and when are the parts due?",
+    "Back": "40% total: Introduction and reference list 10% due October 6, 1:00 pm; final report (2500 words) 30% due December 1, 1:00 pm.",
+    "Topic": "Course Basics"
+   }
+  },
+  {
+   "noteId": 1789690333068,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Course_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "ES2240F: how many graded quizzes are offered, how many must you complete, and by when?",
+    "Back": "9 quizzes; complete 7 for full credit (missing ones count as zero); all must be submitted by the last day of classes, not the exam day. Quizzes are worth 10%.",
+    "Topic": "Course Basics"
+   }
+  },
+  {
+   "noteId": 1789690333070,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Course_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "ES2240F: what are the late penalties for the scientific report?",
+    "Back": "2% if submitted within two hours after the deadline; then 10% per late day for up to 5 days (weekends included); nothing accepted after that.",
+    "Topic": "Course Basics"
+   }
+  },
+  {
+   "noteId": 1789690333072,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Course_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The ES2240F final exam is worth {{c1::30%}}, is {{c2::non-cumulative}}, and covers the Unit 3 Introduction to Chapter {{c3::20}}.",
+    "Extra": "",
+    "Topic": "Course Basics"
+   }
+  },
+  {
+   "noteId": 1789690333076,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Course_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Who developed most of the ES2240F course content, and who is the Fall 2026 instructor?",
+    "Back": "Content: Prof. Neil D. MacRae. Instructor: Dr. Sean Shieh (sshieh@uwo.ca).",
+    "Topic": "Course Basics"
+   }
+  }
+ ]
+}

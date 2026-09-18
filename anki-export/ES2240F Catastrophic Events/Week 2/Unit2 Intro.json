@@ -1,0 +1,527 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::Unit2 Intro",
+ "note_count": 40,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789690333421,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Which internally driven processes does Unit 2 exclude and why?",
+    "Back": "Landslides, land subsidence etc. - too small to ever make it onto the catastrophic events scale.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333423,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "List Earth's layers by chemical composition (older terminology).",
+    "Back": "Crust (thin outer shell), mantle (dense silicate and oxide minerals), core (metallic: liquid outer core, solid inner core), topped by oceans and atmosphere.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333425,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "List Earth's layers by physical properties (newer terminology), surface to centre.",
+    "Back": "Lithosphere, asthenosphere, mesosphere, outer core, inner core.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333427,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Physical layers of Earth, surface to centre: {{c1::lithosphere}}, {{c2::asthenosphere}}, {{c3::mesosphere}}, outer core, inner core.",
+    "Extra": "",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333431,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The inner core is {{c1::solid}} iron-nickel metal at an estimated {{c2::5000-7000 C}} (Ch. 3), spinning at least {{c3::0.2 degrees}} of longitude per year faster than Earth.",
+    "Extra": "Hot, solid, nearly pure metal (mostly iron and nickel); Chapter 3 estimates 5000-7000 C, spinning at least 0.2 degrees of longitude per year faster than Earth.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333435,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The outer core is {{c1::liquid}} iron-nickel metal whose circulating currents generate Earth's {{c2::magnetic field}} (dynamo model).",
+    "Extra": "Similarly hot but liquid metal (molten iron and nickel); its circulating currents generate the magnetic field (dynamo).",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333438,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The {{c1::mesosphere}} is the lower, thick zone of the mantle: very dense rock that behaves as a {{c2::solid}} ('stiff plastic').",
+    "Extra": "The lower, thick zone of the mantle: very dense rock that behaves as a solid ('stiff plastic').",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333441,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define the asthenosphere.",
+    "Back": "A thin zone of the upper mantle, same composition as the mesosphere but under much less confining pressure, so it behaves like a hot plastic and may locally be fluid.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333443,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define the lithosphere.",
+    "Back": "The crust plus the really thin, cold, brittle top layer of the mantle that is 'stuck' to the crust - Earth's rigid outer shell.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333445,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The lithosphere = the {{c1::crust}} plus the cold, brittle uppermost {{c2::mantle}}; beneath it the {{c3::asthenosphere}} behaves like a hot plastic.",
+    "Extra": "",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333449,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why does the asthenosphere behave differently from the mesosphere despite the same composition?",
+    "Back": "It is nearer the top of the mantle and under much less confining pressure.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333451,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Two types of crust?",
+    "Back": "Oceanic and continental.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333453,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Approximate depths (Fig. 2): base of lithosphere, base of asthenosphere, base of mantle, base of outer core, centre?",
+    "Back": "~100 km, ~350 km, 2,890 km, 5,150 km, 6,371 km (centre).",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333455,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Approximate densities (Fig. 2): ocean water, continental crust, upper mantle, inner core?",
+    "Back": "1.03, 2.7, 3.3 g/cm3 (mantle rises to 5.7 at its base); core 9.7-16 g/cm3.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333457,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Differentiation}} is the gravity-driven movement of {{c2::heavy}} material to the core and {{c3::lighter}} material outward, once Earth was hot enough to flow.",
+    "Extra": "The process, once Earth was hot and liquid enough for material to move freely, of heavy material sinking (by gravity) to the core and lighter material moving outward, producing the layered structure.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333461,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Accretion}} is the growth of a body as smaller objects stick to it; Earth began by accretion of {{c2::cold}} material.",
+    "Extra": "The growth of a body as smaller objects (asteroids, meteoroids, dust) stick to it; Earth began by accretion of cold material.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333464,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Earth's interior may reach {{c1::7200-7500 C}}, more than {{c2::1000 C}} hotter than the Sun's outer layer.",
+    "Extra": "As high as 7200-7500 C - more than 1000 C higher than the Sun's outer layer.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333467,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Name the four mechanisms by which Earth was/is heated.",
+    "Back": "1) Accretion and impact heating; 2) core-formation heat; 3) heat from dissipation of tidal energy; 4) heat from radioactivity.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333469,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Earth's four heat sources: {{c1::accretion/impact heating}}, {{c2::core formation}} (gravitational potential energy), {{c3::tidal dissipation}}, and radioactivity.",
+    "Extra": "",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333473,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Which heat source was most important in early Earth formation, and which is most important now?",
+    "Back": "Early: accretion/impact heating (kinetic energy; plus core formation and short-lived isotopes). Now: radioactivity (long-lived K, U, Th) - virtually all current internal energy.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333475,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define kinetic energy and give its formula.",
+    "Back": "The energy possessed by a body because of its motion: KE = 1/2 m v^2 (m = mass, v = velocity). 'Remember this equation!'",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333477,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Kinetic Energy = {{c1::1/2 m v^2}}, where m is mass and v is velocity.",
+    "Extra": "",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333479,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A 1979 calculation showed early impacts would heat a body of {{c1::1000 km}} radius by {{c2::1000 C}} - enough to melt early Earth completely.",
+    "Extra": "For a body of 1000 km radius, energy from early Solar System impacts would raise its temperature by 1000 C - so early Earth would have melted completely from impact heat alone.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333482,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How did the Moon form?",
+    "Back": "From debris when the Mars-sized planet Theia side-swiped Earth early in Solar System history; the impact's kinetic energy helped melt and differentiate Earth.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333484,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What energy is released during core formation?",
+    "Back": "Gravitational potential energy, as dense material segregates to the core ('drop a book on your toes').",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333486,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How long did core formation take, and what is this phase called?",
+    "Back": "No more than a couple of million years; 'the iron catastrophe'.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333488,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Core formation released {{c1::gravitational potential}} energy, took no more than {{c2::a couple of million}} years, and is called the {{c3::iron catastrophe}}.",
+    "Extra": "",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333492,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Where is tidal heating especially important?",
+    "Back": "In small satellites (moons) whose content of radioactive isotopes may be small.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333494,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The highest tide in Earth's asthenosphere/mantle is only {{c1::11 cm}}, so it is hard to detect.",
+    "Extra": "Only 11 cm.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333496,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Tidal braking has {{c1::slowed Earth's rotation}} and made the Moon slowly {{c2::recede}}; the braking energy is manifested as {{c3::heat}}.",
+    "Extra": "Slowed Earth's rotation rate and caused the Moon to slowly recede; the energy of braking Earth's rotation becomes heat (tidal braking).",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333500,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What do decaying isotopes release?",
+    "Back": "They may release particles (electrons, alpha particles) and always release energy (gamma rays, X-rays).",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333502,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Two categories of radioactivity relevant to Earth's heat?",
+    "Back": "Long-lived radioactivity (K, U, Th) and short-lived radioactivity (e.g. 26Al), the latter now virtually gone.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333504,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give the example of a short-lived radioactive isotope: parent, daughter, half-life, status.",
+    "Back": "Aluminum-26 -&gt; magnesium-26; half-life 720,000 years; essentially extinct now, but once a major heat source because Al is abundant.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333506,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Aluminum-26}} decays to magnesium-26 with a half-life of {{c2::720,000}} years and is now essentially extinct.",
+    "Extra": "",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333509,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Long-lived radioactive isotopes of {{c1::potassium (K)}}, {{c2::uranium (U)}} and {{c3::thorium (Th)}} supply virtually all of Earth's internal heat today.",
+    "Extra": "Isotopes of potassium (K), uranium (U) and thorium (Th).",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333513,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define heat flow.",
+    "Back": "Heat escaping per unit time from Earth's interior across each unit of surface area; measured on all continents and oceans.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333515,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why has heat flow decreased over Earth's history?",
+    "Back": "Solid crust and oceans formed and act as insulation between the hot mantle and atmosphere; short-lived isotopes declined; only long-lived radioactivity remains. Change is slight over any long period.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333517,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Will Earth's internal heat run out?",
+    "Back": "Eventually, as long-lived radioactive isotopes decrease in abundance - but no detectable change is expected any time soon.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333519,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What are 'plates' and 'tectonics'?",
+    "Back": "Plates: large segments of Earth's crust/lithosphere. Tectonics: the processes by which plates interact along their boundaries in response to escaping internal heat.",
+    "Topic": "Unit2 Intro"
+   }
+  },
+  {
+   "noteId": 1789690333521,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Intro",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How are the edges of tectonic plates defined?",
+    "Back": "By the traces (lines) of earthquakes and volcanoes, concentrated along subduction zones and transform faults.",
+    "Topic": "Unit2 Intro"
+   }
+  }
+ ]
+}

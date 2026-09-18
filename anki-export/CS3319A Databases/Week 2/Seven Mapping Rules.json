@@ -1,0 +1,137 @@
+{
+ "deck": "CS3319A Databases::Week 2::Seven Mapping Rules",
+ "note_count": 10,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692992110,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 1: how are regular entity types mapped?",
+    "Back": "Create a relation with all simple attributes (only simple components of composites); choose one key attribute of the entity as primary key (if composite, its simple attributes together form the PK).",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992112,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 2: how are weak entity types mapped?",
+    "Back": "Create a relation with the weak entity's simple attributes plus the owner's primary key as a foreign key; PK = owner's PK + the weak entity's partial key (if any).",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992114,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 3: how are binary 1:1 relationships mapped?",
+    "Back": "Pick one of the two relations S (preferably the one with total participation) and include the PK of the other, T, as a foreign key in S; include the relationship's simple attributes in S.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992116,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 4: how are binary 1:N relationships mapped?",
+    "Back": "Include the PK of the 1-side relation as a foreign key in the N-side relation S (each N-side entity relates to at most one 1-side entity); include the relationship's simple attributes in S.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992118,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 5: how are binary M:N relationships mapped?",
+    "Back": "Create a new relation S with the PKs of both participating relations as foreign keys; their combination is the PK of S; include the relationship's simple attributes.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992120,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 6: how are multi-valued attributes mapped?",
+    "Back": "Create a new relation R with an attribute for A plus the PK K of the owning relation as a foreign key; PK of R = (A, K); if A is composite include its simple components.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992122,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Seven rules, Step 7: how are n-ary relationships (n &gt; 2) mapped?",
+    "Back": "Create a new relation S with the PKs of all participating relations as foreign keys; their combination is the PK; include the relationship's simple attributes.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992124,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The seven mapping steps in order: 1 {{c1::regular entities}}, 2 {{c2::weak entities}}, 3 {{c3::binary 1:1}}, 4 {{c4::binary 1:N}}, 5 {{c5::binary M:N}}, 6 {{c6::multi-valued attributes}}, 7 {{c7::n-ary relationships}}.",
+    "Extra": "",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992132,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Mapping steps that create new tables: {{c1::1, 2, 5, 6 and 7}}; steps that only add foreign-key columns to existing tables: {{c2::3 and 4}}.",
+    "Extra": "",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789692992135,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In which mapping steps does a foreign key become part of the primary key?",
+    "Back": "Steps 2 (weak entity), 5 (M:N), 6 (multi-valued attribute) and 7 (n-ary).",
+    "Topic": "Seven Mapping Rules"
+   }
+  }
+ ]
+}

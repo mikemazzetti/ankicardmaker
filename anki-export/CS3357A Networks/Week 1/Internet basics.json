@@ -1,0 +1,124 @@
+{
+ "deck": "CS3357A Networks::Week 1::Internet basics",
+ "note_count": 9,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872656,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In Internet jargon, what are the billions of connected computing devices at the edge of the network called?",
+    "Back": "Hosts, also called end systems. The two terms are interchangeable. They run (host) the network applications.",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872658,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does a packet switch do, and what are the two main types?",
+    "Back": "It forwards packets (chunks of data) from an incoming link to an outgoing link. The two main types are routers (network core) and link-layer switches (access networks).",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872660,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Name four physical media used for communication links.",
+    "Back": "Fiber, copper (twisted pair), coaxial cable, radio (and satellite).",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872662,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the transmission rate of a link also called, and in what units is it measured?",
+    "Back": "Bandwidth (or link capacity), measured in bits per second (bps).",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872664,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the nuts-and-bolts view, what is a 'network'?",
+    "Back": "A collection of devices, routers and links managed by a single organization (home, enterprise, mobile, datacenter, content-provider, or ISP network).",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872666,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The Internet is often described in three words as a {{c1::network of networks}}: interconnected ISPs, nobody owns it.",
+    "Extra": "",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872668,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which organization develops Internet standards, and what are its standards documents called?",
+    "Back": "The IETF (Internet Engineering Task Force); its documents are RFCs (Requests for Comments).",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872670,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Internet standards documents are called {{c1::RFCs (Requests for Comments)}} and are produced by the {{c2::IETF (Internet Engineering Task Force)}}.",
+    "Extra": "",
+    "Topic": "Internet basics"
+   }
+  },
+  {
+   "noteId": 1789678872673,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe the 'service view' of the Internet in one sentence.",
+    "Back": "The Internet is an infrastructure that provides services to distributed applications (Web, email, games, streaming...) and offers a programming interface (hooks / sockets) with service options, analogous to a postal service.",
+    "Topic": "Internet basics"
+   }
+  }
+ ]
+}

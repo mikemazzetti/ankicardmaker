@@ -1,0 +1,72 @@
+{
+ "deck": "CS3357A Networks::Week 1::Course logistics",
+ "note_count": 5,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678873025,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CS3357A grading breakdown?",
+    "Back": "Participation (iClicker) 8%; two quizzes 10% (5% each); three assignments 37% (10% + 12% + 15%); midterm 15%; final exam 30%.",
+    "Topic": "Course logistics"
+   }
+  },
+  {
+   "noteId": 1789678873027,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What minimum must you achieve on the midterm plus final to pass CS3357A, and what happens otherwise?",
+    "Back": "A weighted average of at least 40% across midterm and final; otherwise the maximum overall mark is 45%.",
+    "Topic": "Course logistics"
+   }
+  },
+  {
+   "noteId": 1789678873029,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "When is the CS3357A midterm and what is its format?",
+    "Back": "Monday, October 19, 2026, in class (MC-110) during lecture time; 1 hour 40 minutes, closed book, multiple choice; no make-up.",
+    "Topic": "Course logistics"
+   }
+  },
+  {
+   "noteId": 1789678873031,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Per the revised Fall 2026 schedule, when are Quiz 1 and Quiz 2?",
+    "Back": "Quiz 1: Thursday, October 1 (shifted from Sept 24); Quiz 2: Thursday, October 29 (shifted from Oct 22), because the Sept 14 and 17 lectures were cancelled.",
+    "Topic": "Course logistics"
+   }
+  },
+  {
+   "noteId": 1789678873033,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Per the revised schedule, when is Assignment 1 released and due?",
+    "Back": "Released Thursday, October 1; due October 23 (A2 released Oct 23, due Nov 6; A3 released Nov 6, due Nov 27).",
+    "Topic": "Course logistics"
+   }
+  }
+ ]
+}

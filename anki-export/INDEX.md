@@ -1,17 +1,70 @@
 # Anki collection export
 
-Snapshot generated 2026-09-17 from the local Anki
-collection via the AnkiMCP add-on. One JSON file per deck (media binaries not
-included). Regenerate with `python3 scripts/export_anki.py`.
+Snapshot generated 2026-09-18 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
 
-**Total: 13790 notes across 140 non-empty decks.**
+**Total: 14886 notes across 199 decks.**
 
 | Deck | Notes |
 |------|------:|
-| Default | 0 |
-| Interview | 0 |
-| Interview::LeetCode | 0 |
-| Interview::LeetCode::Extra | 0 |
+| CS3307A OOD::Week 1::Advantages of OOP | 14 |
+| CS3307A OOD::Week 1::Cohesion and Coupling | 14 |
+| CS3307A OOD::Week 1::Course Logistics | 16 |
+| CS3307A OOD::Week 1::OODA Basics | 12 |
+| CS3307A OOD::Week 1::OOP vs Functional | 30 |
+| CS3307A OOD::Week 1::Objects and Classes | 17 |
+| CS3307A OOD::Week 2::Conceptual Integrity | 3 |
+| CS3307A OOD::Week 2::Coupling Choices | 18 |
+| CS3307A OOD::Week 2::Encapsulation | 11 |
+| CS3307A OOD::Week 2::Interfaces vs Parameters vs Concretes | 14 |
+| CS3307A OOD::Week 2::Requirements Gathering | 13 |
+| CS3307A OOD::Week 2::Sequence Diagrams | 11 |
+| CS3307A OOD::Week 2::UML Class Diagrams | 17 |
+| CS3307A OOD::Week 2::UML and OO Paradigm | 3 |
+| CS3307A OOD::Week 2::Use Case Modelling | 19 |
+| CS3319A Databases::Week 1::Case Study | 13 |
+| CS3319A Databases::Week 1::Crow's Foot Notation | 18 |
+| CS3319A Databases::Week 1::DBMS vs Flat Files | 12 |
+| CS3319A Databases::Week 1::Database Roles | 14 |
+| CS3319A Databases::Week 1::ER Modelling Basics | 12 |
+| CS3319A Databases::Week 1::ER Relationships | 35 |
+| CS3319A Databases::Week 1::Entities & Attributes | 29 |
+| CS3319A Databases::Week 1::Intro & Terminology | 16 |
+| CS3319A Databases::Week 1::Participation Constraints | 26 |
+| CS3319A Databases::Week 1::Schemas & States | 13 |
+| CS3319A Databases::Week 1::Semantic Guidelines | 9 |
+| CS3319A Databases::Week 1::Three-Schema Architecture | 17 |
+| CS3319A Databases::Week 1::Weak Entities | 16 |
+| CS3319A Databases::Week 2::Case Study Mapping | 25 |
+| CS3319A Databases::Week 2::Constraints | 44 |
+| CS3319A Databases::Week 2::Keys | 26 |
+| CS3319A Databases::Week 2::Mapping 1:1 and 1:N | 20 |
+| CS3319A Databases::Week 2::Mapping Entities | 11 |
+| CS3319A Databases::Week 2::Mapping M:N | 14 |
+| CS3319A Databases::Week 2::Mapping Weak & Multivalued | 17 |
+| CS3319A Databases::Week 2::Pre-relational Models | 30 |
+| CS3319A Databases::Week 2::Properties of Relations | 22 |
+| CS3319A Databases::Week 2::Relational Terminology | 23 |
+| CS3319A Databases::Week 2::Seven Mapping Rules | 10 |
+| CS3357A Networks::Week 1::Circuit vs packet switching | 17 |
+| CS3357A Networks::Week 1::Course logistics | 5 |
+| CS3357A Networks::Week 1::Delay & loss | 24 |
+| CS3357A Networks::Week 1::Encapsulation | 8 |
+| CS3357A Networks::Week 1::History | 9 |
+| CS3357A Networks::Week 1::Internet basics | 9 |
+| CS3357A Networks::Week 1::Internet structure | 9 |
+| CS3357A Networks::Week 1::Network core | 13 |
+| CS3357A Networks::Week 1::Network edge & access | 17 |
+| CS3357A Networks::Week 1::Physical media | 9 |
+| CS3357A Networks::Week 1::Protocol layers | 18 |
+| CS3357A Networks::Week 1::Protocols | 4 |
+| CS3357A Networks::Week 1::Security | 5 |
+| CS3357A Networks::Week 1::Throughput | 9 |
+| ES2240F Catastrophic Events::Week 1::Ch1 Philosophy | 37 |
+| ES2240F Catastrophic Events::Week 1::Ch2 Age Dating | 67 |
+| ES2240F Catastrophic Events::Week 1::Course Basics | 6 |
+| ES2240F Catastrophic Events::Week 1::Unit1 Intro | 31 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Plate Tectonics | 75 |
+| ES2240F Catastrophic Events::Week 2::Unit2 Intro | 40 |
 | Interview::LeetCode::Extra::01 Arrays & Hashing | 417 |
 | Interview::LeetCode::Extra::02 Two Pointers | 118 |
 | Interview::LeetCode::Extra::03 Sliding Window | 61 |
@@ -30,11 +83,9 @@ included). Regenerate with `python3 scripts/export_anki.py`.
 | Interview::LeetCode::Extra::16 Intervals | 17 |
 | Interview::LeetCode::Extra::17 Math & Geometry | 265 |
 | Interview::LeetCode::Extra::18 Bit Manipulation | 64 |
-| Interview::LeetCode::Extra::99 Off-Roadmap | 0 |
 | Interview::LeetCode::Extra::99 Off-Roadmap::Concurrency & Shell | 13 |
 | Interview::LeetCode::Extra::99 Off-Roadmap::SQL & Database | 226 |
 | Interview::LeetCode::Extra::99 Off-Roadmap::Unsorted | 41 |
-| Interview::LeetCode::NeetCode150 | 0 |
 | Interview::LeetCode::NeetCode150::01 Arrays & Hashing | 9 |
 | Interview::LeetCode::NeetCode150::02 Two Pointers | 5 |
 | Interview::LeetCode::NeetCode150::03 Sliding Window | 6 |
@@ -53,7 +104,6 @@ included). Regenerate with `python3 scripts/export_anki.py`.
 | Interview::LeetCode::NeetCode150::16 Intervals | 6 |
 | Interview::LeetCode::NeetCode150::17 Math & Geometry | 8 |
 | Interview::LeetCode::NeetCode150::18 Bit Manipulation | 7 |
-| Interview::NeetCode 250 | 0 |
 | Interview::NeetCode 250::01 Arrays & Hashing | 22 |
 | Interview::NeetCode 250::02 Two Pointers | 13 |
 | Interview::NeetCode 250::03 Sliding Window | 9 |
@@ -72,24 +122,6 @@ included). Regenerate with `python3 scripts/export_anki.py`.
 | Interview::NeetCode 250::16 Intervals | 7 |
 | Interview::NeetCode 250::17 Math & Geometry | 13 |
 | Interview::NeetCode 250::18 Bit Manipulation | 10 |
-| Interview::NeetCode 250::2-D Dynamic Programming | 0 |
-| Interview::NeetCode 250::Advanced Graphs | 0 |
-| Interview::NeetCode 250::Arrays & Hashing | 0 |
-| Interview::NeetCode 250::Backtracking | 0 |
-| Interview::NeetCode 250::Binary Search | 0 |
-| Interview::NeetCode 250::Bit Manipulation | 0 |
-| Interview::NeetCode 250::Graphs | 0 |
-| Interview::NeetCode 250::Greedy | 0 |
-| Interview::NeetCode 250::Heap / Priority Queue | 0 |
-| Interview::NeetCode 250::Intervals | 0 |
-| Interview::NeetCode 250::Linked List | 0 |
-| Interview::NeetCode 250::Math & Geometry | 0 |
-| Interview::NeetCode 250::Sliding Window | 0 |
-| Interview::NeetCode 250::Stack | 0 |
-| Interview::NeetCode 250::Trees | 0 |
-| Interview::NeetCode 250::Tries | 0 |
-| Interview::NeetCode 250::Two Pointers | 0 |
-| Interview::Resume Prep | 0 |
 | Interview::Resume Prep::AWS | 22 |
 | Interview::Resume Prep::AWS SQS, EventBridge, CodeBuild & Boto3 | 20 |
 | Interview::Resume Prep::Accessibility (WCAG) | 18 |
@@ -136,7 +168,6 @@ included). Regenerate with `python3 scripts/export_anki.py`.
 | Interview::Resume Prep::TensorFlow | 18 |
 | Interview::Resume Prep::TypeScript | 20 |
 | Interview::Resume Prep::Web & API Fundamentals | 19 |
-| Interview::System Design | 0 |
 | Interview::System Design::Caching & CDN | 22 |
 | Interview::System Design::Chat System (WhatsApp) | 22 |
 | Interview::System Design::Databases & Storage | 21 |
@@ -164,14 +195,10 @@ included). Regenerate with `python3 scripts/export_anki.py`.
 | Interview::System Design::Unique ID Generator | 22 |
 | Interview::System Design::Video Streaming (YouTube) | 22 |
 | Interview::System Design::Web Crawler | 20 |
-| Mandarin | 0 |
-| Mandarin::HSK Sentences | 0 |
 | Mandarin::HSK Sentences::HSK 1 | 591 |
 | Mandarin::HSK Sentences::HSK 2 | 573 |
 | Mandarin::HSK Sentences::HSK 3 | 1014 |
 | Mandarin::HSK Sentences::HSK 4 | 2190 |
-| Mandarin::Vocabulary | 0 |
-| Mandarin::Vocabulary::a. HSK | 0 |
 | Mandarin::Vocabulary::a. HSK::HSK 1 | 150 |
 | Mandarin::Vocabulary::a. HSK::HSK 2 | 151 |
 | Mandarin::Vocabulary::a. HSK::HSK 3 | 300 |

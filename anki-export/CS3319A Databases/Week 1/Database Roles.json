@@ -1,0 +1,189 @@
+{
+ "deck": "CS3319A Databases::Week 1::Database Roles",
+ "note_count": 14,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991273,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the four roles people take on when working with a DBMS.",
+    "Back": "Database Administrator (DBA); Database Designer; System Analyst / Application Programmer; End User.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991275,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give at least two responsibilities of a Database Administrator (DBA).",
+    "Back": "Giving/revoking access; installing and upgrading the DBMS; monitoring usage; monitoring and improving performance; checking for security violations; backing up and restoring databases.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991277,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give at least two responsibilities of a Database Designer.",
+    "Back": "Identifying all data to be stored; identifying relationships between data; creating a model of the data; structuring the data (picking tables); communicating with end users; creating views that satisfy end-user needs.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991279,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give at least two responsibilities of a System Analyst / Application Programmer.",
+    "Back": "Determine end-user needs; develop specs; develop software that implements the specs in a language that talks to the database; test the implementation; communicate with end users.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991281,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give two responsibilities of an End User.",
+    "Back": "Access the database by generating reports; access it via the application programmers' software to update, maintain and query it. Normally does not access the database directly (except a standalone user of a small personal database).",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991283,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Backing up and restoring the database is the job of the {{c1::Database Administrator (DBA)}}; creating the data model is the job of the {{c2::Database Designer}}.",
+    "Extra": "",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991286,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The role that normally does not access the database directly is the {{c1::end user}}.",
+    "Extra": "",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991288,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does the instructor summarize the DBA's position relative to database design?",
+    "Back": "The DBA is in charge of running the DBMS software, but is not the person who creates or designs databases.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991290,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Text": "DBA performance task the instructor mentions: fixing {{c1::queries that are running really slowly}}.",
+    "Extra": "",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991292,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In this course you write code in {{c1::PHP}} that talks to a database that {{c2::already exists}} (MySQL or PostgreSQL).",
+    "Extra": "",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991295,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which of the four roles will you NOT take on in this course, and why?",
+    "Back": "DBA: the databases (PostgreSQL or MySQL) have already been installed by staff, so you will not install or administer a DBMS.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991297,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In this course you take on {{c1::three}} of the four roles: {{c2::database designer, application programmer and end user}}, but not {{c3::DBA}}.",
+    "Extra": "",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991301,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the instructor's example of an end-user query, and say when you act as an end user in this course.",
+    "Back": "'All the courses taught by Laura Reid.' You are an end user when testing your own software to make sure it does what you want.",
+    "Topic": "Database Roles"
+   }
+  },
+  {
+   "noteId": 1789692991303,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Database_Roles",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe the database designer's job as the sequence the instructor gives.",
+    "Back": "Collect and identify all data to store; find the relationships between the data; create a model; use the model to create the database and decide the tables; verify every piece of data is stored and end users can run efficient queries.",
+    "Topic": "Database Roles"
+   }
+  }
+ ]
+}

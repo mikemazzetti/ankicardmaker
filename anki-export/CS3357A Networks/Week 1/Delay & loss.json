@@ -1,0 +1,319 @@
+{
+ "deck": "CS3357A Networks::Week 1::Delay & loss",
+ "note_count": 24,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872842,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Formula: total nodal delay.",
+    "Back": "d_nodal = d_proc + d_queue + d_trans + d_prop (processing + queueing + transmission + propagation).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872844,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Text": "d_nodal = {{c1::d_proc}} + {{c2::d_queue}} + {{c3::d_trans}} + {{c4::d_prop}}",
+    "Extra": "Processing, queueing, transmission, propagation.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872849,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is nodal processing delay and how large is it typically?",
+    "Back": "Time to check bit errors and determine the output link (forwarding-table lookup); typically less than a millisecond (microseconds in fast routers).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872851,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is queueing delay and what does it depend on?",
+    "Back": "Time a packet waits at the output link for its turn to be transmitted; depends on the congestion level of the router (number of packets ahead of it). It varies from packet to packet.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872853,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Formula and variables: transmission delay.",
+    "Back": "d_trans = L / R, where L = packet length in bits and R = link transmission rate in bps. Time to push all bits of the packet onto the link.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872855,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Formula and variables: propagation delay.",
+    "Back": "d_prop = d / s, where d = length of the physical link (m) and s = propagation speed in the medium (~2 x 10^8 m/s). Time for a bit to travel from one end of the link to the other.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872857,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Propagation delay d_prop = {{c1::d / s}} where s is about {{c2::2 x 10^8 m/s}}; transmission delay d_trans = {{c3::L / R}}.",
+    "Extra": "",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872861,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the key difference between transmission delay and propagation delay?",
+    "Back": "Transmission delay (L/R) depends on packet length and link rate, NOT on distance. Propagation delay (d/s) depends on distance and medium, NOT on packet length or link rate.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872863,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: 1,500-byte packet on a 10 Mbps link that is 1,000 km long (s = 2 x 10^8 m/s). Find d_trans and d_prop.",
+    "Back": "L = 12,000 bits. d_trans = 12,000 / 10^7 = 1.2 ms. d_prop = 10^6 m / (2 x 10^8 m/s) = 5 ms.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872865,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: How long to transmit a 1,500-byte packet onto a 100 Mbps link?",
+    "Back": "L = 1,500 x 8 = 12,000 bits; d_trans = 12,000 / 10^8 = 0.12 ms (120 microseconds).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872867,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: a 2,000 km fiber link, s = 2 x 10^8 m/s. What is d_prop? Does doubling the link rate change it?",
+    "Back": "d_prop = 2 x 10^6 / 2 x 10^8 = 0.01 s = 10 ms. No: propagation delay is independent of the link rate.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872869,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Caravan analogy: what do a car, a caravan, and a toll booth represent?",
+    "Back": "Car = bit; ten-car caravan = 10-bit packet; toll booth = router (it must have the whole caravan lined up before serving it: store-and-forward).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872871,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Caravan analogy: cars propagate at 100 km/h, booth takes 12 s per car, booths 100 km apart. Time until the 10-car caravan is lined up at the 2nd booth?",
+    "Back": "Transmission: 10 x 12 s = 120 s = 2 min. Propagation: 100 km / 100 km/h = 1 h. Total = 62 minutes.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872873,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Caravan analogy variant: cars at 1,000 km/h, booth takes 1 min per car. Do cars reach the 2nd booth before all are serviced at the 1st?",
+    "Back": "Yes. Driving 100 km takes 6 min; the first car arrives at the 2nd booth after 1 + 6 = 7 min, when 3 cars are still at the first booth (10 min total service). The front of a packet can arrive at the next router while its tail is still being transmitted.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872875,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Formula: traffic intensity, with variable meanings.",
+    "Back": "Traffic intensity = L * a / R, where L = packet length (bits), a = average packet arrival rate (packets/s), R = link bandwidth (bps).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872877,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Traffic intensity = {{c1::La/R}}: when it is near 0 the average queueing delay is {{c2::small}}; as it approaches 1 the delay becomes {{c3::large (grows rapidly)}}; when it exceeds 1 the average delay is {{c4::infinite}}.",
+    "Extra": "",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872882,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is average queueing delay infinite when La/R &gt; 1?",
+    "Back": "More 'work' (bits) arrives on average than the link can service, so the queue grows without bound (in reality the finite buffer overflows and packets are lost).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872884,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Golden rule of traffic engineering: design the system so that the traffic intensity La/R is {{c1::no greater than 1}}.",
+    "Extra": "",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872886,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: packets of 1,000 bits arrive at 500 packets/s to a 1 Mbps link. Traffic intensity?",
+    "Back": "La/R = 1,000 x 500 / 1,000,000 = 0.5 (moderate load; small but non-zero queueing delay).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872888,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What causes packet loss at a router?",
+    "Back": "The queue (buffer) preceding a link has finite capacity; a packet arriving to a full queue is dropped (lost).",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872890,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What may happen to a lost packet? (three possibilities on the slide)",
+    "Back": "It may be retransmitted by the previous node, retransmitted by the source end system, or not retransmitted at all.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872892,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A packet arriving to a {{c1::full buffer/queue}} is dropped; a lost packet may be retransmitted by the {{c2::previous node}}, by the {{c3::source end system}}, or not at all.",
+    "Extra": "",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872896,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Formula: end-to-end delay with N-1 routers (N links), no queueing, identical links.",
+    "Back": "d_end-to-end = N * (d_proc + d_trans + d_prop), with d_trans = L/R. Add d_queue per node if queueing is present.",
+    "Topic": "Delay & loss"
+   }
+  },
+  {
+   "noteId": 1789678872898,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Delay_&_loss",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Numeric: 3 links, L = 12,000 bits, R = 10 Mbps, each link 100 km (s = 2 x 10^8), d_proc = 1 ms, no queueing. End-to-end delay?",
+    "Back": "d_trans = 1.2 ms, d_prop = 0.5 ms, per node 1 + 1.2 + 0.5 = 2.7 ms; total 3 x 2.7 = 8.1 ms.",
+    "Topic": "Delay & loss"
+   }
+  }
+ ]
+}

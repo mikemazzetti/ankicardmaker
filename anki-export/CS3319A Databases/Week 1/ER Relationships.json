@@ -1,0 +1,462 @@
+{
+ "deck": "CS3319A Databases::Week 1::ER Relationships",
+ "note_count": 35,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991498,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'relationship' (ER model).",
+    "Back": "A named grouping of entities; an association among two or more entities, e.g. Employee WORKS FOR Department.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991500,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a relationship set / relationship type formally?",
+    "Back": "A relationship type R among entity types E1..En is a set of relationship instances ri, each associating n entities (e1..en) with ej from Ej; i.e. a mathematical relation on E1..En. Example: ('Reid','CS3319') in the set of (Prof, Course).",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991502,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In Chen notation a relationship type is a {{c1::diamond}} with lines to each entity; a relationship attribute is an {{c2::oval attached to the diamond}}.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991505,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the degree of a relationship?",
+    "Back": "The number of entity types participating in it: unary (1), binary (2), ternary (3).",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991507,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define a unary (recursive) relationship and give an example.",
+    "Back": "An entity of one entity type has a relationship with other entities of the same entity type; e.g. Employee MANAGES/SUPERVISES Employee.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991509,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define a binary relationship and give the slide example.",
+    "Back": "A relationship between two entity types; e.g. Student TAKES Course (with relationship attribute Grade).",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991511,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define a ternary relationship and give the slide example.",
+    "Back": "A relationship among three entity types; e.g. Supplier SUPPLIES Part to Project, with relationship attribute Quantity.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991513,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In the slide's ternary example, the entities are {{c1::Supplier, Part and Project}} and the relationship Supply has the attribute {{c2::Quantity}}.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991516,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is an attribute on a relationship? Give the Student-takes-Course example.",
+    "Back": "An attribute describing the relationship instance itself, not either entity: Grade belongs to the (student, course) pair.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991518,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'cardinality ratio'.",
+    "Back": "The number of relationship instances an entity can participate in; the three common ones are 1:1, 1:N (many-to-one) and M:N.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991520,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the case-study example of a one-to-one relationship.",
+    "Back": "Employee MANAGES Department.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991522,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the case-study example of a many-to-one relationship.",
+    "Back": "Employee WORKS FOR Department.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991524,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the case-study example of a many-to-many relationship.",
+    "Back": "Employee WORKS ON Project.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991526,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Cardinality examples: 1:1 = Employee {{c1::MANAGES}} Department; N:1 = Employee {{c2::WORKS FOR}} Department; M:N = Employee {{c3::WORKS ON}} Project.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991530,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Man BIOLOGICALLY FATHERS Child has cardinality {{c1::one to many}}.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991532,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The speaker notes' example of a many-to-many relationship is {{c1::Sister HAS Brother}}; in the video the instructor uses {{c2::Student takes Course}}.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991535,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "On a Chen diagram, where is the cardinality letter (1, M, N) written for Employee WORKS FOR Department?",
+    "Back": "N (many) next to EMPLOYEE and 1 next to DEPARTMENT: many employees work for one department.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991537,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Draw 'An artist paints paintings' (Chen): cardinality on each side?",
+    "Back": "ARTIST (1) --- paints --- (M) PAINTING.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991539,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Draw 'A person owns pets' (Chen): cardinality on each side?",
+    "Back": "PERSON (1) --- owns --- (M) PET.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991541,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How are 'currently married to' and 'was married to' between WOMAN and MAN modelled?",
+    "Back": "Currently Married To: 1:1 with attribute Wedding Date. Was Married To: M:N with attributes Wedding Date and Marriage End Date.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991543,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the WORKS FOR instance diagram (Laura, Roberto, e3, e4 / Computer Science, Math, English), how many entity types participate?",
+    "Back": "Two (Employee and Department): it is a binary relationship.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991545,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Explain the instructor's 'Laura and CS3319' relationship example.",
+    "Back": "An instance of the Prof entity and an instance of the Course entity grouped together; the relationship set is the ordered pair (Laura, CS3319); the relationship type is TEACHES.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991547,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Homer Simpson (student 15) got 89. Why can Grade not be an attribute of STUDENT, and why not of COURSE?",
+    "Back": "On STUDENT you cannot tell which course the 89 was for (CS2210 or CS3319); on COURSE you cannot tell which student earned it. Grade belongs to the (student, course) pair, so it goes on the TAKES relationship.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991549,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "An attribute on a relationship describes the {{c1::combination of the entities together}}, not either entity on its own.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991551,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does the instructor explain Quantity on the ternary Supply relationship?",
+    "Back": "'Maybe we're supplying seven of these parts from this supplier for this project': the quantity depends on all three of supplier, part and project.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991553,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe the instructor's 'could' technique for finding a cardinality ratio.",
+    "Back": "Take one instance of the left entity and ask 'an X could relate to how many Y?'; write the answer beside Y. Then look at it backwards from Y and write that answer beside X. Use 'could', not 'must': cardinality is the maximum.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991555,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "For cardinality use the word {{c1::could}}; the words {{c2::must / every}} belong to participation.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991558,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why did the instructor write 'Man BIOLOGICALLY fathers Child'?",
+    "Back": "Because step-fathers or adoptive fathers would change the cardinality; biologically, a child has exactly one father and a man can father many children (1:N).",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991560,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Person OWNS Pet: how does the instructor answer the objection that a whole family owns the pet?",
+    "Back": "In a vet's database you keep one person's name on file, so a pet is owned by one person (1:N). Context decides.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991562,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'In the great province of Ontario' a woman can currently be married to at most {{c1::one}} man, so Currently Married To is {{c2::1:1}}; Was Married To is {{c3::M:N}}.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991566,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why does the instructor label a many-to-many relationship M and N rather than M and M?",
+    "Back": "So you do not think the two 'many' values must be equal (a woman with five ex-husbands does not mean each man had five ex-wives). M and M is also allowed.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991568,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How would 'a woman is currently married to a woman' be drawn?",
+    "Back": "As a unary (recursive) relationship on WOMAN, 1:1 (and Was Married To as unary M:N).",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991570,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The case-study relationship that is 'not one of the obvious ones' is the unary {{c1::SUPERVISES}}: an employee supervises many employees and is supervised by {{c2::one}} boss.",
+    "Extra": "",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991573,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What assumption did the instructor make so that a dependent belongs to only one employee?",
+    "Back": "That no married couples work at the company; otherwise a child could be the dependent of two employees.",
+    "Topic": "ER Relationships"
+   }
+  },
+  {
+   "noteId": 1789692991575,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Relationships",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the learning objectives of Video 6 (relationships).",
+    "Back": "Define relationship, cardinality, unary, binary, ternary, one-to-one, one-to-many and many-to-many; use the correct symbols to draw relationships on an ER diagram; identify attributes that should be on relationships.",
+    "Topic": "ER Relationships"
+   }
+  }
+ ]
+}

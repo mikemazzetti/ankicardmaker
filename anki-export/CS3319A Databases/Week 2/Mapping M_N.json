@@ -1,0 +1,189 @@
+{
+ "deck": "CS3319A Databases::Week 2::Mapping M:N",
+ "note_count": 14,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692992041,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why can't PROFESSOR M:N Teaches COURSE be mapped with a 'Teaches' column in PROFESSOR listing 'CS3319, CS2210'?",
+    "Back": "Cells must be atomic (first normal form); a list in a cell is not a valid relation. Neither side is a 'one' side, so no single foreign key works.",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992043,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "State the rule for mapping a many-to-many relationship.",
+    "Back": "Make a NEW table; its key is the combination of the keys of the participating entities (both as foreign keys); also include any attributes of the relationship in the new table.",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992045,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "TEACHES table for Laura &amp; Doug teach CS3319; Doug, Laura, Jamie teach CS2210; Doug teaches CS1027; Irving &amp; Stuart teach MA2222: list the rows.",
+    "Back": "(CS3319,11),(CS3319,22),(CS2210,11),(CS2210,22),(CS2210,34),(CS1027,22),(MA2222,18),(MA2222,56).",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992047,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Text": "TEACHES has primary key {{c1::(EmpID, CourseNumber)}} and foreign keys {{c2::EmpID (to PROFESSOR) and CourseNumber (to COURSE)}}.",
+    "Extra": "",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992050,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How is a professor who teaches nothing (Michael) represented in the M:N mapping?",
+    "Back": "He simply has no rows in TEACHES; no nulls are needed.",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992052,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Map MOVIE (M) Stars (N) ACTOR with relationship attribute Salary.",
+    "Back": "Movie(MovieID, Title, Cost, ReleaseDate); Actor(ActorID, FirstName, LastName, BirthDate); Starring(MovieID FK, ActorID FK, Salary) with PK (MovieID, ActorID).",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992054,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How is a ternary relationship mapped?",
+    "Back": "Take all the keys involved, put them in a new table as foreign keys; together they form the new primary key; include any extra attributes. E.g. rr(aid, bid, cid, rattr).",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992056,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Text": "An M:N relationship maps to a {{c1::new table}} whose primary key is {{c2::the combination of both entities' keys}}, plus any {{c3::relationship attributes}}.",
+    "Extra": "",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992060,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the instructor verify that (CourseNumber, EmpID) is a valid key for TEACHES?",
+    "Back": "No pair such as (CS3319, 11) appears twice; CourseNumber alone repeats and EmpID alone repeats, but the combination makes each row unique.",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992062,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In TEACHES, the two key columns are also {{c1::foreign keys}} because they come from the PROFESSOR and COURSE tables.",
+    "Extra": "",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992064,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the instructor's first (failed) attempt at representing Teaches?",
+    "Back": "A Teaches column in PROFESSOR holding 'CS3319, CS2210'; it is not in first normal form, so it is rejected.",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992066,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What correction does the instructor make about the ternary-relationship slide?",
+    "Back": "It should read many-to-many-to-many; the rule is the same as for M:N with three keys forming the new table's key.",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992068,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Most relationships are {{c1::binary}}; ternary relationships are {{c2::not as common}} but the mapping rule is the same.",
+    "Extra": "",
+    "Topic": "Mapping M:N"
+   }
+  },
+  {
+   "noteId": 1789692992071,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_M:N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What are the objectives of the M:N mapping video?",
+    "Back": "Represent a many-to-many relationship in a relational model, and correctly map a ternary relationship with three entities.",
+    "Topic": "Mapping M:N"
+   }
+  }
+ ]
+}

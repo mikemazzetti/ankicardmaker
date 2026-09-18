@@ -1,0 +1,176 @@
+{
+ "deck": "CS3319A Databases::Week 1::Case Study",
+ "note_count": 13,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991469,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The case-study entities are {{c1::Department}}, {{c2::Employee}}, {{c3::Dependent}} and {{c4::Project}}.",
+    "Extra": "",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991474,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: what are the attributes of DEPARTMENT, and which are keys?",
+    "Back": "Name (key), Number (key), Locations (multi-valued). Also the manager and start date come via the MANAGES relationship.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991476,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: what are the attributes of EMPLOYEE?",
+    "Back": "Name, SSN (key), Address, Salary, Sex, Birthdate.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991478,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: what are the attributes of PROJECT?",
+    "Back": "Number (key), Name (key), Location (single-valued: 'a single location').",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991480,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: what are the attributes of DEPENDENT?",
+    "Back": "Name, Sex, Birthdate, Relationship (relation to the employee).",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991482,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In the case study the multi-valued attribute is Department {{c1::Locations}} ('a department may have several locations').",
+    "Extra": "",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991484,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: list the relationships with their cardinality ratios.",
+    "Back": "MANAGES (Employee 1:1 Department, attribute StartDate); WORKS FOR (Employee N:1 Department); CONTROLS (Department 1:N Project); WORKS ON (Employee M:N Project, attribute Hours); SUPERVISES (Employee 1:N Employee, unary); DEPENDENTS OF (Employee 1:N Dependent, identifying).",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991486,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: which relationship carries the attribute Hours, and why is it not on EMPLOYEE or PROJECT?",
+    "Back": "WORKS ON; hours depend on the (employee, project) pair, not on either entity alone.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991488,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In the case study, StartDate is an attribute of the {{c1::MANAGES}} relationship.",
+    "Extra": "",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991490,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The case study's unary (recursive) relationship is {{c1::SUPERVISES}} (Employee to Employee).",
+    "Extra": "",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991492,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: which entity is weak, who is its owner, and what is its partial key?",
+    "Back": "DEPENDENT; owner EMPLOYEE; partial key Name (via identifying relationship DEPENDENTS OF).",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991494,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: participation of EMPLOYEE and DEPARTMENT in WORKS FOR?",
+    "Back": "Both total: every employee works for a department (1,1) and every department has employees (1,N).",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789692991496,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: participation of EMPLOYEE and DEPARTMENT in MANAGES?",
+    "Back": "EMPLOYEE partial (0,1): not every employee manages. DEPARTMENT total (1,1): every department has a manager.",
+    "Topic": "Case Study"
+   }
+  }
+ ]
+}

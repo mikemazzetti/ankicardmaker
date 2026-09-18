@@ -1,0 +1,878 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::Ch2 Age Dating",
+ "note_count": 67,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789690333251,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why are rocks the most stable and oldest records of past events?",
+    "Back": "The chemical bonds in the most common rock type, silicates, are extremely hard to break.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333253,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What ages for Earth's origin did the Maya and Hindu calendars suggest?",
+    "Back": "Maya: more than 400 million years; Hindu: almost 2 billion years (versus Ussher's 6000 years).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333255,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The oldest matter, meteorites from {{c1::primitive asteroids}}, is consistently {{c2::4.567}} billion years old - the rough age of the {{c3::Solar System}}.",
+    "Extra": "Meteorites from primitive asteroids, representing material formed as the Solar System took shape: consistently 4.567 billion years (rough age of the Solar System).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333259,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Earth's age, {{c1::4.54 billion years}}, is taken from the average age of {{c2::meteorites (asteroid fragments)}}, the same solids from which Earth accreted.",
+    "Extra": "4.54 billion years - the average age of meteorites (asteroid fragments), because Earth accreted from the same solids.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333262,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Age of the Solar System: {{c1::4.567}} Ga. Age of Earth: {{c2::4.54}} Ga. Oldest mineral (zircon): {{c3::4.404}} Ga.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333266,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The oldest mineral on Earth is a crystal of {{c1::zircon}}, dated at {{c2::4.404}} billion years.",
+    "Extra": "A zircon crystal, 4.404 billion years old.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333269,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "About {{c1::4.48}} billion years ago a {{c2::Mars}}-sized planet called {{c3::Theia}} hit Earth, completely melting both bodies.",
+    "Extra": "A Mars-sized planet that impacted Earth about 4.48 billion years ago, completely melting both bodies (its debris formed the Moon).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333273,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why can't we find a chunk of the very oldest Earth rock?",
+    "Back": "Plate tectonics constantly recycles old material.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333275,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Notation: what do Ga, Ma, ka and a stand for?",
+    "Back": "Ga = billion years; Ma = million years; ka = thousand years; a = year. 4.567 Ga = 4,567 Ma = 4,567,000,000 a.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333277,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Name the two oldest crustal fragments on Earth (both in Canada) and their ages.",
+    "Back": "Acasta Gneiss, NWT: 4.031 +/- 0.003 Ga; Nuvvuagittuq Greenstone, Quebec: 4.388 Ga or 3.75 Ga (disputed).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333279,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is relative age dating?",
+    "Back": "Determining the order of geological events (older vs younger) without numerical ages, using the principles of stratigraphy.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333281,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What three logical arguments underlie Steno's principles?",
+    "Back": "Sedimentary layers are deposited on top of each other as particles settle from water; the layers are flat when deposited (large water body); they are deposited over wide areas (oceans).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333283,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Superposition.",
+    "Back": "In an undeformed vertical sequence of sedimentary strata, the oldest layers are at the base and the youngest at the top; it also applies to the fossils the layers contain.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333285,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Original Horizontality.",
+    "Back": "Sedimentary strata lay flat (horizontal) when first deposited, so steeply inclined rocks have experienced a later deforming process.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333287,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Original Lateral Continuity.",
+    "Back": "Flat-lying strata initially extended in all directions; similar strata on either side of a valley or ocean were originally continuous.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333289,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Steno's three principles ('Steno's Laws'): {{c1::Superposition}}, {{c2::Original Horizontality}}, {{c3::Original Lateral Continuity}}.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333293,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does the word 'strata' mean and where does it come from?",
+    "Back": "Sedimentary rock layers; from the Latin word for 'bed'.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333295,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is an unconformity?",
+    "Back": "A horizon representing a time break during which erosion of a rock sequence took place before deposition of a more recent sequence; studied by Hutton in the 1780s-90s.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333297,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define angular unconformity.",
+    "Back": "An unconformity where the beds above and below have different slopes (e.g. tilted beds A-E under flat bed G).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333299,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define disconformity.",
+    "Back": "An unconformity where the beds above and below are parallel but there is a time gap (e.g. between J and K).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333301,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define non-conformity.",
+    "Back": "An unconformity where sedimentary layers rest on or are intruded by igneous rocks (e.g. between igneous F and sedimentary G).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333303,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Three kinds of unconformity: {{c1::angular unconformity}} (different dips), {{c2::disconformity}} (parallel beds, time gap), {{c3::non-conformity}} (igneous rock below sediments).",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333307,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the three rules of the Principle of Cross-Cutting Relationships.",
+    "Back": "A fault is younger than the youngest rock it cuts; strata above an unconformity are younger than those below; any feature that cuts across a rock is younger than the rock it cuts.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333309,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Whose principle is Cross-Cutting Relationships, and what gap in Steno's Laws did it fill?",
+    "Back": "James Hutton's; it explains igneous intrusions and the relationship between an eroded rock and the strata laid on top of it.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333311,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::William 'Strata' Smith}}, a {{c2::canal engineer}} in southern England, matched layers by their fossils, founding the Principle of {{c3::Faunal Succession}}.",
+    "Extra": "A canal engineer in southern England who noticed each layer contained characteristic fossils and was first to identify the same layer in different places by fossil content - the Principle of Faunal Succession.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333315,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Faunal Succession.",
+    "Back": "Sedimentary layers contain characteristic fossils distinct from those above and below, so layers in different places can be correlated (matched in age) by their fossil content, using reference horizons.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333317,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the five principles of stratigraphy and their authors.",
+    "Back": "Superposition, Original Horizontality, Original Lateral Continuity (Steno); Cross-Cutting Relationships (Hutton); Faunal Succession (Smith).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333319,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The five principles of stratigraphy: Steno's three, Hutton's {{c1::Cross-Cutting Relationships}}, and Smith's {{c2::Faunal Succession}}.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333322,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a composite stratigraphic column and how was it built?",
+    "Back": "A younger-upon-older vertical sequence assembled by correlating strata from region to region (superposition, cross-cutting, faunal succession) until a world-wide column was compiled.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333324,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How were subdivisions of geologic time designated?",
+    "Back": "Subdivisions of the stratigraphic column became time divisions; boundaries were placed where fossil types change - the emergence and extinction of fossil life forms.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333326,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "An {{c1::era}} is a long interval of geologic time separated from the next by a {{c2::major extinction event}}.",
+    "Extra": "A long interval of geologic time separated from the next by a major extinction event.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333329,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What two events did early palaeontologists use to make the major era boundaries?",
+    "Back": "Two global extinction events: between the Palaeozoic and Mesozoic eras (251 Ma) and between the Mesozoic and Cenozoic eras (65.5 Ma).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333331,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Era names: Palaeozoic = '{{c1::ancient life}}', Mesozoic = '{{c2::middle life}}', Cenozoic = '{{c3::recent life}}'.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333335,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The Palaeozoic/Mesozoic boundary is dated at {{c1::251}} million years ago; the Mesozoic/Cenozoic boundary at {{c2::65.5}} million years ago.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333338,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'Precambrian' is {{c1::not}} a formal time division; it lumps all time before the {{c2::Palaeozoic}} Era, and life {{c3::did}} develop during it.",
+    "Extra": "No. It simply lumps all time before the Palaeozoic Era. It originally meant 'time before life', but life actually developed in the Precambrian.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333342,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: list the Palaeozoic periods from oldest to youngest.",
+    "Back": "Cambrian, Ordovician, Silurian, Devonian, Carboniferous, Permian.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333344,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: list the Mesozoic periods from oldest to youngest.",
+    "Back": "Triassic, Jurassic, Cretaceous.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333346,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: name the Cenozoic periods and the epochs of the Quaternary.",
+    "Back": "Tertiary (Paleocene, Eocene, Oligocene, Miocene, Pliocene) and Quaternary (Pleistocene, Holocene).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333348,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: which period begins with the 'explosion of organisms with shells' and when?",
+    "Back": "The Cambrian, about 545 million years ago (base of the Palaeozoic).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333350,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale (Fig. 7): approximate base ages of the Cambrian, Permian, Triassic and Cretaceous.",
+    "Back": "Cambrian 545 Ma; Permian 290 Ma; Triassic 245 Ma (text: 251); Cretaceous 146 Ma.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333352,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: in which period did dinosaurs and mammals first appear, and in which did birds and flowering plants appear?",
+    "Back": "Dinosaurs and mammals: Triassic. Birds: Jurassic. Flowering plants: Cretaceous.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333354,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: when did free oxygen in the atmosphere / an ozone layer appear, and the first fossils?",
+    "Back": "Free oxygen and ozone about 2500 Ma; primitive life (first fossils) about 3500 Ma - both Precambrian.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333356,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Order of eras from oldest to youngest: Precambrian (informal), {{c1::Palaeozoic}}, {{c2::Mesozoic}}, {{c3::Cenozoic}}.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333360,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Henri Becquerel}} discovered radioactivity in {{c2::1896}}: some atoms (e.g. uranium) are unstable and break down predictably.",
+    "Extra": "Henri Becquerel, 1896: some atoms of some elements (e.g. uranium) are unstable and break down predictably.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333363,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Atomic number = number of {{c1::protons}} (same for every atom of an element); atomic mass = protons plus {{c2::neutrons}}.",
+    "Extra": "Atomic number = number of protons (same for all atoms of an element). Atomic mass = protons + neutrons. (The reading labels them A and Z respectively.)",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333366,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Isotopes}} are atoms of the same element that differ in the number of {{c2::neutrons}} in the nucleus, and thus in {{c3::mass}}.",
+    "Extra": "Atoms of the same element that differ in the number of neutrons in the nucleus, and thus in mass. They behave the same chemically (heavier ones react slightly slower).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333370,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Hydrogen has three isotopes (masses 1, 2, 3); the mass-{{c1::3}} isotope (1 proton + {{c2::2}} neutrons) is the {{c3::radioactive}} one.",
+    "Extra": "Mass 1: 1 proton, 0 neutrons (stable); mass 2: 1 proton, 1 neutron (stable); mass 3: 1 proton, 2 neutrons (radioactive).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333374,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define radioactivity.",
+    "Back": "The progressive breakdown (decay) of the nucleus of an atom or isotope; each radioactive isotope decays at its own characteristic rate, which has never changed.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333376,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are 'parent' and 'daughter' isotopes?",
+    "Back": "Parent = the original isotope in a decay step; daughter = the isotope (of a different element) produced by that step.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333378,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The {{c1::half-life}} is the period of time in which exactly {{c2::half}} the nuclei of a radioactive species decay.",
+    "Extra": "The period of time in which exactly half the nuclei of a radioactive species decay (in any step of the breakdown).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333381,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is radioactive decay called exponential?",
+    "Back": "Each half-life, exactly half of the remaining parents decay, so the number of daughters produced is large at first and becomes smaller and smaller as fewer parents remain.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333383,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "After 1 half-life the parent:daughter ratio is {{c1::50:50}}; after 2 half-lives {{c2::25:75}}; after about {{c3::10}} half-lives the parent is too small to measure.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333387,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Half-life of uranium-235 and its daughter?",
+    "Back": "U-235 -&gt; Pb-207 (lead-207); 704 million years.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333389,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Half-life of rubidium-87 and its daughter?",
+    "Back": "Rb-87 -&gt; Sr-87 (strontium-87); 48.8 billion years.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333391,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Half-life of potassium-40 and its daughter?",
+    "Back": "K-40 -&gt; Ar-40 (argon-40); 1.26 billion years.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333393,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Half-life of carbon-14, its daughter, and its useful range?",
+    "Back": "C-14 -&gt; N-14 (nitrogen-14, per slides); 5730 years; used for organic material younger than about 50,000 years (all gone after 10 half-lives, ~57,000 years).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333395,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Half-lives: U-235 = {{c1::704 million}} years; K-40 = {{c2::1.26 billion}} years; Rb-87 = {{c3::48.8 billion}} years.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333399,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Carbon-14 has a half-life of {{c1::5730}} years and is useful for organic samples younger than about {{c2::50,000}} years.",
+    "Extra": "",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333402,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "If three isotope systems are analysed in one granite, what result is expected, and why is only one used in practice?",
+    "Back": "All three should give the same age; only one is used because analytical costs are high.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333404,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Zircon}} is the mineral used for {{c2::uranium-lead}} dating of igneous rocks because it contains uranium.",
+    "Extra": "Zircon, because it contains uranium; the U:Pb ratio in the crystal gives its age.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333407,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a 'closed system' in radiometric dating?",
+    "Back": "A rock/mineral that has neither gained nor lost parent or daughter atoms since it formed, so the ratio reflects only elapsed time.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333409,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why does carbon-14 dating work on once-living things?",
+    "Back": "All living things take in carbon (including C-14); after death intake stops and the C-14 decays, so the remaining fraction gives time since death.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333411,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: A rock has a K-40:Ar-40 ratio of 25:75. Age?",
+    "Back": "25% parent = 2 half-lives; 2 x 1.26 Ga = 2.52 billion years.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333413,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: A zircon retains 12.5% of its U-235. Age?",
+    "Back": "12.5% = 1/8 = 3 half-lives; 3 x 704 Ma = 2,112 million years (~2.1 Ga).",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333415,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: Charcoal has 1/4 of the C-14 of living wood. Age?",
+    "Back": "1/4 = 2 half-lives; 2 x 5730 = 11,460 years.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333417,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why can't carbon-14 date a dinosaur bone or a 2-billion-year-old granite?",
+    "Back": "After ~10 half-lives (~57,000 years) no measurable C-14 remains; 65.5 Ma or 2 Ga is thousands to millions of half-lives.",
+    "Topic": "Ch2 Age Dating"
+   }
+  },
+  {
+   "noteId": 1789690333419,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Age_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why can sediments usually not be dated absolutely (slides)?",
+    "Back": "Their grains are recycled from older rocks, so an isotopic age would date the source rock, not the deposition; relative dating is used instead.",
+    "Topic": "Ch2 Age Dating"
+   }
+  }
+ ]
+}

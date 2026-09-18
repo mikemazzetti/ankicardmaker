@@ -1,0 +1,72 @@
+{
+ "deck": "CS3357A Networks::Week 1::Security",
+ "note_count": 5,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872989,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a botnet?",
+    "Back": "A network of thousands of malware-compromised devices controlled by an attacker, used for spam distribution or distributed denial-of-service attacks.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789678872991,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The three categories of DoS attack: {{c1::vulnerability attacks}}, {{c2::bandwidth flooding}}, and {{c3::connection flooding}}.",
+    "Extra": "Vulnerability: a few crafted messages crash a service. Bandwidth flooding: packets clog the access link. Connection flooding: many half-open TCP connections.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789678872995,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a DDoS attack and why is it harder to defend against?",
+    "Back": "A distributed DoS: the attacker controls multiple sources (e.g., a botnet) that each blast traffic at the target; the aggregate reaches the victim's access rate R, and many sources are harder to detect and block than one.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789678872997,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a packet sniffer, and what is the main defence?",
+    "Back": "A passive receiver that records a copy of every packet on a broadcast medium (WiFi, cable, shared Ethernet); hard to detect because it injects nothing. Defence: cryptography.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789678872999,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Injecting packets with a false source address is called {{c1::IP spoofing}}; the defence is {{c2::end-point authentication}}.",
+    "Extra": "",
+    "Topic": "Security"
+   }
+  }
+ ]
+}

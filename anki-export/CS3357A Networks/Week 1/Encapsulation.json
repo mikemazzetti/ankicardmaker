@@ -1,0 +1,111 @@
+{
+ "deck": "CS3357A Networks::Week 1::Encapsulation",
+ "note_count": 8,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678872969,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is encapsulation?",
+    "Back": "At the sending host each layer adds its own header to the data (payload) received from the layer above: message M -&gt; segment (Ht|M) -&gt; datagram (Hn|Ht|M) -&gt; frame (Hl|Hn|Ht|M).",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872971,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Encapsulation: transport adds header {{c1::Ht}} to make a segment; network adds {{c2::Hn}} to make a datagram; link adds {{c3::Hl}} to make a frame.",
+    "Extra": "",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872975,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What two kinds of fields does a packet have at each layer?",
+    "Back": "Header fields (added by that layer) and a payload field (typically the packet from the layer above).",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872977,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which layers does a link-layer switch implement, and which header does it examine?",
+    "Back": "Physical and link layers (layers 1-2); it examines the link header Hl and never looks at IP addresses.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872979,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which layers does a router implement, and which header does it use to forward?",
+    "Back": "Physical, link and network layers (layers 1-3); it examines the network header Hn (destination IP address) to forward, and replaces the link header Hl for the outgoing link.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872981,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A switch implements {{c1::2}} layers (physical, link); a router implements {{c2::3}} layers (physical, link, network); a host implements all {{c3::5}} layers.",
+    "Extra": "",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872985,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which headers does a router change and which does it leave untouched?",
+    "Back": "It replaces the link-layer header Hl on each hop; the network header Hn, transport header Ht and message M pass through unchanged (aside from small IP field updates like TTL).",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789678872987,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is de-encapsulation?",
+    "Back": "The reverse process at the destination: link layer removes Hl and passes the datagram up, network removes Hn and passes the segment up, transport removes Ht and delivers the message M to the application.",
+    "Topic": "Encapsulation"
+   }
+  }
+ ]
+}

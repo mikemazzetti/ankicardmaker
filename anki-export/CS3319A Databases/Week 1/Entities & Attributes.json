@@ -1,0 +1,384 @@
+{
+ "deck": "CS3319A Databases::Week 1::Entities & Attributes",
+ "note_count": 29,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991401,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "When designing a database, {{c1::nouns}} are king: they usually become {{c2::entities or attributes}}.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991404,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'entity'.",
+    "Back": "A single thing that exists with independent existence; any object in the mini-world we want to model and store information about (e.g. Student, Professor, Classroom, Employee).",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991406,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'attribute'.",
+    "Back": "Describes a thing; defines the information about an entity that needs to be stored. An entity has 0 or more attributes; each attribute has a domain. E.g. Age, SSN, Sex, Name.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991408,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define 'domain' (value set) of an attribute.",
+    "Back": "The type/set of values an attribute can take, e.g. string, integer, real, date; more specifically Age: 0-120.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991410,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the difference between an attribute, its value and its domain?",
+    "Back": "Attribute: Age. Value: 25 (what one entity holds). Domain: the set of allowed values, e.g. integers 0-120.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991412,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the difference between an entity type and an entity?",
+    "Back": "An entity type defines a set of entities with the same attributes (like a class); an entity is one instance of an entity type (like an object).",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991414,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is an entity set (collection)?",
+    "Back": "The group of all entities of one entity type.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991416,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A key attribute is one whose values are {{c1::unique}} for every entity, so it {{c2::identifies}} one entity.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991419,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Composite vs. simple (atomic) attribute: define and give the slide example.",
+    "Back": "Composite can be divided into parts with independent meaning (Name = 'Bart Simpson' -&gt; first, last); simple cannot be divided (Age = 45).",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991421,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Single-valued vs. multi-valued attribute: define and give the slide example.",
+    "Back": "Single-valued holds exactly one value per entity (Age); multi-valued can hold several (CollegeDegrees).",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991423,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Derived vs. stored attribute: define and give the slide example.",
+    "Back": "Derived can be computed from other stored data (Age); stored must be stored (Birthdate).",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991425,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Slide examples: composite vs simple = {{c1::Bart Simpson vs 45}}; multi-valued vs single-valued = {{c2::CollegeDegrees vs Age}}; derived vs stored = {{c3::Age vs Birthdate}}.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991429,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the two reasons an attribute value may be null? Give the slide examples.",
+    "Back": "Not applicable (Apartment Number: some people have none) and not known (Phone Number: the person has one but we do not know it).",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991431,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A null Apartment Number is an example of a value that is {{c1::not applicable}}; a null Phone Number is an example of a value that is {{c2::not known}}.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991434,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the domains of Age, Name and Cost (speaker-note answers)?",
+    "Back": "Speaker notes: Age 0-120; Name alphabetic characters (possibly restricted length); Cost 0.00 to some upper limit (real). In the video: age = integers greater than 0 (or 0 to 114); name = characters/strings; cost = real numbers.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991436,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In Chen notation, how are these drawn: entity type, attribute, key attribute?",
+    "Back": "Entity type: rectangle. Attribute: oval. Key attribute: oval with the name underlined.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991438,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In Chen notation, how are these drawn: multi-valued attribute, composite attribute, derived attribute?",
+    "Back": "Multi-valued: double oval. Composite: oval with component ovals attached. Derived: dashed oval.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991440,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Chen notation: a multi-valued attribute is a {{c1::double oval}}, a derived attribute is a {{c2::dashed oval}}, a key attribute is {{c3::underlined}}.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991444,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Instructor: what is the difference between the nouns 'employee' and 'salary' in the case study?",
+    "Back": "Employee is a thing that has existence, so it is an entity; salary describes the employee ($40,000 describes Homer Simpson), so it is an attribute.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991446,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which noun in the case study is only implied, and where does it end up?",
+    "Back": "Date ('keep track of when the employee started managing'); it becomes the StartDate attribute on the MANAGES relationship.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991448,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Store {{c1::Birthdate}} rather than {{c2::Age}}: if you stored the latter, every time it changed you would have to recalculate it.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991451,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the instructor's test for whether an attribute like Name is composite?",
+    "Back": "Whether there are parts you might need to get at (e.g. just the first name). Breaking a first name into letters makes no sense, so FirstName is simple.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991453,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Instructor's domain example: a Western student number is over the domain of {{c1::nine digits}}.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991455,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What keys does the instructor give for a student and for a patient, and why is a key needed?",
+    "Back": "Student number or Western user ID; OHIP number. Because two students could both be named Homer Simpson.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991457,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'I tend to not say entity type, I tend to just call it an {{c1::entity}}'; strictly, an entity is an {{c2::instance}} of an entity type.",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991460,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Are derived attributes always drawn on an ER diagram?",
+    "Back": "No: 'if you even want to show it, you don't always show it'; generally only stored attributes are shown.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991462,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In draw.io, which shapes does the instructor use for an entity, an ordinary attribute and a multi-valued attribute?",
+    "Back": "Rectangle for the entity; the plain oval under General for ordinary attributes; the Entity Relation library's double-ring attribute only for multi-valued attributes.",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991464,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'Most of the time entities don't have {{c1::two unique keys}}', but DEPARTMENT does ({{c2::Name and Number}}).",
+    "Extra": "",
+    "Topic": "Entities & Attributes"
+   }
+  },
+  {
+   "noteId": 1789692991467,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Entities_&_Attributes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the instructor's example of an entity taking different values for the same attributes?",
+    "Back": "Homer Simpson and Marge Simpson are two entities of the same type; Marge's name and other attribute values differ from Homer's.",
+    "Topic": "Entities & Attributes"
+   }
+  }
+ ]
+}

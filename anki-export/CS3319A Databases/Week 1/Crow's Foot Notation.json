@@ -1,0 +1,241 @@
+{
+ "deck": "CS3319A Databases::Week 1::Crow's Foot Notation",
+ "note_count": 18,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991695,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How is an entity drawn in Crow's Foot notation?",
+    "Back": "A box with the entity name in a header and the attributes listed inside (key marked), instead of a rectangle with attribute ovals.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991697,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How is a relationship drawn in Crow's Foot notation?",
+    "Back": "With just a line between the entities (no diamond); the end of the line shows both the cardinality and the participation.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991699,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Crow's Foot: what are the four possible line ends?",
+    "Back": "Zero or more (circle + crow's foot); one or more (bar + crow's foot); one and only one (bar + bar); zero or one (circle + bar).",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991701,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Crow's Foot line ends: circle + crow's foot = {{c1::zero or more}}; bar + crow's foot = {{c2::one or more}}; bar + bar = {{c3::one and only one}}; circle + bar = {{c4::zero or one}}.",
+    "Extra": "",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991706,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In a Crow's Foot line end, which mark gives the maximum and which the minimum?",
+    "Back": "The outer mark (touching the entity) gives the maximum: bar = 1, crow's foot = many. The inner mark gives the minimum: circle = 0 (partial), bar = 1 (total).",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991708,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In Crow's Foot notation the three-pronged symbol means {{c1::many}} and the circle means {{c2::optional (minimum zero)}}.",
+    "Extra": "",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991711,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Translate <code>A ||-------o&lt; B</code> (Crow's Foot) into Chen cardinality and participation.",
+    "Back": "1:N from A to B; B total (each B has exactly one A), A partial (an A has zero or more Bs); (1,1) beside B, (0,N) beside A.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991713,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "DVD store example: what is the Crow's Foot line for CUSTOMER 'currently renting' DVDCOPY?",
+    "Back": "CUSTOMER end: zero or one (a copy is rented by at most one customer); DVDCOPY end: zero or more (a customer may be renting none or many). Customers may never have rented.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991715,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "DVD store example: what is the Crow's Foot line for DVDCOPY 'is a' MOVIE?",
+    "Back": "MOVIE end: one and only one (each copy is a copy of exactly one movie; no blank DVDs, no two movies on one disc). DVDCOPY end: one or more (the store only keeps track of a movie if it has at least one copy; a popular movie has many).",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991717,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "DVD store example: list the three entities and their attributes.",
+    "Back": "CUSTOMER (CustomerID, FirstName, LastName); MOVIE (MovieID, Title, Year); DVDCOPY (DVDID, HomeStore).",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991719,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which notation does the course use, and why does the instructor teach Crow's Foot anyway?",
+    "Back": "Chen notation (rectangles and ovals, 'the standard notation people usually use'); Crow's Foot so you recognise it elsewhere. It looks closer to UML diagrams.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991721,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Slide example: a student fills {{c1::one and only one}} seat and every seat is filled by a student: one-to-one with {{c2::total}} participation on both sides.",
+    "Extra": "",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991724,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Instructor teaches Course (Crow's Foot slide): read both ends.",
+    "Back": "An instructor teaches one or many courses (must teach at least one); a course is taught by one and only one instructor.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991726,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Professor teaches Section: a professor teaches {{c1::zero or many}} sections (they might be doing research); a section is taught by {{c2::one and only one}} professor.",
+    "Extra": "",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991729,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Planets example: read the four line ends.",
+    "Back": "A planet circles zero or one star (an asteroid circles none); a star has zero or many planets; a planet has zero or many moons; a moon orbits at least one planet.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991731,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "DVD store: DVDCOPY is separate from MOVIE because there may be {{c1::five copies of Star Wars}}; a customer rents a {{c2::DVD}}, not a movie.",
+    "Extra": "",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991734,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Front": "draw.io demo: what line did the instructor choose for CUSTOMER currently renting CAR, and why?",
+    "Back": "Optional one to optional one: a customer might not be renting and rents at most one car at a time; a car might not be rented and is rented by at most one customer.",
+    "Topic": "Crow's Foot Notation"
+   }
+  },
+  {
+   "noteId": 1789692991736,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Crow's_Foot_Notation",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In Crow's Foot the mark closer to the {{c1::entity}} is the maximum (cardinality) and the mark closer to the {{c2::middle of the line}} is the participation.",
+    "Extra": "",
+    "Topic": "Crow's Foot Notation"
+   }
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "deck": "CS3307A OOD::Week 1::Advantages of OOP",
+ "note_count": 14,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789678839324,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "List the eleven advantages of OOP covered in Week 1.",
+    "Back": "Modularity, Reusability, Encapsulation, Maintainability, Extensibility, Polymorphism, Inheritance, Team Collaboration, Security and Access Control, Scaling, Debugging and Testing.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839326,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Modularity. Definition and example?",
+    "Back": "Breaking a system into smaller, self-contained classes each performing a specific function; e.g., <code>ShoppingCart</code>, <code>Order</code>, <code>Payment</code> developed independently.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839328,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Reusability. Example?",
+    "Back": "Base class <code>Vehicle</code> reused for <code>Car</code>, <code>Bike</code>, <code>Truck</code>; reuse base functionality and extend where needed.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839330,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Encapsulation. Example?",
+    "Back": "<code>BankAccount</code> exposes <code>deposit()</code> and <code>withdraw()</code> but keeps <code>balance</code> private, protecting state from outside interference.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839332,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Maintainability. What concept and example?",
+    "Back": "Separation of concerns: each class handles a specific part; a bug in <code>Payment</code> can be fixed without affecting <code>ShoppingCart</code> or <code>Order</code>.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839334,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Extensibility. Which principle is it tied to?",
+    "Back": "The Open/Closed Principle: open for extension, closed for modification; add new classes/methods without changing existing code.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839336,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The polymorphism advantage example: a `{{c1::PaymentMethod}}<code> interface with implementations </code>CreditCardPayment<code>, </code>PayPalPayment<code>, and </code>CryptoPayment`; new payment types are added without changing processing logic.",
+    "Extra": "",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839338,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Inheritance. Example?",
+    "Back": "Game base class <code>Character</code> with <code>health</code>, <code>strength</code>, <code>move()</code>, <code>attack()</code>; <code>Warrior</code> and <code>Mage</code> inherit and add unique abilities.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839340,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Team Collaboration. Example?",
+    "Back": "Clearly defined interfaces let one team build the <code>User</code> class while another builds <code>Transaction</code>.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839342,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Security and Access Control. Example?",
+    "Back": "A <code>BankTransaction</code> class limits access to sensitive methods (e.g., transfers) based on user roles using access modifiers.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839344,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Scaling. Example?",
+    "Back": "Microservices: <code>UserService</code>, <code>PaymentService</code> as objects with well-defined interfaces; <code>PaymentService</code> can be scaled independently.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839346,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Advantage: Debugging and Testing. Example?",
+    "Back": "Classes are self-contained units testable in isolation via mock objects or dependency injection; test <code>Order</code> by mocking <code>Payment</code> and <code>Shipping</code>.",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839348,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Extensibility in OOP means being open for {{c1::extension}} but closed for {{c2::modification}} (the Open/Closed Principle).",
+    "Extra": "",
+    "Topic": "Advantages of OOP"
+   }
+  },
+  {
+   "noteId": 1789678839351,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Advantages_of_OOP",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Maintainability in OOP relies on {{c1::separation of concerns}}: each class is responsible for a specific part of the system.",
+    "Extra": "",
+    "Topic": "Advantages of OOP"
+   }
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "deck": "CS3319A Databases::Week 2::Mapping Entities",
+ "note_count": 11,
+ "exported": "2026-09-18",
+ "notes": [
+  {
+   "noteId": 1789692991966,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A relational database can only use {{c1::tables}}, {{c2::rows}}, {{c3::columns}} and {{c4::cells}}.",
+    "Extra": "",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991971,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Design goes from the real world (mini-world) to a {{c1::model (ER diagram)}} to a {{c2::relational database}}.",
+    "Extra": "",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991974,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Text": "An entity type becomes a {{c1::table}}; its attributes become {{c2::columns}}; each entity becomes a {{c3::row}}; its key becomes the {{c4::primary key}}.",
+    "Extra": "",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991979,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Map PROFESSOR (EmpID, LastName, FirstName, Office, Ext).",
+    "Back": "PROFESSOR(EmpID, FirstName, LastName, Office, Ext) with primary key EmpID; rows such as Laura Reid 11 ST238 86905.",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991981,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Library example: write the tables for Book, Publisher and Member.",
+    "Back": "Book(Book_ID, Title, Price, Author, Available); Publisher(Pub_ID, Name, Address); Member(Member_ID, Member_date, Member_price, Address, Name, Expiry_date).",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991983,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How is a composite attribute mapped when creating an entity's table?",
+    "Back": "Include only its simple component attributes (e.g. First and Last, not Name).",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991985,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the stated objective of the mapping-entities video?",
+    "Back": "Look at an ER diagram and figure out how to turn each entity into a table.",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991987,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the instructor map the composite attribute Name(FirstName, LastName) of PROFESSOR?",
+    "Back": "Name itself does not become a column; only its pieces FirstName and LastName become columns.",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991989,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What counting habit does the instructor use before mapping the library ER diagram?",
+    "Back": "Count entities to get the number of tables (3), then count each entity's attributes to get its columns: Book 5, Publisher 3, Member 6.",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991991,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In the PROFESSOR table, {{c1::6}} professors give 6 rows and {{c2::5}} attributes give 5 columns; each column describes something about that professor.",
+    "Extra": "",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789692991994,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does the instructor call 'the first rule I want you to get from this'?",
+    "Back": "Once you have your ER diagram, each entity becomes a table and the attributes become the columns.",
+    "Topic": "Mapping Entities"
+   }
+  }
+ ]
+}
