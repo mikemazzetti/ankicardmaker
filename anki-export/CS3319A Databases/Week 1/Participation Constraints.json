@@ -1,343 +1,200 @@
 {
  "deck": "CS3319A Databases::Week 1::Participation Constraints",
- "note_count": 26,
- "exported": "2026-09-18",
+ "note_count": 15,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991577,
+   "noteId": 1789752890480,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Front": "Define 'participation constraint'.",
-    "Back": "Specifies whether the existence of an entity depends on it being related to another entity via the relationship type (the minimum number of relationship instances).",
+    "Front": "Define the participation constraint, and define total and partial participation with the case-study example of each.",
+    "Back": "Participation specifies whether the existence of an entity depends on it being related to another entity via the relationship - it is the MINIMUM number of relationship instances.<br>Total (mandatory): EVERY entity must participate - every employee must WORK FOR a department. Drawn as a DOUBLE line.<br>Partial (optional): some but not necessarily all participate - some employees manage a department. Drawn as a SINGLE line.",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991579,
+   "noteId": 1789752890481,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Front": "Define total (mandatory) participation and give the example.",
-    "Back": "Every entity in the entity set MUST be related to the other entity set via the relationship; e.g. every employee must WORK FOR a department.",
+    "Front": "Explain (min, max) notation and what each number tells you.",
+    "Back": "Beside each entity's line write (min, max) with 0 &lt;= min &lt;= max and max &gt;= 1: each entity of that type participates in at least min and at most max relationship instances.<br>MIN always tells you the PARTICIPATION: 0 means partial, 1 or more means total (and the line must be double).<br>MAX tells you the CARDINALITY: 1 means a 'one' side, M or N a 'many' side.",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991581,
+   "noteId": 1789752890482,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Front": "Define partial (optional) participation and give the example.",
-    "Back": "Some (not necessarily all) entities are related to the other entity set; e.g. some employees manage a department but not all.",
+    "Front": "What mistake did the instructor catch on her own (min, max) slide, and what should you expect on the exam?",
+    "Back": "An entity labelled (1, M) had been drawn with a SINGLE line; because the minimum is greater than zero it should have been a DOUBLE line (total participation). 'If the first number is one or greater, this is total participation.' Expect a question that asks you to spot exactly that inconsistency.",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991583,
+   "noteId": 1789752890483,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Front": "How are total and partial participation shown on a Chen ER diagram?",
-    "Back": "Total: double line between entity and diamond. Partial: single line.",
+    "Front": "Give the (min, max) pairs and reasoning for Person BOOKS Hotel Room, Artist PAINTS Painting and Woman GIVES BIRTH TO Child.",
+    "Back": "Person (1,N) BOOKS Hotel Room (0,M), an M:N relationship: 'why would we save information on this person if they haven't started booking rooms?' but a new hotel may have rooms sitting empty.<br>Artist (0,M) PAINTS Painting (1,1): 'paintings don't just come out of thin air', but some artists have not painted anything yet.<br>Woman (0,M) GIVES BIRTH TO Child (1,1): not every woman gives birth; every child was born to someone.",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991585,
+   "noteId": 1789752890484,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Participation_Constraints",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: read BRANCH (5, N) --- Is allocated --- (0,1) EMPLOYEE in layers.",
+    "Back": "Cardinality: a branch is allocated many employees; an employee works at one branch (1:N).<br>Participation: the double line at BRANCH says every branch has at least one employee; the single line at EMPLOYEE says not every employee works at a branch.<br>(0,1) at EMPLOYEE: an employee is allocated to zero or one branch.<br>(5,N) at BRANCH: every branch has AT LEAST FIVE employees and at most N - a '5-to-many' relationship, which double lines alone cannot express.",
+    "Topic": "Participation Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890485,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Participation_Constraints",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How does the instructor reason about the participation of Student TAKES Course and Artist PAINTS Picture?",
+    "Back": "Student: total - 'at a university we're not going to store information about people who don't take courses'. Course: possibly partial - 'maybe we don't offer it if nobody's taking it'.<br>Picture: total - otherwise how did it come into existence? Artist: 'a bit iffy' - the word implies they have painted, but we might store someone who has not painted yet.",
+    "Topic": "Participation Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890486,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Participation_Constraints",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: give the participation she assigned to HAS (dependents), WORKS ON and CONTROLS, with her reasoning.",
+    "Back": "HAS: EMPLOYEE partial (0,N) - not every employee has a dependent; DEPENDENT total (1,1) - 'we wouldn't keep information about a dependent unless they had a parent who worked at the company'.<br>WORKS ON: both total (1,N) - every employee should be working on something and 'every project has to have somebody working on it'. She expects you to figure this one out unprompted.<br>CONTROLS: DEPARTMENT partial (0,N) - not stated; PROJECT total (1,1) - every project is controlled by a department.",
+    "Topic": "Participation Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890487,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Participation_Constraints",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: give the participation of WORKS FOR, MANAGES and SUPERVISES, with her reasoning.",
+    "Back": "WORKS FOR: EMPLOYEE total (1,1) and DEPARTMENT total (1,N) - every employee works for a department and every department has employees.<br>MANAGES: EMPLOYEE partial (0,1) - only one person per department is picked; DEPARTMENT total (1,1) - every department must have a manager.<br>SUPERVISES: both partial - not every employee supervises, and 'the very top boss, the president, probably doesn't have a supervisor'.",
+    "Topic": "Participation Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890488,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Participation_Constraints",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: Man FATHERS Child. Give the cardinality, the participation of each side, and the (min, max) pairs.",
+    "Back": "Cardinality 1:N (a man could father many children; a child has one father). Child: TOTAL - every child has somebody who fathered them, so a double line, (1,1). Man: PARTIAL - not all men are fathers, so a single line, (0,N).",
+    "Topic": "Participation Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890514,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Text": "Total participation is drawn with a {{c1::double line}}; partial participation with a {{c2::single line}}.",
+    "Text": "The key word for participation is {{c1::EVERY}}: if every single instance must participate it is {{c1::total}} participation (a {{c1::double line}}); anything less is partial (a single line).",
     "Extra": "",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991588,
+   "noteId": 1789752890515,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Text": "The key word {{c1::EVERY}} implies {{c2::total}} participation; anything less implies partial.",
+    "Text": "Cardinality ratio gives the {{c1::maximum}} number of instances an entity participates in (1, M or N) and is found with the word '{{c1::could}}'; participation gives the {{c1::minimum}} (total = at least 1, partial = may be 0) and is found with the word 'every'.",
     "Extra": "",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991591,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Explain (min, max) notation.",
-    "Back": "Written beside an entity's line: each entity must participate in at least min and at most max relationship instances, with 0 &lt;= min &lt;= max and max &gt;= 1. min = 0 means partial participation.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991593,
+   "noteId": 1789752890516,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Text": "In (min, max) notation, a min of {{c1::0}} implies {{c2::partial}} participation; max &gt;= {{c3::1}}.",
+    "Text": "In (min, max) notation the {{c1::min}} gives the participation and the {{c1::max}} gives the cardinality; a min of {{c1::0}} means partial; the max beside an entity always matches the Chen letter at the opposite end of the line.",
     "Extra": "",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991597,
+   "noteId": 1789752890517,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Text": "In Man FATHERS Child, Child has {{c1::total}} participation and Man has {{c2::partial}} participation.",
+    "Text": "Instructor's promise: 'On an exam, if I ask you a question like this, I will always give you {{c1::enough information}}' to decide total versus partial; in the videos she sometimes relies on {{c1::common sense}} instead.",
     "Extra": "",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991600,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Artist PAINTS Painting in (min, max) notation.",
-    "Back": "Artist (0,M), Painting (1,1): an artist may have painted zero or many; every painting has exactly one artist.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991602,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Woman GIVES BIRTH TO Child in (min, max) notation.",
-    "Back": "Woman (0,M), Child (1,1).",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991604,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Person BOOKS Hotel Room (with Start Date) in (min, max) notation, per the slide.",
-    "Back": "Person (1,N), Hotel Room (0,M); an M:N relationship.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991606,
+   "noteId": 1789752890518,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Text": "BRANCH (5, N) --- Is allocated --- (0,1) EMPLOYEE is a {{c1::5-to-many}} relationship: every branch has at least {{c2::5}} employees, and each employee is allocated to {{c3::at most one}} branch.",
+    "Text": "Case study participation: WORKS FOR {{c1::total on both sides}}; MANAGES - EMPLOYEE {{c1::partial (0,1)}}, DEPARTMENT {{c1::total (1,1)}}; HAS - EMPLOYEE partial, DEPENDENT total; SUPERVISES partial on both sides (the president has no supervisor).",
     "Extra": "",
     "Topic": "Participation Constraints"
    }
   },
   {
-   "noteId": 1789692991610,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is the difference between cardinality ratio and participation?",
-    "Back": "Cardinality ratio gives the maximum number of instances an entity participates in (1, M, N); participation gives the minimum (total = at least 1, partial = may be 0).",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991612,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Student takes Course: how does the instructor reason about the participation of each side?",
-    "Back": "Every student probably takes at least one course, since a university would not store people who take no courses (total); a course might not be offered if nobody takes it, so possibly partial.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991614,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Artist paints Picture: which side's participation is 'a bit iffy' and why?",
-    "Back": "Artist: the word implies they have painted at least one, but we might store aspiring artists who have not painted yet. Picture is clearly total (otherwise how did it come into existence?).",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991616,
+   "noteId": 1789752890519,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Participation_Constraints",
     "week1"
    ],
    "fields": {
-    "Text": "Instructor's promise: 'On an exam, if I ask you a question like this, I will always give you {{c1::enough information}}' to decide total versus partial.",
+    "Text": "Textbook (Elmasri §3.4.3): total participation is also called {{c1::existence dependency}}; the participation constraint is also called the {{c1::minimum cardinality}} constraint; and cardinality ratio plus participation taken together are the {{c1::structural constraints}} of a relationship type.",
     "Extra": "",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991618,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Text": "In (min, max) notation the {{c1::min}} tells you the participation and the {{c2::max}} tells you the cardinality.",
-    "Extra": "",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991621,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What mistake did the instructor spot on her own (min, max) slide?",
-    "Back": "An entity labelled (1, M) had been drawn with a single line; because the minimum is greater than zero, the line should have been double (total participation).",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991623,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Person (1,N) BOOKS Hotel Room (0,M): what does the max in the pair beside Person correspond to in Chen notation?",
-    "Back": "The maximum number of rooms a person could book, N, which Chen notation writes beside HOTEL ROOM (the opposite end). The (min,max) max always matches the cardinality letter on the other side.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991625,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Hotel booking example: why is Person total and Hotel Room partial?",
-    "Back": "Why save information about a person who has not booked a room? And a newly built hotel may have rooms that sit empty with no bookings.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991627,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Branch diagram: what does the double line at BRANCH tell you, and what extra does (5, N) add?",
-    "Back": "The double line says every branch has at least one employee; (5, N) says every branch has at least five employees and at most N. (min,max) gives more information than lines alone.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991629,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: what participation did the instructor give WORKS ON, and what did she say about being told?",
-    "Back": "Total on both sides: every employee should be working on something, and every project needs somebody working on it 'or else how is it going to get done'. She expects you to figure this one out without being told.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991631,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: why are both sides of SUPERVISES partial?",
-    "Back": "Not every employee supervises anyone, and the very top boss (the president) has no supervisor.",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991633,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Case study: every DEPARTMENT must have a manager ({{c1::total}}), but EMPLOYEE in MANAGES is {{c2::partial}} because only one person from each department is picked.",
-    "Extra": "",
-    "Topic": "Participation Constraints"
-   }
-  },
-  {
-   "noteId": 1789692991636,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Participation_Constraints",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: why is DEPENDENT total in HAS but EMPLOYEE partial?",
-    "Back": "We would not keep information about a dependent unless they had a parent working at the company; but not every employee has a dependent.",
     "Topic": "Participation Constraints"
    }
   }

@@ -1,0 +1,137 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::Ch3 Subduction",
+ "note_count": 10,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154806,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What features mark subduction zones?",
+    "Back": "Very deep ocean trenches with numerous earthquakes; a series of curved trenches more or less rings the Pacific (the Ring of Fire). They mark regions of great COMPRESSION where lithosphere (crust) is consumed.",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154807,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define subduction, and why do trenches have earthquakes?",
+    "Back": "Subduction: the process by which old, dense oceanic lithosphere is forced down into Earth's interior at a trench (a convergent boundary). Earthquakes occur because they are produced by movement along fractures (faults) in the crust, and there is certainly movement going on there.",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154808,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Who was Hugo Benioff and what did he find?",
+    "Back": "A Californian who developed and applied seismographs to measure earthquake locations accurately. By the mid-1950s the seismometer was good enough for him to trace earthquakes originating at ocean trenches: they defined a thin zone sloping downward from the trench away from the ocean side toward the continental plate - the descending slab of ocean floor.",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154809,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is a Wadati-Benioff zone, and what is an earthquake focus?",
+    "Back": "The inclined zone of earthquake foci that dips from an ocean trench beneath the overriding plate, marking the still-rigid descending oceanic slab. A focus is the point of origin of an earthquake.",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154810,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What happens above a subducting slab (Fig. 14, Japan Trench)?",
+    "Back": "Partial melting above the descending slab feeds a volcanic island arc, with a marginal sea between the arc and the continent; shallow foci lie near the trench and deeper foci further down the slab beneath the overriding lithosphere.",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154811,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the Pacific Ring of Fire?",
+    "Back": "The series of curved trench features that more or less ring the Pacific Ocean, outlined by concentrated earthquake foci (Fig. 13) - convergent boundaries where lithosphere is consumed, with associated volcanoes.",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154831,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Charles Richter}} was Benioff's co-worker and the man who eventually {{c1::perfected}} the seismograph/seismometer.",
+    "Extra": "",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154832,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Earthquakes along a subducting slab are classed as {{c1::shallow}}-focus (near the trench), {{c1::intermediate}}-focus and {{c1::deep}}-focus, reaching about {{c1::300}} km and beyond.",
+    "Extra": "",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154833,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Seismic tomography}} images sinking slabs because seismic waves travel {{c1::faster}} through {{c1::colder}} material; cool ocean-floor slabs (shown {{c1::blue}}) can be traced falling toward the core-mantle boundary.",
+    "Extra": "",
+    "Topic": "Ch3 Subduction"
+   }
+  },
+  {
+   "noteId": 1789749154834,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Subduction",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Earthquakes trace plate edges because they are produced by movement along {{c1::fractures (faults)}} in the crust; they concentrate along {{c1::subduction zones}} (convergent) and {{c1::transform faults}}.",
+    "Extra": "",
+    "Topic": "Ch3 Subduction"
+   }
+  }
+ ]
+}

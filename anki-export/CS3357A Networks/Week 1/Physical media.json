@@ -1,122 +1,122 @@
 {
  "deck": "CS3357A Networks::Week 1::Physical media",
  "note_count": 9,
- "exported": "2026-09-18",
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678872726,
+   "noteId": 1789752892155,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe twisted pair: construction, why it is twisted, where it dominates, and the Cat 5 vs Cat 6 rates.",
+    "Back": "Two insulated copper wires twisted around each other; twisting reduces electrical interference from neighbouring pairs.<br>Cheapest, most common guided medium; dominates LANs.<br>Category 5: 100 Mbps and 1 Gbps Ethernet. Category 6: 10 Gbps Ethernet.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789752892156,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe coaxial cable: construction and its three key properties.",
+    "Back": "Two concentric copper conductors.<br>1) Bidirectional.<br>2) Broadband: multiple frequency channels on one cable (FDM), 100s of Mbps per channel.<br>3) Can act as a shared guided medium: the medium of cable TV and cable Internet (HFC).",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789752892157,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is fiber the preferred long-haul / backbone medium? Give its three advantages.",
+    "Back": "Glass fiber carrying light pulses (each pulse = one bit).<br>1) High-speed point-to-point transmission: tens to hundreds of Gbps.<br>2) Low error rate: repeaters can be spaced far apart.<br>3) Immune to electromagnetic noise.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789752892158,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Characterize wireless radio links: how the signal travels, duplex/broadcast nature, and the three propagation-environment effects.",
+    "Back": "Signal carried in the electromagnetic spectrum, no physical wire.<br>Broadcast and half-duplex (sender to receiver, one direction at a time).<br>Propagation effects: 1) reflection, 2) obstruction by objects, 3) interference.",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789752892180,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Physical_media",
     "week1"
    ],
    "fields": {
-    "Text": "{{c1::Guided}} media: signals propagate in a solid medium (copper, fiber, coax). {{c2::Unguided}} media: signals propagate freely (e.g., radio).",
+    "Text": "{{c1::Guided}} media: signals propagate in a solid medium (copper, fiber, coax). {{c1::Unguided}} media: signals propagate freely (e.g., radio). A bit propagates between {{c1::transmitter/receiver}} pairs; the physical link is what lies between them.",
     "Extra": "",
     "Topic": "Physical media"
    }
   },
   {
-   "noteId": 1789678872729,
+   "noteId": 1789752892181,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Physical_media",
     "week1"
    ],
    "fields": {
-    "Text": "Twisted pair: two insulated copper wires. Category 5 supports {{c1::100 Mbps and 1 Gbps}} Ethernet; Category 6 supports {{c2::10 Gbps}} Ethernet.",
-    "Extra": "The twisting reduces electrical interference from nearby pairs.",
-    "Topic": "Physical media"
-   }
-  },
-  {
-   "noteId": 1789678872732,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Physical_media",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Describe coaxial cable and its key properties.",
-    "Back": "Two concentric copper conductors; bidirectional; broadband (multiple frequency channels on one cable), hundreds of Mbps per channel. Used by cable TV / cable Internet, can act as a shared medium.",
-    "Topic": "Physical media"
-   }
-  },
-  {
-   "noteId": 1789678872734,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Physical_media",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What are the advantages of fiber optic cable?",
-    "Back": "Glass fiber carrying light pulses (each pulse a bit); high-speed point-to-point transmission (tens to hundreds of Gbps); low error rate: repeaters spaced far apart and immune to electromagnetic noise.",
-    "Topic": "Physical media"
-   }
-  },
-  {
-   "noteId": 1789678872736,
-   "modelName": "CS3357A Networks Cloze",
-   "tags": [
-    "Physical_media",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Fiber optic: each light pulse is a {{c1::bit}}; rates of {{c2::10s-100s of Gbps}}; immune to {{c3::electromagnetic noise}}.",
+    "Text": "Guided-media rates: Cat 5 twisted pair {{c1::100 Mbps / 1 Gbps}}; Cat 6 {{c1::10 Gbps}}; coax {{c1::100s of Mbps per channel}}; fiber {{c1::10s-100s of Gbps}}, each light pulse a bit.",
     "Extra": "",
     "Topic": "Physical media"
    }
   },
   {
-   "noteId": 1789678872740,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Physical_media",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What three propagation-environment effects affect wireless radio links?",
-    "Back": "Reflection, obstruction by objects, and interference.",
-    "Topic": "Physical media"
-   }
-  },
-  {
-   "noteId": 1789678872742,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Physical_media",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Wireless radio links are described on the slides as 'broadcast' and what duplex mode?",
-    "Back": "Half-duplex (sender to receiver, one direction at a time); the signal is carried in the electromagnetic spectrum with no physical wire.",
-    "Topic": "Physical media"
-   }
-  },
-  {
-   "noteId": 1789678872744,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Physical_media",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Give the rates for the four radio link types on the slides.",
-    "Back": "Terrestrial microwave: up to 45 Mbps per channel. Wireless LAN (WiFi): up to hundreds of Mbps. Wide-area cellular (4G): ~tens of Mbps. Satellite: up to 45 Mbps per channel, 270 ms end-to-end delay.",
-    "Topic": "Physical media"
-   }
-  },
-  {
-   "noteId": 1789678872746,
+   "noteId": 1789752892182,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Physical_media",
     "week1"
    ],
    "fields": {
-    "Text": "A geosynchronous satellite link has about {{c1::270 ms}} end-to-end delay; the two satellite types are {{c2::geosynchronous}} and {{c3::low-earth-orbit (LEO)}}.",
-    "Extra": "Geosynchronous satellites orbit ~36,000 km up; LEO satellites are much closer and have ~10 ms delays.",
+    "Text": "Radio link types and rates: terrestrial microwave {{c1::up to 45 Mbps per channel}}; WiFi WLAN {{c1::up to 100s of Mbps}}; 4G cellular {{c1::~tens of Mbps}}; satellite {{c1::up to 45 Mbps per channel, 270 ms delay}}.",
+    "Extra": "",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789752892183,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Satellite links: {{c1::geostationary}} satellites orbit at {{c1::36,000 km}}, giving a signal propagation delay of about {{c1::280 ms}} (the slides say 270 ms) while carrying up to {{c1::hundreds of Mbps}}; they also underpin {{c1::GPS}}. {{c1::LEO}} satellites (e.g. Starlink) orbit far lower with a round-trip delay of about {{c1::10 ms}}, but need {{c1::many satellites}} for continuous coverage. (Kurose 9th ed. §1.2.2)",
+    "Extra": "",
+    "Topic": "Physical media"
+   }
+  },
+  {
+   "noteId": 1789752892184,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Physical_media",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Textbook only (Kurose §1.2.2): fibre has very low attenuation up to {{c1::100 km}} and is {{c1::very hard to tap}}; its drawback is the {{c1::cost of optical transmitters, receivers and switches}}. Long-haul link speeds use the {{c1::Optical Carrier (OC)}} standard, where OC-n equals {{c1::n x 51.8 Mbps}}, running from OC-1 up to {{c1::OC-768}} at 39.8 Gbps.",
+    "Extra": "Also from the book: the labour cost of installing a physical link is often orders of magnitude higher than the cable itself, which is why builders pull twisted pair, fibre and coax into every room at once.",
     "Topic": "Physical media"
    }
   }

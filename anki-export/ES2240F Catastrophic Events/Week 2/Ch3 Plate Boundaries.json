@@ -1,0 +1,98 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::Ch3 Plate Boundaries",
+ "note_count": 7,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154648,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What stress and features go with a DIVERGENT boundary?",
+    "Back": "Tensional (extensional) stress. Spreading centres: plates move apart and new basaltic oceanic crust forms. Examples: mid-ocean ridges such as the Mid-Atlantic Ridge; continental rifts such as the East African Rift, Red Sea and Gulf of Aden.",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  },
+  {
+   "noteId": 1789749154649,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What stress and features go with a CONVERGENT boundary?",
+    "Back": "Compressional stress. Plates collide and the denser plate is forced beneath the less dense one; oceanic crust is consumed by subduction. Features: deep ocean trenches, Wadati-Benioff zones, volcanic arcs - the Pacific Ring of Fire, Japan Trench.",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  },
+  {
+   "noteId": 1789749154650,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why are there three (not two) types of plate boundary?",
+    "Back": "Because we deal with the motion of segments on a SPHERE. Move Plate A to the left and you must remove the same area on the left (overlap = convergent) as you create on the right (gap = divergent), since Earth cannot be made larger. At the top and bottom of the plate the breaks have purely shearing motion - transform boundaries.",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  },
+  {
+   "noteId": 1789749154651,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is a strike-slip fault, and how does it differ from the faults at other boundaries?",
+    "Back": "A fault along which the blocks on either side slip past each other horizontally, along the direction the fault is striking. It is the fault style of transform boundaries, rather than the 'traditional' normal (extensional) or reverse (compressional) faults.",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  },
+  {
+   "noteId": 1789749154652,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Summarize the three plate boundaries in one list.",
+    "Back": "Divergent - plates apart, tensional stress, new basaltic crust, mid-ocean ridges and rifts.<br>Convergent - plates collide, compressional stress, crust consumed by subduction, trenches and volcanic arcs.<br>Transform - plates slide past, shear stress, no crust made or destroyed, strike-slip faults.",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  },
+  {
+   "noteId": 1789749154681,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Text": "At a {{c1::transform}} boundary one plate slips more or less {{c1::horizontally}} past the other under {{c1::shear}} stress; {{c1::no}} crust is produced or consumed, and the breaks are called {{c1::strike-slip}} faults.",
+    "Extra": "",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  },
+  {
+   "noteId": 1789749154682,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Plate_Boundaries",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Stress by boundary: divergent = {{c1::tensional}}; convergent = {{c1::compressional}}; transform = {{c1::shear}}. Crust is {{c1::created}} at divergent boundaries, {{c1::destroyed}} at convergent ones and neither at transform ones.",
+    "Extra": "",
+    "Topic": "Ch3 Plate Boundaries"
+   }
+  }
+ ]
+}

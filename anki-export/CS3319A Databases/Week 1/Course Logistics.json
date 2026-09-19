@@ -1,0 +1,59 @@
+{
+ "deck": "CS3319A Databases::Week 1::Course Logistics",
+ "note_count": 4,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789752889963,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is the CS3319A grade breakdown, and what must you get to pass?",
+    "Back": "1. Assignments (3) 24% - 6% each submission + 2% each peer review, on Kritik<br>2. Quizzes (5) 15%<br>3. Flipped classroom sessions (5) 20% - 1% attendance + 3% for at least 50% on the group worksheet<br>4. Final exam 41%<br>To pass: at least 30% on the final exam AND at least 60% overall, plus the VM setup check.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789752889964,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What Week 1-2 deliverables and dates should you have in your calendar?",
+    "Back": "Quiz 1 (Weeks 1-2): available Sep 20, due Sep 21, 11:59 pm - do it before the first flipped session.<br>Flipped Classroom Session 1: Tue Sep 22.<br>Assignment 1 (ER modelling and relational schema design): available Sep 15, due Oct 4, peer review due Oct 25.<br>Assignments have a 48-hour no-penalty grace period; the first missed quiz moves to the final.",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789752889965,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the prerequisites and the delivery format of CS3319A?",
+    "Back": "Prerequisites: CS 2210A/B and CS 2211A/B. Blended / flipped classroom: recorded lectures posted on OWL, in-person flipped sessions in MC-110 on selected Tuesdays 10:30 am-12:30 pm; Friday 12:30-1:30 pm is office hours only (MC384, Zoom sign-up).",
+    "Topic": "Course Logistics"
+   }
+  },
+  {
+   "noteId": 1789752889989,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Course_Logistics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The textbook is {{c1::Elmasri and Navathe, Fundamentals of Database Systems, 7th ed.}}; the recorded lectures and slides were prepared by {{c1::Laura Reid}}; the coordinator is {{c1::Dr. Mostafa Milani}}; email must carry the subject prefix [CS 3319].",
+    "Extra": "",
+    "Topic": "Course Logistics"
+   }
+  }
+ ]
+}

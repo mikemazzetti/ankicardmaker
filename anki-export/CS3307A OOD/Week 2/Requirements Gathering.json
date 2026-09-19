@@ -1,88 +1,62 @@
 {
  "deck": "CS3307A OOD::Week 2::Requirements Gathering",
  "note_count": 13,
- "exported": "2026-09-18",
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839462,
+   "noteId": 1789749155631,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "Why is requirements gathering critical in OODA?",
-    "Back": "It is the foundation of a successful project: translates user needs into functional and non-functional requirements and identifies key system objects, relationships, and behaviors.",
+    "Front": "What is requirements gathering, and what is its job inside the OODA framework?",
+    "Back": "A critical step in the software development lifecycle and the foundation for a successful project. Within OODA its job is to translate user needs into functional and non-functional requirements and, in doing so, identify the key system objects, their relationships, and their behaviours.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839464,
+   "noteId": 1789749155632,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "What forms can requirements analysis take?",
-    "Back": "Natural language requirements; modelling requirements (UML visualizations, formulas, code); artifacts (goals, stakeholders, constraints).",
+    "Front": "In what three forms can requirements be captured and analysed?",
+    "Back": "Natural language requirements (plain sentences); modelling requirements (UML visualizations, formulas, code); and artifacts, namely goals, stakeholders, and constraints. A goal is what the system is for; stakeholders have an interest in it; constraints are outside limits (budget, platform, legal, deadlines).",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839466,
+   "noteId": 1789749155633,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "What are functional requirements? Give two slide examples.",
-    "Back": "What the system should do: 'User can create a new account'; 'System should send an email after registration'.",
+    "Front": "What are functional requirements, and what do they map to? Give two slide examples.",
+    "Back": "What the system SHOULD DO; they map directly to objects and their behaviours (methods). Examples: 'User can create a new account'; 'System should send an email after registration'.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839468,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Requirements_Gathering",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Functional requirements map directly to {{c1::objects}} and their {{c2::behaviors (methods)}}.",
-    "Extra": "",
-    "Topic": "Requirements Gathering"
-   }
-  },
-  {
-   "noteId": 1789678839471,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Requirements_Gathering",
-    "week2"
-   ],
-   "fields": {
-    "Text": "'User can add books to the shopping cart' maps to objects `{{c1::Book}}<code> and </code>{{c2::ShoppingCart}}<code> and method </code>{{c3::addToCart()}}`.",
-    "Extra": "",
-    "Topic": "Requirements Gathering"
-   }
-  },
-  {
-   "noteId": 1789678839475,
+   "noteId": 1789749155634,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "What are non-functional requirements? Give two slide examples.",
-    "Back": "Define the quality of the system (performance, security, reliability): 'System must support 500 transactions per minute'; 'Response time should not exceed 2 seconds'.",
+    "Front": "What are non-functional requirements, and what do they define? Give two slide examples.",
+    "Back": "They define the QUALITY of the system: performance, security, reliability. Examples: 'System must support 500 transactions per minute'; 'Response time should not exceed 2 seconds'. They do not map to a single method; they shape the design as a whole.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839477,
+   "noteId": 1789749155635,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
@@ -90,84 +64,110 @@
    ],
    "fields": {
     "Front": "How might 'System should handle 10,000 concurrent users' affect the design?",
-    "Back": "Infrastructure, class distribution, and architecture choices like multi-threading.",
+    "Back": "It may affect the underlying infrastructure, the class distribution, and architecture choices such as multi-threading. That breadth of impact is what makes it non-functional rather than functional.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839479,
+   "noteId": 1789749155636,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "Requirements technique: interviews. What do you extract and how?",
-    "Back": "Nouns become potential objects; verbs become potential methods. 'The customer places an order' → <code>Customer</code>, <code>Order</code>, <code>placeOrder()</code>.",
+    "Front": "Technique: interviews. What are they, and what do you extract?",
+    "Back": "One-on-one or group sessions in which stakeholders provide detailed insights. You extract nouns as potential objects and verbs as potential methods. 'The customer places an order' points to <code>Customer</code>, <code>Order</code>, and <code>placeOrder()</code>.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839481,
+   "noteId": 1789749155637,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "Requirements technique: structured questionnaires. What is the example?",
-    "Back": "Gather input from many stakeholders to find common objects/methods; repeated 'login' requests → <code>User</code> and <code>authenticate()</code>.",
+    "Front": "Technique: structured questionnaires. What are they for, and what is the slide example?",
+    "Back": "Gathering input from a large group of stakeholders to identify common objects and methods. Repeated requests for a 'login' feature in a survey point to an object like <code>User</code> and a method like <code>authenticate()</code>.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839483,
+   "noteId": 1789749155638,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Front": "Requirements technique: observation. What is the example?",
-    "Back": "Watching users of existing systems reveals implicit requirements; users placing items in a physical cart → <code>ShoppingCart</code> and <code>addItem()</code>.",
+    "Front": "Technique: observation. What does it uniquely reveal, and what is the slide example?",
+    "Back": "Watching how users interact with existing systems reveals IMPLICIT requirements, things users expect without ever saying so. Observing users placing items in a physical shopping cart suggests a <code>ShoppingCart</code> object and interactions like <code>addItem()</code>.",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839485,
+   "noteId": 1789749155656,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Text": "{{c1::Functional}} requirements say what the system should do; {{c2::non-functional}} requirements define the quality of the system.",
+    "Text": "The functional requirement 'User can add books to the shopping cart' maps to objects {{c1::Book}} and {{c1::ShoppingCart}} and the method {{c1::addToCart()}}.",
     "Extra": "",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839488,
+   "noteId": 1789749155657,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Text": "In interviews, {{c1::nouns}} suggest potential objects and {{c2::verbs}} suggest potential methods.",
+    "Text": "Functional requirements answer {{c1::what does the system do}}; non-functional requirements answer {{c1::how well does it do it}}.",
+    "Extra": "Anything about performance, security, reliability, or capacity is non-functional.",
+    "Topic": "Requirements Gathering"
+   }
+  },
+  {
+   "noteId": 1789749155658,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Requirements_Gathering",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The three elicitation techniques in the slides are {{c1::interviews}}, {{c1::structured questionnaires}}, and {{c1::observation}}; in all of them {{c1::nouns}} become candidate objects and verbs become candidate methods.",
     "Extra": "",
     "Topic": "Requirements Gathering"
    }
   },
   {
-   "noteId": 1789678839491,
+   "noteId": 1789749155659,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Requirements_Gathering",
     "week2"
    ],
    "fields": {
-    "Text": "Three requirements-gathering techniques from the slides: {{c1::interviews}}, {{c2::structured questionnaires}}, and {{c3::observation}}.",
+    "Text": "Requirements analysis works from {{c1::natural language}} requirements, {{c1::modelling}} requirements (UML, formulas, code), and artifacts: {{c1::goals, stakeholders, and constraints}}.",
+    "Extra": "",
+    "Topic": "Requirements Gathering"
+   }
+  },
+  {
+   "noteId": 1789749155660,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Requirements_Gathering",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Non-functional requirements define {{c1::quality}} - aspects like {{c1::performance, security, and reliability}} - e.g. '500 transactions per minute' or 'response time under {{c1::2 seconds}}'.",
     "Extra": "",
     "Topic": "Requirements Gathering"
    }

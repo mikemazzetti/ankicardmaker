@@ -1,186 +1,251 @@
 {
  "deck": "CS3307A OOD::Week 2::Interfaces vs Parameters vs Concretes",
- "note_count": 14,
- "exported": "2026-09-18",
+ "note_count": 19,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839431,
+   "noteId": 1789749155572,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Front": "When should you use an interface?",
-    "Back": "When the variation is behavioral (different algorithms); enables polymorphism and DIP; consumers couple to the abstraction; flexible, extensible, testable.",
+    "Front": "When should you use an interface, and what does it buy you?",
+    "Back": "When the variation is behavioral, i.e. different algorithms (console vs file logging; PayPal vs Stripe). It enables polymorphism and the Dependency Inversion Principle: consumers couple to the abstraction, not the concrete. Result: flexible, extensible, testable.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839433,
+   "noteId": 1789749155573,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Front": "When should you use parameters instead of subclasses?",
-    "Back": "When the variation is only data (numbers, labels, configs); keep one class configured via constructor arguments or fields; avoids subclass explosion.",
+    "Front": "When should you use a parameter instead of subclasses?",
+    "Back": "When the variation is only data (numbers, labels, configuration values). Keep one class and configure it via constructor arguments or fields. This avoids subclass explosion for trivial differences and is lightweight and clear.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839435,
+   "noteId": 1789749155574,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Front": "When is a plain concrete class (no abstraction) acceptable?",
-    "Back": "For tiny apps or one-off utilities; simplest approach, but consumers are tied to the concrete implementation and it is harder to extend or swap later.",
+    "Front": "When is a plain concrete class with no abstraction acceptable, and what does it cost?",
+    "Back": "It is the smallest, simplest approach, fine for tiny apps or one-off utilities. The cost: consumers are tied to the concrete implementation, so it is harder to extend or swap behaviour later.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839437,
+   "noteId": 1789749155575,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Front": "State the rule of thumb for choosing between interface, parameter, and concrete.",
-    "Back": "Behavior → Interface; Data → Parameter; Toy/simple case → Concrete.",
+    "Front": "Case study 1: what is wrong with <code>DebugLogger</code> and <code>ErrorLogger</code> under <code>ILogger</code>?",
+    "Back": "They are identical except for the literal <code>\"[DEBUG] \"</code> versus <code>\"[ERROR] \"</code>: same algorithm (print to console), different data. The slide labels them 'pointless separate class'. With five log levels you would have five near-duplicate classes.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839439,
+   "noteId": 1789749155576,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Front": "What is wrong with <code>DebugLogger</code> and <code>ErrorLogger</code> in case study 1?",
-    "Back": "Both print to console and differ only in the prefix string (<code>[DEBUG]</code> vs <code>[ERROR]</code>); that is just data, so separate subclasses are pointless.",
+    "Front": "Case study 1: what is the right way to handle the logger level while keeping <code>ILogger</code>?",
+    "Back": "One parameterized concrete: <code>class ConsoleLogger : public ILogger { std::string level; public: explicit ConsoleLogger(std::string lvl) : level(std::move(lvl)) {} void log(const std::string&amp; msg) const override { std::cout &lt;&lt; \"[\" &lt;&lt; level &lt;&lt; \"] \" &lt;&lt; msg &lt;&lt; \"\\n\"; } };</code> Callers still hold <code>ILogger&amp;</code>.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839441,
+   "noteId": 1789749155577,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Front": "What is the right way to handle the logger level variation while keeping <code>ILogger</code>?",
-    "Back": "One parameterized concrete: <code>ConsoleLogger(std::string lvl)</code> storing <code>level</code>, printing <code>[level] msg</code>; callers hold <code>ILogger&amp;</code>.",
+    "Front": "Read the signature <code>virtual void log(const std::string&amp; msg) const = 0;</code>. What does each part mean?",
+    "Back": "<code>const std::string&amp;</code>: pass by reference to avoid a copy, <code>const</code> because the message is not modified. Trailing <code>const</code>: the member function does not change the logger's state. <code>= 0</code>: pure virtual, so every implementation must provide <code>log</code>.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839443,
+   "noteId": 1789749155578,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Case study 2: describe the design and state its trade-off.",
+    "Back": "A single concrete <code>Logger</code> with <code>std::string level</code> and no interface; <code>log</code> has no <code>virtual</code> and no <code>override</code> because there is nothing to override. Minimal and fine for tiny apps, but every caller names <code>Logger</code>, so wanting a different behaviour (file output) forces refactoring the callers.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155579,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Case study 3: what makes <code>ConsoleLogger</code> and <code>FileLogger</code> a legitimate use of an interface?",
+    "Back": "The variation is genuinely behavioural: <code>ConsoleLogger</code> prints <code>[CONSOLE]</code> to standard output while <code>FileLogger</code> opens its file in append mode (<code>std::ofstream out(filename, std::ios::app)</code>) and writes <code>[FILE]</code> there. Different algorithms, so separate classes under <code>ILogger</code>.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155580,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What role does <code>AuditService</code> play in case study 3, and what does its code look like?",
+    "Back": "It is the high-level consumer: <code>class AuditService { ILogger&amp; logger; public: explicit AuditService(ILogger&amp; l) : logger(l) {} void record(const std::string&amp; msg) { logger.log(msg); } };</code> It holds an injected <code>ILogger&amp;</code> (aggregation) and calls <code>log</code> polymorphically, compiling without knowing <code>FileLogger</code> exists.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155581,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does case study 3's <code>main</code> print or do?",
+    "Back": "<code>AuditService a(console); a.record(\"User logged in.\");</code> prints <code>[CONSOLE] User logged in.</code>; <code>AuditService b(file); b.record(\"Transaction completed.\");</code> appends <code>[FILE] Transaction completed.</code> to <code>audit.log</code>. The same <code>AuditService</code> class serves both.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155582,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Does <code>FileLogger</code> show that interfaces and parameters are mutually exclusive?",
+    "Back": "No, the opposite. <code>FileLogger</code> sits under the <code>ILogger</code> interface (behavioural variation) AND takes a data parameter, the filename, through <code>explicit FileLogger(std::string fn)</code>. Use both mechanisms for the kind of variation each fits.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155583,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is dependency injection (DI)?",
+    "Back": "Supplying a class's dependencies from outside, usually through the constructor, rather than creating them inside. It is what turns pattern 1/3 into pattern 2/4, and what makes a class testable by letting a fake collaborator be substituted.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155584,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Structurally, what is case study 3 the same as?",
+    "Back": "Pattern 4, Abstract + Inject, applied to logging: <code>AuditService</code>/<code>ILogger</code> is the same shape as <code>Checkout</code>/<code>IPaymentProcessor</code>. Consumer holds a reference to the abstraction, concrete injected through the constructor.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155598,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Text": "`{{c1::explicit}}<code> on a single-argument constructor such as </code>ConsoleLogger(std::string lvl)<code> prevents implicit conversion from </code>std::string<code> to </code>ConsoleLogger`.",
+    "Text": "Rule of thumb: behaviour differs -&gt; {{c1::interface}}; only data differs -&gt; {{c1::parameter}}; toy or simple case -&gt; {{c1::concrete}}.",
     "Extra": "",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839445,
+   "noteId": 1789749155599,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Text": "`level({{c1::std::move}}(lvl))` moves the by-value constructor parameter into the member instead of copying it.",
+    "Text": "In <code>explicit ConsoleLogger(std::string lvl) : level(std::move(lvl)) {}</code>, <code>explicit</code> prevents {{c1::implicit conversion}} from a <code>std::string</code> to a <code>ConsoleLogger</code>, and <code>std::move</code> {{c1::moves the by-value parameter into the member instead of copying it}}.",
+    "Extra": "So <code>ConsoleLogger x = \"DEBUG\";</code> is rejected. Use <code>explicit</code> on any single-argument constructor.",
+    "Topic": "Interfaces vs Parameters vs Concretes"
+   }
+  },
+  {
+   "noteId": 1789749155600,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Interfaces_vs_Parameters_vs_Concretes",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Case study summary: example 1 keeps the {{c1::abstraction}} but handles data-only variation with one parameterized class; example 2 has {{c1::no abstraction}} so callers depend on a concretion; example 3 uses {{c1::interfaces + DI}} because behaviour differs.",
     "Extra": "",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839447,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Interfaces_vs_Parameters_vs_Concretes",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is the trade-off of case study 2 (a <code>Logger</code> class with no interface)?",
-    "Back": "Minimal and fine for tiny apps, but callers depend on a concrete type; a new logging behavior (e.g., file) would force refactoring callers.",
-    "Topic": "Interfaces vs Parameters vs Concretes"
-   }
-  },
-  {
-   "noteId": 1789678839449,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Interfaces_vs_Parameters_vs_Concretes",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What role does <code>AuditService</code> play in case study 3?",
-    "Back": "High-level consumer: holds <code>ILogger&amp; logger</code> (injected via constructor, aggregation) and calls <code>logger.log(msg)</code> polymorphically in <code>record()</code>.",
-    "Topic": "Interfaces vs Parameters vs Concretes"
-   }
-  },
-  {
-   "noteId": 1789678839451,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Interfaces_vs_Parameters_vs_Concretes",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is DI?",
-    "Back": "Dependency Injection: supplying a class's dependencies from outside (e.g., through the constructor) rather than creating them inside.",
-    "Topic": "Interfaces vs Parameters vs Concretes"
-   }
-  },
-  {
-   "noteId": 1789678839453,
+   "noteId": 1789749155601,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Text": "Rule of thumb: behavioral variation → {{c1::interface}}; data-only variation → {{c2::parameter}}; toy/simple case → {{c3::concrete}}.",
+    "Text": "Interfaces suit {{c1::behavioral}} variation (different algorithms) and enable {{c1::polymorphism and DIP}}; parameters suit {{c1::data-only}} variation and avoid {{c1::subclass explosion}}.",
     "Extra": "",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839457,
+   "noteId": 1789749155602,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Text": "Lesson of case study 1: when variation is only data (e.g., label text), don't make {{c1::subclasses}}; keep the interface and use {{c2::one parameterized class}}.",
-    "Extra": "",
+    "Text": "Case study 1's lesson: when variation is only data such as label text, don't make {{c1::subclasses}}; keep the {{c1::interface}} and use {{c1::one parameterized class}}.",
+    "Extra": "<code>DebugLogger</code> and <code>ErrorLogger</code> are labelled 'pointless separate class' on the slide.",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }
   },
   {
-   "noteId": 1789678839460,
+   "noteId": 1789749155603,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Interfaces_vs_Parameters_vs_Concretes",
     "week2"
    ],
    "fields": {
-    "Text": "Case study 3 summary: when behavior differs, use {{c1::interfaces + DI}} to couple to the abstraction and swap implementations freely.",
+    "Text": "In case study 3, <code>AuditService</code> holds `{{c1::ILogger&amp; logger}}` injected through its constructor ({{c1::aggregation}}) and <code>record()</code> makes a {{c1::polymorphic}} call to <code>logger.log(msg)</code>.",
     "Extra": "",
     "Topic": "Interfaces vs Parameters vs Concretes"
    }

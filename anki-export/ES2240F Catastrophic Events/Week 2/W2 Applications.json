@@ -1,0 +1,215 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::W2 Applications",
+ "note_count": 16,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154964,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "CALC: a basalt strip 100 km from the ridge centre is dated at 4 million years. What is the spreading rate?",
+    "Back": "100 km / 4 Myr = 25 km/Myr = 2.5 cm/yr. This is the HALF-spreading rate (one plate moving from the ridge); the ocean widens at twice that if the stripes are symmetrical.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154965,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "CALC: check Hess's figures - 2.5 cm/yr for 180 million years gives what distance?",
+    "Back": "2.5 cm x 180,000,000 = 450,000,000 cm = 4,500 km - about the width of the Atlantic, which is how the 180-million-year figure was obtained.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154966,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "CALC: an island 800 km from the Hawaiian hot spot has lavas dated at 8 Ma. What is the plate velocity?",
+    "Back": "800 km / 8 Myr = 100 km/Myr = 10 cm/yr (80,000,000 cm / 8,000,000 yr).",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154967,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "CALC: a basalt strip 250 km from a ridge is dated at 10 Ma. Spreading rate?",
+    "Back": "250 km / 10 Myr = 25 km/Myr = 2.5 cm/yr.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154968,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "CALC: matching stripes on opposite sides of a ridge are 300 km apart and 6 Myr old. What is the half rate and the total widening rate?",
+    "Back": "Each stripe is 150 km from the ridge: half rate = 150 km / 6 Myr = 25 km/Myr = 2.5 cm/yr. Total widening = 300 km / 6 Myr = 50 km/Myr = 5 cm/yr.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154969,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "WHICH BOUNDARY produces deep ocean trenches, Wadati-Benioff zones and volcanic arcs, and what stress acts there?",
+    "Back": "A convergent boundary (subduction zone); compressional stress. Old dense oceanic lithosphere is consumed.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154970,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "WHICH BOUNDARY produces new basaltic crust and symmetrical magnetic stripes, and what stress acts there?",
+    "Back": "A divergent boundary (spreading centre / mid-ocean ridge); tensional stress.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154971,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "WHICH BOUNDARY has large earthquakes on strike-slip faults but makes and destroys no crust?",
+    "Back": "A transform boundary; shear stress, with one plate slipping horizontally past the other.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154972,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "COMPARE: what stress and boundary type would you expect at the Mid-Atlantic Ridge versus the Japan Trench?",
+    "Back": "Mid-Atlantic Ridge: tensional stress, divergent boundary, new basaltic crust formed.<br>Japan Trench: compressional stress, convergent boundary, subduction with a Wadati-Benioff zone of shallow, intermediate and deep foci.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154973,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: a chain of islands gets older to the northwest and is volcanically dead at that end. What does this tell you?",
+    "Back": "That a stationary mantle plume/hot spot lies beneath the young, active end, and the plate has been moving northwest over it - the older the island, the longer ago it left the hot spot. (Hawaii-Emperor chain; velocity = distance from hot spot / age.)",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154974,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: someone claims mantle convection alone drags the plates. Give the two objections.",
+    "Back": "1) The mesosphere behaves as a solid and the asthenosphere as a plastic, so convection rates would differ enormously and a single continuous cycle through both is ridiculous.<br>2) The thin, brittle oceanic lithosphere cannot be dragged by friction all the way across an ocean and down a subduction zone (nor pushed from a distant ridge). Gravity acting on the cold dense slab (slab pull, ~95%) does the work.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154975,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: why is aluminum-26 no longer a heat source, using Chapter 2's rule?",
+    "Back": "Its half-life is 720,000 years, so 4.54 billion years is more than 6,000 half-lives. After about 10 half-lives the parent is unmeasurable, so 26Al is essentially extinct - though it mattered enormously early on because aluminum is abundant.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154976,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: a basalt's magnetite needles lie exactly horizontal. Where did it erupt, and what if they were vertical or tilted 20 degrees down?",
+    "Back": "Horizontal = erupted at the magnetic equator. Vertical = at a magnetic pole. Tilted about 20 degrees down = about 20 degrees north latitude, like Hawaii.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154977,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: basalt magma (2.5 g/cm3) forms under oceanic lithosphere (3.0 g/cm3). What happens, and what if the lithosphere were continental (2.7)?",
+    "Back": "It rises in both cases, because the magma is less dense than either lithosphere. Either way it tends to bulge the lithosphere into a dome, which eventually breaks, magma flows out, and the rifts may fill with seawater.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154978,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: which layer's behaviour, not composition, explains why plates can move at all?",
+    "Back": "The asthenosphere: it has the same composition as the mesosphere but, under much less confining pressure, behaves like a hot plastic (locally fluid), so the rigid lithospheric plates above it can slide, sink and be carried. Behaviour - rigid, plastic or liquid - is what matters for tectonics.",
+    "Topic": "W2 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154979,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W2_Applications",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLY: you find 4.0 Ga crust in Canada but Earth is 4.54 Ga. Explain the gap using Week 2 material.",
+    "Back": "Plate tectonics constantly recycles crust: old dense oceanic lithosphere is consumed at subduction zones and new crust is made at spreading centres, so almost no original crust survives. The oldest fragments (Acasta Gneiss 4.031 Ga) are still far younger than Earth, which is why its age comes from meteorites.",
+    "Topic": "W2 Applications"
+   }
+  }
+ ]
+}

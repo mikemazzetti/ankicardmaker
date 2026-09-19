@@ -1,122 +1,83 @@
 {
  "deck": "CS3357A Networks::Week 1::Internet basics",
- "note_count": 9,
- "exported": "2026-09-18",
+ "note_count": 6,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678872656,
+   "noteId": 1789752891939,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Internet_basics",
     "week1"
    ],
    "fields": {
-    "Front": "In Internet jargon, what are the billions of connected computing devices at the edge of the network called?",
-    "Back": "Hosts, also called end systems. The two terms are interchangeable. They run (host) the network applications.",
+    "Front": "In the 'nuts and bolts' view, what are the four kinds of physical components that make up the Internet?",
+    "Back": "1) Hosts = end systems: billions of devices at the edge running network apps; clients and servers (servers mostly in data centers).<br>2) Packet switches: routers (core) and link-layer switches (access nets) forward packets (chunks of data).<br>3) Communication links: fiber, copper, coax, radio, satellite; transmission rate = bandwidth = capacity, in bps.<br>4) Networks: devices + routers + links managed by one organization (home, enterprise, mobile, datacenter, content provider, ISP).",
     "Topic": "Internet basics"
    }
   },
   {
-   "noteId": 1789678872658,
+   "noteId": 1789752891940,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Internet_basics",
     "week1"
    ],
    "fields": {
-    "Front": "What does a packet switch do, and what are the two main types?",
-    "Back": "It forwards packets (chunks of data) from an incoming link to an outgoing link. The two main types are routers (network core) and link-layer switches (access networks).",
+    "Front": "Describe the 'service view' of the Internet: what two things does it provide to applications?",
+    "Back": "1) An infrastructure that provides services to distributed applications: Web, streaming video, teleconferencing, email, games, e-commerce, social media, connected appliances.<br>2) A programming interface: 'hooks' (the socket API) let sending/receiving apps connect to and use the Internet transport service, with a choice of service options, analogous to a postal service offering ordinary vs registered mail (later: UDP vs TCP).",
     "Topic": "Internet basics"
    }
   },
   {
-   "noteId": 1789678872660,
+   "noteId": 1789752891941,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Internet_basics",
     "week1"
    ],
    "fields": {
-    "Front": "Name four physical media used for communication links.",
-    "Back": "Fiber, copper (twisted pair), coaxial cable, radio (and satellite).",
+    "Front": "Which body develops Internet standards, what are the documents called, what do they define, and which body handles Ethernet/WiFi?",
+    "Back": "IETF (Internet Engineering Task Force) publishes RFCs (Requests for Comments), which define TCP, IP, HTTP, SMTP and thousands of other protocols so vendors interoperate.<br>Link-level standards such as Ethernet and WiFi (802.x) come from the IEEE 802 committee.",
     "Topic": "Internet basics"
    }
   },
   {
-   "noteId": 1789678872662,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_basics",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is the transmission rate of a link also called, and in what units is it measured?",
-    "Back": "Bandwidth (or link capacity), measured in bits per second (bps).",
-    "Topic": "Internet basics"
-   }
-  },
-  {
-   "noteId": 1789678872664,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_basics",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In the nuts-and-bolts view, what is a 'network'?",
-    "Back": "A collection of devices, routers and links managed by a single organization (home, enterprise, mobile, datacenter, content-provider, or ISP network).",
-    "Topic": "Internet basics"
-   }
-  },
-  {
-   "noteId": 1789678872666,
+   "noteId": 1789752891964,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Internet_basics",
     "week1"
    ],
    "fields": {
-    "Text": "The Internet is often described in three words as a {{c1::network of networks}}: interconnected ISPs, nobody owns it.",
+    "Text": "Hosts are also called {{c1::end systems}}; they run network applications at the Internet's {{c1::edge}}. Informally they are {{c1::clients}} (request) or {{c1::servers}} (store/serve content, usually in data centers).",
     "Extra": "",
     "Topic": "Internet basics"
    }
   },
   {
-   "noteId": 1789678872668,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_basics",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Which organization develops Internet standards, and what are its standards documents called?",
-    "Back": "The IETF (Internet Engineering Task Force); its documents are RFCs (Requests for Comments).",
-    "Topic": "Internet basics"
-   }
-  },
-  {
-   "noteId": 1789678872670,
+   "noteId": 1789752891965,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Internet_basics",
     "week1"
    ],
    "fields": {
-    "Text": "Internet standards documents are called {{c1::RFCs (Requests for Comments)}} and are produced by the {{c2::IETF (Internet Engineering Task Force)}}.",
-    "Extra": "",
+    "Text": "Packet switches forward packets from an incoming link to an outgoing link; the two main kinds are {{c1::routers}} (network core) and {{c1::link-layer switches}} (access networks).",
+    "Extra": "Routers implement 3 layers of the stack; switches implement 2.",
     "Topic": "Internet basics"
    }
   },
   {
-   "noteId": 1789678872673,
-   "modelName": "CS3357A Networks Basic",
+   "noteId": 1789752891966,
+   "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Internet_basics",
     "week1"
    ],
    "fields": {
-    "Front": "Describe the 'service view' of the Internet in one sentence.",
-    "Back": "The Internet is an infrastructure that provides services to distributed applications (Web, email, games, streaming...) and offers a programming interface (hooks / sockets) with service options, analogous to a postal service.",
+    "Text": "The Internet is a '{{c1::network of networks}}' made of interconnected {{c1::ISPs}} and {{c1::nobody owns it}}; you reach it through an {{c1::access ISP}}, which connects to larger ISPs. Internet standards come from the {{c1::IETF}} as {{c1::RFCs}}.",
+    "Extra": "",
     "Topic": "Internet basics"
    }
   }

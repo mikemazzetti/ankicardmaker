@@ -1,226 +1,278 @@
 {
  "deck": "CS3307A OOD::Week 1::Objects and Classes",
- "note_count": 17,
- "exported": "2026-09-18",
+ "note_count": 21,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839160,
+   "noteId": 1789749155322,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Front": "What are the two main parts of an object?",
-    "Back": "Attributes (data members) and behaviors (member functions or methods).",
+    "Front": "What are the two main parts of an object, and what is each also called?",
+    "Back": "Attributes (also called data members): the information the object stores. Behaviours (also called member functions or methods): the actions it can perform. Data and the operations on that data travel together.",
     "Topic": "Objects and Classes"
    }
   },
   {
-   "noteId": 1789678839162,
+   "noteId": 1789749155323,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define class and object using the slides' Car example.",
+    "Back": "A class is a blueprint/template defining the properties and behaviours of an object; an object is an instance of a class. <code>Car</code> is the class; specific cars (a Ford, a Toyota) are objects. The class is the type, the object is a value of that type.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155324,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are attributes, where are they declared, and what are the Car examples?",
+    "Back": "Variables that store information about the object, declared inside the class body in C++. For <code>Car</code>: <code>color</code>, <code>speed</code>, <code>model</code>. Each object gets its own storage, so changing one car's speed does not change another's.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155325,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What do methods define, and what are the Car examples?",
+    "Back": "The behaviour of an object, i.e. what actions it can perform. For <code>Car</code>: <code>accelerate()</code>, <code>brake()</code>, <code>getSpeed()</code>. Methods live inside the class and have direct access to that object's attributes. A method that only reads an attribute is a getter; one that changes it is a setter.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155326,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the slides' <code>Car</code> class, what does <code>Car(std::string carModel, int carYear)</code> do and how do you know it is a constructor?",
+    "Back": "It assigns <code>model = carModel;</code> and <code>year = carYear;</code>, copying the arguments into the object's private attributes. It is a constructor because it has the class's name and no return type.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155327,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why does <code>myCar.year = 1999;</code> fail to compile for the slides' <code>Car</code> class, and what would you add to allow it?",
+    "Back": "<code>year</code> is declared under <code>private:</code>, so no code outside the class may read or write it. To allow the change you add a public setter (e.g. <code>setYear(int)</code>) that can also validate the value; that is the mechanical basis for encapsulation.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155328,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is <code>double getBalance() const</code> marked <code>const</code>, and what breaks if you drop it?",
+    "Back": "<code>const</code> promises the compiler and the reader that calling it does not modify the object; getters should always be <code>const</code>. Without it, the getter cannot be called on a <code>const Account</code> or through a <code>const</code> reference, so callers that hold the object read-only fail to compile.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155329,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What classic compile error follows a C++ class definition?",
+    "Back": "Forgetting the semicolon after the closing brace: the definition must end <code>};</code>, not <code>}</code>.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155330,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the Week 1 preview definition of encapsulation and say which half does the real work.",
+    "Back": "Bundling data (attributes) and methods (behaviours) into a single unit (the object) AND restricting direct access to some of the object's components. The second half is what gives it power: since state is private, every change must go through a method that can validate it.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155331,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Front": "If you create <code>Car myCar(\"Toyota\", 2022);</code> and <code>Car otherCar(\"Ford\", 2018);</code>, what do they share and what is separate?",
+    "Back": "They share the same class definition and therefore the same set of methods, but each object has its own copy of the attributes (<code>model</code>, <code>year</code>). That is exactly the class/instance distinction.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155348,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Text": "An object's attributes are also called {{c1::data members}}; its behaviors are also called {{c2::member functions or methods}}.",
+    "Text": "Access specifiers: {{c1::private}} = only code inside the class; {{c1::public}} = any code inside or outside; {{c1::protected}} = the class and its derived classes, used in inheritance.",
+    "Extra": "Members of a C++ <code>class</code> are private by default.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155349,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In a C++ <code>class</code>, members written before any access specifier are {{c1::private}} by default.",
+    "Extra": "That is why the slides' <code>Shape</code> example, which has no <code>public:</code> label, has a private <code>draw()</code>.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155350,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A {{c1::constructor}} initializes an object (same name as the class, no return type); a {{c1::destructor}} cleans up resources when the object is destroyed (named {{c1::~ClassName()}}, no arguments).",
+    "Extra": "Constructors put the object in a valid state; destructors free memory, close files, release resources. Both run automatically.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155351,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>Car myCar(\"Toyota\", 2022); myCar.displayInfo();</code> prints {{c1::Model: Toyota, Year: 2022}}.",
+    "Extra": "The arguments in parentheses go to the constructor; <code>displayInfo()</code> is called with the dot operator on the object.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155352,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "<code>Account(double initialBalance) : balance(initialBalance) {}</code> initializes the member with a {{c1::member initializer list}}, which is preferred over assignment in the constructor body because it {{c1::initializes the member directly instead of default-constructing then assigning}}.",
     "Extra": "",
     "Topic": "Objects and Classes"
    }
   },
   {
-   "noteId": 1789678839165,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a class?",
-    "Back": "A blueprint or template that defines the properties (attributes) and behaviors (methods) of an object.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839167,
+   "noteId": 1789749155353,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Text": "An object is an {{c1::instance}} of a class.",
-    "Extra": "Once a class is defined, you can create objects from it.",
+    "Text": "{{c1::Inheritance}} lets one class derive properties and behaviours from another; {{c1::Polymorphism}} lets one interface be used for different data types or classes, e.g. function {{c1::overloading}} and {{c1::overriding}}.",
+    "Extra": "Both are previews for the Week 2 lecture.",
     "Topic": "Objects and Classes"
    }
   },
   {
-   "noteId": 1789678839169,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "If <code>Car</code> is a class, what would objects of that class be?",
-    "Back": "Specific cars, such as a Ford or a Toyota.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839171,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What are attributes in C++ terms, and where are they declared?",
-    "Back": "Variables that store information about the object; declared inside the class. Example for <code>Car</code>: <code>color</code>, <code>speed</code>, <code>model</code>.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839173,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What do methods define? Give the <code>Car</code> examples.",
-    "Back": "The behavior of an object (what actions it can perform): <code>accelerate()</code>, <code>brake()</code>, <code>getSpeed()</code>.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839175,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Which members can be accessed by <code>private</code> code?",
-    "Back": "Only code within the class itself.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839177,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What does the <code>public</code> access specifier allow?",
-    "Back": "Attributes and methods can be accessed from outside the class.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839179,
+   "noteId": 1789749155354,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Text": "`{{c1::protected}}` members are accessible to derived classes but not from outside the class.",
+    "Text": "Compile-time polymorphism covers {{c1::function overloading}} and {{c1::operator overloading}}; run-time polymorphism happens through {{c1::virtual functions}}.",
+    "Extra": "From the speaker notes on the Polymorphism advantage slide.",
+    "Topic": "Objects and Classes"
+   }
+  },
+  {
+   "noteId": 1789749155355,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Objects_and_Classes",
+    "week1"
+   ],
+   "fields": {
+    "Text": "An object's two parts: {{c1::attributes}}, also called {{c1::data members}}, and {{c1::behaviors}}, also called member functions or {{c1::methods}}.",
     "Extra": "",
     "Topic": "Objects and Classes"
    }
   },
   {
-   "noteId": 1789678839181,
+   "noteId": 1789749155356,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Text": "In a C++ <code>class</code>, members declared before any access specifier are {{c1::private}} by default.",
+    "Text": "A {{c1::class}} is the blueprint or template; an {{c1::object}} is an instance of it. For the class <code>Car</code>, a specific Toyota is an {{c1::object}}.",
     "Extra": "",
     "Topic": "Objects and Classes"
    }
   },
   {
-   "noteId": 1789678839183,
+   "noteId": 1789749155357,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Text": "A {{c1::constructor}} is a special method that initializes objects of a class; a {{c2::destructor}} cleans up resources when an object is destroyed.",
-    "Extra": "Destructor syntax: <code>~Car()</code>.",
+    "Text": "In <code>Car myCar(\"Toyota\", 2022);</code> the arguments are passed to the {{c1::constructor}}, and <code>myCar.displayInfo()</code> reaches the method through the {{c1::dot operator}}.",
+    "Extra": "<code>displayInfo()</code> can read the private <code>model</code> and <code>year</code> because it is a member of the class.",
     "Topic": "Objects and Classes"
    }
   },
   {
-   "noteId": 1789678839186,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In the slide's <code>Car</code> class, what does <code>Car(std::string carModel, int carYear)</code> do?",
-    "Back": "It is the constructor: assigns <code>carModel</code> to the member <code>model</code> and <code>carYear</code> to the member <code>year</code>.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839188,
+   "noteId": 1789749155358,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Objects_and_Classes",
     "week1"
    ],
    "fields": {
-    "Text": "<code>Car myCar(\"Toyota\", 2022); myCar.displayInfo();</code> prints `{{c1::Model: Toyota, Year: 2022}}`.",
+    "Text": "A C++ class definition must end with a closing brace followed by a {{c1::semicolon}} - omitting it is a classic compile error.",
     "Extra": "",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839190,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Why does <code>myCar.year = 1999;</code> fail to compile for the slide's <code>Car</code> class?",
-    "Back": "<code>year</code> is declared under <code>private:</code>, so it cannot be accessed from outside the class.",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839192,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Text": "<code>Account(double initialBalance) : balance(initialBalance) {}</code> uses a {{c1::member initializer list}} to initialize <code>balance</code>.",
-    "Extra": "",
-    "Topic": "Objects and Classes"
-   }
-  },
-  {
-   "noteId": 1789678839194,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Objects_and_Classes",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Why is <code>double getBalance() const</code> declared <code>const</code>?",
-    "Back": "It promises not to modify the object; getters should be <code>const</code>.",
     "Topic": "Objects and Classes"
    }
   }

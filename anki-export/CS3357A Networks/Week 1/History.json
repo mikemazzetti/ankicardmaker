@@ -1,122 +1,161 @@
 {
  "deck": "CS3357A Networks::Week 1::History",
- "note_count": 9,
- "exported": "2026-09-18",
+ "note_count": 12,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678873002,
+   "noteId": 1789752891872,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "History",
     "week1"
    ],
    "fields": {
-    "Front": "Who published the first work on packet switching, and when?",
-    "Back": "Leonard Kleinrock at MIT, 1961 (using queueing theory to show packet switching's effectiveness for bursty traffic). Paul Baran (RAND) and Donald Davies (NPL, UK) developed the idea independently.",
+    "Front": "Who invented packet switching, and what were the first ARPAnet milestones?",
+    "Back": "Leonard Kleinrock (MIT, 1961) used queueing theory to show packet switching suits bursty traffic; Paul Baran (RAND) and Donald Davies (NPL, UK) had the idea independently.<br>ARPAnet: first packet switch installed at UCLA in 1969 (four nodes by end of 1969); ~15 nodes, the NCP host-to-host protocol and the first email program (Ray Tomlinson) by 1972.",
     "Topic": "History"
    }
   },
   {
-   "noteId": 1789678873004,
+   "noteId": 1789752891873,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "History",
     "week1"
    ],
    "fields": {
-    "Front": "What was the ARPAnet, and when and where was its first packet switch installed?",
-    "Back": "The first packet-switched computer network and direct ancestor of the Internet; the first packet switch was installed at UCLA in 1969 (four nodes by end of 1969).",
+    "Front": "Summarize the internetworking era (1972-1980): who designed TCP/IP, what ALOHAnet and Ethernet contributed, and when TCP/IP replaced NCP.",
+    "Back": "Vinton Cerf and Robert Kahn (1974) designed the architecture for interconnecting networks ('internetting'); after IP was split out, TCP, UDP and IP were in place by the end of the 1970s.<br>ALOHAnet (Hawaii, Abramson) gave the first multiple-access protocol for a shared radio medium; Metcalfe and Boggs built on it to create Ethernet (1976).<br>TCP/IP replaced NCP on ARPAnet on January 1, 1983 (flag day).",
     "Topic": "History"
    }
   },
   {
-   "noteId": 1789678873006,
+   "noteId": 1789752891874,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What happened to the ARPAnet in 1967, 1969 and 1972? (Kurose §1.7.1)",
+    "Back": "1967: Lawrence Roberts (with J. C. R. Licklider, both ex-MIT colleagues of Kleinrock, leading ARPA's computer science program) publishes the overall plan for the ARPAnet.<br>1969: on Labor Day the first packet switch is installed at UCLA under Kleinrock's supervision; three more follow at SRI, UC Santa Barbara and the University of Utah - four nodes by year end. The first use was a remote login from UCLA to SRI that crashed the SRI host after 'L', 'o', 'g', so the first message was 'Lo'.<br>1972: about 15 nodes; Robert Kahn gives the first public demonstration; the NCP (network-control protocol) host-to-host protocol is completed; and, because an end-to-end protocol now existed, Ray Tomlinson writes the first e-mail program.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789752891875,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What did ALOHAnet contribute, and how did it lead to Ethernet? (Kurose §1.7.2)",
+    "Back": "ALOHAnet (Norman Abramson, Hawaii, 1970) was a packet radio network linking sites across the Hawaiian islands. The ALOHA protocol was the FIRST multiple-access protocol, letting geographically distributed users share a single broadcast medium (one radio frequency).<br>Metcalfe and Boggs built directly on that work to develop Ethernet in 1976 for wire-based shared broadcast networks. Their motivation was mundane - connecting multiple PCs, printers and shared disks - which laid the foundation for PC LANs before the PC revolution.<br>Other networks of the era: DARPA packet-satellite and packet-radio, Telenet (BBN), Cyclades (Louis Pouzin, France), Tymnet, IBM's SNA.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789752891876,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What was Minitel, and why does the textbook mention it? (Kurose §1.7.3)",
+    "Back": "A French government project of the early 1980s to bring data networking into every home: a public packet-switched network based on the X.25 protocol suite, Minitel servers, and cheap terminals with built-in low-speed modems.<br>It took off in 1984 when the government gave a free terminal to every household that wanted one, and at its mid-1990s peak offered more than 20,000 services, from home banking to research databases.<br>The point: the Minitel was in a large proportion of French homes ten years before most Americans had heard of the Internet - consumer data networking was not invented by the Web.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789752891877,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Summarize the new millennium (2000s onward) in the five developments the textbook singles out. (Kurose §1.7.5)",
+    "Back": "1) Aggressive broadband residential access - cable, DSL, fibre to the home, 5G fixed wireless, LEO satellites - which is what enabled video (YouTube, TikTok, Netflix, Zoom).<br>2) Ubiquitous high-speed wireless, enabling location-specific applications (maps, ride-sharing, delivery, dating); the number of wireless devices surpassed wired devices in 2011.<br>3) Online social networks built on top of the Internet, which through their APIs became platforms for further applications.<br>4) Content-provider private networks (Google, Microsoft) that connect their data centers and bypass the public Internet by peering directly with lower-tier ISPs.<br>5) Cloud computing (Amazon EC2, Azure, Alibaba Cloud), which also gives applications implicit access to those private networks.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789752891905,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "History",
     "week1"
    ],
    "fields": {
-    "Text": "The first packet switch of the ARPAnet was installed at {{c1::UCLA}} in {{c2::1969}}; the first email program was written by {{c3::Ray Tomlinson}} in 1972.",
+    "Text": "Packet switching was first published by {{c1::Leonard Kleinrock}} in {{c1::1961}}; the ARPAnet's first packet switch was installed at {{c1::UCLA}} in {{c1::1969}}; the first email program was written by {{c1::Ray Tomlinson}} in 1972.",
     "Extra": "",
     "Topic": "History"
    }
   },
   {
-   "noteId": 1789678873010,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "History",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Who designed the architecture for interconnecting networks ('internetting') that led to TCP/IP?",
-    "Back": "Vinton Cerf and Robert Kahn (1974); TCP, UDP and IP were conceptually in place by the end of the 1970s.",
-    "Topic": "History"
-   }
-  },
-  {
-   "noteId": 1789678873012,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "History",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What was ALOHAnet's contribution, and who built on it to create Ethernet?",
-    "Back": "ALOHAnet (Hawaii, Abramson) introduced the first multiple-access protocol for a shared radio medium; Metcalfe and Boggs built on it to develop Ethernet (1976).",
-    "Topic": "History"
-   }
-  },
-  {
-   "noteId": 1789678873014,
+   "noteId": 1789752891906,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "History",
     "week1"
    ],
    "fields": {
-    "Text": "{{c1::TCP/IP}} was officially deployed on ARPAnet on {{c2::January 1, 1983}}, replacing {{c3::NCP}}.",
+    "Text": "{{c1::TCP/IP}} replaced {{c1::NCP}} on the ARPAnet on {{c1::January 1, 1983}}; the Web was invented by {{c1::Tim Berners-Lee}} at {{c1::CERN}} in 1989-1991.",
     "Extra": "",
     "Topic": "History"
    }
   },
   {
-   "noteId": 1789678873018,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "History",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Who invented the World Wide Web, where, and what were its four key components?",
-    "Back": "Tim Berners-Lee at CERN, 1989-1991: HTML, HTTP, a Web server, and a browser.",
-    "Topic": "History"
-   }
-  },
-  {
-   "noteId": 1789678873020,
+   "noteId": 1789752891907,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "History",
     "week1"
    ],
    "fields": {
-    "Text": "The Web was invented by {{c1::Tim Berners-Lee}} at {{c2::CERN}} (1989-1991).",
-    "Extra": "Its four components: HTML, HTTP, a web server, a browser.",
+    "Text": "1990s: NSFNET allowed commercial use in {{c1::1991}} and was decommissioned in {{c1::1995}}; the Web's four components were {{c1::HTML, HTTP, a Web server, a browser}}; the decade's killer apps were {{c1::email, the Web, instant messaging, P2P file sharing}}.",
+    "Extra": "",
     "Topic": "History"
    }
   },
   {
-   "noteId": 1789678873023,
-   "modelName": "CS3357A Networks Basic",
+   "noteId": 1789752891908,
+   "modelName": "CS3357A Networks Cloze",
    "tags": [
     "History",
     "week1"
    ],
    "fields": {
-    "Front": "What were the four 'killer applications' of the Internet by the end of the 1990s?",
-    "Back": "Email, the Web, instant messaging, and peer-to-peer file sharing (Napster).",
+    "Text": "Packet switching was invented by three groups unaware of each other (Kurose §1.7.1): {{c1::Leonard Kleinrock}} at MIT (1961, 1964), who used {{c1::queueing theory}} to show packet switching suits {{c1::bursty}} traffic; {{c1::Paul Baran}} at RAND (1964), working on {{c1::secure voice for military networks}}; and {{c1::Donald Davies and Roger Scantlebury}} at the {{c1::National Physical Laboratory}} in England.",
+    "Extra": "Motivation: the telephone network was circuit-switched, which suits constant-rate voice; timeshared computer users generate bursty traffic instead.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789752891909,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Internetworking (Kurose §1.7.2): the architecture for connecting networks together was designed by {{c1::Vinton Cerf and Robert Kahn}} in {{c1::1974}}, and the term they coined was {{c1::internetting}}. Early TCP also performed the {{c1::forwarding}} functions now done by IP; the need for an unreliable, non-flow-controlled service for applications such as {{c1::packetised voice}} led to {{c1::IP being split out of TCP}} and to {{c1::UDP}}. TCP, UDP and IP were conceptually in place by {{c1::the end of the 1970s}}.",
+    "Extra": "This split is what makes the layering of §1.5 possible - and it was driven by an application requirement, not by theory.",
+    "Topic": "History"
+   }
+  },
+  {
+   "noteId": 1789752891910,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "History",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Proliferation, 1980-1990 (Kurose §1.7.3): hosts grew from about {{c1::200}} on the ARPAnet at the end of the 1970s to about {{c1::100,000}} by the end of the 1980s. {{c1::NSFNET}} was created in {{c1::1986}} with a backbone starting at {{c1::56 kbps}} and reaching {{c1::1.5 Mbps}} by the end of the decade. TCP/IP replaced NCP on {{c1::January 1, 1983}}, a {{c1::flag day}} on which every host had to switch at once. {{c1::DNS}} and TCP {{c1::congestion control}} (Jacobson, 1988) also date from this decade.",
+    "Extra": "Other university networks of the period: BITNET (e-mail and file transfer in the US Northeast) and CSNET (for researchers with no ARPAnet access). Nothing like a flag day could be attempted today, which is why IPv6 deployment has taken decades.",
     "Topic": "History"
    }
   }

@@ -1,23 +1,36 @@
 {
  "deck": "ES2240F Catastrophic Events::Week 1::Ch1 Philosophy",
- "note_count": 37,
- "exported": "2026-09-18",
+ "note_count": 36,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789690333155,
+   "noteId": 1789749154114,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "Define 'dogma' as used in Chapter 1.",
-    "Back": "A set of beliefs presented as obligatory principles by the Church.",
+    "Front": "Define 'dogma' as used in Chapter 1, and describe the state of science before the 19th century.",
+    "Back": "Dogma: a set of beliefs presented as obligatory principles by the Church. 'Science' was not sorted out until late in the 19th century; even at the start of the 18th century it was not separated from alchemy, folk tales and magic, nor from religious dogma. There was no consensus on evaluating theories and no 'correct' scientific procedure.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333157,
+   "noteId": 1789749154115,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What was the central purpose of Greek and Medieval philosophy about the natural world, and why was that a problem?",
+    "Back": "To link whatever one speculated about with the 'divine structure of the universe', which put all scientific consideration under the scrutiny and censorship of religion. If the Church always determined the outcome, there was no practical or intellectual gain in investigating - so independent thinkers reacted against it.",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154116,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -25,12 +38,12 @@
    ],
    "fields": {
     "Front": "In the 18th century, which science challenged orthodox religion, and what concept made it a threat?",
-    "Back": "Geology (not astronomy or physics); it introduced the concept of evolution, i.e. the process of change. It was also the key that advanced 19th-century biology, including Darwin.",
+    "Back": "Geology - not astronomy or physics. To explain how the world works geologists introduced the concept of EVOLUTION, i.e. the process of change. Geology was also the key that advanced 19th-century biology, including Darwin's work.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333159,
+   "noteId": 1789749154117,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -38,12 +51,12 @@
    ],
    "fields": {
     "Front": "Who was Nicolaus Steno?",
-    "Back": "Danish natural philosopher (born Niels Stensen, 1638-1686); one of the first to try to understand Earth's surface from present processes; recognized the marine origin of fossils in Italy; 'father of stratigraphy'.",
+    "Back": "A Danish natural philosopher, born Niels Stensen (1638-1686); one of the first to try to understand Earth's surface from processes he could watch (weathering, sediment transport, layered sediments in lakes). Field work in Italy, where he recognized the marine origin of fossils. Called the 'father of stratigraphy'.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333161,
+   "noteId": 1789749154118,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -51,12 +64,12 @@
    ],
    "fields": {
     "Front": "What question did Steno set out to answer?",
-    "Back": "'In what way the present condition of anything discloses the past condition of that same thing.'",
+    "Back": "'In what way the present condition of anything discloses the past condition of that same thing.' His major task was to give a coherent narrative account of the changes that had affected Earth's surface.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333163,
+   "noteId": 1789749154119,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -64,90 +77,38 @@
    ],
    "fields": {
     "Front": "What mistake did Steno make about Earth's original surface?",
-    "Back": "He assumed it was a smooth pile of sediments; the early hard surface was really igneous rock.",
+    "Back": "He assumed the original surface was a smooth pile of sediments, very different from today. In fact the early hard surface was igneous rock.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333165,
+   "noteId": 1789749154120,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "What is stratigraphy?",
-    "Back": "The study of the layers of rocks and sediments.",
+    "Front": "Define stratigraphy, and distinguish the two 'father of' labels.",
+    "Back": "Stratigraphy: the study of the layers of rocks and sediments.<br>Steno = father of STRATIGRAPHY (his work traditionally marks the beginning of modern geology).<br>Hutton (a Scot) = father of MODERN GEOLOGY.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333167,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "In {{c1::1667}}, after years of heavy persuasion, Steno converted to {{c2::Roman Catholicism}} and ceased all geological work.",
-    "Extra": "After years of heavy persuasion he converted to Roman Catholicism and ceased all geological work.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333170,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Steno is called the father of {{c1::stratigraphy}}, while Hutton gets the label father of {{c2::modern geology}}.",
-    "Extra": "",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333173,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "{{c1::Thomas Burnet}}, an Anglican clergyman and confessor to King {{c2::William III}}, attributed all uneven surface features to {{c3::Noah's flood}} (water from inside Earth).",
-    "Extra": "An Anglican clergyman, confessor to King William III; assumed a literal biblical creation and that all uneven surface features resulted from Noah's flood, whose water came from inside Earth and returned there.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333177,
+   "noteId": 1789749154121,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "Why was Burnet praised and Steno ignored in their day?",
-    "Back": "Steno published a thin text in Latin; Burnet published 4 volumes in English. Newton and virtually all clergy praised Burnet. (Burnet was later dismissed by King William for an allegorical interpretation of creation.)",
+    "Front": "Why was Burnet praised and Steno ignored in their own day?",
+    "Back": "Steno published a thin text in Latin; Burnet published 4 volumes of 'nonsense' in English. Newton and virtually all clergy praised Burnet and dumped on Steno, partly because not everyone could read his work. (Burnet was later dismissed by King William for an allegorical interpretation of the days of creation.)",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333179,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "In {{c1::1650}} Archbishop {{c2::James Ussher}} dated Earth's creation to sunset on October 22nd, {{c3::4004 B.C.}}",
-    "Extra": "In 1650: Earth came into existence at sunset on October 22nd, 4004 B.C. (Earth about 6000 years old; by the slides, 5654 years old in 1650).",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333183,
+   "noteId": 1789749154122,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -155,25 +116,25 @@
    ],
    "fields": {
     "Front": "How does the reading judge Ussher's work?",
-    "Back": "He was 'no kook'; it is virtually impossible to fault his method - he simply had too few scientific facts. His date became dogma for over 200 years.",
+    "Back": "He was 'no kook'. It is virtually impossible to find fault with the work he did - he simply had too few scientific facts available. His figure became dogma in Western Europe and was taken seriously for over 200 years. The slides note Earth would have been 5654 years old in 1650 by his reckoning.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333185,
+   "noteId": 1789749154123,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "Define catastrophism as a philosophy (origin).",
-    "Back": "An attempt to recognize the importance of geological processes but sequence and confine them within the concept of biblical studies.",
+    "Front": "Define catastrophism as a philosophy (its origin).",
+    "Back": "An attempt to recognize the importance of geological processes, but to sequence them and confine them within the concept of biblical studies. It emerged from vigorous debate about how to express a unique sequence of events for Earth's origin.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333187,
+   "noteId": 1789749154124,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -181,51 +142,51 @@
    ],
    "fields": {
     "Front": "Who was Baron Georges Cuvier?",
-    "Back": "1769-1832; head of the Paris Academy of Science, related to royalty, hugely influential, brilliant, charismatic and very rich; the leading proponent of catastrophism.",
+    "Back": "1769-1832, of Paris; head of the prestigious Academy of Science, related to royalty, hugely influential, brilliant, worldly, charismatic and very, very rich - the leading proponent of catastrophism, whose teachings dealt early geology 'a true death blow'.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333189,
+   "noteId": 1789749154125,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "What did Cuvier observe in the Paris Basin and how did he interpret it?",
-    "Back": "Repeated layers of boulders above fine-grained sands; interpreted as repeated sudden floods caused by huge catastrophes that were sudden, violent, overwhelming and completely unpredictable; the last was Noah's flood.",
+    "Front": "What did Cuvier observe in the Paris Basin, and how did he interpret it?",
+    "Back": "A repeated series of layers of boulders above layers of fine-grained sand. He read this as repeated stages of sudden flooding, caused by a series of huge catastrophes; the final flood was Noah's, and earlier ones matched mythological flood accounts from older cultures. Outside the Paris Basin the last process was always Noah's flood.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333191,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Cuvier placed Creation {{c1::6000}} years in the past, neatly fitting {{c2::Ussher}}'s chronology.",
-    "Extra": "6000 years in the past, fitting Ussher's chronology.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333194,
+   "noteId": 1789749154126,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "What three things did a catastrophist believe (general beliefs)?",
-    "Back": "Earth's history is a record of unique events; there is no natural evolution of anything, biological or inorganic; there is no possible prediction of nature.",
+    "Front": "What four adjectives did Cuvier apply to his catastrophes, and how did he treat fossils?",
+    "Back": "Sudden, violent, overwhelming in force, and completely unpredictable. Even fossil-bearing sedimentary layers were accepted as evidence of extinct animals killed in global catastrophic floods.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333196,
+   "noteId": 1789749154127,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What three things did a catastrophist believe (the general beliefs)?",
+    "Back": "1) The history of Earth is a record of unique events.<br>2) There is no such thing as natural evolution of anything, biological or inorganic.<br>3) There is no possible prediction of nature.",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154128,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -233,25 +194,12 @@
    ],
    "fields": {
     "Front": "EXAM DEFINITION: list the five geological assumptions of catastrophists.",
-    "Back": "1) Earth began as a molten ball; 2) as it cooled it underwent intermittent global convulsions that threw rocks into mountains (even those with marine fossils); 3) valleys are the erosional signature of Noah's world-wide flood; 4) fossils are previous life forms killed off in episodic catastrophes; 5) no biological connections between species - all independent creations.",
+    "Back": "1) Earth began as a molten ball.<br>2) As it cooled it went through intermittent global convulsions that threw rocks into mountain formations (even those containing marine fossils).<br>3) Valleys were the erosional signature of Noah's world-wide flood.<br>4) Fossils represent previous life forms killed off during episodic catastrophic events.<br>5) There are no biological connections between any species, living or dead - all were independent creations.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333198,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Catastrophists assumed Earth began as a {{c1::molten ball}}, that valleys were eroded by {{c2::Noah's flood}}, and that all species were {{c3::independent creations}} with no biological connections.",
-    "Extra": "",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333202,
+   "noteId": 1789749154129,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -259,12 +207,12 @@
    ],
    "fields": {
     "Front": "What was a side effect of catastrophism for the profession of science?",
-    "Back": "Science was a pretty useless profession; scientists called themselves 'philosophers' or 'doctors'.",
+    "Back": "Science was a pretty useless profession (no evolution, no prediction). Scientists still did research but called themselves 'philosophers' or 'doctors'.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333204,
+   "noteId": 1789749154130,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -272,64 +220,12 @@
    ],
    "fields": {
     "Front": "What did Cuvier conclude from comparing mastodon and elephant bones?",
-    "Back": "Their remarkable similarity made evolution the easy solution, but he rejected it as neither morally correct nor within religious dogma - he 'never lost faith'.",
+    "Back": "After many agonizing months he recognized remarkable similarities between mastodon and modern elephant bones and saw that evolution from one to the other was the easy solution - but said this would be neither morally correct nor within religious dogma. He 'never lost faith'. The slides add: 'People were not dumber back then - just uninformed.'",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333206,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Uniformitarianism was originally called {{c1::gradualism}}; the first to formulate and name it was {{c2::James Hutton}}.",
-    "Extra": "Gradualism.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333209,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Who first recognized the concept of gradualism but did not name or develop it?",
-    "Back": "Leonardo da Vinci; Steno then applied it intuitively in the mid-to-late 1600s without naming it.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333211,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "{{c1::James Hutton}} (1726-1797) first formulated and named gradualism in his {{c2::1795}} book '{{c3::Theory of Geology}}', two years before his death.",
-    "Extra": "James Hutton (1726-1797), in his 1795 book the reading calls 'Theory of Geology', two years before his death.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333215,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "A {{c1::deist}} believes in a deity but not in divine intervention or conformity of nature to scripture; {{c2::Hutton}} and {{c3::Lyell}} were deists.",
-    "Extra": "One who believes in a deity but not in divine intervention or in conformity of natural processes to scripture; Hutton and Lyell.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333219,
+   "noteId": 1789749154131,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -337,12 +233,12 @@
    ],
    "fields": {
     "Front": "What did Hutton observe that led to gradualism?",
-    "Back": "Streams eroding sand and depositing it in quieter water; he concluded the same process formed ancient sandstones and that great time was required (weathering, erosion, transport, deposition, solidification).",
+    "Back": "He spent long hours watching streams erode sand and deposit it in quieter water, then looked at solid sandstone and concluded the same process had formed it in the past. He appreciated that great time was required to go from weathering to erosion, transportation, deposition elsewhere, and solidification into rock.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333221,
+   "noteId": 1789749154132,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -350,12 +246,12 @@
    ],
    "fields": {
     "Front": "Why did Hutton's ideas fail to compete during his lifetime?",
-    "Back": "He was cautious, used words sparingly and was not an eloquent speaker, whereas Cuvier was eloquent and dynamic.",
+    "Back": "He was a very cautious man, used words sparingly and was never known as an eloquent speaker; his ground-breaking book could not compete with the very eloquent and dynamic Cuvier's catastrophism.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333223,
+   "noteId": 1789749154133,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -363,25 +259,12 @@
    ],
    "fields": {
     "Front": "Who was Charles Lyell?",
-    "Back": "1797-1875; wealthy Scot, trained as a lawyer at Oxford, switched to geology after one lecture; Professor of Geology at King's College (early 1830s); brilliant, popular (and nasty) speaker who promoted uniformitarianism.",
+    "Back": "1797-1875; son of a very wealthy Scot; went to Oxford to become a lawyer, attended one geology lecture on a whim and switched to geology; Professor of Geology at King's College in the early 1830s. Brilliant and an amazing speaker with packed public lectures - and a bit nasty: anyone who questioned him was publicly cursed.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333225,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "{{c1::Charles Lyell}} wrote '{{c2::Principles of Geology}}' in {{c3::1830}}, championing Hutton and emphasizing unlimited geological time.",
-    "Extra": "'Principles of Geology' (1830), championing Hutton's hypotheses and emphasizing unlimited geological time.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333229,
+   "noteId": 1789749154134,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -389,77 +272,12 @@
    ],
    "fields": {
     "Front": "Why did Lyell 'carry the day' for uniformitarianism?",
-    "Back": "Cuvier died in 1832 and there was no vociferous successor in the catastrophist camp; Lyell's eloquence changed the whole philosophy of Earth Science.",
+    "Back": "Cuvier was on his last legs (he died in 1832) and there was no vociferous single successor in the catastrophist camp, so Lyell's eloquence changed the whole philosophy of earth science - an example of how one eloquent individual can influence an entire profession.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333231,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Front": "State the Law of Uniformitarianism and its meaning.",
-    "Back": "'The present is the key to the past': the processes we observe today always did operate and will continue to operate at similar rates.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333233,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "The Law of Uniformitarianism: '{{c1::the present is the key to the past}}'.",
-    "Extra": "",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333235,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Hutton published in {{c1::1795}}; Lyell's 'Principles of Geology' appeared in {{c2::1830}}; Cuvier died in {{c3::1832}}.",
-    "Extra": "",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333239,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Meteor (Barringer) Crater, {{c1::1 km}} across in the {{c2::Arizona}} desert, was kept off the state map until {{c3::1960}} - uniformitarianism taken to extremes.",
-    "Extra": "A 1 km diameter asteroid impact crater in Arizona (Barringer Crater) was kept off the map of Arizona until 1960 because 'everyone knew that large rocks did not fall from the skies'.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333243,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch1_Philosophy",
-    "week1"
-   ],
-   "fields": {
-    "Text": "At the 65.5 Ma horizon {{c1::65-70%}} of species vanish; the crater is at least {{c2::180 km}} across, from an asteroid {{c3::10-12 km}} in diameter - yet some still deny the impact.",
-    "Extra": "A knife-sharp horizon where 65-70% of species vanish (most dinosaurs), a crater at least 180 km across from a 10-12 km asteroid, global forest fires and tsunami over 1 km high - yet dozens of articles still deny the impact or its importance.",
-    "Topic": "Ch1 Philosophy"
-   }
-  },
-  {
-   "noteId": 1789690333247,
+   "noteId": 1789749154135,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
@@ -467,20 +285,189 @@
    ],
    "fields": {
     "Front": "What lesson does Chapter 1 draw from the catastrophism vs uniformitarianism 'war'?",
-    "Back": "It damaged scientific advancement for centuries; deeply held philosophies can be dangerous to the learning process.",
+    "Back": "It damaged scientific advancement for centuries. Be aware that deeply held philosophies can be dangerous to the learning process. The slides add that uniformitarianism dominated until the theory of plate tectonics.",
     "Topic": "Ch1 Philosophy"
    }
   },
   {
-   "noteId": 1789690333249,
+   "noteId": 1789749154136,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch1_Philosophy",
     "week1"
    ],
    "fields": {
-    "Front": "According to the slides, what theory ended the dominance of uniformitarianism?",
-    "Back": "Plate tectonics.",
+    "Front": "Compare what a catastrophist and a uniformitarian believed.",
+    "Back": "Catastrophist: unique events, sudden violent unpredictable catastrophes, no evolution, no prediction of nature, Creation 6000 years ago, species independently created.<br>Uniformitarian: present processes always operated at similar rates ('the present is the key to the past'), unlimited geological time, gradual change, so prediction and evolution are possible.",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154139,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In {{c1::1667}}, after years of heavy persuasion, Steno converted to {{c1::Roman Catholicism}} and ceased all his {{c1::geological}} work.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154140,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Thomas Burnet}}, an Anglican clergyman and confessor to King {{c1::William III}}, assumed a literal biblical creation and attributed all uneven surface features to {{c1::Noah's flood}}, whose water he decided came from {{c1::inside Earth}} and subsided back there.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154141,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "In {{c1::1650}} Archbishop {{c1::James Ussher}} calculated from births and deaths in the Bible that Earth came into existence at sunset on {{c1::October 22nd}}, {{c1::4004 B.C.}} - making Earth barely over {{c1::6000}} years old.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154142,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Cuvier placed Creation {{c1::6000}} years in the past, which neatly fitted {{c1::Ussher}}'s chronology.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154143,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Catastrophists assumed Earth began as a {{c1::molten ball}}, that mountains were thrown up by intermittent global {{c1::convulsions}}, that valleys were eroded by {{c1::Noah's flood}}, and that all species were {{c1::independent creations}}.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154144,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Uniformitarianism was originally called {{c1::gradualism}}; the first to recognize the concept (without naming or developing it) was {{c1::Leonardo da Vinci}}, and the first serious application to geology was by {{c1::Steno}} in the mid-to-late 1600s.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154145,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::James Hutton}} ({{c1::1726-1797}}), a Scotsman and medical doctor, first formulated and named gradualism in his {{c1::1795}} book '{{c1::Theory of Geology}}', written two years before his death.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154146,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A {{c1::deist}} believes in a deity but not in divine intervention or in conformity of natural processes to scripture; both {{c1::Hutton}} and {{c1::Lyell}} were deists, so geological {{c1::time}} was not a problem for them.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154147,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Charles Lyell}} wrote '{{c1::Principles of Geology}}' in {{c1::1830}}, championing Hutton's hypotheses and emphasizing the concept of {{c1::unlimited geological time}}.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154148,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The Law of Uniformitarianism states that '{{c1::the present is the key to the past}}': the processes we observe today {{c1::always did operate}} and will continue to operate at {{c1::similar rates}}.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154149,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Meteor Crater (the {{c1::Barringer}} Crater), {{c1::1 km}} in diameter in the {{c1::Arizona}} desert, was kept off the state map until {{c1::1960}} because 'everyone knew that large rocks did not fall from the skies' - uniformitarianism taken to extremes.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154150,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "At the 65.5 Ma horizon about {{c1::65-70%}} of species vanish (including most dinosaurs); the crater is at least {{c1::180 km}} across, from an asteroid {{c1::10-12 km}} in diameter, with global forest fires and tsunami over {{c1::1 km}} high - yet dozens of articles still deny it.",
+    "Extra": "",
+    "Topic": "Ch1 Philosophy"
+   }
+  },
+  {
+   "noteId": 1789749154151,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch1_Philosophy",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Order of events: Hutton published in {{c1::1795}} and died in {{c1::1797}}; Lyell's 'Principles of Geology' appeared in {{c1::1830}}; Cuvier died in {{c1::1832}}; Ussher's date was pronounced in {{c1::1650}}.",
+    "Extra": "",
     "Topic": "Ch1 Philosophy"
    }
   }

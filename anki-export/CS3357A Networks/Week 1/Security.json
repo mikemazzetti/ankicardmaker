@@ -1,70 +1,148 @@
 {
  "deck": "CS3357A Networks::Week 1::Security",
- "note_count": 5,
- "exported": "2026-09-18",
+ "note_count": 11,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678872989,
+   "noteId": 1789752892340,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Security",
     "week1"
    ],
    "fields": {
-    "Front": "What is a botnet?",
-    "Back": "A network of thousands of malware-compromised devices controlled by an attacker, used for spam distribution or distributed denial-of-service attacks.",
+    "Front": "List the three categories of denial-of-service attack and explain what makes a DDoS harder to stop.",
+    "Back": "1) Vulnerability attack: a few crafted messages crash a buggy service.<br>2) Bandwidth flooding: traffic at roughly the victim's access rate R clogs the link.<br>3) Connection flooding: many half-open TCP connections exhaust the server.<br>DDoS: flooding from many sources (a botnet) at once; the aggregate reaches R while individual sources are hard to detect and block.",
     "Topic": "Security"
    }
   },
   {
-   "noteId": 1789678872991,
+   "noteId": 1789752892341,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is the Internet insecure by design, and what two architectural defaults show it? (Kurose §1.6)",
+    "Back": "It was designed around the model of 'a group of mutually trusting users attached to a transparent network' - a model in which security is by definition unnecessary.<br>Two defaults still reflect that: (1) the ability of any user to send a packet to any other user is the DEFAULT rather than a capability that must be requested and granted; (2) user identity is taken at declared face value rather than being authenticated.<br>Today's users are not mutually trusting, so the book's position is that communication among mutually trusted users is the exception, not the rule.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892342,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is malware, what can it do to an infected host, and what does 'self-replicating' add? (Kurose §1.6)",
+    "Back": "Malware is the collective name for malicious software that enters a device over the same Internet connection that brings it everything useful.<br>Once in, it can delete files, install spyware that harvests identification numbers, passwords and keystrokes and ships them back to the attacker, and enrol the host in a botnet.<br>Self-replicating malware, having infected one host, seeks entry into other hosts from there, and from each newly infected host into yet more - so it spreads exponentially fast.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892343,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "If a victim server's access rate is R bps, what rate must a bandwidth-flooding attacker generate, and what two problems push attackers toward DDoS? (Kurose §1.6)",
+    "Back": "Roughly R bps - enough to clog the access link into the victim.<br>Problem 1: if R is very large, a single source may be unable to generate that much traffic.<br>Problem 2: if all the traffic comes from one source, an upstream router can detect the pattern and block that source before the traffic reaches the victim.<br>DDoS solves both: many controlled sources (a botnet) each send an unremarkable amount, with the AGGREGATE reaching R. There is then no single address to block, which is why DDoS is far harder to detect and defend against. Roughly 100 major DDoS attacks hit Internet infrastructure every year.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892344,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Where can packet sniffers be deployed, and why are they so hard to detect? (Kurose §1.6)",
+    "Back": "A packet sniffer is a passive receiver that records a copy of every packet that flies by.<br>Wireless: any passive receiver within range of the transmitter gets a copy of every packet.<br>Wired broadcast media: many Ethernet LANs, and cable access networks, which send every downstream packet past every home.<br>An attacker with access to an institution's access router or access link can copy every packet into or out of the whole organisation and analyse it offline.<br>They are hard to detect because they are PASSIVE - they inject nothing into the channel, so there is nothing to observe. Assume you are being sniffed; the defence is cryptography (Chapter 8).",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892345,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is IP spoofing, why is it dangerous, and what is the defence? (Kurose §1.6)",
+    "Back": "It is surprisingly easy to create a packet with an arbitrary source address, content and destination and inject it into the Internet, which forwards it dutifully - nothing on the path verifies the source field. Injecting packets with a false source address is IP spoofing.<br>Danger: a receiver (say a router) may take the false source address as truthful and act on a command in the packet's contents, for example modifying its forwarding table. Trust in an unauthenticated field becomes control of the network.<br>Defence: end-point authentication - a mechanism that lets a receiver determine with certainty where a message really originated (Chapter 8).",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892381,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Security",
     "week1"
    ],
    "fields": {
-    "Text": "The three categories of DoS attack: {{c1::vulnerability attacks}}, {{c2::bandwidth flooding}}, and {{c3::connection flooding}}.",
-    "Extra": "Vulnerability: a few crafted messages crash a service. Bandwidth flooding: packets clog the access link. Connection flooding: many half-open TCP connections.",
-    "Topic": "Security"
-   }
-  },
-  {
-   "noteId": 1789678872995,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Security",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a DDoS attack and why is it harder to defend against?",
-    "Back": "A distributed DoS: the attacker controls multiple sources (e.g., a botnet) that each blast traffic at the target; the aggregate reaches the victim's access rate R, and many sources are harder to detect and block than one.",
-    "Topic": "Security"
-   }
-  },
-  {
-   "noteId": 1789678872997,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Security",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a packet sniffer, and what is the main defence?",
-    "Back": "A passive receiver that records a copy of every packet on a broadcast medium (WiFi, cable, shared Ethernet); hard to detect because it injects nothing. Defence: cryptography.",
-    "Topic": "Security"
-   }
-  },
-  {
-   "noteId": 1789678872999,
-   "modelName": "CS3357A Networks Cloze",
-   "tags": [
-    "Security",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Injecting packets with a false source address is called {{c1::IP spoofing}}; the defence is {{c2::end-point authentication}}.",
+    "Text": "The Internet was designed for {{c1::mutually trusting users}}, so security came later. {{c1::Malware}} enters a host over the network; a {{c1::botnet}} is thousands of compromised devices under one attacker, used for spam and {{c1::DDoS}} attacks.",
     "Extra": "",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892382,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Three DoS attack types: {{c1::vulnerability attacks}}, {{c1::bandwidth flooding}}, {{c1::connection flooding}}; a {{c1::DDoS}} uses many sources (e.g., a botnet) at once.",
+    "Extra": "",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892383,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Packet sniffing}} passively copies packets on a broadcast medium (WiFi, cable, shared Ethernet); the defence is {{c1::cryptography}}. {{c1::IP spoofing}} injects packets with a false source address; the defence is {{c1::end-point authentication}}.",
+    "Extra": "",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892384,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A {{c1::botnet}} is a network of thousands of compromised devices under one attacker's control; its two standard uses are {{c1::spam e-mail distribution}} and {{c1::DDoS attacks}}. The malware component that harvests passwords and keystrokes is {{c1::spyware}}. (Kurose §1.6)",
+    "Extra": "The machines doing the attacking belong to innocent third parties, which is exactly what makes botnet traffic hard to filter.",
+    "Topic": "Security"
+   }
+  },
+  {
+   "noteId": 1789752892385,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Security",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Defences by attack (Kurose §1.6): against packet sniffing, {{c1::cryptography}}; against IP spoofing and masquerading, {{c1::end-point authentication}}; against a vulnerability DoS attack, {{c1::fixing the software flaw}}; against single-source bandwidth flooding, {{c1::upstream filtering of that source}} - which is exactly what {{c1::DDoS}} defeats.",
+    "Extra": "The book stresses that different defences are needed for each of the three DoS types, which is why the classification matters.",
     "Topic": "Security"
    }
   }

@@ -1,0 +1,241 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::Ch2 Relative Dating",
+ "note_count": 18,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154272,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is relative age dating?",
+    "Back": "Determining the order of geological events (older versus younger) without assigning numbers, by applying the principles of stratigraphy. Geologists needed it because rocks have diverse origins and their relative ages reveal the processes that formed them.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154273,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What three simple, logical arguments underlie Steno's principles?",
+    "Back": "1) Sedimentary rock layers are deposited on top of each other as particles settle out of bodies of water.<br>2) The layers are flat-lying when deposited (assumes a quite large body of water).<br>3) They are deposited over wide areas (assumes large bodies of water, such as oceans).",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154274,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Superposition.",
+    "Back": "In any vertical sequence of undeformed sedimentary strata the oldest layers occur at the base and the youngest at the top. It also applies to the fossils the layers contain, which puts it at the heart of relative age dating.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154275,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Original Horizontality and its consequence.",
+    "Back": "Sedimentary strata lay flat (originally horizontal) when first deposited, filling in uneven topography. Therefore steeply inclined rocks must have experienced some later process that deformed them.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154276,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Original Lateral Continuity and give its use.",
+    "Back": "Flat-lying sedimentary strata initially extended in all directions. So similar strata on either side of a river valley, or on either side of an ocean, must originally have been continuous before the river cut into them or the ocean separated them.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154277,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does 'strata' mean and where does the word come from?",
+    "Back": "Sedimentary rock layers; from the Latin word for 'bed'.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154278,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is an unconformity, and who studied them?",
+    "Back": "A horizon representing a TIME BREAK during which erosion of a sequence of rocks took place before deposition of a more recent sequence. James Hutton became particularly interested in them in the 1780s and 1790s; he noted that strata across an unconformity can have dramatically different attitudes.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154279,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define angular unconformity, with the Figure 4 example.",
+    "Back": "An unconformity where the beds above and below have different slopes - the surface between the tilted beds A-E and the flat-lying bed G.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154280,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define disconformity, with the Figure 4 example.",
+    "Back": "An unconformity where the beds above and below are parallel but there is a time gap - the surface between J and K.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154281,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define non-conformity, with the Figure 4 example.",
+    "Back": "An unconformity where sedimentary layers rest on, or are intruded by, igneous rocks - the surface between igneous body F and sedimentary bed G.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154282,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the three rules of the Principle of Cross-Cutting Relationships.",
+    "Back": "1) A fault is younger than the youngest rock it cuts.<br>2) The strata above an unconformity are younger than the strata below (G-K younger than A-E).<br>3) Any feature that cuts across a rock must be younger than the rock it cuts (F is younger than everything up to and including E).",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154283,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Whose principle is Cross-Cutting Relationships, and what gap in Steno's Laws did it fill?",
+    "Back": "James Hutton's. Steno's Laws could not explain igneous intrusions, or the relationship between an eroded rock and the strata laid on top of it; Hutton's principle handles both.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154284,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the Principle of Faunal Succession and the problem it solves.",
+    "Back": "Sedimentary layers contain characteristic fossils distinct from those above and below, so layers in different places can be correlated (matched in age) by fossil content, using reference horizons of common age. Without it you could not match a clay layer with a visually identical clay layer a few hundred km away.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154285,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a composite stratigraphic column and how was it built?",
+    "Back": "A younger-upon-older vertical sequence built by 19th-century geologists who correlated strata from region to region using superposition, cross-cutting relationships and faunal succession, extending it across wide regions until a world-wide stratigraphic column had been compiled.",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154306,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Steno's Laws are the Principles of {{c1::Superposition}}, {{c1::Original Horizontality}} and {{c1::Original Lateral Continuity}}; they still form the basis of all geologic {{c1::mapping}}.",
+    "Extra": "",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154307,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Three kinds of unconformity: {{c1::angular unconformity}} (beds above and below have different dips), {{c1::disconformity}} (beds parallel, time gap) and {{c1::non-conformity}} (sediments on or intruded by igneous rock).",
+    "Extra": "",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154308,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::William 'Strata' Smith}}, a {{c1::canal engineer}} in southern England, noticed each layer held characteristic {{c1::fossils}} and was first to identify the same layer in different parts of the country - the Principle of {{c1::Faunal Succession}}.",
+    "Extra": "",
+    "Topic": "Ch2 Relative Dating"
+   }
+  },
+  {
+   "noteId": 1789749154309,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Relative_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The five principles of stratigraphy: {{c1::Superposition}}, {{c1::Original Horizontality}} and {{c1::Original Lateral Continuity}} (Steno); {{c1::Cross-Cutting Relationships}} (Hutton); {{c1::Faunal Succession}} (William Smith).",
+    "Extra": "",
+    "Topic": "Ch2 Relative Dating"
+   }
+  }
+ ]
+}

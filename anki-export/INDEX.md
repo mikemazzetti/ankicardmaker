@@ -1,70 +1,86 @@
 # Anki collection export
 
-Snapshot generated 2026-09-18 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
+Snapshot generated 2026-09-19 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
 
-**Total: 14886 notes across 199 decks.**
+**Total: 14794 notes across 215 decks.**
 
 | Deck | Notes |
 |------|------:|
-| CS3307A OOD::Week 1::Advantages of OOP | 14 |
+| CS3307A OOD::Week 1::Advantages of OOP | 17 |
+| CS3307A OOD::Week 1::Apply It (W1) | 16 |
 | CS3307A OOD::Week 1::Cohesion and Coupling | 14 |
-| CS3307A OOD::Week 1::Course Logistics | 16 |
-| CS3307A OOD::Week 1::OODA Basics | 12 |
-| CS3307A OOD::Week 1::OOP vs Functional | 30 |
-| CS3307A OOD::Week 1::Objects and Classes | 17 |
-| CS3307A OOD::Week 2::Conceptual Integrity | 3 |
-| CS3307A OOD::Week 2::Coupling Choices | 18 |
-| CS3307A OOD::Week 2::Encapsulation | 11 |
-| CS3307A OOD::Week 2::Interfaces vs Parameters vs Concretes | 14 |
+| CS3307A OOD::Week 1::Course Logistics | 4 |
+| CS3307A OOD::Week 1::OODA Basics | 13 |
+| CS3307A OOD::Week 1::OOP vs Functional | 41 |
+| CS3307A OOD::Week 1::Objects and Classes | 21 |
+| CS3307A OOD::Week 2::Apply It (W2) | 17 |
+| CS3307A OOD::Week 2::Conceptual Integrity | 4 |
+| CS3307A OOD::Week 2::Coupling Choices | 21 |
+| CS3307A OOD::Week 2::Encapsulation | 15 |
+| CS3307A OOD::Week 2::Interfaces vs Parameters vs Concretes | 19 |
 | CS3307A OOD::Week 2::Requirements Gathering | 13 |
-| CS3307A OOD::Week 2::Sequence Diagrams | 11 |
+| CS3307A OOD::Week 2::Sequence Diagrams | 14 |
 | CS3307A OOD::Week 2::UML Class Diagrams | 17 |
-| CS3307A OOD::Week 2::UML and OO Paradigm | 3 |
-| CS3307A OOD::Week 2::Use Case Modelling | 19 |
-| CS3319A Databases::Week 1::Case Study | 13 |
-| CS3319A Databases::Week 1::Crow's Foot Notation | 18 |
-| CS3319A Databases::Week 1::DBMS vs Flat Files | 12 |
-| CS3319A Databases::Week 1::Database Roles | 14 |
-| CS3319A Databases::Week 1::ER Modelling Basics | 12 |
-| CS3319A Databases::Week 1::ER Relationships | 35 |
-| CS3319A Databases::Week 1::Entities & Attributes | 29 |
-| CS3319A Databases::Week 1::Intro & Terminology | 16 |
-| CS3319A Databases::Week 1::Participation Constraints | 26 |
-| CS3319A Databases::Week 1::Schemas & States | 13 |
-| CS3319A Databases::Week 1::Semantic Guidelines | 9 |
-| CS3319A Databases::Week 1::Three-Schema Architecture | 17 |
-| CS3319A Databases::Week 1::Weak Entities | 16 |
-| CS3319A Databases::Week 2::Case Study Mapping | 25 |
-| CS3319A Databases::Week 2::Constraints | 44 |
-| CS3319A Databases::Week 2::Keys | 26 |
-| CS3319A Databases::Week 2::Mapping 1:1 and 1:N | 20 |
-| CS3319A Databases::Week 2::Mapping Entities | 11 |
-| CS3319A Databases::Week 2::Mapping M:N | 14 |
-| CS3319A Databases::Week 2::Mapping Weak & Multivalued | 17 |
-| CS3319A Databases::Week 2::Pre-relational Models | 30 |
-| CS3319A Databases::Week 2::Properties of Relations | 22 |
-| CS3319A Databases::Week 2::Relational Terminology | 23 |
-| CS3319A Databases::Week 2::Seven Mapping Rules | 10 |
-| CS3357A Networks::Week 1::Circuit vs packet switching | 17 |
-| CS3357A Networks::Week 1::Course logistics | 5 |
-| CS3357A Networks::Week 1::Delay & loss | 24 |
-| CS3357A Networks::Week 1::Encapsulation | 8 |
-| CS3357A Networks::Week 1::History | 9 |
-| CS3357A Networks::Week 1::Internet basics | 9 |
+| CS3307A OOD::Week 2::UML and OO Paradigm | 5 |
+| CS3307A OOD::Week 2::Use Case Modelling | 18 |
+| CS3319A Databases::Week 1::Case Study | 9 |
+| CS3319A Databases::Week 1::Course Logistics | 4 |
+| CS3319A Databases::Week 1::Crow's Foot Notation | 10 |
+| CS3319A Databases::Week 1::DBMS vs Flat Files | 10 |
+| CS3319A Databases::Week 1::Database Roles | 8 |
+| CS3319A Databases::Week 1::ER Modelling Basics | 10 |
+| CS3319A Databases::Week 1::ER Relationships | 19 |
+| CS3319A Databases::Week 1::Entities & Attributes | 17 |
+| CS3319A Databases::Week 1::Intro & Terminology | 11 |
+| CS3319A Databases::Week 1::Participation Constraints | 15 |
+| CS3319A Databases::Week 1::Schemas & States | 6 |
+| CS3319A Databases::Week 1::Semantic Guidelines | 5 |
+| CS3319A Databases::Week 1::Textbook Extras | 3 |
+| CS3319A Databases::Week 1::Three-Schema Architecture | 10 |
+| CS3319A Databases::Week 1::Weak Entities | 13 |
+| CS3319A Databases::Week 2::Case Study Mapping | 17 |
+| CS3319A Databases::Week 2::Constraints | 23 |
+| CS3319A Databases::Week 2::Keys | 14 |
+| CS3319A Databases::Week 2::Mapping 1:1 and 1:N | 13 |
+| CS3319A Databases::Week 2::Mapping Entities | 6 |
+| CS3319A Databases::Week 2::Mapping M:N | 9 |
+| CS3319A Databases::Week 2::Mapping Weak & Multivalued | 8 |
+| CS3319A Databases::Week 2::Pre-relational Models | 17 |
+| CS3319A Databases::Week 2::Properties of Relations | 14 |
+| CS3319A Databases::Week 2::Relational Terminology | 14 |
+| CS3319A Databases::Week 2::Seven Mapping Rules | 12 |
+| CS3319A Databases::Week 2::Textbook Extras | 2 |
+| CS3357A Networks::Week 1::Circuit vs packet switching | 13 |
+| CS3357A Networks::Week 1::Course logistics | 4 |
+| CS3357A Networks::Week 1::Delay & loss | 26 |
+| CS3357A Networks::Week 1::Encapsulation | 6 |
+| CS3357A Networks::Week 1::History | 12 |
+| CS3357A Networks::Week 1::Internet basics | 6 |
 | CS3357A Networks::Week 1::Internet structure | 9 |
-| CS3357A Networks::Week 1::Network core | 13 |
+| CS3357A Networks::Week 1::Network core | 10 |
 | CS3357A Networks::Week 1::Network edge & access | 17 |
 | CS3357A Networks::Week 1::Physical media | 9 |
-| CS3357A Networks::Week 1::Protocol layers | 18 |
+| CS3357A Networks::Week 1::Protocol layers | 15 |
 | CS3357A Networks::Week 1::Protocols | 4 |
-| CS3357A Networks::Week 1::Security | 5 |
-| CS3357A Networks::Week 1::Throughput | 9 |
-| ES2240F Catastrophic Events::Week 1::Ch1 Philosophy | 37 |
-| ES2240F Catastrophic Events::Week 1::Ch2 Age Dating | 67 |
+| CS3357A Networks::Week 1::Security | 11 |
+| CS3357A Networks::Week 1::Throughput | 8 |
+| ES2240F Catastrophic Events::Week 1::Ch1 Philosophy | 36 |
+| ES2240F Catastrophic Events::Week 1::Ch2 Absolute Dating | 24 |
+| ES2240F Catastrophic Events::Week 1::Ch2 Age Dating | 10 |
+| ES2240F Catastrophic Events::Week 1::Ch2 Relative Dating | 18 |
+| ES2240F Catastrophic Events::Week 1::Ch2 Time Scale | 14 |
 | ES2240F Catastrophic Events::Week 1::Course Basics | 6 |
-| ES2240F Catastrophic Events::Week 1::Unit1 Intro | 31 |
-| ES2240F Catastrophic Events::Week 2::Ch3 Plate Tectonics | 75 |
-| ES2240F Catastrophic Events::Week 2::Unit2 Intro | 40 |
+| ES2240F Catastrophic Events::Week 1::Unit1 Intro | 29 |
+| ES2240F Catastrophic Events::Week 1::W1 Applications | 13 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Driving Forces | 12 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Paleomagnetism | 16 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Plate Boundaries | 7 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Plate Tectonics | 17 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Plumes and Hot Spots | 20 |
+| ES2240F Catastrophic Events::Week 2::Ch3 Subduction | 10 |
+| ES2240F Catastrophic Events::Week 2::Unit2 Heat Energy | 21 |
+| ES2240F Catastrophic Events::Week 2::Unit2 Intro | 18 |
+| ES2240F Catastrophic Events::Week 2::W2 Applications | 16 |
 | Interview::LeetCode::Extra::01 Arrays & Hashing | 417 |
 | Interview::LeetCode::Extra::02 Two Pointers | 118 |
 | Interview::LeetCode::Extra::03 Sliding Window | 61 |
@@ -204,4 +220,4 @@ Snapshot generated 2026-09-18 from AnkiWeb via GitHub Actions (scripts/anki_clou
 | Mandarin::Vocabulary::a. HSK::HSK 3 | 300 |
 | Mandarin::Vocabulary::a. HSK::HSK 4 | 600 |
 | Mandarin::Vocabulary::a. HSK::HSK 5 | 1300 |
-| Mandarin::Vocabulary::a. HSK::HSK 6 | 2500 |
+| Mandarin::Vocabulary::a. HSK::HSK 6 | 2499 |

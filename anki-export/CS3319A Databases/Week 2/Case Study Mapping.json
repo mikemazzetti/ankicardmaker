@@ -1,283 +1,101 @@
 {
  "deck": "CS3319A Databases::Week 2::Case Study Mapping",
- "note_count": 25,
- "exported": "2026-09-18",
+ "note_count": 17,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692992137,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Text": "The case-study mapping yields six tables: {{c1::EMPLOYEE, DEPARTMENT, DEPT_LOCATIONS, PROJECT, WORKS_ON and DEPENDENT}}.",
-    "Extra": "",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992139,
+   "noteId": 1789752890880,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: schema of EMPLOYEE (with foreign keys)?",
-    "Back": "EMPLOYEE(SSN, Fname, Minit, Lname, Address, Salary, Sex, Birthdate, SuperSSN FK -&gt; EMPLOYEE, DNumber FK -&gt; DEPARTMENT). SuperSSN comes from SUPERVISES (unary 1:N), DNumber from WORKS FOR.",
+    "Front": "Write the final case-study schema with all keys and foreign keys.",
+    "Back": "<code>EMPLOYEE (SSN, Fname, Minit, Lname, Address, Salary, Sex, Birthdate, SuperSSN (FK-&gt;EMPLOYEE), DNumber (FK-&gt;DEPARTMENT))</code><br><code>DEPARTMENT (DNumber, DName, MgrSSN (FK-&gt;EMPLOYEE), MgrStartDate)</code><br><code>DEPT_LOCATIONS (DNumber (FK), Location)</code> PK (DNumber, Location)<br><code>PROJECT (PNumber, PName, PLocation, DNumber (FK-&gt;DEPARTMENT))</code><br><code>WORKS_ON (ESSN (FK), PNumber (FK), Hours)</code> PK (ESSN, PNumber)<br><code>DEPENDENT (ESSN (FK), DependentName, Sex, Birthdate, Relationship)</code> PK (ESSN, DependentName)",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992141,
+   "noteId": 1789752890881,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: schema of DEPARTMENT, and why does it hold the manager?",
-    "Back": "DEPARTMENT(DNumber, DName, MgrSSN FK -&gt; EMPLOYEE, MgrStartDate). MANAGES is 1:1 and DEPARTMENT has total participation (every department has a manager), so the FK and StartDate go there (Step 3).",
+    "Front": "Case study: why does DEPARTMENT hold the manager, and what does step 3 add?",
+    "Back": "MANAGES is 1:1 and DEPARTMENT has TOTAL participation (every department has a manager, but most employees manage nothing), so by step 3 the key moves from the partial side into the total side: DEPARTMENT gains MgrSSN (FK to EMPLOYEE) and MgrStartDate, the relationship's attribute.",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992143,
+   "noteId": 1789752890882,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: schema of DEPT_LOCATIONS and its primary key?",
-    "Back": "DEPT_LOCATIONS(DNumber FK, Location); PK (DNumber, Location) (Step 6, multi-valued Locations).",
+    "Front": "Case study: which three columns does step 4 add, and why is DEPENDENTS_OF not mapped again?",
+    "Back": "EMPLOYEE gets the department number from WORKS FOR and the supervisor's SSN from the unary SUPERVISES; PROJECT gets the managing department number from CONTROLS. DEPENDENTS_OF is not mapped again because step 2 already handled it: the weak entity DEPENDENT took the owner's SSN as a foreign key that is part of its key.",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992145,
+   "noteId": 1789752890883,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: schema of PROJECT?",
-    "Back": "PROJECT(PNumber, PName, PLocation, DNumber FK -&gt; DEPARTMENT) (Step 4, CONTROLS 1:N).",
+    "Front": "Case study: how is the unary SUPERVISES mapped, and why is Borg's SuperSSN null?",
+    "Back": "As a foreign key SuperSSN in EMPLOYEE that references EMPLOYEE's OWN primary key SSN (step 4). Borg's SuperSSN is NULL because he is the top of the hierarchy: SUPERVISES is partial on the supervisee side, and a foreign key from a partial relationship may be null.",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992147,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Text": "WORKS_ON(ESSN, PNumber, Hours) has primary key {{c1::(ESSN, PNumber)}}; both are foreign keys (Step {{c2::5}}, M:N).",
-    "Extra": "",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992150,
+   "noteId": 1789752890884,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: schema of DEPENDENT and its primary key?",
-    "Back": "DEPENDENT(ESSN FK -&gt; EMPLOYEE, DependentName, Sex, Birthdate, Relationship); PK (ESSN, DependentName) (Step 2, weak entity).",
+    "Front": "Case study: why can two dependents both be named Alice, and why is Location left out of DEPARTMENT?",
+    "Back": "DEPENDENT's key is (ESSN, DependentName), so the same name under different employees is distinct - only the composite key tells the two Alices apart. Location is MULTI-VALUED, so rule 6 says not to make it an attribute of DEPARTMENT; it gets its own table DEPT_LOCATIONS keyed by (DNumber, Location).",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992152,
+   "noteId": 1789752890885,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: how is the unary SUPERVISES relationship mapped?",
-    "Back": "As a foreign key SuperSSN in EMPLOYEE that references EMPLOYEE's own primary key SSN; NULL for the top boss.",
+    "Front": "What steps does the instructor take in Access to create a table, and what happens when you mark the primary key?",
+    "Back": "In table Design View add each column with its data type, then select the key column(s) and press the PRIMARY KEY button before saving. 'Notice when we make it the key, it is now a REQUIRED field' - Required turns to Yes, so the key must always be entered. Then save with a meaningful name: 'Table1 is a very bad name, so don't call it Table1; call it Project.'",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992154,
+   "noteId": 1789752890886,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "Case study mapping: why can two dependents both be named Alice?",
-    "Back": "Because DEPENDENT's key is (ESSN, DependentName): the same name under different employees is distinct.",
+    "Front": "What data types does the instructor choose in Access for SSN, Birthdate and Salary, and what mistake does she admit?",
+    "Back": "SSN: Number (or Short Text, 'because you're not really doing calculations with it'); Birthdate: Date; Salary: Currency. Her admitted mistake: she stored the whole name in ONE column, when step 1 says a composite attribute should be split into first-name and last-name columns.",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992156,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is the objective of the case-study video?",
-    "Back": "Use the seven rules on ANY ER diagram and convert it into an actual working database in the relational model.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992158,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What tool does the instructor use to build the case study database, and why?",
-    "Back": "Microsoft Access, because it is easy to show quickly on her personal computer.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992160,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What happens in Access when you mark a column as the primary key?",
-    "Back": "It becomes a Required field: the key must always be entered.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992162,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Do not leave a new table named {{c1::Table1}}; save it with a meaningful name such as Project.",
-    "Extra": "",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992164,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why is Location left out of the DEPARTMENT table in the case study?",
-    "Back": "It is multi-valued, so rule 6 says not to make it an attribute of DEPARTMENT; it gets its own table DEPT_LOCATIONS keyed by (DNumber, Location).",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992166,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Text": "A foreign key column must have the {{c1::same data type}} as the key it references: if DNumber is a Number in DEPARTMENT, it must be a Number in DEPT_LOCATIONS.",
-    "Extra": "",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992168,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How do you create a composite primary key in Access?",
-    "Back": "Highlight all the key columns together (e.g. DNumber and Location, or ESSN and PNumber) and click Primary Key.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992170,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What data types does the instructor choose for EMPLOYEE's SSN, Birthdate and Salary?",
-    "Back": "SSN: Number (or Short Text, since no calculations are done on it); Birthdate: Date; Salary: Currency.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992172,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why is the DEPENDENTS_OF relationship not mapped again in step 4?",
-    "Back": "It was already handled in step 2: the weak entity DEPENDENT got the owner's SSN as a foreign key that is part of its key.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992174,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Which three columns does step 4 add in the case study?",
-    "Back": "EMPLOYEE gets the department number (works for) and the supervisor's SSN (supervises); PROJECT gets the managing department number (controls).",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992176,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What does step 3 add in the case study, and to which table?",
-    "Back": "MgrSSN (foreign key) and MgrStartDate to DEPARTMENT, the side with total participation in MANAGES.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992178,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study_Mapping",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What sample rows does the instructor enter in WORKS_ON?",
-    "Back": "Employee 1 on project 45 for 120 hours; employee 1 on project 55 for 100 hours; employee 2 on project 55 for 88 hours.",
-    "Topic": "Case Study Mapping"
-   }
-  },
-  {
-   "noteId": 1789692992180,
+   "noteId": 1789752890887,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
@@ -285,46 +103,124 @@
    ],
    "fields": {
     "Front": "How do you create a relationship in the Access Relationships window?",
-    "Back": "Database Tools -&gt; Relationships; add the tables; drag the primary key onto the foreign key column; tick Enforce Referential Integrity; click Create.",
+    "Back": "Database Tools -&gt; Relationships; add all the tables and arrange them like the ER diagram; for each foreign key DRAG the primary key onto the foreign key column; tick ENFORCE REFERENTIAL INTEGRITY; click Create. Access reports the relationship as one-to-many, and 'lets us draw a little mini version of the ER diagram'.",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992182,
+   "noteId": 1789752890888,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "How does Access display the unary SUPERVISES relationship?",
-    "Back": "It shows a second copy of EMPLOYEE to draw the line from SSN to SupervisorSSN, but both boxes are really the same table.",
+    "Front": "How does Access display the unary SUPERVISES relationship, and how is the M:N relationship drawn?",
+    "Back": "Access shows a SECOND COPY of EMPLOYEE to draw the line from SSN to SupervisorSSN, 'but these are still really both the same table'. The M:N is drawn as two relationships into the linking table: EMPLOYEE.SSN onto WORKS_ON.ESSN and PROJECT.PNumber onto WORKS_ON.PNumber - 'together this becomes a many-to-many relationship'.",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992184,
+   "noteId": 1789752890889,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study_Mapping",
+    "week2"
+   ],
+   "fields": {
+    "Front": "List the practical Access habits the instructor says will save you marks.",
+    "Back": "1. Name every table sensibly - never Table1<br>2. Set the primary key BEFORE saving, so the DBMS marks it Required<br>3. For composite keys, select all the key columns together before pressing Primary Key<br>4. Give every foreign key the SAME data type as the primary key it references<br>5. Do not create a column for a multi-valued attribute in the entity's own table<br>6. Do not map a weak entity's identifying relationship a second time in step 4",
+    "Topic": "Case Study Mapping"
+   }
+  },
+  {
+   "noteId": 1789752890890,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study_Mapping",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLICATION: reading the case-study ER diagram aloud, which rule does each sentence trigger?",
+    "Back": "'An employee has many dependents; DEPENDENT is weak' -&gt; step 2.<br>'An employee works on many projects, with Hours' -&gt; step 5.<br>'A department has many employees' -&gt; step 4.<br>'A department is managed by one employee, with StartDate' -&gt; step 3.<br>'An employee supervises many employees' (unary) -&gt; step 4.<br>'A department controls many projects' -&gt; step 4.<br>'A department has several locations' -&gt; step 6.",
+    "Topic": "Case Study Mapping"
+   }
+  },
+  {
+   "noteId": 1789752890905,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Text": "In the case study, step {{c1::6}} needed no extra work (DEPT_LOCATIONS was built right after DEPARTMENT) and step {{c2::7}} did not apply (no ternary relationships).",
+    "Text": "Mapping the case-study ER diagram gives six tables: {{c1::EMPLOYEE}}, {{c1::DEPARTMENT}}, {{c1::DEPT_LOCATIONS}}, PROJECT, WORKS_ON and DEPENDENT.",
     "Extra": "",
     "Topic": "Case Study Mapping"
    }
   },
   {
-   "noteId": 1789692992187,
-   "modelName": "CS3319A Databases Basic",
+   "noteId": 1789752890906,
+   "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Case_Study_Mapping",
     "week2"
    ],
    "fields": {
-    "Front": "What mistake does the instructor admit in her EMPLOYEE table, and what does the step 1 rule say?",
-    "Back": "She stored the whole name in one column; the composite attribute should have been split into first-name and last-name columns.",
+    "Text": "A foreign key column must have the {{c1::same data type}} as the key it references (if DNumber is a Number in DEPARTMENT it must be a Number in DEPT_LOCATIONS); to make a composite primary key in Access you {{c1::highlight all the key columns together}} and click Primary Key.",
+    "Extra": "",
+    "Topic": "Case Study Mapping"
+   }
+  },
+  {
+   "noteId": 1789752890907,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study_Mapping",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In the case study, step {{c1::6}} needed no extra work (DEPT_LOCATIONS was built right after DEPARTMENT) and step {{c1::7}} did not apply, because there are {{c1::no ternary relationships}}.",
+    "Extra": "",
+    "Topic": "Case Study Mapping"
+   }
+  },
+  {
+   "noteId": 1789752890908,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study_Mapping",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Case-study keys: WORKS_ON has primary key {{c1::(ESSN, PNumber)}} (step 5); DEPENDENT has {{c1::(ESSN, DependentName)}} (step 2); DEPT_LOCATIONS has {{c1::(DNumber, Location)}} (step 6); EMPLOYEE carries the foreign keys SuperSSN and DNumber (step 4).",
+    "Extra": "",
+    "Topic": "Case Study Mapping"
+   }
+  },
+  {
+   "noteId": 1789752890909,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study_Mapping",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In Access, marking a column as the primary key makes it a {{c1::Required}} field; a new table must not be left named {{c1::Table1}}; and a relationship is created by dragging the {{c1::primary key}} onto the foreign key column and ticking Enforce Referential Integrity.",
+    "Extra": "",
+    "Topic": "Case Study Mapping"
+   }
+  },
+  {
+   "noteId": 1789752890910,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Case_Study_Mapping",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Textbook (Elmasri Table 9.1): ER to relational - an entity type gives an {{c1::entity relation}}; an M:N relationship type gives a {{c1::relationship relation and two foreign keys}}; a composite attribute gives a set of simple component attributes; a multivalued attribute gives {{c1::a relation and a foreign key}}; a value set gives a domain; a key attribute gives a primary or secondary key.",
+    "Extra": "",
     "Topic": "Case Study Mapping"
    }
   }

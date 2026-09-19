@@ -1,122 +1,70 @@
 {
  "deck": "CS3319A Databases::Week 1::Semantic Guidelines",
- "note_count": 9,
- "exported": "2026-09-18",
+ "note_count": 5,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991676,
+   "noteId": 1789752890639,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "State the three semantic guidelines for drawing an ER diagram, and say which is strict in this course.",
+    "Back": "1. Entity names all SINGULAR (her preference, and required in this course) or all plural - never mixed.<br>2. MEANINGFUL names for entities, attributes and relationships - 'don't use like item one or object two'.<br>3. Relationships should read LEFT TO RIGHT and TOP TO BOTTOM; rename the verb or swap the entities' positions. This one is not always possible - 'it's not a big deal if you can't' - but singular names are required.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789752890640,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are the three things wrong with PATIENT --- Treats --- DOCTORS --- Is employee by --- NURSE?",
+    "Back": "1. 'Patient treats doctor' reads backwards: rename it IS TREATED BY, or swap DOCTOR and PATIENT.<br>2. 'Doctors' is plural while Patient and Nurse are singular: make it DOCTOR.<br>3. 'Doctor is employed by nurse' is backwards and ungrammatical top to bottom: it should be Doctor EMPLOYS Nurse.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789752890641,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Semantic_Guidelines",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What cardinality and participation does the instructor give the doctor's-office example?",
+    "Back": "Patient IS TREATED BY Doctor: MANY-TO-MANY (a patient may see many doctors, and a doctor 'for sure' treats many), both total - every patient we track has a doctor and every doctor treats someone. Doctor EMPLOYS Nurse: ONE-TO-MANY, both total, one doctor per nurse 'assuming a single doctor's office'. She warns she has not given enough information to be sure.",
+    "Topic": "Semantic Guidelines"
+   }
+  },
+  {
+   "noteId": 1789752890672,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Semantic_Guidelines",
     "week1"
    ],
    "fields": {
-    "Text": "Entity names should be all {{c1::singular}} (preferred) or all plural, but never {{c2::mixed}}.",
+    "Text": "In the case study 'Department works for employee' reads badly, so the relationship is renamed {{c1::has}} (department has employee); the one visual fault she fixes is a {{c1::line cutting through an attribute}} - some overlap is fine, lines through ovals are not.",
     "Extra": "",
     "Topic": "Semantic Guidelines"
    }
   },
   {
-   "noteId": 1789692991679,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In which directions should relationships read on an ER diagram?",
-    "Back": "Left to right and top to bottom, using meaningful names.",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991681,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is wrong with the diagram PATIENT --- Treats --- DOCTORS --- Is employee by --- NURSE?",
-    "Back": "'Doctors' is plural while others are singular; 'Treats' reads backwards (should be IS TREATED BY); 'Is employee by' is wrong and reads backwards (should be EMPLOYS).",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991683,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What are the cardinalities of Patient IS TREATED BY Doctor and Doctor EMPLOYS Nurse (speaker notes)?",
-    "Back": "Patient-Doctor: many to many. Doctor-Nurse: one to many.",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991685,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What kinds of names does the instructor tell you to avoid?",
-    "Back": "Meaningless names like 'item one' or 'object two'; use meaningful names.",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991687,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Is reading left-to-right and top-to-bottom mandatory?",
-    "Back": "No: 'if possible... it's not a big deal if you can't'. It just makes the diagram easier to explain to users. Singular names, however, are required in this course.",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991689,
+   "noteId": 1789752890673,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Semantic_Guidelines",
     "week1"
    ],
    "fields": {
-    "Text": "Case study: 'Department works for employee' reads badly, so the instructor renames the relationship '{{c1::has}}' (department has employee).",
+    "Text": "Textbook (Elmasri §3.7.3): design refinements - an attribute that turns out to reference another entity type is refined into {{c1::a relationship}} (and the attribute is then deleted); an attribute appearing in several entity types may be {{c1::promoted to an entity type}} of its own; and an entity type with a single attribute related to only one other type may be {{c1::demoted to an attribute}}.",
     "Extra": "",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991691,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Give two ways to fix 'Patient treats Doctor'.",
-    "Back": "Rename the relationship IS TREATED BY, or swap the positions of DOCTOR and PATIENT so 'treats' reads left to right.",
-    "Topic": "Semantic Guidelines"
-   }
-  },
-  {
-   "noteId": 1789692991693,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Semantic_Guidelines",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In the doctor's-office practice example, what participation did the instructor assign to Doctor EMPLOYS Nurse?",
-    "Back": "Total on both sides: every doctor has a nurse helping them and every nurse works for some doctor; one doctor per nurse assuming a single-doctor office.",
     "Topic": "Semantic Guidelines"
    }
   }

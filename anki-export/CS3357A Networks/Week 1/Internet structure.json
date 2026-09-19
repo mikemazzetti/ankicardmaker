@@ -1,122 +1,122 @@
 {
  "deck": "CS3357A Networks::Week 1::Internet structure",
  "note_count": 9,
- "exported": "2026-09-18",
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678872821,
+   "noteId": 1789752891989,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Internet_structure",
     "week1"
    ],
    "fields": {
-    "Front": "Why not connect every access ISP directly to every other access ISP?",
-    "Back": "It does not scale: with N access ISPs it needs O(N^2) connections.",
+    "Front": "List the five steps the slides use to build up the Internet's 'network of networks' structure.",
+    "Back": "1) Connect every access ISP to every other: O(N^2) links, does not scale.<br>2) Connect each access ISP to one global transit ISP: customer-provider economic agreement.<br>3) Competing global ISPs (A, B, C) must interconnect: peering links and IXPs.<br>4) Regional ISPs arise to connect access nets to the large ISPs.<br>5) Content-provider networks (Google, Microsoft, Akamai) run private networks to bring content close to users.",
     "Topic": "Internet structure"
    }
   },
   {
-   "noteId": 1789678872823,
+   "noteId": 1789752891990,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_structure",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define peering link and IXP, and explain why they exist.",
+    "Back": "Peering link: a direct connection between two ISPs (usually at the same level) so their traffic bypasses upstream providers; typically settlement-free (neither pays).<br>IXP (Internet exchange point): a third-party meeting point where many ISPs peer.<br>They exist because competing global/regional ISPs must interconnect so customers of different ISPs can communicate.",
+    "Topic": "Internet structure"
+   }
+  },
+  {
+   "noteId": 1789752891991,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_structure",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What are regional ISPs and tier-1 ISPs, who pays whom, and name tier-1 examples.",
+    "Back": "Regional ISPs: connect access networks within a region to the large ISPs, adding a tier to the hierarchy.<br>Tier-1 ISPs: about a dozen large commercial ISPs with national/international coverage (Level 3, Sprint, AT&amp;T, NTT); they peer with each other and pay no one for transit.<br>Money flows up: access ISP pays regional ISP, regional pays tier-1.",
+    "Topic": "Internet structure"
+   }
+  },
+  {
+   "noteId": 1789752891992,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_structure",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is a content-provider network and why do Google, Microsoft or Akamai build one?",
+    "Back": "A private global network connecting the provider's data centers to the Internet.<br>Why: brings services and content close to end users, and lets the provider bypass tier-1 and regional ISPs (saving transit fees, controlling performance) by peering directly with lower-tier ISPs or at IXPs.",
+    "Topic": "Internet structure"
+   }
+  },
+  {
+   "noteId": 1789752891993,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_structure",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What drove the evolution of the Internet's structure, and what do 'multi-homed' and 'settlement-free' mean?",
+    "Back": "Evolution was driven by economics and national policies more than by performance.<br>Multi-homed: an ISP connects to two or more providers, staying connected if one fails.<br>Settlement-free: peering between ISPs at the same level in which neither party pays the other.",
+    "Topic": "Internet structure"
+   }
+  },
+  {
+   "noteId": 1789752891994,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Internet_structure",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Textbook only: define PoP and multi-homing, and give the book's numbers for IXPs and content-provider bypass. (Kurose §1.3.3)",
+    "Back": "PoP (point of presence): a group of one or more routers at a single location in a provider's network where customer ISPs can connect in. PoPs exist at every level except the bottom (access ISP) level; a customer typically leases a high-speed link from a third party to reach one.<br>Multi-homing: connecting to two or more provider ISPs. Any ISP except a tier-1 may do it, and the payoff is that it keeps sending and receiving packets even if one provider fails.<br>Numbers: there are over 600 IXPs (each typically a standalone building with its own switches); roughly a dozen tier-1 ISPs, though no group officially sanctions tier-1 status; and as of 2020 Amazon, Google, IBM and Microsoft could collectively reach 76% of the Internet without passing through a tier-1 ISP.",
+    "Topic": "Internet structure"
+   }
+  },
+  {
+   "noteId": 1789752892014,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Internet_structure",
     "week1"
    ],
    "fields": {
-    "Text": "Connecting millions of access ISPs pairwise needs {{c1::O(N^2)}} connections; instead each access ISP connects to a {{c2::global transit ISP}} under a {{c3::customer-provider}} economic agreement.",
+    "Text": "Connecting N access ISPs pairwise needs {{c1::O(N^2)}} links; instead each access ISP connects to a {{c1::global transit ISP}} under a {{c1::customer-provider}} economic agreement.",
     "Extra": "",
     "Topic": "Internet structure"
    }
   },
   {
-   "noteId": 1789678872827,
+   "noteId": 1789752892015,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Internet_structure",
     "week1"
    ],
    "fields": {
-    "Text": "An {{c1::IXP (Internet exchange point)}} is a third-party meeting point where multiple ISPs can peer (connect directly to exchange traffic).",
+    "Text": "At the 'center' of the Internet: a small number of {{c1::tier-1 commercial ISPs}} (e.g., Level 3, Sprint, AT&amp;T, NTT) and {{c1::content-provider networks}} (e.g., Google, Facebook) whose private networks connect their data centers, often {{c1::bypassing}} tier-1 and regional ISPs.",
     "Extra": "",
     "Topic": "Internet structure"
    }
   },
   {
-   "noteId": 1789678872829,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_structure",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a peering link?",
-    "Back": "A direct connection between two ISPs (typically at the same level of the hierarchy) so traffic between them bypasses upstream providers; usually settlement-free (neither pays).",
-    "Topic": "Internet structure"
-   }
-  },
-  {
-   "noteId": 1789678872831,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_structure",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What role do regional ISPs play?",
-    "Back": "They arise to connect access networks within a region to the large (tier-1) ISPs, adding a tier to the hierarchy; access ISPs pay regional ISPs, regional ISPs pay tier-1 ISPs.",
-    "Topic": "Internet structure"
-   }
-  },
-  {
-   "noteId": 1789678872833,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_structure",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What are tier-1 ISPs? Give examples.",
-    "Back": "A small number of well-connected large commercial ISPs with national and international coverage that peer with each other and pay no one for transit; e.g., Level 3, Sprint, AT&amp;T, NTT (roughly a dozen exist).",
-    "Topic": "Internet structure"
-   }
-  },
-  {
-   "noteId": 1789678872835,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_structure",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a content-provider network and why build one?",
-    "Back": "A private network (e.g., Google, Microsoft, Akamai, Facebook) connecting the provider's data centers to the Internet, bringing content close to users and often bypassing tier-1 and regional ISPs by peering directly with lower-tier ISPs or at IXPs.",
-    "Topic": "Internet structure"
-   }
-  },
-  {
-   "noteId": 1789678872837,
+   "noteId": 1789752892016,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Internet_structure",
     "week1"
    ],
    "fields": {
-    "Text": "At the 'center' of the Internet are a small number of {{c1::tier-1 commercial ISPs}} (e.g., Level 3, Sprint, AT&amp;T, NTT) and {{c2::content provider networks}} (e.g., Google, Facebook).",
+    "Text": "Internet hierarchy top to bottom: {{c1::tier-1 ISPs}}, {{c1::regional ISPs}}, {{c1::access ISPs}}; {{c1::IXPs}} provide peering points at each level, and content providers can connect at any level.",
     "Extra": "",
-    "Topic": "Internet structure"
-   }
-  },
-  {
-   "noteId": 1789678872840,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Internet_structure",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What drove the evolution of the Internet's network-of-networks structure?",
-    "Back": "Economics and national policies, more than performance considerations.",
     "Topic": "Internet structure"
    }
   }

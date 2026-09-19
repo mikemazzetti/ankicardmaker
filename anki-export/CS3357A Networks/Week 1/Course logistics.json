@@ -1,70 +1,57 @@
 {
  "deck": "CS3357A Networks::Week 1::Course logistics",
- "note_count": 5,
- "exported": "2026-09-18",
+ "note_count": 4,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678873025,
+   "noteId": 1789752891689,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Course_Logistics",
     "week1"
    ],
    "fields": {
-    "Front": "CS3357A grading breakdown?",
-    "Back": "Participation (iClicker) 8%; two quizzes 10% (5% each); three assignments 37% (10% + 12% + 15%); midterm 15%; final exam 30%.",
+    "Front": "When and in what format are the CS3357A midterm and final exam?",
+    "Back": "Midterm: Monday October 19, 2026, in class (MC-110, 12:30-2:30), 1 h 40 min, closed book, multiple choice, no make-up (weight shifts to the final only with approved academic consideration); covers material taught before it.<br>Final: scheduled by the University in Dec 11-22, cumulative, closed book, 3 hours, multiple choice.",
     "Topic": "Course logistics"
    }
   },
   {
-   "noteId": 1789678873027,
+   "noteId": 1789752891690,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Course_Logistics",
     "week1"
    ],
    "fields": {
-    "Front": "What minimum must you achieve on the midterm plus final to pass CS3357A, and what happens otherwise?",
-    "Back": "A weighted average of at least 40% across midterm and final; otherwise the maximum overall mark is 45%.",
+    "Front": "Per the REVISED Fall 2026 schedule, when are the quizzes and the assignment release/due dates?",
+    "Back": "Sept 14 and 17 lectures were cancelled, shifting everything one teaching week (skipping Reading Week Oct 10-18).<br>Quiz 1: Thu Oct 1 (was Sept 24). Quiz 2: Thu Oct 29 (was Oct 22).<br>A1: released Oct 1, due Oct 23. A2: released Oct 23, due Nov 6. A3: released Nov 6, due Nov 27. Midterm unchanged: Mon Oct 19.<br>Revised topic order: Wk3 fundamentals/Application layer, Wk4-5 Application layer and network programming, Wk7 midterm then Transport, Wk8-10 Network layer and routing, Wk11-12 Link layer, Wk13 Physical layer, Wk14 wrap-up.",
     "Topic": "Course logistics"
    }
   },
   {
-   "noteId": 1789678873029,
+   "noteId": 1789752891691,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Course_Logistics",
     "week1"
    ],
    "fields": {
-    "Front": "When is the CS3357A midterm and what is its format?",
-    "Back": "Monday, October 19, 2026, in class (MC-110) during lecture time; 1 hour 40 minutes, closed book, multiple choice; no make-up.",
+    "Front": "Summarize the CS3357A policies on attendance, late assignments, and generative AI.",
+    "Back": "Attendance: iClicker, pass/fail per lecture; the first two weeks do not count; up to five further lectures may be missed; no answering for others.<br>Assignments: individual socket-programming/protocol work via Gradescope; 4 late coupons per term (each = 24 h), max 3 per assignment; nothing accepted after the late window; similarity checks.<br>AI: not permitted for producing code or final solutions; limited use for background learning only.",
     "Topic": "Course logistics"
    }
   },
   {
-   "noteId": 1789678873031,
-   "modelName": "CS3357A Networks Basic",
+   "noteId": 1789752891714,
+   "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Course_Logistics",
     "week1"
    ],
    "fields": {
-    "Front": "Per the revised Fall 2026 schedule, when are Quiz 1 and Quiz 2?",
-    "Back": "Quiz 1: Thursday, October 1 (shifted from Sept 24); Quiz 2: Thursday, October 29 (shifted from Oct 22), because the Sept 14 and 17 lectures were cancelled.",
-    "Topic": "Course logistics"
-   }
-  },
-  {
-   "noteId": 1789678873033,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Course_Logistics",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Per the revised schedule, when is Assignment 1 released and due?",
-    "Back": "Released Thursday, October 1; due October 23 (A2 released Oct 23, due Nov 6; A3 released Nov 6, due Nov 27).",
+    "Text": "CS3357A grading: iClicker participation {{c1::8%}}; two quizzes {{c1::10% (5 + 5)}}; three assignments {{c1::37% (10 + 12 + 15)}}; midterm {{c1::15%}}; final {{c1::30%}}. Combined midterm + final must be at least {{c1::40%}} or the mark is capped at 45%.",
+    "Extra": "",
     "Topic": "Course logistics"
    }
   }

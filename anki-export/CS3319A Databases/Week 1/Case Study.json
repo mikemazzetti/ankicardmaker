@@ -1,174 +1,122 @@
 {
  "deck": "CS3319A Databases::Week 1::Case Study",
- "note_count": 13,
- "exported": "2026-09-18",
+ "note_count": 9,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991469,
+   "noteId": 1789752889907,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: give the attributes of each entity, marking keys and special kinds.",
+    "Back": "DEPARTMENT: Name (key), Number (key), Locations (MULTI-VALUED) - two keys, unusual.<br>EMPLOYEE: SSN (key), Name (possibly composite), Address, Salary, Sex, Birthdate (Age would be derived).<br>PROJECT: Number (key), Name (key), Location (single-valued - 'a single location').<br>DEPENDENT: Name, Sex, Birthdate, Relationship - no key of its own (weak entity).",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889909,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which words in the case-study specification tell you an attribute is a key or multi-valued?",
+    "Back": "'Each department has a unique name, number' -&gt; Name and Number are KEYS. 'A department may have SEVERAL locations' -&gt; Locations is MULTI-VALUED. 'A single location' for a project rules multi-valued out. The verbs (manages, controls, works on, supervisor, dependents of) are relationships, not attributes.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889910,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Case study: which relationship carries Hours, which carries StartDate, and why are they not on the entities?",
+    "Back": "Hours is on WORKS ON: 'how many hours did an employee work on a project?' depends on the (employee, project) pair. StartDate is on MANAGES: it could sit on either entity because MANAGES is 1:1, but it describes the ACT OF MANAGING, so it stays on the diamond.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889911,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: a car-rental mini-world says 'every rental is for exactly one car; a customer may have many rentals; each rental records the pick-up date'. Where does the pick-up date go, and what is the cardinality?",
+    "Back": "Pick-up date describes the rental itself, i.e. the (customer, car) association, so it belongs on the RELATIONSHIP, not on CUSTOMER or CAR. CUSTOMER (1) --- rents --- (M) CAR in this reading: a customer may rent many cars over time, each rental instance for one car.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889912,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: 'Keep track of when the employee started managing the department.' Which noun is only implied and where does it end up?",
+    "Back": "DATE - it is never named as a noun in the list, but 'when' means a date must be stored. It becomes the StartDate attribute on the MANAGES relationship (not on EMPLOYEE or DEPARTMENT).",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889913,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Summarise the finished case-study ER diagram in words.",
+    "Back": "EMPLOYEE 1 --- MANAGES (StartDate) --- 1 DEPARTMENT (employee partial, department total)<br>EMPLOYEE N --- WORKS FOR --- 1 DEPARTMENT (both total)<br>DEPARTMENT 1 --- CONTROLS --- N PROJECT (department partial, project total)<br>EMPLOYEE M --- WORKS ON (Hours) --- N PROJECT (both total)<br>EMPLOYEE 1 --- SUPERVISES --- N EMPLOYEE, unary (both partial)<br>EMPLOYEE 1 === HAS === N DEPENDENT, double diamond, DEPENDENT weak and total, partial key Name<br>DEPARTMENT has the multi-valued attribute Locations",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889914,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Case_Study",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: a hospital mini-world says 'a doctor attends many patients and a patient may be attended by many doctors; each attendance records the date'. Name the entities, the relationship, its degree, ratio and attribute.",
+    "Back": "Entities DOCTOR and PATIENT; relationship ATTENDS (a verb); degree 2 (binary); ratio M:N; the date is an attribute ON the relationship diamond, because it depends on the (doctor, patient) pair, not on either alone.",
+    "Topic": "Case Study"
+   }
+  },
+  {
+   "noteId": 1789752889948,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Case_Study",
     "week1"
    ],
    "fields": {
-    "Text": "The case-study entities are {{c1::Department}}, {{c2::Employee}}, {{c3::Dependent}} and {{c4::Project}}.",
+    "Text": "The case-study entities are {{c1::DEPARTMENT}}, {{c1::EMPLOYEE}}, {{c1::DEPENDENT}} and PROJECT; everything else in the specification is either an attribute or a relationship.",
     "Extra": "",
     "Topic": "Case Study"
    }
   },
   {
-   "noteId": 1789692991474,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: what are the attributes of DEPARTMENT, and which are keys?",
-    "Back": "Name (key), Number (key), Locations (multi-valued). Also the manager and start date come via the MANAGES relationship.",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991476,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: what are the attributes of EMPLOYEE?",
-    "Back": "Name, SSN (key), Address, Salary, Sex, Birthdate.",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991478,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: what are the attributes of PROJECT?",
-    "Back": "Number (key), Name (key), Location (single-valued: 'a single location').",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991480,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: what are the attributes of DEPENDENT?",
-    "Back": "Name, Sex, Birthdate, Relationship (relation to the employee).",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991482,
+   "noteId": 1789752889949,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Case_Study",
     "week1"
    ],
    "fields": {
-    "Text": "In the case study the multi-valued attribute is Department {{c1::Locations}} ('a department may have several locations').",
+    "Text": "Case study attributes: DEPARTMENT has keys {{c1::Name and Number}} plus the multi-valued {{c1::Locations}}; EMPLOYEE's key is {{c1::SSN}}; PROJECT has keys Number and Name and a single Location; DEPENDENT has no key of its own.",
     "Extra": "",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991484,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: list the relationships with their cardinality ratios.",
-    "Back": "MANAGES (Employee 1:1 Department, attribute StartDate); WORKS FOR (Employee N:1 Department); CONTROLS (Department 1:N Project); WORKS ON (Employee M:N Project, attribute Hours); SUPERVISES (Employee 1:N Employee, unary); DEPENDENTS OF (Employee 1:N Dependent, identifying).",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991486,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: which relationship carries the attribute Hours, and why is it not on EMPLOYEE or PROJECT?",
-    "Back": "WORKS ON; hours depend on the (employee, project) pair, not on either entity alone.",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991488,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Text": "In the case study, StartDate is an attribute of the {{c1::MANAGES}} relationship.",
-    "Extra": "",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991490,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Text": "The case study's unary (recursive) relationship is {{c1::SUPERVISES}} (Employee to Employee).",
-    "Extra": "",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991492,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: which entity is weak, who is its owner, and what is its partial key?",
-    "Back": "DEPENDENT; owner EMPLOYEE; partial key Name (via identifying relationship DEPENDENTS OF).",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991494,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: participation of EMPLOYEE and DEPARTMENT in WORKS FOR?",
-    "Back": "Both total: every employee works for a department (1,1) and every department has employees (1,N).",
-    "Topic": "Case Study"
-   }
-  },
-  {
-   "noteId": 1789692991496,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Case_Study",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Case study: participation of EMPLOYEE and DEPARTMENT in MANAGES?",
-    "Back": "EMPLOYEE partial (0,1): not every employee manages. DEPARTMENT total (1,1): every department has a manager.",
     "Topic": "Case Study"
    }
   }

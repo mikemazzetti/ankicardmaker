@@ -1,0 +1,215 @@
+{
+ "deck": "CS3307A OOD::Week 1::Apply It (W1)",
+ "note_count": 16,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749155089,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "You are told: 'In an inventory system, a <code>Warehouse</code> class holds stock, prints shipping labels, and emails suppliers.' What design flaw is this and how do you fix it?",
+    "Back": "Low cohesion: three unrelated responsibilities in one module, so a change to label printing forces retesting of stock logic. Split into <code>Warehouse</code> (stock), <code>LabelPrinter</code>, and <code>SupplierNotifier</code>, restoring high cohesion and following the Single Responsibility Principle.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155090,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "A <code>Customer</code> object holds a reference to its <code>Order</code> objects and both exist independently. Which Week 1 relationship is this?",
+    "Back": "Association: the objects know about each other. If the <code>Order</code> could not exist without the <code>Customer</code> and were contained by it, it would be aggregation instead.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155091,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "<code>Admin</code> and <code>RegularUser</code> both need <code>login()</code> and <code>changePassword()</code>, and <code>Admin</code> adds <code>banUser()</code>. Which relationship, and why?",
+    "Back": "Inheritance: each is a specialized version of a common <code>User</code> class. Put the shared attributes and methods in <code>User</code> and let <code>Admin</code> add its own, which reduces duplication and creates a hierarchy.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155092,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Given code that mutates a shared object from two threads and now has race conditions, which paradigm's strength does this illustrate and why?",
+    "Back": "FP's: concurrency is hard in OOP precisely because of shared mutable state (race conditions, deadlocks, difficult debugging, locks needed). In FP data is immutable after creation, so multiple threads can read it without interference and there is nothing to lock.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155093,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "You remove <code>= 0</code> from <code>virtual void draw() = 0;</code> in <code>Shape</code>. What changes?",
+    "Back": "<code>draw()</code> becomes an ordinary virtual function, so <code>Shape</code> is no longer abstract and CAN be instantiated. It now needs a body or you get a linker error, and subclasses are no longer required to provide their own <code>draw()</code>.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155094,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "You remove <code>virtual</code> from <code>void draw()</code> in <code>Shape</code> and hold a <code>Shape*</code> pointing at a <code>Circle</code>. What does <code>p-&gt;draw()</code> call?",
+    "Back": "<code>Shape::draw()</code>. Without <code>virtual</code> the call is resolved statically from the pointer's declared type, so the derived override is never reached and polymorphism is lost. <code>override</code> in <code>Circle</code> would also become a compile error.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155095,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "You remove <code>const</code> from <code>double getBalance() const</code> and a caller holds <code>const Account&amp; a</code>. What happens?",
+    "Back": "<code>a.getBalance()</code> no longer compiles: a non-const member function cannot be called on a const object or const reference. Marking read-only methods <code>const</code> is what keeps them usable from const contexts.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155096,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "A team wants to add a fourth payment type to a system where every caller writes <code>if (type == CREDIT) ... else if (type == PAYPAL) ...</code>. Which OOP advantage is being wasted?",
+    "Back": "Polymorphism (and with it extensibility). A <code>PaymentMethod</code> interface with <code>CreditCardPayment</code>, <code>PayPalPayment</code>, <code>CryptoPayment</code> implementations lets a new type be added without touching the processing logic; the if-chain must be edited in every caller.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155097,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "You need to unit-test an <code>Order</code> class that talks to a live <code>Payment</code> gateway. Which Week 1 advantage and which technique apply?",
+    "Back": "Debugging and Testing: classes are self-contained units testable in isolation. Use a mock object or dependency injection to substitute a fake <code>Payment</code> (and <code>Shipping</code>) so the test never touches the real gateway.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155098,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Classify: a module is internally focused on one job but imports and calls six other modules directly. Which of the four combinations is this?",
+    "Back": "High cohesion + high coupling: internally well-organized but with strong dependencies, so changes still ripple between modules.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155099,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Given <code>int applyFunction(int x, int y, int (*func)(int,int))</code>, what must you write to also support a lambda that captures a variable?",
+    "Back": "Change the parameter to <code>std::function&lt;int(int,int)&gt;</code>. A raw function pointer cannot hold a capturing lambda; <code>std::function</code> wraps any callable with the right signature.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155100,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "A stakeholder says the system 'must model payroll entities with attributes and behaviours and track their state over time'. Which paradigm fits, and why?",
+    "Back": "OOP: the slides list business systems such as payroll and inventory, user interfaces, and games as typical OOP use cases, because the system maps naturally to real-world entities and managing mutable state is critical.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155101,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Someone writes <code>Car myCar;</code> for the slides' <code>Car</code> class. Why does it fail?",
+    "Back": "<code>Car</code> declares only <code>Car(std::string, int)</code>, so no default constructor is generated once a user-defined constructor exists. You must supply both arguments, e.g. <code>Car myCar(\"Toyota\", 2022);</code>.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155102,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which is 5 * 2 then squared, and which is 5 squared then doubled: <code>squareNumber(doubleNumber(5))</code> or <code>doubleNumber(squareNumber(5))</code>? Give both results.",
+    "Back": "<code>squareNumber(doubleNumber(5))</code> doubles first: 10 then 100. <code>doubleNumber(squareNumber(5))</code> squares first: 25 then 50. Evaluation is inside-out, so the innermost call runs first.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155103,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "A class declares <code>protected: int hitPoints;</code>. Which code can touch it?",
+    "Back": "The class's own member functions and any derived class's member functions. Code outside the hierarchy cannot, unlike <code>public</code>; derived classes can, unlike <code>private</code>.",
+    "Topic": "Apply It (W1)"
+   }
+  },
+  {
+   "noteId": 1789749155104,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W1",
+    "week1"
+   ],
+   "fields": {
+    "Front": "You are told an e-commerce team wants <code>Payment</code> bugs fixed without retesting <code>ShoppingCart</code> and <code>Order</code>. Which advantage and which underlying idea does this rely on?",
+    "Back": "Maintainability, which rests on separation of concerns: each class is responsible for a specific part of the system, so changes are isolated to a single class and modifying one part typically does not affect others.",
+    "Topic": "Apply It (W1)"
+   }
+  }
+ ]
+}

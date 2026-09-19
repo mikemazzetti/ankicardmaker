@@ -1,186 +1,186 @@
 {
  "deck": "CS3307A OOD::Week 1::Cohesion and Coupling",
  "note_count": 14,
- "exported": "2026-09-18",
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839289,
+   "noteId": 1789749155114,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Cohesion_and_Coupling",
     "week1"
    ],
    "fields": {
-    "Front": "Define cohesion.",
-    "Back": "How closely related the functions and responsibilities within a single module are; the degree to which elements inside a module belong together.",
+    "Front": "Define cohesion and coupling in one sentence each, and say which is 'inside' and which is 'between'.",
+    "Back": "Cohesion: how closely related the functions and responsibilities within a single module are, i.e. the degree to which elements inside a module belong together. Coupling: the degree of dependency between modules, i.e. how closely two classes or components are connected. Cohesion is within; coupling is between.",
     "Topic": "Cohesion and Coupling"
    }
   },
   {
-   "noteId": 1789678839291,
+   "noteId": 1789749155115,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Cohesion_and_Coupling",
     "week1"
    ],
    "fields": {
-    "Front": "Define coupling.",
-    "Back": "The degree of dependency between modules; how closely two classes or components are connected.",
+    "Front": "What characterises high cohesion, and which SOLID principle does it follow?",
+    "Back": "Responsibilities are closely related and focused on a single task, following the Single Responsibility Principle. The payoff is that when something must change, the change is isolated to one module.",
     "Topic": "Cohesion and Coupling"
    }
   },
   {
-   "noteId": 1789678839293,
+   "noteId": 1789749155116,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Cohesion_and_Coupling",
     "week1"
    ],
    "fields": {
-    "Front": "Is high or low cohesion desirable? Is high or low coupling desirable?",
-    "Back": "High cohesion and low coupling.",
+    "Front": "Give the slides' example of a highly cohesive class and say what would ruin it.",
+    "Back": "<code>ShoppingCart</code> is cohesive if all its methods (<code>addItem()</code>, <code>removeItem()</code>, <code>calculateTotal()</code>) are directly related to managing the cart. Adding <code>sendMarketingEmail()</code>, <code>generateInvoicePDF()</code>, or <code>logUserActivity()</code> would spread it across unrelated tasks and destroy the cohesion.",
     "Topic": "Cohesion and Coupling"
    }
   },
   {
-   "noteId": 1789678839295,
+   "noteId": 1789749155117,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What goes wrong with low cohesion?",
+    "Back": "Responsibilities are spread across multiple unrelated tasks, which makes modules harder to maintain because changing one part of the module can inadvertently affect other, unrelated parts.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155118,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does low coupling mean, and which SOLID principle does it follow?",
+    "Back": "Modules are mostly independent, so changes in one module have minimal impact on others. It follows the Dependency Inversion Principle: high-level modules should depend on abstractions rather than on concrete implementations.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155119,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe the two mixed cohesion/coupling combinations.",
+    "Back": "High cohesion + high coupling: modules are internally well-organized but have strong dependencies on other modules, so changes still ripple between them. Low cohesion + low coupling: modules are independent but poorly organized internally, each a grab-bag of unrelated tasks.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155120,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Which combination describes 'modules are independent, but each is a grab-bag of unrelated tasks'?",
+    "Back": "Low cohesion + low coupling.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155121,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why do cohesion and coupling matter for the rest of the course?",
+    "Back": "They are the measures of design quality that justify almost every later topic: SOLID principles, design patterns, and testability can all be argued for as 'this increases cohesion' or 'this reduces coupling'. They apply to any module: a class, component, file, or service.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155148,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Cohesion_and_Coupling",
     "week1"
    ],
    "fields": {
-    "Text": "High cohesion follows the {{c1::Single Responsibility Principle}}; low coupling follows the {{c2::Dependency Inversion Principle}}.",
+    "Text": "High cohesion is important for ease of {{c1::understanding}}, ease of {{c1::maintenance}}, and {{c1::reusability}}.",
+    "Extra": "A class that does one thing can be read in one sentence, its changes are localized, and it can be dropped into another context without dragging unrelated baggage along.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155149,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Low coupling is important for ease of {{c1::maintenance}}, {{c1::flexibility}}, and {{c1::testing}}.",
+    "Extra": "Change one module without a ripple of edits; swap one implementation for another (PayPal for Stripe); test a class in isolation by substituting fake collaborators.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155150,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The ideal design is {{c1::high}} cohesion plus {{c1::low}} coupling; the worst case is {{c1::low}} cohesion plus {{c1::high}} coupling.",
     "Extra": "",
     "Topic": "Cohesion and Coupling"
    }
   },
   {
-   "noteId": 1789678839298,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Give the slide's example of a highly cohesive class.",
-    "Back": "<code>ShoppingCart</code> whose methods <code>addItem()</code>, <code>removeItem()</code>, <code>calculateTotal()</code> are all about managing the cart.",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839300,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What are the consequences of low cohesion?",
-    "Back": "Responsibilities are spread across unrelated tasks; modules are harder to maintain; changing one part can inadvertently affect unrelated parts.",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839302,
+   "noteId": 1789749155151,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Cohesion_and_Coupling",
     "week1"
    ],
    "fields": {
-    "Text": "High cohesion matters for ease of {{c1::understanding}}, ease of {{c2::maintenance}}, and {{c3::reusability}}.",
+    "Text": "{{c1::Cohesion}} measures how well elements inside one module belong together; {{c1::coupling}} measures the degree of dependency between modules. The goal is {{c1::high cohesion, low coupling}}.",
+    "Extra": "Students frequently swap the two on exams.",
+    "Topic": "Cohesion and Coupling"
+   }
+  },
+  {
+   "noteId": 1789749155152,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Cohesion_and_Coupling",
+    "week1"
+   ],
+   "fields": {
+    "Text": "High cohesion follows the {{c1::Single Responsibility Principle}}; low coupling follows the {{c1::Dependency Inversion Principle}}; extensibility follows the {{c1::Open/Closed Principle}}.",
     "Extra": "",
     "Topic": "Cohesion and Coupling"
    }
   },
   {
-   "noteId": 1789678839306,
+   "noteId": 1789749155153,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Cohesion_and_Coupling",
     "week1"
    ],
    "fields": {
-    "Text": "Low coupling matters for ease of {{c1::maintenance}}, {{c2::flexibility}}, and {{c3::testing}}.",
-    "Extra": "",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839310,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Text": "The ideal design scenario is {{c1::high cohesion}} + {{c2::low coupling}}.",
-    "Extra": "",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839313,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Describe 'high cohesion + high coupling'.",
-    "Back": "Modules are internally well-organized but have strong dependencies on other modules.",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839315,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Describe 'low cohesion + low coupling'.",
-    "Back": "Modules are independent, but poorly organized internally.",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839317,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Describe 'low cohesion + high coupling'.",
-    "Back": "Modules are disorganized internally and highly dependent on others (the worst case).",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839319,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Text": "{{c1::Cohesion}} measures how well elements inside one module belong together; {{c2::coupling}} measures dependency between modules.",
-    "Extra": "",
-    "Topic": "Cohesion and Coupling"
-   }
-  },
-  {
-   "noteId": 1789678839322,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Cohesion_and_Coupling",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Low coupling means changes in one module have {{c1::minimal impact}} on others.",
+    "Text": "A cohesive <code>ShoppingCart</code> has methods {{c1::addItem(), removeItem(), calculateTotal()}} - all focused solely on cart-related activities.",
     "Extra": "",
     "Topic": "Cohesion and Coupling"
    }

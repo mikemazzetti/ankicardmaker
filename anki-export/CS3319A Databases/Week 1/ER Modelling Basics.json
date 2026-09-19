@@ -1,114 +1,36 @@
 {
  "deck": "CS3319A Databases::Week 1::ER Modelling Basics",
- "note_count": 12,
- "exported": "2026-09-18",
+ "note_count": 10,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991372,
+   "noteId": 1789752890214,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "ER_Modelling_Basics",
     "week1"
    ],
    "fields": {
-    "Front": "What should you always start with when building a database system: the data or the code?",
-    "Back": "The data, not the code. Build a model (ER diagram) before creating the database.",
+    "Front": "Why build a model before building the database, and what blueprint examples does the instructor use?",
+    "Back": "Build something large, make a mistake, and all that time is wasted; looking at a model first 'gets rid of a lot of the errors'. Her blueprints: the Wright brothers' original plane, a building blueprint with measurements and a visualization, and a baby gate.",
     "Topic": "ER Modelling Basics"
    }
   },
   {
-   "noteId": 1789692991374,
+   "noteId": 1789752890215,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "ER_Modelling_Basics",
     "week1"
    ],
    "fields": {
-    "Front": "List the steps for figuring out what data to store (requirements for a large system).",
-    "Back": "Gather all reports the customers use/print/generate; look at screens where they enter/modify data; find the customers'/stakeholders' requirements; figure out how they view the data; integrate the views to get the minimal data to store.",
+    "Front": "List the five steps for figuring out what data to store in a large system (the objective asks for two).",
+    "Back": "1. Gather all the reports the customers use, print or generate (e.g. a hospital 'number of falls' report)<br>2. Look at the screens where they enter, delete or modify data (a patient-entry screen with names, date of death, lab details, SSN)<br>3. Find the requirements of customers and stakeholders and write the specs<br>4. Figure out how they VIEW the data<br>5. Integrate the views to get the minimal data to store",
     "Topic": "ER Modelling Basics"
    }
   },
   {
-   "noteId": 1789692991376,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "ER_Modelling_Basics",
-    "week1"
-   ],
-   "fields": {
-    "Text": "The ER model was created by {{c1::Peter Chen}} in {{c2::1976}}.",
-    "Extra": "",
-    "Topic": "ER Modelling Basics"
-   }
-  },
-  {
-   "noteId": 1789692991379,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "ER_Modelling_Basics",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Tools for drawing ER diagrams include {{c1::Microsoft Visio}}, {{c2::draw.io}} and {{c3::SmartDraw}}.",
-    "Extra": "",
-    "Topic": "ER Modelling Basics"
-   }
-  },
-  {
-   "noteId": 1789692991383,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "ER_Modelling_Basics",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What blueprint examples does the instructor show to argue for modelling first?",
-    "Back": "The Wright brothers' original plane, a building blueprint with measurements and a visualization, and a baby gate.",
-    "Topic": "ER Modelling Basics"
-   }
-  },
-  {
-   "noteId": 1789692991385,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "ER_Modelling_Basics",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Model first because otherwise you 'build something large and waste all your time... then you make a {{c1::mistake}}'; a model gets rid of {{c2::errors}} before building.",
-    "Extra": "",
-    "Topic": "ER Modelling Basics"
-   }
-  },
-  {
-   "noteId": 1789692991388,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "ER_Modelling_Basics",
-    "week1"
-   ],
-   "fields": {
-    "Text": "'From this day forward, I want you to think about your {{c1::data}} before you ever think how you're going to {{c2::code}} something.'",
-    "Extra": "",
-    "Topic": "ER Modelling Basics"
-   }
-  },
-  {
-   "noteId": 1789692991391,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "ER_Modelling_Basics",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What hospital report and screen does the instructor use to show how to discover data to store?",
-    "Back": "A 'number of falls' report, and a patient-entry screen with first/middle/last name, date of death, laboratory details and SSN; each field reveals something that must be stored.",
-    "Topic": "ER Modelling Basics"
-   }
-  },
-  {
-   "noteId": 1789692991393,
+   "noteId": 1789752890216,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "ER_Modelling_Basics",
@@ -116,46 +38,98 @@
    ],
    "fields": {
     "Front": "Why integrate the users' overlapping views of the data?",
-    "Back": "So each piece of data is stored once rather than twice for two different users; the code that accesses it gets it from that one spot.",
+    "Back": "So each piece of data is stored ONCE rather than twice for two different users; the code that accesses it then gets it from that one spot. Overlaps are exactly what you look for.",
     "Topic": "ER Modelling Basics"
    }
   },
   {
-   "noteId": 1789692991395,
+   "noteId": 1789752890217,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "ER_Modelling_Basics",
     "week1"
    ],
    "fields": {
-    "Front": "Give two reasons the instructor gives for why an ER diagram is useful.",
-    "Back": "It can be read without knowing any code, so you can sit down with users and they will understand it; it is independent of any DBMS and is then mapped to the relational model (most common) or another model.",
+    "Front": "Give two reasons the instructor says an ER diagram is useful.",
+    "Back": "1. It can be read without knowing any code, so you can sit down with your users, show them the diagram and they will understand it.<br>2. It is independent of any DBMS; once finished you MAP it to a real model - the relational model is the most common, but you could map it to others. (That mapping is Week 2.)",
     "Topic": "ER Modelling Basics"
    }
   },
   {
-   "noteId": 1789692991397,
+   "noteId": 1789752890218,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "ER_Modelling_Basics",
     "week1"
    ],
    "fields": {
-    "Front": "Visio, draw.io, SmartDraw: which is free for Western students, which is online, which needs a sign-up?",
-    "Back": "Visio is probably free for Western students; draw.io is online and free; SmartDraw requires signing up.",
+    "Front": "Name three tools for drawing ER diagrams, with one fact about each.",
+    "Back": "Microsoft Visio: probably free for Western students, and it can help convert your ER diagram into a relational database.<br>draw.io (diagrams.net): online and free; used in every demonstration in the videos.<br>SmartDraw: requires signing up; ships example diagrams (banking, internet sales).",
     "Topic": "ER Modelling Basics"
    }
   },
   {
-   "noteId": 1789692991399,
+   "noteId": 1789752890219,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "ER_Modelling_Basics",
     "week1"
    ],
    "fields": {
-    "Front": "What advantage of Visio over draw.io does the instructor mention in Lesson 6?",
-    "Back": "Visio can help convert your ER diagram into a relational database; draw.io does not.",
+    "Front": "State the running case study (the COMPANY database) in its essentials.",
+    "Back": "A company organized into departments. Each department has a unique name, number and an employee who manages it (keep track of when they started managing); a department may have several locations. A department controls projects; each project has a unique number, name and a single location. Each employee has name, SSN, address, salary, sex, birthdate; is assigned to one department but may work on several projects (keep the hours on each); keep each employee's direct supervisor and their dependents (name, sex, birthdate, relation).",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789752890220,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §3.1): name the four phases of database design and say which are DBMS-independent.",
+    "Back": "1. REQUIREMENTS COLLECTION AND ANALYSIS: interview prospective users and document their DATA REQUIREMENTS; in parallel specify the FUNCTIONAL REQUIREMENTS, the user-defined operations or transactions (retrievals and updates) the application will run.<br>2. CONCEPTUAL DESIGN: build the CONCEPTUAL SCHEMA in a high-level data model - the ER diagram. It contains no implementation details, which is why you can show it to a non-technical user. This phase also confirms the schema can answer the functional requirements.<br>3. LOGICAL DESIGN, also called DATA MODEL MAPPING: transform it into the implementation model of a specific DBMS - Week 2's seven rules. Often automated in design tools.<br>4. PHYSICAL DESIGN: internal storage structures, file organizations, indexes, access paths; application programs are implemented in parallel.<br>Phases 1 and 2 are DBMS-INDEPENDENT; phases 3 and 4 are DBMS-SPECIFIC. That split is the whole reason the ER model exists.",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789752890247,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'From this day forward, I want you to think about your {{c1::data}} before you ever think how you're going to {{c1::code}} something.' Always gather your {{c1::data}} first - this is the mindset Assignment 1 tests.",
+    "Extra": "",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789752890248,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The Entity-Relationship model was created by {{c1::Peter Chen}} in {{c1::1976}}; an ER diagram is 'just a {{c1::visualization of your data}}'.",
+    "Extra": "",
+    "Topic": "ER Modelling Basics"
+   }
+  },
+  {
+   "noteId": 1789752890249,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "ER_Modelling_Basics",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Two requirements-gathering steps: gather all the {{c1::reports}} the customers use or print, and look at the {{c1::screens}} where they enter, delete or modify data; then integrate the users' {{c1::views}} so each piece of data is stored once.",
+    "Extra": "",
     "Topic": "ER Modelling Basics"
    }
   }

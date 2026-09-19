@@ -1,57 +1,57 @@
 {
  "deck": "CS3357A Networks::Week 1::Protocols",
  "note_count": 4,
- "exported": "2026-09-18",
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678872675,
+   "noteId": 1789752892272,
    "modelName": "CS3357A Networks Basic",
    "tags": [
     "Protocols",
     "week1"
    ],
    "fields": {
-    "Front": "Define a protocol (the three things it specifies).",
-    "Back": "A protocol defines the FORMAT and the ORDER of messages sent and received among network entities, and the ACTIONS taken on message transmission, receipt, or other events.",
+    "Front": "Define a network protocol: what three things does it specify, and how does it differ from a human protocol?",
+    "Back": "A protocol defines 1) the FORMAT and 2) the ORDER of messages sent and received among network entities, and 3) the ACTIONS taken on message transmission, receipt, or other events (e.g., a timer expiring, no reply).<br>Same idea as human protocols ('what's the time?', 'I have a question') but the entities are hardware/software on devices, not people.",
     "Topic": "Protocols"
    }
   },
   {
-   "noteId": 1789678872677,
+   "noteId": 1789752892273,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocols",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the slide's side-by-side example, what are the four Web (TCP + HTTP) messages, in order, and which human message does each correspond to?",
+    "Back": "1) TCP connection request ('Hi')<br>2) TCP connection response ('Hi')<br>3) GET http://gaia.cs.umass.edu/kurose_ross ('Got the time?')<br>4) &lt;file&gt; returned ('2:00')<br>Each arrow is a message with a defined format, sent in a defined order, triggering defined actions.",
+    "Topic": "Protocols"
+   }
+  },
+  {
+   "noteId": 1789752892274,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Protocols",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What happens if two communicating entities run different protocols, and what does this imply about learning networking?",
+    "Back": "Different formats, order or actions mean they cannot interoperate: no useful work is done (like one polite person and one rude one).<br>Since all Internet activity is governed by protocols, mastering networking is essentially learning the what, why and how of protocols.",
+    "Topic": "Protocols"
+   }
+  },
+  {
+   "noteId": 1789752892305,
    "modelName": "CS3357A Networks Cloze",
    "tags": [
     "Protocols",
     "week1"
    ],
    "fields": {
-    "Text": "A protocol defines the {{c1::format}} and {{c2::order}} of messages exchanged, and the {{c3::actions}} taken on transmission/receipt of a message or other event.",
+    "Text": "A protocol defines the {{c1::format}} and {{c1::order}} of messages exchanged among network entities, and the {{c1::actions}} taken on message transmission, receipt, or {{c1::other events}} (e.g., a timeout).",
     "Extra": "",
-    "Topic": "Protocols"
-   }
-  },
-  {
-   "noteId": 1789678872681,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Protocols",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What are the four messages in the slide's Web protocol example (TCP + HTTP)?",
-    "Back": "1) TCP connection request, 2) TCP connection response, 3) GET http://gaia.cs.umass.edu/kurose_ross, 4) &lt;file&gt; returned.",
-    "Topic": "Protocols"
-   }
-  },
-  {
-   "noteId": 1789678872683,
-   "modelName": "CS3357A Networks Basic",
-   "tags": [
-    "Protocols",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Why must two communicating entities run the same protocol?",
-    "Back": "If they run different protocols (different message formats, order, or actions) they cannot interoperate and no useful work is accomplished; all Internet communication is governed by protocols.",
     "Topic": "Protocols"
    }
   }

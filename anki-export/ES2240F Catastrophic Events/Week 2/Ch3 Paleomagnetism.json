@@ -1,0 +1,215 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::Ch3 Paleomagnetism",
+ "note_count": 16,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154589,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What simple object is Earth's magnetic field compared to, and how do magnetic poles differ from geographic poles?",
+    "Back": "A bar magnet, with lines of magnetic force and clearly defined north and south magnetic poles; hold up a compass and one end points magnetic north. The GEOGRAPHIC poles are the poles of planetary rotation, and the magnetic poles are not in the same positions.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154590,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What causes a magnetic field reversal?",
+    "Back": "Changes in the flow pattern of the liquid outer core make individual dynamos - even a whole bunch of them - change orientation. The observed field becomes twisted and tangled and the poles can appear in unusual places; eventually the dynamos restart in a uniform pattern, possibly with the poles flipped 180 degrees.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154591,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What do magnetite crystals do while a magma cools, and when is the record lost?",
+    "Back": "While floating in liquid magma they orient themselves parallel to Earth's magnetic lines of force: N-S in the horizontal plane, and with the same degree of tilt (inclination) up or down that the field lines have at the eruption site. Once the rock cools the orientation is locked in - until the rock is melted and recycled into the mantle.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154592,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does paleomagnetism tell you the latitude at which a basalt erupted?",
+    "Back": "By the tilt (inclination) of the magnetite needles: exactly horizontal only at the equator, vertical only at the north and south magnetic poles, and intermediate in between. Reading the tilt tells you where the lava erupted relative to the magnetic north pole of the time - a rock's 'place of birth'.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154593,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Who explained the sea-floor magnetic stripes, when, and from what survey?",
+    "Back": "Vine and Matthews, two Britons, in 1963, from a survey of an underwater volcano near the Seychelles Islands.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154594,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What did Vine and Matthews find?",
+    "Back": "They confirmed magnetite in the basalt flows was oriented to magnetic north-south, and on dating the rocks found the pattern of alternating normal/reverse strips was AGE-RELATED and perfectly SYMMETRICAL about the ridge - proving the ridges are spreading centres, as Hess had said.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154595,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Explain in steps how the symmetrical magnetic stripes form.",
+    "Back": "1) Magma erupts from undersea volcanoes at the ridge.<br>2) Magnetite crystals orient to Earth's field at the time of eruption, preserving a record whenever the field flips.<br>3) As spreading continues, part of each flow ends up on each of the two plates moving apart.<br>4) This mirrors the sequence of reversals on both sides - the plates move away like conveyor belts in opposite directions.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154596,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How do the slides describe the origin of the magnetic field, and what does the polarity record look like?",
+    "Back": "Currents within the liquid outer core coming into contact with the solid inner core produce Earth's magnetic field (dynamo theory). The geomagnetic polarity record since the middle Jurassic is drawn as dark bands = normal polarity and white bands = reversed polarity, showing flips have occurred fairly regularly.",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154623,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Paleomagnetism}} is the study of Earth's magnetic field (its {{c1::intensity and orientation}}) through the analysis of {{c1::rock magnetism}}; its evidence convinced virtually all the sceptics of plate tectonics.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154624,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In the {{c1::dynamo model}}, electric currents are generated by enormous dynamos driven by circulating hot currents in the {{c1::liquid metal outer core}}, and {{c1::magnetic fields}} surround those electric currents.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154625,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Today's polarity is called {{c1::normal}}; a field flipped {{c1::180}} degrees is {{c1::reverse}} polarity, and after a flip the field may stay stable for {{c1::many millions}} of years.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154626,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Glatzmaier and Roberts}} ({{c1::1995}}) produced the computer simulation showing the churning, twisting flow of the outer core between reversals and in the middle of a reversal.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154627,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Basalt}}, the most common {{c1::volcanic}} rock, contains enough iron that crystals of {{c1::magnetite}} (an iron oxide) form as the magma cools and record the field.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154628,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In Hawaii, at about {{c1::20 degrees}} north latitude, magnetite north poles point {{c1::down}} about {{c1::20 degrees}} from horizontal; at the equator the needles are {{c1::horizontal}} and at the magnetic poles {{c1::vertical}}.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154629,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Vine and Matthews}} in {{c1::1963}} showed the sea-floor magnetic stripes are {{c1::age-related}} and perfectly {{c1::symmetrical}} about the ridge - the final piece of evidence people needed to believe Wegener.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  },
+  {
+   "noteId": 1789749154630,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Paleomagnetism",
+    "week2"
+   ],
+   "fields": {
+    "Text": "EXAM TRAP: magnetic {{c1::inclination}} records latitude (horizontal at the equator, vertical at the poles), while the stripes are {{c1::symmetrical}} about the ridge and {{c1::age-related}}; 'normal' polarity means {{c1::today's}} orientation.",
+    "Extra": "",
+    "Topic": "Ch3 Paleomagnetism"
+   }
+  }
+ ]
+}

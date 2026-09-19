@@ -1,148 +1,83 @@
 {
  "deck": "CS3319A Databases::Week 2::Mapping Entities",
- "note_count": 11,
- "exported": "2026-09-18",
+ "note_count": 6,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991966,
+   "noteId": 1789752891105,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How are composite and multi-valued attributes handled when mapping an entity to a table?",
+    "Back": "COMPOSITE: include only its SIMPLE COMPONENT attributes - 'we don't turn Name into a column; we turn FirstName and LastName into columns'.<br>MULTI-VALUED: do NOT put it in the entity's table at all - it gets its own table (rule 6).",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789752891106,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Map PROFESSOR with attributes EmpID (key), Office, Ext and composite Name(FirstName, LastName), and say what the rows and columns mean.",
+    "Back": "PROFESSOR(EmpID, FirstName, LastName, Office, Ext), primary key EmpID. With data: six professors give six rows, five attributes give five columns, and 'each row is a tuple that represents an actual thing in our world'. Sample row: Laura Reid, 11, ST238, 86905. Column order does not matter.",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789752891107,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Entities",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Library example: write the three tables, and what counting habit does the instructor use first?",
+    "Back": "Count first: 'I've got three entities, so I'm going to need three tables. Book has five attributes, Publisher three, Member six.'<br><code>Book (Book_ID, Title, Price, Author, Available)</code><br><code>Publisher (Pub_ID, Name, Address)</code><br><code>Member (Member_ID, Member_date, Member_price, Address, Name, Expiry_date)</code><br>Underline the key 'to indicate that it's the thing that's going to force each row to be unique'.",
+    "Topic": "Mapping Entities"
+   }
+  },
+  {
+   "noteId": 1789752891138,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Mapping_Entities",
     "week2"
    ],
    "fields": {
-    "Text": "A relational database can only use {{c1::tables}}, {{c2::rows}}, {{c3::columns}} and {{c4::cells}}.",
+    "Text": "Design goes from the real world (mini-world) to a {{c1::model (the ER diagram)}} to a {{c1::relational database}}, which may use only four data structures: {{c1::tables}}, rows, columns and cells.",
     "Extra": "",
     "Topic": "Mapping Entities"
    }
   },
   {
-   "noteId": 1789692991971,
+   "noteId": 1789752891139,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Mapping_Entities",
     "week2"
    ],
    "fields": {
-    "Text": "Design goes from the real world (mini-world) to a {{c1::model (ER diagram)}} to a {{c2::relational database}}.",
+    "Text": "'The first rule I want you to get from this': each {{c1::entity}} becomes a {{c1::table}}, its {{c1::attributes}} become the columns, each entity instance becomes a row, and the entity's key becomes the primary key.",
     "Extra": "",
     "Topic": "Mapping Entities"
    }
   },
   {
-   "noteId": 1789692991974,
+   "noteId": 1789752891140,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Mapping_Entities",
     "week2"
    ],
    "fields": {
-    "Text": "An entity type becomes a {{c1::table}}; its attributes become {{c2::columns}}; each entity becomes a {{c3::row}}; its key becomes the {{c4::primary key}}.",
+    "Text": "When mapping an entity, a {{c1::composite}} attribute contributes only its {{c1::simple components}} (FirstName and LastName, not Name), and a {{c1::multi-valued}} attribute is not put in the entity's table at all.",
     "Extra": "",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991979,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Map PROFESSOR (EmpID, LastName, FirstName, Office, Ext).",
-    "Back": "PROFESSOR(EmpID, FirstName, LastName, Office, Ext) with primary key EmpID; rows such as Laura Reid 11 ST238 86905.",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991981,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Library example: write the tables for Book, Publisher and Member.",
-    "Back": "Book(Book_ID, Title, Price, Author, Available); Publisher(Pub_ID, Name, Address); Member(Member_ID, Member_date, Member_price, Address, Name, Expiry_date).",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991983,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How is a composite attribute mapped when creating an entity's table?",
-    "Back": "Include only its simple component attributes (e.g. First and Last, not Name).",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991985,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is the stated objective of the mapping-entities video?",
-    "Back": "Look at an ER diagram and figure out how to turn each entity into a table.",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991987,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How does the instructor map the composite attribute Name(FirstName, LastName) of PROFESSOR?",
-    "Back": "Name itself does not become a column; only its pieces FirstName and LastName become columns.",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991989,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What counting habit does the instructor use before mapping the library ER diagram?",
-    "Back": "Count entities to get the number of tables (3), then count each entity's attributes to get its columns: Book 5, Publisher 3, Member 6.",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991991,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Text": "In the PROFESSOR table, {{c1::6}} professors give 6 rows and {{c2::5}} attributes give 5 columns; each column describes something about that professor.",
-    "Extra": "",
-    "Topic": "Mapping Entities"
-   }
-  },
-  {
-   "noteId": 1789692991994,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Entities",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What does the instructor call 'the first rule I want you to get from this'?",
-    "Back": "Once you have your ER diagram, each entity becomes a table and the attributes become the columns.",
     "Topic": "Mapping Entities"
    }
   }

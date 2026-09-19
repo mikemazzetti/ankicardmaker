@@ -1,7 +1,7 @@
 {
  "deck": "Mandarin::Vocabulary::a. HSK::HSK 6",
- "note_count": 2500,
- "exported": "2026-09-18",
+ "note_count": 2499,
+ "exported": "2026-09-19",
  "notes": [
   {
    "noteId": 1393817668151,
@@ -29882,35 +29882,6 @@
     "SentenceMeaning": "Games can help childrens' intelligence develop.",
     "SentenceAudio": "[sound:tmppt1itv.mp3]",
     "SentenceImage": "<img src=\"6250733.jpg\" />"
-   }
-  },
-  {
-   "noteId": 1393817669179,
-   "modelName": "HSK",
-   "tags": [
-    "HSK",
-    "HSK6"
-   ],
-   "fields": {
-    "Key": "3530",
-    "Simplified": "探测",
-    "Traditional": "探測",
-    "Pinyin.1": "tàncè",
-    "Pinyin.2": "tan4ce4",
-    "Meaning": "probe; take readings; detect; explore",
-    "Part of speech": "verb",
-    "Audio": "[sound:tan4ce4.mp3]",
-    "Homophone": "",
-    "Homograph": "",
-    "SentenceSimplified": "",
-    "SentenceTraditional": "",
-    "SentenceSimplifiedCloze": "",
-    "SentenceTraditionalCloze": "",
-    "SentencePinyin.1": "",
-    "SentencePinyin.2": "",
-    "SentenceMeaning": "",
-    "SentenceAudio": "",
-    "SentenceImage": ""
    }
   },
   {

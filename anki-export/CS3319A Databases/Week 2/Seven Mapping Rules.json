@@ -1,135 +1,161 @@
 {
  "deck": "CS3319A Databases::Week 2::Seven Mapping Rules",
- "note_count": 10,
- "exported": "2026-09-18",
+ "note_count": 12,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692992110,
+   "noteId": 1789752891480,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 1: how are regular entity types mapped?",
-    "Back": "Create a relation with all simple attributes (only simple components of composites); choose one key attribute of the entity as primary key (if composite, its simple attributes together form the PK).",
+    "Front": "State steps 1 and 2 of the seven rules with their case-study results.",
+    "Back": "STEP 1 - regular (non-weak) entity types: create a relation with all the SIMPLE attributes (only the simple components of a composite); choose one key attribute as the primary key. Example: EMPLOYEE(SSN, Fname, Minit, Lname, Address, Salary, Sex, Birthdate).<br>STEP 2 - weak entity types: create a relation with all the weak entity's simple attributes plus the OWNER'S primary key as a foreign key; the primary key is owner's PK + the partial key. Example: DEPENDENT(ESSN (FK), DependentName, Sex, Birthdate, Relationship), PK (ESSN, DependentName).",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992112,
+   "noteId": 1789752891481,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 2: how are weak entity types mapped?",
-    "Back": "Create a relation with the weak entity's simple attributes plus the owner's primary key as a foreign key; PK = owner's PK + the weak entity's partial key (if any).",
+    "Front": "State steps 3 and 4 of the seven rules with their case-study results.",
+    "Back": "STEP 3 - binary 1:1: choose one relation S, preferably the one with TOTAL participation, and include the other's primary key in S as a foreign key, plus the relationship's simple attributes. Example: MANAGES puts MgrSSN and MgrStartDate into DEPARTMENT.<br>STEP 4 - binary 1:N: include the 1-side's primary key as a foreign key in the N-SIDE relation, plus the relationship's simple attributes. Examples: WORKS FOR puts DNumber into EMPLOYEE; CONTROLS puts DNumber into PROJECT; the unary SUPERVISES puts SuperSSN into EMPLOYEE.",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992114,
+   "noteId": 1789752891482,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 3: how are binary 1:1 relationships mapped?",
-    "Back": "Pick one of the two relations S (preferably the one with total participation) and include the PK of the other, T, as a foreign key in S; include the relationship's simple attributes in S.",
+    "Front": "State steps 5, 6 and 7 of the seven rules with their case-study results.",
+    "Back": "STEP 5 - binary M:N: create a NEW relation with both primary keys as foreign keys; their combination is the primary key; include the relationship's simple attributes. Example: WORKS_ON(ESSN, PNumber, Hours), PK (ESSN, PNumber).<br>STEP 6 - multi-valued attribute A: new relation with A plus the owning relation's key K as a foreign key; PK = (A, K). Example: DEPT_LOCATIONS(DNumber, Location).<br>STEP 7 - n-ary (n &gt; 2): new relation with all n primary keys as foreign keys forming the PK, plus simple attributes. Example: SUPPLY(SName, PartNo, ProjName, Quantity).",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992116,
+   "noteId": 1789752891483,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 4: how are binary 1:N relationships mapped?",
-    "Back": "Include the PK of the 1-side relation as a foreign key in the N-side relation S (each N-side entity relates to at most one 1-side entity); include the relationship's simple attributes in S.",
+    "Front": "Give the primary key produced by each of the seven steps.",
+    "Back": "1 Regular entity: the entity's own key<br>2 Weak entity: owner's key + partial key<br>3 Binary 1:1: unchanged (only an FK is added)<br>4 Binary 1:N: unchanged (only an FK is added)<br>5 Binary M:N: both keys combined<br>6 Multi-valued attribute: owner key + the attribute<br>7 N-ary: all n keys combined",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992118,
+   "noteId": 1789752891484,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 5: how are binary M:N relationships mapped?",
-    "Back": "Create a new relation S with the PKs of both participating relations as foreign keys; their combination is the PK of S; include the relationship's simple attributes.",
+    "Front": "APPLICATION: which step produces each column - DEPARTMENT.MgrSSN, EMPLOYEE.SuperSSN, WORKS_ON.Hours, DEPT_LOCATIONS.Location, DEPENDENT.ESSN?",
+    "Back": "DEPARTMENT.MgrSSN: step 3 (binary 1:1, MANAGES).<br>EMPLOYEE.SuperSSN: step 4 (binary 1:N, unary SUPERVISES).<br>WORKS_ON.Hours: step 5 (binary M:N relationship attribute).<br>DEPT_LOCATIONS.Location: step 6 (multi-valued attribute).<br>DEPENDENT.ESSN: step 2 (weak entity).",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992120,
+   "noteId": 1789752891485,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 6: how are multi-valued attributes mapped?",
-    "Back": "Create a new relation R with an attribute for A plus the PK K of the owning relation as a foreign key; PK of R = (A, K); if A is composite include its simple components.",
+    "Front": "APPLICATION: an ER diagram has 3 regular entities, 1 weak entity, one 1:1, two 1:N, one M:N and one multi-valued attribute. How many tables result?",
+    "Back": "SIX tables: 3 (step 1) + 1 (step 2) + 1 (step 5) + 1 (step 6). The 1:1 and the two 1:N relationships add only foreign-key COLUMNS to existing tables (steps 3 and 4), not new tables.",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992122,
+   "noteId": 1789752891486,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "Seven rules, Step 7: how are n-ary relationships (n &gt; 2) mapped?",
-    "Back": "Create a new relation S with the PKs of all participating relations as foreign keys; their combination is the PK; include the relationship's simple attributes.",
+    "Front": "Name four mapping errors the lecture flags as common.",
+    "Back": "1. Putting the foreign key on the ONE side of a 1:N relationship (it goes on the many side)<br>2. For a 1:1, putting foreign keys in BOTH tables, or on the partial side so rows fill with nulls<br>3. Marking relationship attributes (Hours, StartDate, AcceptDate, Salary) as foreign keys - they are ordinary attributes<br>4. Giving a weak entity's table only the partial key as primary key, leaving a multi-valued attribute in the original table, or mapping a weak entity's identifying relationship a second time in step 4",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992124,
+   "noteId": 1789752891487,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §9.1.1): give five pieces of fine print in the seven-step algorithm that the slides leave out.",
+    "Back": "1. STEP 1: keep the information about any ADDITIONAL keys - they become UNIQUE keys of the new relation (DName stays unique alongside the primary key DNumber), and the knowledge is also used for indexing.<br>2. STEP 2: if a weak entity type's owner is ITSELF WEAK, map the owner FIRST so its primary key is known; weak entities can nest to any depth.<br>3. RENAMING a foreign key (Ssn -&gt; Essn, Pnumber -&gt; Pno) is a DESIGN CHOICE - the book says explicitly that 'this is not necessary'.<br>4. STEP 6: for a COMPOSITE multivalued attribute include its simple components, and analyse which of them actually belong in the key; they behave like the partial key of a weak entity.<br>5. CASCADE (the propagate option) is recommended on the foreign keys created by steps 2, 5 and 6, for both ON UPDATE and ON DELETE, because those rows have an EXISTENCE DEPENDENCY on the rows they reference.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789752891488,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Seven_Mapping_Rules",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §9.1.2): how are relationships actually represented in a relational schema, and how many joins does each kind need to materialize?",
+    "Back": "They are NOT REPRESENTED EXPLICITLY. A relationship exists only as a primary key in one relation and a foreign key over the same domain in another; two tuples are related when those two values are equal. To materialize it you apply an EQUIJOIN, or a NATURAL JOIN if the two attributes share a name.<br>1:1 or 1:N mapped with a foreign key: ONE join.<br>M:N mapped to a relationship relation: TWO joins.<br>n-ary relationship: n joins.<br>Example: employee name + project name + hours needs EMPLOYEE join WORKS_ON on Ssn = Essn, then that result join PROJECT on Pno = Pnumber.<br>The book calls this invisibility a drawback of the relational model, because the key correspondences are not obvious from inspecting the schema, and an EQUIJOIN between attributes that are NOT a foreign-key/primary-key pair produces SPURIOUS DATA - try joining PROJECT and DEPT_LOCATIONS on Dlocation = Plocation.",
+    "Topic": "Seven Mapping Rules"
+   }
+  },
+  {
+   "noteId": 1789752891505,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Text": "The seven mapping steps in order: 1 {{c1::regular entities}}, 2 {{c2::weak entities}}, 3 {{c3::binary 1:1}}, 4 {{c4::binary 1:N}}, 5 {{c5::binary M:N}}, 6 {{c6::multi-valued attributes}}, 7 {{c7::n-ary relationships}}.",
+    "Text": "The seven mapping steps in order: 1 {{c1::regular entities}}, 2 {{c1::weak entities}}, 3 {{c1::binary 1:1}}, 4 binary 1:N, 5 binary M:N, 6 multi-valued attributes, 7 n-ary relationships (n &gt; 2).",
     "Extra": "",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992132,
+   "noteId": 1789752891506,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Text": "Mapping steps that create new tables: {{c1::1, 2, 5, 6 and 7}}; steps that only add foreign-key columns to existing tables: {{c2::3 and 4}}.",
+    "Text": "Steps that CREATE new tables: {{c1::1, 2, 5, 6 and 7}}; steps that only ADD foreign-key columns to existing tables: {{c1::3 and 4}}. A foreign key becomes part of the primary key only in steps {{c1::2, 5, 6 and 7}}.",
     "Extra": "",
     "Topic": "Seven Mapping Rules"
    }
   },
   {
-   "noteId": 1789692992135,
-   "modelName": "CS3319A Databases Basic",
+   "noteId": 1789752891507,
+   "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Seven_Mapping_Rules",
     "week2"
    ],
    "fields": {
-    "Front": "In which mapping steps does a foreign key become part of the primary key?",
-    "Back": "Steps 2 (weak entity), 5 (M:N), 6 (multi-valued attribute) and 7 (n-ary).",
+    "Text": "Textbook (Elmasri §9.1.1, step 7): the primary key of an n-ary relationship relation is usually all n foreign keys, but if the cardinality constraint on a participating entity type is {{c1::1}}, the foreign key referencing it is {{c1::left out of the primary key}}. The course's 'all n keys combined' rule is the {{c1::all-many}} case.",
+    "Extra": "",
     "Topic": "Seven Mapping Rules"
    }
   }

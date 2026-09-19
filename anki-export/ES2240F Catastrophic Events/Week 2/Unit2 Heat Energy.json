@@ -1,0 +1,280 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::Unit2 Heat Energy",
+ "note_count": 21,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154856,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Name the four mechanisms by which Earth was and is heated.",
+    "Back": "1) Accretion and impact heating (kinetic energy).<br>2) Core-formation heat (gravitational potential energy).<br>3) Heat from dissipation of tidal energy.<br>4) Heat from radioactivity.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154857,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Which heat source mattered most in early Earth formation, and which matters most now?",
+    "Back": "Early: accretion and impact heating (kinetic energy), with core-formation heat and abundant short-lived isotopes also large.<br>Now: radioactivity - virtually all of Earth's current internal energy comes from decay of long-lived K, U and Th.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154858,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define kinetic energy and give its formula.",
+    "Back": "The energy possessed by a body because of its motion. Kinetic Energy = 1/2 m v squared, where m is mass and v is velocity. The reading says: remember this equation.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154859,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How did the Moon form, and why does that matter for Earth's heat?",
+    "Back": "From the debris thrown off when the Mars-sized planet Theia side-swiped Earth early in Solar System history (about 4.48 Ga). The kinetic energy of that impact helped melt Earth, so that heavy elements could sink to the core and light elements rise - differentiation.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154860,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What energy is released during core formation, and what is the reading's analogy?",
+    "Back": "Gravitational potential energy, released as dense material segregates to the core. Analogy: drop a book on your toes - the impact is the release of the potential energy the raised book held.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154861,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How do the slides describe core-formation heat?",
+    "Back": "As material moving up or down according to buoyancy while the molten interior differentiated, releasing heat either by decompression or by chemical reaction.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154862,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Where is tidal heating especially important, and who established that tides exist?",
+    "Back": "Especially important in small satellites (moons) whose content of radioactive isotopes may be small. Since the days of Newton it has been known that the gravitational pull of the Sun and Moon raises large tides in Earth's oceans; similar but smaller tidal distortions occur inside both Earth and the Moon.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154863,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What do decaying isotopes release?",
+    "Back": "They may release particles (electrons, alpha particles) and will ALWAYS release energy (gamma rays, X-rays).",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154864,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What are the two categories of radioactivity relevant to Earth's heat?",
+    "Back": "Long-lived radioactivity (isotopes of potassium, uranium and thorium), producing heat all through Earth's history and for a long time yet; and short-lived radioactivity (e.g. aluminum-26), abundant early and now virtually gone.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154865,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define heat flow.",
+    "Back": "The heat escaping per unit time from Earth's interior across each unit of surface area. It has been measured on all continents and all oceans, so today's heat flow is known; past and future rates are hypothesized.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154866,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why has Earth's heat flow decreased over its history?",
+    "Back": "Early on the surface was too hot for liquid oceans and heat passed directly from magma to the atmosphere. As solid crust formed and oceans stabilized they acted as INSULATION between the hot mantle and the atmosphere. Short-lived isotopes also declined, leaving long-lived radioactivity as the only major ongoing source. But the change is slight over any long period.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154867,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Will Earth's internal heat run out?",
+    "Back": "Eventually yes, as long-lived radioactive isotopes decrease in abundance the internal heat source will die - but enough heat is being produced that no detectable change is expected any time soon.",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154889,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Earth's interior is estimated to reach {{c1::7200-7500}} degrees C - more than {{c1::1000}} degrees C higher than the Sun's outer layer (Chapter 3 gives the inner core as {{c1::5000-7000}} degrees C).",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154890,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Earth's four heat sources: {{c1::accretion and impact heating}}, {{c1::core formation}}, {{c1::tidal dissipation}} and {{c1::radioactivity}}; most important early was {{c1::impact/accretion heating}}, most important now is {{c1::radioactivity}}.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154891,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Kinetic Energy = {{c1::1/2 m v^2}}, where m is {{c1::mass}} and v is {{c1::velocity}}; because velocity is squared, doubling impact speed delivers {{c1::four}} times the energy.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154892,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A {{c1::1979}} calculation showed that for a body of {{c1::1000 km}} radius, impacts in the early Solar System would raise its temperature by {{c1::1000}} degrees C - so from impact heat alone early Earth would have {{c1::melted completely}}.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154893,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Core formation took no more than {{c1::a couple of million}} years, released {{c1::gravitational potential}} energy, and is sometimes called '{{c1::the iron catastrophe}}'.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154894,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The highest tide in Earth's asthenosphere/mantle is only {{c1::11 cm}}, so it is hard to detect.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154895,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Over geologic history tides have {{c1::slowed Earth's rotation}} rate and caused the Moon to slowly {{c1::recede}}; all the energy used in {{c1::braking}} Earth's rotation is manifested as {{c1::heat}}.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154896,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Aluminum-26}} decays to {{c1::magnesium-26}} with a half-life of {{c1::720,000}} years; it is now essentially {{c1::extinct}}, but because Al is abundant in Earth rocks it once added substantially to the heat budget.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  },
+  {
+   "noteId": 1789749154897,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Unit2_Heat_Energy",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The long-lived radioactive isotopes supplying virtually all of Earth's internal heat today are those of {{c1::potassium (K)}}, {{c1::uranium (U)}} and {{c1::thorium (Th)}}.",
+    "Extra": "",
+    "Topic": "Unit2 Heat Energy"
+   }
+  }
+ ]
+}

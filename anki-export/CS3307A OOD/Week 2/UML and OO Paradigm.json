@@ -1,23 +1,10 @@
 {
  "deck": "CS3307A OOD::Week 2::UML and OO Paradigm",
- "note_count": 3,
- "exported": "2026-09-18",
+ "note_count": 5,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839495,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "UML_and_OO_Paradigm",
-    "week2"
-   ],
-   "fields": {
-    "Text": "UML stands for {{c1::Unified Modeling Language}}: a standard set of notations for modelling object-oriented systems.",
-    "Extra": "",
-    "Topic": "UML and OO Paradigm"
-   }
-  },
-  {
-   "noteId": 1789678839497,
+   "noteId": 1789749155798,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "UML_and_OO_Paradigm",
@@ -25,12 +12,12 @@
    ],
    "fields": {
     "Front": "How do OO techniques view a software system?",
-    "Back": "As networks of communicating objects; each object is an instance of a class; objects of a class share attributes and methods; classes can be specialized by subclasses; objects communicate by sending messages.",
+    "Back": "As networks of communicating objects: each object is an instance of a class; all objects of a class share similar features (attributes and methods); classes can be specialized by subclasses; and objects communicate by sending messages, which in C++ means calling each other's methods.",
     "Topic": "UML and OO Paradigm"
    }
   },
   {
-   "noteId": 1789678839499,
+   "noteId": 1789749155799,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "UML_and_OO_Paradigm",
@@ -38,7 +25,46 @@
    ],
    "fields": {
     "Front": "List the five things an object may do in response to a message.",
-    "Back": "Update its internal state; return a value from its state; perform a calculation based on its state and return it; create a new object (or set of objects); delegate part or all of the task to another object.",
+    "Back": "Update its internal state; return a value from its internal state; perform a calculation based on its state and return the calculated value; create a new object (or set of objects); delegate part or all of the task to some other object.",
+    "Topic": "UML and OO Paradigm"
+   }
+  },
+  {
+   "noteId": 1789749155800,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "UML_and_OO_Paradigm",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Which of the five message responses does <code>AuditService::record</code> illustrate?",
+    "Back": "The fifth, delegation: <code>void record(const std::string&amp; msg) { logger.log(msg); }</code> forwards the whole task to another object and does nothing else itself.",
+    "Topic": "UML and OO Paradigm"
+   }
+  },
+  {
+   "noteId": 1789749155823,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_and_OO_Paradigm",
+    "week2"
+   ],
+   "fields": {
+    "Text": "UML stands for {{c1::Unified Modeling Language}}: a standard set of {{c1::notations}} for use in modeling object-oriented systems.",
+    "Extra": "The course encounters class diagrams, sequence/collaboration diagrams, state diagrams, and activity and use case diagrams. The project requires class, sequence, and use case diagrams, submitted as PDF.",
+    "Topic": "UML and OO Paradigm"
+   }
+  },
+  {
+   "noteId": 1789749155824,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "UML_and_OO_Paradigm",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The two design targets for every object: {{c1::highly cohesive}} (a single purpose, making use of all its features) and {{c1::loosely coupled}} (dependent on only a few other classes).",
+    "Extra": "This restates Week 1's 'high cohesion, low coupling' at the level of each class you draw.",
     "Topic": "UML and OO Paradigm"
    }
   }

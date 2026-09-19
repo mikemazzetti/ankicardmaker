@@ -1,0 +1,319 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::Ch2 Absolute Dating",
+ "note_count": 24,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154164,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe the structure of an atom as Chapter 2 does, with the mass figures.",
+    "Back": "An extremely dense, positively charged nucleus surrounded by a cloud of negatively charged electrons spinning at a great distance, making the atom neutral. Electrons have very little mass, so although the nucleus is less than one ten-thousandth the size of the atom it holds more than 99.9% of its mass. A cubic centimetre of nucleus material would weigh 100 million tonnes (not tested).",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154165,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What is in the nucleus and what holds it together?",
+    "Back": "Positively charged protons and neutral neutrons, held together by the 'strong' or 'nuclear' force - a very strong force whose effectiveness drops off quickly with distance.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154166,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define radioactivity.",
+    "Back": "The progressive breakdown (decay) of the nucleus of an atom or isotope. Every unstable isotope decays at its own characteristic rate, which has never changed in all of time.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154167,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What kinds of decay does the reading mention, and what is the essential result?",
+    "Back": "Beta decay, alpha decay, fission and others - not detailed in the course. What matters is that one atom breaks down to form a new atom of a DIFFERENT element.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154168,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why is radioactive decay called exponential?",
+    "Back": "During each half-life only half of the remaining parents become daughters, and there are fewer parents as time goes on - so the number of daughter atoms produced is large at the beginning and rapidly becomes smaller. But at each half-life the same proportion (exactly half of the remaining parent) decays.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154169,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Give the parent remaining after 0, 1, 2, 3 and 4 half-lives.",
+    "Back": "0: 100%<br>1: 50%<br>2: 25%<br>3: 12.5%<br>4: 6.25%<br>(after ~10 half-lives about 0.1% - unmeasurable, so no useful time information)",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154170,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Uranium-235: daughter and half-life?",
+    "Back": "Lead-207 (Pb-207); half-life 704 million years.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154171,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Rubidium-87: daughter and half-life?",
+    "Back": "Strontium-87 (Sr-87); half-life 48.8 billion years.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154172,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Potassium-40: daughter and half-life?",
+    "Back": "Argon-40 (Ar-40); half-life 1.26 billion years.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154173,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Carbon-14: daughter, half-life and useful range?",
+    "Back": "Nitrogen-14 (per the slides); half-life 5730 years. Used for organic material younger than about 50,000 years; after about 10 half-lives (~57,000 years) all the C-14 is gone and you can only say the item is older than that.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154174,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "If three isotope systems are analysed in one granite, what result is expected, and why is only one used in practice?",
+    "Back": "All three should give the same age for the sample. In practice only one technique is used because analytical costs are high.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154175,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Why does carbon-14 dating work on once-living things?",
+    "Back": "All living things take in carbon, including C-14. Once the organism dies it no longer consumes C-14 and the total amount starts to decrease by decay, so the remaining fraction gives the time since death.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154176,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Compare relative and absolute age dating.",
+    "Back": "Relative (Steno, Hutton, Smith): orders events older/younger, works on sedimentary sequences even with recycled grains, but gives no numbers.<br>Absolute (radioactivity, half-lives): gives numerical ages for igneous rocks and organic matter, but needs measurable parent:daughter ratios and a closed system.<br>Both are still useful, and in practice they are combined.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154177,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How did the geologic time scale get its numbers?",
+    "Back": "By applying radiometric dating to rocks around the world, producing numerical ages for each major boundary of the stratigraphic column - e.g. the two dramatic extinction events at 251 Ma and 65.5 Ma.",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154189,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Modern absolute dating became possible in {{c1::1896}} when {{c1::Henri Becquerel}} discovered that atoms of some elements, such as {{c1::uranium}}, are inherently unstable and break down predictably - the property called {{c1::radioactivity}}.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154190,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Atomic number = the number of {{c1::protons}}, the same for every atom of an element; atomic mass = protons plus {{c1::neutrons}}. (The reading labels atomic number {{c1::A}} and atomic mass {{c1::Z}}.)",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154191,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Isotopes}} are atoms of the same element that differ in the number of {{c1::neutrons}} in the nucleus and thus in {{c1::mass}}; they behave the same {{c1::chemically}}, though heavier ones react slightly more slowly.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154192,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Hydrogen has three isotopes: mass 1 (1 proton, 0 neutrons, {{c1::stable}}), mass 2 (1 proton, 1 neutron, {{c1::stable}}) and mass {{c1::3}} (1 proton, {{c1::2}} neutrons), which is {{c1::radioactive}}.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154193,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The original isotope in any step of a decay is the {{c1::parent}}; the isotope produced by that step, an atom of a {{c1::different element}}, is the {{c1::daughter}}.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154194,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The {{c1::half-life}} is the period of time in which exactly {{c1::half}} the nuclei of a radioactive species decay, in any step of the breakdown. Measuring a changing {{c1::fraction}} is far easier than measuring absolute quantities.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154195,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "At time zero a rock has {{c1::100%}} parent; after 1 half-life the parent:daughter ratio is {{c1::50:50}}; after 2 half-lives {{c1::25:75}}; after about {{c1::10}} half-lives the parent is too small for our instruments to measure.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154196,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Half-lives: U-235 = {{c1::704 million}} years; K-40 = {{c1::1.26 billion}} years; Rb-87 = {{c1::48.8 billion}} years; C-14 = {{c1::5730}} years.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154197,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "{{c1::Zircon}} is the mineral sought for dating igneous rocks because it contains {{c1::uranium}}; the {{c1::uranium:lead}} ratio in the crystal gives its age.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  },
+  {
+   "noteId": 1789749154198,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Absolute_Dating",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A {{c1::closed system}} is a rock or mineral that has neither gained nor lost {{c1::parent or daughter}} atoms since it formed, so the ratio reflects only {{c1::elapsed time}}.",
+    "Extra": "",
+    "Topic": "Ch2 Absolute Dating"
+   }
+  }
+ ]
+}

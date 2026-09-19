@@ -1,0 +1,46 @@
+{
+ "deck": "CS3319A Databases::Week 1::Textbook Extras",
+ "note_count": 3,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789752890705,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Textbook_Extras",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION (Elmasri exercise 3.27): give a cardinality ratio for each pair and state your assumption - (a) STUDENT / SOCIAL_SECURITY_CARD, (b) COURSE / TEXTBOOK, (c) CLASS / INSTRUCTOR, (d) EBAY_AUCTION_ITEM / EBAY_BID, (e) CLASSROOM / WALL.",
+    "Back": "(a) 1:1 - one card per student and one student per card.<br>(b) M:N - a course may adopt several texts and a text may be used in several courses.<br>(c) N:1 - a class has one instructor and an instructor teaches many classes (M:N if team teaching is allowed).<br>(d) 1:N - an auction item receives many bids and a bid is for one item.<br>(e) 1:N - a classroom has many walls and a wall belongs to one room (M:N if shared walls are modelled).<br>The point of the exercise: the ratio comes from the MEANING OF THE MINIWORLD and from the assumptions you state - the instructor's 'this all depends on the context'.",
+    "Topic": "Textbook Extras"
+   }
+  },
+  {
+   "noteId": 1789752890738,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Textbook_Extras",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Textbook (Elmasri §3.7.4, §3.8): NOTATION CONFLICT - this course and the textbook place a (min, max) pair {{c1::beside the entity it constrains}}, so its max matches the Chen letter at the opposite end of the line; {{c1::UML}} class diagrams place the same numbers, which they call {{c1::multiplicities}}, at the opposite end. Crow's Foot symbols are also read at the far end.",
+    "Extra": "",
+    "Topic": "Textbook Extras"
+   }
+  },
+  {
+   "noteId": 1789752890739,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Textbook_Extras",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Textbook (Elmasri §3.9.1): three binary relationships CAN_SUPPLY, USES and SUPPLIES are {{c1::not}} equivalent to the ternary SUPPLY, because instances (s,p), (j,p) and (s,j) do not imply that {{c1::(s, j, p)}} exists. A ternary can instead be modelled as a weak entity with {{c1::three owners}} and no partial key, or as a regular entity given a surrogate key.",
+    "Extra": "",
+    "Topic": "Textbook Extras"
+   }
+  }
+ ]
+}

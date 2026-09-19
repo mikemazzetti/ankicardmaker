@@ -1,0 +1,189 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::Ch2 Time Scale",
+ "note_count": 14,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154339,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "How were subdivisions of geologic time designated?",
+    "Back": "Because the stratigraphic column arranges strata by relative age, its subdivisions became subdivisions of geologic time; where different layers contained different fossil types, the column was subdivided there. We observe the passage of time by the emergence and extinction of fossil life forms.",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154340,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What two events did early palaeontologists use to make the major era boundaries?",
+    "Back": "Two major global extinction events, whose cause they did not know but whose existence was factual: one between the Palaeozoic and Mesozoic Eras, the other between the Mesozoic and Cenozoic Eras. Radiometric dating later dated them at 251 Ma and 65.5 Ma.",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154341,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: which period begins with the 'explosion of organisms with shells', and what appears in the Ordovician, Devonian and Carboniferous?",
+    "Back": "Cambrian (base 545 Ma) - explosion of organisms with shells. Ordovician: fish. Devonian: land plants. Carboniferous: trees (coal swamps), plus an extinction event; the Appalachian Mountains form.",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154342,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In which periods did dinosaurs and mammals, birds, and flowering plants first appear?",
+    "Back": "Dinosaurs and mammals: Triassic. Birds: Jurassic. Flowering plants: Cretaceous (dinosaur extinction at the top of the Cretaceous).",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154343,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Geologic time scale: name the major Precambrian events and their approximate ages.",
+    "Back": "Multicelled organisms; free oxygen in the atmosphere and an ozone layer about 2500 Ma; primitive life (first fossils) about 3500 Ma; oldest rocks about 4000 Ma; age of Earth about 4600 Ma (4.54 Ga). Ice Ages also occurred.",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154344,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What Earth (not life) events does Fig. 7 attach to the Jurassic, Cretaceous and Tertiary?",
+    "Back": "Jurassic: the supercontinent Pangaea begins to break up. Cretaceous: emplacement of the Sierra Nevada granites (Yosemite). Tertiary: Rocky Mountains form; India collides with Asia forming the Himalaya and Tibetan Plateau; the Andes form.",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154345,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Front": "What does the 'true scale' column of Figure 7 show?",
+    "Back": "That the Precambrian occupies almost 90% of Earth history; everything from the Cambrian (545 Ma) to today is only a thin sliver at the top of the 4600 Ma column.",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154364,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "An {{c1::era}} is a long interval of geologic time separated from the next by a {{c1::major extinction event}}; periods are often punctuated by apparent {{c1::mass extinctions}}.",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154365,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Era names: Palaeozoic = '{{c1::ancient life}}', Mesozoic = '{{c1::middle life}}', Cenozoic = '{{c1::recent life}}'; in order oldest to youngest they run {{c1::Palaeozoic, Mesozoic, Cenozoic}}.",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154366,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "The Palaeozoic/Mesozoic boundary is dated at {{c1::251}} Ma and the Mesozoic/Cenozoic boundary at {{c1::65.5}} Ma (the older Fig. 7 chart shows {{c1::245}} and {{c1::65}}).",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154367,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "'Precambrian' is {{c1::not}} a formal time division: it simply lumps all time before the {{c1::Palaeozoic}} Era. It originally meant 'time before life', but life {{c1::did}} develop during the Precambrian.",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154368,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Palaeozoic periods, oldest to youngest: {{c1::Cambrian}}, {{c1::Ordovician}}, {{c1::Silurian}}, {{c1::Devonian}}, {{c1::Carboniferous}}, {{c1::Permian}}.",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154369,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Mesozoic periods: {{c1::Triassic}}, {{c1::Jurassic}}, {{c1::Cretaceous}}. Cenozoic periods: {{c1::Tertiary}} (Paleocene, Eocene, Oligocene, Miocene, Pliocene) and {{c1::Quaternary}} (Pleistocene, Holocene).",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  },
+  {
+   "noteId": 1789749154370,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch2_Time_Scale",
+    "week1"
+   ],
+   "fields": {
+    "Text": "Fig. 7 base ages: Cambrian {{c1::545}} Ma, Ordovician 495, Silurian 443, Devonian 417, Carboniferous 363, Permian {{c1::290}} Ma, Triassic {{c1::245}} Ma, Jurassic 208, Cretaceous {{c1::146}} Ma, Tertiary 65, Quaternary {{c1::1.65}} Ma.",
+    "Extra": "",
+    "Topic": "Ch2 Time Scale"
+   }
+  }
+ ]
+}

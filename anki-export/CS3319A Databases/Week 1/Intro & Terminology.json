@@ -1,213 +1,148 @@
 {
  "deck": "CS3319A Databases::Week 1::Intro & Terminology",
- "note_count": 16,
- "exported": "2026-09-18",
+ "note_count": 11,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991207,
-   "modelName": "CS3319A Databases Cloze",
+   "noteId": 1789752890413,
+   "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Intro_&_Terminology",
+    "Intro_Terminology",
     "week1"
    ],
    "fields": {
-    "Text": "Data: known facts that can be {{c1::recorded}} and have an {{c2::implicit meaning}}.",
+    "Front": "Define data, database and mini-world in the slide (Elmasri and Navathe) wording.",
+    "Back": "1. Data: known facts that can be recorded and that have an implicit meaning ('98' alone is a number; 'Homer's mark in CS3319 is 98' is data).<br>2. Database: a collection of RELATED data.<br>3. Mini-world: the part of the real world about which data is stored - the part of the organisation we want to model (a medical office, a retail business, a library).",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890414,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Video 1 opens with a grocery list, a letter, a spreadsheet of grades, a student list and an Access screenshot and asks which are databases. What is the instructor's answer, and why is it a trick question?",
+    "Back": "All of them. A database is 'just a group of related data': the grocery list is related items, the letter's information is all related, the spreadsheet's rows are all students in the course. A database does NOT have to live in Access, MySQL or any DBMS.",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890415,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Name five DBMS products mentioned in Lesson 1, and say what the instructor's mini-world example is.",
+    "Back": "MySQL, PostgreSQL, Oracle, DB2 and Access. Mini-world example: within Western, a database just for the Computer Science department - she calls narrowing the world like this 'divide and conquer'.",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890416,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Describe the loop the instructor wrote in first year to read and write a flat file.",
+    "Back": "Read: while not at the end of the line, read until you hit a comma, read until the next comma, ... to the end of the line; put the values into variables or a record; go to the next line and repeat until end of file. Write: value, comma, value, comma, ... newline. Every program that touched the file contained this parsing logic.",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890417,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Front": "In the flat-file world, what did the instructor call a 'database'? And what lesson does the student list with the date-like last column teach?",
+    "Back": "A group of related flat files together (students, courses, departments) that keep the organisation's data. The mis-read column teaches that you must know the CONTEXT of data to know what it means.",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890418,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: a customer flat file has lines <code>C1,Marge,Simpson,519-555-1234</code>. Point to a piece of data, a record and the flat file - and say whether the digit <code>5</code> is data.",
+    "Back": "A whole field value such as the phone number 519-555-1234 (or the first name Marge) is data; Marge's whole line is a record; the file itself is the flat file. A single digit is NOT data - data is the smallest unit that carries meaning in the mini-world.",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890419,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §1.1): what three implicit properties turn 'a collection of related data' into a database, and what four activities does a DBMS carry out on one?",
+    "Back": "THREE PROPERTIES:<br>1. It REPRESENTS SOME ASPECT OF THE REAL WORLD - the miniworld or universe of discourse (UoD) - and changes in the miniworld must be reflected in it.<br>2. It is a LOGICALLY COHERENT collection with inherent meaning; a random assortment of data is not a database.<br>3. It is DESIGNED, BUILT AND POPULATED FOR A SPECIFIC PURPOSE, with an intended group of users and preconceived applications.<br>FOUR DBMS ACTIVITIES: DEFINING (specifying data types, structures and constraints; the description is stored as meta-data in the catalog), CONSTRUCTING (storing the data on a DBMS-controlled medium), MANIPULATING (querying, updating to track the miniworld, generating reports) and SHARING (several users and programs at once).",
+    "Topic": "Intro & Terminology"
+   }
+  },
+  {
+   "noteId": 1789752890447,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Intro_Terminology",
+    "week1"
+   ],
+   "fields": {
+    "Text": "A DBMS is the {{c1::software package}} that facilitates creating and maintaining a computerized database; a database is the {{c1::data}} itself; a database system is {{c1::the DBMS together with the data}} (sometimes plus the applications).",
     "Extra": "",
     "Topic": "Intro & Terminology"
    }
   },
   {
-   "noteId": 1789692991210,
+   "noteId": 1789752890448,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Intro_&_Terminology",
+    "Intro_Terminology",
     "week1"
    ],
    "fields": {
-    "Text": "A database is a collection of {{c1::related data}}.",
+    "Text": "A flat file is 'really just a {{c1::TXT (ASCII)}} file' in which each line holds one {{c1::record}}; a record is one occurrence of the thing the file stores, which she also calls an {{c1::instance}} (like one object of a class - the word <code>record</code> survives in C).",
     "Extra": "",
     "Topic": "Intro & Terminology"
    }
   },
   {
-   "noteId": 1789692991212,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a mini-world?",
-    "Back": "The part of the real world about which data is stored in a database; a database is a model of a mini-world. Examples: a medical office, a retail business, a library.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991214,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Define 'Database Management System (DBMS)'.",
-    "Back": "A software package/system to facilitate the creation and maintenance of a computerized database.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991216,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a 'database system'?",
-    "Back": "The DBMS software together with the data itself (sometimes the applications are included too).",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991218,
+   "noteId": 1789752890449,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Intro_&_Terminology",
+    "Intro_Terminology",
     "week1"
    ],
    "fields": {
-    "Text": "A DBMS is the {{c1::software}}; a database is the {{c1::data}}; a database system is {{c2::the DBMS together with the data}} (sometimes plus the applications).",
+    "Text": "In the flat-file row <code>251012345,Homer,Simpson,CS</code> there are {{c1::four}} pieces of data; the single character <code>2</code> is {{c1::not}} a piece of data because it has no {{c1::inherent meaning}}; the whole line is a record and the file is a flat file.",
     "Extra": "",
     "Topic": "Intro & Terminology"
    }
   },
   {
-   "noteId": 1789692991221,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What is a flat file? What is a record?",
-    "Back": "A flat file is a plain file ('really just a TXT or ASCII file') where each line/block holds one record; a record (also called an instance, like one object of a class) is one occurrence of the kind of thing the file stores, made of a fixed set of fields.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991223,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In a flat file of customer lines, identify: a piece of data, a record, the flat file.",
-    "Back": "A single field value (e.g. a phone number) is data; one customer's line is a record; the whole file is the flat file.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991225,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Video 1 opens with a grocery list, a letter, a spreadsheet of grades, a student list and an Access file, and asks which are databases. What is the instructor's answer?",
-    "Back": "All of them: a database is 'just a group of related data'. It does not have to live in Access, MySQL or any DBMS.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991227,
+   "noteId": 1789752890450,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Intro_&_Terminology",
+    "Intro_Terminology",
     "week1"
    ],
    "fields": {
-    "Text": "The instructor's example of a mini-world: within Western, a database just for the {{c1::Computer Science department}}; she calls narrowing the world this way '{{c2::divide and conquer}}'.",
+    "Text": "Textbook (Elmasri §1.1): the DBMS stores the database definition as a {{c1::catalog}} (or dictionary), and that descriptive information is called {{c1::meta-data}}. A {{c1::query}} normally only retrieves data, whereas a transaction may both read and write.",
     "Extra": "",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991230,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In the flat-file row '251012345,Homer,Simpson,CS', how many pieces of data are there, and why is the single digit '2' not a piece of data?",
-    "Back": "Four (student number, first name, last name, department). A single character has no inherent meaning; it is the nine characters together that mean a student number.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991232,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Text": "A flat file is 'really just a {{c1::TXT (ASCII)}} file'; each row is a {{c2::record}}, which you can think of as an {{c3::instance}} of a class.",
-    "Extra": "",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991236,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Describe the loop the instructor wrote in first year to read a flat file.",
-    "Back": "While not at the end of the line: read until a comma, read until the next comma, ... to the end of the line; put the values into variables or a record; go to the next line and repeat until end of file. Writing was the mirror image: value, comma, value, comma, newline.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991238,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "In the flat-file world, what did the instructor call a 'database'?",
-    "Back": "A group of related flat files together (e.g. a students file and a departments file) that keep the organisation's data.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991240,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "List the four learning objectives of Video 1 (Introduction).",
-    "Back": "Define data, database, mini-world and DBMS; know what a flat file looks like; find a piece of data and a record within a flat file; give at least three reasons to prefer a DBMS over flat files.",
-    "Topic": "Intro & Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991242,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Intro_&_Terminology",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What lesson does the instructor draw from the student list whose last column turned out to look like a date rather than a student number?",
-    "Back": "You have to know the context of the data to know what it means.",
     "Topic": "Intro & Terminology"
    }
   }

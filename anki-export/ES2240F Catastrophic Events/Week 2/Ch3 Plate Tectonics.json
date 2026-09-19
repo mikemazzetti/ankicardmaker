@@ -1,10 +1,10 @@
 {
  "deck": "ES2240F Catastrophic Events::Week 2::Ch3 Plate Tectonics",
- "note_count": 75,
- "exported": "2026-09-18",
+ "note_count": 17,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789690333523,
+   "noteId": 1789749154706,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
@@ -12,376 +12,90 @@
    ],
    "fields": {
     "Front": "Why is plate tectonics compared to the theory of evolution?",
-    "Back": "Both explained a diverse set of seemingly random observations with a relatively simple, coherent theory.",
+    "Back": "Because in both cases what had seemed a diverse set of almost random observations could suddenly be explained by a relatively simple, coherent theory. Plate tectonics was as important to earth scientists as evolution was to biologists.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333525,
+   "noteId": 1789749154707,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "Give three things plate tectonics explains (Chapter 3 introduction).",
-    "Back": "Where surface deformation occurs (engineering), type and location of metallic mineral deposits, and the global distribution of earthquake and volcanic hazards; also continents, ocean basins, mountain ranges.",
+    "Front": "What does plate tectonics explain, for three different audiences?",
+    "Back": "Geological engineers: why and where significant deformation of Earth's surface occurs (where not to build a bridge).<br>Economic earth scientists: the type and location of many metallic mineral deposits.<br>Hazards: the global distribution of earthquake and volcanic hazards (though timing and magnitude remain trickier).<br>It also produces continents, ocean basins and mountain ranges.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333527,
+   "noteId": 1789749154708,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "Who proposed continental drift and when?",
-    "Back": "Alfred Wegener, published in 1912.",
+    "Front": "What three lines of evidence did Wegener use for continental drift?",
+    "Back": "1) The 'jigsaw fit' of the continents across the Atlantic - so good that coincidence was impossible.<br>2) The fit of glacial terrain on the southern continents when reassembled (otherwise Palaeozoic glaciers would have grown near the equator and across oceans).<br>3) Continuity of old geological structures and fossil stratigraphy (plants and animals) from continent to continent.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333529,
+   "noteId": 1789749154709,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "What evidence did Wegener use for continental drift?",
-    "Back": "The jigsaw fit of continents across the Atlantic; the fit of glacial terrain on reassembled southern continents; continuity of old geological structures and fossil stratigraphy across continents.",
+    "Front": "Why did few people immediately accept Wegener?",
+    "Back": "It was radical and revolutionary to believe landmasses had moved around and were still moving under their feet, and Wegener had absolutely no idea of the mechanism required - so people waited for more evidence.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333531,
+   "noteId": 1789749154710,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "What was the major weakness of Wegener's theory?",
-    "Back": "He had absolutely no idea of the mechanism required to make continents drift.",
+    "Front": "How did World War II contribute to plate tectonics?",
+    "Back": "In the early 1940s, to detect sunken ships and lurking submarines, very sensitive magnetometers were towed in pods behind ships back and forth across sections of ocean. As well as steel hulls, they detected curious, repetitive magnetic records in ocean-floor rocks - but the data could not be processed until the war ended.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333533,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Alfred Wegener}} published continental drift in {{c2::1912}}, naming the supercontinent {{c3::Pangaea}}, but had no mechanism.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333537,
+   "noteId": 1789749154711,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "How did WWII contribute to plate tectonics?",
-    "Back": "Sensitive magnetometers towed behind ships to detect ships and submarines also revealed curious, repetitive magnetic patterns in ocean-floor rocks (early 1940s).",
+    "Front": "What did post-war ocean-floor mapping discover, and who made the famous map?",
+    "Back": "Two lines of research (hunting mineral resources, and simply mapping ocean floors) produced the first comprehensive ocean-floor maps from the late 1940s through the 1950s - the Tharp and Heezen panorama. In the Atlantic they defined a huge volcanic ridge running from the far north and connecting with similar ridges in the far south, volcanically active along almost its whole length: the largest volcanic system anyone had ever seen.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333539,
+   "noteId": 1789749154712,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "What is a magnetometer?",
-    "Back": "An instrument that measures magnetic field strength.",
+    "Front": "What exactly did Hess propose in 1960?",
+    "Back": "That mid-ocean ridges are SPREADING CENTRES where Earth's crust moves in opposite directions like conveyor belts, allowing new ocean floor to be built from volcanic rock at the ridges.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333541,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What was discovered by ocean-floor mapping in the late 1940s and 1950s?",
-    "Back": "A huge volcanic ridge running the length of the Atlantic, connecting with similar ridges in the far south, volcanically active almost its whole length - the largest volcanic system ever seen (Tharp and Heezen maps).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333543,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What did Harry Hess propose in 1960?",
-    "Back": "That mid-ocean ridges are spreading centres where crust moves apart like conveyor belts and new ocean floor is built from volcanic rock (sea-floor spreading). He was a Princeton professor.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333545,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Harry Hess ({{c1::1960}}) proposed sea-floor spreading; the Atlantic widens about {{c2::2.5 cm}} per year, implying contact {{c3::180}} million years ago.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333549,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Paleomagnetism}} is the study of Earth's magnetic field through the analysis of {{c2::rock magnetism}}; it convinced virtually all sceptics of plate tectonics.",
-    "Extra": "The study of Earth's magnetic field (intensity and orientation) through the analysis of rock magnetism.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333552,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What simple object is Earth's magnetic field compared to?",
-    "Back": "A bar magnet, with lines of force and defined north and south magnetic poles.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333554,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Are the magnetic poles the same as the geographic poles?",
-    "Back": "No. Geographic poles are the poles of rotation; magnetic pole positions differ.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333556,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "In the {{c1::dynamo model}}, electric currents generated by circulating hot currents in the {{c2::liquid metal outer core}} are surrounded by magnetic fields.",
-    "Extra": "Electric currents are generated by enormous 'dynamos' driven by circulating hot currents in the liquid metal outer core; magnetic fields surround those electric currents.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333559,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What causes a magnetic field reversal?",
-    "Back": "Changes in the flow pattern of the liquid outer core reorient the dynamos; the field becomes twisted and tangled, then restarts uniformly - possibly with the poles flipped 180 degrees.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333561,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Today's magnetic polarity is called {{c1::normal}}; a field flipped {{c2::180 degrees}} is called {{c3::reverse}} polarity and can stay stable for millions of years.",
-    "Extra": "Normal = today's polarity; reverse = the field flipped 180 degrees (north and south swapped). Reversed fields can stay stable for millions of years.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333565,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Glatzmaier and Roberts}} ({{c2::1995}}) produced the computer simulation of a geomagnetic field reversal.",
-    "Extra": "Glatzmaier and Roberts (1995).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333568,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Basalt}}, the most common volcanic rock, contains enough iron that {{c2::magnetite}} (iron oxide) crystals form and record the magnetic field as it cools.",
-    "Extra": "The most common volcanic rock; it contains enough iron that magnetite (iron oxide) crystals form as magma cools, recording the field direction at the time.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333571,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What do magnetite crystals do while a magma cools?",
-    "Back": "They orient parallel to Earth's magnetic lines of force - N-S horizontally and with the same tilt (inclination) as the field lines at the eruption site; the orientation is locked in once cooled.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333573,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How does paleomagnetism tell you the latitude at which a basalt erupted?",
-    "Back": "By the tilt of magnetite: horizontal at the equator, vertical at the magnetic poles, intermediate between (Hawaii, ~20 N: north poles point down ~20 degrees).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333575,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "In Hawaii, at about {{c1::20 degrees}} north latitude, magnetite crystals point down about {{c2::20 degrees}} from horizontal; at the equator they are {{c3::horizontal}}; at the magnetic poles, vertical.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333579,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Who explained the sea-floor magnetic stripes, when and where?",
-    "Back": "Vine and Matthews (two Britons), 1963, from a survey of an underwater volcano near the Seychelles Islands.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333581,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What did Vine and Matthews find about the magnetic stripes?",
-    "Back": "The pattern of alternating normal/reverse strips was age-related and perfectly symmetrical about the ridge, proving the ridges are spreading centres.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333583,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Explain how symmetrical magnetic stripes form.",
-    "Back": "Magma erupts at the ridge; magnetite records the field polarity at eruption; as spreading continues, part of each flow ends up on each diverging plate, mirroring the sequence of reversals on both sides.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333585,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Vine and Matthews}} in {{c2::1963}} showed the sea-floor magnetic stripes are age-related and {{c3::symmetrical}} about the ridge.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333589,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How do you calculate a spreading rate from the sea floor?",
-    "Back": "Measure the distance from the ridge centre to a strip of basalt, date that basalt: distance divided by time = spreading rate.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333591,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "CALC: A basalt strip 100 km from the ridge is 4 million years old. Spreading rate?",
-    "Back": "100 km / 4 Myr = 25 km/Myr = 2.5 cm/yr (half-spreading rate for that side).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333593,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Plate motion is watched in real time with {{c1::GPS}} units fixed to continents, which shift a few {{c2::centimetres per year}}.",
-    "Extra": "With very accurate GPS units fixed to continents; satellite-measured positions shift a few cm per year.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333596,
+   "noteId": 1789749154713,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
@@ -389,545 +103,25 @@
    ],
    "fields": {
     "Front": "If new crust forms at ridges, why isn't Earth's surface area increasing?",
-    "Back": "Old crust is destroyed elsewhere at subduction zones (debated in the late 1960s-early 1970s).",
+    "Back": "Because old crust must be destroyed elsewhere - at subduction zones. (There were some pretty hot arguments about this in the late 1960s and early 1970s.)",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333598,
+   "noteId": 1789749154714,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "What features mark subduction zones?",
-    "Back": "Very deep ocean trenches with numerous earthquakes; curved trenches ring the Pacific (Ring of Fire); regions of great compression where lithosphere is consumed.",
+    "Front": "How do you calculate a spreading rate from the sea floor?",
+    "Back": "Measure the distance from the ridge centre to a particular strip of basalt, date that basalt, then distance divided by time = rate of spreading.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333600,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Define subduction.",
-    "Back": "The process by which old, dense oceanic lithosphere is forced down into Earth's interior at a trench (convergent boundary).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333602,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What causes earthquakes (Chapter 3 definition)?",
-    "Back": "Movement along fractures (faults) in the crust.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333604,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Who was Hugo Benioff and what did he find?",
-    "Back": "A Californian who developed seismographs; by the mid-1950s he traced earthquake foci at trenches and found a thin zone sloping down from the trench toward the continental side - the descending slab.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333606,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Charles Richter}}, Benioff's co-worker, eventually {{c2::perfected the seismograph}}.",
-    "Extra": "Benioff's co-worker who eventually perfected the seismograph/seismometer.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333609,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is a Wadati-Benioff zone?",
-    "Back": "The inclined zone of earthquake foci that dips from an ocean trench beneath the overriding plate, marking the still-rigid, descending oceanic slab.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333611,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Earthquakes along a subducting slab are classed as {{c1::shallow}}-, {{c2::intermediate}}- and {{c3::deep}}-focus.",
-    "Extra": "Shallow-focus (near the trench), intermediate-focus, and deep-focus (to about 300 km and beyond).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333615,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "The inclined zone of earthquake foci marking a subducting slab is the {{c1::Wadati-Benioff zone}}, discovered with seismographs by {{c2::Hugo Benioff}}.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333618,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "{{c1::Seismic tomography}} images cold sinking slabs (blue) because seismic waves travel {{c2::faster}} through colder material.",
-    "Extra": "A sensitive technique using the fact that seismic waves travel faster through colder material; it images cool ocean-floor slabs falling from the surface toward the core-mantle boundary (cool = blue).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333621,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What stress and boundary type are associated with spreading centres?",
-    "Back": "Tensional (extensional) stress; divergent boundary. New basaltic crust forms.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333623,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What stress and boundary type are associated with subduction zones?",
-    "Back": "Compressional stress; convergent boundary. Denser plate forced under less dense plate; crust consumed.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333625,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Define a transform plate boundary.",
-    "Back": "A boundary where one plate slips more or less horizontally past the other under shearing stress; no crust is produced or consumed. The breaks are strike-slip faults.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333627,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Plate boundaries: divergent = {{c1::tensional}} stress; convergent = {{c2::compressional}} stress; transform = {{c3::shear}} stress.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333631,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why are there three (not two) types of plate boundary?",
-    "Back": "Because plates move on a sphere: moving a plate creates a gap (divergent) and an equal overlap (convergent), and the sides of the plate must slide past their neighbours (transform).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333633,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is a strike-slip fault?",
-    "Back": "A fault along which the blocks on either side slip past each other horizontally along the direction the fault is striking; the fault type of transform boundaries (not normal or reverse).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333635,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Describe the simple convection model of plate driving forces and the reading's verdict.",
-    "Back": "Hot material rises under ridges, spreads, cools and sinks at trenches, like water in a saucepan (Fig. 17-18). Verdict: 'about as wrong as you can get'.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333637,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Reason 1 the simple convection model fails?",
-    "Back": "The mesosphere behaves as a solid and the asthenosphere as a plastic, so convection would be very much faster in the asthenosphere - one continuous cycle through both is ridiculous.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333639,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Reason 2 the simple convection model fails?",
-    "Back": "Oceanic lithosphere is very thin and very brittle; it cannot be dragged by friction all the way across an ocean and down a subduction zone (nor pushed from a distant spreading centre).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333641,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Does convection exist in the mantle at all?",
-    "Back": "Yes - its drag helps transport ocean crust - but it cannot act alone, and its pattern is twisted and controlled by rising plumes and falling slabs.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333643,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How much denser is cold oceanic crust than the warm asthenosphere, and why does that matter?",
-    "Back": "0.1 to 0.2 g/cm3 denser; given any opportunity (e.g. breaking against a continent) it sinks through the asthenosphere simply because it is heavier - the basis of slab pull.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333645,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Cold oceanic crust is {{c1::0.1-0.2 g/cm3}} denser than the asthenosphere, so gravity pulls it down: {{c2::slab pull}} accounts for about {{c3::95%}} of the plate-driving force.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333649,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Define slab pull and slab (ridge) push.",
-    "Back": "Slab pull: gravity drags the dense subducting slab down into the trench, pulling the plate behind it (~95% of the force). Slab/ridge push: erupted lavas and the elevated ridge push material away from the spreading centre (minor).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333651,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why is Hawaii important to plate tectonic theory?",
-    "Back": "It sits in the middle of the Pacific Plate with no boundary nearby, yet erupts every few days or weeks - explained by a stationary mantle plume (hot spot) beneath a moving plate.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333653,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "A {{c1::seamount}} is a volcanic island worn down to sea level by {{c2::erosion}}.",
-    "Extra": "A volcanic island that has been worn down to (below) sea level by erosion.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333656,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Describe the Hawaii-Emperor chain and its 'dog-leg'.",
-    "Back": "A chain of islands and seamounts getting older away from Hawaii, formed as the Pacific Plate moved over a stationary hot spot; about 43 million years ago the plate shifted direction, producing the bend.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333658,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "The Hawaii-Emperor chain bends ('dog-leg') because the Pacific Plate changed direction about {{c1::43}} million years ago; the new volcano building off Hawaii's south coast will be called {{c2::Loihi}}.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333661,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "List the four proofs of the Hawaiian hot-spot theory.",
-    "Back": "Islands/seamounts north of Hawaii are volcanically dead; activity increases toward the south of the big island; a new mound (Loihi) is building off the south coast; a tightly defined plume of heat (hot spot) lies beneath the big island and Loihi.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333663,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Define mantle plume and hot spot.",
-    "Back": "Mantle plume: a column of hot material rising from deep in the mantle. Hot spot: the top of a plume, where basalt magma forms beneath the lithosphere. Not every hot spot has a plume beneath it.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333665,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Where do mantle plumes originate?",
-    "Back": "At the core-mantle boundary, from a discontinuous zone called the Ultra Low Velocity Zone (seismic waves lose velocity there), which appears to hold very large magma reservoirs.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333667,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How long does plume material take to reach the lithosphere, and how long do plumes last?",
-    "Back": "Perhaps a couple of million years to rise; plumes exist for 100-200 million years on average.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333669,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Mantle plumes originate at the {{c1::core-mantle boundary}} in the {{c2::Ultra Low Velocity Zone}} and last about {{c3::100-200}} million years.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333673,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "A {{c1::superplume}} is an enormous mantle plume; {{c2::Africa}} is thought to sit over one, explaining its unexpectedly high elevation.",
-    "Extra": "An enormous mantle plume; Africa, which has a concentration of hot spots and may sit higher than its composition warrants because a superplume has spread beneath its thick insulating crust.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333676,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "The magma formed at a hot spot (top of a plume) is {{c1::basalt}}, with a density of about {{c2::2.5}} g/cm3.",
-    "Extra": "Basalt - hot, dark, fluid - about 2.5 g/cm3.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333679,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Densities: basalt magma {{c1::2.5}} g/cm3; continental lithosphere {{c2::2.7}} g/cm3; oceanic lithosphere {{c3::3.0}} g/cm3.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333683,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What happens when a mantle plume rises under lithosphere?",
-    "Back": "The magma bulges the lithosphere into a dome; the dome eventually breaks, magma flows out, and the rift(s) may fill with seawater (e.g. Eastern Africa today).",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333685,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is a triple junction?",
-    "Back": "The three equally spaced fractures produced when crust of uniform strength is domed and broken by a rising hot spot.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333687,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is an aulacogen?",
-    "Back": "The 'failed' arm of a triple junction that does not continue to grow (e.g. the East African Rift); a region of high tectonic instability.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333689,
-   "modelName": "ES2240F Catastrophic Events Cloze",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Text": "A hot spot cracks the crust into a {{c1::triple junction}}; usually two arms grow and the failed arm is called an {{c2::aulacogen}}.",
-    "Extra": "",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333692,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Give the Red Sea example of a triple junction.",
-    "Back": "A hot spot sits at the intersection of the Red Sea, the Gulf of Aden and the East African Rift; the Red Sea and Gulf of Aden are widening every year, the East African Rift is the failed arm.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333694,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How do plumes produce a spreading centre (e.g. the Atlantic)?",
-    "Back": "Divergent arms from one hot spot connect with arms of adjacent hot spots, joining into a continuous spreading centre.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333696,
-   "modelName": "ES2240F Catastrophic Events Basic",
-   "tags": [
-    "Ch3_Plate_Tectonics",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Summarize the complete driving mechanism (Section 8.0).",
-    "Back": "Crust cannot be pushed or dragged across an ocean; it slides off the slight dome over a hot spot and gravity pulls the cold dense slab back into the mantle (slab pull ~95%); convection exists but is twisted by plumes and slabs.",
-    "Topic": "Ch3 Plate Tectonics"
-   }
-  },
-  {
-   "noteId": 1789690333698,
+   "noteId": 1789749154715,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
@@ -935,46 +129,98 @@
    ],
    "fields": {
     "Front": "List the key scientists of plate tectonics in order with their contributions.",
-    "Back": "Wegener (1912, drift), WWII magnetometers, Hess (1960, spreading), Vine and Matthews (1963, magnetic stripes), Benioff and Richter (seismographs, subducting slab).",
+    "Back": "Wegener 1912: continental drift, Pangaea, no mechanism.<br>WWII naval scientists, early 1940s: towed magnetometers detect magnetic patterns.<br>Tharp and Heezen, late 1940s-50s: ocean-floor maps, mid-ocean ridge.<br>Hess 1960: sea-floor spreading.<br>Vine and Matthews 1963: symmetrical magnetic stripes.<br>Benioff and Richter, mid-1950s: seismographs, descending slab.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333700,
+   "noteId": 1789749154716,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "CALC: An island 800 km from the Hawaiian hot spot has lavas dated at 8 Ma. Plate velocity?",
-    "Back": "800 km / 8 Myr = 100 km/Myr = 10 cm/yr.",
+    "Front": "What did the WWII magnetometers actually detect, besides the magnetic patterns in ocean-floor rock?",
+    "Back": "They were glorified metal detectors, particularly sensitive to the magnetic anomalies of hunks of steel (sunken ships) and to the powerful generators needed to run submarines and ships.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333702,
+   "noteId": 1789749154717,
    "modelName": "ES2240F Catastrophic Events Basic",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "CALC: Check Hess's figures: 2.5 cm/yr for 180 million years gives what distance?",
-    "Back": "2.5 cm x 180,000,000 = 450,000,000 cm = 4,500 km, about the width of the Atlantic.",
+    "Front": "Give the timeline of plate tectonic theory in one sequence.",
+    "Back": "Wegener 1912 (drift, Pangaea, no mechanism) -&gt; WWII magnetometers (early 1940s) -&gt; ocean-floor maps and the mid-ocean ridge (late 1940s-50s) -&gt; Hess 1960 (sea-floor spreading, 2.5 cm/yr, 180 Myr) -&gt; Vine and Matthews 1963 (symmetrical stripes) -&gt; Benioff and Richter (subduction from earthquake foci) -&gt; mantle plumes and slab pull.",
     "Topic": "Ch3 Plate Tectonics"
    }
   },
   {
-   "noteId": 1789690333704,
-   "modelName": "ES2240F Catastrophic Events Basic",
+   "noteId": 1789749154731,
+   "modelName": "ES2240F Catastrophic Events Cloze",
    "tags": [
     "Ch3_Plate_Tectonics",
     "week2"
    ],
    "fields": {
-    "Front": "What kind of stress and fault would you expect at the Mid-Atlantic Ridge versus the Japan Trench?",
-    "Back": "Ridge: tensional stress, divergent boundary (normal faulting). Trench: compressional stress, convergent boundary (subduction, Wadati-Benioff zone).",
+    "Text": "{{c1::Alfred Wegener}} published continental drift in {{c1::1912}} and named the supercontinent {{c1::Pangaea}}, but his theory's weakness was that he had no {{c1::mechanism}}.",
+    "Extra": "",
+    "Topic": "Ch3 Plate Tectonics"
+   }
+  },
+  {
+   "noteId": 1789749154732,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Plate_Tectonics",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A {{c1::magnetometer}} measures {{c1::magnetic field strength}}; sensitive ones were towed behind ships in the early {{c1::1940s}} to detect sunken ships and submarines, and accidentally recorded {{c1::ocean-floor}} magnetism.",
+    "Extra": "",
+    "Topic": "Ch3 Plate Tectonics"
+   }
+  },
+  {
+   "noteId": 1789749154733,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Plate_Tectonics",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In {{c1::1960}} {{c1::Harry Hess}}, a professor at {{c1::Princeton}}, proposed sea-floor spreading; he calculated the Atlantic widens about {{c1::2.5 cm}} per year (fingernail growth rate), putting the continents in contact {{c1::180}} million years ago.",
+    "Extra": "",
+    "Topic": "Ch3 Plate Tectonics"
+   }
+  },
+  {
+   "noteId": 1789749154734,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Plate_Tectonics",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Plate motion is watched in real time with very accurate {{c1::GPS}} units fixed to continents, whose satellite-measured positions shift a few {{c1::centimetres per year}}.",
+    "Extra": "",
+    "Topic": "Ch3 Plate Tectonics"
+   }
+  },
+  {
+   "noteId": 1789749154735,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Plate_Tectonics",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The supercontinent Wegener pictured in his jigsaw fit was called {{c1::Pangaea}}; the slides note it began breaking up in the {{c1::Jurassic}}.",
+    "Extra": "",
     "Topic": "Ch3 Plate Tectonics"
    }
   }

@@ -1,265 +1,174 @@
 {
  "deck": "CS3319A Databases::Week 2::Mapping 1:1 and 1:N",
- "note_count": 20,
- "exported": "2026-09-18",
+ "note_count": 13,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991996,
+   "noteId": 1789752891055,
    "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Front": "What are the 'rules of the game' for representing relationships using only tables?",
-    "Back": "You may add as many new columns and rows as you want to existing tables, and you may add new tables; that is all (columns, rows, tables).",
+    "Front": "What are the 'rules of the game' for representing relationships with only tables?",
+    "Back": "1. You may add as many new COLUMNS and ROWS as you want to the existing tables<br>2. If you need a new TABLE you may add that too<br>3. That is ALL you may add or delete - columns, rows and tables. No pointers, no nested records, no lists in cells.",
     "Topic": "Mapping 1:1 and 1:N"
    }
   },
   {
-   "noteId": 1789692991998,
+   "noteId": 1789752891056,
    "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Front": "How is a 1:N relationship mapped (PROFESSOR M --- Works for --- 1 DEPARTMENT)?",
-    "Back": "Put the primary key of the 1 side (DeptID) as a foreign key column in the table of the N side (PROFESSOR); e.g. Laura, Doug, Jamie -&gt; CS; Stuart, Irving -&gt; MA; Michael -&gt; PS.",
+    "Front": "Why does the foreign key go on the N side of a 1:N relationship, and what wrong idea does the instructor try first?",
+    "Back": "Each N-side row relates to AT MOST ONE 1-side row, so a single cell suffices. The wrong idea: an extra column in DEPARTMENT holding 'Laura's ID, Doug's ID and Jamie's ID with commas in between them' - it fails first normal form, because cells must hold one value. Computer Science has three professors, so the reverse direction would need a list.",
     "Topic": "Mapping 1:1 and 1:N"
    }
   },
   {
-   "noteId": 1789692992000,
+   "noteId": 1789752891057,
    "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Front": "Why does the foreign key go on the N (many) side of a 1:N relationship?",
-    "Back": "Each N-side row relates to at most one 1-side row, so a single cell suffices; the 1 side would need a list of keys (not atomic).",
+    "Front": "PROFESSOR (M) Works for (1) DEPARTMENT, with relationship attributes Hours and StartDate. What changes, and which new columns are foreign keys?",
+    "Back": "PROFESSOR gains DeptID (FK), Hours and StartDate; DEPARTMENT is unchanged. ONLY DeptID is a foreign key - 'Hours and StartDate are not foreign keys, because they're not actually keys; they're just attributes on the relationship'. PROFESSOR's primary key is still EmpID; DEPARTMENT has primary key DeptID and no foreign keys yet.",
     "Topic": "Mapping 1:1 and 1:N"
    }
   },
   {
-   "noteId": 1789692992002,
+   "noteId": 1789752891058,
    "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Front": "Where do the attributes of a 1:N relationship go (e.g. Hours, StartDate on Works for)?",
-    "Back": "Into the N-side table along with the foreign key (PROFESSOR gets DeptID, Hours, StartDate).",
+    "Front": "APPLICATION: use the professor and department tables to answer 'which building does Laura Reid work in?'",
+    "Back": "Laura's DeptID is CS; go to DEPARTMENT, look up CS, which is Computer Science in Middlesex College. 'You use the keys to answer different queries' - following a foreign key to the matching primary key is exactly what a JOIN does in SQL.",
     "Topic": "Mapping 1:1 and 1:N"
    }
   },
   {
-   "noteId": 1789692992004,
+   "noteId": 1789752891059,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_1_1_and_1_N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How is a 1:1 relationship mapped, and which side should receive the foreign key?",
+    "Back": "Put the primary key of ONE side into the OTHER side's table as a foreign key, along with the relationship's attributes - pick one option, not both. 'It is always better to take the key from the PARTIAL side and put it into the TOTAL side, because then you won't end up with a bunch of null values.' If both are total it does not matter; if both are partial, pick whichever gives fewer nulls.",
+    "Topic": "Mapping 1:1 and 1:N"
+   }
+  },
+  {
+   "noteId": 1789752891060,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_1_1_and_1_N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "PROFESSOR (1) Chairs (1) DEPARTMENT: compare the two mapping options.",
+    "Back": "Option A - ManageDeptID (FK) in PROFESSOR: Laura NULL, Doug NULL, Michael PS, Stuart MA, Jamie CS, Irving NULL - lots of nulls, because professors do not have to be chairs.<br>Option B - ManagerID (FK) in DEPARTMENT: MA 18, CS 34, PS 15 - NO nulls, because DEPARTMENT has total participation (every department must have a chair). Option B is correct; the slide's answers use it: PROFESSOR(PK EmpID, FK DeptID), DEPARTMENT(PK DeptID, FK ManagerID).",
+    "Topic": "Mapping 1:1 and 1:N"
+   }
+  },
+  {
+   "noteId": 1789752891061,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_1_1_and_1_N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How does the instructor read the participation lines on Chairs, and how do foreign keys show a relationship between rows?",
+    "Back": "Single line on the professor side: a professor chairs zero or one departments (partial). Double line on the department side: every department must have a chair (total). A foreign key shows the relationship because its VALUE equals the primary key value of the related row - Laura's DeptID CS links her to the Computer Science row.",
+    "Topic": "Mapping 1:1 and 1:N"
+   }
+  },
+  {
+   "noteId": 1789752891062,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_1_1_and_1_N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Book / Publisher / MovieDeal: map Publishes (1 Publisher : M Book) and Accepts (1 Book : 1 MovieDeal, attribute AcceptDate).",
+    "Back": "<code>Publisher (PubID, PubName, Address)</code><br><code>Book (ISBN, Title, Price, Author, Available, PubID (FK))</code><br><code>MovieDeal (Deal_ID, NegotiatorName, StudioName, HeadScreenWriter, ISBN (FK), AcceptDate)</code><br>Publishes is 1:M, so the publisher's key goes into BOOK. Accepts is 1:1 and MovieDeal has TOTAL participation, so ISBN goes into MovieDeal (fewer nulls) and AcceptDate travels with it - but AcceptDate is not a foreign key.",
+    "Topic": "Mapping 1:1 and 1:N"
+   }
+  },
+  {
+   "noteId": 1789752891063,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_1_1_and_1_N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLICATION: EMPLOYEE (1) --- has --- (N) COMPANY_CAR, and every company car must be assigned to an employee while most employees have none. Which table gets the foreign key, and could you do it the other way?",
+    "Back": "COMPANY_CAR (the N side) gets EmpID as a foreign key. You could NOT do it the other way: EMPLOYEE would need a list of car IDs in one cell, which breaks first normal form. (Note that the 'which side is total' choice only arises for 1:1 relationships; for 1:N the many side always receives the key.)",
+    "Topic": "Mapping 1:1 and 1:N"
+   }
+  },
+  {
+   "noteId": 1789752891064,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_1_1_and_1_N",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §9.1.1, steps 3-4): what three approaches exist for mapping a binary 1:1 relationship, and what two for a binary 1:N? Which does this course use?",
+    "Back": "1:1 - THREE approaches:<br>1. FOREIGN KEY approach: put the other relation's primary key into one of the two, preferring the TOTAL-participation side. The book calls it 'the most useful' and says it should be followed unless special conditions exist.<br>2. MERGED RELATION approach: merge both entity types AND the relationship into a SINGLE table. Possible only when BOTH participations are total, because only then do the two tables always hold the same number of rows.<br>3. CROSS-REFERENCE or RELATIONSHIP RELATION approach: a third table holding both primary keys as foreign keys; one becomes its primary key and the other a unique key. Drawback: an extra table and extra joins.<br>1:N - TWO approaches:<br>1. FOREIGN KEY approach, preferred 'as it reduces the number of tables'.<br>2. RELATIONSHIP RELATION approach, whose primary key is the N-side key alone; worth using only 'if few tuples in S participate in the relationship, to avoid excessive NULL values'.<br>THIS COURSE USES THE FOREIGN KEY APPROACH FOR BOTH, EVERY TIME.",
+    "Topic": "Mapping 1:1 and 1:N"
+   }
+  },
+  {
+   "noteId": 1789752891080,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Text": "After mapping Works for, PROFESSOR has primary key {{c1::EmpID}} and foreign key {{c2::DeptID}}; DEPARTMENT has primary key DeptID and {{c3::no foreign keys yet}}.",
+    "Text": "A 1:N relationship is mapped by putting the {{c1::primary key of the 1 side}} into the {{c1::N-side (many) table}} as a {{c1::foreign key}}, together with any attributes of the relationship.",
     "Extra": "",
     "Topic": "Mapping 1:1 and 1:N"
    }
   },
   {
-   "noteId": 1789692992008,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How is a 1:1 relationship mapped (PROFESSOR 1 --- Chairs --- 1 DEPARTMENT)?",
-    "Back": "Put the primary key of one side as a foreign key in the other's table: either ManageDeptID in PROFESSOR (many NULLs) or ManagerID in DEPARTMENT (no NULLs: 18 MA, 34 CS, 15 PS).",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992010,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "For a 1:1 relationship, which table should receive the foreign key, and why?",
-    "Back": "The one with total participation (DEPARTMENT for Chairs, since every department has a chair) to avoid nulls; PROFESSOR would be mostly NULL because most professors chair nothing.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992012,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "After mapping Chairs into DEPARTMENT: PK and FKs of PROFESSOR and DEPARTMENT?",
-    "Back": "PROFESSOR: PK EmpID, FK DeptID. DEPARTMENT: PK DeptID, FK ManagerID.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992014,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Book/Publisher/MovieDeal example: map Publishes (1 Publisher : M Book) and Accepts (1 Book : 1 MovieDeal, attribute AcceptDate).",
-    "Back": "Book(ISBN, Title, Price, Author, Available, PubID FK); MovieDeal(Deal_ID, NegotiatorName, StudioName, HeadScreenWriter, ISBN FK, AcceptDate); Publisher(PubID, PubName, Address).",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992016,
+   "noteId": 1789752891081,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Text": "For a 1:N relationship the foreign key goes in the table on the {{c1::N (many)}} side; for a 1:1 relationship it goes in the table with {{c2::total participation}}.",
+    "Text": "For 1:N the foreign key goes on the {{c1::N (many)}} side; for 1:1 it goes into the table with {{c1::total participation}}; putting foreign keys in {{c1::both}} tables of a 1:1 is an error, as is naming relationship attributes such as Hours or AcceptDate foreign keys.",
     "Extra": "",
     "Topic": "Mapping 1:1 and 1:N"
    }
   },
   {
-   "noteId": 1789692992019,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How do foreign keys indicate a relationship between tuples?",
-    "Back": "A foreign key value in one row equals the primary key value of the related row in the other table (e.g. Laura's DeptID = CS links her to the Computer Science row).",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992021,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What wrong idea does the instructor consider first for representing Works for, and why does it fail?",
-    "Back": "Adding a column to DEPARTMENT listing Laura's, Doug's and Jamie's IDs separated by commas; it fails because tables must be normalized (one value per cell), so nothing can be done in the department table.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992023,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Does the foreign key column added for a 1:N relationship have to have a particular name?",
-    "Back": "No; the instructor calls it DeptID but could have called it WorksInID. The star on the slide marks it as a foreign key.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992025,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Using the professor and department tables, how do you answer 'which building does Laura Reid work in?'",
-    "Back": "Laura's DeptID is CS; look up CS in DEPARTMENT: Middlesex College. Keys are used to answer queries across tables.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992027,
+   "noteId": 1789752891082,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Mapping_1:1_and_1:N",
+    "Mapping_1_1_and_1_N",
     "week2"
    ],
    "fields": {
-    "Text": "Hours and StartDate on Works for become columns of PROFESSOR but are {{c1::not foreign keys}}; only {{c2::DeptID}} is, because it refers back to the department table.",
+    "Text": "A foreign key column does {{c1::not}} need a particular name - 'I call it {{c1::DeptID}}, I could have called it {{c1::WorksInID}}'; on the slide it is marked as a foreign key by a star (asterisk).",
     "Extra": "",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992030,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How does the instructor read the participation lines on the Chairs relationship?",
-    "Back": "Single line on the professor side: a professor chairs zero or one departments (partial). Double line on the department side: every department must have a chair (total).",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992032,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "For a 1:1 relationship, what if both sides have total participation? Both partial?",
-    "Back": "Both total: it does not matter which side gets the foreign key. Both partial: it probably does not matter, but pick the side that gives fewer nulls.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992034,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Text": "For a 1:1 relationship, always move the key from the {{c1::partial}} side into the {{c2::total}} side so you do not end up with a bunch of null values.",
-    "Extra": "",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992037,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Book/Publisher/MovieDeal: why does ISBN go into MOVIE DEAL rather than Deal_ID into BOOK, and where does AcceptDate go?",
-    "Back": "MovieDeal has total participation in Accepts, so fewer nulls; AcceptDate goes with the key into MovieDeal but is not a foreign key.",
-    "Topic": "Mapping 1:1 and 1:N"
-   }
-  },
-  {
-   "noteId": 1789692992039,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_1:1_and_1:N",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What are the objectives of the 1:1 and 1:N mapping video?",
-    "Back": "Represent a relationship from an ER diagram as tables, columns and rows, and show what a foreign key is in a table.",
     "Topic": "Mapping 1:1 and 1:N"
    }
   }

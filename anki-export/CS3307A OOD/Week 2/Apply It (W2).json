@@ -1,0 +1,228 @@
+{
+ "deck": "CS3307A OOD::Week 2::Apply It (W2)",
+ "note_count": 17,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749155373,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A class declares <code>FileLogger logger;</code> as a member and creates it itself. Which dependency pattern is this, which UML relationship, and how do you improve it?",
+    "Back": "Concrete + Instantiate, the worst pattern; UML composition. Improve it in two steps: extract an <code>ILogger</code> interface and change the member to <code>ILogger&amp; logger;</code> bound by constructor injection, reaching Abstract + Inject (aggregation, DIP).",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155374,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You need to unit-test <code>Checkout</code> without charging real money. Which of the four patterns makes this possible, and how?",
+    "Back": "Only Abstract + Inject: because <code>Checkout</code> holds <code>IPaymentProcessor&amp;</code>, a test can inject a <code>FakeProcessor : public IPaymentProcessor</code> that records the call. In the other three patterns <code>Checkout</code> either names or creates <code>Paypal</code>, so you would have to edit <code>Checkout</code> to test it.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155375,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A team writes <code>WarningLogger</code>, <code>InfoLogger</code>, and <code>FatalLogger</code>, all printing to console with different prefixes. Diagnose and fix.",
+    "Back": "This is case study 1's mistake: the variation is only DATA (the prefix), not behaviour, so the subclasses are pointless. Replace all three with one <code>ConsoleLogger(std::string level)</code> under <code>ILogger</code>, configured by a constructor argument.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155376,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A team handles console vs database logging with an <code>if (mode == DB)</code> chain inside one parameterized class. Diagnose and fix.",
+    "Back": "The variation is BEHAVIOURAL (different algorithms), so a parameter is the wrong mechanism: it forces if-chains that grow with every new mode. Use an <code>ILogger</code> interface with <code>ConsoleLogger</code> and <code>DatabaseLogger</code> implementations, injected into consumers.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155377,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You delete <code>virtual</code> from <code>~IPaymentProcessor()</code> and then <code>delete</code> a <code>Paypal</code> through an <code>IPaymentProcessor*</code>. What goes wrong?",
+    "Back": "Only the base destructor runs; <code>Paypal</code>'s destructor is skipped, so any resources it holds leak (and the behaviour is formally undefined). That is why every interface in the course declares <code>virtual ~IName() = default;</code>.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155378,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You delete <code>override</code> from <code>void pay(double amount)</code> in <code>Paypal</code> and change the parameter to <code>float</code>. What happens at run time?",
+    "Back": "It silently becomes a NEW, unrelated function rather than an override, so <code>Paypal</code> stays abstract (or the base <code>pay</code> is called through the reference) instead of the intended behaviour. <code>override</code> would have turned this into a compile error.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155379,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You delete <code>explicit</code> from <code>ConsoleLogger(std::string lvl)</code>. What newly compiles that should not?",
+    "Back": "Implicit conversions such as <code>ConsoleLogger x = \"DEBUG\";</code> or passing a bare string where a <code>ConsoleLogger</code> is expected. <code>explicit</code> on single-argument constructors blocks these surprising conversions.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155380,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You delete the trailing <code>const</code> from <code>void log(const std::string&amp; msg) const</code> in <code>ConsoleLogger</code> while <code>ILogger</code> keeps it. What happens?",
+    "Back": "It no longer overrides the base declaration (the signatures differ), so <code>ConsoleLogger</code> stays abstract and cannot be instantiated; with <code>override</code> present you get a clear compile error instead.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155381,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A stakeholder says 'The system must encrypt stored passwords and respond within 2 seconds, and the librarian must be able to renew a loan.' Split these into functional and non-functional.",
+    "Back": "Functional: 'the librarian must be able to renew a loan' (maps to a <code>Librarian</code>/<code>Loan</code> object and a <code>renew()</code> method). Non-functional: encryption of stored passwords (security) and the 2-second response time (performance). Anything about how well the system works is non-functional.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155382,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Apply the noun/verb technique to 'A librarian checks out a book to a member, and the system emails the member a due date.'",
+    "Back": "Nouns give candidate classes: <code>Librarian</code>, <code>Book</code>, <code>Member</code>, <code>DueDate</code> (which may end up an attribute). Verbs give candidate methods: <code>checkOut()</code>, <code>email()</code> / <code>sendReminder()</code>. 'Emails the member' is functional; 'within 5 seconds' would have been non-functional.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155383,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You must model 'Checking out a book always requires verifying membership, and overdue fines are charged only if the book is late.' Which use case relationships?",
+    "Back": "'Check out book' <code>&lt;&lt;include&gt;&gt;</code> 'Verify membership' (always happens, arrow from base to included). 'Charge overdue fine' <code>&lt;&lt;extend&gt;&gt;</code> 'Return book' (optional behaviour, arrow from the extension to the base).",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155384,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A student draws 'Michael' and 'RBC' as actors on a use case diagram. What is wrong?",
+    "Back": "Actors are categorical roles, not individuals: use 'Customer' (or 'Person') and 'Bank'. They must also sit outside the system boundary rectangle.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155385,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "An <code>Engine</code> is destroyed when its <code>Car</code> is destroyed, but a <code>Student</code> outlives the <code>Course</code> object that lists them. Which UML notations do you draw?",
+    "Back": "Car-Engine: composition, a FILLED diamond at the <code>Car</code> end (strong has-a, part dies with the whole); in C++, an <code>Engine</code> member by value. Course-Student: aggregation, a HOLLOW diamond at the <code>Course</code> end; in C++, a reference or pointer member.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155386,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "A <code>Team</code> must have between 5 and 11 <code>Player</code>s, and each <code>Player</code> belongs to exactly one <code>Team</code>. What multiplicities do you write, and at which ends?",
+    "Back": "<code>1</code> at the <code>Team</code> end and <code>5..11</code> at the <code>Player</code> end. The number at the Player end says how many Players go with one Team; the number at the Team end says how many Teams go with one Player.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155387,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "You draw a single arrowhead from <code>Order</code> to <code>Product</code>. What have you asserted about <code>Product</code>?",
+    "Back": "That the association is navigable only from <code>Order</code> to <code>Product</code>: <code>Order</code> holds a reference to its <code>Product</code>s, but <code>Product</code> knows nothing about <code>Order</code> and has no way back.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155388,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Your sequence diagram must show 'if the coupon is valid apply the discount, otherwise show an error'. What do you draw?",
+    "Back": "An <code>alt</code> frame around that region, split by a dashed line into two guarded regions: <code>[if coupon is valid]</code> containing the discount messages, and <code>[else]</code> containing the error message. Exactly one region executes.",
+    "Topic": "Apply It (W2)"
+   }
+  },
+  {
+   "noteId": 1789749155389,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Apply_It_W2",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Someone hands you a sequence diagram containing every class in the system, drawn for a stakeholder meeting. Which named pitfalls does it hit?",
+    "Back": "Both: too many classes on one diagram, and making the diagram too detailed for its audience. The guidance is clarity over completeness - show one scenario clearly, at the level of detail that audience needs.",
+    "Topic": "Apply It (W2)"
+   }
+  }
+ ]
+}

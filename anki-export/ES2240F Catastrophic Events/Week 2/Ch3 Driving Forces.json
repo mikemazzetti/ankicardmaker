@@ -1,0 +1,163 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 2::Ch3 Driving Forces",
+ "note_count": 12,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154531,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Describe Earth's inner core as Chapter 3 does.",
+    "Back": "A solid metal ball, mostly iron, about as hot as the surface of the Sun (estimated 5000-7000 degrees C). It spins at its own rate, at least 0.2 degrees of longitude per year faster than Earth's current rotation rate, inside a very thick layer of liquid metal (again mostly iron), the outer core.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154532,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Describe the simple convection model of plate driving forces, and the reading's verdict.",
+    "Back": "Based on water overturning in a saucepan over a flame: hot material rises under the ridges, spreads sideways, cools and sinks at the trenches. The reading's verdict: 'that's about as wrong as you can get!'",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154533,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give reason 1 why the simple convection model fails.",
+    "Back": "The lower mantle (mesosphere) behaves more or less as a SOLID while the upper mantle (asthenosphere) acts as a PLASTIC. Convection may occur in both, but the rate would be very, very fast in the asthenosphere relative to the mesosphere, so a continuous cycle through both layers is ridiculous.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154534,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Give reason 2 why the simple convection model fails.",
+    "Back": "Oceanic lithosphere is very thin and very brittle. If convection were the only mechanism, this thin lithosphere would have to be DRAGGED by the friction of an asthenosphere current all the way across an ocean and down a subduction zone - and it takes little physics, maths or modelling to show that is impossible. Nor can it be pushed from a distant spreading centre.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154535,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Does convection exist in the mantle at all?",
+    "Back": "Yes - it really is there, and its drag helps transport ocean crust - but it cannot act alone, and its pattern is all twisted and controlled by rising plumes and falling slabs.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154536,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How much denser is cold oceanic crust than the asthenosphere, and why does that matter?",
+    "Back": "Between 0.1 and 0.2 g/cm3 more dense than the underlying/adjacent warm, plastic asthenosphere. So given any opportunity - such as breaking as it collides against a continental mass - oceanic crust will sink through the asthenosphere for no reason other than that it is heavier. Seismic tomography shows it actually falling.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154537,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Define slab pull and slab (ridge) push, and say which dominates.",
+    "Back": "Slab pull: gravity drags the dense, cold subducting plate down into the trench, pulling the length of the plate behind it - about 95% of the force.<br>Slab (ridge) push: erupted lavas and the elevated ridge push material away from the spreading centre - minor.<br>Slab pull dominates.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154538,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Summarize the complete driving mechanism (Section 8.0).",
+    "Back": "You cannot push a thin crust from a distant spreading centre and you cannot drag it on the back of a convection current. You CAN let the crust slide down the slight dome raised over a hot spot and then let gravity pull it gently - 'just like a thin rug on a floor' - back into the mantle. Slab pull provides about 95% of the force; convection exists but is twisted by plumes and slabs.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154539,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does Chapter 3 say Earth's interior really looks like?",
+    "Back": "'I wish I knew!' - certainly nothing like the simple zoned convection scheme of Fig. 18; probably much closer to the somewhat chaotic mess of Fig. 28, where convection cells are interrupted by near-vertical plumes rising from the core-mantle boundary and cold slabs sinking through them.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154540,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Front": "How do the slides describe convection's role, and how does that sit with the written reading?",
+    "Back": "The slides say hot material wells up at mid-ocean ridges and cool material falls with subducting slabs, and that convection is thought to drive the majority of plate motion by pulling the plate from below by friction. The written chapter disagrees: convection exists and helps, but cannot act alone - slab pull (gravity) supplies about 95% of the force.",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154564,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Cold oceanic crust is {{c1::0.1-0.2}} g/cm3 denser than the asthenosphere, so gravity pulls it down: {{c1::slab pull}} accounts for about {{c1::95%}} of the plate-driving force.",
+    "Extra": "",
+    "Topic": "Ch3 Driving Forces"
+   }
+  },
+  {
+   "noteId": 1789749154565,
+   "modelName": "ES2240F Catastrophic Events Cloze",
+   "tags": [
+    "Ch3_Driving_Forces",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The inner core spins at least {{c1::0.2 degrees}} of longitude per year {{c1::faster}} than Earth's rotation rate, inside the thick {{c1::liquid}} outer core.",
+    "Extra": "",
+    "Topic": "Ch3 Driving Forces"
+   }
+  }
+ ]
+}

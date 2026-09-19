@@ -1,147 +1,199 @@
 {
  "deck": "CS3307A OOD::Week 2::Encapsulation",
- "note_count": 11,
- "exported": "2026-09-18",
+ "note_count": 15,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839353,
+   "noteId": 1789749155514,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Encapsulation",
     "week2"
    ],
    "fields": {
-    "Front": "Give the full Week 2 definition of encapsulation.",
-    "Back": "Bundling data (attributes) and the methods that operate on them into a single unit or class, and restricting access to some of the object's components so its internal state is protected from direct access and modification by other objects.",
+    "Front": "State the two halves of the Week 2 definition of encapsulation.",
+    "Back": "(1) Bundling the data (attributes) and the methods that operate on that data into a single unit, the class. (2) Restricting access to some of the object's components, so the internal state is protected from direct access and from modification by other objects.",
     "Topic": "Encapsulation"
    }
   },
   {
-   "noteId": 1789678839355,
+   "noteId": 1789749155515,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why does encapsulation promote getters and setters instead of direct data access?",
+    "Back": "A setter is a place to put additional validation or logic BEFORE a change is made, and a getter is a place to compute or format a value on the way out. The public interface stays the same while the implementation is free to change.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155516,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the <code>Person</code> example, what do <code>getName()</code> and <code>setName()</code> do, and what is the argument for the setter?",
+    "Back": "<code>string getName() { return name; }</code> returns a copy of the private <code>name</code>; <code>void setName(string newName) { name = newName; }</code> is the only way to change it. Today it simply assigns; tomorrow it could reject empty strings or trim whitespace without touching a single caller.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155517,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What small improvement would you make to <code>string getName()</code> in the <code>Person</code> example?",
+    "Back": "Declare it <code>const</code>: <code>string getName() const</code>, as Week 1's <code>Account::getBalance()</code> was, because it only reads the object. Returning <code>const std::string&amp;</code> would also avoid a copy.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155518,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does the <code>BankAccount</code> constructor do with a negative initial balance, and why does it matter?",
+    "Back": "<code>if (initial_balance &gt;= 0) balance = initial_balance; else balance = 0;</code> A negative initial balance is silently replaced with 0, so the object is born valid. Compare Week 1's <code>Account</code>, whose constructor accepted any value.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155519,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What validation do <code>BankAccount::deposit</code> and <code>BankAccount::withdraw</code> perform?",
+    "Back": "<code>deposit</code> adds only <code>if (amount &gt; 0)</code>, so zero or negative deposits are ignored. <code>withdraw</code> subtracts only <code>if (amount &gt; 0 &amp;&amp; amount &lt;= balance)</code>, so the balance can never go negative. Both failures are silent.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155520,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Why does the slides' <code>BankAccount</code> deliberately have no <code>setBalance()</code>?",
+    "Back": "So every change passes through <code>deposit</code>/<code>withdraw</code>, which validate; <code>balance</code> is read-only through <code>getBalance()</code>. The design principle: expose operations that make sense in the domain, not raw field access. A <code>setBalance()</code> would defeat the validation.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155521,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What would improve on the silent failures in <code>BankAccount</code>, and what is the slides' point anyway?",
+    "Back": "Returning a <code>bool</code> or throwing an exception would report the failure. The slide's point is that the DECISION lives in one place: because <code>balance</code> is private, the class alone decides what a valid change is.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155548,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Encapsulation",
     "week2"
    ],
    "fields": {
-    "Text": "The two key aspects of encapsulation are {{c1::data hiding}} (via access modifiers) and {{c2::getter and setter methods}}.",
+    "Text": "The two key aspects of encapsulation are {{c1::data hiding}}, achieved with access modifiers, and {{c1::getter and setter methods}}, which give a place for validation.",
     "Extra": "",
     "Topic": "Encapsulation"
    }
   },
   {
-   "noteId": 1789678839358,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Encapsulation",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why use getter and setter methods instead of direct access?",
-    "Back": "They allow additional validation or logic before changes are made, while keeping the public interface stable.",
-    "Topic": "Encapsulation"
-   }
-  },
-  {
-   "noteId": 1789678839360,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Encapsulation",
-    "week2"
-   ],
-   "fields": {
-    "Front": "In the slide's <code>Person</code> class, what do <code>getName()</code> and <code>setName()</code> do?",
-    "Back": "<code>getName()</code> returns the private <code>name</code>; <code>setName(string newName)</code> assigns <code>name = newName</code>.",
-    "Topic": "Encapsulation"
-   }
-  },
-  {
-   "noteId": 1789678839362,
+   "noteId": 1789749155549,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Encapsulation",
     "week2"
    ],
    "fields": {
-    "Text": "Benefits of encapsulation listed in Week 2: {{c1::security}}, {{c2::maintainability}}, and {{c3::reusability}}.",
+    "Text": "Access modifiers: {{c1::private}} members are accessible only within the class they are declared; {{c1::protected}} members are accessible within the class and by derived classes; {{c1::public}} members are accessible from outside the class.",
+    "Extra": "The default design stance: attributes private, behaviour public, protected reserved for what a subclass genuinely needs.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155550,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The three benefits of encapsulation are {{c1::security}} (prevents unintended interference with the object's data), {{c1::maintainability}} (internal implementation can change while the public interface stays the same), and {{c1::reusability}}.",
     "Extra": "",
     "Topic": "Encapsulation"
    }
   },
   {
-   "noteId": 1789678839366,
+   "noteId": 1789749155551,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Encapsulation",
     "week2"
    ],
    "fields": {
-    "Text": "<code>BankAccount</code>'s constructor sets <code>balance</code> to {{c1::0}} when the initial balance is negative.",
-    "Extra": "Only <code>initial_balance &gt;= 0</code> is accepted.",
-    "Topic": "Encapsulation"
-   }
-  },
-  {
-   "noteId": 1789678839368,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Encapsulation",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What validation does <code>BankAccount::deposit(double amount)</code> perform?",
-    "Back": "Only adds if <code>amount &gt; 0</code>.",
-    "Topic": "Encapsulation"
-   }
-  },
-  {
-   "noteId": 1789678839370,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Encapsulation",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What validation does <code>BankAccount::withdraw(double amount)</code> perform?",
-    "Back": "Only subtracts if <code>amount &gt; 0 &amp;&amp; amount &lt;= balance</code>.",
-    "Topic": "Encapsulation"
-   }
-  },
-  {
-   "noteId": 1789678839372,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Encapsulation",
-    "week2"
-   ],
-   "fields": {
-    "Text": "<code>BankAccount account(1000); account.deposit(500); account.withdraw(200);</code> prints balances {{c1::1000}}, {{c2::1500}}, {{c3::1300}}.",
+    "Text": "<code>BankAccount account(1000); ... deposit(500); ... withdraw(200);</code> prints `Initial Balance: ${{c1::1000}}<code>, </code>After Deposit: ${{c1::1500}}<code>, </code>After Withdrawal: ${{c1::1300}}`.",
     "Extra": "",
     "Topic": "Encapsulation"
    }
   },
   {
-   "noteId": 1789678839376,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Encapsulation",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why does the slide's <code>BankAccount</code> have no <code>setBalance()</code> method?",
-    "Back": "So every change goes through <code>deposit</code>/<code>withdraw</code>, which validate; balance is read-only via <code>getBalance()</code>.",
-    "Topic": "Encapsulation"
-   }
-  },
-  {
-   "noteId": 1789678839378,
+   "noteId": 1789749155552,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Encapsulation",
     "week2"
    ],
    "fields": {
-    "Text": "In <code>BankAccount</code>, <code>balance</code> is {{c1::private}} and can only be accessed through the public methods {{c2::`getBalance`, `deposit`, `withdraw`}}.",
+    "Text": "Encapsulation = {{c1::bundling}} data with the methods that operate on it, plus {{c1::restricting access}} so the internal state is protected from direct access and modification by other objects.",
+    "Extra": "Saying it is only bundling is the classic exam mistake.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155553,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In <code>BankAccount</code>, <code>deposit</code> requires `{{c1::amount &gt; 0}}<code> and </code>withdraw<code> requires </code>{{c1::amount &gt; 0 &amp;&amp; amount &lt;= balance}}`, so the balance can never go {{c1::negative}}.",
+    "Extra": "Both failures are silent.",
+    "Topic": "Encapsulation"
+   }
+  },
+  {
+   "noteId": 1789749155554,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Encapsulation",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The <code>BankAccount</code> constructor keeps <code>initial_balance</code> only when {{c1::initial_balance &gt;= 0}}, otherwise setting balance to {{c1::0}}, so the object is {{c1::born valid}}.",
     "Extra": "",
     "Topic": "Encapsulation"
    }

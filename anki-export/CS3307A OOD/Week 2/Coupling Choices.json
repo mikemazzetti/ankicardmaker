@@ -1,166 +1,140 @@
 {
  "deck": "CS3307A OOD::Week 2::Coupling Choices",
- "note_count": 18,
- "exported": "2026-09-18",
+ "note_count": 21,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839387,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Coupling_Choices",
-    "week2"
-   ],
-   "fields": {
-    "Text": "Coupling patterns from worst to best: {{c1::Concrete + Instantiate}}, {{c2::Concrete + Inject}}, {{c3::Abstract + Instantiate}}, {{c4::Abstract + Inject}} (DIP).",
-    "Extra": "",
-    "Topic": "Coupling Choices"
-   }
-  },
-  {
-   "noteId": 1789678839392,
+   "noteId": 1789749155464,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Describe 'Concrete + Instantiate'.",
-    "Back": "The class creates and owns a concrete type itself; tightest coupling, least flexible. <code>Checkout</code> has <code>Paypal processor;</code> as an owned member.",
+    "Front": "What two independent decisions generate the four dependency patterns?",
+    "Back": "(1) What type does the class depend on: a concrete class (<code>Paypal</code>) or an abstraction (<code>IPaymentProcessor</code>)? (2) Who creates the collaborator: the class instantiates it itself, or it is injected from outside (usually through the constructor)? Two choices with two options each give four patterns.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839394,
+   "noteId": 1789749155465,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Describe 'Concrete + Inject'.",
-    "Back": "The class receives a concrete type from outside (e.g., <code>Checkout(Paypal&amp; p)</code>); avoids creation but is still tied to the concretion.",
+    "Front": "Describe pattern 1, Concrete + Instantiate, with its code and verdict.",
+    "Back": "The class creates and owns a concrete type: <code>class Checkout { Paypal processor; public: void process(double a){ processor.pay(a);} };</code> and <code>main</code> just writes <code>Checkout c;</code>. Tightest coupling, least flexible: to switch to Stripe or to test without hitting PayPal you must edit <code>Checkout</code>.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839396,
+   "noteId": 1789749155466,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Describe 'Abstract + Instantiate'.",
-    "Back": "The class depends on an abstraction (<code>IPaymentProcessor</code> exists) but still instantiates concretes inside (<code>Paypal p1; Stripe p2;</code>); gains polymorphism, still rigid.",
+    "Front": "Describe pattern 2, Concrete + Inject, with its code and verdict.",
+    "Back": "<code>class Checkout { Paypal&amp; processor; public: Checkout(Paypal&amp; p) : processor(p) {} ... };</code> with <code>main</code> writing <code>Paypal paypal; Checkout c(paypal);</code>. Creation has moved out, which is progress, but the parameter type is still <code>Paypal&amp;</code>, so you cannot pass a Stripe processor or a test double.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839398,
+   "noteId": 1789749155467,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Describe 'Abstract + Inject'.",
-    "Back": "The class depends only on the abstraction (<code>IPaymentProcessor&amp; processor</code>) and concretes are injected at runtime; Dependency Inversion Principle; most flexible and testable.",
+    "Front": "Describe pattern 3, Abstract + Instantiate, with its code and verdict.",
+    "Back": "<code>IPaymentProcessor</code> exists and <code>Paypal</code>/<code>Stripe</code> implement it, but <code>Checkout</code> still declares <code>Paypal p1; Stripe p2;</code> by value and calls <code>p1.pay(amount/2); p2.pay(amount/2);</code>. Polymorphism exists in principle but <code>Checkout</code> does not use it, so adding or swapping a processor still means editing <code>Checkout</code>.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839400,
+   "noteId": 1789749155468,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Which UML relationship corresponds to 'instantiate' patterns, and which to 'inject' patterns?",
-    "Back": "Instantiate = Composition (class owns what it creates); Inject = Aggregation (class holds a reference to something created elsewhere).",
+    "Front": "Describe pattern 4, Abstract + Inject, with its code and verdict.",
+    "Back": "<code>class Checkout { IPaymentProcessor&amp; processor; public: Checkout(IPaymentProcessor&amp; p) : processor(p) {} void process(double a){ processor.pay(a);} };</code> <code>Checkout</code> never names a concrete type. Most flexible (add <code>Crypto : public IPaymentProcessor</code> with no change) and most testable (inject a <code>FakeProcessor</code>).",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839402,
+   "noteId": 1789749155469,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "In C++, how is composition typically expressed versus aggregation in the slides?",
-    "Back": "Composition: member held by value (<code>Paypal processor;</code>). Aggregation: member held by reference (<code>Paypal&amp; processor;</code> or <code>IPaymentProcessor&amp; processor;</code>) bound in the constructor.",
+    "Front": "Why is pattern 3 NOT the Dependency Inversion Principle even though an interface exists?",
+    "Back": "<code>Checkout</code> still declares <code>Paypal p1; Stripe p2;</code> by value, so it names, creates, and owns the concretes. DIP requires the high-level module to depend ONLY on the abstraction; merely having an interface in the file is not enough.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839404,
+   "noteId": 1789749155470,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "What is the Dependency Inversion Principle (DIP) as illustrated by <code>Checkout</code>?",
-    "Back": "High-level <code>Checkout</code> depends only on the abstraction <code>IPaymentProcessor</code>, not on concrete <code>Paypal</code>/<code>Stripe</code>; concretes are injected.",
+    "Front": "State the Dependency Inversion Principle using the <code>Checkout</code> example.",
+    "Back": "High-level modules (<code>Checkout</code>) do not depend on low-level modules (<code>Paypal</code>, <code>Stripe</code>); both depend on an abstraction (<code>IPaymentProcessor</code>). <code>Checkout</code> holds <code>IPaymentProcessor&amp;</code> and the concrete is injected at run time.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839406,
+   "noteId": 1789749155471,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Write the <code>IPaymentProcessor</code> interface from the slides.",
-    "Back": "<code>class IPaymentProcessor { public: virtual ~IPaymentProcessor() = default; virtual void pay(double amount) = 0; };</code>",
+    "Front": "Write the <code>IPaymentProcessor</code> interface exactly as it appears in the slides.",
+    "Back": "<code>class IPaymentProcessor { public: virtual ~IPaymentProcessor() = default; virtual void pay(double amount) = 0; };</code> A C++ interface is a class containing only pure virtual functions plus a virtual destructor; the <code>I</code> prefix is the course's naming convention.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839408,
+   "noteId": 1789749155472,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "Why does an interface need <code>virtual ~IPaymentProcessor() = default;</code>?",
-    "Back": "A virtual destructor ensures the derived class destructor runs when deleting through a base-class pointer.",
+    "Front": "Why must an interface declare <code>virtual ~IPaymentProcessor() = default;</code>?",
+    "Back": "A virtual destructor ensures the derived class's destructor runs when an object is deleted through a base-class pointer; without it the derived destructor is skipped and resources leak. <code>= default</code> asks the compiler to generate the ordinary body.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839410,
+   "noteId": 1789749155473,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "What does <code>Checkout(IPaymentProcessor&amp; p) : processor(p) {}</code> implement?",
-    "Back": "Constructor injection: the member reference <code>processor</code> is bound to whatever concrete processor is passed in.",
+    "Front": "What does <code>Checkout(IPaymentProcessor&amp; p) : processor(p) {}</code> implement, and what is the alternative it replaces?",
+    "Back": "Constructor injection: the member reference is bound to whatever concrete processor the caller passes. It replaces the class creating its own collaborator internally, which is what made patterns 1 and 3 rigid.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839412,
-   "modelName": "CS3307A OOD Cloze",
-   "tags": [
-    "Coupling_Choices",
-    "week2"
-   ],
-   "fields": {
-    "Text": "In pattern 4 (Abstract + Inject), <code>Checkout c1(paypal); c1.process(120.0);</code> prints `{{c1::Paid $120 with Paypal}}<code> and </code>Checkout c2(stripe); c2.process(80.0);<code> prints </code>{{c2::Paid $80 with Stripe}}`.",
-    "Extra": "",
-    "Topic": "Coupling Choices"
-   }
-  },
-  {
-   "noteId": 1789678839415,
+   "noteId": 1789749155474,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
@@ -168,71 +142,136 @@
    ],
    "fields": {
     "Front": "Why is <code>processor.pay(amount)</code> in pattern 4 called a polymorphic call?",
-    "Back": "<code>pay</code> is virtual and <code>processor</code> is a reference to the base type, so the actual object's override (<code>Paypal::pay</code> or <code>Stripe::pay</code>) is chosen at runtime.",
+    "Back": "<code>pay</code> is virtual and <code>processor</code> is a reference to the base type, so C++ looks up the actual object's type at run time and calls <code>Paypal::pay</code> or <code>Stripe::pay</code> accordingly. <code>Checkout</code> never knows which one it got.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839417,
+   "noteId": 1789749155475,
    "modelName": "CS3307A OOD Basic",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Front": "What is the guiding principle of the coupling-choices lecture?",
-    "Back": "Couple to abstractions, not concretions.",
+    "Front": "What does pattern 3's <code>Checkout c; c.process(100.0);</code> print, and why?",
+    "Back": "<code>Paid $50 with Paypal</code> then <code>Paid $50 with Stripe</code>: <code>process</code> splits the amount with <code>p1.pay(amount/2); p2.pay(amount/2);</code> over the two owned concrete members.",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839419,
+   "noteId": 1789749155476,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Coupling_Choices",
+    "week2"
+   ],
+   "fields": {
+    "Front": "State the guiding principle of the coupling-choices lecture and the one-line reason behind it.",
+    "Back": "Couple to abstractions, not concretions. Dependencies shape flexibility: the type you name in a member declaration is the type you are stuck with.",
+    "Topic": "Coupling Choices"
+   }
+  },
+  {
+   "noteId": 1789749155489,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Text": "Coupling pattern summary: Concrete + Instantiate = <code>Checkout</code> creates a <code>Paypal</code> itself → {{c1::Composition}}; Concrete + Inject = <code>Checkout</code> receives a <code>Paypal</code> → {{c2::Aggregation}}.",
+    "Text": "The four dependency patterns from worst to best: {{c1::Concrete + Instantiate}}, {{c1::Concrete + Inject}}, {{c1::Abstract + Instantiate}}, {{c1::Abstract + Inject}} (DIP).",
     "Extra": "",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839422,
+   "noteId": 1789749155490,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Text": "Coupling pattern summary: Abstract + Instantiate = depends on <code>IPaymentProcessor</code> but still news concretes → {{c1::Composition}}; Abstract + Inject = gets concretes injected → {{c2::Aggregation}}.",
+    "Text": "Summary table: Concrete + Instantiate -&gt; {{c1::Composition}}; Concrete + Inject -&gt; {{c1::Aggregation}}; Abstract + Instantiate -&gt; {{c1::Composition}}; Abstract + Inject -&gt; {{c1::Aggregation}}.",
+    "Extra": "Instantiate always means composition (the class owns what it creates); inject always means aggregation (the class borrows what it is given).",
+    "Topic": "Coupling Choices"
+   }
+  },
+  {
+   "noteId": 1789749155491,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Coupling_Choices",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In C++, composition is a member held {{c1::by value}} (<code>Paypal processor;</code>) and aggregation is a member held {{c1::by reference}} (<code>IPaymentProcessor&amp; processor;</code>) bound in the {{c1::constructor}}.",
     "Extra": "",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839425,
+   "noteId": 1789749155492,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Text": "The most flexible and testable dependency pattern is {{c1::Abstract + Inject}}, which implements the {{c2::Dependency Inversion Principle}}.",
+    "Text": "In pattern 4, <code>Checkout c1(paypal); c1.process(120.0);</code> prints {{c1::Paid $120 with Paypal}} and <code>Checkout c2(stripe); c2.process(80.0);</code> prints {{c1::Paid $80 with Stripe}} - from the {{c1::same}} <code>Checkout</code> class.",
     "Extra": "",
     "Topic": "Coupling Choices"
    }
   },
   {
-   "noteId": 1789678839428,
+   "noteId": 1789749155493,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Coupling_Choices",
     "week2"
    ],
    "fields": {
-    "Text": "A C++ interface is a class containing only {{c1::pure virtual}} functions (declared with {{c2::`= 0`}}) plus a virtual destructor.",
+    "Text": "A C++ interface is a class containing only {{c1::pure virtual}} functions, declared with {{c1::= 0}}, plus a {{c1::virtual destructor}}; implementations mark their methods with {{c1::override}}.",
+    "Extra": "",
+    "Topic": "Coupling Choices"
+   }
+  },
+  {
+   "noteId": 1789749155494,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Coupling_Choices",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Concrete + Instantiate is the {{c1::tightest}} coupling and least flexible; Abstract + Inject is the {{c1::most flexible and testable}} and implements the {{c1::Dependency Inversion Principle}}.",
+    "Extra": "",
+    "Topic": "Coupling Choices"
+   }
+  },
+  {
+   "noteId": 1789749155495,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Coupling_Choices",
+    "week2"
+   ],
+   "fields": {
+    "Text": "In pattern 1 <code>Checkout</code> holds `{{c1::Paypal processor;}}<code>; in pattern 2 it holds </code>{{c1::Paypal&amp; processor;}}<code>; in pattern 4 it holds </code>{{c1::IPaymentProcessor&amp; processor;}}`.",
+    "Extra": "By value = composition; by reference bound in the constructor = aggregation.",
+    "Topic": "Coupling Choices"
+   }
+  },
+  {
+   "noteId": 1789749155496,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Coupling_Choices",
+    "week2"
+   ],
+   "fields": {
+    "Text": "The principle of the lecture: couple to {{c1::abstractions}}, not {{c1::concretions}} - because the type you name in a member declaration is the type you are stuck with.",
     "Extra": "",
     "Topic": "Coupling Choices"
    }

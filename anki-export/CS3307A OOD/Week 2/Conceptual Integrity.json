@@ -1,44 +1,57 @@
 {
  "deck": "CS3307A OOD::Week 2::Conceptual Integrity",
- "note_count": 3,
- "exported": "2026-09-18",
+ "note_count": 4,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789678839381,
+   "noteId": 1789749155397,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Conceptual_Integrity",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is the organizational payoff of conceptual integrity?",
+    "Back": "It isolates the core complexity of the design, so the rest of the team can focus on implementation without worrying about (or re-litigating) the design decisions.",
+    "Topic": "Conceptual Integrity"
+   }
+  },
+  {
+   "noteId": 1789749155398,
+   "modelName": "CS3307A OOD Basic",
+   "tags": [
+    "Conceptual_Integrity",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What is modularization, and how does it relate to encapsulation?",
+    "Back": "Breaking large systems into smaller, manageable modules, each with a well-defined interface and hidden internal details. It is the same idea as class-level encapsulation, one scale up: a clean interface outside, hidden complexity inside, one coherent vision governing both.",
+    "Topic": "Conceptual Integrity"
+   }
+  },
+  {
+   "noteId": 1789749155431,
    "modelName": "CS3307A OOD Cloze",
    "tags": [
     "Conceptual_Integrity",
     "week2"
    ],
    "fields": {
-    "Text": "{{c1::Conceptual integrity}} is a consistent and unified vision across the entire project, with one source controlling design decisions and complexity hidden behind a simpler, unified interface.",
+    "Text": "{{c1::Conceptual integrity}} is a consistent and unified vision across the entire project, in which a single {{c1::source}} controls the design decisions so the system's complexity is hidden behind a simpler, unified interface.",
+    "Extra": "Just as a class in OOP hides its internal workings behind public methods.",
+    "Topic": "Conceptual Integrity"
+   }
+  },
+  {
+   "noteId": 1789749155432,
+   "modelName": "CS3307A OOD Cloze",
+   "tags": [
+    "Conceptual_Integrity",
+    "week2"
+   ],
+   "fields": {
+    "Text": "{{c1::Modularization}} breaks large systems into smaller manageable modules, each with a {{c1::well-defined interface}} and {{c1::hidden internal details}} - the same idea as class-level encapsulation, one scale up.",
     "Extra": "",
-    "Topic": "Conceptual Integrity"
-   }
-  },
-  {
-   "noteId": 1789678839383,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Conceptual_Integrity",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How does conceptual integrity help a team?",
-    "Back": "It isolates the core complexity of the design so the rest of the team can focus on implementation without worrying about design decisions.",
-    "Topic": "Conceptual Integrity"
-   }
-  },
-  {
-   "noteId": 1789678839385,
-   "modelName": "CS3307A OOD Basic",
-   "tags": [
-    "Conceptual_Integrity",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is modularization and how does it relate to OOP?",
-    "Back": "Breaking large systems into smaller manageable modules, each with a well-defined interface and hidden internal details, similar to how classes encapsulate complexity.",
     "Topic": "Conceptual Integrity"
    }
   }

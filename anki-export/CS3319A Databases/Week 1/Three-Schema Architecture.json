@@ -1,226 +1,135 @@
 {
  "deck": "CS3319A Databases::Week 1::Three-Schema Architecture",
- "note_count": 17,
- "exported": "2026-09-18",
+ "note_count": 10,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991333,
+   "noteId": 1789752890763,
    "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Three-Schema_Architecture",
+    "Three_Schema_Architecture",
     "week1"
    ],
    "fields": {
-    "Front": "Name the three levels of the three-schema architecture.",
-    "Back": "External level (views/external schemas), conceptual level (conceptual schema), internal level (physical schema).",
+    "Front": "Name the three levels of the three-schema architecture and say what each describes.",
+    "Back": "1. External level: the external schemas or VIEWS - each shows only the data one user or program cares about and hides the rest.<br>2. Conceptual level: the structure of the whole database for all users, normally described as tables (the relational model); this is where you build in this course.<br>3. Internal (physical) level: physical storage - the hard disks, the ones and zeros, and the INDICES that give fast access.",
     "Topic": "Three-Schema Architecture"
    }
   },
   {
-   "noteId": 1789692991335,
-   "modelName": "CS3319A Databases Cloze",
+   "noteId": 1789752890764,
+   "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Three-Schema_Architecture",
+    "Three_Schema_Architecture",
     "week1"
    ],
    "fields": {
-    "Text": "The internal (physical) level describes the {{c1::data storage}} and the {{c2::indices}} used to get to the data.",
+    "Front": "Give the instructor's weather-database example of two external views, and her hospital example.",
+    "Back": "Weather: a web program that needs only Ontario data and a mobile app that needs all of Canada - each program is shown only the tables and data it needs. Hospital: a nurse's view might show patients and rooms but not billing.",
+    "Topic": "Three-Schema Architecture"
+   }
+  },
+  {
+   "noteId": 1789752890765,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Three_Schema_Architecture",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Define logical and physical data independence and say what each protects.",
+    "Back": "Logical data independence: the capacity to change the CONCEPTUAL schema without affecting the EXTERNAL schemas/views - it protects the views and programs from new or changed tables.<br>Physical data independence: the ability to change the INTERNAL schema without changing the CONCEPTUAL schema - it protects the tables from changes in storage.<br>The goal is to have both.",
+    "Topic": "Three-Schema Architecture"
+   }
+  },
+  {
+   "noteId": 1789752890766,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Three_Schema_Architecture",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: a failing disk is replaced and an index is built on OHIP number. Which level changed, which independence applies, and who notices?",
+    "Back": "The internal (physical) level. Physical data independence applies. Designers do not change their schema and programmers do not change code; the only thing anyone may notice is that access is suddenly a lot faster.",
+    "Topic": "Three-Schema Architecture"
+   }
+  },
+  {
+   "noteId": 1789752890767,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Three_Schema_Architecture",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLICATION: classify each change by level - (a) add a column to Room, (b) build an index, (c) the Ontario web app now wants Quebec data too.",
+    "Back": "(a) Conceptual - logical data independence protects the existing views.<br>(b) Internal - physical data independence protects the conceptual schema.<br>(c) External only - just that one view changes; no independence is needed.<br>Also: adding Prince Edward Island tables to the weather database is a CONCEPTUAL change, and the Ontario-only application 'shouldn't even know' - logical data independence. Caveat: removing a table the application actually uses could still break it.",
+    "Topic": "Three-Schema Architecture"
+   }
+  },
+  {
+   "noteId": 1789752890768,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Three_Schema_Architecture",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §2.1.1): name the four categories of data model, with an example of each.",
+    "Back": "1. HIGH-LEVEL or CONCEPTUAL: concepts close to how users perceive data - entities, attributes, relationships. The ER and EER models.<br>2. REPRESENTATIONAL or IMPLEMENTATION, also called RECORD-BASED: understandable to users but close to how data is stored and directly implementable. The relational model, and the LEGACY network and hierarchical models.<br>3. LOW-LEVEL or PHYSICAL: record formats, record orderings and ACCESS PATHS such as indexing and hashing; meant for specialists.<br>4. SELF-DESCRIBING: the description of the data is combined with the values. XML, key-value stores and NOSQL systems.",
+    "Topic": "Three-Schema Architecture"
+   }
+  },
+  {
+   "noteId": 1789752890769,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Three_Schema_Architecture",
+    "week1"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §2.3.1): name the four DBMS languages and what each defines, then define host language, data sublanguage and query language.",
+    "Back": "DDL (data definition language): the conceptual schema, and in most systems the external schemas too. Used by the DBA and designers.<br>SDL (storage definition language): the internal schema. Most relational DBMSs have no separate SDL; SQL's was removed, and storage is controlled by functions and parameters.<br>VDL (view definition language): external schemas and their mappings to the conceptual schema; SQL plays this role in relational systems.<br>DML (data manipulation language): retrieval, insertion, deletion and modification. A HIGH-LEVEL/NONPROCEDURAL DML is SET-AT-A-TIME and DECLARATIVE (SQL); a LOW-LEVEL/PROCEDURAL DML is RECORD-AT-A-TIME and needs loops.<br>When a DML is embedded in a general-purpose language, that language is the HOST LANGUAGE and the DML is the DATA SUBLANGUAGE. A high-level DML used interactively on its own is a QUERY LANGUAGE. SQL is DDL, VDL and DML in one.",
+    "Topic": "Three-Schema Architecture"
+   }
+  },
+  {
+   "noteId": 1789752890797,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Three_Schema_Architecture",
+    "week1"
+   ],
+   "fields": {
+    "Text": "We want BOTH kinds of data independence because it makes life easier for the {{c1::DBA}}, the {{c1::designer}}, the {{c1::programmer}} and the end user: a change at one level does not 'screw up' the other person's level.",
     "Extra": "",
     "Topic": "Three-Schema Architecture"
    }
   },
   {
-   "noteId": 1789692991338,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What does the conceptual level describe?",
-    "Back": "The structure of the whole database for all users; normally the data is described as tables (the relational model).",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991340,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What does the external level (a view) show?",
-    "Back": "Each view shows only the data that a particular end user is interested in and hides the other data.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991342,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Define logical data independence.",
-    "Back": "The capacity to change the conceptual schema without affecting the external schemas or views.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991344,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Define physical data independence.",
-    "Back": "The ability to change the physical (internal) schema without changing the conceptual schema.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991346,
+   "noteId": 1789752890798,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Three-Schema_Architecture",
+    "Three_Schema_Architecture",
     "week1"
    ],
    "fields": {
-    "Text": "{{c1::Logical}} data independence: change the conceptual schema without affecting the views. {{c2::Physical}} data independence: change the physical schema without changing the conceptual schema.",
+    "Text": "The three-schema (ANSI/SPARC) levels are {{c1::external}} (views - an Ontario-only web app versus an all-Canada mobile app), {{c1::conceptual}} (the whole database as tables) and {{c1::internal/physical}} (disks, ones and zeros, indices).",
     "Extra": "",
     "Topic": "Three-Schema Architecture"
    }
   },
   {
-   "noteId": 1789692991349,
+   "noteId": 1789752890799,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Three-Schema_Architecture",
+    "Three_Schema_Architecture",
     "week1"
    ],
    "fields": {
-    "Text": "Adding an index changes the {{c1::internal (physical)}} level; {{c2::physical}} data independence keeps the conceptual schema (tables) unaffected.",
+    "Text": "Textbook (Elmasri §2.2.2): data independence works because when a schema changes at one level, the schema above is untouched and only the {{c1::mapping}} between the two levels changes. {{c1::Logical}} data independence is the harder of the two to achieve, because it must absorb {{c1::structural and constraint changes}} without touching application programs.",
     "Extra": "",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991352,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Adding a column to a table changes which level, and which data independence protects existing views?",
-    "Back": "The conceptual level; logical data independence.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991354,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Text": "The goal is to have {{c1::both physical and logical}} data independence.",
-    "Extra": "",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991356,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What does the instructor say lives at the internal level?",
-    "Back": "The hard disks, the ones and zeros that represent the data, and indices that jump quickly to a record's location on disk when a table has hundreds of thousands of records.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991358,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Text": "The database you build in this course is built at the {{c1::conceptual}} level (tables, columns, rows) and physically stored at the {{c2::internal}} level.",
-    "Extra": "",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991361,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Give the instructor's weather-database example of two external views.",
-    "Back": "A web program that needs only Ontario data and a mobile app that needs all of Canada; each program is shown only the tables and data it needs.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991363,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Text": "Logical data independence example: adding tables for {{c1::Prince Edward Island}} to the weather database should not affect the {{c2::Ontario-only}} application; 'it shouldn't even know'.",
-    "Extra": "",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991366,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "What caveat does the instructor give about logical data independence?",
-    "Back": "If you remove a table that an application actually uses, you can break it. Independence is about changes to parts of the conceptual schema the application does not use not forcing changes to its code.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991368,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Give the instructor's two examples of physical data independence.",
-    "Back": "Moving all the data from a failing disk to a new disk; building a new index because access to tens of thousands of files is slow. Designers do not change their schema; users may only notice faster access.",
-    "Topic": "Three-Schema Architecture"
-   }
-  },
-  {
-   "noteId": 1789692991370,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Three-Schema_Architecture",
-    "week1"
-   ],
-   "fields": {
-    "Front": "Why does the instructor say we want both kinds of data independence?",
-    "Back": "It makes life easier for the DBA, designer, programmer and end user because changes at one level do not 'screw up' the other person's level.",
     "Topic": "Three-Schema Architecture"
    }
   }

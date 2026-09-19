@@ -1,226 +1,109 @@
 {
  "deck": "CS3319A Databases::Week 2::Mapping Weak & Multivalued",
- "note_count": 17,
- "exported": "2026-09-18",
+ "note_count": 8,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692992073,
+   "noteId": 1789752891230,
    "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Mapping_Weak_&_Multivalued",
+    "Mapping_Weak_Multivalued",
     "week2"
    ],
    "fields": {
-    "Front": "State the rule for mapping a weak entity.",
-    "Back": "Bring the owner's key into the weak entity's table as a foreign key column and combine it with the partial key to form the new primary key.",
+    "Front": "Why is the SECTION table invalid without CourseNum, and what does adding it fix?",
+    "Back": "Rows read 001, MC110, 300 twice - 'I can't tell this row from this row', so the every-row-unique rule is violated, and SectionNum alone does not say which course a section belongs to (every course has a section 001). Adding CourseNum (FK) gives 'section 001 for CS3319 and section 001 for MA2222'. Primary key (SectionNum, CourseNum); foreign key CourseNum.",
     "Topic": "Mapping Weak & Multivalued"
    }
   },
   {
-   "noteId": 1789692992075,
-   "modelName": "CS3319A Databases Cloze",
+   "noteId": 1789752891231,
+   "modelName": "CS3319A Databases Basic",
    "tags": [
-    "Mapping_Weak_&_Multivalued",
+    "Mapping_Weak_Multivalued",
     "week2"
    ],
    "fields": {
-    "Text": "After mapping the weak entity SECTION, its primary key is {{c1::(SectionNum, CourseNum)}} and its foreign key is {{c2::CourseNum}}.",
+    "Front": "Map BUILDING (BuildingID, Address, NumOfFloors) (1) --- has --- (N) ROOM (RoomNum, NumDoors, SquareFeet, Floor).",
+    "Back": "<code>Building (BuildingID, Address, NumberOfFloors)</code><br><code>Room (RoomNum, NumDoors, SquareFeet, Floor, BuildingID (FK))</code> with primary key (BuildingID, RoomNum).<br>Why weak: 'if we delete the building, we lose all the rooms, and room number is a weak key because we could have room 22 in one building and room 22 in another.' Room gets its own four attributes PLUS a fifth.",
+    "Topic": "Mapping Weak & Multivalued"
+   }
+  },
+  {
+   "noteId": 1789752891232,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Weak_Multivalued",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLICATION: STUDENT(StudentNum, FirstName, LastName) has multi-valued LanguageSpoken; Homer speaks English and Spanish, Lisa English, French and Spanish. Write the tables.",
+    "Back": "<code>STUDENT (StudentNum, FirstName, LastName)</code> - LanguageSpoken removed<br><code>LANGUAGESPOKEN (StudentNum (FK), Language)</code>, primary key (StudentNum, Language), with rows (251012345, English), (251012345, Spanish), (251012333, English), (251012333, Spanish), (251012333, French), ...<br>'Each row is unique, but we can tell exactly who speaks which language.'",
+    "Topic": "Mapping Weak & Multivalued"
+   }
+  },
+  {
+   "noteId": 1789752891233,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Mapping_Weak_Multivalued",
+    "week2"
+   ],
+   "fields": {
+    "Front": "In the seven rules, what do 'regular entity' and 'simple attribute' mean, and what are the objectives of this video?",
+    "Back": "Regular = NON-WEAK; simple = NON-MULTIVALUED. Objectives: represent weak entities in a relational model; represent multi-valued attributes; and state the seven rules you always follow when taking an ER diagram to a relational database.",
+    "Topic": "Mapping Weak & Multivalued"
+   }
+  },
+  {
+   "noteId": 1789752891255,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Mapping_Weak_Multivalued",
+    "week2"
+   ],
+   "fields": {
+    "Text": "A weak entity is mapped by bringing the {{c1::owner's primary key}} into the weak entity's table as a {{c1::foreign key}} and combining it with the {{c1::partial key}} to form the new primary key.",
     "Extra": "",
     "Topic": "Mapping Weak & Multivalued"
    }
   },
   {
-   "noteId": 1789692992078,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why is SectionNum alone not a valid key for SECTION?",
-    "Back": "Every course has a section 001, so SectionNum repeats (and rows like 001 MC110 300 would be duplicates).",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992080,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Map BUILDING (BuildingID, Address, NumOfFloors) 1 --- has --- N ROOM (RoomNum, NumDoors, SquareFeet, Floor).",
-    "Back": "Building(BuildingID, Address, NumberOfFloors); Room(RoomNum, NumDoors, SquareFeet, Floor, BuildingID FK) with PK (BuildingID, RoomNum).",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992082,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "State the rule for mapping a multi-valued attribute.",
-    "Back": "Create a new table containing the entity's key (as a foreign key) and the multi-valued attribute; their combination is the new primary key. Remove the multi-valued attribute from the original table.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992084,
+   "noteId": 1789752891256,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Mapping_Weak_&_Multivalued",
+    "Mapping_Weak_Multivalued",
     "week2"
    ],
    "fields": {
-    "Text": "LANGUAGESPOKEN has primary key {{c1::(StudentNum, Language)}} and foreign key {{c2::StudentNum}}.",
+    "Text": "In both a weak-entity mapping and a plain 1:N mapping the owner's key comes in as a {{c1::foreign key}}; the difference is that for a weak entity that foreign key is {{c1::also part of the primary key}} (owner key + {{c1::partial key}}), whereas in a 1:N mapping the table keeps its own key.",
     "Extra": "",
     "Topic": "Mapping Weak & Multivalued"
    }
   },
   {
-   "noteId": 1789692992087,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why must Language be part of LANGUAGESPOKEN's primary key?",
-    "Back": "StudentNum alone repeats (Homer has two rows); only the pair (StudentNum, Language) is unique.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992089,
+   "noteId": 1789752891257,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Mapping_Weak_&_Multivalued",
+    "Mapping_Weak_Multivalued",
     "week2"
    ],
    "fields": {
-    "Text": "After mapping a multi-valued attribute to its own table, you must {{c1::remove the attribute from the original entity's table}}.",
+    "Text": "A multi-valued attribute is mapped by creating a {{c1::new table}} holding the entity's key as a {{c1::foreign key}} plus {{c1::the attribute itself}}; their combination is the primary key. You must then remove the attribute from the original entity's table. The instructor treats it 'kind of like a many-to-many situation'.",
     "Extra": "",
     "Topic": "Mapping Weak & Multivalued"
    }
   },
   {
-   "noteId": 1789692992091,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How is a weak entity's mapping different from a plain 1:N mapping?",
-    "Back": "In both, the owner's key becomes a foreign key; but for a weak entity the foreign key is also part of the primary key.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992093,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why does the instructor say the SECTION table without CourseNum is invalid?",
-    "Back": "Two rows read 001, MC110, 300: 'I can't tell this row from this row', so every-row-unique is violated and SectionNum alone does not say which course a section belongs to.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992095,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why is ROOM a weak entity, in the instructor's words?",
-    "Back": "If we delete the building we lose all the rooms, and room number is a weak key because room 22 can exist in one building and also in another.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992097,
+   "noteId": 1789752891258,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
-    "Mapping_Weak_&_Multivalued",
+    "Mapping_Weak_Multivalued",
     "week2"
    ],
    "fields": {
-    "Text": "The ROOM table has its own {{c1::four}} attributes plus a {{c2::fifth}}, BuildingID (FK); its key is (BuildingID, RoomNum).",
+    "Text": "LANGUAGESPOKEN has primary key {{c1::(StudentNum, Language)}} and foreign key {{c1::StudentNum}}; Language must be part of the key because {{c1::StudentNum alone repeats}} (Homer has two rows). Structurally a multi-valued attribute is a tiny weak entity with a one-attribute partial key.",
     "Extra": "",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992100,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How does the instructor say to treat a multi-valued attribute?",
-    "Back": "'Kind of like a many-to-many situation': create a new table whose key is the entity's key combined with the attribute itself.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992102,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What are the objectives of the weak-entities video?",
-    "Back": "Represent weak entities in a relational model; represent multi-valued attributes; and know the seven rules for taking an ER diagram to a relational database.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992104,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "In the seven rules, what does the instructor say 'regular entity' and 'simple attribute' mean?",
-    "Back": "Regular means non-weak; simple means non-multivalued.",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992106,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Text": "In the M:N rule, attributes on the relationship become columns in the new table but are {{c1::not part of the key}}.",
-    "Extra": "",
-    "Topic": "Mapping Weak & Multivalued"
-   }
-  },
-  {
-   "noteId": 1789692992108,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Mapping_Weak_&_Multivalued",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How is a weak entity's foreign key different from a 1:N foreign key, per the instructor?",
-    "Back": "In both cases the owning entity's key comes in as a foreign key, but for a weak entity it is also combined with the partial key to form the primary key.",
     "Topic": "Mapping Weak & Multivalued"
    }
   }

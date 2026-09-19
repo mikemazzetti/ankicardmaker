@@ -1,244 +1,101 @@
 {
  "deck": "CS3319A Databases::Week 2::Constraints",
- "note_count": 44,
- "exported": "2026-09-18",
+ "note_count": 23,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692992189,
+   "noteId": 1789752890939,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Name the three main types of constraints in relational databases.",
-    "Back": "Key constraints, referential integrity constraints, semantic integrity constraints.",
+    "Front": "State the two key constraints as Lesson 10 gives them.",
+    "Back": "PRIMARY KEY: you state which attribute(s) ensure no two tuples are identical. A table can have only ONE primary key, it may be made up of SEVERAL attributes, and it must be UNIQUE - 'you can only have a value for a key once in your table'.<br>NOT NULL: the user may never leave a key attribute empty for any tuple. Together these are the entity integrity constraint.",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992191,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Text": "The three main types of relational constraints are {{c1::key}} constraints, {{c2::referential integrity}} constraints and {{c3::semantic integrity}} constraints.",
-    "Extra": "",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992195,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Text": "A table can have only {{c1::one}} primary key, but it may be made up of {{c2::several attributes}}; it must be {{c3::unique}}.",
-    "Extra": "",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992199,
+   "noteId": 1789752890940,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "What does the NOT NULL constraint do for keys?",
-    "Back": "Forces the user never to leave a key attribute null (empty) for any tuple.",
+    "Front": "Define referential integrity plainly and give the two formal rules.",
+    "Back": "Plainly: 'your foreign keys have to exist in the table that they refer to' - if an employee works for S7G there had better be a department S7G, and you cannot make employee 66 the manager when there is no employee 66. Formally, for FK in R1 referencing PK in R2:<br>1. The FK attributes must have the SAME DOMAIN as the PK attributes<br>2. A value of FK in a tuple of r1 either OCCURS as a PK value of some tuple in r2, OR IS NULL",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992201,
+   "noteId": 1789752890941,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Define referential integrity.",
-    "Back": "A tuple in one relation that refers to another relation must refer to an existing tuple in that relation (foreign keys may not dangle).",
+    "Front": "Lesson 10 tables: judge the four INSERTS into EMPLOYEE and give the reason for each.",
+    "Back": "&lt;13,'Gumble','Barney','S7G','M'&gt; -&gt; VALID: EmpID 13 is new and S7G exists.<br>&lt;3,'Simpson','Granpa','Y5J','M'&gt; -&gt; INVALID: EmpID 3 already exists (Patty) - key/uniqueness constraint.<br>&lt;NULL,'Flanders','Ned','Y5J','M'&gt; -&gt; INVALID: null primary key - entity integrity (NOT NULL).<br>&lt;18,'Flanders','Todd','P68','M'&gt; -&gt; INVALID: department P68 does not exist - referential integrity. This is the one students get wrong: 18 is new and not null, so 'it looks like it should work, but it doesn't'.",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992203,
+   "noteId": 1789752890942,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "State the two formal rules of referential integrity between FK in R1 and PK in R2.",
-    "Back": "FK attributes must have the same domain as PK; a value of FK in a tuple of r1(R1) either occurs as a PK value of some tuple in r2(R2) or is null.",
+    "Front": "Give the exact Access error messages for a duplicate key, an empty key, a bad foreign key and a blocked delete.",
+    "Back": "Duplicate key: 'The changes you requested to the table were not successful because they would create duplicate values in the index, primary key, or relationship.'<br>Empty key: 'You must enter a value.'<br>Bad foreign key: 'You cannot add or change a record because a related record is required in table Department.' (a record just means a row)<br>Blocked delete: 'This record cannot be deleted because the table Department includes related records.'",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992205,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Text": "A null foreign key {{c1::does not}} violate referential integrity (unless NOT NULL is declared separately).",
-    "Extra": "",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992207,
+   "noteId": 1789752890943,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Lesson 10 tables: is Insert &lt;13,'Gumble','Barney','S7G','M'&gt; into EMPLOYEE valid?",
-    "Back": "Yes: EmpID 13 is new and department S7G exists.",
+    "Front": "Lesson 10 tables: are 'Delete employee where EmpID = 4' and 'Delete department where DeptID = S7G' valid?",
+    "Back": "Neither, as stated (restrict is in force).<br>Employee 4 is Monty Burns, the MANAGER of department G8H (DEPARTMENT.MgrEmpID = 4), so the reference would dangle - 'if we delete Monty, they won't have a manager'. This is the HIDDEN reference: nothing in EMPLOYEE points at him.<br>Department S7G is referenced by employees 1 (Bart), 3 (Patty) and 12 (Homer) - 'where would they end up working?'",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992209,
+   "noteId": 1789752890944,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Lesson 10 tables: is Insert &lt;3,'Simpson','Granpa','Y5J','M'&gt; into EMPLOYEE valid?",
-    "Back": "No: EmpID 3 already exists (Patty Beuvieau); key/uniqueness constraint violated.",
+    "Front": "APPLICATION: department S7G is deleted with CASCADE. How many records are lost, which ones, and what is the instructor's warning?",
+    "Back": "FOUR: the department row plus employees Bart (1), Patty (3) and Homer (12), who all work in S7G. Her warning: 'cascade is interesting because what it will do might not be what you want. So you have to be careful with cascade' - and if those employees are referenced elsewhere (dependents, works-on rows) the cascade keeps going.",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992211,
+   "noteId": 1789752890945,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Lesson 10 tables: is Insert &lt;NULL,'Flanders','Ned','Y5J','M'&gt; into EMPLOYEE valid?",
-    "Back": "No: the primary key is null; entity integrity (NOT NULL) violated.",
+    "Front": "Lesson 10 tables: judge the four MODIFY operations.",
+    "Back": "Burns's gender to 'F' -&gt; VALID: Sex is neither a key nor a foreign key.<br>Smithers's DeptID from G8H to Y5J -&gt; VALID: Y5J exists.<br>Smithers's DeptID to J9J -&gt; INVALID: J9J does not exist (referential integrity).<br>Smithers's EmpID from 2 to 12 -&gt; INVALID: EmpID 12 already belongs to Homer (key constraint).",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992213,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Lesson 10 tables: is Insert &lt;18,'Flanders','Todd','P68','M'&gt; into EMPLOYEE valid?",
-    "Back": "No: department P68 does not exist; referential integrity violated.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992215,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Lesson 10 tables: is 'Delete employee where EmpID = 4' valid?",
-    "Back": "Not as stated: employee 4 (Burns) is the manager of department G8H (MgrEmpID = 4), so the delete would leave a dangling reference (referential integrity).",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992217,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Lesson 10 tables: is 'Delete department where DeptID = S7G' valid?",
-    "Back": "Not as stated: employees 1, 3 and 12 have DeptID S7G; their foreign keys would dangle.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992219,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What three referential actions does DB2 allow on delete, and what does each do?",
-    "Back": "Cascade: also delete the referencing rows (be careful: it may delete more than you want). Restrict: refuse the delete while referencing rows exist (the instructor calls this 'sort of the default'). Set Null: delete and set the referencing foreign keys to null.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992221,
-   "modelName": "CS3319A Databases Cloze",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Text": "On delete, the three referential-integrity options are {{c1::cascade}} (delete referencing rows too), {{c2::restrict}} (refuse the delete) and {{c3::set null}} (null out the foreign keys).",
-    "Extra": "",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992225,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Lesson 10 tables: is modifying Burns's gender to 'F' valid?",
-    "Back": "Yes: Sex is neither a key nor a foreign key.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992227,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Lesson 10 tables: is modifying Smithers's DeptID from G8H to Y5J valid? To J9J?",
-    "Back": "To Y5J: yes (Y5J exists). To J9J: no (J9J does not exist; referential integrity).",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992229,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Lesson 10 tables: is modifying Smithers's EmpID from 2 to 12 valid?",
-    "Back": "No: EmpID 12 already belongs to Homer Simpson; key constraint violated.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992231,
+   "noteId": 1789752890946,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
@@ -246,332 +103,202 @@
    ],
    "fields": {
     "Front": "Which constraints can an INSERT violate? A DELETE? A MODIFY?",
-    "Back": "Insert: key constraints (duplicate/null PK) and referential integrity (FK pointing nowhere, e.g. department P68). Delete: referential integrity (removing a row that other rows reference, e.g. employee 4 who manages G8H). Modify: either, depending on whether a PK, FK or ordinary attribute changes.",
+    "Back": "INSERT: key constraints (duplicate or null primary key) and referential integrity (a foreign key pointing nowhere, e.g. P68).<br>DELETE: referential integrity, by removing a row that other rows reference (employee 4, who manages G8H).<br>MODIFY: either, depending on whether you change a primary key, a foreign key or an ordinary attribute. Changing a referenced primary key breaks the references too, and DBMSs offer the same cascade/restrict/set-null options for updates.",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992233,
+   "noteId": 1789752890947,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Define a state constraint and give the slide examples.",
-    "Back": "A constraint that a valid database state must satisfy; e.g. hours worked cannot exceed 50; quantity ordered must be greater than 10.",
+    "Front": "What happened when the instructor deleted the relationships in Access and retried the modifications, and what does she recommend?",
+    "Back": "Smithers COULD then be moved to the non-existent department J9J, 'because I'm no longer enforcing referential integrity'. But changing his EmpID to 12 was STILL refused: key constraints are a property of the table itself and remain. Her recommendation: 'always leave the referential constraints in, because that forces you to follow the proper rules.'",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992235,
+   "noteId": 1789752890948,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Define a transition constraint and give the slide example.",
-    "Back": "A constraint on how the database state may change; e.g. salaries can only increase.",
+    "Front": "Define state and transition constraints with the slide examples, and how are they enforced?",
+    "Back": "STATE constraints: conditions a valid state must satisfy - hours worked cannot exceed 50; quantity ordered must be greater than 10; CHECK (Age &gt;= 18). Checked by looking at one state.<br>TRANSITION constraints: how the state is allowed to CHANGE - salaries can only increase. Needs the old value and the new one.<br>Both are SEMANTIC INTEGRITY constraints, enforced through triggers and assertions (and CHECK constraints for simple state ones).",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992237,
+   "noteId": 1789752890949,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Constraints",
+    "week2"
+   ],
+   "fields": {
+    "Front": "What does the slide's update_marks trigger do, and what does NEW mean?",
+    "Back": "<code>CREATE TRIGGER update_marks BEFORE UPDATE ON student_marks FOR EACH ROW</code>: it totals the five marks, divides by five for the average, and sets the grade column to Excellent (&gt;=90), Very Good (&gt;=75), Good (&gt;=65), Average (&gt;=50) or Not Promoted. NEW means the new row being worked on - 'it goes through, sort of like in a loop, and NEW is the current row'.",
+    "Topic": "Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890950,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Constraints",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLICATION: DEPARTMENT(DeptID, DeptName, MgrEmpID(FK)) and EMPLOYEE(EmpID, ..., DeptID(FK)). You delete the last employee of a department that lists them as manager, under SET NULL. What happens?",
+    "Back": "The employee row is deleted and DEPARTMENT.MgrEmpID becomes NULL for that department - the DBMS 'doesn't know what to put here, but I guess I'll just put null'. That leaves the department with no manager, which does not violate referential integrity (a null FK is allowed) but may violate the mini-world's meaning. Under RESTRICT the delete would simply be refused.",
+    "Topic": "Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890951,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Constraints",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §5.3): which constraints can an Insert, a Delete and an Update violate, and what are the four referential actions?",
+    "Back": "INSERT can violate ANY OF THE FOUR: domain (a value outside the domain or of the wrong type), key (a duplicate key value), entity integrity (any part of the primary key is NULL) and referential integrity (a foreign key pointing at nothing).<br>DELETE CAN VIOLATE ONLY REFERENTIAL INTEGRITY, because it removes data rather than adding it.<br>UPDATE: changing an attribute that is neither a key nor a foreign key is always safe (only type and domain are checked); changing a FOREIGN KEY needs an existing referent or NULL; changing a PRIMARY KEY is 'similar to deleting one tuple and inserting another', so both sets of issues apply at once.<br>FOUR REFERENTIAL ACTIONS: RESTRICT (reject), CASCADE (propagate), SET NULL, SET DEFAULT (replace with another valid default row). A referencing attribute that is PART OF THE PRIMARY KEY can never be set null - that would violate entity integrity - so WORKS_ON.Essn allows only restrict or cascade. Separate options may be chosen for Delete and for Update on the same foreign key.",
+    "Topic": "Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890972,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "'Hours worked cannot be greater than 50' is a {{c1::state}} constraint; 'salaries can only increase' is a {{c2::transition}} constraint. Both are {{c3::semantic integrity}} constraints.",
+    "Text": "The three main types of relational constraint are {{c1::key}} constraints, {{c1::referential integrity}} constraints and {{c1::semantic integrity}} constraints; they exist because the relational model 'makes it really difficult for you to screw up your database'.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992241,
+   "noteId": 1789752890973,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "Semantic integrity constraints are enforced through {{c1::triggers}} and {{c2::assertions}}.",
+    "Text": "A {{c1::null}} foreign key does {{c1::not}} violate referential integrity (unless NOT NULL is declared separately) - Borg's null SuperSSN is fine; treating it as a violation is a stated {{c1::exam trap}}.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992244,
+   "noteId": 1789752890974,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "Triggers fire on {{c1::inserts, updates or deletes}}; constraints are checked on {{c2::inserts and updates}}.",
+    "Text": "On delete the three referential actions are {{c1::restrict}} (refuse the delete while referencing rows exist - 'sort of the default'), {{c1::set null}} (delete and null out the referencing foreign keys) and {{c1::cascade}} (delete the referencing rows too). In Access, cascade is enabled by right-clicking the relationship line and ticking Cascade Delete Related Records.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992247,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why does 'salaries can only increase' need a trigger rather than a CHECK constraint?",
-    "Back": "It compares the old and new values (two states); a CHECK such as CHECK (Age &gt;= 18) sees only the row being written, while a trigger can see both OLD and NEW.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992249,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What are the objectives of the constraints video?",
-    "Back": "List key constraints; list referential integrity constraints and tell whether an insert, delete or change will violate them; identify semantic integrity constraints.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992251,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What message does Access give when you insert a row whose primary key already exists?",
-    "Back": "'The changes you requested to the table were not successful because they would create duplicate values in the index, primary key, or relationship.'",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992253,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What message does Access give when you leave the primary key empty?",
-    "Back": "'You must enter a value': the not-null constraint.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992255,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What message does Access give when a foreign key refers to a department that does not exist?",
-    "Back": "'You cannot add or change a record because a related record is required in table Department.' (Record just means row.)",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992257,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What message does Access give when you try to delete employee 4, the manager of Head Office?",
-    "Back": "'This record cannot be deleted because the table Department includes related records.'",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992259,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Give the instructor's plain-language definition of referential integrity.",
-    "Back": "Your foreign keys have to exist in the table they refer to: if an employee works for S7G there had better be a department S7G, and you cannot make employee 66 a manager if there is no employee 66.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992261,
+   "noteId": 1789752890975,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "The instructor calls restrict 'sort of the {{c1::default}}'; with set null the DBMS 'doesn't know what to put here' so it puts {{c2::null}} in the referencing rows.",
+    "Text": "Triggers fire on {{c1::inserts, updates or deletes}} and can see both {{c1::OLD and NEW}}; constraints are declared with the table and checked on {{c1::inserts and updates}} only.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992264,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How many records are lost if department S7G is deleted with cascade, and which?",
-    "Back": "Four: the department row plus employees Bart (1), Patty (3) and Homer (12), who all work in S7G.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992266,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How do you enable cascade delete in Access?",
-    "Back": "Right-click the relationship line and tick Cascade Delete Related Records.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992268,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why does the instructor say to be careful with cascade?",
-    "Back": "What it does might not be what you want: deleting one department silently deletes every employee in it.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992270,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What happened when the instructor deleted the relationships (referential integrity) in Access and retried the modifications?",
-    "Back": "Smithers could now be moved to the non-existent department J9J, but his EmpID still could not be changed to 12: the key constraints remain even without referential constraints.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992272,
+   "noteId": 1789752890976,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "The instructor recommends you always {{c1::leave the referential constraints in}}, because they force you to follow the proper rules.",
+    "Text": "'Salaries can only increase' needs a {{c1::trigger}} rather than a CHECK constraint because it compares {{c1::the old and the new value}} (two states), while a CHECK such as <code>CHECK (Age &gt;= 18)</code> sees only {{c1::the row being written}}; the trigger is a BEFORE UPDATE one comparing OLD and NEW.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992274,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What does the slide's update_marks trigger do?",
-    "Back": "Before each update on the student marks table, for each row, it totals the marks, divides by five for the average, and sets the grade column to Excellent, Very Good, Good, Average or Not Promoted.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992276,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What does NEW refer to inside a trigger?",
-    "Back": "The new (current) row being worked on; the trigger runs like a loop over each affected row.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992278,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is the slide's example of a constraint?",
-    "Back": "CREATE TABLE Persons (ID, LastName, FirstName, Age) with CHECK (Age &gt;= 18): a state constraint checked on inserts and updates.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992280,
+   "noteId": 1789752890977,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "For the state constraint 'quantity ordered must be greater than 10', trying to enter {{c1::7}} gives an error, just as Access gave errors for key violations.",
+    "Text": "Insert &lt;18,'Flanders','Todd','P68','M'&gt; 'looks like it should work' because 18 is {{c1::new and not null}}, but it fails because {{c1::department P68 does not exist}} - a {{c1::referential integrity}} violation, reported by Access as 'a related record is required in table Department'.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992282,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Constraints",
-    "week2"
-   ],
-   "fields": {
-    "Front": "How does the instructor summarise the purpose of constraints?",
-    "Back": "Part of the beauty of the relational model: constraints make it really difficult to screw up your database by refusing weird values and values that do not relate to anything.",
-    "Topic": "Constraints"
-   }
-  },
-  {
-   "noteId": 1789692992284,
+   "noteId": 1789752890978,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Text": "Insert &lt;18, 'Flanders', 'Todd', 'P68', 'M'&gt; 'looks like it should work' because 18 is {{c1::new and not null}}, but it fails because {{c2::department P68 does not exist}}.",
+    "Text": "Deleting employee 4 (Burns) is refused because {{c1::department G8H lists him as manager (MgrEmpID = 4)}}; deleting department S7G is refused because {{c1::employees 1, 3 and 12 work there}}. Under cascade, deleting S7G would lose {{c1::four}} records.",
     "Extra": "",
     "Topic": "Constraints"
    }
   },
   {
-   "noteId": 1789692992287,
-   "modelName": "CS3319A Databases Basic",
+   "noteId": 1789752890979,
+   "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Constraints",
     "week2"
    ],
    "fields": {
-    "Front": "Which four insert results does the instructor get in Access for the Lesson 10 employee table?",
-    "Back": "13 Gumble: valid. 3 Granpa Simpson: duplicate key. NULL Ned Flanders: null key refused. 18 Todd Flanders in P68: related record required in Department (referential integrity).",
+    "Text": "Turning off referential integrity in Access let Smithers be moved to the non-existent department {{c1::J9J}}, but changing his EmpID to 12 was {{c1::still refused}}, because {{c1::key constraints}} are a property of the table itself. She recommends you always leave the referential constraints in.",
+    "Extra": "",
+    "Topic": "Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890980,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Constraints",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Textbook (Elmasri §5.2.5): state constraints are also called {{c1::static}} constraints and transition constraints are also called {{c1::dynamic}} constraints; both belong to the {{c1::semantic integrity}} family, and the book notes they are more often checked inside application programs than with a constraint specification language, because the latter are complex to use.",
+    "Extra": "",
+    "Topic": "Constraints"
+   }
+  },
+  {
+   "noteId": 1789752890981,
+   "modelName": "CS3319A Databases Cloze",
+   "tags": [
+    "Constraints",
+    "week2"
+   ],
+   "fields": {
+    "Text": "Textbook (Elmasri §5.3.4): a {{c1::transaction}} is an executing program whose database operations form an {{c1::atomic unit of work}} and which must leave the database in a valid state; it differs from a single Update in that {{c1::intermediate states inside it need not be acceptable as final states}}.",
+    "Extra": "",
     "Topic": "Constraints"
    }
   }

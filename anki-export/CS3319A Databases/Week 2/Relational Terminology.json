@@ -1,304 +1,187 @@
 {
  "deck": "CS3319A Databases::Week 2::Relational Terminology",
- "note_count": 23,
- "exported": "2026-09-18",
+ "note_count": 14,
+ "exported": "2026-09-19",
  "notes": [
   {
-   "noteId": 1789692991869,
+   "noteId": 1789752891413,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Front": "Define 'domain' in the relational model.",
-    "Back": "A set of atomic values, with a data type specified (e.g. 10-char string, positive integer). Examples: USA_Phone_Numbers, Employee_Ages, Department IDs.",
+    "Front": "Define domain, relation schema and relation (relation state) formally.",
+    "Back": "DOMAIN D: a set of ATOMIC values with a data type specified ('10-character string', 'positive integer'); plainly 'it really is just the data type', possibly limited - all USA phone numbers, employee ages 16-100, department IDs.<br>RELATION SCHEMA R(A1, ..., An): a relation name R plus a list of attributes, each Aj naming a ROLE played by some domain D.<br>RELATION / relation state r(R): a set of n-tuples {t1, ..., tm}, each tuple an ordered list &lt;v1, ..., vn&gt; with each vi in dom(Ai) or null.",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991871,
+   "noteId": 1789752891414,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Front": "Define 'relation schema'.",
-    "Back": "R(A1, A2, ..., An): a relation name R plus a list of attributes; each attribute Aj is the name of a role played by some domain D in R.",
+    "Front": "BOOK(Title, ISBN, Author, YearPublished, Publisher) with four rows: give its degree, cardinality and two domains.",
+    "Back": "Degree 5 (five attributes/columns); cardinality 4 ('four books, four tuples, four rows'). Domains: YearPublished - integers, 'maybe from 1900 to 2000-and-whatever'; ISBN - a letter followed by three digits (e.g. A781), simplified from real ISBNs. Relation schema: Book(Title, ISBN, Author, YearPub, Pub); R is Book.",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991873,
+   "noteId": 1789752891415,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Front": "Define 'relation' (relation state).",
-    "Back": "r(R): a set of n-tuples {t1, ..., tm}; each tuple is an ordered list of n values &lt;v1, ..., vn&gt; where each vi is in dom(Ai) or is null.",
+    "Front": "Define the Cartesian product and give D1 x D2 for D1 = {2,4}, D2 = {1,3,5}. What is a relation on it?",
+    "Back": "The Cartesian product is ALL POSSIBLE tuples that can be produced from every value of every domain. D1 x D2 = {(2,1), (2,3), (2,5), (4,1), (4,3), (4,5)} - 6 pairs = 2 x 3. A mathematical relation is ANY SUBSET of it, e.g. R = {(2,5), (4,1)} - 'this would be a table'.",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991875,
+   "noteId": 1789752891416,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Front": "Define 'attribute' and 'tuple' in relational terms.",
-    "Back": "Attribute: a named column in a relation schema. Tuple: a row of a relation.",
+    "Front": "APPLICATION: D1 = {Simpson, Flanders, Smithers}, D2 = {Homer, Ned}, D3 = {40, 30}. How many tuples in D1 x D2 x D3, how do you list them, and how many rows/attributes can a relation over them have?",
+    "Back": "3 x 2 x 2 = 12 triples. List systematically: fix the first value, then the second, then run through the third - (Simpson, Homer, 40), (Simpson, Homer, 30), (Simpson, Ned, 40), (Simpson, Ned, 30), then Flanders, then Smithers. A relation is ANY subset: 3 rows, 5 rows, or even all 12 - but it always has exactly 3 attributes.",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991877,
+   "noteId": 1789752891417,
    "modelName": "CS3319A Databases Basic",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Front": "Define 'degree' and 'cardinality' of a relation.",
-    "Back": "Degree: the number of attributes (columns). Cardinality: the number of tuples (rows).",
+    "Front": "Why does the Cartesian product matter for relations, and can you always list a whole domain?",
+    "Back": "Because a relation over those attributes is a SUBSET of the Cartesian product: each element of the product is one possible tuple, and a table is some of those tuples. No, you cannot always list every value (e.g. the real numbers); the domain is simply the set of possible values an attribute can take.",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991879,
+   "noteId": 1789752891418,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Relational_Terminology",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §5.1.1): what three things define a domain, and what does it mean that an attribute is 'the name of a role played by a domain'?",
+    "Back": "A domain is given a NAME, a DATA TYPE and a FORMAT - for example Usa_phone_numbers declared as a character string (ddd)ddd-dddd whose first three digits are a valid area code, or Employee_ages as an integer between 15 and 80. Extra interpretation may be attached, such as the unit of measurement for Person_weights. These are called LOGICAL DEFINITIONS of domains.<br>Each attribute Ai is the NAME OF A ROLE played by some domain D in relation schema R, with D = dom(Ai). That is why SEVERAL ATTRIBUTES MAY SHARE ONE DOMAIN: in the book's STUDENT relation, Home_phone and Office_phone are two roles of Usa_phone_numbers, and Mobile_phone could be a third. The attribute NAME is what distinguishes their meanings.",
+    "Topic": "Relational Terminology"
+   }
+  },
+  {
+   "noteId": 1789752891419,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Relational_Terminology",
+    "week2"
+   ],
+   "fields": {
+    "Front": "Textbook (Elmasri §5.1.3): what do R, r, t, R.A, t[Ai] and t[Au, Aw, Az] mean in the book's notation?",
+    "Back": "Uppercase Q, R, S: relation NAMES (schemas). Lowercase q, r, s: relation STATES. t, u, v: tuples.<br>R.A: attribute A qualified by the relation it belongs to (STUDENT.Name), needed because the same name may be used in different relations; within one relation all attribute names must be distinct.<br>t[Ai], t.Ai (or t[i]): the value of attribute Ai in tuple t.<br>t[Au, Aw, ..., Az]: the SUBTUPLE of those values, e.g. t[Ssn, Gpa, Age].<br>Also: DEGREE is also called ARITY; the schema is the relation INTENSION and the state is the relation EXTENSION.",
+    "Topic": "Relational Terminology"
+   }
+  },
+  {
+   "noteId": 1789752891447,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Text": "The {{c1::degree}} of a relation is its number of attributes; the {{c2::cardinality}} of a relation is its number of tuples.",
+    "Text": "Formal to everyday: relation = {{c1::table}}, attribute = {{c1::column}}, tuple = {{c1::row}}, degree = number of columns/attributes, cardinality = number of rows/tuples.",
     "Extra": "",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991882,
+   "noteId": 1789752891448,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Text": "Relation = {{c1::table}}, attribute = {{c2::column}}, tuple = {{c3::row}}.",
+    "Text": "Big {{c1::R}} is the NAME of the relation schema (Student, Prof, Patient) - the description; little {{c1::r}} is the actual data, the set of {{c1::tuples}} at a moment in time (the relation state). Another way to think of a tuple is as an instance of the relation, e.g. the student Homer Simpson.",
     "Extra": "",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991886,
+   "noteId": 1789752891449,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Text": "The BOOK relation Book(Title, ISBN, Author, YearPub, Pub) with four rows has degree {{c1::5}} and cardinality {{c2::4}}.",
+    "Text": "In a tuple t = &lt;v1, ..., vn&gt; the values are ordered by {{c1::the order of the attributes in the schema}} (v1 belongs to A1), and any vi may be {{c1::null}}. Her example schema is Student({{c1::StudentNumber, WesternUserID, FirstName, LastName}}).",
     "Extra": "",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991889,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "BOOK example: what are the domains of YearPublished and ISBN?",
-    "Back": "YearPublished: integers. ISBN: a letter followed by three digits (e.g. A781).",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991891,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is the Cartesian product D1 x D2 for D1 = {2,4}, D2 = {1,3,5}?",
-    "Back": "{(2,1),(2,3),(2,5),(4,1),(4,3),(4,5)}: all possible ordered pairs.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991893,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is a (mathematical) relation on D1 x D2?",
-    "Back": "Any subset of D1 x D2, e.g. R = {(2,5),(4,1)}.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991895,
+   "noteId": 1789752891450,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Text": "With D1 = {Simpson, Flanders, Smithers}, D2 = {Homer, Ned}, D3 = {40, 30}, the product D1 x D2 x D3 has {{c1::12}} tuples, and a relation is {{c2::any subset}} of them.",
+    "Text": "The {{c1::cardinality}} of a relation is its number of rows - different from last week's {{c1::cardinality ratio}} ({{c1::1:1, 1:N, M:N}}) on an ER relationship. Same word, two meanings; expect a question that tests whether you keep them apart.",
     "Extra": "",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991898,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Define Cartesian product in the review slide's words.",
-    "Back": "All POSSIBLE tuples that can be produced with all possible attributes over the whole domain for each attribute.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991900,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Give the instructor's plain-language definition of a domain, with her examples.",
-    "Back": "'It really is just the data type', possibly limited: all USA phone numbers (every 10-digit combination), employee ages (integers from about 16 to 100), or department IDs following the company's rule.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991902,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Can you always list every value in a domain? What is the domain in essence?",
-    "Back": "No (e.g. the real numbers); the domain is the set of possible values that an attribute can take.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991904,
+   "noteId": 1789752891451,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Text": "In a tuple t = &lt;v1, ..., vn&gt;, the values are ordered by {{c1::the order of the attributes in the schema}}: v1 is the value of A1, v2 of A2, and any vi may be {{c2::null}}.",
+    "Text": "A domain is a set of {{c1::atomic}} values with a {{c1::data type}} specified; a relation schema is written {{c1::R(A1, A2, ..., An)}}; a relation state r(R) is a set of n-tuples, each an ordered list of values from dom(Ai) or null.",
     "Extra": "",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991907,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What STUDENT relation schema does the instructor give as an example?",
-    "Back": "Student(StudentNumber, WesternUserID, FirstName, LastName).",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991909,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is the difference between big R and little r in the relational terminology?",
-    "Back": "R is the name of the relation schema (Student, Prof, Patient, Doctor); little r is the actual data, the set of tuples at a moment in time (the relation state).",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991911,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What is another way the instructor says to think of a tuple?",
-    "Back": "As an instance of the relation, e.g. a particular student such as Homer Simpson: all the attribute values for one particular thing.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991913,
+   "noteId": 1789752891452,
    "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Text": "The cardinality of a relation is its {{c1::number of rows}}, which is different from last week's cardinality ratio ({{c2::1:1, 1:N, M:N}}) on an ER relationship.",
+    "Text": "Textbook (Elmasri §5.1.1): the total number of tuples that could ever exist in any state of R is {{c1::the product of the cardinalities of all its domains}}, |dom(A1)| x ... x |dom(An)|, and an actual relation state is {{c1::a subset}} of that Cartesian product reflecting the valid tuples at that moment.",
     "Extra": "",
     "Topic": "Relational Terminology"
    }
   },
   {
-   "noteId": 1789692991916,
-   "modelName": "CS3319A Databases Basic",
+   "noteId": 1789752891453,
+   "modelName": "CS3319A Databases Cloze",
    "tags": [
     "Relational_Terminology",
     "week2"
    ],
    "fields": {
-    "Front": "For D1 = {Simpson, Flanders, Smithers}, D2 = {Homer, Ned}, D3 = {40, 30}: how many rows and attributes can a relation have?",
-    "Back": "Any subset of the 12 tuples: 3 rows, 5 rows, or even all 12; it always has exactly 3 attributes.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991918,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "What systematic order does the instructor suggest for listing a Cartesian product?",
-    "Back": "Fix the first value, then the second, and run through the third: (Simpson, Homer, 40), (Simpson, Homer, 30), (Simpson, Ned, 40), (Simpson, Ned, 30), then Flanders, then Smithers.",
-    "Topic": "Relational Terminology"
-   }
-  },
-  {
-   "noteId": 1789692991920,
-   "modelName": "CS3319A Databases Basic",
-   "tags": [
-    "Relational_Terminology",
-    "week2"
-   ],
-   "fields": {
-    "Front": "Why is the Cartesian product important for relations?",
-    "Back": "Because a relation over those attributes is a subset of the Cartesian product: each element of the product is one possible tuple, and a table is some of those tuples.",
+    "Text": "Textbook (Elmasri §5.1.2): NOTATION - avoid the phrase {{c1::relation instance}}; the book uses relation or {{c1::relation state}} for the whole set of tuples and reserves the word instance for {{c1::a single tuple or row}}, matching Chapter 2's use of instance for a single record.",
+    "Extra": "",
     "Topic": "Relational Terminology"
    }
   }

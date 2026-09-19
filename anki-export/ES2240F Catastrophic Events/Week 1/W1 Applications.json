@@ -1,0 +1,176 @@
+{
+ "deck": "ES2240F Catastrophic Events::Week 1::W1 Applications",
+ "note_count": 13,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789749154506,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: a rock has a K-40 : Ar-40 ratio of 25:75. How old is it?",
+    "Back": "25% parent remaining = 2 half-lives (100 -&gt; 50 -&gt; 25). Age = 2 x 1.26 Ga = 2.52 billion years.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154507,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: a zircon retains 12.5% of its original U-235. How old is it?",
+    "Back": "12.5% = 1/8 = 3 half-lives. Age = 3 x 704 Ma = 2,112 million years (about 2.1 Ga).",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154508,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: charcoal contains one quarter of the C-14 of living wood. How old is it?",
+    "Back": "1/4 = 2 half-lives. Age = 2 x 5730 = 11,460 years.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154509,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: a hearth charcoal has one eighth of the C-14 of living wood; a bone has half. How old is each?",
+    "Back": "Charcoal: 1/8 = 3 half-lives = 3 x 5730 = 17,190 years.<br>Bone: 1/2 = 1 half-life = 5730 years.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154510,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: could you date a 10,000-year-old lava flow with rubidium-strontium? Why or why not?",
+    "Back": "No. The Rb-87 half-life is 48.8 billion years, so in 10,000 years only a vanishingly small fraction of one half-life has passed and the amount of daughter Sr-87 would be unmeasurable. Choose an isotope whose half-life is comparable to the expected age.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154511,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: why can't carbon-14 date a dinosaur bone or a 2-billion-year-old granite?",
+    "Back": "After about 10 half-lives (~57,000 years) no measurable C-14 remains. 65.5 Ma is over 11,000 half-lives and 2 Ga is about 350,000 half-lives - nothing is left to measure.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154512,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "CALC: a mineral retains 1/16 of its K-40. What age does that give, and what does the answer tell you?",
+    "Back": "1/16 = 4 half-lives; 4 x 1.26 = 5.04 Ga. That is older than Earth (4.54 Ga), so such a sample cannot exist - a useful sanity check on any calculated age.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154513,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLY: beds A-E are tilted and eroded; flat beds G-K lie on the eroded surface; igneous body F cuts A-E but not G. Put the events in order.",
+    "Back": "1) A-E deposited horizontally (superposition: A oldest).<br>2) Tilting and faulting (original horizontality shows later deformation).<br>3) Intrusion of F (cross-cutting: younger than E).<br>4) Erosion, forming the angular unconformity surface.<br>5) Deposition of G-K (cross-cutting: strata above an unconformity are younger than those below).",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154514,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLY: which principle tells you that steeply dipping sandstone beds have been deformed, and which tells you matching beds on either side of a canyon were once joined?",
+    "Back": "Deformation of tilted beds: Principle of Original Horizontality. Beds across a valley once continuous: Principle of Original Lateral Continuity.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154515,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLY: a fault cuts beds A through D but is covered by bed E. What can you say about its age?",
+    "Back": "By cross-cutting relationships the fault is younger than the youngest rock it cuts (D) but older than bed E, which was deposited across it - so it formed between D and E.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154516,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLY: two parallel limestone beds are separated by a surface with an erosional gap of 20 million years. Which unconformity is this, and how would it differ if the lower beds were tilted, or were granite?",
+    "Back": "Parallel beds with a time gap = disconformity. If the lower beds had a different dip it would be an angular unconformity; if sediments lay on or were intruded by igneous rock (granite) it would be a non-conformity.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154517,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLY: which isotope system would you choose to date (a) a 3-billion-year-old granite and (b) a 20,000-year-old wooden tool?",
+    "Back": "(a) U-235/Pb-207 (704 Ma) or K-40/Ar-40 (1.26 Ga) - half-lives comparable to the age. (b) C-14 (5730 yr): 20,000 years is about 3.5 half-lives, well inside the ~50,000 year limit.",
+    "Topic": "W1 Applications"
+   }
+  },
+  {
+   "noteId": 1789749154518,
+   "modelName": "ES2240F Catastrophic Events Basic",
+   "tags": [
+    "W1_Applications",
+    "week1"
+   ],
+   "fields": {
+    "Front": "APPLY: a clay bed in Virginia and one in South Carolina look identical. How would you test whether they are the same age?",
+    "Back": "Compare their fossil content: by the Principle of Faunal Succession, layers containing the same characteristic fossils correlate in age, which is how reference horizons let you match strata hundreds of kilometres apart (Fig. 5 uses microscopic fossil algae).",
+    "Topic": "W1 Applications"
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "deck": "CS3319A Databases::Week 2::Textbook Extras",
+ "note_count": 2,
+ "exported": "2026-09-19",
+ "notes": [
+  {
+   "noteId": 1789752891539,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Textbook_Extras",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLICATION (Elmasri exercise 5.11, COMPANY database): which constraints do these violate? (a) Insert &lt;'ProductA', 4, 'Bellaire', 2&gt; into PROJECT. (b) Insert &lt;'677678989', NULL, '40.0'&gt; into WORKS_ON. (c) Delete the EMPLOYEE tuple with Ssn = '987654321'. (d) Modify the Hours of a WORKS_ON tuple to 5.0.",
+    "Back": "(a) KEY CONSTRAINT: Pnumber 4 is already used by the 'Computerization' project, so the new tuple duplicates a primary key value.<br>(b) TWO violations - ENTITY INTEGRITY, because Pno is part of the composite primary key (Essn, Pno) and is NULL; and REFERENTIAL INTEGRITY, because no employee 677678989 exists.<br>(c) REFERENTIAL INTEGRITY: she manages department 4 (Mgr_ssn), has dependents, has WORKS_ON rows and supervises employees. Enforce with restrict, cascade or set null CHOSEN PER FOREIGN KEY - cascade the WORKS_ON and DEPENDENT rows, but set Mgr_ssn and Super_ssn to NULL or to another valid employee rather than deleting a department or other employees.<br>(d) NOTHING: Hours is neither part of a key nor a foreign key, so only its domain is checked.",
+    "Topic": "Textbook Extras"
+   }
+  },
+  {
+   "noteId": 1789752891540,
+   "modelName": "CS3319A Databases Basic",
+   "tags": [
+    "Textbook_Extras",
+    "week2"
+   ],
+   "fields": {
+    "Front": "APPLICATION (Elmasri exercise 5.16): for STUDENT(Ssn, Name, Major, Bdate), COURSE(Course#, Cname, Dept), ENROLL(Ssn, Course#, Quarter, Grade), BOOK_ADOPTION(Course#, Quarter, Book_isbn) and TEXT(Book_isbn, Book_title, Publisher, Author), specify the foreign keys and say which mapping step produced each table.",
+    "Back": "ENROLL.Ssn references STUDENT.Ssn and ENROLL.Course# references COURSE.Course#; primary key (Ssn, Course#, Quarter).<br>BOOK_ADOPTION.Course# references COURSE.Course# and BOOK_ADOPTION.Book_isbn references TEXT.Book_isbn; primary key (Course#, Quarter, Book_isbn).<br>STUDENT, COURSE and TEXT are ENTITY RELATIONS from step 1. ENROLL and BOOK_ADOPTION are RELATIONSHIP RELATIONS from step 5 (binary M:N), each with both foreign keys forming the composite primary key, plus the relationship attribute Grade in ENROLL. Quarter is in both keys because the same student may take the same course in different quarters and the same course may adopt different books in different quarters - reading step 5 backwards is exactly the skill Assignment 1 tests.",
+    "Topic": "Textbook Extras"
+   }
+  }
+ ]
+}
