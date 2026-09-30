@@ -1,0 +1,111 @@
+{
+ "deck": "CS3357A Networks::Quiz 1 Review::Binomial (slide 47 handout)",
+ "note_count": 8,
+ "exported": "2026-09-30",
+ "notes": [
+  {
+   "noteId": 1790713867035,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 47 (1 Gb/s link, users 100 Mb/s when active, active 10%): write the exact expression for the probability quoted on the slide for 35 users.",
+    "Back": "P(more than 10 active) = Σ<sub>r=11..35</sub> C(35, r) (0.1)<sup>r</sup> (0.9)<sup>35−r</sup> ≈ <b>0.000424</b> (≈ 0.0004).<br>Source: the OWL handout <i>binomial distribution – for circuit switch problem.pdf</i>.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867037,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Why does the slide-47 sum start at r = 11 and not r = 10?",
+    "Back": "The link carries 1 Gb/s = 10 users × 100 Mb/s. Exactly 10 active users fit, so the link is only overloaded when <b>more than 10</b> (11 or more) are active at once.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867039,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Text": "Binomial probability of exactly r successes in n trials: P(r) = {{c1::C(n, r) p<sup>r</sup> (1 − p)<sup>n−r</sup>}}, where C(n, r) = {{c1::n! / (r! (n − r)!)}}. In the slide-47 problem n = {{c1::35}}, p = {{c1::0.1}}.",
+    "Extra": "",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867041,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 47 says P(&gt;10 of 35 active) is \"less than .0004\". What is the exact value, and how should you treat an option reading \"≈ 0.0004\"?",
+    "Back": "Exact: <b>0.000424</b>, slightly MORE than 0.0004, so the slide's \"less than\" is loose. The handout gives ≈ 0.000424 and the textbook says ≈ 0.0004. Treat \"≈ 0.0004\" or \"0.000424\" as correct.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867043,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Quick calculator check for slide 47: which single term dominates the sum, and what is it worth?",
+    "Back": "r = 11: C(35,11)(0.1)<sup>11</sup>(0.9)<sup>24</sup> ≈ 3.3 × 10<sup>−4</sup>, about 78% of the total. Terms r = 11–13 give over 99%. So the answer is \"a few × 10<sup>−4</sup>\", i.e. ≈ 0.0004.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867045,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 47 asks \"what happens if &gt; 35 users?\" Answer with numbers.",
+    "Back": "P(more than 10 active) climbs steeply: 35 → 0.0004, 40 → 0.0015, 50 → 0.009, 60 → 0.034, 70 → 0.087. More users means more frequent overload, so queueing delay, buffer overflow and <b>packet loss</b> become likely. That is why packet switching needs congestion control.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867047,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 47: what are the complement form of the probability and the expected number of active users, and why does the expected value explain packet switching's win?",
+    "Back": "1 − Σ<sub>r=0..10</sub> C(35,r)(0.1)<sup>r</sup>(0.9)<sup>35−r</sup> = 1 − 0.999576 = 0.000424. Expected active = n·p = 35 × 0.1 = <b>3.5</b>, far below the 10 the link can carry, so statistical sharing rarely overloads it.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  },
+  {
+   "noteId": 1790713867049,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Binomial_slide_47_handout",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Generalize: a 10 Mb/s link, users need 500 kb/s when active and are active 10% of the time. What is the circuit-switching capacity, and what is the packet-switching overload event?",
+    "Back": "Circuit: 10 Mb/s ÷ 500 kb/s = <b>20 users</b>. Packet switching overloads when <b>more than 20</b> are active: Σ<sub>r=21..n</sub> C(n,r)(0.1)<sup>r</sup>(0.9)<sup>n−r</sup>.",
+    "Topic": "Binomial (slide 47 handout)"
+   }
+  }
+ ]
+}

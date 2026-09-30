@@ -1,0 +1,59 @@
+{
+ "deck": "CS3357A Networks::Quiz 1 Review::Encapsulation & layers",
+ "note_count": 4,
+ "exported": "2026-09-30",
+ "notes": [
+  {
+   "noteId": 1790713867143,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Encapsulation_layers",
+    "quiz1"
+   ],
+   "fields": {
+    "Text": "Encapsulation: M → transport adds {{c1::H<sub>t</sub>}} → {{c1::segment}} → network adds {{c1::H<sub>n</sub>}} → {{c1::datagram}} → link adds {{c1::H<sub>l</sub>}} → {{c1::frame}}. In a frame the outermost header is {{c1::H<sub>l</sub>}}.",
+    "Extra": "Slide 73.",
+    "Topic": "Encapsulation & layers"
+   }
+  },
+  {
+   "noteId": 1790713867145,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation_layers",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Match the layer to its slide description: \"process-process data transfer\", \"routing of datagrams from source to destination\", \"data transfer between neighboring network elements\", \"bits on the wire\".",
+    "Back": "Transport; network; link; physical (slide 72).",
+    "Topic": "Encapsulation & layers"
+   }
+  },
+  {
+   "noteId": 1790713867147,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Encapsulation_layers",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which layer does each belong to: PPP, IMAP, UDP, routing protocols, 802.11?",
+    "Back": "PPP → <b>link</b>. IMAP → <b>application</b>. UDP → <b>transport</b>. Routing protocols → <b>network</b>. 802.11 → <b>link</b>.",
+    "Topic": "Encapsulation & layers"
+   }
+  },
+  {
+   "noteId": 1790713867149,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Encapsulation_layers",
+    "quiz1"
+   ],
+   "fields": {
+    "Text": "Layering (air-travel analogy): each layer implements a service via its {{c1::own internal-layer actions}}, relying on services provided by the {{c1::layer below}}. Modularization means a change in one layer's service implementation is {{c1::transparent to the rest of the system}}.",
+    "Extra": "Slides 70–71.",
+    "Topic": "Encapsulation & layers"
+   }
+  }
+ ]
+}

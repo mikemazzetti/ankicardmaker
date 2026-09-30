@@ -1,0 +1,267 @@
+{
+ "deck": "CS3357A Networks::Quiz 1 Review::True or false traps",
+ "note_count": 20,
+ "exported": "2026-09-30",
+ "notes": [
+  {
+   "noteId": 1790713867103,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: propagation delay depends on packet length and link rate.",
+    "Back": "<b>False.</b> d<sub>prop</sub> = d/s depends only on distance and medium. d<sub>trans</sub> = L/R is the one that depends on L and R.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867105,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: transmission delay grows with the length of the link.",
+    "Back": "<b>False.</b> d<sub>trans</sub> = L/R has nothing to do with distance.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867107,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: in cable (HFC) access, each home has a dedicated line to the CMTS.",
+    "Back": "<b>False.</b> Homes <b>share</b> the access network to the cable headend. A dedicated line is DSL (to the DSLAM).",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867109,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: DSL is a shared access technology.",
+    "Back": "<b>False.</b> DSL uses a <b>dedicated</b> telephone line to the central office.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867111,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: forwarding determines the source-to-destination path a packet takes.",
+    "Back": "<b>False.</b> That is <b>routing</b> (global). Forwarding is <b>local</b>: input link → output link using the forwarding table.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867113,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: in TDM each call transmits at the max rate of its own narrow frequency band.",
+    "Back": "<b>False.</b> That is <b>FDM</b>. In TDM each call uses the max rate of the <b>wider</b> band, but only during its time slots.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867115,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: in circuit switching, an idle circuit segment can be used by other calls.",
+    "Back": "<b>False.</b> The circuit segment sits <b>idle</b> if not used by its call: no sharing.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867117,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: a router begins transmitting a packet on the next link as soon as the first bits arrive.",
+    "Back": "<b>False.</b> <b>Store-and-forward</b>: the entire packet must arrive at the router first.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867119,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: when La/R &gt; 1, the average queueing delay is large but finite.",
+    "Back": "<b>False.</b> More work arrives than can be serviced, so the average delay is <b>infinite</b>. \"Large\" is the La/R → 1 case.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867121,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: a packet dropped at a full buffer is always retransmitted by the source.",
+    "Back": "<b>False.</b> It may be retransmitted by the <b>previous node</b>, by the <b>source end system</b>, or <b>not at all</b>.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867123,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: end-to-end throughput = max(R<sub>s</sub>, R<sub>c</sub>).",
+    "Back": "<b>False.</b> It is the <b>min</b>: the bottleneck link's rate.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867125,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: wireless radio is full-duplex.",
+    "Back": "<b>False.</b> The slides call it <b>broadcast and half-duplex</b> (sender to receiver).",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867127,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: Google is a tier-1 ISP.",
+    "Back": "<b>False.</b> Google is a <b>content provider network</b>, a private network that often bypasses tier-1 and regional ISPs. The tier-1 examples are Level 3, Sprint, AT&amp;T, NTT.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867129,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: a router implements all five layers of the Internet stack.",
+    "Back": "<b>False.</b> A router implements <b>network, link, physical</b> (3). A switch implements <b>link, physical</b> (2). Hosts implement all five.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867131,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: coaxial cable and radio are both guided media.",
+    "Back": "<b>False.</b> Coax is guided (solid medium). Radio is <b>unguided</b> (propagates freely).",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867133,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: \"RFC\" stands for Request for Change, and RFCs come from the IEEE.",
+    "Back": "<b>False.</b> RFC = <b>Request for Comments</b>, published by the <b>IETF</b> (Internet Engineering Task Force).",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867135,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: the transport layer routes datagrams from source to destination.",
+    "Back": "<b>False.</b> That is the <b>network</b> layer (IP). Transport = <b>process-to-process</b> data transfer (TCP, UDP).",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867137,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: a protocol defines only the format of the messages exchanged.",
+    "Back": "<b>False.</b> A protocol defines <b>format</b>, <b>order</b> of messages sent and received, and <b>actions taken</b> on transmission and receipt.",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867139,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: in packet switching, each packet is sent at a fraction of the link's capacity.",
+    "Back": "<b>False.</b> Each packet is transmitted at <b>full link capacity</b> (slide 39).",
+    "Topic": "True or false traps"
+   }
+  },
+  {
+   "noteId": 1790713867141,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "True_or_false_traps",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "True or false: connecting every access ISP directly to every other scales as O(N).",
+    "Back": "<b>False.</b> <b>O(N<sup>2</sup>)</b> connections, which is why it doesn't scale (slide 49).",
+    "Topic": "True or false traps"
+   }
+  }
+ ]
+}

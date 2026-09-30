@@ -1,0 +1,189 @@
+{
+ "deck": "CS3357A Networks::Quiz 1 Review::Numeric drill",
+ "note_count": 14,
+ "exported": "2026-09-30",
+ "notes": [
+  {
+   "noteId": 1790713867075,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "d<sub>trans</sub> for a 4,000-byte packet on a 20 Mbps link?",
+    "Back": "32,000 bits / 20×10<sup>6</sup> bps = <b>1.6 ms</b>.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867077,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "d<sub>prop</sub> over 3,000 km with s = 2.5×10<sup>8</sup> m/s? What happens to it if R triples?",
+    "Back": "3×10<sup>6</sup> / 2.5×10<sup>8</sup> = <b>12 ms</b>. Unchanged: d<sub>prop</sub> doesn't depend on R.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867079,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "A 12,000-bit packet crosses 3 routers of 6 Mbps links (no propagation, processing or queueing). End-to-end delay?",
+    "Back": "3 routers = <b>4 links</b>. 4 × (12,000 / 6×10<sup>6</sup>) = 4 × 2 ms = <b>8 ms</b>. The trap is using 3 links and getting 6 ms.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867081,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Same path (4 links, L/R = 2 ms), but 5 packets are sent back to back. When does the last one fully arrive?",
+    "Back": "(N + P − 1) · L/R = (4 + 5 − 1) × 2 ms = <b>16 ms</b>.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867083,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "L = 1,000 bytes, R = 1 Mbps, 2,000 km, s = 2×10<sup>8</sup>, d<sub>proc</sub> = 0.5 ms, d<sub>queue</sub> = 3 ms. d<sub>nodal</sub>?",
+    "Back": "d<sub>trans</sub> = 8 ms, d<sub>prop</sub> = 10 ms. Total = 0.5 + 3 + 8 + 10 = <b>21.5 ms</b>. (11.5 ms means you forgot bytes → bits.)",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867085,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "L = 1,500 bytes, a = 1,000 packets/s, R = 10 Mbps. Traffic intensity, and what does it mean?",
+    "Back": "La/R = 12×10<sup>6</sup> / 10<sup>7</sup> = <b>1.2 &gt; 1</b>. The queue grows without bound and the average delay → infinity (in practice buffers overflow and packets are lost).",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867087,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "L = 8,000 bits, a = 250 packets/s. Minimum R so that La/R ≤ 0.5?",
+    "Back": "La = 2 Mbps, so R ≥ 2 / 0.5 = <b>4 Mbps</b>.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867089,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "10 connections share a 150 Mbps backbone; R<sub>s</sub> = 50 Mbps, R<sub>c</sub> = 20 Mbps. Per-connection throughput, and the time for a 60 MB file?",
+    "Back": "min(20, 50, 150/10 = 15) = <b>15 Mbps</b> (the backbone share is the bottleneck). 480 Mbit / 15 Mbps = <b>32 s</b>.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867091,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "A TDM link of 2.048 Mbps with 32 slots: rate per circuit, and the time for a 1.28 Mbit file?",
+    "Back": "2.048 Mbps / 32 = <b>64 kbps</b>. 1.28×10<sup>6</sup> / 64×10<sup>3</sup> = <b>20 s</b> (plus setup).",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867093,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Caravan: 10 cars, 6 s per car at the booth, 100 km/h, booths 150 km apart. Time until the caravan is lined up at the 2nd booth?",
+    "Back": "Transmission 60 s + propagation 1.5 h = <b>91 min</b>.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867095,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Caravan: the booth takes 2 min per car, cars go 600 km/h, booths 100 km apart. When does the first car reach booth 2, and how many cars are still at booth 1 then?",
+    "Back": "Drive time = 10 min; the first car leaves at 2 min and arrives at <b>12 min</b>. By then 6 cars are serviced, so <b>4 remain</b>. Yes, it arrives before all are serviced (that happens at 20 min).",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867097,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "L = 1,500 bytes, R = 10 Mbps, s = 2×10<sup>8</sup>. At what link length does d<sub>prop</sub> = d<sub>trans</sub>?",
+    "Back": "d<sub>trans</sub> = 1.2 ms, so d = 2×10<sup>8</sup> × 1.2×10<sup>−3</sup> = <b>240 km</b>.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867099,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 66: R = 6 bps shared by 10 connections, R<sub>s</sub> = 2 bps, R<sub>c</sub> = 3 bps. Per-connection throughput?",
+    "Back": "min(3, 2, 6/10) = <b>0.6 bps</b>. Here the backbone share is the bottleneck, unlike the \"in practice\" case.",
+    "Topic": "Numeric drill"
+   }
+  },
+  {
+   "noteId": 1790713867101,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Numeric_drill",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "A path's links are 100 Mbps, 40 Mbps and 1 Gbps. End-to-end throughput?",
+    "Back": "<b>40 Mbps</b>: min over the links (the bottleneck link).",
+    "Topic": "Numeric drill"
+   }
+  }
+ ]
+}

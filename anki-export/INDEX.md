@@ -1,8 +1,8 @@
 # Anki collection export
 
-Snapshot generated 2026-09-29 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
+Snapshot generated 2026-09-30 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
 
-**Total: 14794 notes across 215 decks.**
+**Total: 14853 notes across 221 decks.**
 
 | Deck | Notes |
 |------|------:|
@@ -50,6 +50,12 @@ Snapshot generated 2026-09-29 from AnkiWeb via GitHub Actions (scripts/anki_clou
 | CS3319A Databases::Week 2::Relational Terminology | 14 |
 | CS3319A Databases::Week 2::Seven Mapping Rules | 12 |
 | CS3319A Databases::Week 2::Textbook Extras | 2 |
+| CS3357A Networks::Quiz 1 Review::Binomial (slide 47 handout) | 8 |
+| CS3357A Networks::Quiz 1 Review::Encapsulation & layers | 4 |
+| CS3357A Networks::Quiz 1 Review::Numeric drill | 14 |
+| CS3357A Networks::Quiz 1 Review::Quiz logistics | 1 |
+| CS3357A Networks::Quiz 1 Review::Slide numbers - which is which | 12 |
+| CS3357A Networks::Quiz 1 Review::True or false traps | 20 |
 | CS3357A Networks::Week 1::Circuit vs packet switching | 13 |
 | CS3357A Networks::Week 1::Course logistics | 4 |
 | CS3357A Networks::Week 1::Delay & loss | 26 |

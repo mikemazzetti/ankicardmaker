@@ -1,0 +1,163 @@
+{
+ "deck": "CS3357A Networks::Quiz 1 Review::Slide numbers - which is which",
+ "note_count": 12,
+ "exported": "2026-09-30",
+ "notes": [
+  {
+   "noteId": 1790713867051,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which access technology do the slides quote at 24–52 Mbps downstream and 3.5–16 Mbps upstream?",
+    "Back": "<b>DSL</b>, on a dedicated line to the central office DSLAM (slide 28).",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867053,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which access technology do the slides quote at 40 Mbps–1.2 Gbps downstream and 30–100 Mbps upstream?",
+    "Back": "<b>Cable (HFC)</b>: asymmetric, shared to the cable headend / CMTS (slide 30).",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867055,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which link type do the slides give as \"up to 45 Mbps per channel, 270 msec end-end delay\"?",
+    "Back": "<b>Satellite</b> (geosynchronous vs low-earth-orbit), slide 37. Terrestrial microwave is also \"up to 45 Mbps channels\" but has no 270 ms figure.",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867057,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which slide technologies are quoted at 11, 54, 450 Mbps?",
+    "Back": "<b>WiFi</b> (802.11b/g/n) WLAN access points, in home, wireless and enterprise networks (slides 31–33).",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867059,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "What range do the slides give for a WLAN and for wide-area cellular?",
+    "Back": "WLAN: <b>~100 ft</b> (within or around a building). Cellular: <b>10's of km</b> at 10's of Mbps (slide 32).",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867061,
+   "modelName": "CS3357A Networks Cloze",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Text": "Twisted pair: Category 5 = {{c1::100 Mbps, 1 Gbps}} Ethernet; Category 6 = {{c1::10 Gbps}} Ethernet. Enterprise Ethernet on the slides: {{c1::100 Mbps, 1 Gbps, 10 Gbps}}; home wired Ethernet: {{c1::1 Gbps}}.",
+    "Extra": "Slides 31, 33, 35.",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867063,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which medium is described as \"two concentric copper conductors, bidirectional, broadband, 100's Mbps per channel\"?",
+    "Back": "<b>Coaxial cable</b> (slide 36).",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867065,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Which medium carries \"light pulses, each pulse a bit\" at 10's–100's Gbps?",
+    "Back": "<b>Fiber optic cable</b> (slide 36): low error rate, repeaters spaced far apart, immune to electromagnetic noise.",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867067,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "What are the three propagation-environment effects on wireless radio listed on slide 37, and what are its two transmission properties?",
+    "Back": "Effects: <b>reflection, obstruction by objects, interference</b>. Properties: <b>broadcast</b> and <b>half-duplex</b> (sender to receiver), with no physical wire.",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867069,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 43 circuit-switching diagram: how many circuits per link, and which circuits does the call get?",
+    "Back": "Each link has <b>four</b> circuits. The call gets the <b>2nd</b> circuit in the top link and the <b>1st</b> circuit in the right link.",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867071,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 55: name the four tier-1 ISPs and the content providers given as examples.",
+    "Back": "Tier-1: <b>Level 3, Sprint, AT&amp;T, NTT</b>. Content providers: Google, Facebook (slide 55); Google, Microsoft, Akamai (slide 54).",
+    "Topic": "Slide numbers - which is which"
+   }
+  },
+  {
+   "noteId": 1790713867073,
+   "modelName": "CS3357A Networks Basic",
+   "tags": [
+    "Slide_numbers_which_is_which",
+    "quiz1"
+   ],
+   "fields": {
+    "Front": "Slide 58: what does nodal processing do, and how long does it typically take?",
+    "Back": "It <b>checks bit errors</b> and <b>determines the output link</b>. Typically <b>&lt; msec</b>.",
+    "Topic": "Slide numbers - which is which"
+   }
+  }
+ ]
+}
