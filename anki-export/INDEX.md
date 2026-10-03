@@ -1,6 +1,6 @@
 # Anki collection export
 
-Snapshot generated 2026-10-02 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
+Snapshot generated 2026-10-03 from AnkiWeb via GitHub Actions (scripts/anki_cloud_export.py). One JSON file per deck; media binaries not included.
 
 **Total: 14853 notes across 221 decks.**
 
